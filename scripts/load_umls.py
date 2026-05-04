@@ -58,7 +58,11 @@ def load_table(
 
 def main() -> None:
     args = parse_args()
-    ensure_required_files(list(UMLS_FILES.values()))
+    # Add MRMAP to required files if not present
+    required_files = list(UMLS_FILES.values())
+    if "mrmap" in UMLS_FILES:
+        required_files.append(UMLS_FILES["mrmap"])
+    ensure_required_files(required_files)
     sab_filter = {item.strip() for item in args.sab_filter.split(",") if item.strip()}
 
     with get_connection() as conn:
@@ -71,9 +75,78 @@ def main() -> None:
                         umls.mrrel,
                         umls.mrdef,
                         umls.mrsty,
-                        umls.mrconso
+                        umls.mrconso,
+                        umls.mrmap
                     CASCADE
                     """
+                )
+            # MRMAP loader
+            if "mrmap" in UMLS_FILES:
+                mrmap_rows = (
+                    (
+                        _clean(r[0]),  # mapsetcui
+                        _clean(r[1]),  # mapsetsab
+                        _clean(r[2]),  # mapsubsetid
+                        int(r[3]) if r[3].strip() else None,  # maprank
+                        _clean(r[4]),  # mapid
+                        _clean(r[5]),  # mapsid
+                        _clean(r[6]),  # fromid
+                        _clean(r[7]),  # fromsid
+                        _clean(r[8]),  # fromexpr
+                        _clean(r[9]),  # fromtype
+                        _clean(r[10]), # fromrule
+                        _clean(r[11]), # fromres
+                        _clean(r[12]), # rel
+                        _clean(r[13]), # rela
+                        _clean(r[14]), # toid
+                        _clean(r[15]), # tosid
+                        _clean(r[16]), # toexpr
+                        _clean(r[17]), # totype
+                        _clean(r[18]), # torule
+                        _clean(r[19]), # tores
+                        _clean(r[20]), # maprule
+                        _clean(r[21]), # mapres
+                        _clean(r[22]), # maptype
+                        _clean(r[23]), # mapatn
+                        _clean(r[24]), # mapatv
+                        int(r[25]) if r[25].strip() else None,  # cvf
+                    )
+                    for r in tqdm(iter_rrf_rows(UMLS_FILES["mrmap"], 26), desc="UMLS mrmap", unit="row")
+                )
+                load_table(
+                    cursor,
+                    UMLS_FILES["mrmap"],
+                    "umls.mrmap",
+                    (
+                        "mapsetcui",
+                        "mapsetsab",
+                        "mapsubsetid",
+                        "maprank",
+                        "mapid",
+                        "mapsid",
+                        "fromid",
+                        "fromsid",
+                        "fromexpr",
+                        "fromtype",
+                        "fromrule",
+                        "fromres",
+                        "rel",
+                        "rela",
+                        "toid",
+                        "tosid",
+                        "toexpr",
+                        "totype",
+                        "torule",
+                        "tores",
+                        "maprule",
+                        "mapres",
+                        "maptype",
+                        "mapatn",
+                        "mapatv",
+                        "cvf",
+                    ),
+                    mrmap_rows,
+                    args.batch_size,
                 )
 
             mrconso_rows = (
