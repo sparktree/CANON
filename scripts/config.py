@@ -125,4 +125,10 @@ UMLS_FILES: Dict[str, Path] = {
     "mrrel": UMLS_META_DIR / "MRREL.RRF",
     "mrsty": UMLS_META_DIR / "MRSTY.RRF",
     "mrdef": UMLS_META_DIR / "MRDEF.RRF",
+    "mrmap": _first_existing(
+        [
+            UMLS_META_DIR / "MRMAP.RRF",
+            DATA_ROOT / "UMLS_MeSH_and_SNOMED" / "2025AB" / "META" / "MRMAP.RRF",
+        ]
+    ),
 }
