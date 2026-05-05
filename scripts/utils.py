@@ -7,13 +7,12 @@ from datetime import date
 from pathlib import Path
 from typing import Iterable, Iterator, Sequence
 
-import psycopg2
-from psycopg2.extensions import connection as PGConnection
-
 from config import DB_CONFIG, PostgresConfig
 
 
-def get_connection(db_config: PostgresConfig = DB_CONFIG) -> PGConnection:
+def get_connection(db_config: PostgresConfig = DB_CONFIG):
+    import psycopg2  # lazy: SQL path is legacy; in-memory pipeline does not need it
+
     kwargs = asdict(db_config)
     if not kwargs["password"]:
         kwargs.pop("password")

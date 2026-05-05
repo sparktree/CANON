@@ -76,8 +76,9 @@ def _first_glob_or_default(root: Path, pattern: str, default_name: str) -> Path:
     return matches[0] if matches else (root / default_name)
 
 
-_snomed_snapshots = sorted(DATA_ROOT.glob("SnomedCT_*/Snapshot"), reverse=True)
-SNOMED_SNAPSHOT_ROOT = _snomed_snapshots[0] if _snomed_snapshots else (DATA_ROOT / "SnomedCT_SNAPSHOT_MISSING")
+_snomed_search_root = DATA_ROOT / "UMLS_MeSH_and_SNOMED"
+_snomed_snapshots = sorted(_snomed_search_root.glob("SnomedCT_*/Snapshot"), reverse=True)
+SNOMED_SNAPSHOT_ROOT = _snomed_snapshots[0] if _snomed_snapshots else (_snomed_search_root / "SnomedCT_SNAPSHOT_MISSING")
 
 SNOMED_FILES: Dict[str, Path] = {
     "concepts": _first_glob_or_default(
@@ -118,17 +119,15 @@ SNOMED_FILES: Dict[str, Path] = {
 }
 
 UMLS_META_DIR = Path(
-    os.getenv("UMLS_META_DIR", str((DATA_ROOT / "2025AB-full" / "META").resolve()))
+    os.getenv(
+        "UMLS_META_DIR",
+        str((DATA_ROOT / "UMLS_MeSH_and_SNOMED" / "2025AB" / "META").resolve()),
+    )
 )
 UMLS_FILES: Dict[str, Path] = {
     "mrconso": UMLS_META_DIR / "MRCONSO.RRF",
     "mrrel": UMLS_META_DIR / "MRREL.RRF",
     "mrsty": UMLS_META_DIR / "MRSTY.RRF",
     "mrdef": UMLS_META_DIR / "MRDEF.RRF",
-    "mrmap": _first_existing(
-        [
-            UMLS_META_DIR / "MRMAP.RRF",
-            DATA_ROOT / "UMLS_MeSH_and_SNOMED" / "2025AB" / "META" / "MRMAP.RRF",
-        ]
-    ),
+    "mrmap": UMLS_META_DIR / "MRMAP.RRF",
 }

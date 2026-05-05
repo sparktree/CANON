@@ -1,0 +1,90 @@
+"""CANON top-level entry point.
+
+Runs every implemented phase step end-to-end. Update this file as new steps
+land so a single command exercises the whole pipeline.
+
+Currently implemented:
+    Phase 1.1 -- UMLS RRF parser + pickle cache         (umls_query.py)
+    Phase 1.2 -- MeSH -> SNOMED mapping pipeline        (mesh_to_snomed.py)
+"""
+
+from __future__ import annotations
+
+import argparse
+import sys
+import time
+from pathlib import Path
+
+SCRIPTS_DIR = Path(__file__).resolve().parent / "scripts"
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+
+import mesh_to_snomed  # noqa: E402
+import umls_query  # noqa: E402
+
+
+def _banner(text: str) -> None:
+    bar = "=" * len(text)
+    print(f"\n{bar}\n{text}\n{bar}", flush=True)
+
+
+def step_1_1(force_reparse: bool) -> None:
+    _banner("Phase 1.1 -- UMLS RRF parser + pickle cache")
+    t0 = time.time()
+    umls_query.preload(force=force_reparse)
+    print(
+        f"[1.1] CUIs={len(umls_query.cui_to_atoms):,}  "
+        f"(sab,code) keys={len(umls_query.code_to_cuis):,}  "
+        f"CUIs-with-rels={len(umls_query.cui_to_rels):,}  "
+        f"CUIs-with-stys={len(umls_query.cui_to_stys):,}  "
+        f"MRMAP from-keys={len(umls_query.mrmap_entries):,}"
+    )
+    print(f"[1.1] elapsed {time.time() - t0:.1f}s")
+
+
+def step_1_2() -> None:
+    _banner("Phase 1.2 -- MeSH -> SNOMED concept mapping")
+    t0 = time.time()
+    result = mesh_to_snomed.build_mapping(verbose=True)
+    mapped = len(result["mapping_rows"])
+    unmapped = len(result["unmapped_rows"])
+    total = mapped + unmapped
+    pct = (mapped / total * 100) if total else 0.0
+    print(f"[1.2] mapped {mapped:,} / {total:,} ({pct:.1f}%); unmapped {unmapped:,}")
+    print(f"[1.2] outputs in {mesh_to_snomed.OUTPUT_DIR}")
+    print(f"[1.2] elapsed {time.time() - t0:.1f}s")
+
+
+STEPS = {
+    "1.1": step_1_1,
+    "1.2": step_1_2,
+}
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Run all implemented CANON steps.")
+    parser.add_argument(
+        "--only",
+        nargs="+",
+        choices=sorted(STEPS),
+        help="Run only the listed step IDs (default: all).",
+    )
+    parser.add_argument(
+        "--force-reparse",
+        action="store_true",
+        help="Ignore the pickled UMLS cache and re-parse the RRFs.",
+    )
+    args = parser.parse_args()
+
+    selected = args.only or sorted(STEPS)
+    overall = time.time()
+    for step_id in selected:
+        if step_id == "1.1":
+            step_1_1(force_reparse=args.force_reparse)
+        else:
+            STEPS[step_id]()
+    print(f"\n[main] all selected steps done in {time.time() - overall:.1f}s")
+
+
+if __name__ == "__main__":
+    main()
