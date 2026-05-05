@@ -14,11 +14,17 @@ Five schemas, one per dataset plus an integration layer:
 |--------|---------|------------|
 | `cdr` | Chemical-Disease Relation corpus | documents, entities, relations |
 | `biored` | BioRED relation extraction corpus | documents, entities, relations |
-| `umls` | UMLS Metathesaurus | mrconso, mrrel, mrsty, mrdef |
+| `umls` | UMLS Metathesaurus | mrconso, mrrel, mrsty, mrdef |(venv) khurrumali97@Khurrums-MacBook-Pro-558 CANON % \d umls.mrmap
+zsh: command not found: d
+(venv) khurrumali97@Khurrums-MacBook-Pro-558 CANON % \dt umls.*
+zsh: no matches found: umls.*
+|        |                   | **mrmap** (UMLS mapping table, now integrated) |
 | `snomed` | SNOMED CT US Edition | concepts, descriptions, relationships, stated_relationships, extended_map, simple_map |
 | `kg` | Unified Knowledge Graph | concepts, concept_xrefs, relations |
 
 ### Cross-Dataset Linkage (via UMLS as Rosetta Stone)
+
+- **UMLS MRMAP**: Now integrated. Enables mapping between vocabularies (e.g., MeSH, SNOMED, ICD) using UMLS-provided mappings.
 
 - **CDR/BioRED MeSH IDs** -> `umls.mrconso WHERE sab='MSH' AND sdui=mesh_id` -> CUI
 - **SNOMED concept IDs** -> `umls.mrconso WHERE sab='SNOMEDCT_US' AND code=snomed_id` -> CUI

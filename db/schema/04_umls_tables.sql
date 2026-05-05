@@ -63,3 +63,34 @@ CREATE TABLE IF NOT EXISTS umls.mrdef (
 );
 
 COMMIT;
+
+-- MRMAP table for UMLS mapping
+CREATE TABLE IF NOT EXISTS umls.mrmap (
+    mapsetcui TEXT NOT NULL,
+    mapsetsab TEXT NOT NULL,
+    mapsubsetid TEXT,
+    maprank INTEGER,
+    mapid TEXT NOT NULL,
+    mapsid TEXT,
+    fromid TEXT NOT NULL,
+    fromsid TEXT,
+    fromexpr TEXT NOT NULL,
+    fromtype TEXT NOT NULL,
+    fromrule TEXT,
+    fromres TEXT,
+    rel TEXT NOT NULL,
+    rela TEXT,
+    toid TEXT,
+    tosid TEXT,
+    toexpr TEXT,
+    totype TEXT,
+    torule TEXT,
+    tores TEXT,
+    maprule TEXT,
+    mapres TEXT,
+    maptype TEXT,
+    mapatn TEXT,
+    mapatv TEXT,
+    cvf INTEGER
+    -- No primary key: MRMAP is a mapping table, may not have unique rows
+);

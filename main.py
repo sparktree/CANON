@@ -7,6 +7,7 @@ Currently implemented:
     Phase 1.1 -- UMLS RRF parser + pickle cache         (umls_query.py)
     Phase 1.2 -- MeSH -> SNOMED mapping pipeline        (mesh_to_snomed.py)
     Phase 1.3 -- Non-MeSH vocabulary scoping audit      (entity_scope.py + scope_audit.py)
+    Phase 1.4 -- Relation schema alignment table        (relation_schema.py)
 """
 
 from __future__ import annotations
@@ -22,6 +23,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 import entity_scope  # noqa: E402
 import mesh_to_snomed  # noqa: E402
+import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
 import umls_query  # noqa: E402
 
@@ -68,10 +70,23 @@ def step_1_3() -> None:
     print(f"[1.3] elapsed {time.time() - t0:.1f}s")
 
 
+def step_1_4() -> None:
+    _banner("Phase 1.4 -- Relation schema alignment")
+    t0 = time.time()
+    rows = list(relation_schema.iter_rows())
+    tier1 = sum(1 for r in rows if r.tier == 1)
+    tier2 = sum(1 for r in rows if r.tier == 2)
+    print(f"[1.4] {len(rows)} mapping rows  ({tier1} Tier-1, {tier2} Tier-2)")
+    out = relation_schema.dump_csv()
+    print(f"[1.4] CSV written to {out}")
+    print(f"[1.4] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
     "1.3": step_1_3,
+    "1.4": step_1_4,
 }
 
 
@@ -96,7 +111,7 @@ def main() -> None:
         if step_id == "1.1":
             step_1_1(force_reparse=args.force_reparse)
         else:
-            STEPS[step_id]()
+            STEPS[step_id]()  # type: ignore[operator]
     print(f"\n[main] all selected steps done in {time.time() - overall:.1f}s")
 
 
