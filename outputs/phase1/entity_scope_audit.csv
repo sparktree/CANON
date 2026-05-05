@@ -1,0 +1,9 @@
+corpus,entity_type,vocabulary,semantic_class,scope,mentions,unique_ids,rationale
+BC5CDR,Chemical,MeSH,chemical,snomed_normalized,15935,1278,MeSH descriptor; mapped to SNOMED via Phase 1.2 pipeline.
+BC5CDR,Disease,MeSH,disease,snomed_normalized,12850,1187,MeSH descriptor; mapped to SNOMED via Phase 1.2 pipeline.
+BioRED,GeneOrGeneProduct,NCBI Gene,gene,ner_only,6697,1697,SNOMED has limited genomic content; excluded from concept normalization (Phase 1.3 decision). NER + RE only.
+BioRED,DiseaseOrPhenotypicFeature,MeSH,disease,snomed_normalized,5545,811,MeSH descriptor; mapped to SNOMED via Phase 1.2 pipeline.
+BioRED,ChemicalEntity,MeSH,chemical,snomed_normalized,4429,657,MeSH descriptor; mapped to SNOMED via Phase 1.2 pipeline.
+BioRED,OrganismTaxon,NCBI Taxonomy,species,ner_only,2192,47,Non-MeSH vocabulary held out of SNOMED normalization to keep the CSP solver's domain consistent with the gene/variant decision. NER + RE only.
+BioRED,SequenceVariant,dbSNP,variant,ner_only,1381,678,SNOMED has limited genomic content; excluded from concept normalization (Phase 1.3 decision). NER + RE only.
+BioRED,CellLine,Cellosaurus,cell_line,ner_only,175,72,Non-MeSH vocabulary held out of SNOMED normalization to keep the CSP solver's domain consistent with the gene/variant decision. NER + RE only.

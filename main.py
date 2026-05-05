@@ -6,6 +6,7 @@ land so a single command exercises the whole pipeline.
 Currently implemented:
     Phase 1.1 -- UMLS RRF parser + pickle cache         (umls_query.py)
     Phase 1.2 -- MeSH -> SNOMED mapping pipeline        (mesh_to_snomed.py)
+    Phase 1.3 -- Non-MeSH vocabulary scoping audit      (entity_scope.py + scope_audit.py)
 """
 
 from __future__ import annotations
@@ -19,7 +20,9 @@ SCRIPTS_DIR = Path(__file__).resolve().parent / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+import entity_scope  # noqa: E402
 import mesh_to_snomed  # noqa: E402
+import scope_audit  # noqa: E402
 import umls_query  # noqa: E402
 
 
@@ -55,9 +58,20 @@ def step_1_2() -> None:
     print(f"[1.2] elapsed {time.time() - t0:.1f}s")
 
 
+def step_1_3() -> None:
+    _banner("Phase 1.3 -- Non-MeSH vocabulary scoping audit")
+    t0 = time.time()
+    in_scope = sum(1 for s in entity_scope.iter_specs() if s.snomed_normalized)
+    out_scope = sum(1 for s in entity_scope.iter_specs() if not s.snomed_normalized)
+    print(f"[1.3] registry: {in_scope} SNOMED-normalized types, {out_scope} NER-only types")
+    scope_audit.run(verbose=True)
+    print(f"[1.3] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
+    "1.3": step_1_3,
 }
 
 
