@@ -1,18 +1,21 @@
-"""Active-pipeline filesystem paths.
+"""Legacy SQL config — Postgres connection + RRF/RF2 paths.
 
-Only path-resolution lives here. Database / batch-size knobs needed by the
-deprecated SQL staging path are in ``scripts/legacy_sql/config.py``.
+Self-contained so that ``cd scripts/legacy_sql && python load_umls.py`` works
+without further sys.path mangling. The active CANON pipeline does NOT import
+this file — see ``scripts/config.py``.
 """
 
 from __future__ import annotations
 
 import os
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = SCRIPT_DIR.parent
+SCRIPTS_ROOT = SCRIPT_DIR.parent
+REPO_ROOT = SCRIPTS_ROOT.parent
 WORKSPACE_ROOT = REPO_ROOT.parent
 
 
@@ -40,6 +43,30 @@ def _resolve_data_root() -> Path:
 DATA_ROOT = _resolve_data_root()
 
 
+def _env_int(name: str, default: int) -> int:
+    value = os.getenv(name, str(default))
+    try:
+        return int(value)
+    except ValueError as exc:
+        raise ValueError(f"{name} must be an integer, got: {value}") from exc
+
+
+BATCH_SIZE = _env_int("BATCH_SIZE", 5000)
+
+
+@dataclass(frozen=True)
+class PostgresConfig:
+    host: str = os.getenv("PGHOST", "localhost")
+    port: int = _env_int("PGPORT", 5432)
+    dbname: str = os.getenv("PGDATABASE", "postgres")
+    user: str = os.getenv("PGUSER", "postgres")
+    password: str = os.getenv("PGPASSWORD", "")
+    sslmode: str = os.getenv("PGSSLMODE", "prefer")
+
+
+DB_CONFIG = PostgresConfig()
+
+
 CDR_FILES: Dict[str, Path] = {
     "train": DATA_ROOT / "CDR_Data" / "CDR.Corpus.v010516" / "CDR_TrainingSet.PubTator.txt",
     "dev": DATA_ROOT / "CDR_Data" / "CDR.Corpus.v010516" / "CDR_DevelopmentSet.PubTator.txt",
@@ -58,19 +85,11 @@ def _first_glob_or_default(root: Path, pattern: str, default_name: str) -> Path:
     return matches[0] if matches else (root / default_name)
 
 
-def _discover_snomed_snapshot(root: Path) -> Path | None:
-    """Find the newest directory containing both Terminology/ and Refset/Metadata/ underneath a Snapshot/ folder."""
-    candidates = []
-    for snap in root.glob("**/Snapshot"):
-        if (snap / "Terminology").is_dir() and (snap / "Refset" / "Metadata").is_dir():
-            candidates.append(snap)
-    if not candidates:
-        return None
-    return sorted(candidates, key=lambda p: p.as_posix(), reverse=True)[0]
-
-
-_snomed_snapshot = _discover_snomed_snapshot(DATA_ROOT)
-SNOMED_SNAPSHOT_ROOT = _snomed_snapshot if _snomed_snapshot is not None else (DATA_ROOT / "SnomedCT_SNAPSHOT_MISSING")
+_snomed_search_root = DATA_ROOT / "UMLS_MeSH_and_SNOMED"
+_snomed_snapshots = sorted(_snomed_search_root.glob("SnomedCT_*/Snapshot"), reverse=True)
+SNOMED_SNAPSHOT_ROOT = (
+    _snomed_snapshots[0] if _snomed_snapshots else (_snomed_search_root / "SnomedCT_SNAPSHOT_MISSING")
+)
 
 SNOMED_FILES: Dict[str, Path] = {
     "concepts": _first_glob_or_default(
@@ -109,25 +128,6 @@ SNOMED_FILES: Dict[str, Path] = {
         "der2_SimpleMapSnapshot_MISSING.txt",
     ),
 }
-
-MRCM_FILES: Dict[str, Path] = {
-    "domain": _first_glob_or_default(
-        SNOMED_SNAPSHOT_ROOT / "Refset" / "Metadata",
-        "der2_sssssssRefset_MRCMDomainSnapshot_*.txt",
-        "der2_sssssssRefset_MRCMDomainSnapshot_MISSING.txt",
-    ),
-    "attribute_domain": _first_glob_or_default(
-        SNOMED_SNAPSHOT_ROOT / "Refset" / "Metadata",
-        "der2_cissccRefset_MRCMAttributeDomainSnapshot_*.txt",
-        "der2_cissccRefset_MRCMAttributeDomainSnapshot_MISSING.txt",
-    ),
-    "attribute_range": _first_glob_or_default(
-        SNOMED_SNAPSHOT_ROOT / "Refset" / "Metadata",
-        "der2_ssccRefset_MRCMAttributeRangeSnapshot_*.txt",
-        "der2_ssccRefset_MRCMAttributeRangeSnapshot_MISSING.txt",
-    ),
-}
-
 
 UMLS_META_DIR = Path(
     os.getenv(

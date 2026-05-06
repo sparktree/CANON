@@ -8,6 +8,7 @@ Currently implemented:
     Phase 1.2 -- MeSH -> SNOMED mapping pipeline        (mesh_to_snomed.py)
     Phase 1.3 -- Non-MeSH vocabulary scoping audit      (entity_scope.py + scope_audit.py)
     Phase 1.4 -- Relation schema alignment table        (relation_schema.py)
+    Phase 1.5 -- MRCM constraint dictionary             (mrcm.py)
 """
 
 from __future__ import annotations
@@ -23,6 +24,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 import entity_scope  # noqa: E402
 import mesh_to_snomed  # noqa: E402
+import mrcm  # noqa: E402
 import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
 import umls_query  # noqa: E402
@@ -82,11 +84,20 @@ def step_1_4() -> None:
     print(f"[1.4] elapsed {time.time() - t0:.1f}s")
 
 
+def step_1_5() -> None:
+    _banner("Phase 1.5 -- MRCM constraint dictionary")
+    t0 = time.time()
+    out = mrcm.main(verbose=True)
+    print(f"[1.5] JSON written to {out}")
+    print(f"[1.5] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
     "1.3": step_1_3,
     "1.4": step_1_4,
+    "1.5": step_1_5,
 }
 
 
