@@ -12,7 +12,8 @@ Currently implemented:
     Phase 1.6 -- SNOMED hierarchy graph                 (snomed_hierarchy.py)
     Phase 1.7 -- Active-release mapping verification    (mapping_verify.py)
     Phase 2.1 -- Unified annotation format + converters (unified_format.py + corpus_convert.py)
-    Phase 2.2 -- Apply SNOMED concept mappings                (concept_map.py)
+    Phase 2.2 -- Apply SNOMED concept mappings          (concept_map.py)
+    Phase 2.3 -- Apply unified relation labels          (relation_map.py)
 """
 
 from __future__ import annotations
@@ -32,6 +33,7 @@ import entity_scope  # noqa: E402
 import mapping_verify  # noqa: E402
 import mesh_to_snomed  # noqa: E402
 import mrcm  # noqa: E402
+import relation_map  # noqa: E402
 import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
 import snomed_hierarchy  # noqa: E402
@@ -144,6 +146,19 @@ def step_2_2() -> None:
     print(f"[2.2] elapsed {time.time() - t0:.1f}s")
 
 
+def step_2_3() -> None:
+    _banner("Phase 2.3 -- Apply unified relation labels")
+    t0 = time.time()
+    summary = relation_map.apply_all(verbose=True)
+    agg = summary["aggregate"]
+    print(
+        f"[2.3] {agg['total_relations']:,} relations stamped  "
+        f"(tier1={agg['tier1']:,}, tier2={agg['tier2']:,}, "
+        f"multi-candidate={agg['multi_candidate']:,})"
+    )
+    print(f"[2.3] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -154,6 +169,7 @@ STEPS = {
     "1.7": step_1_7,
     "2.1": step_2_1,
     "2.2": step_2_2,
+    "2.3": step_2_3,
 }
 
 

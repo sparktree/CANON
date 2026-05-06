@@ -43,8 +43,8 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import sys
-from dataclasses import asdict
 from pathlib import Path
 from typing import Dict, Iterator, List, Optional, Tuple
 
@@ -62,6 +62,12 @@ except ImportError:
 # ---------------------------------------------------------------------------
 
 INACTIVE_CONFIDENCE_FACTOR = 0.5  # multiplied into mapping_confidence for retired SCTIDs
+
+# Composite-ID separators observed in BioRED (',') and BC5CDR ('|').
+# Must match mesh_harvest._split_composite so codes that the harvester
+# decomposed are also resolvable by the mapping applier.
+_COMPOSITE_SPLIT = re.compile(r"[,;|]")
+_MESH_PREFIX = re.compile(r"^MESH:", re.IGNORECASE)
 
 VERIFIED_CSV  = REPO_ROOT / "outputs" / "phase1" / "mesh_to_snomed_verified.csv"
 UNIFIED_DIR   = REPO_ROOT / "outputs" / "phase2" / "unified"
@@ -118,13 +124,17 @@ def _best_entry_for_code(
 ) -> Optional[_MappingEntry]:
     """Resolve a (possibly composite) original_code to the best mapping entry.
 
-    Composite codes like "D003922,D003925" are split on commas; each
-    component is tried independently. Active entries beat inactive ones;
-    ties are broken by highest confidence.
+    Composite codes use ',' (BioRED) or '|' (BC5CDR) -- both BioRED's
+    'D001943,D010051' and BC5CDR's 'D014786|D006311' must resolve. Each
+    component is tried independently and any leading 'MESH:' prefix is
+    stripped to match the harvester's normalization. Active entries beat
+    inactive ones; ties are broken by highest confidence.
     """
     if not code or code == "-":
         return None
-    components = [c.strip() for c in code.split(",") if c.strip()]
+    components = [_MESH_PREFIX.sub("", c).strip()
+                  for c in _COMPOSITE_SPLIT.split(code)
+                  if c.strip()]
     candidates: List[_MappingEntry] = []
     for comp in components:
         entry = table.get(comp)
