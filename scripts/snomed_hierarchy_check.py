@@ -59,15 +59,13 @@ def main() -> int:
             print("       Run `python3 main.py --only 1.6` first.")
             return 1
 
-    print("Loading pickled graph and ancestor sets …", flush=True)
-    with GRAPH_PKL.open("rb") as fh:
-        G = pickle.load(fh)
-    with ANCESTORS_PKL.open("rb") as fh:
-        anc = pickle.load(fh)
+    print("Loading pickled graph and ancestor sets ...", flush=True)
+    G, anc = sh.load_or_build(force=False, verbose=False)
     stats = json.loads(STATS_JSON.read_text(encoding="utf-8"))
 
-    depths    = dict(G.nodes(data="depth",         default=-1))
-    sem_types = dict(G.nodes(data="semantic_type",  default=None))
+    depths    = dict(G.nodes(data="depth",               default=-1))
+    sem_types = dict(G.nodes(data="semantic_type",        default=None))
+    tl_mem    = dict(G.nodes(data="top_level_hierarchies", default=()))
 
     print()
 
@@ -201,22 +199,99 @@ def main() -> int:
     # ------------------------------------------------------------------ 7. public API helpers
     print()
     print("=== 7. Public API helpers ===")
-    _check("is_descendant_of(Pneumonia, ClinicalFinding) → True",
+    _check("is_descendant_of(Pneumonia, ClinicalFinding) -> True",
            sh.is_descendant_of(PNEUMONIA_ID, CLINICAL_FINDING, anc))
-    _check("is_descendant_of(ClinicalFinding, Pneumonia) → False",
+    _check("is_descendant_of(ClinicalFinding, Pneumonia) -> False",
            not sh.is_descendant_of(CLINICAL_FINDING, PNEUMONIA_ID, anc))
-    _check("is_descendant_of(Doxorubicin, Substance) → True",
+    _check("is_descendant_of(Doxorubicin, Substance) -> True",
            sh.is_descendant_of(DOXORUBICIN_ID, SUBSTANCE_ROOT, anc))
-    _check("is_descendant_of(Pneumonia, Substance) → False",
+    _check("is_descendant_of(Pneumonia, Substance) -> False",
            not sh.is_descendant_of(PNEUMONIA_ID, SUBSTANCE_ROOT, anc))
     got_ancs = sh.get_ancestors(PNEUMONIA_ID, anc)
     _check("get_ancestors(Pneumonia) returns a non-empty frozenset",
            isinstance(got_ancs, frozenset) and len(got_ancs) > 0,
            f"{len(got_ancs)} ancestors")
-    _check("get_ancestors for unmapped concept returns empty frozenset",
+    _check("get_ancestors: unmapped concept, no G -> empty frozenset",
            sh.get_ancestors("NONEXISTENT_ID", anc) == frozenset())
+    _check("get_ancestors: unmapped concept with G fallback returns frozenset",
+           isinstance(sh.get_ancestors(CLINICAL_FINDING, anc, G=G), frozenset))
+    _check("get_ancestors: G fallback includes root for Clinical finding",
+           SNOMED_ROOT in sh.get_ancestors(CLINICAL_FINDING, anc, G=G))
 
-    # ------------------------------------------------------------------ 8. missing concepts
+    # ------------------------------------------------------------------ 8. new Dbport features
+    print()
+    print("=== 8. Dbport new features (top_level_hierarchies, get_depth, pickle envelope) ===")
+
+    # top_level_hierarchies node attribute.
+    _check("top_level_hierarchies attribute present on Pneumonia",
+           isinstance(tl_mem.get(PNEUMONIA_ID), tuple))
+    _check("Clinical finding in Pneumonia's top_level_hierarchies",
+           CLINICAL_FINDING in tl_mem.get(PNEUMONIA_ID, ()))
+    _check("Substance NOT in Pneumonia's top_level_hierarchies",
+           SUBSTANCE_ROOT not in tl_mem.get(PNEUMONIA_ID, ()))
+    _check("Substance in Doxorubicin's top_level_hierarchies",
+           SUBSTANCE_ROOT in tl_mem.get(DOXORUBICIN_ID, ()))
+    _check("Clinical finding NOT in Doxorubicin's top_level_hierarchies",
+           CLINICAL_FINDING not in tl_mem.get(DOXORUBICIN_ID, ()))
+
+    # multi_inheritance_concepts present in stats.
+    _check("stats has multi_inheritance_concepts key",
+           "multi_inheritance_concepts" in stats)
+    _check("multi_inheritance_concepts >= 0",
+           stats.get("multi_inheritance_concepts", -1) >= 0)
+
+    # get_top_level_hierarchies() helper.
+    pneu_tl = sh.get_top_level_hierarchies(G, PNEUMONIA_ID)
+    _check("get_top_level_hierarchies(Pneumonia) returns tuple",
+           isinstance(pneu_tl, tuple))
+    _check("get_top_level_hierarchies(Pneumonia) contains Clinical finding",
+           CLINICAL_FINDING in pneu_tl)
+    _check("get_top_level_hierarchies(unknown) returns empty tuple",
+           sh.get_top_level_hierarchies(G, "NONEXISTENT") == ())
+
+    # get_depth() helper.
+    _check("get_depth(root) = 0",
+           sh.get_depth(G, SNOMED_ROOT) == 0)
+    _check("get_depth(Clinical finding) = 1",
+           sh.get_depth(G, CLINICAL_FINDING) == 1)
+    _check("get_depth(unknown) = None",
+           sh.get_depth(G, "NONEXISTENT") is None)
+
+    # Pickle envelope format (versioned dict, not raw object).
+    with GRAPH_PKL.open("rb") as fh:
+        graph_payload = pickle.load(fh)
+    _check("Graph pickle is a dict envelope with 'signature' and 'graph' keys",
+           isinstance(graph_payload, dict)
+           and "signature" in graph_payload
+           and "graph" in graph_payload)
+    with ANCESTORS_PKL.open("rb") as fh:
+        anc_payload = pickle.load(fh)
+    _check("Ancestors pickle is a dict envelope with 'signature' and 'ancestors' keys",
+           isinstance(anc_payload, dict)
+           and "signature" in anc_payload
+           and "ancestors" in anc_payload)
+    _check("Graph and ancestors share the same signature",
+           graph_payload.get("signature") == anc_payload.get("signature"))
+
+    # mrcm_anchors_in_graph is now a list of dicts, not a plain dict.
+    anchor_list = stats.get("mrcm_anchors_in_graph", [])
+    _check("mrcm_anchors_in_graph is a list (not dict)",
+           isinstance(anchor_list, list))
+    anchor_ids_in_graph = {
+        e["concept_id"] for e in anchor_list if e.get("in_graph")
+    }
+    for aid in (CLINICAL_FINDING, SUBSTANCE_ROOT, "71388002"):
+        _check(f"MRCM anchor {aid} present in graph",
+               aid in anchor_ids_in_graph)
+
+    # top_level_hierarchies list in stats has name field.
+    tl_list = stats.get("top_level_hierarchies", [])
+    names_populated = all(e.get("name") for e in tl_list)
+    _check("top_level_hierarchies entries have resolved names",
+           len(tl_list) > 0 and names_populated,
+           f"{len(tl_list)} entries, all named={names_populated}")
+
+    # ------------------------------------------------------------------ 9. missing concepts
     print()
     print("=== 8. Missing mapped concepts ===")
     missing = stats["mapped_concepts_missing"]
@@ -247,7 +322,7 @@ def main() -> int:
 
     # ------------------------------------------------------------------ summary
     print()
-    total = 37  # update if you add checks
+    total = 63  # update if you add checks
     n_fail = len(_failures)
     n_pass = total - n_fail
     print(f"{'='*50}")
