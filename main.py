@@ -12,6 +12,7 @@ Currently implemented:
     Phase 1.6 -- SNOMED hierarchy graph                 (snomed_hierarchy.py)
     Phase 1.7 -- Active-release mapping verification    (mapping_verify.py)
     Phase 2.1 -- Unified annotation format + converters (unified_format.py + corpus_convert.py)
+    Phase 2.2 -- Apply SNOMED concept mappings                (concept_map.py)
 """
 
 from __future__ import annotations
@@ -25,6 +26,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parent / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+import concept_map  # noqa: E402
 import corpus_convert  # noqa: E402
 import entity_scope  # noqa: E402
 import mapping_verify  # noqa: E402
@@ -129,6 +131,19 @@ def step_2_1() -> None:
     print(f"[2.1] elapsed {time.time() - t0:.1f}s")
 
 
+def step_2_2() -> None:
+    _banner("Phase 2.2 -- Apply SNOMED concept mappings")
+    t0 = time.time()
+    summary = concept_map.apply_all(verbose=True)
+    total_docs = sum(
+        split_data.get("documents", 0)
+        for corpus_splits in summary["corpora"].values()
+        for split_data in corpus_splits.values()
+    )
+    print(f"[2.2] {total_docs:,} documents stamped with SNOMED mappings")
+    print(f"[2.2] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -138,6 +153,7 @@ STEPS = {
     "1.6": step_1_6,
     "1.7": step_1_7,
     "2.1": step_2_1,
+    "2.2": step_2_2,
 }
 
 
@@ -152,7 +168,7 @@ def main() -> None:
     parser.add_argument(
         "--force-reparse",
         action="store_true",
-        help="Ignore the pickled UMLS cache and re-parse the RRFs.",
+        help="Ignore pickled caches and re-parse from source files (affects 1.1 and 1.6).",
     )
     args = parser.parse_args()
 
