@@ -1,0 +1,447 @@
+"""SNOMED CT hierarchy graph — CANON Phase 1.6.
+
+Loads the inferred SNOMED CT relationship file, keeps only active is-a edges,
+and builds a NetworkX DiGraph where every edge points child → parent (natural
+SNOMED direction).  Three structures are precomputed and persisted to disk:
+
+    snomed_hierarchy.pkl  — DiGraph with `depth` and `semantic_type` node attrs
+    snomed_ancestors.pkl  — dict keyed two ways:
+        "<snomed_id>"           → frozenset of ancestor concept IDs
+                                  (for every concept in mesh_to_snomed.csv)
+        "descendant:<anchor_id>" → frozenset of descendant concept IDs
+                                  (for every MRCM anchor concept from
+                                   mrcm_constraints.json)
+    snomed_hierarchy_stats.json — human-readable summary for sanity checks
+
+Downstream consumers:
+    Phase 2.4  — ancestor similarity for hierarchical soft mapping
+    Phase 3.5  — O(1) CSP domain/range membership via descendant sets
+    Phase 4.2  — ancestor-match accuracy metric
+
+Usage:
+    python3 scripts/snomed_hierarchy.py          # build + save
+    python3 scripts/snomed_hierarchy.py --force  # force rebuild (ignore cache)
+    from snomed_hierarchy import load_or_build, get_ancestors, is_descendant_of
+"""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import pickle
+import sys
+from collections import deque
+from pathlib import Path
+from statistics import mean
+from typing import Dict, FrozenSet, Iterator, Optional, Set
+
+try:
+    import networkx as nx
+    from tqdm import tqdm
+    from config import MRCM_FILES, REPO_ROOT, SNOMED_FILES
+except ImportError:
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import networkx as nx
+    from tqdm import tqdm
+    from config import MRCM_FILES, REPO_ROOT, SNOMED_FILES
+
+# ---------------------------------------------------------------------------
+# Constants
+# ---------------------------------------------------------------------------
+
+IS_A_TYPE_ID = "116680003"   # SNOMED "Is a (attribute)" concept
+SNOMED_ROOT  = "138875005"   # "SNOMED CT Concept (SNOMED RT+CTV3)"
+
+OUTPUT_DIR   = REPO_ROOT / "outputs" / "phase1"
+GRAPH_PKL    = OUTPUT_DIR / "snomed_hierarchy.pkl"
+ANCESTORS_PKL = OUTPUT_DIR / "snomed_ancestors.pkl"
+STATS_JSON   = OUTPUT_DIR / "snomed_hierarchy_stats.json"
+
+# Inputs produced by earlier phases (consumed at build time, not imported).
+_MESH_TO_SNOMED_CSV = OUTPUT_DIR / "mesh_to_snomed.csv"
+_MRCM_JSON          = OUTPUT_DIR / "mrcm_constraints.json"
+
+
+# ---------------------------------------------------------------------------
+# RF2 helpers (same pattern as mrcm.py)
+# ---------------------------------------------------------------------------
+
+def _read_rf2(path: Path) -> Iterator[Dict[str, str]]:
+    if not path.exists():
+        raise FileNotFoundError(f"RF2 file missing: {path}")
+    with path.open("r", encoding="utf-8", newline="") as fh:
+        reader = csv.DictReader(fh, delimiter="\t", quoting=csv.QUOTE_NONE)
+        for row in reader:
+            yield row
+
+
+def _active(row: Dict[str, str]) -> bool:
+    return row.get("active") == "1"
+
+
+# ---------------------------------------------------------------------------
+# Phase-1 output readers
+# ---------------------------------------------------------------------------
+
+def _load_mapped_snomed_ids() -> Set[str]:
+    """Return unique SNOMED concept IDs from mesh_to_snomed.csv."""
+    if not _MESH_TO_SNOMED_CSV.exists():
+        return set()
+    ids: Set[str] = set()
+    with _MESH_TO_SNOMED_CSV.open("r", encoding="utf-8", newline="") as fh:
+        for row in csv.DictReader(fh):
+            sid = (row.get("snomed_id") or "").strip()
+            if sid:
+                ids.add(sid)
+    return ids
+
+
+def _load_mrcm_anchor_ids() -> Set[str]:
+    """Return all domain/range root concept IDs referenced in mrcm_constraints.json."""
+    if not _MRCM_JSON.exists():
+        return set()
+    data = json.loads(_MRCM_JSON.read_text(encoding="utf-8"))
+    anchors: Set[str] = set()
+    for blk in data.get("relation_constraints", {}).values():
+        for d in blk.get("domains", []):
+            anchors.update(d.get("domain_root_concept_ids", []))
+        for r in blk.get("ranges", []):
+            anchors.update(r.get("range_root_concept_ids", []))
+    return anchors
+
+
+# ---------------------------------------------------------------------------
+# Step A: build graph
+# ---------------------------------------------------------------------------
+
+def build_graph(verbose: bool = True) -> nx.DiGraph:
+    """Build DiGraph from active SNOMED is-a relationships (child → parent edges)."""
+    G: nx.DiGraph = nx.DiGraph()
+
+    # Add all active concept nodes first so isolated concepts are present.
+    if verbose:
+        print("[1.6] loading active concepts …", flush=True)
+    concept_count = 0
+    for row in _read_rf2(SNOMED_FILES["concepts"]):
+        if _active(row):
+            G.add_node(row["id"])
+            concept_count += 1
+    if verbose:
+        print(f"[1.6] {concept_count:,} active concept nodes added")
+
+    # Add is-a edges.
+    if verbose:
+        print("[1.6] loading is-a relationships …", flush=True)
+    edge_count = 0
+    rel_path = SNOMED_FILES["relationships"]
+    # Estimate total lines for tqdm progress (rough: file size / avg bytes per line).
+    try:
+        total_lines = rel_path.stat().st_size // 120
+    except OSError:
+        total_lines = None
+
+    with tqdm(total=total_lines, desc="  relationships", unit=" rows",
+              disable=not verbose, mininterval=2.0) as bar:
+        for row in _read_rf2(rel_path):
+            bar.update(1)
+            if not _active(row):
+                continue
+            if row.get("typeId") != IS_A_TYPE_ID:
+                continue
+            src = row["sourceId"]       # child
+            dst = row["destinationId"]  # parent
+            G.add_edge(src, dst)
+            edge_count += 1
+
+    if verbose:
+        print(f"[1.6] {edge_count:,} active is-a edges added")
+    return G
+
+
+# ---------------------------------------------------------------------------
+# Step B: compute depth + semantic type
+# ---------------------------------------------------------------------------
+
+def compute_metadata(G: nx.DiGraph, verbose: bool = True) -> None:
+    """Attach `depth` and `semantic_type` as node attributes (in-place).
+
+    Works on the *reversed* graph (parent → child edges) to BFS from root.
+    semantic_type = the top-level SNOMED hierarchy concept ID that subsumes
+    each concept (direct children of SNOMED root).
+    """
+    R = G.reverse(copy=False)
+
+    if verbose:
+        print("[1.6] computing depths via BFS from root …", flush=True)
+
+    # BFS from root; simultaneously assign semantic type (top-level ancestor).
+    depths: Dict[str, int] = {}
+    sem_types: Dict[str, str] = {}
+
+    queue: deque = deque()
+    queue.append((SNOMED_ROOT, 0, SNOMED_ROOT))
+    depths[SNOMED_ROOT] = 0
+    sem_types[SNOMED_ROOT] = SNOMED_ROOT
+
+    while queue:
+        node, depth, sem = queue.popleft()
+        for child in R.successors(node):
+            if child in depths:
+                continue
+            depths[child] = depth + 1
+            # Top-level hierarchy = direct child of root; inherit from parent.
+            child_sem = child if depth == 0 else sem
+            sem_types[child] = child_sem
+            queue.append((child, depth + 1, child_sem))
+
+    nx.set_node_attributes(G, depths,    "depth")
+    nx.set_node_attributes(G, sem_types, "semantic_type")
+
+    if verbose:
+        reachable = len(depths)
+        unreachable = G.number_of_nodes() - reachable
+        print(f"[1.6] depth assigned to {reachable:,} nodes "
+              f"({unreachable:,} not reachable from root)")
+
+
+# ---------------------------------------------------------------------------
+# Step C: ancestor / descendant sets
+# ---------------------------------------------------------------------------
+
+def _bfs_ancestors(G: nx.DiGraph, source: str) -> FrozenSet[str]:
+    """All nodes reachable from `source` following child→parent edges (= ancestors)."""
+    visited: Set[str] = set()
+    queue: deque = deque([source])
+    while queue:
+        node = queue.popleft()
+        for parent in G.successors(node):
+            if parent not in visited:
+                visited.add(parent)
+                queue.append(parent)
+    return frozenset(visited)
+
+
+def _bfs_descendants(G: nx.DiGraph, source: str) -> FrozenSet[str]:
+    """All nodes reachable from `source` in the *reversed* graph (= descendants)."""
+    R = G.reverse(copy=False)
+    visited: Set[str] = set()
+    queue: deque = deque([source])
+    while queue:
+        node = queue.popleft()
+        for child in R.successors(node):
+            if child not in visited:
+                visited.add(child)
+                queue.append(child)
+    return frozenset(visited)
+
+
+def compute_ancestor_sets(
+    G: nx.DiGraph,
+    mapped_ids: Set[str],
+    mrcm_ids: Set[str],
+    verbose: bool = True,
+) -> Dict[str, FrozenSet[str]]:
+    """Return a unified lookup dict with two key namespaces:
+
+        "<snomed_id>"            → frozenset of ancestor concept IDs
+        "descendant:<anchor_id>" → frozenset of descendant concept IDs
+    """
+    result: Dict[str, FrozenSet[str]] = {}
+
+    # Ancestor sets for mapped concepts (used in Phase 2 soft mapping + Phase 4).
+    in_graph = [sid for sid in mapped_ids if sid in G]
+    if verbose:
+        print(f"[1.6] computing ancestor sets for {len(in_graph):,} mapped concepts …",
+              flush=True)
+    for sid in tqdm(in_graph, desc="  ancestors", disable=not verbose, mininterval=2.0):
+        result[sid] = _bfs_ancestors(G, sid)
+
+    # Descendant sets for MRCM anchors (O(1) CSP membership checks in Phase 3.5).
+    if verbose:
+        print(f"[1.6] computing descendant sets for {len(mrcm_ids)} MRCM anchors …",
+              flush=True)
+    for anchor in sorted(mrcm_ids):
+        if anchor not in G:
+            if verbose:
+                print(f"[1.6]   WARNING: MRCM anchor {anchor} not in graph — skipping")
+            continue
+        result[f"descendant:{anchor}"] = _bfs_descendants(G, anchor)
+        if verbose:
+            print(f"[1.6]   descendant:{anchor} → {len(result[f'descendant:{anchor}']):,} concepts")
+
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Step D: pickle cache
+# ---------------------------------------------------------------------------
+
+def load_or_build(
+    force: bool = False,
+    verbose: bool = True,
+) -> tuple[nx.DiGraph, Dict[str, FrozenSet[str]]]:
+    """Return (G, ancestors).  Builds from scratch if cache is absent or force=True."""
+    if not force and GRAPH_PKL.exists() and ANCESTORS_PKL.exists():
+        if verbose:
+            print("[1.6] loading from cache …", flush=True)
+        with GRAPH_PKL.open("rb") as fh:
+            G = pickle.load(fh)
+        with ANCESTORS_PKL.open("rb") as fh:
+            ancestors = pickle.load(fh)
+        return G, ancestors
+
+    mapped_ids = _load_mapped_snomed_ids()
+    mrcm_ids   = _load_mrcm_anchor_ids()
+
+    G = build_graph(verbose=verbose)
+    compute_metadata(G, verbose=verbose)
+
+    ancestors = compute_ancestor_sets(G, mapped_ids, mrcm_ids, verbose=verbose)
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    with GRAPH_PKL.open("wb") as fh:
+        pickle.dump(G, fh, protocol=pickle.HIGHEST_PROTOCOL)
+    with ANCESTORS_PKL.open("wb") as fh:
+        pickle.dump(ancestors, fh, protocol=pickle.HIGHEST_PROTOCOL)
+    if verbose:
+        print(f"[1.6] graph  → {GRAPH_PKL}")
+        print(f"[1.6] ancestors → {ANCESTORS_PKL}")
+
+    return G, ancestors
+
+
+# ---------------------------------------------------------------------------
+# Step E: stats JSON
+# ---------------------------------------------------------------------------
+
+def dump_stats(
+    G: nx.DiGraph,
+    ancestors: Dict[str, FrozenSet[str]],
+    mapped_ids: Set[str],
+    mrcm_ids: Set[str],
+    verbose: bool = True,
+) -> Path:
+    depths    = nx.get_node_attributes(G, "depth")
+    sem_types = nx.get_node_attributes(G, "semantic_type")
+
+    # Top-level hierarchies = direct children of root in the reversed graph.
+    R = G.reverse(copy=False)
+    top_level_ids = sorted(R.successors(SNOMED_ROOT))
+
+    # Semantic-type distribution.
+    sem_dist: Dict[str, int] = {}
+    for sem in sem_types.values():
+        sem_dist[sem] = sem_dist.get(sem, 0) + 1
+
+    # Ancestor set size stats (for mapped concepts only).
+    anc_sizes = [len(v) for k, v in ancestors.items() if not k.startswith("descendant:")]
+
+    # Per-anchor descendant counts.
+    desc_sizes = {
+        k[len("descendant:"):]: len(v)
+        for k, v in ancestors.items()
+        if k.startswith("descendant:")
+    }
+
+    missing_mapped = sorted(sid for sid in mapped_ids if sid not in G)
+    anchor_present = {aid: (aid in G) for aid in sorted(mrcm_ids)}
+
+    stats = {
+        "snomed_root":              SNOMED_ROOT,
+        "active_concepts":          G.number_of_nodes(),
+        "is_a_edges":               G.number_of_edges(),
+        "max_depth":                max(depths.values(), default=0),
+        "top_level_hierarchy_ids":  top_level_ids,
+        "top_level_hierarchy_count": len(top_level_ids),
+        "semantic_type_distribution": {k: v for k, v in
+                                        sorted(sem_dist.items(), key=lambda x: -x[1])},
+        "mrcm_anchors_in_graph":    anchor_present,
+        "mapped_concepts_total":    len(mapped_ids),
+        "mapped_concepts_in_graph": len(mapped_ids) - len(missing_mapped),
+        "mapped_concepts_missing":  missing_mapped,
+        "ancestor_set_sizes": {
+            "count": len(anc_sizes),
+            "min":   min(anc_sizes, default=0),
+            "max":   max(anc_sizes, default=0),
+            "mean":  round(mean(anc_sizes), 1) if anc_sizes else 0,
+        },
+        "descendant_set_sizes": desc_sizes,
+        "outputs": {
+            "graph_pkl":    str(GRAPH_PKL),
+            "ancestors_pkl": str(ANCESTORS_PKL),
+            "stats_json":   str(STATS_JSON),
+        },
+    }
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    with STATS_JSON.open("w", encoding="utf-8") as fh:
+        json.dump(stats, fh, indent=2, ensure_ascii=False)
+
+    if verbose:
+        print(f"[1.6] active_concepts={stats['active_concepts']:,}  "
+              f"is_a_edges={stats['is_a_edges']:,}  "
+              f"max_depth={stats['max_depth']}  "
+              f"top_level={stats['top_level_hierarchy_count']}")
+        if missing_mapped:
+            print(f"[1.6] WARNING: {len(missing_mapped)} mapped concepts not in graph")
+        missing_anchors = [k for k, v in anchor_present.items() if not v]
+        if missing_anchors:
+            print(f"[1.6] WARNING: MRCM anchors missing from graph: {missing_anchors}")
+
+    return STATS_JSON
+
+
+# ---------------------------------------------------------------------------
+# Public query helpers (for Phase 3.5 and Phase 4)
+# ---------------------------------------------------------------------------
+
+def get_ancestors(
+    snomed_id: str,
+    ancestors: Dict[str, FrozenSet[str]],
+) -> FrozenSet[str]:
+    """Return precomputed ancestor set for a mapped SNOMED concept."""
+    return ancestors.get(snomed_id, frozenset())
+
+
+def is_descendant_of(
+    concept_id: str,
+    anchor_id: str,
+    ancestors: Dict[str, FrozenSet[str]],
+) -> bool:
+    """True iff concept_id is in the descendant closure of anchor_id.
+
+    Uses the precomputed `descendant:<anchor_id>` set — O(1) lookup.
+    """
+    desc_key = f"descendant:{anchor_id}"
+    desc_set = ancestors.get(desc_key)
+    if desc_set is None:
+        return False
+    return concept_id in desc_set
+
+
+# ---------------------------------------------------------------------------
+# main entry point
+# ---------------------------------------------------------------------------
+
+def main(force: bool = False, verbose: bool = True) -> Path:
+    mapped_ids = _load_mapped_snomed_ids()
+    mrcm_ids   = _load_mrcm_anchor_ids()
+    if verbose:
+        print(f"[1.6] mapped SNOMED IDs={len(mapped_ids):,}  "
+              f"MRCM anchors={len(mrcm_ids)}")
+
+    G, ancestors = load_or_build(force=force, verbose=verbose)
+    return dump_stats(G, ancestors, mapped_ids, mrcm_ids, verbose=verbose)
+
+
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Build SNOMED hierarchy graph (Phase 1.6).")
+    parser.add_argument("--force", action="store_true",
+                        help="Ignore pickled cache and rebuild from RF2 files.")
+    args = parser.parse_args()
+    main(force=args.force, verbose=True)

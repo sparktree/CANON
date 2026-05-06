@@ -27,6 +27,7 @@ import mesh_to_snomed  # noqa: E402
 import mrcm  # noqa: E402
 import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
+import snomed_hierarchy  # noqa: E402
 import umls_query  # noqa: E402
 
 
@@ -92,12 +93,21 @@ def step_1_5() -> None:
     print(f"[1.5] elapsed {time.time() - t0:.1f}s")
 
 
+def step_1_6(force_reparse: bool = False) -> None:
+    _banner("Phase 1.6 -- SNOMED Hierarchy Graph")
+    t0 = time.time()
+    out = snomed_hierarchy.main(force=force_reparse, verbose=True)
+    print(f"[1.6] stats written to {out}")
+    print(f"[1.6] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
     "1.3": step_1_3,
     "1.4": step_1_4,
     "1.5": step_1_5,
+    "1.6": step_1_6,
 }
 
 
@@ -119,8 +129,8 @@ def main() -> None:
     selected = args.only or sorted(STEPS)
     overall = time.time()
     for step_id in selected:
-        if step_id == "1.1":
-            step_1_1(force_reparse=args.force_reparse)
+        if step_id in ("1.1", "1.6"):
+            STEPS[step_id](force_reparse=args.force_reparse)  # type: ignore[call-arg]
         else:
             STEPS[step_id]()  # type: ignore[operator]
     print(f"\n[main] all selected steps done in {time.time() - overall:.1f}s")
