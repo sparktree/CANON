@@ -9,6 +9,9 @@ Currently implemented:
     Phase 1.3 -- Non-MeSH vocabulary scoping audit      (entity_scope.py + scope_audit.py)
     Phase 1.4 -- Relation schema alignment table        (relation_schema.py)
     Phase 1.5 -- MRCM constraint dictionary             (mrcm.py)
+    Phase 1.6 -- SNOMED hierarchy graph                 (snomed_hierarchy.py)
+    Phase 1.7 -- Active-release mapping verification    (mapping_verify.py)
+    Phase 2.1 -- Unified annotation format + converters (unified_format.py + corpus_convert.py)
 """
 
 from __future__ import annotations
@@ -22,7 +25,9 @@ SCRIPTS_DIR = Path(__file__).resolve().parent / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+import corpus_convert  # noqa: E402
 import entity_scope  # noqa: E402
+import mapping_verify  # noqa: E402
 import mesh_to_snomed  # noqa: E402
 import mrcm  # noqa: E402
 import relation_schema  # noqa: E402
@@ -101,6 +106,29 @@ def step_1_6(force_reparse: bool = False) -> None:
     print(f"[1.6] elapsed {time.time() - t0:.1f}s")
 
 
+def step_1_7() -> None:
+    _banner("Phase 1.7 -- Active-release mapping verification")
+    t0 = time.time()
+    summary = mapping_verify.verify(verbose=True)
+    if summary["mapped_rows_inactive"]:
+        print(
+            f"[1.7] {summary['mapped_rows_inactive']} mapped concepts are retired in the loaded "
+            f"SNOMED release; Phase 2.2 must apply a policy (drop / redirect / keep)."
+        )
+    print(f"[1.7] elapsed {time.time() - t0:.1f}s")
+
+
+def step_2_1() -> None:
+    _banner("Phase 2.1 -- Unified annotation format + converters")
+    t0 = time.time()
+    summary = corpus_convert.convert_all(verbose=True)
+    converted = sum(
+        1 for v in summary["corpora"].values() if v.get("status") == "converted"
+    )
+    print(f"[2.1] {converted} corpus paths converted to unified JSONL")
+    print(f"[2.1] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -108,6 +136,8 @@ STEPS = {
     "1.4": step_1_4,
     "1.5": step_1_5,
     "1.6": step_1_6,
+    "1.7": step_1_7,
+    "2.1": step_2_1,
 }
 
 
