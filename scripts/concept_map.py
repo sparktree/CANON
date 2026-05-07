@@ -49,11 +49,11 @@ from pathlib import Path
 from typing import Dict, Iterator, List, Optional, Tuple
 
 try:
-    from config import REPO_ROOT
+    from config import REPO_ROOT, relative_to_repo
     from unified_format import Document, EntityMention, read_jsonl, write_jsonl
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from config import REPO_ROOT
+    from config import REPO_ROOT, relative_to_repo
     from unified_format import Document, EntityMention, read_jsonl, write_jsonl
 
 
@@ -286,7 +286,7 @@ def apply_all(verbose: bool = True) -> dict:
                 "entities":  total_ents,
                 **totals,
                 "mapped_pct": map_pct,
-                "output": str(out_path),
+                "output": relative_to_repo(out_path),
             }
             if verbose:
                 print(

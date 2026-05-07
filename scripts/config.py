@@ -16,6 +16,28 @@ REPO_ROOT = SCRIPT_DIR.parent
 WORKSPACE_ROOT = REPO_ROOT.parent
 
 
+def relative_to_repo(path: Path) -> str:
+    """Render *path* as a forward-slash string relative to REPO_ROOT or WORKSPACE_ROOT.
+
+    Used by every producer that emits a path into a summary JSON so the
+    generated artifacts are byte-identical across Windows / macOS / Linux
+    after a fresh run.
+
+    Anchor order:
+      1. REPO_ROOT (CANON/)         -> e.g. "outputs/phase1/foo.csv"
+      2. WORKSPACE_ROOT (CANON_root/) -> e.g. "Data/BioRED/Train.PubTator"
+                                         (input data lives outside REPO_ROOT)
+      3. absolute string fallback (graceful, never raises)
+    """
+    resolved = path.resolve()
+    for anchor in (REPO_ROOT, WORKSPACE_ROOT):
+        try:
+            return str(resolved.relative_to(anchor)).replace("\\", "/")
+        except ValueError:
+            continue
+    return str(resolved)
+
+
 def _first_existing(candidates: list[Path]) -> Path:
     if not candidates:
         raise ValueError("Expected at least one candidate path.")

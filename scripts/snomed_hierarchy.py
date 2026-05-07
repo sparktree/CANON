@@ -39,13 +39,13 @@ from typing import Dict, FrozenSet, Iterator, Optional, Set
 try:
     import networkx as nx
     from tqdm import tqdm
-    from config import MRCM_FILES, REPO_ROOT, SNOMED_FILES
+    from config import MRCM_FILES, REPO_ROOT, SNOMED_FILES, relative_to_repo
     import mrcm as _mrcm_mod
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import networkx as nx
     from tqdm import tqdm
-    from config import MRCM_FILES, REPO_ROOT, SNOMED_FILES
+    from config import MRCM_FILES, REPO_ROOT, SNOMED_FILES, relative_to_repo
     import mrcm as _mrcm_mod
 
 # ---------------------------------------------------------------------------
@@ -460,9 +460,9 @@ def dump_stats(
         },
         "descendant_set_sizes": desc_sizes,
         "outputs": {
-            "graph_pkl":    str(GRAPH_PKL),
-            "ancestors_pkl": str(ANCESTORS_PKL),
-            "stats_json":   str(STATS_JSON),
+            "graph_pkl":    relative_to_repo(GRAPH_PKL),
+            "ancestors_pkl": relative_to_repo(ANCESTORS_PKL),
+            "stats_json":   relative_to_repo(STATS_JSON),
         },
     }
 

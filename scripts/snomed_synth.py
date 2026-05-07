@@ -34,13 +34,13 @@ from pathlib import Path
 from typing import Dict, FrozenSet, Iterator, List, Set, Tuple
 
 try:
-    from config import REPO_ROOT, SNOMED_FILES
+    from config import REPO_ROOT, SNOMED_FILES, relative_to_repo
     import mrcm
     import snomed_hierarchy
     from unified_format import Document, EntityMention, Relation, write_jsonl
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from config import REPO_ROOT, SNOMED_FILES
+    from config import REPO_ROOT, SNOMED_FILES, relative_to_repo
     import mrcm
     import snomed_hierarchy
     from unified_format import Document, EntityMention, Relation, write_jsonl
@@ -287,7 +287,7 @@ def generate_all(verbose: bool = True) -> dict:
             "event":            _EVENT,
             "procedure":        _PROCEDURE,
         },
-        "outputs": {"train_jsonl": str(SYNTH_JSONL)},
+        "outputs": {"train_jsonl": relative_to_repo(SYNTH_JSONL)},
     }
 
     with SUMMARY_JSON.open("w", encoding="utf-8") as fh:

@@ -36,10 +36,10 @@ from pathlib import Path
 from typing import Iterator, Set
 
 try:
-    from config import REPO_ROOT, SNOMED_FILES
+    from config import REPO_ROOT, SNOMED_FILES, relative_to_repo
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from config import REPO_ROOT, SNOMED_FILES
+    from config import REPO_ROOT, SNOMED_FILES, relative_to_repo
 
 
 OUTPUT_DIR = REPO_ROOT / "outputs" / "phase1"
@@ -135,8 +135,8 @@ def verify(verbose: bool = True) -> dict:
         ),
         "release_concepts_file": SNOMED_FILES["concepts"].name,
         "outputs": {
-            "verified_csv": str(VERIFIED_CSV),
-            "inactive_csv": str(INACTIVE_CSV),
+            "verified_csv": relative_to_repo(VERIFIED_CSV),
+            "inactive_csv": relative_to_repo(INACTIVE_CSV),
         },
     }
     with SUMMARY_JSON.open("w", encoding="utf-8") as fh:

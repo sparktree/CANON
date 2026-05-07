@@ -25,13 +25,13 @@ from pathlib import Path
 from typing import Dict, Iterator, List, Optional, Tuple
 
 try:
-    from config import BIORED_FILES, CDR_FILES, DATA_ROOT, REPO_ROOT
+    from config import BIORED_FILES, CDR_FILES, DATA_ROOT, REPO_ROOT, relative_to_repo
     from utils import parse_pubtator
     import entity_scope
     from unified_format import Document, EntityMention, Relation, write_jsonl
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from config import BIORED_FILES, CDR_FILES, DATA_ROOT, REPO_ROOT
+    from config import BIORED_FILES, CDR_FILES, DATA_ROOT, REPO_ROOT, relative_to_repo
     from utils import parse_pubtator
     import entity_scope
     from unified_format import Document, EntityMention, Relation, write_jsonl
@@ -355,8 +355,8 @@ def convert_all(verbose: bool = True) -> dict:
                 "documents": n_docs,
                 "entities": n_ent,
                 "relations": n_rel,
-                "input": str(path),
-                "output": str(out_path),
+                "input": relative_to_repo(path),
+                "output": relative_to_repo(out_path),
             }
             if verbose:
                 print(

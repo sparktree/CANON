@@ -2,6 +2,11 @@
   "model": "cambridgeltl/SapBERT-from-PubMedBERT-fulltext",
   "temperature": 0.05,
   "neighbourhood_cap": 30,
+  "weights": {
+    "string": 0.3333333333333333,
+    "ontological": 0.3333333333333333,
+    "ic": 0.3333333333333333
+  },
   "total_mesh_ids": 2750,
   "candidates_per_mesh": {
     "min": 1,
@@ -9,11 +14,16 @@
     "mean": 26.36
   },
   "primary_concept_probability": {
-    "min": 0.0,
+    "min": 0.2902,
     "max": 1.0,
-    "mean": 0.6821
+    "mean": 0.9592
+  },
+  "signal_means_over_candidates": {
+    "sim_string": 0.533,
+    "sim_ontological": 0.4248,
+    "sim_ic": 0.7539
   },
   "outputs": {
-    "lookup": "/Volumes/Khurrum/AdvMLinCL/CANON/outputs/phase2/soft_mapping_lookup.json"
+    "lookup": "outputs/phase2/soft_mapping_lookup.json"
   }
 }

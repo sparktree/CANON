@@ -1,29 +1,50 @@
 """Soft mapping preprocessing for CANON Phase 2.4.
 
-For every MeSH→SNOMED mapping in mesh_to_snomed_verified.csv, produces a
-probability distribution over nearby SNOMED candidates using SapBERT cosine
-similarity. The lookup is consumed by the concept normalization head in Phase 3
-as soft training labels.
+For every MeSH->SNOMED mapping in mesh_to_snomed_verified.csv, produces a
+probability distribution over nearby SNOMED candidates using the three
+similarity signals the plan specifies:
+
+    sim_string       -- SapBERT cosine similarity (cambridgeltl/SapBERT-from-
+                        PubMedBERT-fulltext) between the MeSH preferred term
+                        and the candidate SNOMED preferred term. Captures
+                        surface-form / lexical similarity in a learned space.
+    sim_ontological  -- 1 / (1 + hop_dist) where hop_dist is the is-a graph
+                        distance (0 for primary, 1 for parent/child, 2 for
+                        grandparent/grandchild/sibling). Captures structural
+                        proximity in the SNOMED hierarchy.
+    sim_ic           -- Lin similarity using Resnik information content over
+                        the SNOMED is-a graph: 2 * IC(LCA) / (IC(c1) + IC(c2))
+                        with IC(c) = -log2(|descendants(c)+1| / |G|). Captures
+                        taxonomic similarity weighted by concept specificity:
+                        an LCA deep in the hierarchy (high IC) means the two
+                        concepts share a specific common reading; an LCA near
+                        the root (low IC) means they share only a generic
+                        ancestor.
+
+The three signals are summed with equal weights (W_STRING=W_ONTO=W_IC=1/3),
+then softmax(/, TEMPERATURE) produces the soft distribution. Each signal is
+also persisted alongside the candidate so downstream code (Phase 3 CN head,
+Phase 4.6 attribution) can interrogate which signal contributed.
 
 Neighbourhood: for each primary SNOMED concept, collects parents, grandparents,
 children, grandchildren, and siblings up to NEIGHBOURHOOD_CAP candidates.
-SapBERT (cambridgeltl/SapBERT-from-PubMedBERT-fulltext) encodes all terms in
-one batched pass; softmax with TEMPERATURE=0.05 sharpens the distribution so
-the primary concept dominates.
 
 Outputs:
-    outputs/phase2/soft_mapping_lookup.json   -- {mesh_id: [{snomed_id, term, prob, hop_dist}, ...]}
-    outputs/phase2/soft_mapping_summary.json  -- aggregate statistics
+    outputs/phase2/soft_mapping_lookup.json   -- {mesh_id: [{snomed_id, term,
+                                                  prob, hop_dist, sim_string,
+                                                  sim_ontological, sim_ic}, ...]}
+    outputs/phase2/soft_mapping_summary.json  -- aggregate statistics + weights
 """
 
 from __future__ import annotations
 
 import csv
 import json
+import math
 import re
 import sys
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, FrozenSet, List, Set, Tuple
 
 import numpy as np
 
@@ -36,13 +57,13 @@ except ImportError as exc:
     ) from exc
 
 try:
-    from config import REPO_ROOT
+    from config import REPO_ROOT, relative_to_repo
     import mrcm
     import snomed_hierarchy
     import umls_query
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from config import REPO_ROOT
+    from config import REPO_ROOT, relative_to_repo
     import mrcm
     import snomed_hierarchy
     import umls_query
@@ -56,6 +77,11 @@ SUMMARY_JSON = OUTPUT_DIR / "soft_mapping_summary.json"
 SAPBERT_MODEL      = "cambridgeltl/SapBERT-from-PubMedBERT-fulltext"
 NEIGHBOURHOOD_CAP  = 30
 TEMPERATURE        = 0.05
+
+# Three-signal weights. Equal default; tunable.
+W_STRING           = 1.0 / 3
+W_ONTOLOGICAL      = 1.0 / 3
+W_IC               = 1.0 / 3
 
 _FSN_SUFFIX = re.compile(r"\s*\([^)]+\)\s*$")
 
@@ -150,6 +176,62 @@ def _softmax(sims: np.ndarray, temperature: float) -> np.ndarray:
     return exp_logits / exp_logits.sum()
 
 
+def _compute_ic_and_ancestors(
+    G,
+    concepts: Set[str],
+    verbose: bool = False,
+) -> Tuple[Dict[str, FrozenSet[str]], Dict[str, float]]:
+    """Compute ancestor-with-self closures and Resnik IC for each concept.
+
+    IC(c) = -log2((|descendants(c)| + 1) / |G_active|), so leaves have the
+    maximum IC and the root has the minimum (0). Both BFS calls reuse the
+    Phase 1.6 graph helpers and run in the order of seconds for ~60K concepts.
+    """
+    from snomed_hierarchy import _bfs_ancestors, _bfs_descendants
+
+    total_active = G.number_of_nodes()
+    if verbose:
+        print(f"[2.4]   computing ancestors + IC for {len(concepts):,} concepts ...", flush=True)
+
+    ancestors: Dict[str, FrozenSet[str]] = {}
+    ic: Dict[str, float] = {}
+    for c in concepts:
+        if c not in G:
+            ancestors[c] = frozenset({c})
+            ic[c] = 0.0
+            continue
+        ancestors[c] = _bfs_ancestors(G, c) | {c}
+        desc_count = len(_bfs_descendants(G, c)) + 1  # include self
+        ic[c] = -math.log2(desc_count / total_active) if desc_count > 0 else 0.0
+    return ancestors, ic
+
+
+def _lin_similarity(
+    c1: str,
+    c2: str,
+    ancestors: Dict[str, FrozenSet[str]],
+    ic: Dict[str, float],
+) -> float:
+    """Lin similarity = 2 * IC(LCA(c1,c2)) / (IC(c1) + IC(c2)).
+
+    LCA in a DAG is the common ancestor with the highest IC (most specific
+    shared ancestor). Returns 1.0 when c1 == c2, 0.0 when no common ancestor
+    exists or both concepts are root-level (zero IC).
+    """
+    if c1 == c2:
+        return 1.0
+    a1 = ancestors.get(c1, frozenset())
+    a2 = ancestors.get(c2, frozenset())
+    common = a1 & a2
+    if not common:
+        return 0.0
+    lca_ic = max((ic.get(a, 0.0) for a in common), default=0.0)
+    denom = ic.get(c1, 0.0) + ic.get(c2, 0.0)
+    if denom <= 0.0:
+        return 0.0
+    return 2.0 * lca_ic / denom
+
+
 def apply_all(verbose: bool = True) -> Path:
     if not VERIFIED_CSV.exists():
         raise FileNotFoundError(f"{VERIFIED_CSV} not found; run Phase 1.7 first.")
@@ -212,23 +294,63 @@ def apply_all(verbose: bool = True) -> Path:
     snomed_embs = all_embeddings[: len(snomed_terms_list)]  # (N_snomed, 768)
     mesh_embs   = all_embeddings[len(snomed_terms_list):]   # (N_mesh,   768)
 
-    # Compute soft distributions
+    # Precompute ancestor closures + Resnik IC for the union of every primary
+    # SNOMED ID and every neighbourhood candidate. Used by the Lin-similarity
+    # signal in the loop below.
+    concepts_for_ic: Set[str] = set(all_snomed_ids)
+    concepts_for_ic.update(d["primary_snomed_id"] for d in mesh_data)
+    ancestors_cache, ic_cache = _compute_ic_and_ancestors(
+        G, concepts_for_ic, verbose=verbose
+    )
+
+    # Compute soft distributions over the three signals.
     lookup: Dict[str, List[Dict]] = {}
+    sim_string_means: List[float] = []
+    sim_onto_means: List[float] = []
+    sim_ic_means: List[float] = []
     for i, d in enumerate(mesh_data):
         neighbourhood = d["neighbourhood"]
+        primary_id    = d["primary_snomed_id"]
         mesh_emb      = mesh_embs[i]
 
         cand_ids  = [cid  for cid, _   in neighbourhood]
         cand_hops = [hop  for _,   hop in neighbourhood]
         cand_embs = snomed_embs[[snomed_id_to_idx[cid] for cid in cand_ids]]
 
-        sims  = cand_embs @ mesh_emb  # cosine sims (both L2-normalised)
-        probs = _softmax(sims, TEMPERATURE)
+        # Signal 1: SapBERT cosine in [-1, 1] -- string/lexical similarity.
+        sim_string = cand_embs @ mesh_emb
+
+        # Signal 2: ontological proximity 1/(1+hop) in (0, 1].
+        sim_onto = np.array([1.0 / (1.0 + h) for h in cand_hops], dtype=np.float32)
+
+        # Signal 3: Lin similarity (taxonomic via IC(LCA)) in [0, 1].
+        sim_ic = np.array(
+            [_lin_similarity(primary_id, cid, ancestors_cache, ic_cache)
+             for cid in cand_ids],
+            dtype=np.float32,
+        )
+
+        # Combined logit (equal weights by default).
+        combined = (
+            W_STRING       * sim_string +
+            W_ONTOLOGICAL  * sim_onto +
+            W_IC           * sim_ic
+        )
+        probs = _softmax(combined, TEMPERATURE)
+
+        sim_string_means.append(float(sim_string.mean()))
+        sim_onto_means.append(float(sim_onto.mean()))
+        sim_ic_means.append(float(sim_ic.mean()))
 
         candidates = [
-            {"snomed_id": cid, "term": descs.get(cid, cid),
-             "prob": round(float(p), 6), "hop_dist": hop}
-            for cid, hop, p in zip(cand_ids, cand_hops, probs.tolist())
+            {"snomed_id": cid,
+             "term": descs.get(cid, cid),
+             "prob": round(float(p), 6),
+             "hop_dist": hop,
+             "sim_string":      round(float(sim_string[k]), 4),
+             "sim_ontological": round(float(sim_onto[k]),   4),
+             "sim_ic":          round(float(sim_ic[k]),     4)}
+            for k, (cid, hop, p) in enumerate(zip(cand_ids, cand_hops, probs.tolist()))
         ]
         candidates.sort(key=lambda x: -x["prob"])
         lookup[d["mesh_id"]] = candidates
@@ -250,6 +372,11 @@ def apply_all(verbose: bool = True) -> Path:
         "model": SAPBERT_MODEL,
         "temperature": TEMPERATURE,
         "neighbourhood_cap": NEIGHBOURHOOD_CAP,
+        "weights": {
+            "string":       W_STRING,
+            "ontological":  W_ONTOLOGICAL,
+            "ic":           W_IC,
+        },
         "total_mesh_ids": len(lookup),
         "candidates_per_mesh": {
             "min":  min(cand_counts),
@@ -261,7 +388,12 @@ def apply_all(verbose: bool = True) -> Path:
             "max":  round(max(primary_probs),  4) if primary_probs else 0.0,
             "mean": round(sum(primary_probs) / len(primary_probs), 4) if primary_probs else 0.0,
         },
-        "outputs": {"lookup": str(LOOKUP_JSON)},
+        "signal_means_over_candidates": {
+            "sim_string":      round(sum(sim_string_means) / len(sim_string_means), 4) if sim_string_means else 0.0,
+            "sim_ontological": round(sum(sim_onto_means)   / len(sim_onto_means),   4) if sim_onto_means   else 0.0,
+            "sim_ic":          round(sum(sim_ic_means)     / len(sim_ic_means),     4) if sim_ic_means     else 0.0,
+        },
+        "outputs": {"lookup": relative_to_repo(LOOKUP_JSON)},
     }
     with SUMMARY_JSON.open("w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2, ensure_ascii=False)

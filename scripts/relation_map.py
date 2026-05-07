@@ -49,12 +49,12 @@ from pathlib import Path
 from typing import Dict, Iterator, List, Tuple
 
 try:
-    from config import REPO_ROOT
+    from config import REPO_ROOT, relative_to_repo
     import relation_schema
     from unified_format import Document, Relation, read_jsonl, write_jsonl
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from config import REPO_ROOT
+    from config import REPO_ROOT, relative_to_repo
     import relation_schema
     from unified_format import Document, Relation, read_jsonl, write_jsonl
 
@@ -254,7 +254,7 @@ def apply_all(verbose: bool = True) -> dict:
                 "defaulted": n_default,
                 "multi_candidate": n_multi,
                 "target_distribution": dict(split_target.most_common()),
-                "output": str(out_path),
+                "output": relative_to_repo(out_path),
             }
             if verbose:
                 print(
