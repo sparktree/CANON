@@ -14,6 +14,8 @@ Currently implemented:
     Phase 2.1 -- Unified annotation format + converters (unified_format.py + corpus_convert.py)
     Phase 2.2 -- Apply SNOMED concept mappings          (concept_map.py)
     Phase 2.3 -- Apply unified relation labels          (relation_map.py)
+    Phase 2.4 -- Soft mapping preprocessing             (soft_map.py)
+    Phase 2.5 -- SNOMED-derived synthetic Tier-1 data   (snomed_synth.py)
 """
 
 from __future__ import annotations
@@ -37,6 +39,8 @@ import relation_map  # noqa: E402
 import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
 import snomed_hierarchy  # noqa: E402
+import snomed_synth  # noqa: E402
+import soft_map  # noqa: E402
 import umls_query  # noqa: E402
 
 
@@ -159,6 +163,24 @@ def step_2_3() -> None:
     print(f"[2.3] elapsed {time.time() - t0:.1f}s")
 
 
+def step_2_4() -> None:
+    _banner("Phase 2.4 -- Soft mapping preprocessing")
+    t0 = time.time()
+    out = soft_map.apply_all(verbose=True)
+    print(f"[2.4] lookup -> {out}")
+    print(f"[2.4] elapsed {time.time() - t0:.1f}s")
+
+
+def step_2_5() -> None:
+    _banner("Phase 2.5 -- SNOMED-derived synthetic Tier-1 data")
+    t0 = time.time()
+    summary = snomed_synth.generate_all(verbose=True)
+    for attr, n in summary["counts_by_attribute"].items():
+        print(f"[2.5]   {attr}: {n:,} triples")
+    print(f"[2.5] total: {summary['total_documents']:,} synthetic documents")
+    print(f"[2.5] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -170,6 +192,8 @@ STEPS = {
     "2.1": step_2_1,
     "2.2": step_2_2,
     "2.3": step_2_3,
+    "2.4": step_2_4,
+    "2.5": step_2_5,
 }
 
 

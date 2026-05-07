@@ -366,6 +366,11 @@ def load_json(path: Optional[Path] = None) -> Dict[str, object]:
         return json.load(fh)
 
 
+def get_descriptions(concept_ids: Set[str]) -> Dict[str, str]:
+    """Public wrapper around _load_descriptions for use by Phase 2.4/2.5."""
+    return _load_descriptions(concept_ids)
+
+
 def get_constraint(relation_label: str, constraints: Optional[Dict[str, object]] = None) -> Optional[Dict[str, object]]:
     if constraints is None:
         constraints = load_json()
