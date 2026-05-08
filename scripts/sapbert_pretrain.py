@@ -166,11 +166,55 @@ def count_pairs_per_epoch(
 # Pair sampling
 # ---------------------------------------------------------------------------
 
-class SnomedPairDataset(IterableDataset):
-    """Iterable stream of (term_a, term_b, concept_id) triples for one epoch.
+def precompute_term_tokens(
+    concept_to_terms: Dict[str, List[str]],
+    tokenizer,
+    max_length: int,
+    logger: logging.Logger,
+) -> Tuple[Dict[str, List[List[int]]], Dict[str, List[int]]]:
+    """Tokenize every unique term once; index concepts by term position.
 
-    Each iteration shuffles concepts then yields up to `pairs_per_concept`
-    random unique pairs per concept. Stops when `pairs_per_epoch` is reached.
+    Returns:
+        term_tokens: dict with keys 'input_ids' and 'attention_mask', each a
+                     List[List[int]] of length N_unique (unpadded; collate pads).
+        concept_to_idxs: dict[concept_id -> list of term indices into term_tokens].
+    """
+    unique_terms: List[str] = []
+    term_to_idx: Dict[str, int] = {}
+    concept_to_idxs: Dict[str, List[int]] = {}
+    for cid, terms in concept_to_terms.items():
+        idxs: List[int] = []
+        for t in terms:
+            j = term_to_idx.get(t)
+            if j is None:
+                j = len(unique_terms)
+                term_to_idx[t] = j
+                unique_terms.append(t)
+            idxs.append(j)
+        concept_to_idxs[cid] = idxs
+    logger.info(f"  pre-tokenizing {len(unique_terms):,} unique terms (max_length={max_length}) ...")
+    t0 = time.time()
+    encoded = tokenizer(
+        unique_terms,
+        truncation=True,
+        max_length=max_length,
+        padding=False,
+        return_attention_mask=True,
+    )
+    logger.info(f"  tokenization done in {time.time() - t0:.1f}s")
+    return (
+        {"input_ids": encoded["input_ids"], "attention_mask": encoded["attention_mask"]},
+        concept_to_idxs,
+    )
+
+
+class SnomedPairIndexDataset(IterableDataset):
+    """Iterable stream of (idx_a, idx_b, concept_id) triples for one epoch.
+
+    Indices reference a pre-tokenized term pool, so collate avoids per-batch
+    tokenizer calls. Each iteration shuffles concepts then yields up to
+    `max_pairs_per_concept` random unique index pairs per concept; stops when
+    `pairs_per_epoch` is reached.
 
     Single-process (DataLoader num_workers=0) is intended; IterableDataset
     sharding across workers is overkill given how cheap this generation is.
@@ -178,52 +222,51 @@ class SnomedPairDataset(IterableDataset):
 
     def __init__(
         self,
-        concept_to_terms: Dict[str, List[str]],
+        concept_to_idxs: Dict[str, List[int]],
         pairs_per_epoch: int,
         max_pairs_per_concept: int,
         seed: int,
     ) -> None:
-        self.concept_terms = list(concept_to_terms.items())
+        self.items = list(concept_to_idxs.items())
         self.pairs_per_epoch = pairs_per_epoch
         self.max_pairs_per_concept = max_pairs_per_concept
         self.seed = seed
 
-    def __iter__(self) -> Iterator[Tuple[str, str, str]]:
+    def __iter__(self) -> Iterator[Tuple[int, int, str]]:
         rng = random.Random(self.seed)
-        concepts = list(self.concept_terms)
-        rng.shuffle(concepts)
+        items = list(self.items)
+        rng.shuffle(items)
         n = 0
-        for concept_id, terms in concepts:
-            n_max = min(len(terms) * (len(terms) - 1) // 2, self.max_pairs_per_concept)
+        for concept_id, idxs in items:
+            if len(idxs) < 2:
+                continue
+            n_max = min(len(idxs) * (len(idxs) - 1) // 2, self.max_pairs_per_concept)
             for _ in range(n_max):
-                a, b = rng.sample(terms, 2)
+                a, b = rng.sample(idxs, 2)
                 yield a, b, concept_id
                 n += 1
                 if n >= self.pairs_per_epoch:
                     return
 
 
-def collate_pairs(
-    batch: List[Tuple[str, str, str]],
+def collate_pair_indices(
+    batch: List[Tuple[int, int, str]],
+    term_tokens: Dict[str, List[List[int]]],
     tokenizer,
-    max_length: int,
 ):
-    terms: List[str] = []
+    input_ids_pool = term_tokens["input_ids"]
+    attn_pool = term_tokens["attention_mask"]
+    features: List[Dict[str, List[int]]] = []
     labels: List[int] = []
     label_to_idx: Dict[str, int] = {}
     for a, b, cid in batch:
         if cid not in label_to_idx:
             label_to_idx[cid] = len(label_to_idx)
         idx = label_to_idx[cid]
-        terms.extend([a, b])
+        features.append({"input_ids": input_ids_pool[a], "attention_mask": attn_pool[a]})
+        features.append({"input_ids": input_ids_pool[b], "attention_mask": attn_pool[b]})
         labels.extend([idx, idx])
-    encoded = tokenizer(
-        terms,
-        padding=True,
-        truncation=True,
-        max_length=max_length,
-        return_tensors="pt",
-    )
+    encoded = tokenizer.pad(features, padding=True, return_tensors="pt")
     return encoded, torch.tensor(labels, dtype=torch.long)
 
 
@@ -326,7 +369,15 @@ def train_one_epoch(
     return {"avg_loss": epoch_avg, "steps": len(losses), "elapsed_s": time.time() - t0}
 
 
-def save_checkpoint(model, tokenizer, dst: Path, train_state: Dict[str, object]) -> None:
+def save_checkpoint(
+    model,
+    tokenizer,
+    dst: Path,
+    train_state: Dict[str, object],
+    optimizer=None,
+    scheduler=None,
+    scaler=None,
+) -> None:
     dst.mkdir(parents=True, exist_ok=True)
     # save_pretrained handles model bin + config; tokenizer files written separately
     model.save_pretrained(dst)
@@ -335,6 +386,12 @@ def save_checkpoint(model, tokenizer, dst: Path, train_state: Dict[str, object])
         (dst / "train_state.json").write_text(
             json.dumps(train_state, indent=2), encoding="utf-8"
         )
+    if optimizer is not None:
+        torch.save(optimizer.state_dict(), dst / "optimizer.pt")
+    if scheduler is not None:
+        torch.save(scheduler.state_dict(), dst / "scheduler.pt")
+    if scaler is not None:
+        torch.save(scaler.state_dict(), dst / "scaler.pt")
 
 
 # ---------------------------------------------------------------------------
@@ -364,6 +421,12 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--log-interval",      type=int,   default=50)
     p.add_argument("--smoke-test",        action="store_true",
                    help="Quick local sanity run: 1 epoch, ~1 K pairs, batch 8.")
+    p.add_argument("--resume-from",       default=None,
+                   help="Resume training from a checkpoint dir (e.g. .../checkpoints/epoch_03). "
+                        "Loads model + optimizer + scheduler + scaler state and continues "
+                        "with the same total_steps / warmup_steps schedule. Requires the "
+                        "checkpoint to contain optimizer.pt and scheduler.pt; original "
+                        "--epochs / --batch-size / --pairs-per-concept must be preserved.")
     return p.parse_args()
 
 
@@ -427,10 +490,15 @@ def main() -> None:
         pairs_per_epoch = min(pairs_per_epoch, args.max_pairs)
     logger.info(f"  pairs_per_epoch       = {pairs_per_epoch:,}")
 
-    logger.info("loading model + tokenizer ...")
-    tokenizer = AutoTokenizer.from_pretrained(args.biolinkbert_dir)
-    model = AutoModel.from_pretrained(args.biolinkbert_dir)
+    model_src = args.resume_from or args.biolinkbert_dir
+    logger.info(f"loading model + tokenizer from {model_src} ...")
+    tokenizer = AutoTokenizer.from_pretrained(model_src)
+    model = AutoModel.from_pretrained(model_src)
     model.to(device)
+
+    term_tokens, concept_to_idxs = precompute_term_tokens(
+        concept_to_terms, tokenizer, args.max_length, logger
+    )
 
     steps_per_epoch = max(pairs_per_epoch // args.batch_size, 1)
     total_steps = steps_per_epoch * args.epochs
@@ -442,13 +510,51 @@ def main() -> None:
     scheduler = get_linear_schedule_with_warmup(optimizer, warmup_steps, total_steps)
     scaler = torch.amp.GradScaler(device="cuda") if use_amp else None
 
+    start_epoch = 0
+    if args.resume_from:
+        resume_path = Path(args.resume_from)
+        state_path = resume_path / "train_state.json"
+        if not state_path.exists():
+            raise SystemExit(f"--resume-from: missing train_state.json at {state_path}")
+        saved = json.loads(state_path.read_text(encoding="utf-8"))
+        saved_total = saved.get("total_steps")
+        saved_warmup = saved.get("warmup_steps")
+        if saved_total is not None and saved_total != total_steps:
+            raise SystemExit(
+                f"--resume-from: total_steps mismatch (saved={saved_total}, current={total_steps}). "
+                f"Use the same --epochs / --batch-size / --pairs-per-concept as the original run."
+            )
+        if saved_warmup is not None and saved_warmup != warmup_steps:
+            raise SystemExit(
+                f"--resume-from: warmup_steps mismatch (saved={saved_warmup}, current={warmup_steps})."
+            )
+        opt_path = resume_path / "optimizer.pt"
+        sched_path = resume_path / "scheduler.pt"
+        if not opt_path.exists() or not sched_path.exists():
+            raise SystemExit(
+                f"--resume-from: {resume_path} is model-only (no optimizer.pt / scheduler.pt). "
+                f"This checkpoint predates resume support; either start fresh or wait for "
+                f"a future epoch checkpoint that includes full state."
+            )
+        optimizer.load_state_dict(torch.load(opt_path, map_location=device))
+        scheduler.load_state_dict(torch.load(sched_path, map_location=device))
+        if scaler is not None:
+            scaler_path = resume_path / "scaler.pt"
+            if scaler_path.exists():
+                scaler.load_state_dict(torch.load(scaler_path, map_location=device))
+        start_epoch = int(saved["epoch"])
+        logger.info(
+            f"resumed from {resume_path} -- starting at epoch {start_epoch + 1}/{args.epochs} "
+            f"(scheduler last_step={scheduler.last_epoch})"
+        )
+
     Path(args.checkpoints_dir).mkdir(parents=True, exist_ok=True)
     epoch_logs: List[Dict[str, object]] = []
 
-    for epoch in range(args.epochs):
+    for epoch in range(start_epoch, args.epochs):
         logger.info(f"epoch {epoch + 1}/{args.epochs} starting")
-        dataset = SnomedPairDataset(
-            concept_to_terms,
+        dataset = SnomedPairIndexDataset(
+            concept_to_idxs,
             pairs_per_epoch=pairs_per_epoch,
             max_pairs_per_concept=args.pairs_per_concept,
             seed=args.seed + epoch,
@@ -456,7 +562,7 @@ def main() -> None:
         loader = DataLoader(
             dataset,
             batch_size=args.batch_size,
-            collate_fn=lambda b: collate_pairs(b, tokenizer, args.max_length),
+            collate_fn=lambda b: collate_pair_indices(b, term_tokens, tokenizer),
             num_workers=args.num_workers,
             pin_memory=(device.type == "cuda"),
         )
@@ -469,14 +575,22 @@ def main() -> None:
             f"steps={epoch_stats['steps']}  elapsed={epoch_stats['elapsed_s']:.0f}s"
         )
         ckpt_dir = Path(args.checkpoints_dir) / f"epoch_{epoch + 1:02d}"
-        save_checkpoint(model, tokenizer, ckpt_dir, {
-            "epoch": epoch + 1,
-            "avg_loss": epoch_stats["avg_loss"],
-            "steps": epoch_stats["steps"],
-            "elapsed_s": epoch_stats["elapsed_s"],
-            "biolinkbert_dir": args.biolinkbert_dir,
-            "smoke_test": args.smoke_test,
-        })
+        save_checkpoint(
+            model, tokenizer, ckpt_dir,
+            {
+                "epoch": epoch + 1,
+                "avg_loss": epoch_stats["avg_loss"],
+                "steps": epoch_stats["steps"],
+                "elapsed_s": epoch_stats["elapsed_s"],
+                "biolinkbert_dir": args.biolinkbert_dir,
+                "smoke_test": args.smoke_test,
+                "total_steps": total_steps,
+                "warmup_steps": warmup_steps,
+            },
+            optimizer=optimizer,
+            scheduler=scheduler,
+            scaler=scaler,
+        )
         logger.info(f"  saved checkpoint -> {relative_to_repo(ckpt_dir)}")
         epoch_logs.append({
             "epoch": epoch + 1,

@@ -13,9 +13,9 @@
     "silver_source": "outputs/phase2/silver/PubTator3/train.jsonl"
   },
   "documents_written": {
-    "train": 40138,
-    "dev": 503,
-    "test": 505
+    "train": 40946,
+    "dev": 499,
+    "test": 500
   },
   "expected_gold_sizes": {
     "BioRED": [
@@ -34,22 +34,22 @@
     "per_corpus_seen": {
       "BioRED": 600,
       "BC5CDR": 1500,
-      "SNOMED_synthetic": 32696,
+      "SNOMED_synthetic": 33504,
       "PubTator3_silver": 6542
     },
     "per_corpus_kept": {
       "BioRED": 564,
-      "BC5CDR": 1344,
-      "SNOMED_synthetic": 32696,
+      "BC5CDR": 1335,
+      "SNOMED_synthetic": 33504,
       "PubTator3_silver": 6542
     },
     "splits": {
       "train": {
-        "documents": 40138,
+        "documents": 40946,
         "kept_by_corpus": {
           "BioRED": 400,
           "BC5CDR": 500,
-          "SNOMED_synthetic": 32696,
+          "SNOMED_synthetic": 33504,
           "PubTator3_silver": 6542
         },
         "dropped_by_corpus": {},
@@ -60,17 +60,17 @@
         "drop_reason_details": {}
       },
       "dev": {
-        "documents": 503,
+        "documents": 499,
         "kept_by_corpus": {
           "BioRED": 80,
-          "BC5CDR": 423
+          "BC5CDR": 419
         },
         "dropped_by_corpus": {
           "BioRED": 20,
-          "BC5CDR": 77
+          "BC5CDR": 81
         },
         "drop_causes": {
-          "mapped_but_inactive": 46,
+          "mapped_but_inactive": 50,
           "no_verified_mapping": 51
         },
         "drop_reason_details": {
@@ -106,6 +106,7 @@
           "mapped_but_inactive:chemical:D000662": 2,
           "mapped_but_inactive:chemical:D004041": 1,
           "no_verified_mapping:chemical:C071741": 2,
+          "mapped_but_inactive:disease:D006402": 3,
           "mapped_but_inactive:disease:D007239": 8,
           "mapped_but_inactive:disease:D010673": 1,
           "no_verified_mapping:chemical:C059262": 1,
@@ -137,22 +138,23 @@
           "no_verified_mapping:chemical:C084178": 1,
           "no_verified_mapping:chemical:C081489": 1,
           "no_verified_mapping:chemical:C012052": 1,
+          "mapped_but_inactive:disease:D009436": 1,
           "no_verified_mapping:chemical:C005435": 1,
           "no_verified_mapping:chemical:C044650": 1
         }
       },
       "test": {
-        "documents": 505,
+        "documents": 500,
         "kept_by_corpus": {
           "BioRED": 84,
-          "BC5CDR": 421
+          "BC5CDR": 416
         },
         "dropped_by_corpus": {
           "BioRED": 16,
-          "BC5CDR": 79
+          "BC5CDR": 84
         },
         "drop_causes": {
-          "mapped_but_inactive": 30,
+          "mapped_but_inactive": 35,
           "no_verified_mapping": 65
         },
         "drop_reason_details": {
@@ -184,6 +186,7 @@
           "no_verified_mapping:chemical:C086816": 1,
           "mapped_but_inactive:disease:D004830": 3,
           "no_verified_mapping:chemical:C065180": 1,
+          "mapped_but_inactive:disease:D006402": 4,
           "no_verified_mapping:chemical:C069541": 2,
           "no_verified_mapping:disease:C562750": 1,
           "no_verified_mapping:chemical:C041359": 1,
@@ -205,6 +208,7 @@
           "mapped_but_inactive:disease:D062787": 3,
           "mapped_but_inactive:chemical:D003276": 2,
           "mapped_but_inactive:chemical:D000530": 1,
+          "mapped_but_inactive:disease:D020195": 1,
           "no_verified_mapping:chemical:C019248": 1,
           "no_verified_mapping:chemical:C096012": 1,
           "no_verified_mapping:chemical:C065757": 1,

@@ -21,6 +21,11 @@ Currently implemented:
     Phase 2.7 -- Train/Dev/Test split assembly          (assemble_splits.py)
     Phase 3.1 -- SapBERT-style pre-training of BioLinkBERT (sapbert_pretrain.py)
                  [HPC-targeted; main.py runs --smoke-test mode for orchestration sanity]
+    Phase 3.2 -- Concept index + multi-task model self-test  (build_concept_index.py + heads.py)
+    Phase 3.3 -- Stage 1 per-head training                   (train_stage1.py)
+    Phase 3.4 -- Stage 2 joint multi-task training           (train_stage2.py)
+    Phase 3.5 -- CSP solver (Z3 + MRCM constraints)          (csp_solver.py)
+    Phase 3.6 -- Stage 3 CSP-feedback fine-tune              (train_stage3.py)
 """
 
 from __future__ import annotations
@@ -232,6 +237,94 @@ def step_3_1() -> None:
     print(f"[3.1] elapsed {time.time() - t0:.1f}s")
 
 
+def _run_subprocess(script: str, label: str, extra_args: list[str] | None = None) -> int:
+    import subprocess
+    cmd = [sys.executable, str(SCRIPTS_DIR / script), "--smoke-test"]
+    if extra_args:
+        cmd.extend(extra_args)
+    rc = subprocess.call(cmd)
+    if rc != 0:
+        print(f"[{label}] smoke test failed (rc={rc})")
+    return rc
+
+
+def step_3_2() -> None:
+    """Build the concept index (smoke-cap 5K) and assemble the multi-task model.
+
+    Production indexing of all ~370K active SNOMED concepts runs via
+    slurm/build_concept_index.slurm. Locally we build a small cache and verify
+    that MultiTaskModel forward()s a real dev document without exception.
+    """
+    _banner("Phase 3.2 -- Concept index + multi-task model self-test")
+    t0 = time.time()
+    rc = _run_subprocess("build_concept_index.py", "3.2")
+    if rc != 0:
+        print(f"[3.2] elapsed {time.time() - t0:.1f}s")
+        return
+    # Forward self-test
+    try:
+        from transformers import AutoTokenizer
+        import canon_dataset  # type: ignore
+        import config  # type: ignore
+        import heads  # type: ignore
+
+        tokenizer = AutoTokenizer.from_pretrained(str(config.SAPBERT_ENCODER_DIR))
+        soft = canon_dataset.load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
+        ds = canon_dataset.CanonDocDataset(
+            config.PHASE2_SPLITS_DIR / "dev.jsonl",
+            tokenizer,
+            soft,
+            max_docs=1,
+            max_pairs=16,
+        )
+        feats = list(ds)
+        if not feats:
+            print("[3.2] dev split produced no features; skipping self-test")
+            return
+        batch = canon_dataset.collate_docs(feats, pad_token_id=tokenizer.pad_token_id or 0)
+        import json as _json
+        with open(config.CONCEPT_INDEX_IDS) as fh:
+            num_concepts = len(_json.load(fh))
+        model = heads.MultiTaskModel(str(config.SAPBERT_ENCODER_DIR), num_concepts=num_concepts)
+        model.norm_head.load_concept_index(config.CONCEPT_INDEX_IDS, config.CONCEPT_INDEX_EMB)
+        model.eval()
+        out = model(batch)
+        print(f"[3.2] forward self-test OK; losses: { {k: float(v) for k,v in out['losses'].items()} }")
+    except Exception as exc:  # noqa: BLE001
+        print(f"[3.2] forward self-test failed: {exc}")
+    print(f"[3.2] elapsed {time.time() - t0:.1f}s")
+
+
+def step_3_3() -> None:
+    _banner("Phase 3.3 -- Stage 1 per-head training (SMOKE TEST)")
+    t0 = time.time()
+    for head in ("ner", "norm", "rel"):
+        print(f"[3.3] training head: {head}")
+        _run_subprocess("train_stage1.py", "3.3", ["--head", head])
+    print(f"[3.3] elapsed {time.time() - t0:.1f}s")
+
+
+def step_3_4() -> None:
+    _banner("Phase 3.4 -- Stage 2 joint multi-task training (SMOKE TEST)")
+    t0 = time.time()
+    _run_subprocess("train_stage2.py", "3.4")
+    print(f"[3.4] elapsed {time.time() - t0:.1f}s")
+
+
+def step_3_5() -> None:
+    _banner("Phase 3.5 -- CSP solver (SMOKE TEST)")
+    t0 = time.time()
+    _run_subprocess("csp_solver.py", "3.5")
+    print(f"[3.5] elapsed {time.time() - t0:.1f}s")
+
+
+def step_3_6() -> None:
+    _banner("Phase 3.6 -- Stage 3 CSP-feedback fine-tune (SMOKE TEST)")
+    t0 = time.time()
+    _run_subprocess("train_stage3.py", "3.6")
+    print(f"[3.6] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -248,6 +341,11 @@ STEPS = {
     "2.6": step_2_6,
     "2.7": step_2_7,
     "3.1": step_3_1,
+    "3.2": step_3_2,
+    "3.3": step_3_3,
+    "3.4": step_3_4,
+    "3.5": step_3_5,
+    "3.6": step_3_6,
 }
 
 
