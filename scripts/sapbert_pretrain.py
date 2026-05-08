@@ -34,7 +34,7 @@ so the orchestration is testable on a laptop without a GPU.
 
 CLI
 ---
-Production (BigRed200 H100, ~3-4 hours):
+Production (BigRed200 A100, ~3-4 hours):
     python scripts/sapbert_pretrain.py --epochs 8 --batch-size 128 --lr 2e-5
 Smoke test (any machine, ~5 min):
     python scripts/sapbert_pretrain.py --smoke-test

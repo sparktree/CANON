@@ -3,7 +3,7 @@
 # the SapBERT-pretrained encoder and cache the (~370K, 768) fp16 matrix used
 # by the concept-normalization head.
 #
-# One-shot prerequisite for Stage 1/2/3 training. Cheap (single H100, ~30 min)
+# One-shot prerequisite for Stage 1/2/3 training. Cheap (single A100, ~30 min)
 # but rerun whenever the SapBERT encoder is updated.
 #
 #     sbatch slurm/build_concept_index.slurm

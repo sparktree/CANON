@@ -14,7 +14,7 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=16
-#SBATCH --gpus-per-node=1                  # one H100 is plenty for SapBERT-base
+#SBATCH --gpus-per-node=1                  # one A100 is plenty for SapBERT-base
 #SBATCH --mem=64G
 #SBATCH --time=06:00:00
 #SBATCH --output=/N/slate/alikh/canon/logs/sapbert.%j.out
