@@ -76,8 +76,22 @@ _SENTINEL_CODES = frozenset({"", "-", "-1"})
 # Eligibility
 # ---------------------------------------------------------------------------
 
-def _doc_dev_test_eligible(doc: Document) -> Tuple[bool, Optional[str]]:
-    """Return (keep, drop_reason).
+# Drop causes for dev/test ineligibility. Distinguished by whether Phase 2.2
+# stamped a mapped_snomed_id at all:
+#   * mapped_snomed_id present + snomed_active False -> mapped_but_inactive
+#       (concept exists in the verified table; SNOMED has retired it; the
+#        Phase 1.7 audit's load-bearing example.)
+#   * mapped_snomed_id absent -> no_verified_mapping
+#       (entity's code wasn't in the Phase 1.7 verified table at confidence
+#        >= 0.8; typical for OMIM IDs, rare C-prefixed supplementary concepts.)
+DROP_CAUSE_INACTIVE     = "mapped_but_inactive"
+DROP_CAUSE_NO_MAPPING   = "no_verified_mapping"
+
+
+def _doc_dev_test_eligible(
+    doc: Document,
+) -> Tuple[bool, Optional[str], Optional[str], Optional[str]]:
+    """Return (keep, cause, semantic_class, code).
 
     A dev/test document is dropped if any chemical/disease entity carries a
     real MeSH code but its SNOMED mapping is not verified active. Gene /
@@ -92,9 +106,11 @@ def _doc_dev_test_eligible(doc: Document) -> Tuple[bool, Optional[str]]:
         code = em.original_code
         if not code or code in _SENTINEL_CODES:
             continue
-        if em.mapped_snomed_id is None or em.snomed_active is not True:
-            return False, f"unverified_entity:{em.semantic_class}:{code}"
-    return True, None
+        if em.mapped_snomed_id is not None and em.snomed_active is False:
+            return False, DROP_CAUSE_INACTIVE, em.semantic_class, code
+        if em.mapped_snomed_id is None:
+            return False, DROP_CAUSE_NO_MAPPING, em.semantic_class, code
+    return True, None, None, None
 
 
 # ---------------------------------------------------------------------------
@@ -106,8 +122,17 @@ def _new_audit() -> dict:
         "missing_sources": [],
         "per_corpus_seen": {},
         "per_corpus_kept": {},
-        "dropped_dev_test": {},
-        "drop_reason_counts": {},
+        "splits": {},
+    }
+
+
+def _new_split_audit() -> dict:
+    return {
+        "documents": 0,
+        "kept_by_corpus": {},
+        "dropped_by_corpus": {},
+        "drop_causes": {DROP_CAUSE_INACTIVE: 0, DROP_CAUSE_NO_MAPPING: 0},
+        "drop_reason_details": {},
     }
 
 
@@ -118,6 +143,7 @@ def _stream_split(
     audit: dict,
     verbose: bool,
 ) -> Iterator[Document]:
+    split_audit = audit["splits"].setdefault(split_name, _new_split_audit())
     for src in sources:
         if not src.exists():
             audit["missing_sources"].append(relative_to_repo(src))
@@ -137,19 +163,27 @@ def _stream_split(
                         f"non-gold corpus {doc.corpus!r} reached {split_name} "
                         f"input list -- augmentation must be train-only"
                     )
-                ok, reason = _doc_dev_test_eligible(doc)
+                ok, cause, sem_class, code = _doc_dev_test_eligible(doc)
                 if not ok:
-                    audit["dropped_dev_test"][doc.corpus] = (
-                        audit["dropped_dev_test"].get(doc.corpus, 0) + 1
+                    split_audit["dropped_by_corpus"][doc.corpus] = (
+                        split_audit["dropped_by_corpus"].get(doc.corpus, 0) + 1
                     )
-                    rkey = reason or "unknown"
-                    audit["drop_reason_counts"][rkey] = (
-                        audit["drop_reason_counts"].get(rkey, 0) + 1
+                    if cause is not None:
+                        split_audit["drop_causes"][cause] = (
+                            split_audit["drop_causes"].get(cause, 0) + 1
+                        )
+                    detail_key = f"{cause}:{sem_class}:{code}"
+                    split_audit["drop_reason_details"][detail_key] = (
+                        split_audit["drop_reason_details"].get(detail_key, 0) + 1
                     )
                     continue
             audit["per_corpus_kept"][doc.corpus] = (
                 audit["per_corpus_kept"].get(doc.corpus, 0) + 1
             )
+            split_audit["kept_by_corpus"][doc.corpus] = (
+                split_audit["kept_by_corpus"].get(doc.corpus, 0) + 1
+            )
+            split_audit["documents"] += 1
             yield doc
 
 
@@ -226,9 +260,21 @@ def assemble(verbose: bool = True) -> dict:
 
     if verbose:
         print(f"[2.7] train={n_train:,}  dev={n_dev:,}  test={n_test:,}", flush=True)
-        for corpus, dropped in audit["dropped_dev_test"].items():
-            print(f"[2.7]   dropped {dropped:,} {corpus} dev/test docs (unverified entity)",
-                  flush=True)
+        for split_name in ("dev", "test"):
+            sa = audit["splits"].get(split_name, {})
+            dropped_total = sum(sa.get("dropped_by_corpus", {}).values())
+            if not dropped_total:
+                continue
+            by_corpus = ", ".join(
+                f"{c}={n}" for c, n in sorted(sa.get("dropped_by_corpus", {}).items())
+            )
+            inactive = sa.get("drop_causes", {}).get(DROP_CAUSE_INACTIVE, 0)
+            no_mapping = sa.get("drop_causes", {}).get(DROP_CAUSE_NO_MAPPING, 0)
+            print(
+                f"[2.7]   {split_name}: dropped {dropped_total:,} docs "
+                f"({by_corpus}) -- inactive={inactive}, no_mapping={no_mapping}",
+                flush=True,
+            )
         print(f"[2.7] summary -> {relative_to_repo(SUMMARY_OUT)}", flush=True)
 
     return summary
