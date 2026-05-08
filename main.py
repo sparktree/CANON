@@ -16,6 +16,8 @@ Currently implemented:
     Phase 2.3 -- Apply unified relation labels          (relation_map.py)
     Phase 2.4 -- Soft mapping preprocessing             (soft_map.py)
     Phase 2.5 -- SNOMED-derived synthetic Tier-1 data   (snomed_synth.py)
+    Phase 2.6 -- PubTator3 silver-data acquisition      (silver_pubtator.py)
+                 [gated by env var CANON_DOWNLOAD_SILVER=1]
 """
 
 from __future__ import annotations
@@ -38,6 +40,7 @@ import mrcm  # noqa: E402
 import relation_map  # noqa: E402
 import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
+import silver_pubtator  # noqa: E402
 import snomed_hierarchy  # noqa: E402
 import snomed_synth  # noqa: E402
 import soft_map  # noqa: E402
@@ -181,6 +184,15 @@ def step_2_5() -> None:
     print(f"[2.5] elapsed {time.time() - t0:.1f}s")
 
 
+def step_2_6() -> None:
+    _banner("Phase 2.6 -- PubTator3 silver-data acquisition")
+    t0 = time.time()
+    summary = silver_pubtator.apply_all(verbose=True)
+    if summary.get("status") == "completed":
+        print(f"[2.6] {summary['documents_written']:,} silver documents written")
+    print(f"[2.6] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -194,6 +206,7 @@ STEPS = {
     "2.3": step_2_3,
     "2.4": step_2_4,
     "2.5": step_2_5,
+    "2.6": step_2_6,
 }
 
 
