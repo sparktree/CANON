@@ -18,6 +18,7 @@ Currently implemented:
     Phase 2.5 -- SNOMED-derived synthetic Tier-1 data   (snomed_synth.py)
     Phase 2.6 -- PubTator3 silver-data acquisition      (silver_pubtator.py)
                  [gated by env var CANON_DOWNLOAD_SILVER=1]
+    Phase 2.7 -- Train/Dev/Test split assembly          (assemble_splits.py)
 """
 
 from __future__ import annotations
@@ -31,6 +32,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parent / "scripts"
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
+import assemble_splits  # noqa: E402
 import concept_map  # noqa: E402
 import corpus_convert  # noqa: E402
 import entity_scope  # noqa: E402
@@ -193,6 +195,15 @@ def step_2_6() -> None:
     print(f"[2.6] elapsed {time.time() - t0:.1f}s")
 
 
+def step_2_7() -> None:
+    _banner("Phase 2.7 -- Train/Dev/Test split assembly")
+    t0 = time.time()
+    summary = assemble_splits.assemble(verbose=True)
+    counts = summary["documents_written"]
+    print(f"[2.7] train={counts['train']:,}  dev={counts['dev']:,}  test={counts['test']:,}")
+    print(f"[2.7] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -207,6 +218,7 @@ STEPS = {
     "2.4": step_2_4,
     "2.5": step_2_5,
     "2.6": step_2_6,
+    "2.7": step_2_7,
 }
 
 
