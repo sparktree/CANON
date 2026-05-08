@@ -334,12 +334,25 @@ def encode_batch(model, encoded, device) -> torch.Tensor:
 
 
 def train_one_epoch(
-    model, loader, optimizer, scheduler, scaler, device, log_interval, logger
+    model, loader, optimizer, scheduler, scaler, device, log_interval, logger,
+    start_step=0, partial_save=None,
 ) -> Dict[str, float]:
+    """Run one epoch.
+
+    `start_step`: skip this many batches before doing real training (used to
+        fast-forward a resumed mid-epoch session to its saved step).
+    `partial_save`: optional dict with keys {dst, every_steps, tokenizer, epoch,
+        train_state_extra} -- when set, writes a full checkpoint to `dst` every
+        `every_steps` real training steps. `epoch` is the 0-indexed in-progress
+        epoch number; on resume it is fed back in as start_epoch.
+    """
     model.train()
     losses: List[float] = []
     t0 = time.time()
-    for step, (encoded, labels) in enumerate(loader):
+    real_step = start_step  # 0-indexed count of real training steps done this epoch
+    for raw_step, (encoded, labels) in enumerate(loader):
+        if raw_step < start_step:
+            continue  # cheap skip; tokens are pre-built so collate is just tensor stacking
         labels = labels.to(device, non_blocking=True)
         optimizer.zero_grad(set_to_none=True)
         if scaler is not None:
@@ -356,15 +369,29 @@ def train_one_epoch(
             optimizer.step()
         scheduler.step()
         losses.append(float(loss.detach()))
-        if (step + 1) % log_interval == 0:
+        real_step += 1
+        if real_step % log_interval == 0:
             recent = losses[-log_interval:]
             avg = sum(recent) / len(recent)
             elapsed = time.time() - t0
             lr = scheduler.get_last_lr()[0]
             logger.info(
-                f"  step {step + 1:>5d}: loss={avg:.4f}  lr={lr:.2e}  "
+                f"  step {real_step:>5d}: loss={avg:.4f}  lr={lr:.2e}  "
                 f"elapsed={elapsed:.0f}s"
             )
+        if partial_save and partial_save["every_steps"] > 0 \
+                and real_step % partial_save["every_steps"] == 0:
+            state = dict(partial_save["train_state_extra"])
+            state.update({
+                "epoch": partial_save["epoch"],     # 0-indexed in-progress epoch
+                "step_in_epoch": real_step,
+                "partial": True,
+            })
+            save_checkpoint(
+                model, partial_save["tokenizer"], partial_save["dst"], state,
+                optimizer=optimizer, scheduler=scheduler, scaler=scaler,
+            )
+            logger.info(f"  partial ckpt @ step {real_step} -> {partial_save['dst'].name}/")
     epoch_avg = sum(losses) / max(len(losses), 1)
     return {"avg_loss": epoch_avg, "steps": len(losses), "elapsed_s": time.time() - t0}
 
@@ -419,14 +446,18 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--num-workers",       type=int,   default=DEFAULT_NUM_WORKERS)
     p.add_argument("--mixed-precision",   default="auto", choices=("auto", "yes", "no"))
     p.add_argument("--log-interval",      type=int,   default=50)
+    p.add_argument("--save-every-steps",  type=int,   default=500,
+                   help="Save a partial checkpoint to checkpoints/partial/ every N steps "
+                        "so SLURM walltime kills don't waste mid-epoch progress. "
+                        "Set to 0 to disable.")
     p.add_argument("--smoke-test",        action="store_true",
                    help="Quick local sanity run: 1 epoch, ~1 K pairs, batch 8.")
     p.add_argument("--resume-from",       default=None,
-                   help="Resume training from a checkpoint dir (e.g. .../checkpoints/epoch_03). "
-                        "Loads model + optimizer + scheduler + scaler state and continues "
-                        "with the same total_steps / warmup_steps schedule. Requires the "
-                        "checkpoint to contain optimizer.pt and scheduler.pt; original "
-                        "--epochs / --batch-size / --pairs-per-concept must be preserved.")
+                   help="Resume training from a checkpoint dir (e.g. .../checkpoints/epoch_03 "
+                        "or .../checkpoints/partial). Loads model + optimizer + scheduler + scaler "
+                        "state and continues with the same total_steps / warmup_steps schedule. "
+                        "Requires optimizer.pt and scheduler.pt; original --epochs / --batch-size "
+                        "/ --pairs-per-concept must be preserved.")
     return p.parse_args()
 
 
@@ -511,6 +542,7 @@ def main() -> None:
     scaler = torch.amp.GradScaler(device="cuda") if use_amp else None
 
     start_epoch = 0
+    start_step = 0
     if args.resume_from:
         resume_path = Path(args.resume_from)
         state_path = resume_path / "train_state.json"
@@ -542,13 +574,29 @@ def main() -> None:
             scaler_path = resume_path / "scaler.pt"
             if scaler_path.exists():
                 scaler.load_state_dict(torch.load(scaler_path, map_location=device))
-        start_epoch = int(saved["epoch"])
-        logger.info(
-            f"resumed from {resume_path} -- starting at epoch {start_epoch + 1}/{args.epochs} "
-            f"(scheduler last_step={scheduler.last_epoch})"
-        )
+        if saved.get("partial"):
+            # Mid-epoch partial: saved.epoch is 0-indexed in-progress epoch.
+            start_epoch = int(saved["epoch"])
+            start_step = int(saved.get("step_in_epoch", 0))
+            logger.info(
+                f"resumed from partial {resume_path} -- epoch {start_epoch + 1}/{args.epochs} "
+                f"@ step {start_step} (scheduler last_step={scheduler.last_epoch})"
+            )
+        else:
+            start_epoch = int(saved["epoch"])
+            logger.info(
+                f"resumed from {resume_path} -- starting at epoch {start_epoch + 1}/{args.epochs} "
+                f"(scheduler last_step={scheduler.last_epoch})"
+            )
 
     Path(args.checkpoints_dir).mkdir(parents=True, exist_ok=True)
+    partial_dir = Path(args.checkpoints_dir) / "partial"
+    train_state_extra = {
+        "biolinkbert_dir": args.biolinkbert_dir,
+        "smoke_test": args.smoke_test,
+        "total_steps": total_steps,
+        "warmup_steps": warmup_steps,
+    }
     epoch_logs: List[Dict[str, object]] = []
 
     for epoch in range(start_epoch, args.epochs):
@@ -566,9 +614,18 @@ def main() -> None:
             num_workers=args.num_workers,
             pin_memory=(device.type == "cuda"),
         )
+        partial_save = {
+            "dst": partial_dir,
+            "every_steps": args.save_every_steps,
+            "tokenizer": tokenizer,
+            "epoch": epoch,
+            "train_state_extra": train_state_extra,
+        } if args.save_every_steps > 0 else None
         epoch_stats = train_one_epoch(
             model, loader, optimizer, scheduler, scaler, device,
             args.log_interval, logger,
+            start_step=(start_step if epoch == start_epoch else 0),
+            partial_save=partial_save,
         )
         logger.info(
             f"epoch {epoch + 1}: avg_loss={epoch_stats['avg_loss']:.4f}  "
@@ -597,6 +654,12 @@ def main() -> None:
             "avg_loss": epoch_stats["avg_loss"],
             "elapsed_s": epoch_stats["elapsed_s"],
         })
+        # The partial/ dir, if it exists, holds in-progress state for the epoch
+        # we just finished. It's now stale; remove so auto-resume picks the
+        # epoch_NN/ checkpoint instead of a partial that's older than this one.
+        if partial_dir.exists():
+            import shutil as _shutil
+            _shutil.rmtree(partial_dir, ignore_errors=True)
 
     save_checkpoint(model, tokenizer, Path(args.output_dir), {
         "epochs": args.epochs,

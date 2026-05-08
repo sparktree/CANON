@@ -66,13 +66,22 @@ if [ -f "$CANON_ROOT/BioLinkBERT/model.safetensors" ] && [ -f "$CANON_ROOT/BioLi
     mv -n "$CANON_ROOT/BioLinkBERT/pytorch_model.bin" "$CANON_ROOT/BioLinkBERT/pytorch_model.bin.disabled" || true
 fi
 
-# Auto-detect the most recent epoch checkpoint with full optimizer state and
-# resume from it. The 4h wall fits ~3 epochs, so chained sbatch invocations
-# will roll the model from epoch_03 -> epoch_06 -> epoch_08.
+# Auto-detect the most recent checkpoint with full optimizer state. The 4h
+# QoS cap clips chained sbatch invocations, but the trainer also writes
+# checkpoints/partial/ every --save-every-steps so a mid-epoch kill doesn't
+# waste 1000+ steps. Pick whichever of {partial/, latest epoch_NN/} has the
+# newer mtime.
 RESUME_ARGS=()
+CKPT_ROOT="$CANON_OUTPUTS_ROOT/phase3/sapbert/checkpoints"
+CANDIDATES=()
+if [ -d "$CKPT_ROOT" ]; then
+    LATEST_EPOCH=$(ls -d "$CKPT_ROOT"/epoch_* 2>/dev/null | sort -V | tail -1)
+    [ -n "$LATEST_EPOCH" ] && CANDIDATES+=("$LATEST_EPOCH")
+    [ -d "$CKPT_ROOT/partial" ] && CANDIDATES+=("$CKPT_ROOT/partial")
+fi
 LATEST_CKPT=""
-if [ -d "$CANON_OUTPUTS_ROOT/phase3/sapbert/checkpoints" ]; then
-    LATEST_CKPT=$(ls -d "$CANON_OUTPUTS_ROOT"/phase3/sapbert/checkpoints/epoch_* 2>/dev/null | sort -V | tail -1)
+if [ ${#CANDIDATES[@]} -gt 0 ]; then
+    LATEST_CKPT=$(ls -dt "${CANDIDATES[@]}" 2>/dev/null | head -1)
 fi
 if [ -n "$LATEST_CKPT" ] && [ -f "$LATEST_CKPT/optimizer.pt" ]; then
     echo "[slurm] resuming from $LATEST_CKPT"
