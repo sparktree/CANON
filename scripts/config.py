@@ -151,6 +151,14 @@ MRCM_FILES: Dict[str, Path] = {
 }
 
 
+BIOLINKBERT_DIR = Path(
+    os.getenv(
+        "CANON_BIOLINKBERT",
+        str((WORKSPACE_ROOT / "BioLinkBERT").resolve()),
+    )
+)
+
+
 UMLS_META_DIR = Path(
     os.getenv(
         "UMLS_META_DIR",

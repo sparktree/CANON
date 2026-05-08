@@ -19,6 +19,8 @@ Currently implemented:
     Phase 2.6 -- PubTator3 silver-data acquisition      (silver_pubtator.py)
                  [gated by env var CANON_DOWNLOAD_SILVER=1]
     Phase 2.7 -- Train/Dev/Test split assembly          (assemble_splits.py)
+    Phase 3.1 -- SapBERT-style pre-training of BioLinkBERT (sapbert_pretrain.py)
+                 [HPC-targeted; main.py runs --smoke-test mode for orchestration sanity]
 """
 
 from __future__ import annotations
@@ -204,6 +206,32 @@ def step_2_7() -> None:
     print(f"[2.7] elapsed {time.time() - t0:.1f}s")
 
 
+def step_3_1() -> None:
+    """Run a SapBERT smoke test locally so the orchestration is self-testable.
+
+    Full SapBERT pre-training is HPC-only; submit slurm/sapbert.slurm on
+    BigRed200 for the production run. Locally we exercise the pipeline at
+    1 epoch / ~1K pairs / batch 8 (~5 min on CPU) so any code-path error
+    surfaces here rather than after a Slurm queue wait.
+    """
+    _banner("Phase 3.1 -- SapBERT pre-training (SMOKE TEST)")
+    print(
+        "[3.1] Running smoke test only (1 epoch, ~1K pairs, batch 8). "
+        "Submit slurm/sapbert.slurm for production training on BigRed200."
+    )
+    import subprocess
+    t0 = time.time()
+    cmd = [
+        sys.executable,
+        str(SCRIPTS_DIR / "sapbert_pretrain.py"),
+        "--smoke-test",
+    ]
+    rc = subprocess.call(cmd)
+    if rc != 0:
+        print(f"[3.1] smoke test failed (rc={rc})")
+    print(f"[3.1] elapsed {time.time() - t0:.1f}s")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -219,6 +247,7 @@ STEPS = {
     "2.5": step_2_5,
     "2.6": step_2_6,
     "2.7": step_2_7,
+    "3.1": step_3_1,
 }
 
 
