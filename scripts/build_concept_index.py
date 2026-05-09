@@ -143,6 +143,23 @@ def encode_concepts(
     return ids, emb
 
 
+def load_soft_lookup_concepts(soft_lookup_path: Path, logger: logging.Logger) -> set:
+    """Read outputs/phase2/soft_mapping_lookup.json and return the union of every
+    candidate SNOMED ID it references (across all MeSH IDs and candidates)."""
+    with soft_lookup_path.open("r", encoding="utf-8") as fh:
+        lookup = json.load(fh)
+    ids: set = set()
+    for cands in lookup.values():
+        if not isinstance(cands, list):
+            continue
+        for c in cands:
+            sid = c.get("snomed_id") if isinstance(c, dict) else None
+            if sid:
+                ids.add(str(sid))
+    logger.info(f"soft_mapping_lookup contributed {len(ids):,} unique candidate SNOMED IDs")
+    return ids
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--smoke-test", action="store_true")
@@ -153,6 +170,23 @@ def main() -> None:
     parser.add_argument("--max-length", type=int, default=DEFAULT_MAX_LENGTH)
     parser.add_argument("--cap", type=int, default=None,
                         help="Cap number of concepts (smoke override).")
+    parser.add_argument(
+        "--from-soft-lookup",
+        action="store_true",
+        help=("Restrict the index to SNOMED IDs that appear in "
+              "outputs/phase2/soft_mapping_lookup.json (Phase 2.4 candidates). "
+              "Drops the index from ~370K to ~30K -- feasible on CPU."),
+    )
+    parser.add_argument(
+        "--soft-lookup-path",
+        default=str(config.SOFT_MAPPING_LOOKUP),
+    )
+    parser.add_argument(
+        "--device",
+        choices=("auto", "cpu", "cuda"),
+        default="auto",
+        help="Inference device override.",
+    )
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
@@ -179,12 +213,27 @@ def main() -> None:
     t0 = time.time()
     preferred = load_preferred_terms(desc_path, logger)
 
+    if args.from_soft_lookup:
+        soft_path = Path(args.soft_lookup_path)
+        if not soft_path.exists():
+            raise FileNotFoundError(f"soft_mapping_lookup not found at {soft_path}")
+        keep = load_soft_lookup_concepts(soft_path, logger)
+        before = len(preferred)
+        preferred = {cid: term for cid, term in preferred.items() if cid in keep}
+        logger.info(f"  --from-soft-lookup: {before:,} -> {len(preferred):,} concepts after filter")
+
     items = sorted(preferred.items(), key=lambda kv: kv[0])
     if cap is not None and len(items) > cap:
         items = items[:cap]
     logger.info(f"encoding {len(items):,} concepts (batch={args.batch_size}, max_len={args.max_length})")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if args.device == "cuda":
+        device = torch.device("cuda")
+    elif args.device == "cpu":
+        device = torch.device("cpu")
+    else:
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    logger.info(f"  device       = {device}")
     ids, emb = encode_concepts(
         items,
         encoder_dir,

@@ -1,0 +1,6 @@
+19:03:11 [3.3:ner] head=ner epochs=3 batch=8 max_docs=2000 smoke=False
+19:03:11 [3.3:ner] device=cuda train=outputs\phase2\splits\train_fast.jsonl dev=outputs\phase2\splits\dev.jsonl
+19:07:51 [3.3:ner] epoch 1/3 (frozen) loss=1.9705 {'ner_precision': 0.0, 'ner_recall': 0.0, 'ner_f1': 0.0, 'epoch': 1, 'phase': 'frozen', 'train_loss': 1.9704546599388122, 'elapsed_sec': 276.76}
+19:13:32 [3.3:ner] epoch 2/3 (joint) loss=0.7007 {'ner_precision': 0.6148923792902851, 'ner_recall': 0.6189128525422075, 'ner_f1': 0.6168960653664706, 'epoch': 2, 'phase': 'joint', 'train_loss': 0.7006555390357971, 'elapsed_sec': 340.66}
+19:19:48 [3.3:ner] epoch 3/3 (joint) loss=0.3774 {'ner_precision': 0.6209243697478991, 'ner_recall': 0.7210890992485606, 'ner_f1': 0.6672687045649524, 'epoch': 3, 'phase': 'joint', 'train_loss': 0.3774479597210884, 'elapsed_sec': 374.37}
+19:19:48 [3.3:ner] done. best ner_f1=0.6673

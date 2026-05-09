@@ -132,21 +132,29 @@ def load_constraint_tables(
     relation_constraints = mrcm.get("relation_constraints", {})
 
     # Tier-1 pair compatibility: (relation, type_a, type_b) -> bool.
-    for rel, entries in relation_constraints.items():
+    # The MRCM JSON shape is: relation_constraints[rel] = {
+    #     "snomed_attribute_id": ...,
+    #     "domains": [{"domain_root_concept_ids": [SCTID, ...], ...}, ...],
+    #     "ranges":  [{"range_root_concept_ids":  [SCTID, ...], ...}, ...],
+    # }
+    for rel, block in relation_constraints.items():
         if rel not in TIER1_RELATIONS:
             continue
         attr_id = TIER1_ATTRIBUTE_IDS.get(rel)
         if attr_id is None:
             continue
+        if not isinstance(block, dict):
+            continue
         domain_anchors: List[str] = []
         range_anchors: List[str] = []
-        for entry in entries:
-            d = str(entry.get("domain_root") or entry.get("domain") or "")
-            r = str(entry.get("range_root") or entry.get("range") or "")
-            if d:
-                domain_anchors.append(d)
-            if r:
-                range_anchors.append(r)
+        for entry in block.get("domains", []):
+            for cid in entry.get("domain_root_concept_ids", []) or []:
+                if cid:
+                    domain_anchors.append(str(cid))
+        for entry in block.get("ranges", []):
+            for cid in entry.get("range_root_concept_ids", []) or []:
+                if cid:
+                    range_anchors.append(str(cid))
         for type_a, anchors_a in TYPE_ANCHORS.items():
             for type_b, anchors_b in TYPE_ANCHORS.items():
                 ok = any(a in domain_anchors for a in anchors_a) and any(

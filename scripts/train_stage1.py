@@ -275,21 +275,38 @@ def train_head(args: argparse.Namespace) -> None:
     smoke = args.smoke_test
     epochs = SMOKE_EPOCHS if smoke else args.epochs
     batch_size = SMOKE_BATCH if smoke else args.batch_size
-    max_docs = SMOKE_MAX_DOCS if smoke else None
+    # --max-docs CLI wins; smoke_test caps to SMOKE_MAX_DOCS otherwise; full run = unbounded.
+    if getattr(args, "max_docs", None) is not None:
+        max_docs = args.max_docs
+    elif smoke:
+        max_docs = SMOKE_MAX_DOCS
+    else:
+        max_docs = None
     half_epochs = max(1, epochs // 2)
 
-    logger.info(f"head={head} epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
+    device_arg = getattr(args, "device", "auto")
+    if device_arg == "cpu":
+        device = torch.device("cpu")
+    elif device_arg == "cuda":
+        device = torch.device("cuda")
+    else:
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    train_path = Path(getattr(args, "train_path", None) or (config.PHASE2_SPLITS_DIR / "train.jsonl"))
+    dev_path   = Path(getattr(args, "dev_path",   None) or (config.PHASE2_SPLITS_DIR / "dev.jsonl"))
+
+    logger.info(f"head={head} epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
+    logger.info(f"device={device} train={train_path} dev={dev_path}")
+
     tokenizer = AutoTokenizer.from_pretrained(str(config.SAPBERT_ENCODER_DIR))
     pad_id = tokenizer.pad_token_id or 0
     soft = load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
 
     train_ds = build_dataset(
-        config.PHASE2_SPLITS_DIR / "train.jsonl",
+        train_path,
         tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=42)
     dev_ds = build_dataset(
-        config.PHASE2_SPLITS_DIR / "dev.jsonl",
+        dev_path,
         tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=43)
 
     train_loader = DataLoader(train_ds, batch_size=batch_size, collate_fn=collate_fn_factory(pad_id))
@@ -428,6 +445,14 @@ def main() -> None:
     parser.add_argument("--max-pairs", type=int, default=DEFAULT_MAX_PAIRS)
     parser.add_argument("--neg-ratio", type=float, default=DEFAULT_NEG_RATIO)
     parser.add_argument("--output-dir", default=str(config.STAGE1_DIR))
+    parser.add_argument("--max-docs", type=int, default=None,
+                        help="Cap dataset documents per epoch (full run if omitted).")
+    parser.add_argument("--train-path", default=None,
+                        help="Override train JSONL path (default: outputs/phase2/splits/train.jsonl).")
+    parser.add_argument("--dev-path", default=None,
+                        help="Override dev JSONL path (default: outputs/phase2/splits/dev.jsonl).")
+    parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto",
+                        help="Force device; default auto picks CUDA when available.")
     args = parser.parse_args()
     train_head(args)
 

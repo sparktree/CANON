@@ -242,6 +242,14 @@ def main() -> None:
     parser.add_argument("--patience", type=int, default=DEFAULT_PATIENCE)
     parser.add_argument("--stage1-dir", default=str(config.STAGE1_DIR))
     parser.add_argument("--output-dir", default=str(config.STAGE2_DIR))
+    parser.add_argument("--max-docs", type=int, default=None,
+                        help="Cap dataset documents per epoch (full run if omitted).")
+    parser.add_argument("--train-path", default=None,
+                        help="Override train JSONL path.")
+    parser.add_argument("--dev-path", default=None,
+                        help="Override dev JSONL path.")
+    parser.add_argument("--device", choices=("auto", "cpu", "cuda"), default="auto",
+                        help="Force device; default auto picks CUDA when available.")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
@@ -251,21 +259,37 @@ def main() -> None:
     smoke = args.smoke_test
     epochs = SMOKE_EPOCHS if smoke else args.epochs
     batch_size = SMOKE_BATCH if smoke else args.batch_size
-    max_docs = SMOKE_MAX_DOCS if smoke else None
+    if getattr(args, "max_docs", None) is not None:
+        max_docs = args.max_docs
+    elif smoke:
+        max_docs = SMOKE_MAX_DOCS
+    else:
+        max_docs = None
+
+    device_arg = getattr(args, "device", "auto")
+    if device_arg == "cpu":
+        device = torch.device("cpu")
+    elif device_arg == "cuda":
+        device = torch.device("cuda")
+    else:
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    train_path = Path(getattr(args, "train_path", None) or (config.PHASE2_SPLITS_DIR / "train.jsonl"))
+    dev_path   = Path(getattr(args, "dev_path",   None) or (config.PHASE2_SPLITS_DIR / "dev.jsonl"))
 
     logger.info(f"epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
+    logger.info(f"device={device} train={train_path} dev={dev_path}")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     tokenizer = AutoTokenizer.from_pretrained(str(config.SAPBERT_ENCODER_DIR))
     pad_id = tokenizer.pad_token_id or 0
     soft = load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
 
     train_ds = CanonDocDataset(
-        config.PHASE2_SPLITS_DIR / "train.jsonl",
+        train_path,
         tokenizer, soft, max_length=args.max_length,
         max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=42)
     dev_ds = CanonDocDataset(
-        config.PHASE2_SPLITS_DIR / "dev.jsonl",
+        dev_path,
         tokenizer, soft, max_length=args.max_length,
         max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=43)
 

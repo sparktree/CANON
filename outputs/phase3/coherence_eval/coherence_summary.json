@@ -1,0 +1,90 @@
+{
+  "model_dir": "outputs/phase3/stage2_local/best",
+  "split": "dev",
+  "split_path": "C:\\Users\\Shane Sparks\\Documents\\GitHub\\CANON_root\\CANON\\outputs\\phase2\\splits\\dev.jsonl",
+  "documents": 499,
+  "csp_status": {
+    "sat": 499
+  },
+  "concept_overrides_csp_vs_neural": 3260,
+  "relation_overrides_csp_vs_neural": 0,
+  "csp_type_flips_to_non_gold": 147,
+  "methodology": {
+    "denominator": "Locked: entities whose gold sem_class has hierarchy anchors AND has >= 1 concept candidate. Both neural and CSP are scored on the same population. CSP type-flips (gold->none) count as incoherent, not as denominator drops.",
+    "neural": "top-1 cosine concept; checks whether it lies under gold type's anchor.",
+    "oracle": "top-K compliance: does ANY top-K concept lie under gold type's anchor? Upper bound for what CSP can extract.",
+    "csp": "Z3-chosen concept under gold type's anchor. Type-flips counted as failures.",
+    "top_k_concepts": 10
+  },
+  "neural": {
+    "entity_validity_rate": 0.8204,
+    "entity_evaluated": 8841,
+    "entity_coherent": 7253,
+    "entity_strict_validity_rate": 0.7772,
+    "entity_strict_evaluated": 8841,
+    "entity_strict_coherent": 6871,
+    "tier1_validity_rate": 0.0,
+    "tier1_evaluated": 0,
+    "tier1_coherent": 0,
+    "norm_top1_accuracy": 0.012,
+    "norm_evaluated": 8765,
+    "norm_correct": 105,
+    "relation_macro_f1": 0.0435,
+    "relation_pred_distribution": {
+      "no-relation": 4059,
+      "causes": 254,
+      "associated-with": 99,
+      "treats": 8
+    }
+  },
+  "oracle": {
+    "entity_validity_rate": 0.9834,
+    "entity_evaluated": 8841,
+    "entity_coherent": 8694,
+    "entity_strict_validity_rate": 0.9834,
+    "entity_strict_evaluated": 8841,
+    "entity_strict_coherent": 8694,
+    "tier1_validity_rate": 0.0,
+    "tier1_evaluated": 0,
+    "tier1_coherent": 0,
+    "norm_top1_accuracy": 0.0416,
+    "norm_evaluated": 8765,
+    "norm_correct": 365,
+    "relation_macro_f1": 0.0,
+    "relation_pred_distribution": {}
+  },
+  "csp": {
+    "entity_validity_rate": 0.9834,
+    "entity_evaluated": 8841,
+    "entity_coherent": 8694,
+    "entity_strict_validity_rate": 0.932,
+    "entity_strict_evaluated": 8841,
+    "entity_strict_coherent": 8240,
+    "tier1_validity_rate": 0.0,
+    "tier1_evaluated": 0,
+    "tier1_coherent": 0,
+    "norm_top1_accuracy": 0.0111,
+    "norm_evaluated": 8765,
+    "norm_correct": 97,
+    "relation_macro_f1": 0.0435,
+    "relation_pred_distribution": {
+      "no-relation": 4059,
+      "causes": 254,
+      "associated-with": 99,
+      "treats": 8
+    }
+  },
+  "delta_csp_minus_neural": {
+    "entity_validity_rate": 0.163,
+    "tier1_validity_rate": 0.0,
+    "norm_top1_accuracy": -0.0009,
+    "relation_macro_f1": 0.0
+  },
+  "delta_oracle_minus_neural": {
+    "entity_validity_rate": 0.163,
+    "norm_top1_accuracy": 0.0296
+  },
+  "delta_csp_minus_oracle": {
+    "entity_validity_rate": 0.0
+  }
+}

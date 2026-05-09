@@ -1,0 +1,6 @@
+19:21:52 [3.3:rel] head=rel epochs=3 batch=8 max_docs=900 smoke=False
+19:21:52 [3.3:rel] device=cuda train=outputs\phase2\splits\train_gold.jsonl dev=outputs\phase2\splits\dev.jsonl
+19:22:17 [3.3:rel] epoch 1/3 (frozen) loss=0.9186 {'rel_macro_f1': 0.005934718100890208, 'rel_pairs': 4420.0, 'epoch': 1, 'phase': 'frozen', 'train_loss': 0.9186279446677824, 'elapsed_sec': 19.37}
+19:23:22 [3.3:rel] epoch 2/3 (joint) loss=0.4907 {'rel_macro_f1': 0.06263648997419098, 'rel_pairs': 4420.0, 'epoch': 2, 'phase': 'joint', 'train_loss': 0.49074724699016165, 'elapsed_sec': 65.05}
+19:24:30 [3.3:rel] epoch 3/3 (joint) loss=0.4984 {'rel_macro_f1': 0.063765943386282, 'rel_pairs': 4420.0, 'epoch': 3, 'phase': 'joint', 'train_loss': 0.49842078357407477, 'elapsed_sec': 66.57}
+19:24:31 [3.3:rel] done. best rel_macro_f1=0.0638

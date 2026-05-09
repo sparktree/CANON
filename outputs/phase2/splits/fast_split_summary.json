@@ -1,0 +1,33 @@
+{
+  "policy": {
+    "gold_corpora": [
+      "BioRED",
+      "BC5CDR"
+    ],
+    "silver_cap": 1500,
+    "synthetic_cap": 3000,
+    "seed": 42
+  },
+  "input": "outputs/phase2/splits/train.jsonl",
+  "input_seen": {
+    "BioRED": 400,
+    "BC5CDR": 500,
+    "SNOMED_synthetic": 32696,
+    "PubTator3_silver": 6542
+  },
+  "kept_after_caps": {
+    "BioRED": 400,
+    "BC5CDR": 500,
+    "PubTator3_silver": 1500,
+    "SNOMED_synthetic": 3000
+  },
+  "outputs": {
+    "train_gold": "outputs/phase2/splits/train_gold.jsonl",
+    "train_fast": "outputs/phase2/splits/train_fast.jsonl",
+    "summary": "outputs/phase2/splits/fast_split_summary.json"
+  },
+  "documents_written": {
+    "train_gold": 900,
+    "train_fast": 5400
+  }
+}

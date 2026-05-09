@@ -1,0 +1,8 @@
+19:37:09 [3.4] epochs=2 batch=8 max_docs=1000 smoke=False
+19:37:09 [3.4] device=cuda train=outputs\phase2\splits\train_fast.jsonl dev=outputs\phase2\splits\dev.jsonl
+19:37:10 [3.4] warm-started 5 params from outputs\phase3\stage1_local\ner\best\head_state.pt
+19:37:10 [3.4] warm-started 2 params from outputs\phase3\stage1_local\norm\best\head_state.pt
+19:37:10 [3.4] warm-started 5 params from outputs\phase3\stage1_local\rel\best\head_state.pt
+19:40:33 [3.4] epoch 1/2 tau=1.000 loss=3.9127 agg=0.0122 {'ner_precision': 0.17857142857142858, 'ner_recall': 0.0004879476920074168, 'ner_f1': 0.0009732360097323601, 'norm_top1': 0.0033029612756264237, 'norm_ancestor': 0.2041002277904328, 'norm_evaluated': 8780.0, 'rel_macro_f1': 0.03592992978467839, 'rel_pairs': 4420.0, 'epoch': 1, 'tau': 1.0, 'train_loss': 3.912688903808594, 'aggregate': 0.012159161721984387, 'elapsed_sec': 200.68}
+19:44:10 [3.4] epoch 2/2 tau=0.200 loss=3.4216 agg=0.0552 {'ner_precision': 0.5106580166821131, 'ner_recall': 0.05377183565921733, 'ner_f1': 0.09729825180999471, 'norm_top1': 0.010592255125284738, 'norm_ancestor': 0.1284738041002278, 'norm_evaluated': 8780.0, 'rel_macro_f1': 0.043517369727047145, 'rel_pairs': 4420.0, 'epoch': 2, 'tau': 0.19999999999999996, 'train_loss': 3.4216170101165773, 'aggregate': 0.05515218817969745, 'elapsed_sec': 216.35}
+19:44:10 [3.4] done. best aggregate=0.0552
