@@ -10,6 +10,20 @@ from pathlib import Path
 from typing import Iterator
 
 
+def choose_torch_device(preferred: str = "auto"):
+    """Return a torch device, preferring CUDA, then Apple MPS, then CPU."""
+    import torch
+
+    requested = (preferred or "auto").lower()
+    if requested != "auto":
+        return torch.device(requested)
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+        return torch.device("mps")
+    return torch.device("cpu")
+
+
 def parse_pubtator(path: Path) -> Iterator[dict]:
     current: dict | None = None
     with path.open("r", encoding="utf-8") as handle:

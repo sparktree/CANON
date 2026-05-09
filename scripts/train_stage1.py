@@ -30,6 +30,7 @@ from transformers import AutoTokenizer, get_linear_schedule_with_warmup
 
 try:
     import config
+    from utils import choose_torch_device
     from canon_dataset import (
         BIO_ID_TO_LABEL,
         CanonDocDataset,
@@ -44,6 +45,7 @@ try:
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import config
+    from utils import choose_torch_device
     from canon_dataset import (
         BIO_ID_TO_LABEL,
         CanonDocDataset,
@@ -275,22 +277,25 @@ def train_head(args: argparse.Namespace) -> None:
     smoke = args.smoke_test
     epochs = SMOKE_EPOCHS if smoke else args.epochs
     batch_size = SMOKE_BATCH if smoke else args.batch_size
-    max_docs = SMOKE_MAX_DOCS if smoke else None
+    max_docs = SMOKE_MAX_DOCS if smoke else args.max_docs
     half_epochs = max(1, epochs // 2)
 
     logger.info(f"head={head} epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tokenizer = AutoTokenizer.from_pretrained(str(config.SAPBERT_ENCODER_DIR))
+    device = choose_torch_device(args.device)
+    logger.info(f"device={device}")
+    encoder_dir = Path(args.encoder_dir)
+    tokenizer = AutoTokenizer.from_pretrained(str(encoder_dir))
     pad_id = tokenizer.pad_token_id or 0
     soft = load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
 
     train_ds = build_dataset(
-        config.PHASE2_SPLITS_DIR / "train.jsonl",
+        Path(args.train_path),
         tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=42)
     dev_ds = build_dataset(
-        config.PHASE2_SPLITS_DIR / "dev.jsonl",
-        tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=43)
+        Path(args.dev_path),
+        tokenizer, soft, args.max_dev_docs if not smoke else max_docs,
+        args.max_length, args.max_pairs, args.neg_ratio, seed=43)
 
     train_loader = DataLoader(train_ds, batch_size=batch_size, collate_fn=collate_fn_factory(pad_id))
     dev_loader = DataLoader(dev_ds, batch_size=batch_size, collate_fn=collate_fn_factory(pad_id))
@@ -298,17 +303,19 @@ def train_head(args: argparse.Namespace) -> None:
     # Model setup -- only the active head is constructed, others omitted.
     head_flags = {"ner": False, "norm": False, "rel": False}
     head_flags[head] = True
-    with open(config.CONCEPT_INDEX_IDS) as fh:
+    concept_ids_path = Path(args.concept_index_ids)
+    concept_emb_path = Path(args.concept_index_emb)
+    with open(concept_ids_path) as fh:
         num_concepts = len(json.load(fh))
     model = MultiTaskModel(
-        str(config.SAPBERT_ENCODER_DIR),
+        str(encoder_dir),
         num_concepts=num_concepts,
         ner=head_flags["ner"],
         norm=head_flags["norm"],
         rel=head_flags["rel"],
     )
     if head == "norm":
-        model.norm_head.load_concept_index(config.CONCEPT_INDEX_IDS, config.CONCEPT_INDEX_EMB)
+        model.norm_head.load_concept_index(concept_ids_path, concept_emb_path)
     model.to(device)
 
     # Ancestors for ancestor-match metric (norm head only).
@@ -427,6 +434,16 @@ def main() -> None:
     parser.add_argument("--max-length", type=int, default=DEFAULT_MAX_LENGTH)
     parser.add_argument("--max-pairs", type=int, default=DEFAULT_MAX_PAIRS)
     parser.add_argument("--neg-ratio", type=float, default=DEFAULT_NEG_RATIO)
+    parser.add_argument("--train-path", default=str(config.PHASE2_SPLITS_DIR / "train.jsonl"))
+    parser.add_argument("--dev-path", default=str(config.PHASE2_SPLITS_DIR / "dev.jsonl"))
+    parser.add_argument("--max-docs", type=int, default=None,
+                        help="Optional train-doc cap outside smoke-test mode.")
+    parser.add_argument("--max-dev-docs", type=int, default=None,
+                        help="Optional dev-doc cap outside smoke-test mode.")
+    parser.add_argument("--device", default="auto", help="auto, cuda, mps, or cpu")
+    parser.add_argument("--encoder-dir", default=str(config.SAPBERT_ENCODER_DIR))
+    parser.add_argument("--concept-index-ids", default=str(config.CONCEPT_INDEX_IDS))
+    parser.add_argument("--concept-index-emb", default=str(config.CONCEPT_INDEX_EMB))
     parser.add_argument("--output-dir", default=str(config.STAGE1_DIR))
     args = parser.parse_args()
     train_head(args)

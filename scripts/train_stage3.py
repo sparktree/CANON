@@ -32,6 +32,7 @@ from transformers import AutoTokenizer, get_linear_schedule_with_warmup
 
 try:
     import config
+    from utils import choose_torch_device
     from canon_dataset import (
         CanonDocDataset,
         collate_docs,
@@ -50,6 +51,7 @@ try:
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import config
+    from utils import choose_torch_device
     from canon_dataset import (
         CanonDocDataset,
         collate_docs,
@@ -209,6 +211,14 @@ def main() -> None:
     parser.add_argument("--max-pairs", type=int, default=DEFAULT_MAX_PAIRS)
     parser.add_argument("--top-k-concepts", type=int, default=10)
     parser.add_argument("--timeout-ms", type=int, default=2000)
+    parser.add_argument("--train-path", default=str(config.PHASE2_SPLITS_DIR / "train.jsonl"))
+    parser.add_argument("--dev-path", default=str(config.PHASE2_SPLITS_DIR / "dev.jsonl"))
+    parser.add_argument("--max-docs", type=int, default=None,
+                        help="Optional train-doc cap outside smoke-test mode.")
+    parser.add_argument("--max-dev-docs", type=int, default=None,
+                        help="Optional dev-doc cap outside smoke-test mode.")
+    parser.add_argument("--max-length", type=int, default=DEFAULT_MAX_LENGTH)
+    parser.add_argument("--device", default="auto", help="auto, cuda, mps, or cpu")
     parser.add_argument("--stage2-dir", default=str(config.STAGE2_DIR / "best"))
     parser.add_argument("--output-dir", default=str(config.STAGE3_DIR))
     args = parser.parse_args()
@@ -220,12 +230,13 @@ def main() -> None:
     smoke = args.smoke_test
     epochs = SMOKE_EPOCHS if smoke else args.epochs
     batch_size = SMOKE_BATCH if smoke else args.batch_size
-    max_docs = SMOKE_MAX_DOCS if smoke else None
+    max_docs = SMOKE_MAX_DOCS if smoke else args.max_docs
     timeout_ms = SMOKE_TIMEOUT_MS if smoke else args.timeout_ms
 
     logger.info(f"epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = choose_torch_device(args.device)
+    logger.info(f"device={device}")
     encoder_dir = Path(args.stage2_dir)
     if not (encoder_dir / "config.json").is_file():
         encoder_dir = config.SAPBERT_ENCODER_DIR
@@ -254,7 +265,7 @@ def main() -> None:
     model.to(device)
 
     # 1+2: collect CSP overrides.
-    train_path = config.PHASE2_SPLITS_DIR / "train.jsonl"
+    train_path = Path(args.train_path)
     counts = collect_overrides(
         model, train_path, tokenizer, base_soft, tables, device,
         max_docs=max_docs, timeout_ms=timeout_ms,
@@ -270,10 +281,11 @@ def main() -> None:
     # 4: retrain.
     pad_id = tokenizer.pad_token_id or 0
     train_ds = CanonDocDataset(train_path, tokenizer, updated_soft,
-                               max_length=DEFAULT_MAX_LENGTH, max_docs=max_docs,
+                               max_length=args.max_length, max_docs=max_docs,
                                max_pairs=args.max_pairs, seed=42)
-    dev_ds = CanonDocDataset(config.PHASE2_SPLITS_DIR / "dev.jsonl", tokenizer, updated_soft,
-                             max_length=DEFAULT_MAX_LENGTH, max_docs=max_docs,
+    dev_ds = CanonDocDataset(Path(args.dev_path), tokenizer, updated_soft,
+                             max_length=args.max_length,
+                             max_docs=args.max_dev_docs if not smoke else max_docs,
                              max_pairs=args.max_pairs, seed=43)
     coll = lambda b: collate_docs(b, pad_token_id=pad_id)
     train_loader = DataLoader(train_ds, batch_size=batch_size, collate_fn=coll)

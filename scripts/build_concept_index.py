@@ -37,9 +37,11 @@ from transformers import AutoModel, AutoTokenizer
 
 try:
     import config
+    from utils import choose_torch_device
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import config
+    from utils import choose_torch_device
 
 
 FSN_TYPE_ID = "900000000000003001"
@@ -105,6 +107,33 @@ def load_preferred_terms(desc_path: Path, logger: logging.Logger) -> Dict[str, s
     return out
 
 
+def load_soft_lookup_terms(lookup_path: Path, logger: logging.Logger) -> Dict[str, str]:
+    """Return one candidate term per SNOMED concept from Phase 2 soft mappings."""
+    with lookup_path.open("r", encoding="utf-8") as fh:
+        lookup = json.load(fh)
+
+    best: Dict[str, Tuple[float, str]] = {}
+    candidate_rows = 0
+    for candidates in lookup.values():
+        for cand in candidates:
+            cid = str(cand.get("snomed_id") or "").strip()
+            term = str(cand.get("term") or "").strip()
+            if not cid or not term:
+                continue
+            prob = float(cand.get("prob") or 0.0)
+            prev = best.get(cid)
+            if prev is None or prob > prev[0]:
+                best[cid] = (prob, term)
+            candidate_rows += 1
+
+    out = {cid: term for cid, (_prob, term) in best.items()}
+    logger.info(
+        f"scanned {candidate_rows:,} soft-mapping candidate rows, "
+        f"kept {len(out):,} unique candidate concepts"
+    )
+    return out
+
+
 @torch.inference_mode()
 def encode_concepts(
     concept_terms: List[Tuple[str, str]],
@@ -151,6 +180,10 @@ def main() -> None:
     parser.add_argument("--output-dir", default=str(config.CONCEPT_INDEX_DIR))
     parser.add_argument("--batch-size", type=int, default=DEFAULT_BATCH_SIZE)
     parser.add_argument("--max-length", type=int, default=DEFAULT_MAX_LENGTH)
+    parser.add_argument("--from-soft-lookup", action="store_true",
+                        help="Index only concepts appearing in Phase 2 soft mappings.")
+    parser.add_argument("--soft-lookup", default=str(config.SOFT_MAPPING_LOOKUP))
+    parser.add_argument("--device", default="auto", help="auto, cuda, mps, or cpu")
     parser.add_argument("--cap", type=int, default=None,
                         help="Cap number of concepts (smoke override).")
     args = parser.parse_args()
@@ -172,19 +205,23 @@ def main() -> None:
 
     desc_path = Path(args.descriptions)
     logger.info(f"descriptions = {desc_path}")
+    logger.info(f"soft_lookup  = {args.soft_lookup}")
     logger.info(f"encoder      = {encoder_dir}")
     logger.info(f"output_dir   = {output_dir}")
-    logger.info(f"smoke_test   = {args.smoke_test}  cap = {cap}")
+    logger.info(f"smoke_test   = {args.smoke_test}  cap = {cap}  from_soft_lookup = {args.from_soft_lookup}")
 
     t0 = time.time()
-    preferred = load_preferred_terms(desc_path, logger)
+    if args.from_soft_lookup:
+        preferred = load_soft_lookup_terms(Path(args.soft_lookup), logger)
+    else:
+        preferred = load_preferred_terms(desc_path, logger)
 
     items = sorted(preferred.items(), key=lambda kv: kv[0])
     if cap is not None and len(items) > cap:
         items = items[:cap]
     logger.info(f"encoding {len(items):,} concepts (batch={args.batch_size}, max_len={args.max_length})")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = choose_torch_device(args.device)
     ids, emb = encode_concepts(
         items,
         encoder_dir,

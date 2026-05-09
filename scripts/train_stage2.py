@@ -32,6 +32,7 @@ from transformers import AutoTokenizer, get_linear_schedule_with_warmup
 
 try:
     import config
+    from utils import choose_torch_device
     from canon_dataset import (
         CanonDocDataset,
         collate_docs,
@@ -48,6 +49,7 @@ try:
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import config
+    from utils import choose_torch_device
     from canon_dataset import (
         CanonDocDataset,
         collate_docs,
@@ -240,6 +242,16 @@ def main() -> None:
     parser.add_argument("--tau-start", type=float, default=DEFAULT_TAU_START)
     parser.add_argument("--tau-end", type=float, default=DEFAULT_TAU_END)
     parser.add_argument("--patience", type=int, default=DEFAULT_PATIENCE)
+    parser.add_argument("--train-path", default=str(config.PHASE2_SPLITS_DIR / "train.jsonl"))
+    parser.add_argument("--dev-path", default=str(config.PHASE2_SPLITS_DIR / "dev.jsonl"))
+    parser.add_argument("--max-docs", type=int, default=None,
+                        help="Optional train-doc cap outside smoke-test mode.")
+    parser.add_argument("--max-dev-docs", type=int, default=None,
+                        help="Optional dev-doc cap outside smoke-test mode.")
+    parser.add_argument("--device", default="auto", help="auto, cuda, mps, or cpu")
+    parser.add_argument("--encoder-dir", default=str(config.SAPBERT_ENCODER_DIR))
+    parser.add_argument("--concept-index-ids", default=str(config.CONCEPT_INDEX_IDS))
+    parser.add_argument("--concept-index-emb", default=str(config.CONCEPT_INDEX_EMB))
     parser.add_argument("--stage1-dir", default=str(config.STAGE1_DIR))
     parser.add_argument("--output-dir", default=str(config.STAGE2_DIR))
     args = parser.parse_args()
@@ -251,23 +263,26 @@ def main() -> None:
     smoke = args.smoke_test
     epochs = SMOKE_EPOCHS if smoke else args.epochs
     batch_size = SMOKE_BATCH if smoke else args.batch_size
-    max_docs = SMOKE_MAX_DOCS if smoke else None
+    max_docs = SMOKE_MAX_DOCS if smoke else args.max_docs
 
     logger.info(f"epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tokenizer = AutoTokenizer.from_pretrained(str(config.SAPBERT_ENCODER_DIR))
+    device = choose_torch_device(args.device)
+    logger.info(f"device={device}")
+    encoder_dir = Path(args.encoder_dir)
+    tokenizer = AutoTokenizer.from_pretrained(str(encoder_dir))
     pad_id = tokenizer.pad_token_id or 0
     soft = load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
 
     train_ds = CanonDocDataset(
-        config.PHASE2_SPLITS_DIR / "train.jsonl",
+        Path(args.train_path),
         tokenizer, soft, max_length=args.max_length,
         max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=42)
     dev_ds = CanonDocDataset(
-        config.PHASE2_SPLITS_DIR / "dev.jsonl",
+        Path(args.dev_path),
         tokenizer, soft, max_length=args.max_length,
-        max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=43)
+        max_docs=args.max_dev_docs if not smoke else max_docs,
+        neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=43)
 
     def coll(b):
         return collate_docs(b, pad_token_id=pad_id)
@@ -275,10 +290,12 @@ def main() -> None:
     train_loader = DataLoader(train_ds, batch_size=batch_size, collate_fn=coll)
     dev_loader = DataLoader(dev_ds, batch_size=batch_size, collate_fn=coll)
 
-    with open(config.CONCEPT_INDEX_IDS) as fh:
+    concept_ids_path = Path(args.concept_index_ids)
+    concept_emb_path = Path(args.concept_index_emb)
+    with open(concept_ids_path) as fh:
         num_concepts = len(json.load(fh))
-    model = MultiTaskModel(str(config.SAPBERT_ENCODER_DIR), num_concepts=num_concepts)
-    model.norm_head.load_concept_index(config.CONCEPT_INDEX_IDS, config.CONCEPT_INDEX_EMB)
+    model = MultiTaskModel(str(encoder_dir), num_concepts=num_concepts)
+    model.norm_head.load_concept_index(concept_ids_path, concept_emb_path)
     load_stage1_state(model, Path(args.stage1_dir), logger)
     model.to(device)
     model.freeze_encoder(False)

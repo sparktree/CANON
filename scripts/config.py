@@ -215,6 +215,8 @@ MESH_TO_SNOMED_VERIFIED_CSV = PHASE1_DIR / "mesh_to_snomed_verified.csv"
 
 SAPBERT_DIR = PHASE3_OUTPUTS / "sapbert"
 SAPBERT_ENCODER_DIR = SAPBERT_DIR / "encoder"
+if not (SAPBERT_ENCODER_DIR / "config.json").is_file() and (SAPBERT_DIR / "config.json").is_file():
+    SAPBERT_ENCODER_DIR = SAPBERT_DIR
 SAPBERT_CHECKPOINTS_DIR = SAPBERT_DIR / "checkpoints"
 
 CONCEPT_INDEX_DIR = PHASE3_OUTPUTS / "concept_index"
