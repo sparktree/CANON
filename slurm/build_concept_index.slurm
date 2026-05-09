@@ -50,3 +50,13 @@ python scripts/build_concept_index.py \
     --max-length 64
 
 echo "[cidx] done -> $CANON_OUTPUTS_ROOT/phase3/concept_index/"
+
+# Race pattern: cidx is submitted on r00877 / r00998 / c02114 simultaneously
+# to dodge fairshare backlogs. The first one to finish cancels the others.
+OTHER_JIDS=$(squeue -u "$USER" -h -o '%i %j' \
+    | awk -v me="$SLURM_JOB_ID" '$2=="canon-cidx" && $1!=me {print $1}' \
+    | tr '\n' ' ')
+if [ -n "$OTHER_JIDS" ]; then
+    echo "[cidx] cancelling sibling cidx jobs: $OTHER_JIDS"
+    scancel $OTHER_JIDS || true
+fi
