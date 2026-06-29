@@ -3,15 +3,23 @@
 Four-priority pipeline applied to every unique MeSH descriptor harvested from
 BioRED, BC5CDR, NCBI Disease, and NLM-Chem:
 
-    1. MRMAP curated mapping            (confidence 0.95)
-    2. Shared CUI alignment             (confidence 0.90)
-    3. MRREL traversal (SY/RQ/RB/RN)    (confidence 0.55-0.70)
-    4. Semantic-type fallback           (confidence 0.40)
+    1. MRMAP curated mapping            (confidence 0.95, skos:exactMatch)
+    2. Shared CUI alignment             (confidence 0.90, skos:closeMatch)
+    3. MRREL traversal (SY/RQ/RB/RN)    (confidence 0.55-0.70; SY/RQ ->
+                                         skos:closeMatch, RB -> skos:broadMatch,
+                                         RN -> skos:narrowMatch)
+    4. Semantic-type fallback           (confidence 0.40, skos:relatedMatch)
 
 Selection rule within each tier: pick the SNOMED atom with the best TTY
 (PT > FN > SY > others), tie-broken by shortest preferred-term length, then
 lexicographically smallest concept ID. This gives the deterministic
 "context-independent best match" the plan calls for.
+
+Output columns are SKOS-typed per Phase 2.0 (mesh_uri, snomed_uri,
+skos_property, confidence, mapping_method); the legacy bare-ID columns
+(mesh_id, snomed_id) and the human-readable snomed_term / frequency /
+entity_classes / corpora columns are retained for Phase 1.7 / 2.2 / 2.4
+consumers that have not yet been upgraded to read URIs.
 
 Outputs (under CANON/outputs/phase1/):
     mesh_to_snomed.csv             - flat mapping table
@@ -33,11 +41,13 @@ from typing import Dict, Iterable, List, Optional, Tuple
 try:
     from config import REPO_ROOT
     from mesh_harvest import aggregate, harvest_all
+    import skos_schema
     import umls_query
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from config import REPO_ROOT
     from mesh_harvest import aggregate, harvest_all
+    import skos_schema
     import umls_query
 
 
@@ -115,6 +125,11 @@ class Candidate:
     source_cui: Optional[str] = None
     intermediate_cui: Optional[str] = None
     rel: Optional[str] = None
+
+    @property
+    def skos_property(self) -> str:
+        """SKOS mapping property derived from this candidate's pipeline branch."""
+        return skos_schema.skos_property_for_method(self.method)
 
     def quality_key(self) -> tuple:
         """Lower is better."""
@@ -273,11 +288,14 @@ def _ensure_output_dir() -> Path:
 
 def write_mapping_table(rows: List[dict], path: Path) -> None:
     fields = [
+        "mesh_uri",
+        "snomed_uri",
+        "skos_property",
+        "confidence",
+        "mapping_method",
         "mesh_id",
         "snomed_id",
         "snomed_term",
-        "confidence",
-        "mapping_method",
         "frequency",
         "entity_classes",
         "corpora",
@@ -290,7 +308,7 @@ def write_mapping_table(rows: List[dict], path: Path) -> None:
 
 
 def write_unmapped_table(rows: List[dict], path: Path) -> None:
-    fields = ["mesh_id", "frequency", "entity_classes", "corpora", "reason"]
+    fields = ["mesh_uri", "mesh_id", "frequency", "entity_classes", "corpora", "reason"]
     with path.open("w", encoding="utf-8", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields)
         w.writeheader()
@@ -382,6 +400,7 @@ def build_mapping(verbose: bool = True):
             method_counter["unmapped"] += 1
             unmapped_rows.append(
                 {
+                    "mesh_uri": skos_schema.mint_mesh_uri(mesh_id),
                     "mesh_id": mesh_id,
                     "frequency": meta["frequency"],
                     "entity_classes": entity_classes,
@@ -394,11 +413,14 @@ def build_mapping(verbose: bool = True):
         mapping_by_mesh[mesh_id] = cand
         mapping_rows.append(
             {
+                "mesh_uri": skos_schema.mint_mesh_uri(mesh_id),
+                "snomed_uri": skos_schema.mint_snomed_uri(cand.snomed_id),
+                "skos_property": cand.skos_property,
+                "confidence": f"{cand.confidence:.2f}",
+                "mapping_method": cand.method,
                 "mesh_id": mesh_id,
                 "snomed_id": cand.snomed_id,
                 "snomed_term": cand.snomed_term,
-                "confidence": f"{cand.confidence:.2f}",
-                "mapping_method": cand.method,
                 "frequency": meta["frequency"],
                 "entity_classes": entity_classes,
                 "corpora": corpora,
@@ -449,9 +471,11 @@ if __name__ == "__main__":
         if cand is None:
             print(f"{args.probe}: UNMAPPED")
         else:
+            mesh_uri = skos_schema.mint_mesh_uri(args.probe)
+            snomed_uri = skos_schema.mint_snomed_uri(cand.snomed_id)
             print(
-                f"{args.probe} -> SNOMED {cand.snomed_id} ({cand.snomed_term}) "
-                f"conf={cand.confidence:.2f} method={cand.method}"
+                f"{mesh_uri} {cand.skos_property} {snomed_uri} "
+                f"({cand.snomed_term}) conf={cand.confidence:.2f} method={cand.method}"
             )
     else:
         build_mapping(verbose=not args.quiet)
