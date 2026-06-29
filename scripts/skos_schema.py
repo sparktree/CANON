@@ -47,7 +47,17 @@ PREFIXES: Dict[str, str] = {
 # ---------------------------------------------------------------------------
 # SKOS mapping-property constants
 # ---------------------------------------------------------------------------
-SKOS_EXACT_MATCH   = "skos:exactMatch"
+# CANON deliberately omits skos:exactMatch from its property vocabulary. SKOS
+# exactMatch carries commitments (transitivity, application-independent
+# interchangeability) that none of the available CANON evidence sources can
+# verify: UMLS CUI grouping is a curator-assisted synonymy claim, not a
+# cross-application equivalence guarantee; MeSH descriptors are bibliographic
+# indexing terms whose scope is documentary; SNOMED concepts are clinical
+# recording terms whose scope is operational. A shared name across the two
+# vocabularies ("Sodium", "Serotonin") can refer to the substance in MeSH and
+# to one of several distinguishable clinical senses in SNOMED (the substance,
+# the measurand, the ion). exactMatch would overclaim. closeMatch is the
+# correct ceiling under the SKOS spec for everything we can produce.
 SKOS_CLOSE_MATCH   = "skos:closeMatch"
 SKOS_BROAD_MATCH   = "skos:broadMatch"
 SKOS_NARROW_MATCH  = "skos:narrowMatch"
@@ -55,8 +65,13 @@ SKOS_RELATED_MATCH = "skos:relatedMatch"
 
 
 # Phase 1.2 method name -> SKOS mapping property.
-# The Phase 1.2 four-priority pipeline produces these methods:
-#   mrmap_curated     -- NLM-curated 1:1 mapping, interchangeable
+# The Phase 1.2 three-priority pipeline produces these methods:
+#   shared_cui_strict -- same UMLS concept, single SNOMED concept and single
+#                        MeSH MH per CUI, both atoms preferred terms, and
+#                        normalized strings match. High-confidence closeMatch
+#                        (conf 0.93). Still closeMatch -- the four-condition
+#                        test is a strong heuristic for substitutability in
+#                        many contexts but does not warrant exactMatch.
 #   shared_cui        -- same UMLS atom-level concept; close but not identical
 #   mrrel_sy          -- UMLS SY: synonymous
 #   mrrel_rq          -- UMLS RQ: related and possibly synonymous
@@ -65,17 +80,17 @@ SKOS_RELATED_MATCH = "skos:relatedMatch"
 #   sty_fallback:*    -- semantic-type root fallback (last resort)
 #
 # Per CANON_Plan.txt 1.2 the SKOS property is one of
-# {exactMatch | closeMatch | broadMatch | narrowMatch | relatedMatch}.
+# {closeMatch | broadMatch | narrowMatch | relatedMatch}.
 # RB/RN map directly to broad/narrow per the plan; SY/RQ are tighter than
 # relatedMatch but looser than exactMatch, so closeMatch fits SKOS semantics
 # (interchangeable in some applications, not in general).
 METHOD_TO_SKOS_PROPERTY: Dict[str, str] = {
-    "mrmap_curated": SKOS_EXACT_MATCH,
-    "shared_cui":    SKOS_CLOSE_MATCH,
-    "mrrel_sy":      SKOS_CLOSE_MATCH,
-    "mrrel_rq":      SKOS_CLOSE_MATCH,
-    "mrrel_rb":      SKOS_BROAD_MATCH,
-    "mrrel_rn":      SKOS_NARROW_MATCH,
+    "shared_cui_strict": SKOS_CLOSE_MATCH,
+    "shared_cui":        SKOS_CLOSE_MATCH,
+    "mrrel_sy":          SKOS_CLOSE_MATCH,
+    "mrrel_rq":          SKOS_CLOSE_MATCH,
+    "mrrel_rb":          SKOS_BROAD_MATCH,
+    "mrrel_rn":          SKOS_NARROW_MATCH,
 }
 
 

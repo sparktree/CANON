@@ -1,14 +1,26 @@
 """MeSH -> SNOMED CT concept mapping (CANON Phase 1.2).
 
-Four-priority pipeline applied to every unique MeSH descriptor harvested from
+Three-priority pipeline applied to every unique MeSH descriptor harvested from
 BioRED, BC5CDR, NCBI Disease, and NLM-Chem:
 
-    1. MRMAP curated mapping            (confidence 0.95, skos:exactMatch)
-    2. Shared CUI alignment             (confidence 0.90, skos:closeMatch)
-    3. MRREL traversal (SY/RQ/RB/RN)    (confidence 0.55-0.70; SY/RQ ->
+    1. Shared CUI alignment             (confidence 0.90, skos:closeMatch;
+                                         elevated to 0.93 / shared_cui_strict
+                                         when the four-condition strict
+                                         heuristic in _shared_cui_is_strict
+                                         fires -- still skos:closeMatch)
+    2. MRREL traversal (SY/RQ/RB/RN)    (confidence 0.55-0.70; SY/RQ ->
                                          skos:closeMatch, RB -> skos:broadMatch,
                                          RN -> skos:narrowMatch)
-    4. Semantic-type fallback           (confidence 0.40, skos:relatedMatch)
+    3. Semantic-type fallback           (confidence 0.40, skos:relatedMatch)
+
+CANON deliberately produces no skos:exactMatch rows. MeSH descriptors are
+bibliographic indexing terms; SNOMED concepts are clinical recording terms;
+the two vocabularies can share a surface form ("Sodium", "Serotonin") while
+denoting distinguishable senses in their respective ontologies. exactMatch's
+transitivity and application-independence commitments cannot be honestly
+asserted from atom metadata alone, so the strongest property emitted is
+skos:closeMatch, with the strict heuristic carrying a higher confidence
+score to mark it as the best evidence we can produce algorithmically.
 
 Selection rule within each tier: pick the SNOMED atom with the best TTY
 (PT > FN > SY > others), tie-broken by shortest preferred-term length, then
@@ -56,7 +68,7 @@ OUTPUT_DIR = REPO_ROOT / "outputs" / "phase1"
 # ---------------------------------------------------------------------------
 # Confidence schedule for each mapping method
 # ---------------------------------------------------------------------------
-CONF_MRMAP = 0.95
+CONF_SHARED_CUI_STRICT = 0.93  # strict shared-CUI (see _shared_cui_is_strict)
 CONF_SHARED_CUI = 0.90
 CONF_MRREL_SY = 0.70
 CONF_MRREL_RQ = 0.68
@@ -66,6 +78,18 @@ CONF_STY_FALLBACK = 0.40
 CONFIDENCE_THRESHOLD = 0.80  # Plan's high-confidence cutoff
 
 _TTY_RANK = {"PT": 0, "FN": 1, "SY": 2, "PTGB": 3}
+_PREFERRED_SNOMED_TTYS = {"PT", "FN"}
+_MESH_PREFERRED_TTY = "MH"  # Main Heading -- the MeSH descriptor's preferred form
+
+_PUNCT_TRANS = str.maketrans({c: " " for c in r"""!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"""})
+
+
+def _normalize_term(s: str) -> str:
+    """Lowercase, strip punctuation, collapse whitespace. Used for the
+    string-equality leg of the shared-CUI exactness check."""
+    if not s:
+        return ""
+    return " ".join(s.lower().translate(_PUNCT_TRANS).split())
 
 
 # Semantic type -> top-level SNOMED concept used for the last-ditch fallback.
@@ -152,53 +176,84 @@ def _best_snomed_atom(atoms: Iterable[dict]) -> Optional[dict]:
     return snomed[0]
 
 
-def _candidates_mrmap(mesh_id: str) -> List[Candidate]:
-    out: List[Candidate] = []
-    for entry in umls_query.get_curated_mapping(mesh_id):
-        # MRMAP entries currently use mapsetsab as a proxy; only accept rows whose
-        # to_code looks like a SNOMED concept id (numeric, length 6-18).
-        to_code = (entry.get("to_code") or "").strip()
-        if not to_code.isdigit() or not (6 <= len(to_code) <= 18):
-            continue
-        # Look up the preferred SNOMED term via the atoms index.
-        cuis = umls_query.code_to_cuis.get(("SNOMEDCT_US", to_code), [])
-        term, tty = to_code, ""
-        for cui in cuis:
-            atom = _best_snomed_atom(
-                a for a in umls_query.cui_to_atoms.get(cui, [])
-                if a.get("code") == to_code
-            )
-            if atom:
-                term = atom.get("str") or term
-                tty = atom.get("tty", "")
-                break
-        out.append(
-            Candidate(
-                snomed_id=to_code,
-                snomed_term=term,
-                tty=tty,
-                confidence=CONF_MRMAP,
-                method="mrmap_curated",
-            )
-        )
-    return out
+def _shared_cui_is_strict(cui: str, mesh_id: str, snomed_atom: dict) -> bool:
+    """Strict high-confidence variant of the shared-CUI mapping (still closeMatch).
+
+    All four conditions must hold:
+      (1) the CUI carries exactly one SNOMEDCT_US concept (no ambiguity on
+          which SNOMED target is "the" match);
+      (2) the CUI carries exactly one MeSH MH descriptor (the CUI is not a
+          super-concept that groups multiple MeSH headings);
+      (3) the chosen SNOMED atom is a preferred form (TTY in {PT, FN});
+      (4) there is an MSH atom in the CUI for this descriptor with TTY=MH
+          whose normalized preferred-term string equals the SNOMED atom's
+          normalized preferred-term string.
+
+    Rows that pass take confidence 0.93 and mapping_method "shared_cui_strict";
+    rows that fail any condition stay at the plain shared_cui (closeMatch,
+    0.90). Both outcomes are skos:closeMatch -- the four-condition test is
+    a strong heuristic for substitutability in many contexts but does NOT
+    license skos:exactMatch (no transitivity guarantee, no application-
+    independent equivalence claim; MeSH descriptors are bibliographic
+    indexing terms whose scope can differ from SNOMED clinical recording
+    terms that happen to share a surface form).
+    """
+    atoms = umls_query.cui_to_atoms.get(cui, [])
+    if not atoms:
+        return False
+    # (3) SNOMED atom is a preferred form.
+    if snomed_atom.get("tty") not in _PREFERRED_SNOMED_TTYS:
+        return False
+    # (1) exactly one SNOMEDCT_US concept under this CUI.
+    snomed_codes = {a["code"] for a in atoms if a.get("sab") == "SNOMEDCT_US" and a.get("code")}
+    if len(snomed_codes) != 1:
+        return False
+    # (2) exactly one MeSH MH descriptor under this CUI.
+    mesh_mh_codes = {
+        a["code"]
+        for a in atoms
+        if a.get("sab") == "MSH" and a.get("tty") == _MESH_PREFERRED_TTY and a.get("code")
+    }
+    if len(mesh_mh_codes) != 1:
+        return False
+    # (4) string-normalized equality between the MH preferred term and the
+    # SNOMED preferred term, for THIS descriptor (mesh_id).
+    snomed_norm = _normalize_term(snomed_atom.get("str") or "")
+    if not snomed_norm:
+        return False
+    for a in atoms:
+        if (
+            a.get("sab") == "MSH"
+            and a.get("tty") == _MESH_PREFERRED_TTY
+            and a.get("code") == mesh_id
+            and _normalize_term(a.get("str") or "") == snomed_norm
+        ):
+            return True
+    return False
 
 
 def _candidates_shared_cui(mesh_id: str) -> List[Candidate]:
     out: List[Candidate] = []
     for cui in umls_query.get_cuis_for_mesh(mesh_id):
         atom = _best_snomed_atom(umls_query.cui_to_atoms.get(cui, []))
-        if atom:
-            out.append(
-                Candidate(
-                    snomed_id=atom["code"],
-                    snomed_term=atom.get("str") or atom["code"],
-                    tty=atom.get("tty", ""),
-                    confidence=CONF_SHARED_CUI,
-                    method="shared_cui",
-                    source_cui=cui,
-                )
+        if not atom:
+            continue
+        if _shared_cui_is_strict(cui, mesh_id, atom):
+            confidence = CONF_SHARED_CUI_STRICT
+            method = "shared_cui_strict"
+        else:
+            confidence = CONF_SHARED_CUI
+            method = "shared_cui"
+        out.append(
+            Candidate(
+                snomed_id=atom["code"],
+                snomed_term=atom.get("str") or atom["code"],
+                tty=atom.get("tty", ""),
+                confidence=confidence,
+                method=method,
+                source_cui=cui,
             )
+        )
     return out
 
 
@@ -266,7 +321,6 @@ def _candidates_sty(mesh_id: str) -> List[Candidate]:
 # ---------------------------------------------------------------------------
 def map_mesh(mesh_id: str) -> Optional[Candidate]:
     for tier in (
-        _candidates_mrmap,
         _candidates_shared_cui,
         _candidates_mrrel,
         _candidates_sty,
