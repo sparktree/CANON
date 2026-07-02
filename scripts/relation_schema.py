@@ -28,7 +28,13 @@ different inclusion criteria — so closeMatch is the correct property (same
 bibliographic-vs-clinical-style sense gap that bars exactMatch in Phase 1.2).
 The alignment table (relation_schema_alignment.csv) carries the skos_property
 and URI columns; the concept scheme itself is materialized to
-relation_scheme_skos.json for Phase 2.3 to dereference.
+relation_scheme_skos.json for Phase 2.3 to dereference. In that sidecar the
+concept-scheme nodes are clean SKOS (skos:Concept with notation/prefLabel/
+inScheme + canon:tier, all coerced by the Phase 2.0 @context), and each source
+relation's candidate fan-out is carried as canon:candidates -- the same term
+and shape the Phase 2.1 annotation format uses -- so target IRIs survive a
+JSON-LD lift. The uniform mapping property (skos:closeMatch) is declared once at
+the top level rather than overloaded as a per-row container.
 
 Probability provenance. The within-group probability splits are expert priors,
 not annotated counts. Each split was set by reading the source relation's
@@ -700,19 +706,28 @@ def build_skos_scheme() -> dict:
     mappings = []
     for key in sorted(grouped):
         corpus, source_rel, subj, obj = key
-        rows = grouped[key]
+        ordered = sorted(grouped[key], key=lambda r: -r.probability)
+        # The candidate fan-out is carried as canon:candidates -- the same term
+        # (and shape) the Phase 2.1 annotation format uses on each relation --
+        # rather than as an overloaded skos:closeMatch container. canon:relation
+        # is @id-coerced in the Phase 2.0 @context, so the target IRI survives a
+        # JSON-LD lift; the uniform mapping property is declared once at the top
+        # level (mapping_property). A bare `source skos:closeMatch target` triple
+        # is deliberately NOT emitted here because these links are entity-pair
+        # contextual (the same source relation maps differently per subject/
+        # object class), so a context-free closeMatch triple would over-generalize.
         mappings.append(
             {
                 "source": skos_schema.mint_source_relation_uri(corpus, source_rel),
                 "subject_class": subj,
                 "object_class": obj,
-                "skos:closeMatch": [
+                "canon:candidates": [
                     {
-                        "target": m.target_relation_uri,
+                        "canon:relation": m.target_relation_uri,
                         "canon:probability": m.probability,
                         "canon:tier": m.tier,
                     }
-                    for m in sorted(rows, key=lambda r: -r.probability)
+                    for m in ordered
                 ],
             }
         )
