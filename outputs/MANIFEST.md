@@ -15,6 +15,7 @@ See `.gitignore` for the live list.
 |---|---|---|---|---|
 | `outputs/phase2/silver/train.jsonl` | ~558 MB | 2.6 (legacy variant) | `scripts/pubtator_silver.py` — synthetic-text "{subj} {rel} {obj}" silver from the bulk PubTator3 TSVs | `CANON_DOWNLOAD_SILVER=1 python -m scripts.pubtator_silver` (requires `Data/PubTator3-2/{disease,chemical,relation}2pubtator3.gz`) |
 | `outputs/phase2/splits/train.jsonl` | ~145 MB | 2.7 | `scripts/assemble_splits.py` — concatenates BioRED + BC5CDR + synthetic + PubTator3 silver train shards | `python main.py --only 2.7` (requires Phase 2.3, 2.5, 2.6 outputs to already exist) |
+| `outputs/phase2/rdf/snomed_hierarchy.nt` | ~163 MB | 2.0 | `scripts/skos_schema.py` — N-Triples export of the Phase 1.6 hierarchy (`skos:broader` + `skos:notation` + `rdf:type skos:Concept`, ~1.41 M triples) | `python main.py --only 2.0` (requires the Phase 1.6 graph pickle) |
 
 ## Files that are tracked but worth flagging
 
@@ -37,7 +38,7 @@ has a single CLI entry point:
 
 ```
 python main.py --only 1.1 1.2 1.3 1.4 1.5 1.6 1.7
-python main.py --only 2.1 2.2 2.3 2.4 2.5
+python main.py --only 2.0 2.1 2.2 2.3 2.4 2.5
 CANON_DOWNLOAD_SILVER=1 python main.py --only 2.6   # network call
 python main.py --only 2.7                            # depends on 2.3, 2.5, 2.6
 ```

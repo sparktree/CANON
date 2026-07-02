@@ -208,6 +208,13 @@ PHASE3_OUTPUTS = OUTPUTS_ROOT / "phase3"
 PHASE2_SPLITS_DIR = PHASE2_DIR / "splits"
 SOFT_MAPPING_LOOKUP = PHASE2_DIR / "soft_mapping_lookup.json"
 
+# Phase 2.0 SKOS foundation: the published JSON-LD @context lives next to the
+# code (it is generated from skos_schema.PREFIXES), while the RDF export of the
+# Phase 1.6 hierarchy is a build artifact under outputs/.
+CONTEXTS_DIR = SCRIPT_DIR / "contexts"
+CANON_CONTEXT_JSONLD = CONTEXTS_DIR / "canon.jsonld"
+PHASE2_RDF_DIR = PHASE2_DIR / "rdf"
+
 SNOMED_HIERARCHY_PKL = PHASE1_DIR / "snomed_hierarchy.pkl"
 SNOMED_ANCESTORS_PKL = PHASE1_DIR / "snomed_ancestors.pkl"
 MRCM_CONSTRAINTS_JSON = PHASE1_DIR / "mrcm_constraints.json"

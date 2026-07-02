@@ -11,6 +11,7 @@ Currently implemented:
     Phase 1.5 -- MRCM constraint dictionary             (mrcm.py)
     Phase 1.6 -- SNOMED hierarchy graph                 (snomed_hierarchy.py)
     Phase 1.7 -- Active-release mapping verification    (mapping_verify.py)
+    Phase 2.0 -- SKOS foundation (@context + hierarchy RDF) (skos_schema.py)
     Phase 2.1 -- Unified annotation format + converters (unified_format.py + corpus_convert.py)
     Phase 2.2 -- Apply SNOMED concept mappings          (concept_map.py)
     Phase 2.3 -- Apply unified relation labels          (relation_map.py)
@@ -50,6 +51,7 @@ import relation_map  # noqa: E402
 import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
 import silver_pubtator  # noqa: E402
+import skos_schema  # noqa: E402
 import snomed_hierarchy  # noqa: E402
 import snomed_synth  # noqa: E402
 import soft_map  # noqa: E402
@@ -138,6 +140,20 @@ def step_1_7() -> None:
             f"SNOMED release; Phase 2.2 must apply a policy (drop / redirect / keep)."
         )
     print(f"[1.7] elapsed {time.time() - t0:.1f}s")
+
+
+def step_2_0() -> None:
+    _banner("Phase 2.0 -- SKOS foundation (@context + hierarchy RDF)")
+    t0 = time.time()
+    ctx_path = skos_schema.write_context()
+    print(
+        f"[2.0] @context -> {ctx_path}  "
+        f"({len(skos_schema.PREFIXES)} prefixes, "
+        f"{len(skos_schema.TERM_DEFINITIONS)} coerced terms)"
+    )
+    rdf_path = skos_schema.export_hierarchy_rdf()
+    print(f"[2.0] hierarchy RDF -> {rdf_path}")
+    print(f"[2.0] elapsed {time.time() - t0:.1f}s")
 
 
 def step_2_1() -> None:
@@ -335,6 +351,7 @@ STEPS = {
     "1.5": step_1_5,
     "1.6": step_1_6,
     "1.7": step_1_7,
+    "2.0": step_2_0,
     "2.1": step_2_1,
     "2.2": step_2_2,
     "2.3": step_2_3,
