@@ -15,14 +15,58 @@ maps to multiple targets, probabilities sum to 1.0 within each group keyed by
 
 Subject/object semantic_class values must match those defined in entity_scope.py:
   chemical, disease, gene, variant, species, cell_line
+
+SKOS expression (Phase 2.0 alignment). The unified relation vocabulary is a SKOS
+concept scheme, canon:RelationScheme: each unified relation is a skos:Concept
+carrying a canon:tier. Each source corpus's relation vocabulary is its own scheme
+(biored:RelationScheme, bc5cdr:RelationScheme), and every mapping row is a
+skos:closeMatch link from a source-relation concept to a canon-relation concept,
+annotated with canon:probability. CANON emits no skos:exactMatch on this scheme:
+BioRED's "Negative_Correlation" (chemical, disease) overlaps but is not
+interchangeable with canon's "treats" — the annotation guidelines specify
+different inclusion criteria — so closeMatch is the correct property (same
+bibliographic-vs-clinical-style sense gap that bars exactMatch in Phase 1.2).
+The alignment table (relation_schema_alignment.csv) carries the skos_property
+and URI columns; the concept scheme itself is materialized to
+relation_scheme_skos.json for Phase 2.3 to dereference.
+
+Probability provenance. The within-group probability splits are expert priors,
+not annotated counts. Each split was set by reading the source relation's
+definition (BioRED annotation guidelines; BC5CDR CID task definition) and
+assigning the dominant reading the majority mass, while deliberately holding the
+Tier-1 SNOMED-native reading as a minority candidate. This matches the Phase 2.5
+/ 4.5 design premise that every group's deterministic argmax is Tier-2 and that
+Tier-1 is the minority candidate the CSP escalates. The splits are load-bearing
+-- they are the soft labels in Phase 3.3 and they gate the Tier-1 escalation
+mass measured in Phase 4.4 -- so each non-trivial row documents its rationale in
+the notes field. They should be recalibrated against annotated relation counts
+before any headline number rests on the absolute values rather than on the
+argmax-Tier-2 / minority-Tier-1 ordering they encode.
+
+Directionality. Tier-1 SNOMED attributes are directed (causative-agent reads
+finding -> substance). This table stores candidate mass per observed argument
+order and does NOT canonicalize orientation; the CSP solver checks MRCM
+domain/range in an orientation-robust way (accepts a Tier-1 pair when either
+argument order satisfies domain/range) so causative-agent fires on chemical-
+disease pairs in the corpus-canonical chemical-first order. See the reversed-
+order block below for the per-row consequence.
 """
 
 from __future__ import annotations
 
 import csv
-from dataclasses import astuple, dataclass, fields
+import json
+from collections import defaultdict
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterator, List, Optional
+
+try:
+    import skos_schema
+except ImportError:  # pragma: no cover - support running as a module
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import skos_schema
 
 # ---------------------------------------------------------------------------
 # Unified relation label inventories
@@ -59,6 +103,10 @@ ALL_TARGET_RELATIONS: frozenset[str] = TIER1_RELATIONS | TIER2_RELATIONS
 # ---------------------------------------------------------------------------
 
 
+#: Every source→canon relation link is a SKOS closeMatch (see module docstring).
+SKOS_RELATION_PROPERTY: str = skos_schema.SKOS_CLOSE_MATCH
+
+
 @dataclass(frozen=True)
 class RelationMapping:
     source_corpus: str           # 'BioRED' | 'BC5CDR'
@@ -69,6 +117,23 @@ class RelationMapping:
     tier: int                    # 1 = SNOMED-native, 2 = empirical
     probability: float           # within-group probability; groups sum to 1.0
     notes: str                   # brief rationale for this row
+
+    @property
+    def source_relation_uri(self) -> str:
+        """skos:Concept URI of the source-corpus relation (in its per-corpus scheme)."""
+        return skos_schema.mint_source_relation_uri(
+            self.source_corpus, self.source_relation_type
+        )
+
+    @property
+    def target_relation_uri(self) -> str:
+        """skos:Concept URI of the unified (canon) relation."""
+        return skos_schema.mint_canon_relation_uri(self.target_relation)
+
+    @property
+    def skos_property(self) -> str:
+        """SKOS mapping property for this row (always skos:closeMatch)."""
+        return SKOS_RELATION_PROPERTY
 
 
 # ---------------------------------------------------------------------------
@@ -345,11 +410,25 @@ RELATION_MAPPINGS: List[RelationMapping] = [
 
     # =========================================================================
     # BioRED — reversed-order pairs
-    # BioRED does not enforce canonical subject-object ordering.  The rows below
-    # cover observed pairs where subject and object are swapped relative to the
-    # groups above.  Semantics are symmetric for all BioRED relation types
-    # (correlation, binding, comparison, co-treatment) so the probability
-    # distributions mirror the forward direction.
+    # BioRED does not enforce canonical subject-object ordering, so the same
+    # source label appears with subject and object swapped relative to the
+    # groups above. The candidate distributions mirror the forward direction
+    # because the source label carries the same evidential meaning regardless of
+    # which entity BioRED happened to list first.
+    #
+    # Directionality note (important for the Tier-1 targets below): for symmetric
+    # targets (associated-with, interacts-with, compared-with, co-treats, Bind)
+    # orientation is genuinely irrelevant. For directed targets (causative-agent,
+    # causes, treats, converts-to) the label does imply a direction, but the
+    # SNOMED-canonical orientation of a Tier-1 attribute is NOT resolved in this
+    # table -- the table only supplies soft candidate mass per observed pair
+    # order. The CSP solver (Phase 3.5) checks MRCM domain/range in an
+    # orientation-robust way, so a causative-agent candidate on a chemical-disease
+    # pair is accepted and oriented finding->substance whichever way BioRED
+    # ordered the pair. Mirroring the distribution across argument order is
+    # therefore correct: it keeps Tier-1 mass available in both observed orders
+    # for the solver to orient, rather than asserting that the relation itself is
+    # symmetric.
     # =========================================================================
 
     # --- Association (reversed) ----------------------------------------------
@@ -503,7 +582,40 @@ def get_tier2_relations() -> frozenset[str]:
 # ---------------------------------------------------------------------------
 
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "outputs" / "phase1"
-_FIELDNAMES = [f.name for f in fields(RelationMapping)]
+
+# SKOS-typed columns lead, followed by the human-readable/legacy columns. A
+# reader that wants the concept scheme uses source_relation_uri / skos_property
+# / target_relation_uri; one that wants the flat semantics keeps reading the
+# bare label columns exactly as before.
+_FIELDNAMES = [
+    "source_corpus",
+    "source_relation_type",
+    "source_relation_uri",
+    "subject_semantic_class",
+    "object_semantic_class",
+    "skos_property",
+    "target_relation",
+    "target_relation_uri",
+    "tier",
+    "probability",
+    "notes",
+]
+
+
+def _csv_row(m: RelationMapping) -> list:
+    return [
+        m.source_corpus,
+        m.source_relation_type,
+        m.source_relation_uri,
+        m.subject_semantic_class,
+        m.object_semantic_class,
+        m.skos_property,
+        m.target_relation,
+        m.target_relation_uri,
+        m.tier,
+        m.probability,
+        m.notes,
+    ]
 
 
 def dump_csv(path: Optional[Path] = None) -> Path:
@@ -515,7 +627,112 @@ def dump_csv(path: Optional[Path] = None) -> Path:
         writer = csv.writer(fh)
         writer.writerow(_FIELDNAMES)
         for row in RELATION_MAPPINGS:
-            writer.writerow(astuple(row))
+            writer.writerow(_csv_row(row))
+    return path
+
+
+# ---------------------------------------------------------------------------
+# SKOS concept-scheme materialization
+# ---------------------------------------------------------------------------
+# Serializes the relation alignment as an explicit SKOS concept scheme so that
+# Phase 2.3 can dereference the closeMatch links without importing this module.
+# Kept SKOS-shaped (skos:/canon: keys) so the Phase 2.0 @context can lift it to
+# JSON-LD without restructuring. This is the concrete artifact behind the plan's
+# "expressed as a SKOS concept scheme" language for Phase 1.4.
+
+
+def build_skos_scheme() -> dict:
+    """Return the relation alignment as a SKOS concept-scheme dictionary."""
+    # Unified (canon) relation concepts, each with its tier.
+    canon_concepts = [
+        {
+            "@id": skos_schema.mint_canon_relation_uri(rel),
+            "@type": "skos:Concept",
+            "skos:notation": rel,
+            "skos:prefLabel": rel,
+            "skos:inScheme": skos_schema.CANON_RELATION_SCHEME_URI,
+            "canon:tier": 1 if rel in TIER1_RELATIONS else 2,
+        }
+        for rel in sorted(ALL_TARGET_RELATIONS)
+    ]
+
+    # Source-corpus relation concepts, deduplicated per corpus.
+    source_concepts: dict = defaultdict(dict)
+    for m in RELATION_MAPPINGS:
+        if m.source_relation_type in source_concepts[m.source_corpus]:
+            continue
+        source_concepts[m.source_corpus][m.source_relation_type] = {
+            "@id": m.source_relation_uri,
+            "@type": "skos:Concept",
+            "skos:notation": m.source_relation_type,
+            "skos:prefLabel": m.source_relation_type.replace("_", " "),
+            "skos:inScheme": skos_schema.mint_source_relation_scheme_uri(m.source_corpus),
+        }
+
+    schemes = {
+        "canon:RelationScheme": {
+            "@id": skos_schema.CANON_RELATION_SCHEME_URI,
+            "@type": "skos:ConceptScheme",
+            "concepts": canon_concepts,
+        }
+    }
+    for corpus in sorted(source_concepts):
+        schemes[skos_schema.source_scheme_prefix(corpus) + ":RelationScheme"] = {
+            "@id": skos_schema.mint_source_relation_scheme_uri(corpus),
+            "@type": "skos:ConceptScheme",
+            "concepts": [
+                source_concepts[corpus][label]
+                for label in sorted(source_concepts[corpus])
+            ],
+        }
+
+    # closeMatch links, grouped by (source concept, subject class, object class).
+    grouped: dict = defaultdict(list)
+    for m in RELATION_MAPPINGS:
+        key = (
+            m.source_corpus,
+            m.source_relation_type,
+            m.subject_semantic_class,
+            m.object_semantic_class,
+        )
+        grouped[key].append(m)
+
+    mappings = []
+    for key in sorted(grouped):
+        corpus, source_rel, subj, obj = key
+        rows = grouped[key]
+        mappings.append(
+            {
+                "source": skos_schema.mint_source_relation_uri(corpus, source_rel),
+                "subject_class": subj,
+                "object_class": obj,
+                "skos:closeMatch": [
+                    {
+                        "target": m.target_relation_uri,
+                        "canon:probability": m.probability,
+                        "canon:tier": m.tier,
+                    }
+                    for m in sorted(rows, key=lambda r: -r.probability)
+                ],
+            }
+        )
+
+    return {
+        "scheme": "canon:RelationScheme",
+        "mapping_property": SKOS_RELATION_PROPERTY,
+        "schemes": schemes,
+        "mappings": mappings,
+    }
+
+
+def dump_skos_scheme(path: Optional[Path] = None) -> Path:
+    """Write the SKOS concept scheme to *path* (default: OUTPUT_DIR/relation_scheme_skos.json)."""
+    if path is None:
+        path = OUTPUT_DIR / "relation_scheme_skos.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as fh:
+        json.dump(build_skos_scheme(), fh, indent=2, ensure_ascii=False)
+        fh.write("\n")
     return path
 
 
@@ -543,3 +760,5 @@ if __name__ == "__main__":
 
     out = dump_csv()
     print(f"CSV written to {out}")
+    scheme_out = dump_skos_scheme()
+    print(f"SKOS scheme written to {scheme_out}")

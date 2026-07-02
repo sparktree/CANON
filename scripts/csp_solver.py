@@ -132,27 +132,42 @@ def load_constraint_tables(
     relation_constraints = mrcm.get("relation_constraints", {})
 
     # Tier-1 pair compatibility: (relation, type_a, type_b) -> bool.
-    for rel, entries in relation_constraints.items():
+    #
+    # The MRCM structure per attribute (mrcm_constraints.json) is a dict with
+    # "domains" and "ranges" lists; each entry carries *_root_concept_ids. We
+    # match the entity type's anchor SCTIDs literally against those root ids.
+    #
+    # Orientation: SNOMED attributes are directed (causative-agent reads
+    # finding -> substance), but the corpora annotate the entity pair in a
+    # non-canonical order -- BC5CDR CID and BioRED chemical-disease pairs list
+    # the chemical first. A pair is therefore MRCM-coherent if its two types
+    # satisfy domain/range in EITHER orientation; the solver only needs a valid
+    # ontological orientation to exist. Without this, the dominant Tier-1
+    # surface (causative-agent on chemical-disease pairs) would be rejected in
+    # its canonical annotated direction and Tier-1 escalation could only fire on
+    # the minority reverse-ordered annotations.
+    for rel, entry in relation_constraints.items():
         if rel not in TIER1_RELATIONS:
             continue
-        attr_id = TIER1_ATTRIBUTE_IDS.get(rel)
-        if attr_id is None:
-            continue
-        domain_anchors: List[str] = []
-        range_anchors: List[str] = []
-        for entry in entries:
-            d = str(entry.get("domain_root") or entry.get("domain") or "")
-            r = str(entry.get("range_root") or entry.get("range") or "")
-            if d:
-                domain_anchors.append(d)
-            if r:
-                range_anchors.append(r)
+        domain_set = {
+            str(cid)
+            for dm in entry.get("domains", [])
+            for cid in dm.get("domain_root_concept_ids", [])
+        }
+        range_set = {
+            str(cid)
+            for rg in entry.get("ranges", [])
+            for cid in rg.get("range_root_concept_ids", [])
+        }
         for type_a, anchors_a in TYPE_ANCHORS.items():
             for type_b, anchors_b in TYPE_ANCHORS.items():
-                ok = any(a in domain_anchors for a in anchors_a) and any(
-                    a in range_anchors for a in anchors_b
+                fwd = any(a in domain_set for a in anchors_a) and any(
+                    a in range_set for a in anchors_b
                 )
-                tables.valid_pair_for_relation[(rel, type_a, type_b)] = bool(ok)
+                rev = any(a in domain_set for a in anchors_b) and any(
+                    a in range_set for a in anchors_a
+                )
+                tables.valid_pair_for_relation[(rel, type_a, type_b)] = bool(fwd or rev)
         # type_a or type_b not in TYPE_ANCHORS -> default invalid (CSP solver
         # forces no-relation for those pairs anyway).
 

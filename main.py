@@ -107,6 +107,8 @@ def step_1_4() -> None:
     print(f"[1.4] {len(rows)} mapping rows  ({tier1} Tier-1, {tier2} Tier-2)")
     out = relation_schema.dump_csv()
     print(f"[1.4] CSV written to {out}")
+    scheme_out = relation_schema.dump_skos_scheme()
+    print(f"[1.4] SKOS scheme written to {scheme_out}")
     print(f"[1.4] elapsed {time.time() - t0:.1f}s")
 
 

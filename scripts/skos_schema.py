@@ -109,6 +109,49 @@ def skos_property_for_method(method: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Relation-scheme URIs (Phase 1.4)
+# ---------------------------------------------------------------------------
+# The unified relation vocabulary is a SKOS concept scheme, canon:RelationScheme.
+# Each unified relation (causative-agent, treats, ...) is a skos:Concept in it
+# carrying a canon:tier. Each source corpus's relation vocabulary is its own
+# scheme (biored:RelationScheme, bc5cdr:RelationScheme) whose concepts link into
+# canon:RelationScheme via skos:closeMatch with a canon:probability annotation.
+# The compact canon relation URI (canon:causative-agent) matches the notation
+# the plan uses for canon:relation values in the Phase 2.1 annotation format.
+CANON_RELATION_SCHEME_URI = f"{PREFIXES['canon']}RelationScheme"
+
+_CORPUS_SCHEME_PREFIX: Dict[str, str] = {
+    "BioRED": "biored",
+    "BC5CDR": "bc5cdr",
+}
+
+
+def source_scheme_prefix(source_corpus: str) -> str:
+    """Return the registered SKOS prefix key for a source corpus."""
+    try:
+        return _CORPUS_SCHEME_PREFIX[source_corpus]
+    except KeyError as exc:
+        raise ValueError(
+            f"No SKOS relation-scheme prefix registered for corpus {source_corpus!r}"
+        ) from exc
+
+
+def mint_source_relation_scheme_uri(source_corpus: str) -> str:
+    """Return the per-corpus relation ConceptScheme URI (e.g. biored:RelationScheme)."""
+    return f"{PREFIXES[source_scheme_prefix(source_corpus)]}RelationScheme"
+
+
+def mint_source_relation_uri(source_corpus: str, source_relation_type: str) -> str:
+    """Return the skos:Concept URI for a source-corpus relation label."""
+    return f"{PREFIXES[source_scheme_prefix(source_corpus)]}{source_relation_type}"
+
+
+def mint_canon_relation_uri(target_relation: str) -> str:
+    """Return the skos:Concept URI for a unified (canon) relation label."""
+    return f"{PREFIXES['canon']}{target_relation}"
+
+
+# ---------------------------------------------------------------------------
 # URI mint helpers
 # ---------------------------------------------------------------------------
 def mint_mesh_uri(mesh_id: Optional[str]) -> str:
