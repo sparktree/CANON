@@ -66,6 +66,7 @@ try:
     from heads import MultiTaskModel
     from train_stage1 import decode_entities_from_bio
     from relation_schema import TIER1_RELATIONS, TIER2_RELATIONS
+    import mrcm_validity
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import config
@@ -81,32 +82,16 @@ except ImportError:
     from heads import MultiTaskModel
     from train_stage1 import decode_entities_from_bio
     from relation_schema import TIER1_RELATIONS, TIER2_RELATIONS
+    import mrcm_validity
 
 
-# Type-to-anchor mapping (per plan: both anchors valid for disease + chemical).
-TYPE_ANCHORS: Dict[str, List[str]] = {
-    "disease":  ["404684003", "64572001"],
-    "chemical": ["105590001", "373873005"],
-}
-
-# Tier-1 SNOMED attribute SCTIDs (must match mrcm_constraints.json keys / attribute_id field).
-TIER1_ATTRIBUTE_IDS: Dict[str, str] = {
-    "causative-agent":       "246075003",
-    "finding-site":          "363698007",
-    "associated-morphology": "116676008",
-    "due-to":                "42752001",
-    "after":                 "255234002",
-}
-
-
-@dataclass
-class ConstraintTables:
-    """Precomputed boolean compatibility tables for the CSP solver."""
-    type_to_anchors: Dict[str, List[str]] = field(default_factory=dict)
-    descendants: Dict[str, FrozenSet[str]] = field(default_factory=dict)
-    valid_concept_for_type: Dict[Tuple[str, str], bool] = field(default_factory=dict)
-    # (relation_label, type_a, type_b) -> bool. Tier-2 always True.
-    valid_pair_for_relation: Dict[Tuple[str, str, str], bool] = field(default_factory=dict)
+# MRCM validity logic lives in mrcm_validity so the solver (here) and the Phase
+# 4.3 coherence evaluator share one implementation and cannot diverge. These are
+# re-exported for back-compat: existing importers (train_stage3) keep working.
+TYPE_ANCHORS = mrcm_validity.TYPE_ANCHORS
+TIER1_ATTRIBUTE_IDS = mrcm_validity.TIER1_ATTRIBUTE_IDS
+ConstraintTables = mrcm_validity.MRCMTables
+concept_under_type = mrcm_validity.concept_under_type
 
 
 def load_constraint_tables(
@@ -115,85 +100,21 @@ def load_constraint_tables(
     *,
     logger: Optional[logging.Logger] = None,
 ) -> ConstraintTables:
-    """Build the lookup tables once per session."""
-    logger = logger or logging.getLogger("csp_solver")
-    tables = ConstraintTables(type_to_anchors=copy.deepcopy(TYPE_ANCHORS))
+    """Build the shared MRCM tables once per session.
 
-    with Path(ancestors_path).open("rb") as fh:
-        anc_blob = pickle.load(fh)
-    anc_dict = anc_blob.get("ancestors", {}) if isinstance(anc_blob, dict) else anc_blob
-    for k, v in anc_dict.items():
-        key = str(k)
-        if key.startswith("descendant:"):
-            tables.descendants[key.split(":", 1)[1]] = frozenset(str(x) for x in v)
-
-    with Path(mrcm_path).open("r", encoding="utf-8") as fh:
-        mrcm = json.load(fh)
-    relation_constraints = mrcm.get("relation_constraints", {})
-
-    # Tier-1 pair compatibility: (relation, type_a, type_b) -> bool.
-    #
-    # The MRCM structure per attribute (mrcm_constraints.json) is a dict with
-    # "domains" and "ranges" lists; each entry carries *_root_concept_ids. We
-    # match the entity type's anchor SCTIDs literally against those root ids.
-    #
-    # Orientation: SNOMED attributes are directed (causative-agent reads
-    # finding -> substance), but the corpora annotate the entity pair in a
-    # non-canonical order -- BC5CDR CID and BioRED chemical-disease pairs list
-    # the chemical first. A pair is therefore MRCM-coherent if its two types
-    # satisfy domain/range in EITHER orientation; the solver only needs a valid
-    # ontological orientation to exist. Without this, the dominant Tier-1
-    # surface (causative-agent on chemical-disease pairs) would be rejected in
-    # its canonical annotated direction and Tier-1 escalation could only fire on
-    # the minority reverse-ordered annotations.
-    for rel, entry in relation_constraints.items():
-        if rel not in TIER1_RELATIONS:
-            continue
-        domain_set = {
-            str(cid)
-            for dm in entry.get("domains", [])
-            for cid in dm.get("domain_root_concept_ids", [])
-        }
-        range_set = {
-            str(cid)
-            for rg in entry.get("ranges", [])
-            for cid in rg.get("range_root_concept_ids", [])
-        }
-        for type_a, anchors_a in TYPE_ANCHORS.items():
-            for type_b, anchors_b in TYPE_ANCHORS.items():
-                fwd = any(a in domain_set for a in anchors_a) and any(
-                    a in range_set for a in anchors_b
-                )
-                rev = any(a in domain_set for a in anchors_b) and any(
-                    a in range_set for a in anchors_a
-                )
-                tables.valid_pair_for_relation[(rel, type_a, type_b)] = bool(fwd or rev)
-        # type_a or type_b not in TYPE_ANCHORS -> default invalid (CSP solver
-        # forces no-relation for those pairs anyway).
-
-    for rel in TIER2_RELATIONS:
-        for ta in list(SEMANTIC_CLASSES) + ["none"]:
-            for tb in list(SEMANTIC_CLASSES) + ["none"]:
-                tables.valid_pair_for_relation[(rel, ta, tb)] = True
-
-    if logger is not None:
-        logger.info(
-            f"loaded MRCM constraints: {len(tables.descendants)} descendant sets; "
-            f"{len(tables.valid_pair_for_relation)} (relation, ta, tb) pairs"
-        )
-    return tables
-
-
-def concept_under_type(concept_id: str, sem_class: str, tables: ConstraintTables) -> bool:
-    anchors = tables.type_to_anchors.get(sem_class)
-    if not anchors:
-        # NER-only types (gene, variant, species, cell_line) have no concept constraint.
-        return True
-    for anc in anchors:
-        ds = tables.descendants.get(anc)
-        if ds is not None and (concept_id == anc or concept_id in ds):
-            return True
-    return False
+    Thin wrapper over mrcm_validity.load_tables that supplies the CSP-side tier
+    sets and semantic classes. Signature preserved for existing importers
+    (train_stage3). The solver and the Phase 4.3 evaluator therefore build their
+    tables from the identical implementation.
+    """
+    return mrcm_validity.load_tables(
+        mrcm_path,
+        ancestors_path,
+        tier1_relations=TIER1_RELATIONS,
+        tier2_relations=TIER2_RELATIONS,
+        semantic_classes=SEMANTIC_CLASSES,
+        logger=logger or logging.getLogger("csp_solver"),
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -356,7 +277,22 @@ def solve_document(
     for (i, j, rv, cands) in rel_vars:
         r_idx = model[rv].as_long()
         rel_label = cands[r_idx]["label"] if r_idx < len(cands) else "no-relation"
-        out_pairs.append({"i": i, "j": j, "relation": rel_label})
+        # Record the MRCM orientation via the shared predicate so a canonical
+        # (finding, attribute, substance) triple can be read off regardless of
+        # the corpus's annotation order. i/j/relation are left in annotation
+        # order for existing consumers; canonical_subject/object give the
+        # SNOMED-canonical direction (equal to i/j unless orientation flips).
+        ti, tj = out_entities[i]["type"], out_entities[j]["type"]
+        orient = mrcm_validity.relation_pair_orientation(rel_label, ti, tj, tables)
+        if orient == mrcm_validity.ORIENT_REVERSED:
+            canon_subj, canon_obj = j, i
+        else:
+            canon_subj, canon_obj = i, j
+        out_pairs.append({
+            "i": i, "j": j, "relation": rel_label,
+            "orientation": orient,
+            "canonical_subject": canon_subj, "canonical_object": canon_obj,
+        })
 
     return {
         "status": "sat",

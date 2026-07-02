@@ -1,9 +1,9 @@
 source_corpus,source_relation_type,source_relation_uri,subject_semantic_class,object_semantic_class,skos_property,target_relation,target_relation_uri,tier,probability,notes
-BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.6,CID most commonly denotes a chemical causing a disease (adverse effect / side effect).
-BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,When the causal mechanism is explicit the SNOMED attribute causative-agent applies and the CSP solver can verify it.
+BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.65,CID most commonly denotes a chemical causing a disease (adverse effect / side effect).
+BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.25,"When the causal mechanism is explicit the SNOMED attribute causative-agent applies and the CSP solver can verify it. Calibration (relation_prior_calibration): SNOMED attests causative-agent for ~4.8% of CID pairs (ancestor-aware), below Positive_Correlation's 8.4%, so CID's Tier-1 mass is set below Positive_Correlation's."
 BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,A minority of CID instances state correlation only without a documented causal mechanism.
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.8,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.2,Subset where context implies a causal mechanism.
+BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.85,
+BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.15,"Subset where context implies a causal mechanism. Calibration: SNOMED attests causative-agent for ~3.5% of these pairs (ancestor-aware), the lowest of the causal chemical-disease groups, so Tier-1 mass is set below CID and Positive_Correlation."
 BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
 BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
 BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,Gene-disease pairs often imply a causal role.
@@ -70,8 +70,8 @@ BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,chemical,gene,sk
 BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,variant,gene,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
 BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,disease,disease,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
 BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.8,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,chemical,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.2,"Reversed ordering of chemical-disease Association; same semantics, same probability split."
+BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.85,
+BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,chemical,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.15,"Reversed ordering of chemical-disease Association; same semantics, same calibration-adjusted split."
 BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
 BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,gene,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,
 BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,

@@ -36,18 +36,39 @@ and shape the Phase 2.1 annotation format uses -- so target IRIs survive a
 JSON-LD lift. The uniform mapping property (skos:closeMatch) is declared once at
 the top level rather than overloaded as a per-row container.
 
-Probability provenance. The within-group probability splits are expert priors,
-not annotated counts. Each split was set by reading the source relation's
-definition (BioRED annotation guidelines; BC5CDR CID task definition) and
-assigning the dominant reading the majority mass, while deliberately holding the
-Tier-1 SNOMED-native reading as a minority candidate. This matches the Phase 2.5
-/ 4.5 design premise that every group's deterministic argmax is Tier-2 and that
-Tier-1 is the minority candidate the CSP escalates. The splits are load-bearing
--- they are the soft labels in Phase 3.3 and they gate the Tier-1 escalation
-mass measured in Phase 4.4 -- so each non-trivial row documents its rationale in
-the notes field. They should be recalibrated against annotated relation counts
-before any headline number rests on the absolute values rather than on the
-argmax-Tier-2 / minority-Tier-1 ordering they encode.
+Probability provenance. The within-group splits began as expert priors set from
+the source relation definitions (BioRED annotation guidelines; BC5CDR CID task
+definition), assigning the dominant reading the majority mass while holding the
+Tier-1 SNOMED-native reading as a minority candidate (the Phase 2.5 / 4.5 design
+premise: every group's argmax is Tier-2, Tier-1 is the minority the CSP
+escalates). The splits are load-bearing -- soft labels in Phase 3.3, and the gate
+on Phase 4.4 Tier-1 escalation mass.
+
+The Tier-1 causative-agent priors have since been calibrated by distant
+supervision (scripts/calibrate_relation_priors.py; outputs/phase1/
+relation_prior_calibration.{json,csv}). For every gold chemical-disease pair the
+corpus annotates with a causal source relation, that script asks whether SNOMED
+CT itself states causative-agent between the two mapped concepts (or their
+generalizations). Findings on BioRED + BC5CDR:
+  * Exact concept-level attestation is ~0% (2 of 2844 CID pairs). Escalation
+    therefore cannot rely on exact concept matching between mapped concepts; it
+    must be ancestor-aware. This is a design constraint on the Phase 3.5 escalator.
+  * Ancestor-aware attestation is low but ordered: Positive_Correlation
+    chemical-disease 8.4% > CID 4.8% > Association 3.5%. The priors were adjusted
+    to respect this ordering (Positive_Correlation causative-agent 0.30 > CID 0.25
+    > Association 0.15; previously CID and Positive_Correlation were both 0.30 and
+    Association 0.20).
+  * due-to and after have zero corpus support: there are no disease-disease pairs
+    with both concepts SNOMED-mapped, so those Tier-1 surfaces are empirically
+    vacuous on this corpus (consistent with causative-agent being the dominant
+    Tier-1 surface in the plan). Their priors are left as-is; they never fire here.
+SNOMED attestation is a lower bound (SNOMED is incomplete: a literature-attested
+causal pair need not be pre-coded as a causative-agent triple), so the absolute
+magnitudes are deliberately kept above the attestation floor to stay learnable in
+Phase 3.3; Phase 4.4's escalation flip analysis (flips-to-correct vs
+flips-to-incorrect) is the empirical arbiter of whether the retained magnitude is
+too high. The calibration fixed the relative ordering, which is the part the data
+determines unambiguously.
 
 Directionality. Tier-1 SNOMED attributes are directed (causative-agent reads
 finding -> substance). This table stores candidate mass per observed argument
@@ -161,13 +182,17 @@ RELATION_MAPPINGS: List[RelationMapping] = [
     # smaller fraction being general associations.
     # =========================================================================
     RelationMapping("BC5CDR", "CID", "chemical", "disease",
-                    "causes",          2, 0.60,
+                    "causes",          2, 0.65,
                     "CID most commonly denotes a chemical causing a disease "
                     "(adverse effect / side effect)."),
     RelationMapping("BC5CDR", "CID", "chemical", "disease",
-                    "causative-agent", 1, 0.30,
+                    "causative-agent", 1, 0.25,
                     "When the causal mechanism is explicit the SNOMED attribute "
-                    "causative-agent applies and the CSP solver can verify it."),
+                    "causative-agent applies and the CSP solver can verify it. "
+                    "Calibration (relation_prior_calibration): SNOMED attests "
+                    "causative-agent for ~4.8% of CID pairs (ancestor-aware), "
+                    "below Positive_Correlation's 8.4%, so CID's Tier-1 mass is "
+                    "set below Positive_Correlation's."),
     RelationMapping("BC5CDR", "CID", "chemical", "disease",
                     "associated-with", 2, 0.10,
                     "A minority of CID instances state correlation only "
@@ -179,10 +204,13 @@ RELATION_MAPPINGS: List[RelationMapping] = [
     # as a catch-all when no more specific relation type applies.
     # =========================================================================
     RelationMapping("BioRED", "Association", "chemical", "disease",
-                    "associated-with", 2, 0.80, _N),
+                    "associated-with", 2, 0.85, _N),
     RelationMapping("BioRED", "Association", "chemical", "disease",
-                    "causative-agent", 1, 0.20,
-                    "Subset where context implies a causal mechanism."),
+                    "causative-agent", 1, 0.15,
+                    "Subset where context implies a causal mechanism. Calibration: "
+                    "SNOMED attests causative-agent for ~3.5% of these pairs "
+                    "(ancestor-aware), the lowest of the causal chemical-disease "
+                    "groups, so Tier-1 mass is set below CID and Positive_Correlation."),
 
     RelationMapping("BioRED", "Association", "chemical", "gene",
                     "associated-with", 2, 1.00, _N),
@@ -441,11 +469,11 @@ RELATION_MAPPINGS: List[RelationMapping] = [
     RelationMapping("BioRED", "Association", "chemical", "variant",
                     "associated-with", 2, 1.00, _N),
     RelationMapping("BioRED", "Association", "disease",  "chemical",
-                    "associated-with", 2, 0.80, _N),
+                    "associated-with", 2, 0.85, _N),
     RelationMapping("BioRED", "Association", "disease",  "chemical",
-                    "causative-agent", 1, 0.20,
+                    "causative-agent", 1, 0.15,
                     "Reversed ordering of chemical-disease Association; "
-                    "same semantics, same probability split."),
+                    "same semantics, same calibration-adjusted split."),
     RelationMapping("BioRED", "Association", "disease",  "gene",
                     "associated-with", 2, 0.70, _N),
     RelationMapping("BioRED", "Association", "disease",  "gene",
