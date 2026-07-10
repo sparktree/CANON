@@ -176,11 +176,18 @@ BIOLINKBERT_DIR = Path(
 )
 
 
+# UMLS install root. Prefer the MED-RT-augmented subset (Data/UMLS/) built for
+# the Phase 1.5 Semantic-Network Tier-2 constraints; fall back to the original
+# MSH+SNOMEDCT subset. Both carry the release-wide Semantic Network under NET/.
+UMLS_RELEASE_ROOT = _first_existing(
+    [
+        (DATA_ROOT / "UMLS" / "2025AB").resolve(),
+        (DATA_ROOT / "UMLS_MeSH_and_SNOMED" / "2025AB").resolve(),
+    ]
+)
+
 UMLS_META_DIR = Path(
-    os.getenv(
-        "UMLS_META_DIR",
-        str((DATA_ROOT / "UMLS_MeSH_and_SNOMED" / "2025AB" / "META").resolve()),
-    )
+    os.getenv("UMLS_META_DIR", str((UMLS_RELEASE_ROOT / "META").resolve()))
 )
 UMLS_FILES: Dict[str, Path] = {
     "mrconso": UMLS_META_DIR / "MRCONSO.RRF",
@@ -188,7 +195,46 @@ UMLS_FILES: Dict[str, Path] = {
     "mrsty": UMLS_META_DIR / "MRSTY.RRF",
     "mrdef": UMLS_META_DIR / "MRDEF.RRF",
     "mrmap": UMLS_META_DIR / "MRMAP.RRF",
+    "mrsat": UMLS_META_DIR / "MRSAT.RRF",
 }
+
+# UMLS Semantic Network (Phase 1.5 Tier-2 relation constraints). SRSTRE1 is the
+# fully-inherited (subject ST, relation, object ST) edge set; SRDEF defines the
+# semantic types and relations. Release-wide, identical across any 2025AB subset.
+UMLS_NET_DIR = Path(
+    os.getenv("UMLS_NET_DIR", str((UMLS_RELEASE_ROOT / "NET").resolve()))
+)
+UMLS_SEMANTIC_NETWORK_FILES: Dict[str, Path] = {
+    "srstre1": UMLS_NET_DIR / "SRSTRE1",
+    "srstre2": UMLS_NET_DIR / "SRSTRE2",
+    "srdef": UMLS_NET_DIR / "SRDEF",
+}
+
+
+# ----------------------------------------------------------------------
+# CTD (Comparative Toxicogenomics Database) chemical-disease attestation
+# source for Phase 4.6 Tier-2 precision reporting. MeSH-keyed, so it joins
+# to model outputs through the Phase 1.2 MeSH->SNOMED table. The download
+# often extracts into a same-named subdirectory, so resolve the .tsv robustly.
+# ----------------------------------------------------------------------
+def _resolve_ctd_file() -> Path:
+    env = os.getenv("CTD_CHEMICALS_DISEASES")
+    if env:
+        return Path(env).expanduser().resolve()
+    direct = DATA_ROOT / "CTD_chemicals_diseases.tsv"
+    if direct.is_file():
+        return direct
+    for pattern in (
+        "CTD_chemicals_diseases.tsv/*.tsv",
+        "CTD_chemicals_diseases*/CTD_chemicals_diseases.tsv",
+    ):
+        matches = sorted(DATA_ROOT.glob(pattern))
+        if matches:
+            return matches[0]
+    return direct
+
+
+CTD_CHEMICALS_DISEASES_FILE = _resolve_ctd_file()
 
 
 # ----------------------------------------------------------------------
@@ -218,6 +264,7 @@ PHASE2_RDF_DIR = PHASE2_DIR / "rdf"
 SNOMED_HIERARCHY_PKL = PHASE1_DIR / "snomed_hierarchy.pkl"
 SNOMED_ANCESTORS_PKL = PHASE1_DIR / "snomed_ancestors.pkl"
 MRCM_CONSTRAINTS_JSON = PHASE1_DIR / "mrcm_constraints.json"
+SN_TIER2_CONSTRAINTS_JSON = PHASE1_DIR / "sn_tier2_constraints.json"
 MESH_TO_SNOMED_VERIFIED_CSV = PHASE1_DIR / "mesh_to_snomed_verified.csv"
 
 SAPBERT_DIR = PHASE3_OUTPUTS / "sapbert"

@@ -42,11 +42,13 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 import assemble_splits  # noqa: E402
 import concept_map  # noqa: E402
+import config  # noqa: E402
 import corpus_convert  # noqa: E402
 import entity_scope  # noqa: E402
 import mapping_verify  # noqa: E402
 import mesh_to_snomed  # noqa: E402
 import mrcm  # noqa: E402
+import mrcm_validity  # noqa: E402
 import relation_map  # noqa: E402
 import relation_schema  # noqa: E402
 import scope_audit  # noqa: E402
@@ -115,10 +117,15 @@ def step_1_4() -> None:
 
 
 def step_1_5() -> None:
-    _banner("Phase 1.5 -- MRCM constraint dictionary")
+    _banner("Phase 1.5 -- MRCM (Tier-1) + Semantic Network (Tier-2) constraints")
     t0 = time.time()
     out = mrcm.main(verbose=True)
-    print(f"[1.5] JSON written to {out}")
+    print(f"[1.5] MRCM JSON written to {out}")
+    sn_out = mrcm_validity.build_and_dump_sn_constraints(
+        config.UMLS_SEMANTIC_NETWORK_FILES["srstre2"],
+        config.SN_TIER2_CONSTRAINTS_JSON,
+    )
+    print(f"[1.5] SN Tier-2 JSON written to {sn_out}")
     print(f"[1.5] elapsed {time.time() - t0:.1f}s")
 
 

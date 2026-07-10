@@ -98,21 +98,29 @@ def load_constraint_tables(
     mrcm_path: Path,
     ancestors_path: Path,
     *,
+    semantic_network_path: Optional[Path] = None,
     logger: Optional[logging.Logger] = None,
 ) -> ConstraintTables:
-    """Build the shared MRCM tables once per session.
+    """Build the shared MRCM + Semantic Network tables once per session.
 
     Thin wrapper over mrcm_validity.load_tables that supplies the CSP-side tier
     sets and semantic classes. Signature preserved for existing importers
-    (train_stage3). The solver and the Phase 4.3 evaluator therefore build their
-    tables from the identical implementation.
+    (train_stage3). The SN edge set (Tier-2 constraint) is loaded from SRSTRE2;
+    defaults to config's UMLS NET path when present, so callers get Tier-2
+    coverage without extra wiring. The solver and the Phase 4.3 evaluator build
+    their tables from this identical implementation.
     """
+    if semantic_network_path is None:
+        srstre2 = config.UMLS_SEMANTIC_NETWORK_FILES.get("srstre2")
+        if srstre2 is not None and Path(srstre2).exists():
+            semantic_network_path = srstre2
     return mrcm_validity.load_tables(
         mrcm_path,
         ancestors_path,
         tier1_relations=TIER1_RELATIONS,
         tier2_relations=TIER2_RELATIONS,
         semantic_classes=SEMANTIC_CLASSES,
+        semantic_network_path=semantic_network_path,
         logger=logger or logging.getLogger("csp_solver"),
     )
 
