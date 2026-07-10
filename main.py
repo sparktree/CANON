@@ -32,6 +32,7 @@ Currently implemented:
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 import time
 from pathlib import Path
@@ -42,6 +43,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 import assemble_splits  # noqa: E402
 import concept_map  # noqa: E402
+import contextualize_synthetic  # noqa: E402
 import config  # noqa: E402
 import corpus_convert  # noqa: E402
 import entity_scope  # noqa: E402
@@ -122,7 +124,7 @@ def step_1_5() -> None:
     out = mrcm.main(verbose=True)
     print(f"[1.5] MRCM JSON written to {out}")
     sn_out = mrcm_validity.build_and_dump_sn_constraints(
-        config.UMLS_SEMANTIC_NETWORK_FILES["srstre2"],
+        config.UMLS_SEMANTIC_NETWORK_FILES["srstre1"],
         config.SN_TIER2_CONSTRAINTS_JSON,
     )
     print(f"[1.5] SN Tier-2 JSON written to {sn_out}")
@@ -230,6 +232,8 @@ def step_2_6() -> None:
 def step_2_7() -> None:
     _banner("Phase 2.7 -- Train/Dev/Test split assembly")
     t0 = time.time()
+    min_causative = 0 if os.getenv("CANON_ALLOW_SYNTHETIC_CONTEXT_SHORTFALL") == "1" else 3000
+    contextualize_synthetic.contextualize(min_causative=min_causative)
     summary = assemble_splits.assemble(verbose=True)
     counts = summary["documents_written"]
     print(f"[2.7] train={counts['train']:,}  dev={counts['dev']:,}  test={counts['test']:,}")
@@ -350,6 +354,17 @@ def step_3_6() -> None:
     print(f"[3.6] elapsed {time.time() - t0:.1f}s")
 
 
+def step_4_2() -> None:
+    _banner("Phase 4.2-4.4 -- End-to-end task and coherence evaluation")
+    from phase4_evaluate import evaluate
+    predictions = config.CSP_PREDICTIONS_DIR / "test.jsonl"
+    if not predictions.exists():
+        raise FileNotFoundError(f"CSP test predictions are required: {predictions}")
+    out = config.OUTPUTS_ROOT / "phase4" / "full_csp.json"
+    evaluate(predictions, config.PHASE2_SPLITS_DIR / "test.jsonl", out, "csp")
+    print(f"[4.2] evaluation -> {out}")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -372,6 +387,7 @@ STEPS = {
     "3.4": step_3_4,
     "3.5": step_3_5,
     "3.6": step_3_6,
+    "4.2": step_4_2,
 }
 
 

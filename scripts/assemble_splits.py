@@ -34,11 +34,11 @@ from typing import Iterator, List, Optional, Tuple
 
 try:
     from config import REPO_ROOT, relative_to_repo
-    from unified_format import Document, read_jsonl, write_jsonl
+    from unified_format import Document, derive_jsonl_cache, read_jsonl, write_jsonld_documents
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from config import REPO_ROOT, relative_to_repo
-    from unified_format import Document, read_jsonl, write_jsonl
+    from unified_format import Document, derive_jsonl_cache, read_jsonl, write_jsonld_documents
 
 
 # ---------------------------------------------------------------------------
@@ -47,7 +47,7 @@ except ImportError:
 
 PHASE2_DIR          = REPO_ROOT / "outputs" / "phase2"
 RELATION_MAPPED_DIR = PHASE2_DIR / "relation_mapped"
-SYNTHETIC_TRAIN     = PHASE2_DIR / "synthetic" / "train.jsonl"
+SYNTHETIC_TRAIN     = PHASE2_DIR / "synthetic" / "contextual_train.jsonl"
 SILVER_TRAIN        = PHASE2_DIR / "silver" / "PubTator3" / "train.jsonl"
 
 OUT_DIR             = PHASE2_DIR / "splits"
@@ -55,6 +55,7 @@ TRAIN_OUT           = OUT_DIR / "train.jsonl"
 DEV_OUT             = OUT_DIR / "dev.jsonl"
 TEST_OUT            = OUT_DIR / "test.jsonl"
 SUMMARY_OUT         = OUT_DIR / "split_summary.json"
+JSONLD_DIR          = PHASE2_DIR / "jsonld"
 
 
 # ---------------------------------------------------------------------------
@@ -130,9 +131,9 @@ def _new_split_audit() -> dict:
     return {
         "documents": 0,
         "kept_by_corpus": {},
-        "dropped_by_corpus": {},
-        "drop_causes": {DROP_CAUSE_INACTIVE: 0, DROP_CAUSE_NO_MAPPING: 0},
-        "drop_reason_details": {},
+        "docs_with_masked_targets_by_corpus": {},
+        "masked_target_causes": {DROP_CAUSE_INACTIVE: 0, DROP_CAUSE_NO_MAPPING: 0},
+        "masked_target_details": {},
     }
 
 
@@ -165,18 +166,20 @@ def _stream_split(
                     )
                 ok, cause, sem_class, code = _doc_dev_test_eligible(doc)
                 if not ok:
-                    split_audit["dropped_by_corpus"][doc.corpus] = (
-                        split_audit["dropped_by_corpus"].get(doc.corpus, 0) + 1
+                    split_audit["docs_with_masked_targets_by_corpus"][doc.corpus] = (
+                        split_audit["docs_with_masked_targets_by_corpus"].get(doc.corpus, 0) + 1
                     )
                     if cause is not None:
-                        split_audit["drop_causes"][cause] = (
-                            split_audit["drop_causes"].get(cause, 0) + 1
+                        split_audit["masked_target_causes"][cause] = (
+                            split_audit["masked_target_causes"].get(cause, 0) + 1
                         )
                     detail_key = f"{cause}:{sem_class}:{code}"
-                    split_audit["drop_reason_details"][detail_key] = (
-                        split_audit["drop_reason_details"].get(detail_key, 0) + 1
+                    split_audit["masked_target_details"][detail_key] = (
+                        split_audit["masked_target_details"].get(detail_key, 0) + 1
                     )
-                    continue
+                    # Preserve the original gold split. Unverified mentions remain
+                    # valid NER/RE supervision and are masked from normalization by
+                    # CanonDocDataset because they have no active target.
             audit["per_corpus_kept"][doc.corpus] = (
                 audit["per_corpus_kept"].get(doc.corpus, 0) + 1
             )
@@ -213,33 +216,36 @@ def assemble(verbose: bool = True) -> dict:
 
     if verbose:
         print(f"[2.7] writing {relative_to_repo(TRAIN_OUT)} ...", flush=True)
-    n_train = write_jsonl(
+    n_train = write_jsonld_documents(
         _stream_split(train_sources, "train", filter_unverified=False,
                       audit=audit, verbose=verbose),
-        TRAIN_OUT,
+        JSONLD_DIR / "train",
     )
+    derive_jsonl_cache(JSONLD_DIR / "train", TRAIN_OUT)
 
     if verbose:
         print(f"[2.7] writing {relative_to_repo(DEV_OUT)} ...", flush=True)
-    n_dev = write_jsonl(
+    n_dev = write_jsonld_documents(
         _stream_split(dev_sources, "dev", filter_unverified=True,
                       audit=audit, verbose=verbose),
-        DEV_OUT,
+        JSONLD_DIR / "dev",
     )
+    derive_jsonl_cache(JSONLD_DIR / "dev", DEV_OUT)
 
     if verbose:
         print(f"[2.7] writing {relative_to_repo(TEST_OUT)} ...", flush=True)
-    n_test = write_jsonl(
+    n_test = write_jsonld_documents(
         _stream_split(test_sources, "test", filter_unverified=True,
                       audit=audit, verbose=verbose),
-        TEST_OUT,
+        JSONLD_DIR / "test",
     )
+    derive_jsonl_cache(JSONLD_DIR / "test", TEST_OUT)
 
     summary = {
         "policy": {
             "gold_corpora": list(GOLD_CORPORA),
             "augmentation_in_train_only": True,
-            "dev_test_filter": "drop_doc_if_any_snomed_mappable_entity_unverified",
+            "dev_test_filter": "preserve_docs_and_mask_unverified_normalization_targets",
             "snomed_mappable_classes": sorted(SNOMED_MAPPABLE_CLASSES),
             "silver_source": relative_to_repo(SILVER_TRAIN),
         },
@@ -253,6 +259,7 @@ def assemble(verbose: bool = True) -> dict:
             "train": relative_to_repo(TRAIN_OUT),
             "dev":   relative_to_repo(DEV_OUT),
             "test":  relative_to_repo(TEST_OUT),
+            "jsonld": relative_to_repo(JSONLD_DIR),
         },
     }
 
@@ -262,16 +269,16 @@ def assemble(verbose: bool = True) -> dict:
         print(f"[2.7] train={n_train:,}  dev={n_dev:,}  test={n_test:,}", flush=True)
         for split_name in ("dev", "test"):
             sa = audit["splits"].get(split_name, {})
-            dropped_total = sum(sa.get("dropped_by_corpus", {}).values())
-            if not dropped_total:
+            masked_total = sum(sa.get("docs_with_masked_targets_by_corpus", {}).values())
+            if not masked_total:
                 continue
             by_corpus = ", ".join(
-                f"{c}={n}" for c, n in sorted(sa.get("dropped_by_corpus", {}).items())
+                f"{c}={n}" for c, n in sorted(sa.get("docs_with_masked_targets_by_corpus", {}).items())
             )
-            inactive = sa.get("drop_causes", {}).get(DROP_CAUSE_INACTIVE, 0)
-            no_mapping = sa.get("drop_causes", {}).get(DROP_CAUSE_NO_MAPPING, 0)
+            inactive = sa.get("masked_target_causes", {}).get(DROP_CAUSE_INACTIVE, 0)
+            no_mapping = sa.get("masked_target_causes", {}).get(DROP_CAUSE_NO_MAPPING, 0)
             print(
-                f"[2.7]   {split_name}: dropped {dropped_total:,} docs "
+                f"[2.7]   {split_name}: retained {masked_total:,} docs with masked normalization targets "
                 f"({by_corpus}) -- inactive={inactive}, no_mapping={no_mapping}",
                 flush=True,
             )

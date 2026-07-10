@@ -44,16 +44,21 @@ from __future__ import annotations
 import csv
 import json
 import re
+import pickle
 import sys
 from pathlib import Path
 from typing import Dict, Iterator, List, Optional, Tuple
 
 try:
     from config import REPO_ROOT, relative_to_repo
+    import skos_schema
+    import concept_sty
     from unified_format import Document, EntityMention, read_jsonl, write_jsonl
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from config import REPO_ROOT, relative_to_repo
+    import skos_schema
+    import concept_sty
     from unified_format import Document, EntityMention, read_jsonl, write_jsonl
 
 
@@ -62,6 +67,12 @@ except ImportError:
 # ---------------------------------------------------------------------------
 
 INACTIVE_CONFIDENCE_FACTOR = 0.5  # multiplied into mapping_confidence for retired SCTIDs
+_NER_ANCHORS = {
+    "pharmaceutical_product": "373873005",
+    "substance": "105590001",
+    "clinical_finding": "404684003",
+}
+_ANCESTOR_CACHE: Optional[dict] = None
 
 # Composite-ID separators observed in BioRED (',') and BC5CDR ('|').
 # Must match mesh_harvest._split_composite so codes that the harvester
@@ -80,12 +91,14 @@ SUMMARY_JSON  = REPO_ROOT / "outputs" / "phase2" / "mapping_application_summary.
 # ---------------------------------------------------------------------------
 
 class _MappingEntry:
-    __slots__ = ("snomed_id", "confidence", "active")
+    __slots__ = ("snomed_id", "confidence", "active", "mapping_property")
 
-    def __init__(self, snomed_id: str, confidence: float, active: bool) -> None:
+    def __init__(self, snomed_id: str, confidence: float, active: bool,
+                 mapping_property: Optional[str] = None) -> None:
         self.snomed_id  = snomed_id
         self.confidence = confidence
         self.active     = active
+        self.mapping_property = mapping_property
 
 
 def load_verified_table(path: Path = VERIFIED_CSV) -> Dict[str, _MappingEntry]:
@@ -110,6 +123,7 @@ def load_verified_table(path: Path = VERIFIED_CSV) -> Dict[str, _MappingEntry]:
                 snomed_id  = snomed_id,
                 confidence = confidence,
                 active     = (active_str == "true"),
+                mapping_property=(row.get("skos_property") or None),
             )
     return table
 
@@ -160,13 +174,27 @@ def stamp_entity(
     table: Dict[str, _MappingEntry],
 ) -> EntityMention:
     """Return a copy of `em` with SNOMED mapping fields populated."""
+    source_uri = _source_concept_uri(em)
+    source_stys = concept_sty.resolve_stys(source_uri or em.original_code, em.semantic_class)
+    default_ner = {"chemical": "substance", "disease": "clinical_finding"}.get(
+        em.semantic_class, em.semantic_class)
     if em.non_snomed:
-        return em  # pass through unchanged
+        return EntityMention(**{
+            **em.__dict__,
+            "source_concept_uri": source_uri,
+            "umls_stys": source_stys,
+            "ner_type": em.ner_type or default_ner,
+        })
 
     code  = (em.original_code or "").strip()
     entry = _best_entry_for_code(code, table)
     if entry is None:
-        return em  # unmapped; leave fields as None
+        return EntityMention(**{
+            **em.__dict__,
+            "source_concept_uri": source_uri,
+            "umls_stys": source_stys,
+            "ner_type": em.ner_type or default_ner,
+        })
 
     snomed_id, confidence, active = _apply_policy(entry)
     return EntityMention(
@@ -176,13 +204,49 @@ def stamp_entity(
         surface_text     = em.surface_text,
         entity_type      = em.entity_type,
         semantic_class   = em.semantic_class,
+        ner_type         = _ner_type_for_concept(snomed_id, em.semantic_class),
         original_code    = em.original_code,
         mapped_snomed_id = snomed_id,
         mapping_confidence = confidence,
         snomed_active    = active,
         non_snomed       = em.non_snomed,
+        source_concept_uri = source_uri,
+        normalized_concept_uri = skos_schema.mint_snomed_uri(snomed_id),
+        mapping_property = entry.mapping_property,
+        umls_stys        = concept_sty.resolve_stys(snomed_id, em.semantic_class),
         extra            = em.extra,
     )
+
+
+def _ner_type_for_concept(snomed_id: str, semantic_class: Optional[str]) -> Optional[str]:
+    global _ANCESTOR_CACHE
+    if _ANCESTOR_CACHE is None:
+        ancestors_path = REPO_ROOT / "outputs" / "phase1" / "snomed_ancestors.pkl"
+        with ancestors_path.open("rb") as fh:
+            blob = pickle.load(fh)
+        _ANCESTOR_CACHE = blob.get("ancestors", blob) if isinstance(blob, dict) else blob
+    for label, anchor in _NER_ANCHORS.items():
+        descendants = _ANCESTOR_CACHE.get(f"descendant:{anchor}", frozenset())
+        if snomed_id == anchor or snomed_id in descendants:
+            return label
+    return {"chemical": "substance", "disease": "clinical_finding"}.get(semantic_class, semantic_class)
+
+
+def _source_concept_uri(em: EntityMention) -> Optional[str]:
+    code = (em.original_code or "").strip()
+    if not code or code in {"-", "-1"}:
+        return None
+    code = _MESH_PREFIX.sub("", code.split(",", 1)[0].split("|", 1)[0]).strip()
+    etype = em.entity_type.lower()
+    if "gene" in etype:
+        return f"{skos_schema.PREFIXES['ncbi_gene']}{code}"
+    if "variant" in etype or code.lower().startswith("rs"):
+        return f"{skos_schema.PREFIXES['dbsnp']}{code}"
+    if "organism" in etype or "species" in etype:
+        return f"{skos_schema.PREFIXES['ncbi_taxon']}{code}"
+    if "cell" in etype and "line" in etype:
+        return f"{skos_schema.PREFIXES['cellosaurus']}{code}"
+    return skos_schema.mint_mesh_uri(code)
 
 
 def stamp_document(

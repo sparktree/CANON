@@ -201,6 +201,12 @@ def main() -> None:
     with ids_path.open("w", encoding="utf-8") as fh:
         json.dump(ids, fh)
     save_file({"embeddings": emb}, str(emb_path))
+    try:
+        import concept_sty
+        concept_sty.build_lookup(ids, config.CONCEPT_STY_LOOKUP_JSON)
+        logger.info(f"wrote concept STY lookup -> {config.CONCEPT_STY_LOOKUP_JSON}")
+    except Exception as exc:  # noqa: BLE001
+        raise RuntimeError(f"concept STY lookup build failed: {exc}") from exc
 
     summary = {
         "mode": "smoke" if args.smoke_test else "full",

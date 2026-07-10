@@ -47,6 +47,9 @@ from typing import Dict, FrozenSet, Iterable, List, Optional, Tuple
 TYPE_ANCHORS: Dict[str, List[str]] = {
     "disease":  ["404684003", "64572001"],
     "chemical": ["105590001", "373873005"],
+    "clinical_finding": ["404684003", "64572001"],
+    "substance": ["105590001"],
+    "pharmaceutical_product": ["373873005"],
 }
 
 # Tier-1 SNOMED attribute SCTIDs (match mrcm_constraints.json keys).
@@ -67,7 +70,7 @@ TIER1_ATTRIBUTE_IDS: Dict[str, str] = {
 TIER2_TO_SN_PREDICATES: Dict[str, List[str]] = {
     "treats":          ["treats"],
     "causes":          ["causes"],
-    "associated-with": ["associated_with"],
+    "associated-with": ["associated_with", "co-occurs_with"],
     "interacts-with":  ["interacts_with"],
     "co-treats":       ["treats"],
     "converts-to":     [],
@@ -142,21 +145,32 @@ def _anchor_in(anchors: Iterable[str], root_set: FrozenSet[str]) -> bool:
     return any(a in root_set for a in anchors)
 
 
-def _load_semantic_network(srstre2_path: Path) -> FrozenSet[Tuple[str, str, str]]:
-    """Parse SRSTRE2 (name-keyed, fully-inherited SN edges) into an edge set.
+def _load_semantic_network(srstre1_path: Path) -> FrozenSet[Tuple[str, str, str]]:
+    """Parse plan-authoritative SRSTRE1 and resolve its identifiers via SRDEF.
 
     Each line is ``subject_STY|relation|object_STY|``. Only edges whose relation
     is a predicate CANON Tier-2 relations map to are retained, so the table stays
     small and focused on the relations we can constrain.
     """
     wanted = {p for preds in TIER2_TO_SN_PREDICATES.values() for p in preds}
+    srstre1_path = Path(srstre1_path)
+    srdef_path = srstre1_path.with_name("SRDEF")
+    names: Dict[str, str] = {}
+    if srdef_path.exists():
+        with srdef_path.open("r", encoding="utf-8") as fh:
+            for line in fh:
+                parts = line.rstrip("\n").split("|")
+                if len(parts) >= 3 and parts[1] and parts[2]:
+                    names[parts[1]] = parts[2]
     edges: set = set()
-    with Path(srstre2_path).open("r", encoding="utf-8") as fh:
+    with srstre1_path.open("r", encoding="utf-8") as fh:
         for line in fh:
             parts = line.rstrip("\n").split("|")
             if len(parts) < 3:
                 continue
-            subj, rel, obj = parts[0], parts[1], parts[2]
+            subj, rel, obj = (names.get(parts[0], parts[0]),
+                              names.get(parts[1], parts[1]),
+                              names.get(parts[2], parts[2]))
             if rel in wanted:
                 edges.add((subj, rel, obj))
     return frozenset(edges)
@@ -174,7 +188,7 @@ def load_tables(
 ) -> MRCMTables:
     """Build the shared MRCM + Semantic Network tables once per session.
 
-    *semantic_network_path* points at SRSTRE2 (UMLS NET/). When given, the Tier-2
+    *semantic_network_path* points at SRSTRE1 (UMLS NET/). When given, the Tier-2
     SN edge set is loaded and relation_pair_valid_sn becomes a real constraint;
     when omitted, Tier-2 relations remain unconstrained (sn_edges empty).
     """
@@ -361,7 +375,7 @@ def build_sn_constraint_table(tables: MRCMTables) -> dict:
             "allowed_pair_count": len(allowed),
         }
     return {
-        "source": "UMLS Semantic Network (SRSTRE2, fully-inherited)",
+        "source": "UMLS Semantic Network (SRSTRE1, fully-inherited)",
         "granularity": "UMLS semantic type (STY) names via MRSTY",
         "relations": out,
     }
@@ -377,14 +391,14 @@ def dump_sn_constraints(tables: MRCMTables, path: Path) -> Path:
     return path
 
 
-def build_and_dump_sn_constraints(srstre2_path: Path, out_path: Path) -> Path:
-    """Standalone Phase 1.5 builder: load SRSTRE2 and write the SN Tier-2 table.
+def build_and_dump_sn_constraints(srstre1_path: Path, out_path: Path) -> Path:
+    """Standalone Phase 1.5 builder: load SRSTRE1 and write the SN Tier-2 table.
 
     Independent of MRCM / ancestors, so it can run at Phase 1.5 before the Phase
     1.6 hierarchy pickle exists.
     """
     tables = MRCMTables(
-        sn_edges=_load_semantic_network(srstre2_path),
+        sn_edges=_load_semantic_network(srstre1_path),
         tier2_to_sn={k: list(v) for k, v in TIER2_TO_SN_PREDICATES.items()},
     )
     return dump_sn_constraints(tables, out_path)
@@ -415,7 +429,7 @@ def _self_check() -> None:
         tier1_relations=TIER1_RELATIONS,
         tier2_relations=TIER2_RELATIONS,
         semantic_classes=semantic_classes,
-        semantic_network_path=config.UMLS_SEMANTIC_NETWORK_FILES["srstre2"],
+        semantic_network_path=config.UMLS_SEMANTIC_NETWORK_FILES["srstre1"],
     )
 
     # causative-agent (finding -> substance): disease-chemical valid in BOTH

@@ -6,7 +6,7 @@ Phase 3.2 (concept-normalization head), and Phase 3.5 (CSP solver) all
 consult this registry to decide whether an entity participates in SNOMED-
 backed reasoning.
 
-Scoping decision (per CANON_Plan.txt 1.3):
+Scoping decision (per plan.md 1.3):
 
     * MeSH-coded entities (chemicals, diseases) -> normalized to SNOMED.
     * Genes (NCBI Gene) and variants (dbSNP)    -> excluded from SNOMED

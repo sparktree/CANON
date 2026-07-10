@@ -72,9 +72,13 @@ class NERHead(nn.Module):
         # torchcrf requires the first time step to be unmasked; pad tokens come last.
         out: Dict[str, torch.Tensor] = {"logits": emissions}
         if bio_labels is not None:
-            ll = self.crf(emissions, bio_labels, mask=mask_bool, reduction="sum")
-            denom = mask_bool.sum().clamp(min=1).float()
-            out["loss"] = -ll / denom
+            ll = self.crf(emissions, bio_labels, mask=mask_bool, reduction="none")
+            per_doc = -ll / mask_bool.sum(dim=1).clamp(min=1).float()
+            if token_weights is not None:
+                weights = token_weights.to(per_doc.device).float()
+                out["loss"] = (per_doc * weights).sum() / weights.sum().clamp(min=1e-6)
+            else:
+                out["loss"] = per_doc.mean()
         out["decoded"] = self.crf.decode(emissions, mask=mask_bool)
         return out
 
@@ -208,7 +212,7 @@ class ConceptNormHead(nn.Module):
     ) -> Dict:
         span_vecs, idx_map = self.span_repr(hidden_states, attention_mask, token_spans)
         out: Dict = {"span_vecs": span_vecs, "span_index": idx_map}
-        if norm_targets is None or self.concept_emb.size(0) == 0 or span_vecs.size(0) == 0:
+        if self.concept_emb.size(0) == 0 or span_vecs.size(0) == 0:
             out["loss"] = None
             return out
 
@@ -218,6 +222,10 @@ class ConceptNormHead(nn.Module):
         # span_repr produced them) and assemble per-row probability vectors.
         device = span_vecs.device
         scores = self.score(span_vecs)  # (E_total, N)
+        out["scores"] = scores
+        if norm_targets is None:
+            out["loss"] = None
+            return out
         N = scores.size(1)
 
         # Reverse map: (batch_idx, span_idx) -> row_in_span_vecs.
@@ -244,7 +252,7 @@ class ConceptNormHead(nn.Module):
 
         rows_t = torch.tensor(target_rows, dtype=torch.long, device=device)
         sub_scores = scores.index_select(0, rows_t)  # (E_targets, N)
-        log_q = F.log_softmax(sub_scores / max(self.tau, 1e-6), dim=-1)
+        log_q = F.log_softmax(sub_scores, dim=-1)
 
         target_p = torch.zeros_like(log_q)
         skipped = 0
@@ -258,7 +266,8 @@ class ConceptNormHead(nn.Module):
             if row_sum.item() <= 0:
                 skipped += 1
                 continue
-            target_p[r] = target_p[r] / row_sum
+            sharpened = target_p[r].pow(1.0 / max(self.tau, 1e-6))
+            target_p[r] = sharpened / sharpened.sum().clamp(min=1e-8)
 
         weights_t = torch.tensor(target_weights, dtype=torch.float, device=device)
         # Exclude rows whose entire target lay outside the concept index.
@@ -269,7 +278,6 @@ class ConceptNormHead(nn.Module):
             out["loss"] = per_row.mean()
         else:
             out["loss"] = None
-        out["scores"] = scores
         out["target_rows"] = rows_t
         return out
 
@@ -304,6 +312,7 @@ class RelationHead(nn.Module):
             nn.Dropout(dropout),
             nn.Linear(mlp_hidden, num_classes),
         )
+        self.tau = 1.0
 
     def forward(
         self,
@@ -313,6 +322,8 @@ class RelationHead(nn.Module):
         pair_indices: Sequence[torch.Tensor],
         pair_semantic_classes: Sequence[torch.Tensor],
         pair_labels: Optional[Sequence[torch.Tensor]] = None,
+        pair_targets: Optional[Sequence[torch.Tensor]] = None,
+        pair_bag_ids: Optional[Sequence[torch.Tensor]] = None,
         pair_weights: Optional[Sequence[torch.Tensor]] = None,
     ) -> Dict:
         device = hidden_states.device
@@ -336,15 +347,20 @@ class RelationHead(nn.Module):
         labels_chunks: List[torch.Tensor] = []
         weights_chunks: List[torch.Tensor] = []
         per_doc_logits: List[torch.Tensor] = []
+        per_doc_bag_logits: List[torch.Tensor] = []
+        bag_target_chunks: List[torch.Tensor] = []
+        bag_weight_chunks: List[torch.Tensor] = []
 
         for b, idx_t in enumerate(pair_indices):
             if idx_t.numel() == 0:
                 per_doc_logits.append(hidden_states.new_zeros(0, self.mlp[-1].out_features))
+                per_doc_bag_logits.append(hidden_states.new_zeros(0, self.mlp[-1].out_features))
                 continue
             idx_t = idx_t.to(device)
             spans = per_doc_spans[b]
             if spans.size(0) == 0:
                 per_doc_logits.append(hidden_states.new_zeros(0, self.mlp[-1].out_features))
+                per_doc_bag_logits.append(hidden_states.new_zeros(0, self.mlp[-1].out_features))
                 continue
             sa = spans.index_select(0, idx_t[:, 0])
             sb = spans.index_select(0, idx_t[:, 1])
@@ -355,14 +371,38 @@ class RelationHead(nn.Module):
             x = torch.cat([sa, sb, cls, type_a, type_b], dim=-1)
             logits = self.mlp(x)
             per_doc_logits.append(logits)
+            if pair_bag_ids is not None and b < len(pair_bag_ids):
+                bag_ids = pair_bag_ids[b].to(device)
+                bag_logits = []
+                for bag_id in torch.unique(bag_ids, sorted=True):
+                    rows = logits[bag_ids == bag_id]
+                    bag_logits.append(torch.logsumexp(rows, dim=0) - torch.log(
+                        rows.new_tensor(float(rows.size(0)))))
+                    if pair_targets is not None:
+                        target = pair_targets[b].to(device)[bag_ids == bag_id][0]
+                        sharpened = target.clamp(min=0).pow(1.0 / max(self.tau, 1e-6))
+                        bag_target_chunks.append(sharpened / sharpened.sum().clamp(min=1e-8))
+                    if pair_weights is not None:
+                        bag_weight_chunks.append(pair_weights[b].to(device)[bag_ids == bag_id].mean())
+                per_doc_bag_logits.append(torch.stack(bag_logits) if bag_logits else logits.new_zeros(0, logits.size(-1)))
+            else:
+                per_doc_bag_logits.append(logits)
             feats.append(x)
             if pair_labels is not None:
                 labels_chunks.append(pair_labels[b].to(device))
             if pair_weights is not None:
                 weights_chunks.append(pair_weights[b].to(device))
 
-        out: Dict = {"per_doc_logits": per_doc_logits}
-        if pair_labels is not None and per_doc_logits and any(t.numel() for t in per_doc_logits):
+        out: Dict = {"per_doc_logits": per_doc_logits, "per_doc_bag_logits": per_doc_bag_logits}
+        if pair_targets is not None and bag_target_chunks and any(t.numel() for t in per_doc_bag_logits):
+            all_logits = torch.cat([t for t in per_doc_bag_logits if t.numel()], dim=0)
+            all_targets = torch.stack(bag_target_chunks)
+            log_probs = F.log_softmax(all_logits, dim=-1)
+            per_bag = -(all_targets * log_probs).sum(dim=-1)
+            all_weights = torch.stack(bag_weight_chunks) if bag_weight_chunks else torch.ones_like(per_bag)
+            out["loss"] = (per_bag * all_weights).sum() / all_weights.sum().clamp(min=1e-6)
+            out["bag_targets"] = all_targets
+        elif pair_labels is not None and per_doc_logits and any(t.numel() for t in per_doc_logits):
             all_logits = torch.cat([t for t in per_doc_logits if t.numel()], dim=0)
             all_labels = torch.cat(labels_chunks, dim=0) if labels_chunks else hidden_states.new_zeros(0, dtype=torch.long)
             if pair_weights is not None and weights_chunks:
@@ -456,7 +496,7 @@ class MultiTaskModel(nn.Module):
         outputs: Dict = {"hidden": hidden, "cls": cls, "losses": {}, "raw": {}}
 
         if self.has_ner and "ner" in active:
-            ner_out = self.ner_head(hidden, attention_mask, bio_labels)
+            ner_out = self.ner_head(hidden, attention_mask, bio_labels, batch.get("ner_weights"))
             outputs["raw"]["ner"] = ner_out
             if ner_out.get("loss") is not None:
                 outputs["losses"]["ner"] = ner_out["loss"]
@@ -482,6 +522,8 @@ class MultiTaskModel(nn.Module):
                 batch["pair_indices"],
                 batch["pair_semantic_classes"],
                 pair_labels=batch.get("pair_labels"),
+                pair_targets=batch.get("pair_targets"),
+                pair_bag_ids=batch.get("pair_bag_ids"),
                 pair_weights=batch.get("pair_weights"),
             )
             outputs["raw"]["rel"] = rel_out

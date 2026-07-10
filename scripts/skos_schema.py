@@ -83,7 +83,7 @@ SKOS_RELATED_MATCH = "skos:relatedMatch"
 #   mrrel_rn          -- UMLS RN: source is broader than target (narrower-than)
 #   sty_fallback:*    -- semantic-type root fallback (last resort)
 #
-# Per CANON_Plan.txt 1.2 the SKOS property is one of
+# Per plan.md 1.2 the SKOS property is one of
 # {closeMatch | broadMatch | narrowMatch | relatedMatch}.
 # RB/RN map directly to broad/narrow per the plan; SY/RQ are tighter than
 # relatedMatch but looser than exactMatch, so closeMatch fits SKOS semantics
@@ -211,6 +211,8 @@ TERM_DEFINITIONS: Dict[str, Dict[str, str]] = {
     "canon:sourceCorpus":     {"@type": "xsd:string"},
     "canon:split":            {"@type": "xsd:string"},
     "canon:mappingProperty":  {"@type": "xsd:string"},
+    "canon:sourceNotation":   {"@type": "xsd:string"},
+    "canon:schemaVersion":    {"@type": "xsd:string"},
 }
 
 #: Default on-disk location of the generated @context (scripts/contexts/).

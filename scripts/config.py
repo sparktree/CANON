@@ -265,6 +265,8 @@ SNOMED_HIERARCHY_PKL = PHASE1_DIR / "snomed_hierarchy.pkl"
 SNOMED_ANCESTORS_PKL = PHASE1_DIR / "snomed_ancestors.pkl"
 MRCM_CONSTRAINTS_JSON = PHASE1_DIR / "mrcm_constraints.json"
 SN_TIER2_CONSTRAINTS_JSON = PHASE1_DIR / "sn_tier2_constraints.json"
+CONCEPT_STY_LOOKUP_JSON = PHASE1_DIR / "concept_stys.json"
+CTD_DIRECT_EVIDENCE_JSON = PHASE1_DIR / "ctd_direct_evidence.json"
 MESH_TO_SNOMED_VERIFIED_CSV = PHASE1_DIR / "mesh_to_snomed_verified.csv"
 
 SAPBERT_DIR = PHASE3_OUTPUTS / "sapbert"

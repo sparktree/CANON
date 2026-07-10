@@ -118,16 +118,14 @@ def collect_overrides(
     # extract those alongside the neural records.
     ds_for_codes = CanonDocDataset(train_path, tokenizer, soft, max_length=DEFAULT_MAX_LENGTH,
                                    max_docs=max_docs, max_pairs=max_pairs, seed=0)
-    code_records: List[List[Optional[str]]] = []
+    code_records: List[Dict[Tuple[int, int], Optional[str]]] = []
     for feat in ds_for_codes:
-        per_doc_codes = []
+        per_doc_codes: Dict[Tuple[int, int], Optional[str]] = {}
         for ent in feat.entity_original:
             sclass = ent.get("semantic_class")
             if sclass in TYPE_ANCHORS:
                 code = ent.get("original_code")
-                per_doc_codes.append(code if code else None)
-            else:
-                per_doc_codes.append(None)
+                per_doc_codes[(int(ent.get("span_start", -1)), int(ent.get("span_end", -1)))] = code if code else None
         code_records.append(per_doc_codes)
 
     counts: Dict[str, Dict[str, int]] = {}
@@ -137,9 +135,7 @@ def collect_overrides(
         assignment = sol.get("assignment", {})
         ents = assignment.get("entities", [])
         for ent_idx, ent in enumerate(ents):
-            if ent_idx >= len(codes):
-                break
-            code = codes[ent_idx]
+            code = codes.get((int(ent.get("span_start", -1)), int(ent.get("span_end", -1))))
             cid = ent.get("concept")
             if not code or not cid:
                 continue
@@ -228,8 +224,7 @@ def main() -> None:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     encoder_dir = Path(args.stage2_dir)
     if not (encoder_dir / "config.json").is_file():
-        encoder_dir = config.SAPBERT_ENCODER_DIR
-        logger.info(f"stage2 dir missing; falling back to {encoder_dir}")
+        raise FileNotFoundError(f"Stage-2 checkpoint is required; missing {encoder_dir / 'config.json'}")
     tokenizer = AutoTokenizer.from_pretrained(str(encoder_dir))
     base_soft = load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
 
@@ -251,6 +246,8 @@ def main() -> None:
             if k in own and own[k].shape == v.shape:
                 own[k].data.copy_(v)
         logger.info(f"loaded {head_state}")
+    else:
+        raise FileNotFoundError(f"Stage-2 head state is required; missing {head_state}")
     model.to(device)
 
     # 1+2: collect CSP overrides.
@@ -281,6 +278,8 @@ def main() -> None:
 
     if model.has_norm:
         model.norm_head.tau = args.tau
+    if model.has_rel:
+        model.rel_head.tau = args.tau
     model.freeze_encoder(False)
     joint = JointLoss(["ner", "norm", "rel"]).to(device)
     encoder_params = list(model.encoder.parameters())

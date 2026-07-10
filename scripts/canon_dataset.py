@@ -7,8 +7,8 @@ that the multi-task model consumes.
 Outputs per document
 --------------------
 * input_ids, attention_mask, offset_mapping  (token tensors, length T)
-* bio_labels        token-aligned BIO label IDs over 13 NER classes
-                    (O + B-/I- x {cell_line, chemical, disease, gene, species, variant})
+* bio_labels        token-aligned BIO label IDs over seven NER classes
+                    (O + B-/I- x the SNOMED top-level and non-SNOMED types)
 * entity_token_spans list of (start_tok, end_tok, semantic_class) per entity
                     that survived truncation
 * norm_targets      soft target distributions per in-scope entity
@@ -53,17 +53,23 @@ except ImportError:
     from relation_schema import ALL_TARGET_RELATIONS
 
 
-# Stable BIO tag inventory (sorted alphabetically). 13 tags total.
-SEMANTIC_CLASSES: Tuple[str, ...] = tuple(
-    sorted(set(SNOMED_NER_CLASSES) | set(NON_SNOMED_NER_CLASSES))
-)
+# Stable BIO tag inventory (sorted alphabetically). 15 tags total.
+SEMANTIC_CLASSES: Tuple[str, ...] = tuple(sorted(
+    {"clinical_finding", "substance", "pharmaceutical_product"} | set(NON_SNOMED_NER_CLASSES)
+))
+
+
+def _ner_class(ent: Dict) -> Optional[str]:
+    return ent.get("ner_type") or {
+        "chemical": "substance", "disease": "clinical_finding",
+    }.get(ent.get("semantic_class"), ent.get("semantic_class"))
 BIO_LABELS: List[str] = ["O"]
 for _cls in SEMANTIC_CLASSES:
     BIO_LABELS.append(f"B-{_cls}")
     BIO_LABELS.append(f"I-{_cls}")
 BIO_LABEL_TO_ID: Dict[str, int] = {label: i for i, label in enumerate(BIO_LABELS)}
 BIO_ID_TO_LABEL: Dict[int, str] = {i: label for i, label in enumerate(BIO_LABELS)}
-NUM_BIO_LABELS: int = len(BIO_LABELS)  # 13
+NUM_BIO_LABELS: int = len(BIO_LABELS)  # 15
 
 # Stable relation-class inventory. 12 unified + 1 no-relation = 13.
 RELATION_LABELS: List[str] = sorted(ALL_TARGET_RELATIONS) + ["no-relation"]
@@ -90,8 +96,11 @@ class DocFeatures:
     norm_targets: List[Dict[str, float]]
     norm_entity_idx: List[int]
     norm_weights: List[float]
+    ner_weight: float
     pair_indices: torch.LongTensor                     # (P, 2)
     pair_labels: torch.LongTensor                      # (P,)
+    pair_targets: torch.FloatTensor                    # (P, relation classes)
+    pair_bag_ids: torch.LongTensor                     # (P,), MIL bag per concept relation
     pair_weights: torch.FloatTensor                    # (P,)
     pair_semantic_classes: torch.LongTensor            # (P, 2) -> SEMANTIC_CLASS_TO_ID
     raw_doc: Dict = field(default_factory=dict)
@@ -138,7 +147,7 @@ def build_bio_targets(
     for ent in entities:
         ent_start = int(ent["span_start"])
         ent_end = int(ent["span_end"])
-        sclass = ent.get("semantic_class")
+        sclass = _ner_class(ent)
         if not sclass or sclass not in SEMANTIC_CLASSES:
             # Entities with no recognised semantic class don't get a BIO tag.
             continue
@@ -180,7 +189,9 @@ def enumerate_pairs(
     neg_ratio: float = 2.0,
     max_pairs: int = 64,
     rng: Optional[random.Random] = None,
-) -> Tuple[List[Tuple[int, int]], List[int], List[float]]:
+    hard_targets: bool = False,
+    confidence_weighting: bool = True,
+) -> Tuple[List[Tuple[int, int]], List[int], List[float], List[List[float]], List[int]]:
     """Build entity-pair training tuples for the relation head.
 
     survivor_index maps original entity index -> index into surviving_entities.
@@ -191,36 +202,88 @@ def enumerate_pairs(
     """
     rng = rng or random.Random(0)
     n = len(surviving_entities)
-    pos_pairs: Dict[Tuple[int, int], Tuple[int, float]] = {}
+    pos_pairs: Dict[Tuple[int, int], Tuple[int, float, List[float], int]] = {}
+    related_code_pairs = set()
+
+    def code_parts(ent: Dict) -> set:
+        raw = str(ent.get("original_code") or "")
+        return {p.replace("MESH:", "").strip() for p in raw.replace("|", ",").split(",") if p.strip()}
+
+    entity_codes = [code_parts(ent) for ent in surviving_entities]
+    next_bag = 0
 
     for rel in raw_relations:
         s_orig = rel["subject_idx"]
         o_orig = rel["object_idx"]
         if s_orig not in survivor_index or o_orig not in survivor_index:
             continue
-        s = survivor_index[s_orig]
-        o = survivor_index[o_orig]
-        if s == o:
+        s_first = survivor_index[s_orig]
+        o_first = survivor_index[o_orig]
+        s_codes = entity_codes[s_first]
+        o_codes = entity_codes[o_first]
+        if not s_codes or not o_codes:
             continue
+        s_mentions = [idx for idx, codes in enumerate(entity_codes) if codes & s_codes]
+        o_mentions = [idx for idx, codes in enumerate(entity_codes) if codes & o_codes]
+
+        candidates = rel.get("target_candidates") or rel.get("extra", {}).get("target_candidates", [])
+        target_dist = [0.0] * NUM_RELATION_LABELS
         target = rel.get("target_relation")
-        if target is None or target not in RELATION_LABEL_TO_ID:
+        if hard_targets and target in RELATION_LABEL_TO_ID:
+            target_dist[RELATION_LABEL_TO_ID[target]] = 1.0
+        else:
+            for cand in candidates:
+                label = cand.get("target_relation") or cand.get("label")
+                if label in RELATION_LABEL_TO_ID:
+                    target_dist[RELATION_LABEL_TO_ID[label]] += float(cand.get("probability", 0.0))
+            if sum(target_dist) <= 0 and target in RELATION_LABEL_TO_ID:
+                target_dist[RELATION_LABEL_TO_ID[target]] = 1.0
+        total = sum(target_dist)
+        if total <= 0:
             continue
-        prob = rel.get("target_probability") or 0.0
-        if prob <= 0.0:
-            prob = 1.0
-        # Keep highest-probability assignment if duplicates land on the same pair.
-        prev = pos_pairs.get((s, o))
-        if prev is None or prob > prev[1]:
-            pos_pairs[(s, o)] = (RELATION_LABEL_TO_ID[target], float(prob))
+        target_dist = [p / total for p in target_dist]
+        label_id = max(range(NUM_RELATION_LABELS), key=lambda idx: target_dist[idx])
+
+        weight = 1.0
+        if confidence_weighting:
+            confs = []
+            for idx in {s_first, o_first}:
+                conf = surviving_entities[idx].get("mapping_confidence")
+                if conf is not None:
+                    confs.append(float(conf))
+            weight = float(rel.get("confidence", 1.0))
+            pubtator_score = rel.get("extra", {}).get("pubtator_score")
+            if pubtator_score is not None:
+                weight *= float(pubtator_score)
+            if confs:
+                weight *= min(confs)
+
+        bag_id = next_bag
+        next_bag += 1
+        for sc in s_codes:
+            for oc in o_codes:
+                related_code_pairs.add((sc, oc))
+                related_code_pairs.add((oc, sc))
+        for s in s_mentions:
+            for o in o_mentions:
+                if s == o:
+                    continue
+                prev = pos_pairs.get((s, o))
+                if prev is None or weight > prev[1]:
+                    pos_pairs[(s, o)] = (label_id, weight, target_dist, bag_id)
 
     indices: List[Tuple[int, int]] = []
     labels: List[int] = []
     weights: List[float] = []
+    targets: List[List[float]] = []
+    bag_ids: List[int] = []
 
-    for (s, o), (lab, w) in pos_pairs.items():
+    for (s, o), (lab, w, target_dist, bag_id) in pos_pairs.items():
         indices.append((s, o))
         labels.append(lab)
         weights.append(w)
+        targets.append(target_dist)
+        bag_ids.append(bag_id)
 
     desired_neg = int(round(neg_ratio * len(pos_pairs)))
     desired_total = min(max_pairs, len(pos_pairs) + max(desired_neg, 0))
@@ -234,14 +297,21 @@ def enumerate_pairs(
                     continue
                 if (i, j) in pos_pairs:
                     continue
+                if any((a, b) in related_code_pairs for a in entity_codes[i] for b in entity_codes[j]):
+                    continue
                 candidate_negs.append((i, j))
         rng.shuffle(candidate_negs)
         for pair in candidate_negs[:desired_neg]:
             indices.append(pair)
             labels.append(NO_RELATION_ID)
             weights.append(1.0)
+            negative_target = [0.0] * NUM_RELATION_LABELS
+            negative_target[NO_RELATION_ID] = 1.0
+            targets.append(negative_target)
+            bag_ids.append(next_bag)
+            next_bag += 1
 
-    return indices, labels, weights
+    return indices, labels, weights, targets, bag_ids
 
 
 class CanonDocDataset(IterableDataset):
@@ -258,6 +328,9 @@ class CanonDocDataset(IterableDataset):
     neg_ratio  : negative-pair sampling ratio (default 2.0 = 2x positives).
     max_pairs  : per-document cap on total entity pairs (default 64).
     seed       : RNG seed for deterministic negative sampling.
+    exclude_corpora : corpus names/substrings to omit (case-insensitive).
+    hard_targets : collapse concept and relation supervision to declared labels.
+    confidence_weighting : apply mapping/source confidence to all three tasks.
     """
 
     def __init__(
@@ -271,6 +344,9 @@ class CanonDocDataset(IterableDataset):
         neg_ratio: float = 2.0,
         max_pairs: int = 64,
         seed: int = 0,
+        exclude_corpora: Optional[Sequence[str]] = None,
+        hard_targets: bool = False,
+        confidence_weighting: bool = True,
     ) -> None:
         super().__init__()
         self.jsonl_path = Path(jsonl_path)
@@ -281,21 +357,29 @@ class CanonDocDataset(IterableDataset):
         self.neg_ratio = neg_ratio
         self.max_pairs = max_pairs
         self.seed = seed
+        self.exclude_corpora = tuple(x.lower() for x in (exclude_corpora or ()) if x)
+        self.hard_targets = hard_targets
+        self.confidence_weighting = confidence_weighting
 
     def __iter__(self) -> Iterator[DocFeatures]:
         rng = random.Random(self.seed)
+        yielded = 0
         with self.jsonl_path.open("r", encoding="utf-8") as fh:
-            for i, line in enumerate(fh):
-                if self.max_docs is not None and i >= self.max_docs:
-                    break
+            for line in fh:
                 line = line.strip()
                 if not line:
                     continue
                 raw = json.loads(line)
+                corpus = str(raw.get("corpus", "")).lower()
+                if any(excluded in corpus for excluded in self.exclude_corpora):
+                    continue
                 features = self._featurize(raw, rng)
                 if features is None:
                     continue
                 yield features
+                yielded += 1
+                if self.max_docs is not None and yielded >= self.max_docs:
+                    break
 
     def _featurize(self, raw: Dict, rng: random.Random) -> Optional[DocFeatures]:
         text = raw.get("text") or ((raw.get("title", "") + " " + raw.get("abstract", "")).strip())
@@ -319,7 +403,7 @@ class CanonDocDataset(IterableDataset):
         survivor_index: Dict[int, int] = {}
         kept = 0
         for orig_idx, ent in enumerate(raw.get("entities", [])):
-            sclass = ent.get("semantic_class")
+            sclass = _ner_class(ent)
             if not sclass or sclass not in SEMANTIC_CLASSES:
                 continue
             # Preserve order: if this ent has a span, it occupies the next survivor slot.
@@ -335,9 +419,11 @@ class CanonDocDataset(IterableDataset):
             sclass = ent.get("semantic_class")
             if sclass not in SNOMED_NER_CLASSES:
                 continue
+            if raw.get("split") in {"dev", "test"} and ent.get("snomed_active") is not True:
+                continue
             mesh = _normalize_mesh_code(ent.get("original_code"))
             target_dist: Dict[str, float] = {}
-            if mesh and mesh in self.soft_lookup:
+            if not self.hard_targets and mesh and mesh in self.soft_lookup:
                 for cand in self.soft_lookup[mesh]:
                     cid = str(cand.get("snomed_id"))
                     p = float(cand.get("prob", 0.0))
@@ -354,32 +440,46 @@ class CanonDocDataset(IterableDataset):
             norm_targets.append(target_dist)
             norm_entity_idx.append(survivor_i)
             conf = ent.get("mapping_confidence")
-            norm_weights.append(float(conf) if conf is not None else 1.0)
+            norm_weights.append(
+                float(conf) if self.confidence_weighting and conf is not None else 1.0
+            )
 
-        pair_idx, pair_lab, pair_w = enumerate_pairs(
+        pair_idx, pair_lab, pair_w, pair_targets, pair_bag_ids = enumerate_pairs(
             survivors,
             raw.get("relations", []),
             survivor_index=survivor_index,
             neg_ratio=self.neg_ratio,
             max_pairs=self.max_pairs,
             rng=rng,
+            hard_targets=self.hard_targets,
+            confidence_weighting=self.confidence_weighting,
         )
 
         if pair_idx:
             pair_classes = []
             for (a, b) in pair_idx:
-                ca = SEMANTIC_CLASS_TO_ID.get(survivors[a].get("semantic_class") or "none", SEMANTIC_CLASS_TO_ID["none"])
-                cb = SEMANTIC_CLASS_TO_ID.get(survivors[b].get("semantic_class") or "none", SEMANTIC_CLASS_TO_ID["none"])
+                ca = SEMANTIC_CLASS_TO_ID.get(_ner_class(survivors[a]) or "none", SEMANTIC_CLASS_TO_ID["none"])
+                cb = SEMANTIC_CLASS_TO_ID.get(_ner_class(survivors[b]) or "none", SEMANTIC_CLASS_TO_ID["none"])
                 pair_classes.append([ca, cb])
             pair_indices_t = torch.tensor(pair_idx, dtype=torch.long)
             pair_labels_t = torch.tensor(pair_lab, dtype=torch.long)
             pair_weights_t = torch.tensor(pair_w, dtype=torch.float)
+            pair_targets_t = torch.tensor(pair_targets, dtype=torch.float)
+            pair_bag_ids_t = torch.tensor(pair_bag_ids, dtype=torch.long)
             pair_classes_t = torch.tensor(pair_classes, dtype=torch.long)
         else:
             pair_indices_t = torch.zeros((0, 2), dtype=torch.long)
             pair_labels_t = torch.zeros((0,), dtype=torch.long)
             pair_weights_t = torch.zeros((0,), dtype=torch.float)
+            pair_targets_t = torch.zeros((0, NUM_RELATION_LABELS), dtype=torch.float)
+            pair_bag_ids_t = torch.zeros((0,), dtype=torch.long)
             pair_classes_t = torch.zeros((0, 2), dtype=torch.long)
+
+        entity_confidences = [float(ent["mapping_confidence"]) for ent in survivors
+                              if ent.get("mapping_confidence") is not None]
+        ner_weight = 1.0
+        if self.confidence_weighting and entity_confidences:
+            ner_weight = sum(entity_confidences) / len(entity_confidences)
 
         return DocFeatures(
             pmid=str(raw.get("pmid", "")),
@@ -393,8 +493,11 @@ class CanonDocDataset(IterableDataset):
             norm_targets=norm_targets,
             norm_entity_idx=norm_entity_idx,
             norm_weights=norm_weights,
+            ner_weight=ner_weight,
             pair_indices=pair_indices_t,
             pair_labels=pair_labels_t,
+            pair_targets=pair_targets_t,
+            pair_bag_ids=pair_bag_ids_t,
             pair_weights=pair_weights_t,
             pair_semantic_classes=pair_classes_t,
             raw_doc=raw,
@@ -433,8 +536,11 @@ def collate_docs(batch: List[DocFeatures], pad_token_id: int = 0) -> Dict:
         "norm_targets": [d.norm_targets for d in batch],
         "norm_entity_idx": [d.norm_entity_idx for d in batch],
         "norm_weights": [d.norm_weights for d in batch],
+        "ner_weights": torch.tensor([d.ner_weight for d in batch], dtype=torch.float),
         "pair_indices": [d.pair_indices for d in batch],
         "pair_labels": [d.pair_labels for d in batch],
+        "pair_targets": [d.pair_targets for d in batch],
+        "pair_bag_ids": [d.pair_bag_ids for d in batch],
         "pair_weights": [d.pair_weights for d in batch],
         "pair_semantic_classes": [d.pair_semantic_classes for d in batch],
         "pmids": [d.pmid for d in batch],
