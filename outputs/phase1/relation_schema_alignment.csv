@@ -1,109 +1,109 @@
 source_corpus,source_relation_type,source_relation_uri,subject_semantic_class,object_semantic_class,skos_property,target_relation,target_relation_uri,tier,probability,notes
-BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.65,CID most commonly denotes a chemical causing a disease (adverse effect / side effect).
-BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.25,"When the causal mechanism is explicit the SNOMED attribute causative-agent applies and the CSP solver can verify it. Calibration (relation_prior_calibration): SNOMED attests causative-agent for ~4.8% of CID pairs (ancestor-aware), below Positive_Correlation's 8.4%, so CID's Tier-1 mass is set below Positive_Correlation's."
-BC5CDR,CID,https://canon.iu.edu/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,A minority of CID instances state correlation only without a documented causal mechanism.
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.85,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.15,"Subset where context implies a causal mechanism. Calibration: SNOMED attests causative-agent for ~3.5% of these pairs (ancestor-aware), the lowest of the causal chemical-disease groups, so Tier-1 mass is set below CID and Positive_Correlation."
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,Gene-disease pairs often imply a causal role.
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,variant,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,variant,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,Pathogenic variants are causal by definition.
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,variant,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,species,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,cell_line,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,cell_line,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,cell_line,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,species,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.6,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,SNOMED causative-agent applies when the mechanism is stated.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,Residual when no directional mechanism is explicit.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,gene,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.4,Chemical upregulates / induces gene expression.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,gene,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.5,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,gene,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.4,Gene gain-of-function variants causing disease.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,gene,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,variant,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.5,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,variant,disease,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.4,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,variant,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,variant,gene,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.5,Variant increases gene expression or activity.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,variant,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.5,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,gene,gene,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.5,Gene A promotes expression of gene B.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,gene,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.5,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,chemical,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.5,Chemical A increases levels / activity of chemical B.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.5,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.3,Comorbidity where disease A predisposes to disease B.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,disease,skos:closeMatch,treats,https://canon.iu.edu/ns#treats,2,0.7,Chemical decreasing disease severity is the canonical 'treats' relationship.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.2,Cases where inhibition is indirect or context unclear.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,disease,skos:closeMatch,due-to,https://canon.iu.edu/ns#due-to,1,0.1,Rare: disease symptom reduced due to chemical intervention; SNOMED due-to captures this formally.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,gene,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,0.4,Chemical inhibiting a gene product implies physical or functional interaction.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,gene,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,Protective gene-disease association without explicit mechanism.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,gene,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.3,Loss-of-function of protective gene causes disease.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,variant,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.8,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,variant,disease,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.2,Protective loss-of-function variant.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,variant,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,variant,gene,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,0.3,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,gene,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,gene,gene,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,0.4,Gene A downregulates gene B via direct interaction.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,chemical,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,0.4,Chemical A inhibits or antagonises chemical B.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,disease,disease,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,Disease A being inversely associated with disease B; no standard Tier 1 SNOMED attribute covers this.
-BioRED,Bind,https://canon.iu.edu/corpus/biored#Bind,chemical,gene,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,1.0,Small molecule binding to a protein / gene product.
-BioRED,Bind,https://canon.iu.edu/corpus/biored#Bind,chemical,chemical,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,1.0,Ligand-receptor or chelation-style binding.
-BioRED,Bind,https://canon.iu.edu/corpus/biored#Bind,gene,gene,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,1.0,Protein-protein interaction.
-BioRED,Bind,https://canon.iu.edu/corpus/biored#Bind,variant,gene,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,1.0,Mutant protein binding its wild-type partner.
-BioRED,Bind,https://canon.iu.edu/corpus/biored#Bind,chemical,variant,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,1.0,
-BioRED,Cotreatment,https://canon.iu.edu/corpus/biored#Cotreatment,chemical,chemical,skos:closeMatch,co-treats,https://canon.iu.edu/ns#co-treats,2,1.0,Two drugs given together; co-treats distinguishes this from a general interaction.
-BioRED,Drug_Interaction,https://canon.iu.edu/corpus/biored#Drug_Interaction,chemical,chemical,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,1.0,PK/PD drug-drug interaction; interacts-with is the appropriate Tier 2 label.
-BioRED,Conversion,https://canon.iu.edu/corpus/biored#Conversion,chemical,chemical,skos:closeMatch,converts-to,https://canon.iu.edu/ns#converts-to,2,1.0,Metabolic or chemical transformation product.
-BioRED,Conversion,https://canon.iu.edu/corpus/biored#Conversion,chemical,gene,skos:closeMatch,converts-to,https://canon.iu.edu/ns#converts-to,2,1.0,Chemical converted by an enzyme (gene product).
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,chemical,chemical,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,gene,gene,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,chemical,disease,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,gene,disease,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,variant,disease,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,chemical,gene,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,variant,gene,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Comparison,https://canon.iu.edu/corpus/biored#Comparison,disease,disease,skos:closeMatch,compared-with,https://canon.iu.edu/ns#compared-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,chemical,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.85,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,chemical,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.15,"Reversed ordering of chemical-disease Association; same semantics, same calibration-adjusted split."
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,gene,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,disease,variant,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,gene,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,variant,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Association,https://canon.iu.edu/corpus/biored#Association,variant,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,1.0,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,chemical,variant,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.4,Chemical upregulates variant expression / activity.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,chemical,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.6,Reversed ordering: same semantics as chemical-disease.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,chemical,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.3,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,gene,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.5,Reversed ordering: same semantics as gene-disease.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,gene,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.4,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,variant,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.5,Reversed ordering: same semantics as variant-disease.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,variant,skos:closeMatch,causative-agent,https://canon.iu.edu/ns#causative-agent,1,0.4,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,disease,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.1,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,gene,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,gene,chemical,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.4,Reversed ordering: same semantics as chemical-gene.
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,variant,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Positive_Correlation,https://canon.iu.edu/corpus/biored#Positive_Correlation,variant,chemical,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.4,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,variant,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,chemical,variant,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,0.4,Chemical inhibiting a variant/mutant protein.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,disease,chemical,skos:closeMatch,treats,https://canon.iu.edu/ns#treats,2,0.7,Reversed ordering of chemical-disease: chemical still treats disease regardless of annotation direction.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,disease,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.2,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,disease,chemical,skos:closeMatch,due-to,https://canon.iu.edu/ns#due-to,1,0.1,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,disease,gene,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,Protective gene reduces disease severity; association reading preferred when mechanism is unstated.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,disease,gene,skos:closeMatch,causes,https://canon.iu.edu/ns#causes,2,0.3,Loss-of-function of protective gene causes disease.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,gene,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.6,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,gene,chemical,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,0.4,Reversed ordering: gene product inhibited by chemical.
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,variant,chemical,skos:closeMatch,associated-with,https://canon.iu.edu/ns#associated-with,2,0.7,
-BioRED,Negative_Correlation,https://canon.iu.edu/corpus/biored#Negative_Correlation,variant,chemical,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,0.3,
-BioRED,Bind,https://canon.iu.edu/corpus/biored#Bind,gene,chemical,skos:closeMatch,interacts-with,https://canon.iu.edu/ns#interacts-with,2,1.0,Reversed ordering of chemical-gene Bind; binding is symmetric.
-BioRED,Cotreatment,https://canon.iu.edu/corpus/biored#Cotreatment,gene,chemical,skos:closeMatch,co-treats,https://canon.iu.edu/ns#co-treats,2,1.0,5 observed instances; likely a protein therapeutic (e.g. monoclonal antibody) co-administered with a small molecule.  Annotated as gene product but functions as a biologic drug in the treatment context.
+BC5CDR,CID,https://w3id.org/canon/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.65,CID most commonly denotes a chemical causing a disease (adverse effect / side effect).
+BC5CDR,CID,https://w3id.org/canon/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.25,"When the causal mechanism is explicit the SNOMED attribute causative-agent applies and the CSP solver can verify it. Calibration (relation_prior_calibration): SNOMED attests causative-agent for ~4.8% of CID pairs (ancestor-aware), below Positive_Correlation's 8.4%, so CID's Tier-1 mass is set below Positive_Correlation's."
+BC5CDR,CID,https://w3id.org/canon/corpus/bc5cdr#CID,chemical,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.1,A minority of CID instances state correlation only without a documented causal mechanism.
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,chemical,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.85,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,chemical,disease,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.15,"Subset where context implies a causal mechanism. Calibration: SNOMED attests causative-agent for ~3.5% of these pairs (ancestor-aware), the lowest of the causal chemical-disease groups, so Tier-1 mass is set below CID and Positive_Correlation."
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,chemical,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,gene,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,gene,disease,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.3,Gene-disease pairs often imply a causal role.
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,variant,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,variant,disease,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.3,Pathogenic variants are causal by definition.
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,variant,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,gene,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,chemical,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,chemical,species,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,chemical,cell_line,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,gene,cell_line,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,disease,cell_line,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,gene,species,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,disease,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.6,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,disease,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.3,SNOMED causative-agent applies when the mechanism is stated.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.1,Residual when no directional mechanism is explicit.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,gene,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.4,Chemical upregulates / induces gene expression.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,gene,disease,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.5,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,gene,disease,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.4,Gene gain-of-function variants causing disease.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,gene,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.1,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,variant,disease,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.5,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,variant,disease,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.4,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,variant,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.1,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,variant,gene,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.5,Variant increases gene expression or activity.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,variant,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.5,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,gene,gene,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.5,Gene A promotes expression of gene B.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,gene,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.5,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,chemical,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.5,Chemical A increases levels / activity of chemical B.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.5,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,disease,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.3,Comorbidity where disease A predisposes to disease B.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,disease,skos:closeMatch,treats,https://w3id.org/canon/ns#treats,2,0.7,Chemical decreasing disease severity is the canonical 'treats' relationship.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.2,Cases where inhibition is indirect or context unclear.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,disease,skos:closeMatch,due-to,https://w3id.org/canon/ns#due-to,1,0.1,Rare: disease symptom reduced due to chemical intervention; SNOMED due-to captures this formally.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,gene,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,0.4,Chemical inhibiting a gene product implies physical or functional interaction.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,gene,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,Protective gene-disease association without explicit mechanism.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,gene,disease,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.3,Loss-of-function of protective gene causes disease.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,variant,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.8,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,variant,disease,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.2,Protective loss-of-function variant.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,variant,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,variant,gene,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,0.3,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,gene,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,gene,gene,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,0.4,Gene A downregulates gene B via direct interaction.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,chemical,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,0.4,Chemical A inhibits or antagonises chemical B.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,disease,disease,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,Disease A being inversely associated with disease B; no standard Tier 1 SNOMED attribute covers this.
+BioRED,Bind,https://w3id.org/canon/corpus/biored#Bind,chemical,gene,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,1.0,Small molecule binding to a protein / gene product.
+BioRED,Bind,https://w3id.org/canon/corpus/biored#Bind,chemical,chemical,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,1.0,Ligand-receptor or chelation-style binding.
+BioRED,Bind,https://w3id.org/canon/corpus/biored#Bind,gene,gene,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,1.0,Protein-protein interaction.
+BioRED,Bind,https://w3id.org/canon/corpus/biored#Bind,variant,gene,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,1.0,Mutant protein binding its wild-type partner.
+BioRED,Bind,https://w3id.org/canon/corpus/biored#Bind,chemical,variant,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,1.0,
+BioRED,Cotreatment,https://w3id.org/canon/corpus/biored#Cotreatment,chemical,chemical,skos:closeMatch,co-treats,https://w3id.org/canon/ns#co-treats,2,1.0,Two drugs given together; co-treats distinguishes this from a general interaction.
+BioRED,Drug_Interaction,https://w3id.org/canon/corpus/biored#Drug_Interaction,chemical,chemical,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,1.0,PK/PD drug-drug interaction; interacts-with is the appropriate Tier 2 label.
+BioRED,Conversion,https://w3id.org/canon/corpus/biored#Conversion,chemical,chemical,skos:closeMatch,converts-to,https://w3id.org/canon/ns#converts-to,2,1.0,Metabolic or chemical transformation product.
+BioRED,Conversion,https://w3id.org/canon/corpus/biored#Conversion,chemical,gene,skos:closeMatch,converts-to,https://w3id.org/canon/ns#converts-to,2,1.0,Chemical converted by an enzyme (gene product).
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,chemical,chemical,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,gene,gene,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,chemical,disease,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,gene,disease,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,variant,disease,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,chemical,gene,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,variant,gene,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Comparison,https://w3id.org/canon/corpus/biored#Comparison,disease,disease,skos:closeMatch,compared-with,https://w3id.org/canon/ns#compared-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,chemical,variant,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,disease,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.85,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,disease,chemical,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.15,"Reversed ordering of chemical-disease Association; same semantics, same calibration-adjusted split."
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,disease,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,disease,gene,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.3,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,disease,variant,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,disease,variant,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.3,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,gene,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,variant,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Association,https://w3id.org/canon/corpus/biored#Association,variant,variant,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,1.0,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,variant,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,chemical,variant,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.4,Chemical upregulates variant expression / activity.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,chemical,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.6,Reversed ordering: same semantics as chemical-disease.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,chemical,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.3,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.1,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,gene,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.5,Reversed ordering: same semantics as gene-disease.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,gene,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.4,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.1,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,variant,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.5,Reversed ordering: same semantics as variant-disease.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,variant,skos:closeMatch,causative-agent,https://w3id.org/canon/ns#causative-agent,1,0.4,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,disease,variant,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.1,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,gene,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,gene,chemical,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.4,Reversed ordering: same semantics as chemical-gene.
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,variant,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Positive_Correlation,https://w3id.org/canon/corpus/biored#Positive_Correlation,variant,chemical,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.4,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,variant,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,chemical,variant,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,0.4,Chemical inhibiting a variant/mutant protein.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,disease,chemical,skos:closeMatch,treats,https://w3id.org/canon/ns#treats,2,0.7,Reversed ordering of chemical-disease: chemical still treats disease regardless of annotation direction.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,disease,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.2,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,disease,chemical,skos:closeMatch,due-to,https://w3id.org/canon/ns#due-to,1,0.1,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,disease,gene,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,Protective gene reduces disease severity; association reading preferred when mechanism is unstated.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,disease,gene,skos:closeMatch,causes,https://w3id.org/canon/ns#causes,2,0.3,Loss-of-function of protective gene causes disease.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,gene,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.6,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,gene,chemical,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,0.4,Reversed ordering: gene product inhibited by chemical.
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,variant,chemical,skos:closeMatch,associated-with,https://w3id.org/canon/ns#associated-with,2,0.7,
+BioRED,Negative_Correlation,https://w3id.org/canon/corpus/biored#Negative_Correlation,variant,chemical,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,0.3,
+BioRED,Bind,https://w3id.org/canon/corpus/biored#Bind,gene,chemical,skos:closeMatch,interacts-with,https://w3id.org/canon/ns#interacts-with,2,1.0,Reversed ordering of chemical-gene Bind; binding is symmetric.
+BioRED,Cotreatment,https://w3id.org/canon/corpus/biored#Cotreatment,gene,chemical,skos:closeMatch,co-treats,https://w3id.org/canon/ns#co-treats,2,1.0,5 observed instances; likely a protein therapeutic (e.g. monoclonal antibody) co-administered with a small molecule.  Annotated as gene product but functions as a biologic drug in the treatment context.

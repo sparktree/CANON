@@ -33,14 +33,18 @@ from typing import Any, Dict, Iterator, Optional
 # ---------------------------------------------------------------------------
 # Namespace prefixes
 # ---------------------------------------------------------------------------
+CANON_BASE_URI = "https://w3id.org/canon/"
+CANON_VOCAB_URI = f"{CANON_BASE_URI}ns#"
+
+
 PREFIXES: Dict[str, str] = {
-    "canon":       "https://canon.iu.edu/ns#",
+    "canon":       CANON_VOCAB_URI,
     "skos":        "http://www.w3.org/2004/02/skos/core#",
     "prov":        "http://www.w3.org/ns/prov#",
     "mesh":        "http://id.nlm.nih.gov/mesh/",
     "snomed":      "http://snomed.info/id/",
-    "biored":      "https://canon.iu.edu/corpus/biored#",
-    "bc5cdr":      "https://canon.iu.edu/corpus/bc5cdr#",
+    "biored":      f"{CANON_BASE_URI}corpus/biored#",
+    "bc5cdr":      f"{CANON_BASE_URI}corpus/bc5cdr#",
     "ncbi_gene":   "https://www.ncbi.nlm.nih.gov/gene/",
     "dbsnp":       "https://www.ncbi.nlm.nih.gov/snp/",
     "ncbi_taxon":  "https://www.ncbi.nlm.nih.gov/taxonomy/",
@@ -155,6 +159,15 @@ def mint_canon_relation_uri(target_relation: str) -> str:
     return f"{PREFIXES['canon']}{target_relation}"
 
 
+def mint_document_uri(corpus: str, document_id: str) -> str:
+    """Return the stable project IRI for a corpus document.
+
+    The W3ID redirect is a publication concern, not a runtime dependency.
+    CANON JSON-LD embeds its context and therefore remains usable offline.
+    """
+    return f"{CANON_BASE_URI}document/{corpus}/{document_id}"
+
+
 # ---------------------------------------------------------------------------
 # URI mint helpers
 # ---------------------------------------------------------------------------
@@ -253,7 +266,7 @@ def write_context(path: Optional[Path] = None) -> Path:
 # CURIE <-> IRI boundary helpers
 # ---------------------------------------------------------------------------
 # Longest-prefix map, built once. PREFIXES plus xsd covers every namespace the
-# context declares. canon: and biored:/bc5cdr: share the https://canon.iu.edu/
+# context declares. canon: and biored:/bc5cdr: share the W3ID CANON base
 # stem but have distinct full namespaces, so compaction must prefer the longest
 # matching namespace.
 _ALL_NAMESPACES: Dict[str, str] = {**PREFIXES, "xsd": XSD}

@@ -1,12 +1,12 @@
 {
   "@context": {
-    "canon": "https://canon.iu.edu/ns#",
+    "canon": "https://w3id.org/canon/ns#",
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "prov": "http://www.w3.org/ns/prov#",
     "mesh": "http://id.nlm.nih.gov/mesh/",
     "snomed": "http://snomed.info/id/",
-    "biored": "https://canon.iu.edu/corpus/biored#",
-    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "biored": "https://w3id.org/canon/corpus/biored#",
+    "bc5cdr": "https://w3id.org/canon/corpus/bc5cdr#",
     "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
     "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
     "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
@@ -79,7 +79,7 @@
       "@type": "xsd:string"
     }
   },
-  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -89,7 +89,7 @@
   "canon:text": "Cross-Domain Text Mining to Predict Adverse Events from Tyrosine Kinase Inhibitors for Chronic Myeloid Leukemia. Tyrosine kinase inhibitors (TKIs) are prescribed for chronic myeloid leukemia (CML) and some other cancers. The objective was to predict and rank TKI-related adverse events (AEs), including under-reported or preclinical AEs, using novel text mining. First, k-means clustering of 2575 clinical CML TKI abstracts separated TKIs by significant (p < 0.05) AE type: gastrointestinal (bosutinib); edema (imatinib); pulmonary (dasatinib); diabetes (nilotinib); cardiovascular (ponatinib). Next, we propose a novel cross-domain text mining method utilizing a knowledge graph, link prediction, and hub node network analysis to predict new relationships. Cross-domain text mining of 30+ million articles via SemNet predicted and ranked known and novel TKI AEs. Three physiology-based tiers were formed using unsupervised rank aggregation feature importance. Tier 1 ranked in the top 1%: hematology (anemia, neutropenia, thrombocytopenia, hypocellular marrow); glucose (diabetes, insulin resistance, metabolic syndrome); iron (deficiency, overload, metabolism), cardiovascular (hypertension, heart failure, vascular dilation); thyroid (hypothyroidism, hyperthyroidism, parathyroid). Tier 2 ranked in the top 5%: inflammation (chronic inflammatory disorder, autoimmune, periodontitis); kidney (glomerulonephritis, glomerulopathy, toxic nephropathy). Tier 3 ranked in the top 10%: gastrointestinal (bowel regulation, hepatitis, pancreatitis); neuromuscular (autonomia, neuropathy, muscle pain); others (secondary cancers, vitamin deficiency, edema). Results suggest proactive TKI patient AE surveillance levels: regular surveillance for tier 1, infrequent surveillance for tier 2, and symptom-based surveillance for tier 3.",
   "canon:mentions": [
     {
-      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T1",
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T1",
       "canon:span": {
         "start": 1517,
         "end": 1526
@@ -110,7 +110,7 @@
       }
     },
     {
-      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T2",
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T2",
       "canon:span": {
         "start": 1123,
         "end": 1127
@@ -133,21 +133,21 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#relation-1",
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#relation-1",
       "canon:subject": {
-        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T1"
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T1"
       },
       "canon:object": {
-        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T2"
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36230609_causative-agent_0001770#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
-      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:relation": "https://w3id.org/canon/ns#causative-agent",
       "canon:tier": 1,
       "canon:probability": 1.0,
       "canon:confidence": 0.6,
       "canon:candidates": [
         {
-          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:relation": "https://w3id.org/canon/ns#causative-agent",
           "canon:tier": 1,
           "canon:probability": 1.0
         }

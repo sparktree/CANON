@@ -32,8 +32,8 @@ Each downstream phase consumes documents in this shape:
       - novelty                  (BioRED only; None elsewhere)
       - extra: dict
 
-JSON Lines is the on-disk format -- one Document per line, easy for streaming
-into PyTorch DataLoaders.
+JSON-LD is the canonical on-disk format. A mechanically derived JSON Lines
+cache remains available for efficient streaming into PyTorch DataLoaders.
 
 Schema is stable across phases: bump SCHEMA_VERSION when fields change.
 """
@@ -104,18 +104,18 @@ class Document:
 
         The @context is embedded inline by default (the Phase 2.0 context object),
         so every document is self-contained and resolves offline with no hosted
-        URL. Instances live under the canon.iu.edu base, matching the canon:
-        vocabulary namespace; these @ids are identifiers and need not be hosted.
+        URL. Instances and vocabulary terms share CANON's W3ID base. Resolution
+        is not required at runtime because the context is embedded.
         """
+        try:
+            import skos_schema
+        except ImportError:  # pragma: no cover - package-relative import
+            import sys
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            import skos_schema
         if context is None:
-            try:
-                import skos_schema
-            except ImportError:  # pragma: no cover - package-relative import
-                import sys
-                sys.path.insert(0, str(Path(__file__).resolve().parent))
-                import skos_schema
             context = skos_schema.build_context()["@context"]
-        doc_id = f"https://canon.iu.edu/document/{self.corpus}/{self.pmid}"
+        doc_id = skos_schema.mint_document_uri(self.corpus, self.pmid)
         mentions = []
         mention_ids: List[str] = []
         for em in self.entities:
@@ -339,7 +339,13 @@ def _ner_type_class(value: Optional[str]) -> Optional[str]:
 def _relation_uri(value: Optional[str]) -> Optional[str]:
     if value is None or value.startswith("http://") or value.startswith("https://"):
         return value
-    return f"https://canon.iu.edu/ns#{value}"
+    try:
+        import skos_schema
+    except ImportError:  # pragma: no cover - package-relative import
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        import skos_schema
+    return skos_schema.mint_canon_relation_uri(value)
 
 
 def _relation_label(value: Optional[str]) -> Optional[str]:
