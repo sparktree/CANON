@@ -1,0 +1,548 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/19696792",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "train",
+  "canon:pmid": "19696792",
+  "canon:title": "Single nucleotide polymorphism in ABCG2 is associated with irinotecan-induced severe myelosuppression.",
+  "canon:abstract": "Irinotecan is an anti-neoplastic agent that is widely used for treating colorectal and lung cancers, but often causes toxicities such as severe myelosuppression and diarrhea. In this study, we performed a two-stage case-control association study for irinotecan-induced severe myelosuppression (grades 3 and 4). In the first stage, 23 patients who developed severe myelosuppression and 58 patients who did not develop any toxicity were examined for 170 single nucleotide polymorphisms (SNPs) in 14 genes involved in the metabolism and transport of irinotecan. A total of five SNPs were identified to show the possible association with severe myelosuppression (P(Fisher)<0.01) and were further examined in 7 cases and 20 controls in the second stage of the study. An intronic SNP, rs2622604, in ABCG2 showed P(Fisher)=0.0419 in the second stage and indicated a significant association with severe myelosuppression in the combined study (P(Fisher)=0.000237; P(Corrected)=0.036). Although only limited subjects were investigated, our results suggested that a genetic polymorphism in ABCG2 might alter the transport activity for the drug and elevate the systemic circulation level of irinotecan, leading to severe myelosuppression.",
+  "canon:text": "Single nucleotide polymorphism in ABCG2 is associated with irinotecan-induced severe myelosuppression. Irinotecan is an anti-neoplastic agent that is widely used for treating colorectal and lung cancers, but often causes toxicities such as severe myelosuppression and diarrhea. In this study, we performed a two-stage case-control association study for irinotecan-induced severe myelosuppression (grades 3 and 4). In the first stage, 23 patients who developed severe myelosuppression and 58 patients who did not develop any toxicity were examined for 170 single nucleotide polymorphisms (SNPs) in 14 genes involved in the metabolism and transport of irinotecan. A total of five SNPs were identified to show the possible association with severe myelosuppression (P(Fisher)<0.01) and were further examined in 7 cases and 20 controls in the second stage of the study. An intronic SNP, rs2622604, in ABCG2 showed P(Fisher)=0.0419 in the second stage and indicated a significant association with severe myelosuppression in the combined study (P(Fisher)=0.000237; P(Corrected)=0.036). Although only limited subjects were investigated, our results suggested that a genetic polymorphism in ABCG2 might alter the transport activity for the drug and elevate the systemic circulation level of irinotecan, leading to severe myelosuppression.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T1",
+      "canon:span": {
+        "start": 34,
+        "end": 39
+      },
+      "canon:surface": "ABCG2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "9429",
+      "canon:sourceNotation": "9429",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T2",
+      "canon:span": {
+        "start": 59,
+        "end": 69
+      },
+      "canon:surface": "irinotecan",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000077146",
+      "canon:sourceNotation": "D000077146",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T3",
+      "canon:span": {
+        "start": 85,
+        "end": 101
+      },
+      "canon:surface": "myelosuppression",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T4",
+      "canon:span": {
+        "start": 103,
+        "end": 113
+      },
+      "canon:surface": "Irinotecan",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000077146",
+      "canon:sourceNotation": "D000077146",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T5",
+      "canon:span": {
+        "start": 175,
+        "end": 202
+      },
+      "canon:surface": "colorectal and lung cancers",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008175,D015179",
+      "canon:sourceNotation": "D008175,D015179",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T6",
+      "canon:span": {
+        "start": 221,
+        "end": 231
+      },
+      "canon:surface": "toxicities",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D064420",
+      "canon:sourceNotation": "D064420",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T7",
+      "canon:span": {
+        "start": 247,
+        "end": 263
+      },
+      "canon:surface": "myelosuppression",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T8",
+      "canon:span": {
+        "start": 268,
+        "end": 276
+      },
+      "canon:surface": "diarrhea",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003967",
+      "canon:sourceNotation": "D003967",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T9",
+      "canon:span": {
+        "start": 353,
+        "end": 363
+      },
+      "canon:surface": "irinotecan",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000077146",
+      "canon:sourceNotation": "D000077146",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T10",
+      "canon:span": {
+        "start": 379,
+        "end": 395
+      },
+      "canon:surface": "myelosuppression",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T11",
+      "canon:span": {
+        "start": 437,
+        "end": 445
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T12",
+      "canon:span": {
+        "start": 467,
+        "end": 483
+      },
+      "canon:surface": "myelosuppression",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T13",
+      "canon:span": {
+        "start": 491,
+        "end": 499
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T14",
+      "canon:span": {
+        "start": 524,
+        "end": 532
+      },
+      "canon:surface": "toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D064420",
+      "canon:sourceNotation": "D064420",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T15",
+      "canon:span": {
+        "start": 650,
+        "end": 660
+      },
+      "canon:surface": "irinotecan",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000077146",
+      "canon:sourceNotation": "D000077146",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T16",
+      "canon:span": {
+        "start": 744,
+        "end": 760
+      },
+      "canon:surface": "myelosuppression",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T17",
+      "canon:span": {
+        "start": 882,
+        "end": 891
+      },
+      "canon:surface": "rs2622604",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "rs2622604",
+      "canon:sourceNotation": "rs2622604",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T18",
+      "canon:span": {
+        "start": 896,
+        "end": 901
+      },
+      "canon:surface": "ABCG2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "9429",
+      "canon:sourceNotation": "9429",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T19",
+      "canon:span": {
+        "start": 998,
+        "end": 1014
+      },
+      "canon:surface": "myelosuppression",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T20",
+      "canon:span": {
+        "start": 1182,
+        "end": 1187
+      },
+      "canon:surface": "ABCG2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "9429",
+      "canon:sourceNotation": "9429",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T21",
+      "canon:span": {
+        "start": 1282,
+        "end": 1292
+      },
+      "canon:surface": "irinotecan",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000077146",
+      "canon:sourceNotation": "D000077146",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T22",
+      "canon:span": {
+        "start": 1312,
+        "end": 1328
+      },
+      "canon:surface": "myelosuppression",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T17"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T3"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T17"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T2"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T8"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T3"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19696792#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19696792#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    }
+  ]
+}

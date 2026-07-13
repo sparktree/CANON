@@ -1,0 +1,293 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/16181582",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "train",
+  "canon:pmid": "16181582",
+  "canon:title": "Valproate-induced encephalopathy.",
+  "canon:abstract": "Valproate-induced encephalopathy is a rare syndrome that may manifest in otherwise normal epileptic individuals. It may even present in patients who have tolerated this medicine well in the past. It is usually but not necessarily associated with hyperammonemia. The EEG shows characteristic triphasic waves in most patients with this complication. A case of valproate-induced encephalopathy is presented. The problems in diagnosing this condition are subsequently discussed.",
+  "canon:text": "Valproate-induced encephalopathy. Valproate-induced encephalopathy is a rare syndrome that may manifest in otherwise normal epileptic individuals. It may even present in patients who have tolerated this medicine well in the past. It is usually but not necessarily associated with hyperammonemia. The EEG shows characteristic triphasic waves in most patients with this complication. A case of valproate-induced encephalopathy is presented. The problems in diagnosing this condition are subsequently discussed.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 9
+      },
+      "canon:surface": "Valproate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014635",
+      "canon:sourceNotation": "D014635",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/264325000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T2",
+      "canon:span": {
+        "start": 18,
+        "end": 32
+      },
+      "canon:surface": "encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001927",
+      "canon:sourceNotation": "D001927",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome",
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/81308009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T3",
+      "canon:span": {
+        "start": 34,
+        "end": 43
+      },
+      "canon:surface": "Valproate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014635",
+      "canon:sourceNotation": "D014635",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/264325000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T4",
+      "canon:span": {
+        "start": 52,
+        "end": 66
+      },
+      "canon:surface": "encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001927",
+      "canon:sourceNotation": "D001927",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome",
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/81308009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T5",
+      "canon:span": {
+        "start": 124,
+        "end": 133
+      },
+      "canon:surface": "epileptic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004827",
+      "canon:sourceNotation": "D004827",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Finding"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/18618006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T6",
+      "canon:span": {
+        "start": 280,
+        "end": 294
+      },
+      "canon:surface": "hyperammonemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D022124",
+      "canon:sourceNotation": "D022124",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/9360008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T7",
+      "canon:span": {
+        "start": 392,
+        "end": 401
+      },
+      "canon:surface": "valproate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014635",
+      "canon:sourceNotation": "D014635",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/264325000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T8",
+      "canon:span": {
+        "start": 410,
+        "end": 424
+      },
+      "canon:surface": "encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001927",
+      "canon:sourceNotation": "D001927",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome",
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/81308009",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/16181582#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/16181582#mention-T2"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

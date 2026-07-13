@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Quercetin attenuates neurotoxicity induced by iron oxide nanoparticles. Iron oxide nanoparticles (IONPs) have been proposed as targeted carriers to deliver therapeutic molecules in the central nervous system (CNS). However, IONPs may damage neural tissue via free iron accumulation, protein aggregation, and oxidative stress. Neuroprotective effects of quercetin (QC) have been proven due to its antioxidant and anti-inflammatory properties. However, poor solubility and low bioavailability of QC have also led researchers to make various QC-involved nanoparticles to overcome these limitations. We wondered how high doses or prolonged treatment with quercetin conjugated superparamagnetic iron oxide nanoparticles (QCSPIONs) could improve cognitive dysfunction and promote neurogenesis without any toxicity. It can be explained that the QC inhibits protein aggregation and acts against iron overload via iron-chelating activity, iron homeostasis genes regulation, radical scavenging, and attenuation of Fenton/Haber-Weiss reaction. In this review, first, we present brain iron homeostasis, molecular mechanisms of iron overload that induced neurotoxicity, and the role of iron in dementia-associated diseases. Then by providing evidence of IONPs neurotoxicity, we discuss how QC neutralizes IONPs neurotoxicity, and finally, we make a brief comparison between QC and conventional iron chelators. In this review, we highlight that QC as supplementation and especially in conjugated form reduces iron oxide nanoparticles neurotoxicity in clinical application.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T1",
       "canon:span": {
         "start": 21,
         "end": 34
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T2",
       "canon:span": {
         "start": 264,
         "end": 268
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

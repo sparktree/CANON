@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Vitamin B group levels and supplementations in dermatology. Irregularities of vitamin levels are being increasingly identified associated with skin conditions, and systemic and topical therapies have shown promising improvements. There have been some remarkable improvements achieved, but large variations in outcomes suggest that these conditions are not simply related to a single deficiency or solved by providing a single supplement. Cyanocobalamin, pyridoxine (B6) and riboflavin (B2) supplementation were linked with exacerbating existing acne. There were also reports of allergic reactions to parenteral cobalamin including acne, rosacea, allergic site reactions or anaphylaxis with cobalamin injections. This was also reported in patients who had allergic contact dermatitis to cobalt, where cobalamin therapy resulted in cutaneous manifestations such as chronic vesicular hand dermatitis, cheilitis and stomatitis. The use of niacinamide in acne vulgaris as an alternative to clindamycin or adjunct is also notable, as well as its application for hyperpigmentation. Vitamin B3 also has promise in chemoprevention in particular nonmelanoma skin cancer prophylaxis. Folic acid has a developing role in psoriasis. The data for vitiligo remains inconclusive. Assessment for potential vitamin deficiency, particularly B vitamins, should form part of the normal work-up for a wide range of skin conditions.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T1",
       "canon:span": {
         "start": 578,
         "end": 596
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T2",
       "canon:span": {
         "start": 438,
         "end": 452
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37063401_causative-agent_0004247#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

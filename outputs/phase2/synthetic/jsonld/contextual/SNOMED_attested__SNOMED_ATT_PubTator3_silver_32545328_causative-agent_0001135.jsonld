@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Neuroprotection or Neurotoxicity of Illicit Drugs on Parkinson's Disease. Parkinson's Disease (PD) is currently the most rapid growing neurodegenerative disease and over the past generation, its global burden has more than doubled. The onset of PD can arise due to environmental, sporadic or genetic factors. Nevertheless, most PD cases have an unknown etiology. Chemicals, such as the anthropogenic pollutant 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) and amphetamine-type stimulants, have been associated with the onset of PD. Conversely, cannabinoids have been associated with the treatment of the symptoms'. PD and medical cannabis is currently under the spotlight, and research to find its benefits on PD is on-going worldwide. However, the described clinical applications and safety of pharmacotherapy with cannabis products are yet to be fully supported by scientific evidence. Furthermore, the novel psychoactive substances are currently a popular alternative to classical drugs of abuse, representing an unknown health hazard for young adults who may develop PD later in their lifetime. This review addresses the neurotoxic and neuroprotective impact of illicit substance consumption in PD, presenting clinical evidence and molecular and cellular mechanisms of this association. This research area is utterly important for contemporary society since illicit drugs' legalization is under discussion which may have consequences both for the onset of PD and for the treatment of its symptoms.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T1",
       "canon:span": {
         "start": 19,
         "end": 32
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T2",
       "canon:span": {
         "start": 410,
         "end": 454
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32545328_causative-agent_0001135#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

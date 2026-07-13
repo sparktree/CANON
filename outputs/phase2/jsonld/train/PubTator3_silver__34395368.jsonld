@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "A Machine-Generated View of the Role of Blood Glucose Levels in the Severity of COVID-19. SARS-CoV-2 started spreading toward the end of 2019 causing COVID-19, a disease that reached pandemic proportions among the human population within months. The reasons for the spectrum of differences in the severity of the disease across the population, and in particular why the disease affects more severely the aging population and those with specific preconditions are unclear. We developed machine learning models to mine 240,000 scientific articles openly accessible in the CORD-19 database, and constructed knowledge graphs to synthesize the extracted information and navigate the collective knowledge in an attempt to search for a potential common underlying reason for disease severity. The machine-driven framework we developed repeatedly pointed to elevated blood glucose as a key facilitator in the progression of COVID-19. Indeed, when we systematically retraced the steps of the SARS-CoV-2 infection, we found evidence linking elevated glucose to each major step of the life-cycle of the virus, progression of the disease, and presentation of symptoms. Specifically, elevations of glucose provide ideal conditions for the virus to evade and weaken the first level of the immune defense system in the lungs, gain access to deep alveolar cells, bind to the ACE2 receptor and enter the pulmonary cells, accelerate replication of the virus within cells increasing cell death and inducing an pulmonary inflammatory response, which overwhelms an already weakened innate immune system to trigger an avalanche of systemic infections, inflammation and cell damage, a cytokine storm and thrombotic events. We tested the feasibility of the hypothesis by manually reviewing the literature referenced by the machine-generated synthesis, reconstructing atomistically the virus at the surface of the pulmonary airways, and performing quantitative computational modeling of the effects of glucose levels on the infection process. We conclude that elevation in glucose levels can facilitate the progression of the disease through multiple mechanisms and can explain much of the differences in disease severity seen across the population. The study provides diagnostic considerations, new areas of research and potential treatments, and cautions on treatment strategies and critical care conditions that induce elevations in blood glucose levels.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T1",
       "canon:span": {
         "start": 40,
         "end": 53
@@ -29,7 +108,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T2",
       "canon:span": {
         "start": 80,
         "end": 88
@@ -48,7 +127,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T3",
       "canon:span": {
         "start": 90,
         "end": 100
@@ -67,7 +146,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T4",
       "canon:span": {
         "start": 150,
         "end": 158
@@ -86,7 +165,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T5",
       "canon:span": {
         "start": 214,
         "end": 219
@@ -105,7 +184,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T6",
       "canon:span": {
         "start": 859,
         "end": 872
@@ -124,7 +203,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T7",
       "canon:span": {
         "start": 916,
         "end": 924
@@ -143,7 +222,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T8",
       "canon:span": {
         "start": 983,
         "end": 1003
@@ -162,7 +241,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T9",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T9",
       "canon:span": {
         "start": 1040,
         "end": 1047
@@ -183,7 +262,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T10",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T10",
       "canon:span": {
         "start": 1185,
         "end": 1192
@@ -204,7 +283,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T11",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T11",
       "canon:span": {
         "start": 1359,
         "end": 1363
@@ -223,7 +302,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T12",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T12",
       "canon:span": {
         "start": 1491,
         "end": 1513
@@ -242,7 +321,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T13",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T13",
       "canon:span": {
         "start": 1618,
         "end": 1628
@@ -261,7 +340,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T14",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T14",
       "canon:span": {
         "start": 1630,
         "end": 1642
@@ -282,7 +361,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T15",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T15",
       "canon:span": {
         "start": 1681,
         "end": 1691
@@ -303,7 +382,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T16",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T16",
       "canon:span": {
         "start": 1977,
         "end": 1984
@@ -324,7 +403,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T17",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T17",
       "canon:span": {
         "start": 1999,
         "end": 2008
@@ -343,7 +422,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T18",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T18",
       "canon:span": {
         "start": 2048,
         "end": 2055
@@ -364,7 +443,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T19",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T19",
       "canon:span": {
         "start": 2411,
         "end": 2424
@@ -385,12 +464,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T2"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T2"
       },
       "canon:sourceRelation": "Positive_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#causes",
@@ -441,12 +520,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#relation-2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#relation-2",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T9"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T9"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T12"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T12"
       },
       "canon:sourceRelation": "Positive_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#causes",
@@ -497,12 +576,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#relation-3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#relation-3",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T9"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T9"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/34395368#mention-T15"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/34395368#mention-T15"
       },
       "canon:sourceRelation": "Positive_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#causes",

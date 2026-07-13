@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Recent Advances in Understanding of Pathogenesis of Alcohol-Associated Liver Disease. Alcohol-associated liver disease (ALD) is one of the major diseases arising from chronic alcohol consumption and is one of the most common causes of liver-related morbidity and mortality. ALD includes asymptomatic liver steatosis, fibrosis, cirrhosis, and alcohol-associated hepatitis and its complications. The progression of ALD involves complex cell-cell and organ-organ interactions. We focus on the impact of alcohol on dysregulation of homeostatic mechanisms and regulation of injury and repair in the liver. In particular, we discuss recent advances in understanding the disruption of balance between programmed cell death and prosurvival pathways, such as autophagy and membrane trafficking, in the pathogenesis of ALD. We also summarize current understanding of innate immune responses, liver sinusoidal endothelial cell dysfunction and hepatic stellate cell activation, and gut-liver and adipose-liver cross talk in response to ethanol. In addition,we describe the current potential therapeutic targets and clinical trials aimed at alleviating hepatocyte injury, reducing inflammatory responses, and targeting gut microbiota, for the treatment of ALD.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T1",
       "canon:span": {
         "start": 342,
         "end": 370
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T2",
       "canon:span": {
         "start": 1024,
         "end": 1031
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

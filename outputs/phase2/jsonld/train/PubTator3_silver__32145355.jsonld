@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Neurotoxicity of e-cigarettes. It appears that electronic cigarettes (EC) are a less harmful alternative to conventional cigarette (CC) smoking, as they generate substantially lower levels of harmful carcinogens and other toxic compounds. Thus, switching from CC to EC may be beneficial for smokers. However, recent accounts of EC- or vaping-associated lung injury (EVALI) has raised concerns regarding their adverse health effects. Additionally, the increasing popularity of EC among vulnerable populations, such as adolescents and pregnant women, calls for further EC safety evaluation. In this state-of-the-art review, we provide an update on recent findings regarding the neurological effects induced by EC exposure. Moreover, we discuss possible neurotoxic effects of nicotine and numerous other chemicals which are inherent both to e-liquids and EC aerosols. We conclude that in recognizing pertinent issues associated with EC usage, both government and scientific researchers must address this public health issue with utmost urgency.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T1",
       "canon:span": {
         "start": 0,
         "end": 13
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T2",
       "canon:span": {
         "start": 200,
         "end": 211
@@ -50,7 +129,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T3",
       "canon:span": {
         "start": 328,
         "end": 364
@@ -71,7 +150,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T4",
       "canon:span": {
         "start": 366,
         "end": 371
@@ -92,7 +171,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T5",
       "canon:span": {
         "start": 542,
         "end": 547
@@ -111,7 +190,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T6",
       "canon:span": {
         "start": 751,
         "end": 761
@@ -132,7 +211,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T7",
       "canon:span": {
         "start": 773,
         "end": 781
@@ -155,12 +234,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T7"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T7"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/32145355#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/32145355#mention-T1"
       },
       "canon:sourceRelation": "Positive_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#causes",

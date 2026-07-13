@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Perioperative Management of a Patient With Cushing Disease. Patients with Cushing disease (CD) may present with both chronic and acute perioperative complications that necessitate multidisciplinary care. This review highlights several objectives for these patients before and after transsphenoidal surgery. Preoperative management includes treatment of electrolyte disturbances, cardiovascular comorbidities, prediabetes/diabetes, as well as prophylactic consideration(s) for thromboembolism and infection(s). Preoperative medical therapy (PMT) could prove beneficial in patients with severe hypercortisolism or in cases of delayed surgery. Some centers use PMT routinely, although the clinical benefit for all patients is controversial. In this setting, steroidogenesis inhibitors are preferred because of rapid and potent inhibition of cortisol secretion. If glucocorticoids (GCs) are not used perioperatively, an immediate remission assessment postoperatively is possible. However, perioperative GC replacement is sometimes necessary for clinically unstable or medically pretreated patients and for those patients with surgical complications. A nadir serum cortisol of less than 2 to 5microg/dL during 24 to 74 hours postoperatively is generally accepted as remission; higher values suggest nonremission, while a few patients may display delayed remission. If remission is not achieved, additional treatments are pursued. The early postoperative period necessitates multidisciplinary awareness for early diagnosis of adrenal insufficiency (AI) to avoid adrenal crisis, which may also be potentiated by acute postoperative complications. Preferred GC replacement is hydrocortisone, if available. Assessment of recovery from postoperative AI should be undertaken periodically. Other postoperative targets include decreasing antihypertensive/diabetic therapy if in remission, thromboprophylaxis, infection prevention/treatment, and management of electrolyte disturbances and/or potential pituitary deficiencies. Evaluation of recovery of thyroid, gonadal, and growth hormone deficiencies should also be performed during the following months postoperatively.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T1",
       "canon:span": {
         "start": 2038,
         "end": 2087
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T2",
       "canon:span": {
         "start": 592,
         "end": 608
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35178493_due-to_0001597#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

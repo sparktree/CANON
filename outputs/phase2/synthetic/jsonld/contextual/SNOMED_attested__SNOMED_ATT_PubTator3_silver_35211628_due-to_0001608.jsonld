@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "29 m6A-RNA Methylation (Epitranscriptomic) Regulators Are Regulated in 41 Diseases including Atherosclerosis and Tumors Potentially via ROS Regulation - 102 Transcriptomic Dataset Analyses. We performed a database mining on 102 transcriptomic datasets for the expressions of 29 m6A-RNA methylation (epitranscriptomic) regulators (m6A-RMRs) in 41 diseases and cancers and made significant findings: (1) a few m6A-RMRs were upregulated; and most m6A-RMRs were downregulated in sepsis, acute respiratory distress syndrome, shock, and trauma; (2) half of 29 m6A-RMRs were downregulated in atherosclerosis; (3) inflammatory bowel disease and rheumatoid arthritis modulated m6A-RMRs more than lupus and psoriasis; (4) some organ failures shared eight upregulated m6A-RMRs; end-stage renal failure (ESRF) downregulated 85% of m6A-RMRs; (5) Middle-East respiratory syndrome coronavirus infections modulated m6A-RMRs the most among viral infections; (6) proinflammatory oxPAPC modulated m6A-RMRs more than DAMP stimulation including LPS and oxLDL; (7) upregulated m6A-RMRs were more than downregulated m6A-RMRs in cancer types; five types of cancers upregulated >=10 m6A-RMRs; (8) proinflammatory M1 macrophages upregulated seven m6A-RMRs; (9) 86% of m6A-RMRs were differentially expressed in the six clusters of CD4+Foxp3+ immunosuppressive Treg, and 8 out of 12 Treg signatures regulated m6A-RMRs; (10) immune checkpoint receptors TIM3, TIGIT, PD-L2, and CTLA4 modulated m6A-RMRs, and inhibition of CD40 upregulated m6A-RMRs; (11) cytokines and interferons modulated m6A-RMRs; (12) NF-kappaB and JAK/STAT pathways upregulated more than downregulated m6A-RMRs whereas TP53, PTEN, and APC did the opposite; (13) methionine-homocysteine-methyl cycle enzyme Mthfd1 downregulated more than upregulated m6A-RMRs; (14) m6A writer RBM15 and one m6A eraser FTO, H3K4 methyltransferase MLL1, and DNA methyltransferase, DNMT1, regulated m6A-RMRs; and (15) 40 out of 165 ROS regulators were modulated by m6A eraser FTO and two m6A writers METTL3 and WTAP. Our findings shed new light on the functions of upregulated m6A-RMRs in 41 diseases and cancers, nine cellular and molecular mechanisms, novel therapeutic targets for inflammatory disorders, metabolic cardiovascular diseases, autoimmune diseases, organ failures, and cancers.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T1",
       "canon:span": {
         "start": 475,
         "end": 481
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T2",
       "canon:span": {
         "start": 923,
         "end": 939
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35211628_due-to_0001608#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

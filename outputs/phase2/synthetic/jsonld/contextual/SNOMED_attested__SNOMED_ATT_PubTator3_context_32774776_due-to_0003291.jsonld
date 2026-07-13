@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Autonomic neurocardiogenic syndrome is stonewalled by the universal definition of myocardial infarction. Myocardial infarction (MI) is defined as myocardial cell death due to prolonged myocardial ischemia. Clinically, troponin rise and/or fall have become the \"defining feature of MI\" according to the universal definition of MI (UD-MI). Takotsubo syndrome (TS) and TS-related disease conditions also cause troponin elevation with typical rise and/or fall pattern but through a mechanism other than coronary ischemia. By strict application of the clinical diagnostic criteria for type-1 MI, type-2 MI, type-3 MI, and MI with non-obstructive coronary arteries according to the UD-MI including the fourth one published recently, TS and most of the 26 other causes of troponin elevation mentioned in the fourth UD-MI may erroneously be classified as MI. The existing evidence argues for the case that TS by itself is not a MI. Hyper-activation of the autonomic-sympathetic nervous system including local cardiac sympathetic hyper-activation and disruption with nor-epinephrine churn and spillover is the most probable cause of TS. This autonomic neuro-cardiogenic (ANCA) mechanism results in myocardial \"cramp\" (stunning), the severity and duration of which depend on the degree of the sympathetic-hyperactivation and nor-epinephrine spillover. The myocardial cramp may squeeze the cytosolic free troponin pools causing mild to moderate troponin elevation in TS and TS-related disease conditions. This ANCA syndrome, which has hitherto been enveloped by the UD-MI over more than one decade, may occur in acute, recurrent, and chronic forms. In this critical review, the controversies of UD-MI, evidence for ANCA syndrome, and a hypothetical mechanism for the troponin elevation in ANCA syndrome are provided.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T1",
       "canon:span": {
         "start": 1209,
         "end": 1217
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T2",
       "canon:span": {
         "start": 185,
         "end": 204
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32774776_due-to_0003291#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

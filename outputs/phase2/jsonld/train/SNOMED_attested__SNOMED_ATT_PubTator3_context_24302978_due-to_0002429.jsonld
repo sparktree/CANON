@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Sitagliptin reduces cardiac apoptosis, hypertrophy and fibrosis primarily by insulin-dependent mechanisms in experimental type-II diabetes. Potential roles of GLP-1 isoforms. BACKGROUND: Myocardial fibrosis is a key process in diabetic cardiomyopathy. However, their underlying mechanisms have not been elucidated, leading to a lack of therapy. The glucagon-like peptide-1 (GLP-1) enhancer, sitagliptin, reduces hyperglycemia but may also trigger direct effects on the heart. METHODS: Goto-Kakizaki (GK) rats developed type-II diabetes and received sitagliptin, an anti-hyperglycemic drug (metformin) or vehicle (n=10, each). After cardiac structure and function assessment, plasma and left ventricles were isolated for biochemical studies. Cultured cardiomyocytes and fibroblasts were used for in vitro assays. RESULTS: Untreated GK rats exhibited hyperglycemia, hyperlipidemia, plasma GLP-1 decrease, and cardiac cell-death, hypertrophy, fibrosis and prolonged deceleration time. Moreover, cardiac pro-apoptotic/necrotic, hypertrophic and fibrotic factors were up-regulated. Importantly, both sitagliptin and metformin lessened all these parameters. In cultured cardiomyocytes and cardiac fibroblasts, high-concentration of palmitate or glucose induced cell-death, hypertrophy and fibrosis. Interestingly, GLP-1 and its insulinotropic-inactive metabolite, GLP-1(9-36), alleviated these responses. In addition, despite a specific GLP-1 receptor was only detected in cardiomyocytes, GLP-1 isoforms attenuated the pro-fibrotic expression in cardiomyocytes and fibroblasts. In addition, GLP-1 receptor signalling may be linked to PPARdelta activation, and metformin may also exhibit anti-apoptotic/necrotic and anti-fibrotic direct effects in cardiac cells. CONCLUSIONS: Sitagliptin, via GLP-1 stabilization, promoted cardioprotection in type-II diabetic hearts primarily by limiting hyperglycemia e hyperlipidemia. However, GLP-1 and GLP-1(9-36) promoted survival and anti-hypertrophic/fibrotic effects on cultured cardiac cells, suggesting cell-autonomous cardioprotective actions.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T1",
       "canon:span": {
         "start": 227,
         "end": 250
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T2",
       "canon:span": {
         "start": 1024,
         "end": 1036
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24302978_due-to_0002429#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

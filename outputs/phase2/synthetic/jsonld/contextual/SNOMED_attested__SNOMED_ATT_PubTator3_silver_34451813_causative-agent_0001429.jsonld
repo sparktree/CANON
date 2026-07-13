@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Current Therapies in Clinical Trials of Parkinson's Disease: A 2021 Update. Parkinson's disease (PD) is a progressive neurodegenerative disorder that currently has no cure, but treatments are available to improve PD symptoms and maintain quality of life. In 2020, about 10 million people worldwide were living with PD. In 1970, the United States Food and Drug Administration approved the drug levodopa as a dopamine replacement to manage PD motor symptoms; levodopa-carbidopa combination became commercialized in 1975. After over 50 years of use, levodopa is still the gold standard for PD treatment. Unfortunately, levodopa therapy-induced dyskinesia and OFF symptoms remain unresolved. Therefore, we urgently need to analyze each current clinical trial's status and therapeutic strategy to discover new therapeutic approaches for PD treatment. We surveyed 293 registered clinical trials on ClinicalTrials.gov from 2008 to 16 June 2021. After excluded levodopa/carbidopa derivative add-on therapies, we identified 47 trials as PD treatment drugs or therapies. Among them, 19 trials are in phase I (41%), 25 trials are in phase II (53%), and 3 trials are in phase III (6%). The three phase-III trials use embryonic dopamine cell implant, 5-HT1A receptor agonist (sarizotan), and adenosine A2A receptor antagonist (caffeine). The therapeutic strategy of each trial shows 29, 5, 1, 5, 5, and 2 trials use small molecules, monoclonal antibodies, plasma therapy, cell therapy, gene therapy, and herbal extract, respectively. Additionally, we discuss the most potent drug or therapy among these trials. By systematically updating the current trial status and analyzing the therapeutic strategies, we hope this review can provide new ideas and insights for PD therapy development.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T1",
       "canon:span": {
         "start": 641,
         "end": 651
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T2",
       "canon:span": {
         "start": 1314,
         "end": 1322
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34451813_causative-agent_0001429#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

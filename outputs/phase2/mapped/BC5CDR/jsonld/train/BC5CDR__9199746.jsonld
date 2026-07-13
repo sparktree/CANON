@@ -1,0 +1,486 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/9199746",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "train",
+  "canon:pmid": "9199746",
+  "canon:title": "Macula toxicity after intravitreal amikacin.",
+  "canon:abstract": "BACKGROUND: Although intravitreal aminoglycosides have substantially improved visual prognosis in endophthalmitis, macular infarction may impair full visual recovery. METHODS: We present a case of presumed amikacin retinal toxicity following treatment with amikacin and vancomycin for alpha-haemolytic streptococcal endophthalmitis. RESULTS: Endophthalmitis resolved with improvement in visual acuity to 6/24 at three months. Fundus fluorescein angiography confirmed macular capillary closure and telangiectasis. CONCLUSIONS: Currently accepted intravitreal antibiotic regimens may cause retinal toxicity and macular ischaemia. Treatment strategies aimed at avoiding retinal toxicity are discussed.",
+  "canon:text": "Macula toxicity after intravitreal amikacin. BACKGROUND: Although intravitreal aminoglycosides have substantially improved visual prognosis in endophthalmitis, macular infarction may impair full visual recovery. METHODS: We present a case of presumed amikacin retinal toxicity following treatment with amikacin and vancomycin for alpha-haemolytic streptococcal endophthalmitis. RESULTS: Endophthalmitis resolved with improvement in visual acuity to 6/24 at three months. Fundus fluorescein angiography confirmed macular capillary closure and telangiectasis. CONCLUSIONS: Currently accepted intravitreal antibiotic regimens may cause retinal toxicity and macular ischaemia. Treatment strategies aimed at avoiding retinal toxicity are discussed.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T1",
+      "canon:span": {
+        "start": 7,
+        "end": 15
+      },
+      "canon:surface": "toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D064420",
+      "canon:sourceNotation": "D064420",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/264519003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T2",
+      "canon:span": {
+        "start": 35,
+        "end": 43
+      },
+      "canon:surface": "amikacin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000583",
+      "canon:sourceNotation": "D000583",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387266001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T3",
+      "canon:span": {
+        "start": 79,
+        "end": 94
+      },
+      "canon:surface": "aminoglycosides",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000617",
+      "canon:sourceNotation": "D000617",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/763805006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T4",
+      "canon:span": {
+        "start": 143,
+        "end": 158
+      },
+      "canon:surface": "endophthalmitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009877",
+      "canon:sourceNotation": "D009877",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/1847009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T5",
+      "canon:span": {
+        "start": 168,
+        "end": 178
+      },
+      "canon:surface": "infarction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007238",
+      "canon:sourceNotation": "D007238",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/55641003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T6",
+      "canon:span": {
+        "start": 251,
+        "end": 259
+      },
+      "canon:surface": "amikacin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000583",
+      "canon:sourceNotation": "D000583",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387266001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T7",
+      "canon:span": {
+        "start": 260,
+        "end": 276
+      },
+      "canon:surface": "retinal toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012164",
+      "canon:sourceNotation": "D012164",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/29555009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T8",
+      "canon:span": {
+        "start": 302,
+        "end": 310
+      },
+      "canon:surface": "amikacin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000583",
+      "canon:sourceNotation": "D000583",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387266001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T9",
+      "canon:span": {
+        "start": 315,
+        "end": 325
+      },
+      "canon:surface": "vancomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014640",
+      "canon:sourceNotation": "D014640",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Antibiotic"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372735009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T10",
+      "canon:span": {
+        "start": 347,
+        "end": 376
+      },
+      "canon:surface": "streptococcal endophthalmitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013290",
+      "canon:sourceNotation": "D013290",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/302809008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T11",
+      "canon:span": {
+        "start": 387,
+        "end": 402
+      },
+      "canon:surface": "Endophthalmitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009877",
+      "canon:sourceNotation": "D009877",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/1847009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T12",
+      "canon:span": {
+        "start": 478,
+        "end": 489
+      },
+      "canon:surface": "fluorescein",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D019793",
+      "canon:sourceNotation": "D019793",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Indicator, Reagent, or Diagnostic Aid",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/85596006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T13",
+      "canon:span": {
+        "start": 542,
+        "end": 556
+      },
+      "canon:surface": "telangiectasis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013684",
+      "canon:sourceNotation": "D013684",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Finding"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/112641009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T14",
+      "canon:span": {
+        "start": 633,
+        "end": 649
+      },
+      "canon:surface": "retinal toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012164",
+      "canon:sourceNotation": "D012164",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/29555009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T15",
+      "canon:span": {
+        "start": 662,
+        "end": 671
+      },
+      "canon:surface": "ischaemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007511",
+      "canon:sourceNotation": "D007511",
+      "canon:confidence": 0.93,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/52674009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T16",
+      "canon:span": {
+        "start": 712,
+        "end": 728
+      },
+      "canon:surface": "retinal toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012164",
+      "canon:sourceNotation": "D012164",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/29555009",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T15"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/9199746#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/9199746#mention-T7"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

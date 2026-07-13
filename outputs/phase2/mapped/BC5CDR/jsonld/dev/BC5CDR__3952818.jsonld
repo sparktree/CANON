@@ -1,0 +1,511 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/3952818",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "dev",
+  "canon:pmid": "3952818",
+  "canon:title": "Cardiac toxicity of 5-fluorouracil. Report of a case of spontaneous angina.",
+  "canon:abstract": "We report a case of a patient with colon carcinoma and liver metastasis who presented chest pain after 5-fluorouracil (5-FU) administration. Clinical electrocardiographic evolution was similar to that observed in Prinzmetal's angina, and chest pain promptly resolved with nifedipine. These data suggest that coronary spasm may be the cause of cardiotoxicity due to 5-FU, and that calcium antagonists may probably be used in the prevention or treatment of 5-FU cardiotoxicity.",
+  "canon:text": "Cardiac toxicity of 5-fluorouracil. Report of a case of spontaneous angina. We report a case of a patient with colon carcinoma and liver metastasis who presented chest pain after 5-fluorouracil (5-FU) administration. Clinical electrocardiographic evolution was similar to that observed in Prinzmetal's angina, and chest pain promptly resolved with nifedipine. These data suggest that coronary spasm may be the cause of cardiotoxicity due to 5-FU, and that calcium antagonists may probably be used in the prevention or treatment of 5-FU cardiotoxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 16
+      },
+      "canon:surface": "Cardiac toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D066126",
+      "canon:sourceNotation": "D066126",
+      "canon:confidence": 0.93,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/863954001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T2",
+      "canon:span": {
+        "start": 20,
+        "end": 34
+      },
+      "canon:surface": "5-fluorouracil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005472",
+      "canon:sourceNotation": "D005472",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387172005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T3",
+      "canon:span": {
+        "start": 68,
+        "end": 74
+      },
+      "canon:surface": "angina",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000787",
+      "canon:sourceNotation": "D000787",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/194828000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T4",
+      "canon:span": {
+        "start": 111,
+        "end": 126
+      },
+      "canon:surface": "colon carcinoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003110",
+      "canon:sourceNotation": "D003110",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/126838000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T5",
+      "canon:span": {
+        "start": 137,
+        "end": 147
+      },
+      "canon:surface": "metastasis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009362",
+      "canon:sourceNotation": "D009362",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/108369006",
+      "canon:mappingProperty": "skos:relatedMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T6",
+      "canon:span": {
+        "start": 162,
+        "end": 172
+      },
+      "canon:surface": "chest pain",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002637",
+      "canon:sourceNotation": "D002637",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/29857009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T7",
+      "canon:span": {
+        "start": 179,
+        "end": 193
+      },
+      "canon:surface": "5-fluorouracil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005472",
+      "canon:sourceNotation": "D005472",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387172005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T8",
+      "canon:span": {
+        "start": 195,
+        "end": 199
+      },
+      "canon:surface": "5-FU",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005472",
+      "canon:sourceNotation": "D005472",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387172005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T9",
+      "canon:span": {
+        "start": 289,
+        "end": 308
+      },
+      "canon:surface": "Prinzmetal's angina",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000788",
+      "canon:sourceNotation": "D000788",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/87343002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T10",
+      "canon:span": {
+        "start": 314,
+        "end": 324
+      },
+      "canon:surface": "chest pain",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002637",
+      "canon:sourceNotation": "D002637",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/29857009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T11",
+      "canon:span": {
+        "start": 348,
+        "end": 358
+      },
+      "canon:surface": "nifedipine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009543",
+      "canon:sourceNotation": "D009543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387490003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T12",
+      "canon:span": {
+        "start": 384,
+        "end": 398
+      },
+      "canon:surface": "coronary spasm",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003329",
+      "canon:sourceNotation": "D003329",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome",
+        "Finding"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/23687008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T13",
+      "canon:span": {
+        "start": 419,
+        "end": 433
+      },
+      "canon:surface": "cardiotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D066126",
+      "canon:sourceNotation": "D066126",
+      "canon:confidence": 0.93,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/863954001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T14",
+      "canon:span": {
+        "start": 441,
+        "end": 445
+      },
+      "canon:surface": "5-FU",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005472",
+      "canon:sourceNotation": "D005472",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387172005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T15",
+      "canon:span": {
+        "start": 456,
+        "end": 463
+      },
+      "canon:surface": "calcium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002118",
+      "canon:sourceNotation": "D002118",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Biologically Active Substance",
+        "Element, Ion, or Isotope",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/5540006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T16",
+      "canon:span": {
+        "start": 531,
+        "end": 535
+      },
+      "canon:surface": "5-FU",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005472",
+      "canon:sourceNotation": "D005472",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387172005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T17",
+      "canon:span": {
+        "start": 536,
+        "end": 550
+      },
+      "canon:surface": "cardiotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D066126",
+      "canon:sourceNotation": "D066126",
+      "canon:confidence": 0.93,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/863954001",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T6"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3952818#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3952818#mention-T9"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

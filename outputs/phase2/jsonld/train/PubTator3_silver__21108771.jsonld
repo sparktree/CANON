@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Neurocardiology: therapeutic implications for cardiovascular disease. The term \"neurocardiology\" refers to physiologic and pathophysiological interplays of the nervous and cardiovascular systems. This selective review provides an update about cardiovascular therapeutic implications of neurocardiology, with emphasis on disorders involving primary or secondary abnormalities of catecholamine systems. Concepts of scientific integrative medicine help understand these disorders. Scientific integrative medicine is not a treatment method or discipline but a way of thinking that applies systems concepts to acute and chronic disorders of regulation. Some of these concepts include stability by negative feedback regulation, multiple effectors, effector sharing, instability by positive feedback loops, allostasis, and allostatic load. Scientific integrative medicine builds on systems biology but is also distinct in several ways. A large variety of drugs and non-drug treatments are now available or under study for neurocardiologic disorders in which catecholamine systems are hyperfunctional or hypofunctional. The future of therapeutics in neurocardiology is not so much in new curative drugs as in applying scientific integrative medical ideas that take into account concurrent chronic degenerative disorders and interactions of multiple drug and non-drug treatments with each other and with those disorders.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T1",
       "canon:span": {
         "start": 46,
         "end": 68
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T2",
       "canon:span": {
         "start": 378,
         "end": 391
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T3",
       "canon:span": {
         "start": 605,
         "end": 632
@@ -71,7 +150,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T4",
       "canon:span": {
         "start": 1015,
         "end": 1041
@@ -90,7 +169,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T5",
       "canon:span": {
         "start": 1051,
         "end": 1064
@@ -111,7 +190,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T6",
       "canon:span": {
         "start": 1289,
         "end": 1311
@@ -134,12 +213,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T2"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T2"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/21108771#mention-T4"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/21108771#mention-T4"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",

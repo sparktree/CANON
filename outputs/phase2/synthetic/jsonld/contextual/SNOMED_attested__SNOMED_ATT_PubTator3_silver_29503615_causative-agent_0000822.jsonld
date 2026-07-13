@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Metabolomics Based Profiling of Dexamethasone Side Effects in Rats. Dexamethasone (Dex) is a synthetic glucocorticoid that has anti-inflammatory and immunosuppressant effects and is used in several conditions such as asthma and severe allergy. Patients receiving Dex, either at a high dose or for a long time, might develop several side effects such as hyperglycemia, weight change, or osteoporosis due to its in vivo non-selectivity. Herein, we used liquid chromatography-tandem mass spectrometry-based comprehensive targeted metabolomic profiling as well as radiographic imaging techniques to study the side effects of Dex treatment in rats. The Dex-treated rats suffered from a ~20% reduction in weight gain, hyperglycemia (145 mg/dL), changes in serum lipids, and reduction in total serum alkaline phosphatase (ALP) (~600 IU/L). Also, compared to controls, Dex-treated rats showed a distinctive metabolomics profile. In particular, serum amino acids metabolism showed six-fold reduction in phenylalanine, lysine, and arginine levels and upregulation of tyrosine and hydroxyproline reflecting perturbations in gluconeogenesis and protein catabolism which together lead to weight loss and abnormal bone metabolism. Sorbitol level was markedly elevated secondary to hyperglycemia and reflecting activation of the polyol metabolism pathway causing a decrease in the availability of reducing molecules (glutathione, NADPH, NAD+). Overexpression of succinylacetone (4,6-dioxoheptanoic acid) suggests a novel inhibitory effect of Dex on hepatic fumarylacetoacetate hydrolase. The acylcarnitines, mainly the very long chain species (C12, C14:1, C18:1) were significantly increased after Dex treatment which reflects degradation of the adipose tissue. In conclusion, long-term Dex therapy in rats is associated with a distinctive metabolic profile which correlates with its side effects. Therefore, metabolomics based profiling may predict Dex treatment-related side effects and may offer possible novel therapeutic interventions.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T1",
       "canon:span": {
         "start": 235,
         "end": 242
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T2",
       "canon:span": {
         "start": 32,
         "end": 45
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29503615_causative-agent_0000822#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

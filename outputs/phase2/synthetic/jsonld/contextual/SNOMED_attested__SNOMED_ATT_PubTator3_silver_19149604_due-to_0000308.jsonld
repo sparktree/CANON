@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "The importance of NAD in multiple sclerosis. The etiology of multiple sclerosis (MS) is unknown but it manifests as a chronic inflammatory demyelinating disease in the central nervous system (CNS). During chronic CNS inflammation, nicotinamide adenine dinucleotide (NAD) concentrations are altered by (T helper) Th1-derived cytokines through the coordinated induction of both indoleamine 2,3-dioxygenase (IDO) and the ADP cyclase CD38 in pathogenic microglia and lymphocytes. While IDO activation may keep auto-reactive T cells in check, hyper-activation of IDO can leave neuronal CNS cells starving for extracellular sources of NAD. Existing data indicate that glia may serve critical functions as an essential supplier of NAD to neurons during times of stress. Administration of pharmacological doses of non-tryptophan NAD precursors ameliorates pathogenesis in animal models of MS. Animal models of MS involve artificially stimulated autoimmune attack of myelin by experimental autoimmune encephalomyelitis (EAE) or by viral-mediated demyelination using Thieler's murine encephalomyelitis virus (TMEV). The Wld(S) mouse dramatically resists razor axotomy mediated axonal degeneration. This resistance is due to increased efficiency of NAD biosynthesis that delays stress-induced depletion of axonal NAD and ATP. Although the Wld(S) genotype protects against EAE pathogenesis, TMEV-mediated pathogenesis is exacerbated. In this review, we contrast the role of NAD in EAE versus TMEV demyelinating pathogenesis to increase our understanding of the pharmacotherapeutic potential of NAD signal transduction pathways. We speculate on the importance of increased SIRT1 activity in both PARP-1 inhibition and the potentially integral role of neuronal CD200 interactions through glial CD200R with induction of IDO in MS pathogenesis. A comprehensive review of immunomodulatory control of NAD biosynthesis and degradation in MS pathogenesis is presented. Distinctive pharmacological approaches designed for NAD-complementation or targeting NAD-centric proteins (SIRT1, SIRT2, PARP-1, GPR109a, and CD38) are outlined towards determining which approach may work best in the context of clinical application.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T1",
       "canon:span": {
         "start": 968,
         "end": 1009
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T2",
       "canon:span": {
         "start": 25,
         "end": 43
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19149604_due-to_0000308#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Off-Label Use of Bumetanide for Brain Disorders: An Overview. Bumetanide (BTN or BUM) is a FDA-approved potent loop diuretic (LD) that acts by antagonizing sodium-potassium-chloride (Na-K-Cl) cotransporters, NKCC1 (SLc12a2) and NKCC2. While NKCC1 is expressed both in the CNS and in systemic organs, NKCC2 is kidney-specific. The off-label use of BTN to modulate neuronal transmembrane Cl- gradients by blocking NKCC1 in the CNS has now been tested as an anti-seizure agent and as an intervention for neurological disorders in pre-clinical studies with varying results. BTN safety and efficacy for its off-label use has also been tested in several clinical trials for neonates, children, adolescents, and adults. It failed to meet efficacy criteria for hypoxic-ischemic encephalopathy (HIE) neonatal seizures. In contrast, positive outcomes in temporal lobe epilepsy (TLE), autism, and schizophrenia trials have been attributed to BTN in studies evaluating its off-label use. NKCC1 is an electroneutral neuronal Cl- importer and the dominance of NKCC1 function has been proposed as the common pathology for HIE seizures, TLE, autism, and schizophrenia. Therefore, the use of BTN to antagonize neuronal NKCC1 with the goal to lower internal Cl- levels and promote GABAergic mediated hyperpolarization has been proposed. In this review, we summarize the data and results for pre-clinical and clinical studies that have tested off-label BTN interventions and report variable outcomes. We also compare the data underlying the developmental expression profile of NKCC1 and KCC2, highlight the limitations of BTN's brain-availability and consider its actions on non-neuronal cells.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T1",
       "canon:span": {
         "start": 753,
         "end": 784
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T2",
       "canon:span": {
         "start": 844,
         "end": 866
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31068771_after_0000964#mention-T2"
       },
       "canon:sourceRelation": "after",
       "canon:relation": "https://canon.iu.edu/ns#after",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "The Mechanisms of Systemic Inflammatory and Immunosuppressive Acute-on-Chronic Liver Failure and Application Prospect of Single-Cell Sequencing. Acute-on-chronic liver failure (ACLF) is a complex clinical syndrome, and patients often have high short-term mortality. It occurs with intense systemic inflammation, often accompanied by a proinflammatory event (such as infection or alcoholic hepatitis), and is closely related to single or multiple organ failure. Liver inflammation begins when innate immune cells (such as Kupffer cells (KCs)) are activated by binding of pathogen-associated molecular patterns (PAMPs) from pathogenic microorganisms or damage-associated molecular patterns (DAMPs) of host origin to their pattern recognition receptors (PRRs). Activated KCs can secrete inflammatory factors as well as chemokines and recruit bone marrow-derived cells such as neutrophils and monocytes to the liver to enhance the inflammatory process. Bacterial translocation may contribute to ACLF when there are no obvious precipitating events. Immunometabolism plays an important role in the process (including mitochondrial dysfunction, amino acid metabolism, and lipid metabolism). The late stage of ACLF is mainly characterized by immunosuppression. In this process, the dysfunction of monocyte and macrophage is reflected in the downregulation of HLA-DR and upregulation of MER tyrosine kinase (MERTK), which weakens the antigen presentation function and reduces the secretion of inflammatory cytokines. We also describe the specific function of bacterial translocation and the gut-liver axis in the process of ACLF. Finally, we also describe the transcriptomics in HBV-ACLF and the recent progress of single-cell RNA sequencing as well as its potential application in the study of ACLF in the future, in order to gain a deeper understanding of ACLF in terms of single-cell gene expression.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T1",
       "canon:span": {
         "start": 379,
         "end": 398
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T2",
       "canon:span": {
         "start": 1165,
         "end": 1170
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

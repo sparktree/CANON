@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Risperidone Exacerbates Glucose Intolerance, Nonalcoholic Fatty Liver Disease, and Renal Impairment in Obese Mice. Risperidone, a second-generation antipsychotic drug used for schizophrenia treatment with less-severe side effects, has recently been applied in major depressive disorder treatment. The mechanism underlying risperidone-associated metabolic disturbances and liver and renal adverse effects warrants further exploration. This research explores how risperidone influences weight, glucose homeostasis, fatty liver scores, liver damage, and renal impairment in high-fat diet (HFD)-administered C57BL6/J mice. Compared with HFD control mice, risperidone-treated obese mice exhibited increases in body, liver, kidney, and retroperitoneal and epididymal fat pad weights, daily food efficiency, serum triglyceride, blood urea nitrogen, creatinine, hepatic triglyceride, and aspartate aminotransferase, and alanine aminotransferase levels, and hepatic fatty acid regulation marker expression. They also exhibited increased insulin resistance and glucose intolerance but decreased serum insulin levels, Akt phosphorylation, and glucose transporter 4 expression. Moreover, their fatty liver score and liver damage demonstrated considerable increases, corresponding to increases in sterol regulatory element-binding protein 1 mRNA, fatty acid-binding protein 4 mRNA, and patatin-like phospholipid domain containing protein 3 expression. Finally, these mice demonstrated renal impairment, associated with decreases in glutathione peroxidase, superoxide dismutase, and catalase levels. In conclusion, long-term administration of risperidone may exacerbate diabetes syndrome, nonalcoholic fatty liver disease, and kidney injury.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T1",
       "canon:span": {
         "start": 533,
         "end": 545
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T2",
       "canon:span": {
         "start": 827,
         "end": 831
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003443#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

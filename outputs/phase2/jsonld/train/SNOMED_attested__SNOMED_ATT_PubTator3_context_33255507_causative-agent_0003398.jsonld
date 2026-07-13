@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Hawthorn Herbal Preparation from Crataegus oxyacantha Attenuates In Vivo Carbon Tetrachloride -Induced Hepatic Fibrosis via Modulating Oxidative Stress and Inflammation. Hawthorn (HAW) is a herbal preparation extracted from Crataegus oxyacantha. HAW has cardioprotective, antioxidants, anti-inflammatory, and anti-hypotensive effects. HAW's effect on hepatic fibrosis remains, however, unknown. This study evaluated the impact of HAW on carbon tetrachloride (CCl4)-induced hepatic fibrosis in rats and elucidated its mechanisms. HAW reduced liver index and the serum liver enzyme markers and reduced liver damage, and fibrosis as confirmed by histopathological scoring of hematoxylin-eosin staining. Collagen deposition was reduced in HAW group compared to CCl4 group as confirmed by Masson staining, hydroxyproline content, and both mRNA and protein levels of alpha-smooth muscle actin, collagen 1 and 3. HAW also down regulated the gene expressions of inflammatory markers including interleukin-IL-1beta, tumor necrosis factor-alpha, transforming growth factor-beta 1, nuclear factor kappa-B, and cyclooxygenase-2 and decreased the myeloperoxidase activity. The effects of HAW was also associated with decreased levels of hepatic oxidative stress markers (malondialdehyde and P.Carbonyl) and with increased activity of superoxide dismutase. Those effects are possibly mediated by blocking the pro-oxidant machinery and down regulating the inflammatory and profibrotic responses. Finally, chlorogenic acid, epicatechin, rutin, vitexin quercetin, and iso quercetin were identified as the major species of polyphenols of the HAW herbal preparation used here. Therefore, HAW's potent protecting effects against liver fibrosis predicts a significant beneficial application.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T1",
       "canon:span": {
         "start": 600,
         "end": 612
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T2",
       "canon:span": {
         "start": 73,
         "end": 93
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33255507_causative-agent_0003398#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

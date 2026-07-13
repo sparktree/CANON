@@ -1,0 +1,710 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/28684635",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "test",
+  "canon:pmid": "28684635",
+  "canon:title": "A Type 2 Diabetes-Associated Functional Regulatory Variant in a Pancreatic Islet Enhancer at the ADCY5 Locus.",
+  "canon:abstract": "Molecular mechanisms remain unknown for most type 2 diabetes genome-wide association study identified loci. Variants associated with type 2 diabetes and fasting glucose levels reside in introns of ADCY5, a gene that encodes adenylate cyclase 5. Adenylate cyclase 5 catalyzes the production of cyclic AMP, which is a second messenger molecule involved in cell signaling and pancreatic b-cell insulin secretion. We demonstrated that type 2 diabetes risk alleles are associated with decreased ADCY5 expression in human islets and examined candidate variants for regulatory function. rs11708067 overlaps a predicted enhancer region in pancreatic islets. The type 2 diabetes risk rs11708067-A allele showed fewer H3K27ac ChIP-seq reads in human islets, lower transcriptional activity in reporter assays in rodent b-cells (rat 832/13 and mouse MIN6), and increased nuclear protein binding compared with the rs11708067-G allele. Homozygous deletion of the orthologous enhancer region in 832/13 cells resulted in a 64% reduction in expression level of Adcy5, but not adjacent gene Sec22a, and a 39% reduction in insulin secretion. Together, these data suggest that rs11708067-A risk allele contributes to type 2 diabetes by disrupting an islet enhancer, which results in reduced ADCY5 expression and impaired insulin secretion.",
+  "canon:text": "A Type 2 Diabetes-Associated Functional Regulatory Variant in a Pancreatic Islet Enhancer at the ADCY5 Locus. Molecular mechanisms remain unknown for most type 2 diabetes genome-wide association study identified loci. Variants associated with type 2 diabetes and fasting glucose levels reside in introns of ADCY5, a gene that encodes adenylate cyclase 5. Adenylate cyclase 5 catalyzes the production of cyclic AMP, which is a second messenger molecule involved in cell signaling and pancreatic b-cell insulin secretion. We demonstrated that type 2 diabetes risk alleles are associated with decreased ADCY5 expression in human islets and examined candidate variants for regulatory function. rs11708067 overlaps a predicted enhancer region in pancreatic islets. The type 2 diabetes risk rs11708067-A allele showed fewer H3K27ac ChIP-seq reads in human islets, lower transcriptional activity in reporter assays in rodent b-cells (rat 832/13 and mouse MIN6), and increased nuclear protein binding compared with the rs11708067-G allele. Homozygous deletion of the orthologous enhancer region in 832/13 cells resulted in a 64% reduction in expression level of Adcy5, but not adjacent gene Sec22a, and a 39% reduction in insulin secretion. Together, these data suggest that rs11708067-A risk allele contributes to type 2 diabetes by disrupting an islet enhancer, which results in reduced ADCY5 expression and impaired insulin secretion.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T1",
+      "canon:span": {
+        "start": 2,
+        "end": 17
+      },
+      "canon:surface": "Type 2 Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T2",
+      "canon:span": {
+        "start": 97,
+        "end": 102
+      },
+      "canon:surface": "ADCY5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "111",
+      "canon:sourceNotation": "111",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T3",
+      "canon:span": {
+        "start": 155,
+        "end": 170
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T4",
+      "canon:span": {
+        "start": 243,
+        "end": 258
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T5",
+      "canon:span": {
+        "start": 271,
+        "end": 278
+      },
+      "canon:surface": "glucose",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005947",
+      "canon:sourceNotation": "D005947",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T6",
+      "canon:span": {
+        "start": 307,
+        "end": 312
+      },
+      "canon:surface": "ADCY5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "111",
+      "canon:sourceNotation": "111",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T7",
+      "canon:span": {
+        "start": 334,
+        "end": 353
+      },
+      "canon:surface": "adenylate cyclase 5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "111",
+      "canon:sourceNotation": "111",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T8",
+      "canon:span": {
+        "start": 355,
+        "end": 374
+      },
+      "canon:surface": "Adenylate cyclase 5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "111",
+      "canon:sourceNotation": "111",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T9",
+      "canon:span": {
+        "start": 403,
+        "end": 413
+      },
+      "canon:surface": "cyclic AMP",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000242",
+      "canon:sourceNotation": "D000242",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T10",
+      "canon:span": {
+        "start": 501,
+        "end": 508
+      },
+      "canon:surface": "insulin",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "3630",
+      "canon:sourceNotation": "3630",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T11",
+      "canon:span": {
+        "start": 541,
+        "end": 556
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T12",
+      "canon:span": {
+        "start": 600,
+        "end": 605
+      },
+      "canon:surface": "ADCY5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "111",
+      "canon:sourceNotation": "111",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T13",
+      "canon:span": {
+        "start": 620,
+        "end": 625
+      },
+      "canon:surface": "human",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T14",
+      "canon:span": {
+        "start": 690,
+        "end": 700
+      },
+      "canon:surface": "rs11708067",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "rs11708067",
+      "canon:sourceNotation": "rs11708067",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T15",
+      "canon:span": {
+        "start": 764,
+        "end": 779
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T16",
+      "canon:span": {
+        "start": 785,
+        "end": 795
+      },
+      "canon:surface": "rs11708067",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "rs11708067",
+      "canon:sourceNotation": "rs11708067",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T17",
+      "canon:span": {
+        "start": 844,
+        "end": 849
+      },
+      "canon:surface": "human",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T18",
+      "canon:span": {
+        "start": 927,
+        "end": 930
+      },
+      "canon:surface": "rat",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "10116",
+      "canon:sourceNotation": "10116",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T19",
+      "canon:span": {
+        "start": 931,
+        "end": 937
+      },
+      "canon:surface": "832/13",
+      "canon:nerType": "cell_line",
+      "canon:sourceEntityType": "CellLine",
+      "canon:sourceSemanticClass": "cell_line",
+      "canon:sourceConcept": "CVCL_7226",
+      "canon:sourceNotation": "CVCL_7226",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T20",
+      "canon:span": {
+        "start": 942,
+        "end": 947
+      },
+      "canon:surface": "mouse",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "10090",
+      "canon:sourceNotation": "10090",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T21",
+      "canon:span": {
+        "start": 948,
+        "end": 952
+      },
+      "canon:surface": "MIN6",
+      "canon:nerType": "cell_line",
+      "canon:sourceEntityType": "CellLine",
+      "canon:sourceSemanticClass": "cell_line",
+      "canon:sourceConcept": "CVCL_0431",
+      "canon:sourceNotation": "CVCL_0431",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T22",
+      "canon:span": {
+        "start": 1011,
+        "end": 1021
+      },
+      "canon:surface": "rs11708067",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "rs11708067",
+      "canon:sourceNotation": "rs11708067",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T23",
+      "canon:span": {
+        "start": 1090,
+        "end": 1096
+      },
+      "canon:surface": "832/13",
+      "canon:nerType": "cell_line",
+      "canon:sourceEntityType": "CellLine",
+      "canon:sourceSemanticClass": "cell_line",
+      "canon:sourceConcept": "CVCL_7226",
+      "canon:sourceNotation": "CVCL_7226",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T24",
+      "canon:span": {
+        "start": 1154,
+        "end": 1159
+      },
+      "canon:surface": "Adcy5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "64532",
+      "canon:sourceNotation": "64532",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T25",
+      "canon:span": {
+        "start": 1183,
+        "end": 1189
+      },
+      "canon:surface": "Sec22a",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "117513",
+      "canon:sourceNotation": "117513",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T26",
+      "canon:span": {
+        "start": 1214,
+        "end": 1221
+      },
+      "canon:surface": "insulin",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "24506",
+      "canon:sourceNotation": "24506",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T27",
+      "canon:span": {
+        "start": 1267,
+        "end": 1277
+      },
+      "canon:surface": "rs11708067",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "rs11708067",
+      "canon:sourceNotation": "rs11708067",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T28",
+      "canon:span": {
+        "start": 1307,
+        "end": 1322
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T29",
+      "canon:span": {
+        "start": 1381,
+        "end": 1386
+      },
+      "canon:surface": "ADCY5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "111",
+      "canon:sourceNotation": "111",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T30",
+      "canon:span": {
+        "start": 1402,
+        "end": 1428
+      },
+      "canon:surface": "impaired insulin secretion",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T5"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T2"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T14"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T30"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T9"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T10"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T30"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T9"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T5"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-7",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T14"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/28684635#relation-8",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/28684635#mention-T2"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

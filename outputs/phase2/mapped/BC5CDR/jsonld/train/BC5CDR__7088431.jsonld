@@ -1,0 +1,249 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/7088431",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "train",
+  "canon:pmid": "7088431",
+  "canon:title": "Development of clear cell adenocarcinoma in DES-exposed offspring under observation.",
+  "canon:abstract": "Two cases of clear cell adenocarcinoma of the vagina detected at follow-up in young women exposed in utero to diethylstilbestrol are reported. One patient, aged 23, had been followed for 2 years before carcinoma was diagnosed; the second patient, aged 22, had been seen on a regular basis for 5 years, 8 months. In both instances, suspicion of the presence of carcinoma was aroused by the palpation of a small nodule in the vaginal fornix. Hysterosalpingography was performed on both patients and, in 1 instance, an abnormal x-ray film was reflected by the gross appearance of the uterine cavity found in the surgical specimen.",
+  "canon:text": "Development of clear cell adenocarcinoma in DES-exposed offspring under observation. Two cases of clear cell adenocarcinoma of the vagina detected at follow-up in young women exposed in utero to diethylstilbestrol are reported. One patient, aged 23, had been followed for 2 years before carcinoma was diagnosed; the second patient, aged 22, had been seen on a regular basis for 5 years, 8 months. In both instances, suspicion of the presence of carcinoma was aroused by the palpation of a small nodule in the vaginal fornix. Hysterosalpingography was performed on both patients and, in 1 instance, an abnormal x-ray film was reflected by the gross appearance of the uterine cavity found in the surgical specimen.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T1",
+      "canon:span": {
+        "start": 15,
+        "end": 40
+      },
+      "canon:surface": "clear cell adenocarcinoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018262",
+      "canon:sourceNotation": "D018262",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/30546008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T2",
+      "canon:span": {
+        "start": 44,
+        "end": 47
+      },
+      "canon:surface": "DES",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004054",
+      "canon:sourceNotation": "D004054",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hormone",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/396026002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T3",
+      "canon:span": {
+        "start": 98,
+        "end": 137
+      },
+      "canon:surface": "clear cell adenocarcinoma of the vagina",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018262",
+      "canon:sourceNotation": "D018262|D014625",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {
+        "pubtator_extra": "clear cell adenocarcinoma|adenocarcinoma of the vagina"
+      },
+      "canon:normalizedConcept": "http://snomed.info/id/30546008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T4",
+      "canon:span": {
+        "start": 195,
+        "end": 213
+      },
+      "canon:surface": "diethylstilbestrol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004054",
+      "canon:sourceNotation": "D004054",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hormone",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/396026002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T5",
+      "canon:span": {
+        "start": 287,
+        "end": 296
+      },
+      "canon:surface": "carcinoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002277",
+      "canon:sourceNotation": "D002277",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/1187425009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T6",
+      "canon:span": {
+        "start": 445,
+        "end": 454
+      },
+      "canon:surface": "carcinoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002277",
+      "canon:sourceNotation": "D002277",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/1187425009",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7088431#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/7088431#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

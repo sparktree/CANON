@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Optimising both disease control and glucocorticoid dosing is essential for bone protection in patients with rheumatic disease. OBJECTIVES: Inflammatory rheumatic and musculoskeletal diseases (iRMDs) are associated with increased systemic bone loss that is mediated by chronic inflammation, treatment with glucocorticoids (GCs) and other factors. Our objective was to analyse the impact of variables that influence osteoporosis (OP) in patients with iRMD treated with GC. METHODS: Rh-GIOP (acronyme) is a prospective observational cohort study investigating bone health in consecutive patients with iRMD and current or prior GC treatment. We present an analysis of the patients' baseline data here. Bone mineral density (BMD) measured by dual X-ray absorptiometry was the primary outcome. Multivariable linear regression models were performed to identify variables associated with BMD. RESULTS: Data from 1066 patients with iRMD were analysed. GC doses of <5 mg prednisone equivalent per day, cumulative dose and duration of GC therapy were not associated with negative effects on BMD. Dosages of >=5 mg/day lost their negative association with BMD after adjustment for confounders. When subanalysing patients with exactly 5 mg/day, no negative effect was seen. For patients with rheumatoid arthritis (RA), GC doses of >7.5 mg/day showed a negative association with BMD overall, but this effect seemed to be specific only to patients with moderate or high disease activity (Disease Activity Score 28-C reactive protein >3.2). CONCLUSIONS: GCs of <=5 mg/day did not seem to be associated with a reduction of BMD in patients with iRMD and current or prior exposure to GC. This is most likely due to the dampening of inflammation by GC, which exerts a mitigating effect on the risk of OP. In RA, current GC doses of >7.5 mg/day were negatively associated with BMD, but only in patients with moderate to high disease activity. TRIAL REGISTRATION NUMBER: NCT02719314.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T1",
       "canon:span": {
         "start": 139,
         "end": 190
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T2",
       "canon:span": {
         "start": 1593,
         "end": 1609
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35680387_after_0003920#mention-T2"
       },
       "canon:sourceRelation": "after",
       "canon:relation": "https://canon.iu.edu/ns#after",

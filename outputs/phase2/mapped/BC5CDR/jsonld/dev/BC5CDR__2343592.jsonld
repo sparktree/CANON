@@ -1,0 +1,418 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/2343592",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "dev",
+  "canon:pmid": "2343592",
+  "canon:title": "Seizure activity with imipenem therapy: incidence and risk factors.",
+  "canon:abstract": "Two elderly patients with a history of either cerebral vascular accident (CVA) or head trauma and no evidence of renal disease developed seizures while receiving maximum doses of imipenem/cilastatin. Neither patient had reported previous seizures or seizure-like activity nor was receiving anticonvulsant agents. All seizures were controlled with therapeutic doses of phenytoin. Both patients had received maximum doses of other beta-lactam antibiotics without evidence of seizure activity.",
+  "canon:text": "Seizure activity with imipenem therapy: incidence and risk factors. Two elderly patients with a history of either cerebral vascular accident (CVA) or head trauma and no evidence of renal disease developed seizures while receiving maximum doses of imipenem/cilastatin. Neither patient had reported previous seizures or seizure-like activity nor was receiving anticonvulsant agents. All seizures were controlled with therapeutic doses of phenytoin. Both patients had received maximum doses of other beta-lactam antibiotics without evidence of seizure activity.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 7
+      },
+      "canon:surface": "Seizure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012640",
+      "canon:sourceNotation": "D012640",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/91175000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T2",
+      "canon:span": {
+        "start": 22,
+        "end": 30
+      },
+      "canon:surface": "imipenem",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D015378",
+      "canon:sourceNotation": "D015378",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/46558003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T3",
+      "canon:span": {
+        "start": 114,
+        "end": 140
+      },
+      "canon:surface": "cerebral vascular accident",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D020521",
+      "canon:sourceNotation": "D020521",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/230690007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T4",
+      "canon:span": {
+        "start": 142,
+        "end": 145
+      },
+      "canon:surface": "CVA",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D020521",
+      "canon:sourceNotation": "D020521",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/230690007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T5",
+      "canon:span": {
+        "start": 150,
+        "end": 161
+      },
+      "canon:surface": "head trauma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006259",
+      "canon:sourceNotation": "D006259",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/82271004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T6",
+      "canon:span": {
+        "start": 181,
+        "end": 194
+      },
+      "canon:surface": "renal disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007674",
+      "canon:sourceNotation": "D007674",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/90708001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T7",
+      "canon:span": {
+        "start": 205,
+        "end": 213
+      },
+      "canon:surface": "seizures",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012640",
+      "canon:sourceNotation": "D012640",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/91175000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T8",
+      "canon:span": {
+        "start": 247,
+        "end": 266
+      },
+      "canon:surface": "imipenem/cilastatin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C044650",
+      "canon:sourceNotation": "C044650",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T9",
+      "canon:span": {
+        "start": 306,
+        "end": 314
+      },
+      "canon:surface": "seizures",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012640",
+      "canon:sourceNotation": "D012640",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/91175000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T10",
+      "canon:span": {
+        "start": 318,
+        "end": 325
+      },
+      "canon:surface": "seizure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012640",
+      "canon:sourceNotation": "D012640",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/91175000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T11",
+      "canon:span": {
+        "start": 385,
+        "end": 393
+      },
+      "canon:surface": "seizures",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012640",
+      "canon:sourceNotation": "D012640",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/91175000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T12",
+      "canon:span": {
+        "start": 436,
+        "end": 445
+      },
+      "canon:surface": "phenytoin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D010672",
+      "canon:sourceNotation": "D010672",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387220006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T13",
+      "canon:span": {
+        "start": 497,
+        "end": 508
+      },
+      "canon:surface": "beta-lactam",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D047090",
+      "canon:sourceNotation": "D047090",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/406778007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T14",
+      "canon:span": {
+        "start": 541,
+        "end": 548
+      },
+      "canon:surface": "seizure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012640",
+      "canon:sourceNotation": "D012640",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/91175000",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/2343592#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T8"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/2343592#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

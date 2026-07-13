@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Role of Alcohol Drinking in Alzheimer's Disease, Parkinson's Disease, and Amyotrophic Lateral Sclerosis. Neurodegenerative diseases, including Alzheimer's disease (AD), Parkinson's disease (PD) and amyotrophic lateral sclerosis (ALS), increase as the population ages around the world. Environmental factors also play an important role in most cases. Alcohol consumption exists extensively and it acts as one of the environmental factors that promotes these neurodegenerative diseases. The brain is a major target for the actions of alcohol, and heavy alcohol consumption has long been associated with brain damage. Chronic alcohol intake leads to elevated glutamate-induced excitotoxicity, oxidative stress and permanent neuronal damage associated with malnutrition. The relationship and contributing mechanisms of alcohol with these three diseases are different. Epidemiological studies have reported a reduction in the prevalence of Alzheimer's disease in individuals who drink low amounts of alcohol; low or moderate concentrations of ethanol protect against beta-amyloid (Abeta) toxicity in hippocampal neurons; and excessive amounts of ethanol increase accumulation of Abeta and Tau phosphorylation. Alcohol has been suggested to be either protective of, or not associated with, PD. However, experimental animal studies indicate that chronic heavy alcohol consumption may have dopamine neurotoxic effects through the induction of Cytochrome P450 2E1 (CYP2E1) and an increase in the amount of alpha-Synuclein (alphaSYN) relevant to PD. The findings on the association between alcohol consumption and ALS are inconsistent; a recent population-based study suggests that alcohol drinking seems to not influence the risk of developing ALS. Additional research is needed to clarify the potential etiological involvement of alcohol intake in causing or resulting in major neurodegenerative diseases, which will eventually lead to potential therapeutics against these alcoholic neurodegenerative diseases.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T1",
       "canon:span": {
         "start": 1391,
         "end": 1401
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T2",
       "canon:span": {
         "start": 656,
         "end": 665
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32230811_causative-agent_0001108#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

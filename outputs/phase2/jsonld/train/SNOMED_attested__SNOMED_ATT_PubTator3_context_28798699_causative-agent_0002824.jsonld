@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Schizophrenia or Atypical Lupus Erythematosus with Predominant Psychiatric Manifestations over 25 Years: Case Analysis and Review. We observed a case over 25 years of relapsing-remitting schizophrenic spectrum disorder, varying regarding the main symptomatology between more depressive or more schizoaffective or rather typical schizophrenic syndrome. Diseased phases were repeatedly accompanied by minor skin lesions, which were initially classified as mixed tissue disorder. Psychotic phases were waxing-waning over years. During one later relapse, skin involvement was severe, classified to likely represent an allergic reaction to psychopharmaca; this generalized exanthema remitted rapidly with cortisone treatment and azathioprine. Under continued azathioprine and low dose neuroleptics, the patient remitted completely, appearing psychiatrically healthy for 16 years. When azathioprine was set off due to pregnancy, an extraordinary severe relapse of schizophrenia like psychosis accompanied by most severe skin lesions developed within a few weeks, then requiring 2 years of psychiatric inpatient treatment. Finally, a diagnosis of systemic lupus erythematodes plus neuropsychiatric lupus was made. A single CSF sample in 2013 showed suspicious biomarkers, matching with CSF cytokine profiling in schizophrenic and affective spectrum disorder patients and indicated mild neuroinflammation. Complex immune suppressive treatment was reinitiated short after relapse, but was only partially successful. However, surprisingly the psychosis and skin lesions remitted (in parallel) when belimumab was given (add-on). The very details of this complicated, long-term disease course are discussed also with regard to general ideas, in particular with respect to the question if this case of seemingly comorbid schizophrenia with minor autoimmunity signs represented a case of one emerging autoimmune disorder with variant manifestations systemically and within the CNS, though atypically with predominant appearance as a schizophrenia spectrum disorder.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T1",
       "canon:span": {
         "start": 614,
         "end": 631
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T2",
       "canon:span": {
         "start": 724,
         "end": 736
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28798699_causative-agent_0002824#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

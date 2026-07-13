@@ -1,0 +1,580 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/6806735",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "test",
+  "canon:pmid": "6806735",
+  "canon:title": "Treatment of ovarian cancer with a combination of cis-platinum, adriamycin, cyclophosphamide and hexamethylmelamine.",
+  "canon:abstract": "During the last 2 1/2 years, 38 patients with ovarian cancer were treated with a combination of cisplatinum (CPDD), 50 mg/m2, adriamycin, 30 mg/m2, cyclophosphamide, 300 mg/m2, on day 1; and hexamethylmelamine (HMM), 6 mg/kg daily, for 14 days. Each course was repeated monthly. 2 patients had stage II, 14 stage III and 22 stage IV disease. 14 of the 38 patients were previously treated with chemotherapy, 1 with radiation, 6 with both chemotherapy and radiation, and 17 did not have any treatment before CPDD combination. 31 of the 38 cases (81.5%) demonstrated objective responses lasting for 2 months or more. These responses were partial in 19 and complete in 12 cases. Hematologic toxicity was moderate and with reversible anemia developing in 71% of patients. Gastrointestinal side effects from CPDD were universal. HMM gastrointestinal toxicity necessitated discontinuation of the drug in 5 patients. Severe nephrotoxicity was observed in 2 patients but was reversible. There were no drug-related deaths.",
+  "canon:text": "Treatment of ovarian cancer with a combination of cis-platinum, adriamycin, cyclophosphamide and hexamethylmelamine. During the last 2 1/2 years, 38 patients with ovarian cancer were treated with a combination of cisplatinum (CPDD), 50 mg/m2, adriamycin, 30 mg/m2, cyclophosphamide, 300 mg/m2, on day 1; and hexamethylmelamine (HMM), 6 mg/kg daily, for 14 days. Each course was repeated monthly. 2 patients had stage II, 14 stage III and 22 stage IV disease. 14 of the 38 patients were previously treated with chemotherapy, 1 with radiation, 6 with both chemotherapy and radiation, and 17 did not have any treatment before CPDD combination. 31 of the 38 cases (81.5%) demonstrated objective responses lasting for 2 months or more. These responses were partial in 19 and complete in 12 cases. Hematologic toxicity was moderate and with reversible anemia developing in 71% of patients. Gastrointestinal side effects from CPDD were universal. HMM gastrointestinal toxicity necessitated discontinuation of the drug in 5 patients. Severe nephrotoxicity was observed in 2 patients but was reversible. There were no drug-related deaths.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T1",
+      "canon:span": {
+        "start": 13,
+        "end": 27
+      },
+      "canon:surface": "ovarian cancer",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D010051",
+      "canon:sourceNotation": "D010051",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/123843001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T2",
+      "canon:span": {
+        "start": 50,
+        "end": 62
+      },
+      "canon:surface": "cis-platinum",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002945",
+      "canon:sourceNotation": "D002945",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Inorganic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387318005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T3",
+      "canon:span": {
+        "start": 64,
+        "end": 74
+      },
+      "canon:surface": "adriamycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004317",
+      "canon:sourceNotation": "D004317",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372817009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T4",
+      "canon:span": {
+        "start": 76,
+        "end": 92
+      },
+      "canon:surface": "cyclophosphamide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003520",
+      "canon:sourceNotation": "D003520",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387420009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T5",
+      "canon:span": {
+        "start": 97,
+        "end": 115
+      },
+      "canon:surface": "hexamethylmelamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006585",
+      "canon:sourceNotation": "D006585",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hazardous or Poisonous Substance",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387385000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T6",
+      "canon:span": {
+        "start": 163,
+        "end": 177
+      },
+      "canon:surface": "ovarian cancer",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D010051",
+      "canon:sourceNotation": "D010051",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/123843001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T7",
+      "canon:span": {
+        "start": 213,
+        "end": 224
+      },
+      "canon:surface": "cisplatinum",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002945",
+      "canon:sourceNotation": "D002945",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Inorganic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387318005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T8",
+      "canon:span": {
+        "start": 226,
+        "end": 230
+      },
+      "canon:surface": "CPDD",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C034868",
+      "canon:sourceNotation": "C034868",
+      "canon:confidence": 0.65,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Inorganic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387318005",
+      "canon:mappingProperty": "skos:broadMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T9",
+      "canon:span": {
+        "start": 243,
+        "end": 253
+      },
+      "canon:surface": "adriamycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004317",
+      "canon:sourceNotation": "D004317",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372817009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T10",
+      "canon:span": {
+        "start": 265,
+        "end": 281
+      },
+      "canon:surface": "cyclophosphamide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003520",
+      "canon:sourceNotation": "D003520",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387420009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T11",
+      "canon:span": {
+        "start": 308,
+        "end": 326
+      },
+      "canon:surface": "hexamethylmelamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006585",
+      "canon:sourceNotation": "D006585",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hazardous or Poisonous Substance",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387385000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T12",
+      "canon:span": {
+        "start": 328,
+        "end": 331
+      },
+      "canon:surface": "HMM",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006585",
+      "canon:sourceNotation": "D006585",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hazardous or Poisonous Substance",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387385000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T13",
+      "canon:span": {
+        "start": 623,
+        "end": 627
+      },
+      "canon:surface": "CPDD",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C034868",
+      "canon:sourceNotation": "C034868",
+      "canon:confidence": 0.65,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Inorganic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387318005",
+      "canon:mappingProperty": "skos:broadMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T14",
+      "canon:span": {
+        "start": 792,
+        "end": 812
+      },
+      "canon:surface": "Hematologic toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006402",
+      "canon:sourceNotation": "D006402",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/34093004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T15",
+      "canon:span": {
+        "start": 846,
+        "end": 852
+      },
+      "canon:surface": "anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000740",
+      "canon:sourceNotation": "D000740",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/271737000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T16",
+      "canon:span": {
+        "start": 919,
+        "end": 923
+      },
+      "canon:surface": "CPDD",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C034868",
+      "canon:sourceNotation": "C034868",
+      "canon:confidence": 0.65,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Inorganic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387318005",
+      "canon:mappingProperty": "skos:broadMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T17",
+      "canon:span": {
+        "start": 940,
+        "end": 943
+      },
+      "canon:surface": "HMM",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006585",
+      "canon:sourceNotation": "D006585",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hazardous or Poisonous Substance",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387385000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T18",
+      "canon:span": {
+        "start": 944,
+        "end": 969
+      },
+      "canon:surface": "gastrointestinal toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005767",
+      "canon:sourceNotation": "D005767",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/119292006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T19",
+      "canon:span": {
+        "start": 1033,
+        "end": 1047
+      },
+      "canon:surface": "nephrotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007674",
+      "canon:sourceNotation": "D007674",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/90708001",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T8"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T15"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T8"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T19"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6806735#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T8"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6806735#mention-T18"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

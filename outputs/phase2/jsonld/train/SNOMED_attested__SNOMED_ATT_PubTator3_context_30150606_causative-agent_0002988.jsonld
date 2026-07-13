@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Catatonia After Liver Transplantation. BACKGROUND Central nervous system complications after transplantation occur in up to 40% of recipients and these complications are associated with increased length of hospital stay and mortality. Catatonia is a neuropsychiatric clinical syndrome which has been described in case reports and in a small case series as occurring in the immediate post-solid organ transplantation (SOT) period, and it has been attributed to calcineurin inhibitor neurotoxicity, psychological vulnerability, and depression. Among transplant recipients, the incidence of catatonia is unknown; it may be under diagnosed in part due to a broad differential diagnosis in the post-transplantation setting, which includes hypoactive delirium, non-convulsive status epilepticus, drug toxicity, conversion disorder, and volitional uncooperativeness. CASE REPORT We present 2 cases of catatonia diagnosed in liver allograft recipients. We also reviewed current literature for cases of catatonia among SOT recipients. We provide provisional evaluation and management strategies of recipients with clinical concern for catatonia. Catatonia generally occurs within the few first days after liver transplantation, and presents with staring, immobility, or mutism, but is also associated with other neurological and psychiatric symptoms. Catatonia can be successfully treated with intravenous lorazepam, and thus, modifying immunosuppressive regimens may be avoidable. Medications to treat catatonia are generally tapered over weeks to months, and psychiatric follow-up is indicated. The early post-liver transplantation period may be a state of relative deficiency in GABA (gamma-aminobutyric acid) signaling, predisposing liver transplant recipients in particular to post-transplantation catatonia. CONCLUSIONS Despite difficulties in establishing the diagnosis, catatonia after liver transplantation was rapidly responsive to intravenous lorazepam, indicating that changing immunosuppressants may be avoidable.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T1",
       "canon:span": {
         "start": 482,
         "end": 495
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T2",
       "canon:span": {
         "start": 1673,
         "end": 1677
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30150606_causative-agent_0002988#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

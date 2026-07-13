@@ -1,0 +1,597 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/12716030",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "train",
+  "canon:pmid": "12716030",
+  "canon:title": "Amount of bleeding and hematoma size in the collagenase-induced intracerebral hemorrhage rat model.",
+  "canon:abstract": "The aggravated risk on intracerebral hemorrhage (ICH) with drugs used for stroke patients should be estimated carefully. We therefore established sensitive quantification methods and provided a rat ICH model for detection of ICH deterioration. In ICH intrastriatally induced by 0.014-unit, 0.070-unit, and 0.350-unit collagenase, the amount of bleeding was measured using a hemoglobin assay developed in the present study and was compared with the morphologically determined hematoma volume. The blood amounts and hematoma volumes were significantly correlated, and the hematoma induced by 0.014-unit collagenase was adequate to detect ICH deterioration. In ICH induction using 0.014-unit collagenase, heparin enhanced the hematoma volume 3.4-fold over that seen in control ICH animals and the bleeding 7.6-fold. Data suggest that this sensitive hemoglobin assay is useful for ICH detection, and that a model with a small ICH induced with a low-dose collagenase should be used for evaluation of drugs that may affect ICH.",
+  "canon:text": "Amount of bleeding and hematoma size in the collagenase-induced intracerebral hemorrhage rat model. The aggravated risk on intracerebral hemorrhage (ICH) with drugs used for stroke patients should be estimated carefully. We therefore established sensitive quantification methods and provided a rat ICH model for detection of ICH deterioration. In ICH intrastriatally induced by 0.014-unit, 0.070-unit, and 0.350-unit collagenase, the amount of bleeding was measured using a hemoglobin assay developed in the present study and was compared with the morphologically determined hematoma volume. The blood amounts and hematoma volumes were significantly correlated, and the hematoma induced by 0.014-unit collagenase was adequate to detect ICH deterioration. In ICH induction using 0.014-unit collagenase, heparin enhanced the hematoma volume 3.4-fold over that seen in control ICH animals and the bleeding 7.6-fold. Data suggest that this sensitive hemoglobin assay is useful for ICH detection, and that a model with a small ICH induced with a low-dose collagenase should be used for evaluation of drugs that may affect ICH.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T1",
+      "canon:span": {
+        "start": 10,
+        "end": 18
+      },
+      "canon:surface": "bleeding",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006470",
+      "canon:sourceNotation": "D006470",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/131148009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T2",
+      "canon:span": {
+        "start": 23,
+        "end": 31
+      },
+      "canon:surface": "hematoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006406",
+      "canon:sourceNotation": "D006406",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/35566002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T3",
+      "canon:span": {
+        "start": 64,
+        "end": 88
+      },
+      "canon:surface": "intracerebral hemorrhage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T4",
+      "canon:span": {
+        "start": 123,
+        "end": 147
+      },
+      "canon:surface": "intracerebral hemorrhage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T5",
+      "canon:span": {
+        "start": 149,
+        "end": 152
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T6",
+      "canon:span": {
+        "start": 174,
+        "end": 180
+      },
+      "canon:surface": "stroke",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D020521",
+      "canon:sourceNotation": "D020521",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/230690007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T7",
+      "canon:span": {
+        "start": 298,
+        "end": 301
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T8",
+      "canon:span": {
+        "start": 325,
+        "end": 328
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T9",
+      "canon:span": {
+        "start": 347,
+        "end": 350
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T10",
+      "canon:span": {
+        "start": 444,
+        "end": 452
+      },
+      "canon:surface": "bleeding",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006470",
+      "canon:sourceNotation": "D006470",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/131148009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T11",
+      "canon:span": {
+        "start": 575,
+        "end": 583
+      },
+      "canon:surface": "hematoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006406",
+      "canon:sourceNotation": "D006406",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/35566002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T12",
+      "canon:span": {
+        "start": 614,
+        "end": 622
+      },
+      "canon:surface": "hematoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006406",
+      "canon:sourceNotation": "D006406",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/35566002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T13",
+      "canon:span": {
+        "start": 670,
+        "end": 678
+      },
+      "canon:surface": "hematoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006406",
+      "canon:sourceNotation": "D006406",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/35566002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T14",
+      "canon:span": {
+        "start": 736,
+        "end": 739
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T15",
+      "canon:span": {
+        "start": 758,
+        "end": 761
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T16",
+      "canon:span": {
+        "start": 802,
+        "end": 809
+      },
+      "canon:surface": "heparin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006493",
+      "canon:sourceNotation": "D006493",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Biologically Active Substance",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372877000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T17",
+      "canon:span": {
+        "start": 823,
+        "end": 831
+      },
+      "canon:surface": "hematoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006406",
+      "canon:sourceNotation": "D006406",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/35566002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T18",
+      "canon:span": {
+        "start": 874,
+        "end": 877
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T19",
+      "canon:span": {
+        "start": 894,
+        "end": 902
+      },
+      "canon:surface": "bleeding",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006470",
+      "canon:sourceNotation": "D006470",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/131148009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T20",
+      "canon:span": {
+        "start": 977,
+        "end": 980
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T21",
+      "canon:span": {
+        "start": 1022,
+        "end": 1025
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T22",
+      "canon:span": {
+        "start": 1117,
+        "end": 1120
+      },
+      "canon:surface": "ICH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002543",
+      "canon:sourceNotation": "D002543",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/274100004",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12716030#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/12716030#mention-T2"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

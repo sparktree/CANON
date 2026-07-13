@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Human alcohol-related neuropathology. Alcohol-related diseases of the nervous system are caused by excessive exposures to alcohol, with or without co-existing nutritional or vitamin deficiencies. Toxic and metabolic effects of alcohol (ethanol) vary with brain region, age/developmental stage, dose, and duration of exposures. In the mature brain, heavy chronic or binge alcohol exposures can cause severe debilitating diseases of the central and peripheral nervous systems, and skeletal muscle. Most commonly, long-standing heavy alcohol abuse leads to disproportionate loss of cerebral white matter and impairments in executive function. The cerebellum (especially the vermis), cortical-limbic circuits, skeletal muscle, and peripheral nerves are also important targets of chronic alcohol-related metabolic injury and degeneration. Although all cell types within the nervous system are vulnerable to the toxic, metabolic, and degenerative effects of alcohol, astrocytes, oligodendrocytes, and synaptic terminals are major targets, accounting for the white matter atrophy, neural inflammation and toxicity, and impairments in synaptogenesis. Besides chronic degenerative neuropathology, alcoholics are predisposed to develop severe potentially life-threatening acute or subacute symmetrical hemorrhagic injury in the diencephalon and brainstem due to thiamine deficiency, which exerts toxic/metabolic effects on glia, myelin, and the microvasculature. Alcohol also has devastating neurotoxic and teratogenic effects on the developing brain in association with fetal alcohol spectrum disorder/fetal alcohol syndrome. Alcohol impairs function of neurons and glia, disrupting a broad array of functions including neuronal survival, cell migration, and glial cell (astrocytes and oligodendrocytes) differentiation. Further progress is needed to better understand the pathophysiology of this exposure-related constellation of nervous system diseases and better correlate the underlying pathology with in vivo imaging and biochemical lesions. ",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T1",
       "canon:span": {
         "start": 531,
         "end": 544
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T2",
       "canon:span": {
         "start": 236,
         "end": 243
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

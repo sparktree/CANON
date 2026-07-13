@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Activation of cDCs and iNKT cells contributes to triptolide-induced hepatotoxicity via STING signaling pathway and endoplasmic reticulum stress. Triptolide (TP) exhibits therapeutic potential against multiple diseases. However, its application in clinics is limited by TP-induced hepatoxicity. TP can activate invariant natural killer T (iNKT) cells in the liver, shifting Th1 cytokine bias to Th2 cytokine bias. The damaging role of iNKT cells in TP-induced hepatoxicity has been established, and iNKT cell deficiency can mitigate hepatotoxicity. However, the activation of iNKT cells in vitro by TP requires the presence of antigen-presenting cells. Therefore, we hypothesized that TP could induce dendritic cells (DCs) to activate iNKT cells, thereby leading to hepatotoxicity. The hepatic conventional DCs (cDCs) exhibited immunogenic activities after TP administration, upregulating the expression of CD1d, co-stimulatory molecules, and IL-12. Neutralization with IL-12p40 antibody extenuated TP-induced hepatotoxicity and reduced iNKT cell activation, suggesting that IL-12 could cause liver injury by activating iNKT cells. TP triggered the activation and upregulation of STING signaling pathway and increased endoplasmic reticulum (ER) stress. Downregulation of STING reduced cDC immunogenicity, inhibiting the activation of iNKT cells and hepatic damage. These indicated the regulatory effects of STING pathway on cDCs and iNKT cells, and the important roles it plays in hepatoxicity. ER stress inhibitor, 4-phenylbutyrate (4-PBA), also suppressed iNKT cell activation and liver injury, which might be regulated by the STING signaling pathway. Our results demonstrated the possible mechanisms underlying TP-induced hepatoxicity, where the activation of cDCs and iNKT cells was stimulated by upregulated STING signaling and increased ER stress as a result of TP administration.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T1",
       "canon:span": {
         "start": 1348,
         "end": 1362
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T2",
       "canon:span": {
         "start": 1515,
         "end": 1531
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36520315_causative-agent_0001830#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

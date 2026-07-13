@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Safety analysis of Epzicom  (lamivudine/abacavir sulfate) in post-marketing surveillance in Japan. PURPOSE: To obtain safety and effectiveness data on a combined anti-HIV drug, Epzicom (abacavir 600 mg/lamivudine 300 mg), a post-marketing surveillance on Epzicom that was required by the Japanese regulatory authority was conducted between January 2005 and December 2010. METHODS: A joint survey (HIV-related drug [HRD] survey) has been conducted involving manufacturers of drugs for treatment of HIV infection in Japan. Safety and effectiveness data from total 624 cases (1107.3 person-years) registered to the HRD surveys and received Epzicom were obtained. Adverse drug reactions (ADRs) were defined as adverse events (AE) of which association with Epzicom could not be 'ruled out'. RESULTS: It was found that the incidence of ADR was 32.4% (202/624 cases) on the case basis. In addition, the frequently reported ADR included hyperlipidaemia (59 cases), hypertriglyceridaemia (21 cases), blood bilirubin increased (19 cases), gamma-glutamyltransferase increase (14 cases), blood triglyceride increase (14 cases) and rash (14 cases). Serious AEs were seen in 19 patients (30 events), including one death (no evident association with Epzicom). There were four cases (0.6%) of survey-defined 'hypersensitivity', and the incidence was 0.9% (4/445) among abacavir naive patients; none of which was reported as serious. No case of myocardial infarction was reported. One pregnant case who delivered a normal baby by caesarean section was reported to have experienced aggravation of anaemia and nausea. CONCLUSIONS: The post-marketing surveillance indicated that the incidence of both ischaemic heart disease and hypersensitivity associated with Epzicom was considerably low, suggesting that this drug can be safely used in the Japanese population.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T1",
       "canon:span": {
         "start": 1293,
         "end": 1309
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T2",
       "canon:span": {
         "start": 202,
         "end": 212
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24590575_causative-agent_0002443#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -99,9 +99,23 @@ class Document:
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
-    def to_jsonld(self, context: str = "../../../scripts/contexts/canon.jsonld") -> Dict[str, Any]:
-        """Return the canonical Phase 2 JSON-LD representation."""
-        doc_id = f"https://w3id.org/canon/document/{self.corpus}/{self.pmid}"
+    def to_jsonld(self, context: Any = None) -> Dict[str, Any]:
+        """Return the canonical Phase 2 JSON-LD representation.
+
+        The @context is embedded inline by default (the Phase 2.0 context object),
+        so every document is self-contained and resolves offline with no hosted
+        URL. Instances live under the canon.iu.edu base, matching the canon:
+        vocabulary namespace; these @ids are identifiers and need not be hosted.
+        """
+        if context is None:
+            try:
+                import skos_schema
+            except ImportError:  # pragma: no cover - package-relative import
+                import sys
+                sys.path.insert(0, str(Path(__file__).resolve().parent))
+                import skos_schema
+            context = skos_schema.build_context()["@context"]
+        doc_id = f"https://canon.iu.edu/document/{self.corpus}/{self.pmid}"
         mentions = []
         mention_ids: List[str] = []
         for em in self.entities:
@@ -226,6 +240,19 @@ def write_jsonld_documents(docs: Iterator[Document], root: Path, *, replace: boo
                         encoding="utf-8")
         n += 1
     return n
+
+
+def write_canonical(docs: Iterator[Document], jsonl_path: Path) -> int:
+    """Standard Phase 2 stage output: canonical JSON-LD + derived JSONL cache.
+
+    Writes one JSON-LD document per record under ``<jsonl_path.parent>/jsonld/
+    <stem>/`` (the canonical, self-contained form) and derives the fast-loading
+    JSONL view at *jsonl_path* (what the next stage reads). Returns the count.
+    Single source of the pattern so every stage (2.1/2.2/2.3) is identical.
+    """
+    jsonld_dir = jsonl_path.parent / "jsonld" / jsonl_path.stem
+    write_jsonld_documents(docs, jsonld_dir)
+    return derive_jsonl_cache(jsonld_dir, jsonl_path)
 
 
 def derive_jsonl_cache(jsonld_root: Path, output_path: Path) -> int:

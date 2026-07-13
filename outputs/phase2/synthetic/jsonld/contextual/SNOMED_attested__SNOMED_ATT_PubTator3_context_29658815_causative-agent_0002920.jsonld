@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Oxidative stress, NOx/l-arginine ratio and glutathione/glutathione S-transferase ratio as predictors of 'sterile inflammation' in patients with alcoholic cirrhosis and hepatorenal syndrome type II. Continuous intake of alcohol leads to liver cirrhosis because of imbalance of oxidative stress/antioxidative defense and chronic 'sterile inflammation'. Hepatorenal syndrome (HRS) is the most severe complication of liver cirrhosis. The aim of our study was to assess: (1) the oxidative stress/antioxidative defense markers such as malondialdehyde (MDA), oxidative glutathione (GSH) and glutathione S-transferase (GST), (2) inflammation [C-reactive protein (CRP)], and (3) nitrate/nitrite levels (NOx) and its substrate L-arginine level. The study enrolled three groups: a group with cirrhosis and HRS (48 patients), a group with cirrhosis without HRS (32 patients), and a control group (40 healthy blood donors). All the patients with cirrhosis and HRS had type II HRS. MDA concentration was significantly higher in the groups with cirrhosis with and without HRS. Significant positive correlation was documented between the MDA level and de Ritis coefficient (AST/ALT), a marker of liver damage severity; between MDA and inflammation (CRP); between MDA and NOx concentration in the groups with cirrhosis with and without HRS. The correlation between MDA and creatinine level was significant in the group with HRS. The levels of GSH and GST were significantly lower in the groups with cirrhosis with and without HRS. The results of the study revealed that an increase in MDA and NOx concentration, along with decreased values of antioxidative defense and L-arginine, may indicate that liver damage can have an influence on progression to renal failure.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T1",
       "canon:span": {
         "start": 1180,
         "end": 1192
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T2",
       "canon:span": {
         "start": 1356,
         "end": 1366
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002920#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

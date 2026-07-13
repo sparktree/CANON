@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Bacteremia due to Serratia rubidaea in intensive care unit: a case series. INTRODUCTION: Bacteremia caused by Serratia rubidaea is seldom mentioned in comparison with other Enterobacteriaceae species. It primarily affects immunocompromised patients undergoing invasive procedures. Furthermore, the incidence, clinical features, and microbiological profile of this pathogen in the intensive care unit are rarely described. CASE PRESENTATION: We present four North African case studies of bacteremia in four young female patients admitted to the intensive care unit for ketoacidosis with a history of diabetes mellitus. All four patients developed catheter-related infections complicated by deep vein thrombosis. The catheter site was femoral in all cases, and the main clinical manifestation was poorly tolerated fever. The pathogen was isolated in multiple peripheral blood cultures (> 4) for each patient, showing a similar profile in all cases: resistance to third-generation cephalosporins and sensitivity to aminoglycosides, piperacillin, fluoroquinolones, and folate-pathway inhibitors. Targeted treatment consisted of a combination of ciprofloxacin 400 mg twice per day and trimethoprim/sulfamethoxazole 400/80 mg thrice per day for all four cases. However, in one case, this regimen was switched to amikacin due to adverse effects. The outcomes were favorable in the majority of cases. The patients described in this study were 21, 66, 22, and 27-year-old North African women. CONCLUSION: Most of the reported cases shared common risk factors and clinical aspects. Notably, a case of thrombosis complicating a catheter infection caused by Serratia rubidaea has not been previously reported in the literature. Furthermore, this bloodstream infection typically affects deeply immunocompromised patients. However, our four cases, admitted to the intensive care unit for ketoacidosis, only had a history of diabetes mellitus.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T1",
       "canon:span": {
         "start": 1734,
         "end": 1755
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T2",
       "canon:span": {
         "start": 646,
         "end": 654
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

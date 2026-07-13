@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Functional and Molecular Insights of Hydrogen Sulfide Signaling and Protein Sulfhydration. Hydrogen sulfide (H2S), a novel gasotransmitter, is endogenously synthesized by multiple enzymes that are differentially expressed in the peripheral tissues and central nervous systems. H2S regulates a wide range of physiological processes, namely cardiovascular, neuronal, immune, respiratory, gastrointestinal, liver, and endocrine systems, by influencing cellular signaling pathways and sulfhydration of target proteins. This review focuses on the recent progress made in H2S signaling that affects mechanistic and functional aspects of several biological processes such as autophagy, inflammation, proliferation and differentiation of stem cell, cell survival/death, and cellular metabolism under both physiological and pathological conditions. Moreover, we highlighted the cross-talk between nitric oxide and H2S in several bilogical contexts.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T1",
       "canon:span": {
         "start": 37,
         "end": 53
@@ -29,7 +108,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T2",
       "canon:span": {
         "start": 91,
         "end": 107
@@ -48,7 +127,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T3",
       "canon:span": {
         "start": 109,
         "end": 112
@@ -67,7 +146,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T4",
       "canon:span": {
         "start": 277,
         "end": 280
@@ -86,7 +165,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T5",
       "canon:span": {
         "start": 566,
         "end": 569
@@ -105,7 +184,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T6",
       "canon:span": {
         "start": 679,
         "end": 691
@@ -126,7 +205,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T7",
       "canon:span": {
         "start": 888,
         "end": 900
@@ -147,7 +226,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T8",
       "canon:span": {
         "start": 905,
         "end": 908
@@ -168,12 +247,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T6"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T6"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -214,12 +293,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#relation-2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#relation-2",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28013031#mention-T7"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28013031#mention-T7"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",

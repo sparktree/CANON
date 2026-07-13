@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "QTc Prolongation in Veterans With Heroin Dependence on Methadone Maintenance Treatment. BACKGROUND: QTc prolongation and Torsade de Ppointes have been reported in patients on methadone maintenance. OBJECTIVES: In this study, QTc was compared before and after the veteran (n = 49) was on a stable dosage of methadone for 8.72 +- 4.50 years to treat heroin dependence. Risk factors were correlated with the QTc once the veteran was on a stable dose of methadone. Differences in the clinical risk factors in subgroups of veterans with below and above mean QTc change was compared. PATIENTS AND METHODS: ECG data was obtained from a 12-lead electrocardiogram (pre-methadone and on methadone) on 49 veterans. Data and risk factors were retrospectively collected from the medical records. RESULTS: The mean QTc at baseline (pre-methadone) was 426 +- 34 msec and after being on methadone for an average of 8.72 +- 4.50 years was significantly higher at 450 +- 35 msec. No significant relationships were found between QTc prolongation and risk factors except for calcium. The methadone dosage was significantly higher in veterans with a QTc change above the mean change of >= 24 msec (88.48 +- 27.20 mg v.s 68.96 +- 19.84 mg). None of the veterans experienced cardiac arrhythmias. CONCLUSIONS: The low complexity of medical co-morbidities may explain the lack of a significant correlation between any risk factor with the QTc except calcium and methadone dosage. The absence of TdP may be explained by the low prevalence of QTc values > 500 msec as well as the retrospective design of the study. During long-term methadone treatment, there was a slight increase in the QTc interval but we did not find evidence of increased cardiac toxicity as a reason for treatment termination.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T1",
       "canon:span": {
         "start": 34,
         "end": 51
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T2",
       "canon:span": {
         "start": 55,
         "end": 64
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26097838_causative-agent_0002577#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

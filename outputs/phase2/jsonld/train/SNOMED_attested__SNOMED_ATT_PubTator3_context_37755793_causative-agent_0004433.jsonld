@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Ameliorative Effect of Thymoquinone and Thymoquinone Nanoparticles against Diazinon-Induced Hepatic Injury in Rats: A Possible Protection Mechanism. The health benefits of thymoquinone (TQ) have been a significant focus of numerous studies. However, more research is needed to ascertain whether its nano-form can effectively treat or prevent chronic diseases. In this study, we investigated how thymoquinone and its nanoparticles can mitigate liver damage induced by diazinon in male Wistar rats and explored the intracellular mechanisms involved. Forty-two Wistar male rats (n = 42) were randomly allotted into seven groups. Group 1 served as the control. Group 2 (vehicle) consisted of rats that received corn oil via a gastric tube daily. In Group 3 (TQ), rats were given a daily oral administration of TQ (40 mg/kg bw). Group 4 (thymoquinone nanoparticles, NTQ) included rats that received NTQ (0.5 mg/kg bw) orally for 21 days. Group 5 (DZN) involved rats that were administered diazinon (DZN, 15 mg/kg bw) orally. In Group 6 (TQ + DZN), rats first received TQ orally, followed by DZN. Group 7 (NTQ + DZN) consisted of rats receiving NTQ orally, then DZN. After 21 days of treatment, the rats were euthanized. After oral administration of DZN, liver enzymes were significantly elevated (p < 0.05). Additionally, there were noticeable increases in oxidative injury markers, such as nitric oxide, malondialdehyde, redox oxygen radicals, and overall increases in hydrogen peroxide and liver protein carbonyl concentrations. This was accompanied by the upregulation of apoptotic markers (Bax, caspase9, caspase 3, bax/Bcl2 ratio), inflammatory cytokines (TNF-alpha, IL-6), and DNA damage. There was also a noteworthy decrease (p < 0.05) in the activities of antioxidant enzymes and anti-apoptotic markers. However, the oral administration of thymoquinone or its nanoparticle form mitigated these diazinon complications; our histopathological findings corroborated our biochemical and molecular observations. In conclusion, the significant antioxidant properties of thymoquinone, or its nanoparticle form, in tandem with the downregulation of apoptotic markers and inflammatory cytokines, provided a protective effect against hepatic dysfunction caused by diazinon.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T1",
       "canon:span": {
         "start": 92,
         "end": 106
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T2",
       "canon:span": {
         "start": 1386,
         "end": 1398
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37755793_causative-agent_0004433#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

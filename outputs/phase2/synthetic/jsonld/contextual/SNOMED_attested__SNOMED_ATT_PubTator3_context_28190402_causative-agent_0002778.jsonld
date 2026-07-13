@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Preserving brain function in a comatose patient with septic hyperpyrexia (41.6  C): a case report. BACKGROUND: Pyrexia is a physiological response through which the immune system responds to infectious processes. Hyperpyrexia is known to be neurodegenerative leading to brain damage. Some of the neurotoxic effects of hyperpyrexia on the brain include seizures, decreased cognitive speed, mental status changes, coma, and even death. In the clinical management of hyperpyrexia, the goal is to treat the underlying cause of elevated temperature and prevent end organ damage. CASE PRESENTATION: This case illustrates a 39-year-old white American man referred from another medical facility where he had undergone an upper gastrointestinal tract diagnostic procedure which became complicated by blood aspiration and respiratory distress. During hospitalization, he developed a core body temperature of 41.6  C (106.9  F) leading to cognitive decline and coma with a Glasgow Coma Score of 3. Levetiracetam and amantadine were utilized effectively for preserving and restoring neurocognitive function. Prior studies have shown that glutamate levels can increase during an infectious process. Glutamate is an excitatory neurotransmitter that is utilized by the organum vasculosum laminae terminalis through the neuronal excitatory system and causes an increase in body temperature which can lead to hyperpyrexia. Similar to neurogenic fevers, hyperpyrexia can lead to neurological decline and irreversible cognitive dysfunction. Inhibition of the glutamate aids a decrease in excitatory states, and improves the brain's regulatory mechanism, including temperature control. To further improve cognitive function, dopamine levels were increased with a dopamine agonist. CONCLUSIONS: We propose that a combination of levetiracetam and amantadine may provide neuroprotective and neurorestorative properties when administered during a period of hyperpyrexia accompanied by any form of mental status changes, particularly if there is a decline in Glasgow Coma Score.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T1",
       "canon:span": {
         "start": 296,
         "end": 306
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T2",
       "canon:span": {
         "start": 1005,
         "end": 1015
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28190402_causative-agent_0002778#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

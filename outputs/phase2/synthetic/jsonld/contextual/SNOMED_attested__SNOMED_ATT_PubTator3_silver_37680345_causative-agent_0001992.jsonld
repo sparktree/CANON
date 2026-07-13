@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Drug reaction with eosinophilia and systemic symptoms (DRESS): an unusual manifestation of multi-visceral abnormalities and long-term outcome. Drug reaction with eosinophilia and systemic symptoms (DRESS), also known as drug induced hypersensitivity (DiHS) is a rare, however a severe hypersensitivity reaction with a mortality rate of up to 10%, accounting for 10 to 20% of all cutaneous drug reactions in hospitalized patients. The clinical features of DRESS/DiHS may be challenging to recognize and diagnose, since they are delayed, stepwise, and heterogeneous. The classic presentation of DRRSS/DiHS involves a combination of cutaneous, hematologic, and internal organ involvement with a 2 to 8 weeks latency between drug exposure and the onset of symptoms. Finding the culprit drug in our case was difficult as the patient was taking multiple antibiotics. Drugs such as vancomycin and cefepime used before the rash outbreak for post-reconstructive surgery for left toal knee arthroplasty (TKA) approximately four weeks before the onset of the rash are likely offending agents. This patient also had multi-visceral involvement with eosinophilia and systemic symptoms. The current treatment guidelines for DRESS/DiHS are primarily based on expert opinion, as no randomized control trials exist. After the prompt withdrawal of the offending drug, systemic corticosteroids seem to have shown the best outcome for patients. Delaying discontinuing offending medications and initiating corticosteroid treatment may lead to poor results. The present case emphasizes that the close observation of patients with drug eruption induced by antibiotics is imperative. Primary care team should be able to promptly diagnose patients with DRESS syndrome, detect causative drug, and play a crucial role in the timely evaluation and treatment to reduce mortality rate. The later phase disease relapse or autoimmune complications may occur up to 5 years following the initial presentation. Therefore, we advised the patient to have an outpatient follow up for appropriate testing, including but not limited to genetic susceptibility due to the high risk of relapse and emerging risk of autoimmune diseases.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T1",
       "canon:span": {
         "start": 220,
         "end": 249
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T2",
       "canon:span": {
         "start": 875,
         "end": 885
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37680345_causative-agent_0001992#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

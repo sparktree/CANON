@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Mechanism involved in insulin resistance via accumulation of beta-amyloid and neurofibrillary tangles: link between type 2 diabetes and Alzheimer's disease. The pathophysiological link between type 2 diabetes mellitus (T2DM) and Alzheimer's disease (AD) has been suggested in several reports. Few findings suggest that T2DM has strong link in the development process of AD, and the complete mechanism is yet to be revealed. Formation of amyloid plaques (APs) and neurofibrillary tangles (NFTs) are two central hallmarks in the AD. APs are the dense composites of beta-amyloid protein (Abeta) which accumulates around the nerve cells. Moreover, NFTs are the twisted fibers containing hyperphosphorylated tau proteins present in certain residues of Abeta that build up inside the brain cells. Certain factors contribute to the aetiogenesis of AD by regulating insulin signaling pathway in the brain and accelerating the formation of neurotoxic Abeta and NFTs via various mechanisms, including GSK3beta, JNK, CamKII, CDK5, CK1, MARK4, PLK2, Syk, DYRK1A, PPP, and P70S6K. Progression to AD could be influenced by insulin signaling pathway that is affected due to T2DM. Interestingly, NFTs and APs lead to the impairment of several crucial cascades, such as synaptogenesis, neurotrophy, and apoptosis, which are regulated by insulin, cholesterol, and glucose metabolism. The investigation of the molecular cascades through insulin functions in brain contributes to probe and perceive progressions of diabetes to AD. This review elaborates the molecular insights that would help to further understand the potential mechanisms linking T2DM and AD.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T1",
       "canon:span": {
         "start": 931,
         "end": 941
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T2",
       "canon:span": {
         "start": 1329,
         "end": 1340
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

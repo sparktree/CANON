@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Exploratory toxicology studies of 2,3-substituted imidazo[1,2-a]pyridines with antiparasitic and anti-inflammatory properties. Background: Trichomoniasis and amoebiasis are neglected diseases and still remain as a global health burden not only for developing countries, from where are endemic, but also for the developed world. Previously, we tested the antiparasitic activity of a number of imidazo[1,2-a]pyridine derivatives (IMPYs) on metronidazole-resistant strains of Entamoeba Hystolitica (HM1:IMSS), and Trichomonas Vaginalis (GT3). Their anti-inflammatory activity was also evaluated. Objective: The present work is a part of a project whose aim is to find new alternatives to standard treatments for these maladies, and to address the current concern of emerging resistant parasite strains. Here we report a non-clinical study focused on exploratory toxicology assays of seven IMPYs that showed the best antiparasitic and/or anti-inflammatory properties. Methods: Acute, and subacute toxicity tests were carried out. After 14-day oral treatment, liver and kidney functionality assays in combination with chemometric methods were implemented to detect hepatic and/or kidney damage. Results: Some compounds produced off-target effects. Vehicle effects were also detected. However, no signs of hepatic or renal toxicity were observed for any IMPY. Conclusion: These compounds can continue non-clinical evaluations, and if possible, clinical trials as new candidates to treat trichomoniasis and amoebiasis, and inflammatory diseases. Further studies are also needed to fully elucidate a proposed dual effect that may exert these molecules against trichomoniasis and amoebiasis, which may also signify a novel mechanism of action to treat these infections.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T1",
       "canon:span": {
         "start": 1300,
         "end": 1325
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T2",
       "canon:span": {
         "start": 438,
         "end": 451
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

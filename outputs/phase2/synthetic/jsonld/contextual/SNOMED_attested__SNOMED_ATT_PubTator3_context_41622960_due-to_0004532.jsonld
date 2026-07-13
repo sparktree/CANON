@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Association of SGLT2 inhibitors use with a lower risk of biliary diseases in patients with type 2 diabetes mellitus: a retrospective cohort study. BACKGROUND: Type 2 diabetes mellitus (T2DM) increases the risk of biliary diseases (BD). This study aimed to evaluate the association between sodium-glucose cotransporter-2 inhibitors (SGLT2i) use andBD risk in T2DM patients, compared with sulfonylureas. METHODS: We conducted a multi-center retrospective cohort study using electronic health records from Nanjing Medical University (January 2017-September 2022). Adults aged 18-75 years with T2DM newly prescribed SGLT2i or sulfonylureas were included. Propensity score with inverse probability of treatment weighting (IPTW) was applied to balance baseline covariates. Follow-up continued until BD onset, last visit, death, or study end. Cox proportional hazards models estimated hazard ratios (HRs) with 95% confidence intervals (CIs) complemented by sensitivity analyses, time-stratified analyses and subgroup analyses. Metabolic and biliary biomarkers were also compared. RESULTS: A total of 1,901 T2DM patients were included (453 SGLT2i users and 1,448 sulfonylurea users). BD occurred in 24 SGLT2i users and in 188 sulfonylurea users. After IPTW adjustment, SGLT2i use was associated with a lower BD risk (HR 0.595, 95% CI 0.410-0.863, p = 0.020), remaining significant beyond 24 months and was stronger in patients aged over 60 years, without diabetic complications, or with high comorbidity burdens, consistent regardless of prior biguanides use. Glycemic control and body weight remained comparable, whereas SGLT2i users showed higher high-density lipoprotein cholesterol and lower total bile acid, and bilirubin levels. CONCLUSION: SGLT2i use was associated with a lower BD risk in T2DM patients, particularly with long-term treatment and among high-risk subgroups. Improved biliary biomarkers paralleled this reduction, suggesting a potential link that warrants further study.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T1",
       "canon:span": {
         "start": 1447,
         "end": 1469
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T2",
       "canon:span": {
         "start": 91,
         "end": 115
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41622960_due-to_0004532#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

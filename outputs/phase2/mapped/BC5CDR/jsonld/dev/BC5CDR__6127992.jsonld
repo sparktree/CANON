@@ -1,0 +1,419 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/6127992",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "dev",
+  "canon:pmid": "6127992",
+  "canon:title": "Adverse interaction between beta-adrenergic blocking drugs and verapamil--report of three cases.",
+  "canon:abstract": "Three patients with ischaemic heart disease developed profound cardiac failure, hypotension and bradycardia during combined therapy with verapamil and beta-adrenergic blocking drugs. This clinical picture resolved completely with cessation of the combined therapy. Baseline left ventricular function, assessed by cardiac catheterisation or nuclear angiography, was normal in two patients and only mildly reduced in the other. Simultaneously administration of beta-adrenergic blocking drugs and verapamil may result in profound adverse interactions and should only be administered with great caution.",
+  "canon:text": "Adverse interaction between beta-adrenergic blocking drugs and verapamil--report of three cases. Three patients with ischaemic heart disease developed profound cardiac failure, hypotension and bradycardia during combined therapy with verapamil and beta-adrenergic blocking drugs. This clinical picture resolved completely with cessation of the combined therapy. Baseline left ventricular function, assessed by cardiac catheterisation or nuclear angiography, was normal in two patients and only mildly reduced in the other. Simultaneously administration of beta-adrenergic blocking drugs and verapamil may result in profound adverse interactions and should only be administered with great caution.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T1",
+      "canon:span": {
+        "start": 28,
+        "end": 58
+      },
+      "canon:surface": "beta-adrenergic blocking drugs",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000319",
+      "canon:sourceNotation": "D000319",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/373254001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T2",
+      "canon:span": {
+        "start": 63,
+        "end": 72
+      },
+      "canon:surface": "verapamil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014700",
+      "canon:sourceNotation": "D014700",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372754009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T3",
+      "canon:span": {
+        "start": 117,
+        "end": 140
+      },
+      "canon:surface": "ischaemic heart disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D017202",
+      "canon:sourceNotation": "D017202",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/414795007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T4",
+      "canon:span": {
+        "start": 160,
+        "end": 175
+      },
+      "canon:surface": "cardiac failure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006333",
+      "canon:sourceNotation": "D006333",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/84114007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T5",
+      "canon:span": {
+        "start": 177,
+        "end": 188
+      },
+      "canon:surface": "hypotension",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007022",
+      "canon:sourceNotation": "D007022",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Finding"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/45007003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T6",
+      "canon:span": {
+        "start": 193,
+        "end": 204
+      },
+      "canon:surface": "bradycardia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001919",
+      "canon:sourceNotation": "D001919",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Finding"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/48867003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T7",
+      "canon:span": {
+        "start": 234,
+        "end": 243
+      },
+      "canon:surface": "verapamil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014700",
+      "canon:sourceNotation": "D014700",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372754009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T8",
+      "canon:span": {
+        "start": 248,
+        "end": 278
+      },
+      "canon:surface": "beta-adrenergic blocking drugs",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000319",
+      "canon:sourceNotation": "D000319",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/373254001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T9",
+      "canon:span": {
+        "start": 556,
+        "end": 586
+      },
+      "canon:surface": "beta-adrenergic blocking drugs",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000319",
+      "canon:sourceNotation": "D000319",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/373254001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T10",
+      "canon:span": {
+        "start": 591,
+        "end": 600
+      },
+      "canon:surface": "verapamil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014700",
+      "canon:sourceNotation": "D014700",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372754009",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T5"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T4"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T6"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T4"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T5"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/6127992#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/6127992#mention-T6"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

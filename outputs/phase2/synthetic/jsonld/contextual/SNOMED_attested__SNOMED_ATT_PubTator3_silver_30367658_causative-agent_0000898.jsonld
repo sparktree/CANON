@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Jaundice revisited: recent advances in the diagnosis and treatment of inherited cholestatic liver diseases. BACKGROUND: Jaundice is a common symptom of inherited or acquired liver diseases or a manifestation of diseases involving red blood cell metabolism. Recent progress has elucidated the molecular mechanisms of bile metabolism, hepatocellular transport, bile ductular development, intestinal bile salt reabsorption, and the regulation of bile acids homeostasis. MAIN BODY: The major genetic diseases causing jaundice involve disturbances of bile flow. The insufficiency of bile salts in the intestines leads to fat malabsorption and fat-soluble vitamin deficiencies. Accumulation of excessive bile acids and aberrant metabolites results in hepatocellular injury and biliary cirrhosis. Progressive familial intrahepatic cholestasis (PFIC) is the prototype of genetic liver diseases manifesting jaundice in early childhood, progressive liver fibrosis/cirrhosis, and failure to thrive. The first three types of PFICs identified (PFIC1, PFIC2, and PFIC3) represent defects in FIC1 (ATP8B1), BSEP (ABCB11), or MDR3 (ABCB4). In the last 5 years, new genetic disorders, such as TJP2, FXR, and MYO5B defects, have been demonstrated to cause a similar PFIC phenotype. Inborn errors of bile acid metabolism also cause progressive cholestatic liver injuries. Prompt differential diagnosis is important because oral primary bile acid replacement may effectively reverse liver failure and restore liver functions. DCDC2 is a newly identified genetic disorder causing neonatal sclerosing cholangitis. Other cholestatic genetic disorders may have extra-hepatic manifestations, such as developmental disorders causing ductal plate malformation (Alagille syndrome, polycystic liver/kidney diseases), mitochondrial hepatopathy, and endocrine or chromosomal disorders. The diagnosis of genetic liver diseases has evolved from direct sequencing of a single gene to panel-based next generation sequencing. Whole exome sequencing and whole genome sequencing have been actively investigated in research and clinical studies. Current treatment modalities include medical treatment (ursodeoxycholic acid, cholic acid or chenodeoxycholic acid), surgery (partial biliary diversion and liver transplantation), symptomatic treatment for pruritus, and nutritional therapy. New drug development based on gene-specific treatments, such as apical sodium-dependent bile acid transporter (ASBT) inhibitor, for BSEP defects are underway. SHORT CONCLUSION: Understanding the complex pathways of jaundice and cholestasis not only enhance insights into liver pathophysiology but also elucidate many causes of genetic liver diseases and promote the development of novel treatments.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T1",
       "canon:span": {
         "start": 745,
         "end": 766
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T2",
       "canon:span": {
         "start": 2200,
         "end": 2221
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30367658_causative-agent_0000898#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

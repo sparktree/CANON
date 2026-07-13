@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Ginseng (Panax ginseng Meyer) Oligopeptides Protect Against Binge Drinking-Induced Liver Damage through Inhibiting Oxidative Stress and Inflammation in Rats. Panax ginseng C.A. Meyer (ginseng) is an edible and traditional medicinal herb, which is reported to have a wide range of biological activity and pharmaceutical properties. There were more studies on ginsenoside and polysaccharides, but fewer on ginseng oligopeptides (GOPs), which are small molecule oligopeptides extracted from ginseng. The present study was designed to investigate the effects and underlying mechanism of ginseng oligopeptide (GOPs) on binge drinking-induced alcohol damage in rats. Sprague Dawley rats were randomly assigned to six groups (n = 10), rats in normal control group and alcohol model group was administered distilled water; rats in four GOPs intervention groups (at a dose of 0.0625, 0.125, 0.25, 0.5 g/kg of body weight, respectively) were administered GOPs once a day for 30 days. Experiment rats were intragastrically administered ethanol at a one-time dose of 7 g/kg of body weight after 30 days. The liver injury was measured through traditional liver enzymes, inflammatory cytokines, expression of oxidative stress markers, and histopathological examination. We found that the GOPs treatment could significantly improve serum alanine aminotransferase and aspartate aminotransferase, plasma lipopolysaccharide, and inflammatory cytokine levels, as well as the oxidative stress markers that were altered by alcohol. Moreover, GOPs treatment inhibited the protein expression of toll-like receptor 4, and repressed the inhibitor kappa Balpha and nuclear factor-kappaB p65 in the liver. These findings suggested that GOPs have a significant protective effect on binge drinking-induced liver injury, and the mechanism possibly mediated by the partial inhibition of lipopolysaccharide-toll-like receptor 4-nuclear factor-kappaB p65 signaling in the liver.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T1",
       "canon:span": {
         "start": 637,
         "end": 651
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T2",
       "canon:span": {
         "start": 1025,
         "end": 1032
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30400371_causative-agent_0003018#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

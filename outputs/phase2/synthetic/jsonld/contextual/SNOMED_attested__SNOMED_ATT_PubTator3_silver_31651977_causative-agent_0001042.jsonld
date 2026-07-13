@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Identification of Serum Biomarkers to Distinguish Hazardous and Benign Aminotransferase Elevations. The standard circulating biomarker of liver injury in both clinical settings and drug safety testing is alanine aminotransferase (ALT). However, ALT elevations sometimes lack specificity for tissue damage. To identify novel serum biomarkers with greater specificity for injury, we combined unique animal models with untargeted proteomics, followed by confirmation with immunoblotting. Using proteomics, we identified 109 proteins in serum from mice with acetaminophen (APAP)-induced liver injury that were not detectable in serum from mice with benign ALT elevations due to high-dose dexamethasone (Dex). We selected 4 (alcohol dehydrogenase 1A1 [Aldh1a1], aldehyde dehydrogenase 1 [Adh1], argininosuccinate synthetase 1 [Ass1], and adenosylhomocysteinase [Ahcy]) with high levels for further evaluation. Importantly, all 4 were specific for injury when using immunoblots to compare serum from Dex-treated mice and mice with similar lower ALT elevations due to milder models of APAP or bromobenzene-induced liver injury. Immunoblotting for ALDH1A1, ADH1, and ASS1 in serum from APAP overdose patients without liver injury and APAP overdose patients with mild liver injury revealed that these candidate biomarkers can be detected in humans with moderate liver injury as well. Interestingly, further experiments with serum from rats with bile duct ligation-induced liver disease indicated that Aldh1a1 and Adh1 are not detectable in serum in cholestasis and may therefore be specific for hepatocellular injury and possibly even drug-induced liver injury, in particular. Overall, our results strongly indicate that ALDH1A1, ADH1, and ASS1 are promising specific biomarkers for liver injury. Adoption of these biomarkers could improve preapproval drug safety assessment.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T1",
       "canon:span": {
         "start": 1586,
         "end": 1607
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T2",
       "canon:span": {
         "start": 554,
         "end": 567
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31651977_causative-agent_0001042#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,0 +1,431 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/24582773",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "test",
+  "canon:pmid": "24582773",
+  "canon:title": "Paradoxical severe agitation induced by add-on high-doses quetiapine in schizo-affective disorder.",
+  "canon:abstract": "We report the case of a 35-year-old patient suffering from schizo-affective disorder since the age of 19 years, treated by a combination of first-generation antipsychotics, zuclopenthixol (100 mg/day) and lithium (1200 mg/day) (serum lithium=0.85 mEq/l). This patient had no associated personality disorder (particularly no antisocial disorder) and no substance abuse disorder. Within the 48 h following the gradual introduction of quetiapine (up to 600 mg/day), the patient presented severe agitation without an environmental explanation, contrasting with the absence of a history of aggressiveness or personality disorder. The diagnoses of manic shift and akathisia were dismissed. The withdrawal and the gradual reintroduction of quetiapine 2 weeks later, which led to another severe agitation, enabled us to attribute the agitation specifically to quetiapine.",
+  "canon:text": "Paradoxical severe agitation induced by add-on high-doses quetiapine in schizo-affective disorder. We report the case of a 35-year-old patient suffering from schizo-affective disorder since the age of 19 years, treated by a combination of first-generation antipsychotics, zuclopenthixol (100 mg/day) and lithium (1200 mg/day) (serum lithium=0.85 mEq/l). This patient had no associated personality disorder (particularly no antisocial disorder) and no substance abuse disorder. Within the 48 h following the gradual introduction of quetiapine (up to 600 mg/day), the patient presented severe agitation without an environmental explanation, contrasting with the absence of a history of aggressiveness or personality disorder. The diagnoses of manic shift and akathisia were dismissed. The withdrawal and the gradual reintroduction of quetiapine 2 weeks later, which led to another severe agitation, enabled us to attribute the agitation specifically to quetiapine.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T1",
+      "canon:span": {
+        "start": 19,
+        "end": 28
+      },
+      "canon:surface": "agitation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011595",
+      "canon:sourceNotation": "D011595",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T2",
+      "canon:span": {
+        "start": 58,
+        "end": 68
+      },
+      "canon:surface": "quetiapine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C069541",
+      "canon:sourceNotation": "C069541",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T3",
+      "canon:span": {
+        "start": 72,
+        "end": 97
+      },
+      "canon:surface": "schizo-affective disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011618",
+      "canon:sourceNotation": "D011618",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T4",
+      "canon:span": {
+        "start": 158,
+        "end": 183
+      },
+      "canon:surface": "schizo-affective disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011618",
+      "canon:sourceNotation": "D011618",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T5",
+      "canon:span": {
+        "start": 272,
+        "end": 286
+      },
+      "canon:surface": "zuclopenthixol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003006",
+      "canon:sourceNotation": "D003006",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T6",
+      "canon:span": {
+        "start": 304,
+        "end": 311
+      },
+      "canon:surface": "lithium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008094",
+      "canon:sourceNotation": "D008094",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T7",
+      "canon:span": {
+        "start": 333,
+        "end": 340
+      },
+      "canon:surface": "lithium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008094",
+      "canon:sourceNotation": "D008094",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T8",
+      "canon:span": {
+        "start": 385,
+        "end": 405
+      },
+      "canon:surface": "personality disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010554",
+      "canon:sourceNotation": "D010554",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T9",
+      "canon:span": {
+        "start": 423,
+        "end": 442
+      },
+      "canon:surface": "antisocial disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000987",
+      "canon:sourceNotation": "D000987",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T10",
+      "canon:span": {
+        "start": 451,
+        "end": 475
+      },
+      "canon:surface": "substance abuse disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019966",
+      "canon:sourceNotation": "D019966",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T11",
+      "canon:span": {
+        "start": 531,
+        "end": 541
+      },
+      "canon:surface": "quetiapine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C069541",
+      "canon:sourceNotation": "C069541",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T12",
+      "canon:span": {
+        "start": 591,
+        "end": 600
+      },
+      "canon:surface": "agitation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011595",
+      "canon:sourceNotation": "D011595",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T13",
+      "canon:span": {
+        "start": 684,
+        "end": 698
+      },
+      "canon:surface": "aggressiveness",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010554",
+      "canon:sourceNotation": "D010554",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T14",
+      "canon:span": {
+        "start": 702,
+        "end": 722
+      },
+      "canon:surface": "personality disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010554",
+      "canon:sourceNotation": "D010554",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T15",
+      "canon:span": {
+        "start": 741,
+        "end": 746
+      },
+      "canon:surface": "manic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001714",
+      "canon:sourceNotation": "D001714",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T16",
+      "canon:span": {
+        "start": 757,
+        "end": 766
+      },
+      "canon:surface": "akathisia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017109",
+      "canon:sourceNotation": "D017109",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T17",
+      "canon:span": {
+        "start": 832,
+        "end": 842
+      },
+      "canon:surface": "quetiapine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C069541",
+      "canon:sourceNotation": "C069541",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T18",
+      "canon:span": {
+        "start": 886,
+        "end": 895
+      },
+      "canon:surface": "agitation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011595",
+      "canon:sourceNotation": "D011595",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T19",
+      "canon:span": {
+        "start": 925,
+        "end": 934
+      },
+      "canon:surface": "agitation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011595",
+      "canon:sourceNotation": "D011595",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T20",
+      "canon:span": {
+        "start": 951,
+        "end": 961
+      },
+      "canon:surface": "quetiapine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C069541",
+      "canon:sourceNotation": "C069541",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24582773#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24582773#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

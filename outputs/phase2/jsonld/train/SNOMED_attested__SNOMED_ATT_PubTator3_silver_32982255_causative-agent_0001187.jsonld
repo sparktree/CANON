@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Safe Use of Opioids in Chronic Kidney Disease and Hemodialysis Patients: Tips and Tricks for Non-Pain Specialists. In patients suffering from moderate-to-severe chronic kidney disease (CKD) or end-stage renal disease (ESRD), subjected to hemodialysis (HD), pain is very common, but often underestimated. Opioids are still the mainstay of severe chronic pain management; however, their prescription in CKD and HD patients is still significantly low and pain is often under-treated. Altered pharmacokinetics and the lack of clinical trials on the use of opioids in patients with renal impairment increase physicians' concerns in this specific population. This narrative review focused on the correct and safe use of opioids in patients with CKD and HD. Morphine and codeine are not recommended, because the accumulation of their metabolites may cause neurotoxic symptoms. Oxycodone and hydromorphone can be safely used, but adequate dosage adjustments are required in CKD. In dialyzed patients, these opioids should be considered as second-line agents and patients should be carefully monitored. According to different studies, buprenorphine and fentanyl could be considered first-line opioids in the management of pain in CKD; however, fentanyl is not appropriate in patients undergoing HD. Tapentadol does not need dosage adjustment in mild-to-moderate renal impairment conditions; however, no data are available on its use in ESRD. Opioid-related side effects may be exacerbated by common comorbidities in CKD patients. Opioid-induced constipation can be managed with peripherally-acting-mu-opioid-receptor-antagonists (PAMORA). Unlike the other PAMORA, naldemedine does not require any dose adjustment in CKD and HD patients. Accurate pain diagnosis, opioid titration and tailoring are mandatory to minimize the risks and to improve the outcome of the analgesic therapy.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T1",
       "canon:span": {
         "start": 849,
         "end": 868
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T2",
       "canon:span": {
         "start": 870,
         "end": 879
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32982255_causative-agent_0001187#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,0 +1,416 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/24451297",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "test",
+  "canon:pmid": "24451297",
+  "canon:title": "Drug-Induced Acute Liver Injury Within 12 Hours After Fluvastatin Therapy.",
+  "canon:abstract": "Although statins are generally well-tolerated drugs, recent cases of drug-induced liver injury associated with their use have been reported. A 52-year-old Chinese man reported with liver damage, which appeared 12 hours after beginning treatment with fluvastatin. Patient presented with complaints of increasing nausea, anorexia, and upper abdominal pain. His laboratory values showed elevated creatine kinase and transaminases. Testing for autoantibodies was also negative. The liver biochemistries eventually normalized within 3 weeks of stopping the fluvastatin. Therefore, when prescribing statins, the possibility of hepatic damage should be taken into account.",
+  "canon:text": "Drug-Induced Acute Liver Injury Within 12 Hours After Fluvastatin Therapy. Although statins are generally well-tolerated drugs, recent cases of drug-induced liver injury associated with their use have been reported. A 52-year-old Chinese man reported with liver damage, which appeared 12 hours after beginning treatment with fluvastatin. Patient presented with complaints of increasing nausea, anorexia, and upper abdominal pain. His laboratory values showed elevated creatine kinase and transaminases. Testing for autoantibodies was also negative. The liver biochemistries eventually normalized within 3 weeks of stopping the fluvastatin. Therefore, when prescribing statins, the possibility of hepatic damage should be taken into account.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 31
+      },
+      "canon:surface": "Drug-Induced Acute Liver Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T2",
+      "canon:span": {
+        "start": 54,
+        "end": 65
+      },
+      "canon:surface": "Fluvastatin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C065180",
+      "canon:sourceNotation": "C065180",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T3",
+      "canon:span": {
+        "start": 84,
+        "end": 91
+      },
+      "canon:surface": "statins",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D019161",
+      "canon:sourceNotation": "D019161",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372912004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T4",
+      "canon:span": {
+        "start": 144,
+        "end": 169
+      },
+      "canon:surface": "drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T5",
+      "canon:span": {
+        "start": 256,
+        "end": 268
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T6",
+      "canon:span": {
+        "start": 325,
+        "end": 336
+      },
+      "canon:surface": "fluvastatin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C065180",
+      "canon:sourceNotation": "C065180",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T7",
+      "canon:span": {
+        "start": 386,
+        "end": 392
+      },
+      "canon:surface": "nausea",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009325",
+      "canon:sourceNotation": "D009325",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/422587007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T8",
+      "canon:span": {
+        "start": 394,
+        "end": 402
+      },
+      "canon:surface": "anorexia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000855",
+      "canon:sourceNotation": "D000855",
+      "canon:confidence": 0.45,
+      "canon:snomedActive": false,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/158268008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T9",
+      "canon:span": {
+        "start": 414,
+        "end": 428
+      },
+      "canon:surface": "abdominal pain",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D015746",
+      "canon:sourceNotation": "D015746",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/73063007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T10",
+      "canon:span": {
+        "start": 468,
+        "end": 476
+      },
+      "canon:surface": "creatine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003401",
+      "canon:sourceNotation": "D003401",
+      "canon:confidence": 0.93,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Biologically Active Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/14804005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T11",
+      "canon:span": {
+        "start": 627,
+        "end": 638
+      },
+      "canon:surface": "fluvastatin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C065180",
+      "canon:sourceNotation": "C065180",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T12",
+      "canon:span": {
+        "start": 696,
+        "end": 710
+      },
+      "canon:surface": "hepatic damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T9"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T8"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24451297#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24451297#mention-T7"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

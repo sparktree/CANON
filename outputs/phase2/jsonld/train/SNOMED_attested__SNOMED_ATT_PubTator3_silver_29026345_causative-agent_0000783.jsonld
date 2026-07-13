@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Tolerated drugs in subjects with severe cutaneous adverse reactions (SCARs) induced by anticonvulsants and review of the literature. BACKGROUND: Anticonvulsant hypersensitivity syndrome represents a rare but potentially fatal kind of adverse drug reaction. This clinical picture often hampers the flexibility with which alternative anticonvulsants or even other classes of drugs are prescribed in these patients, negatively affecting the efficacy of treatment and the course of the disease. The aim of this study was to analyse a group of six patients with severe cutaneous drug reactions induced by anticonvulsants and to report which alternative antiepileptic drugs and which drugs of other classes were tolerated. CASE PRESENTATION: A total of six patients (2 males and 4 females, age 11-73 years) are described in this study. In all the patients the onset of the severe cutaneous drug reactions was 2-4 weeks after initiating the anticonvulsant therapy: 2 out of 6 patients presented with a drug reaction with eosinophilia and systemic symptoms under therapy with phenytoin; 2 out of 6 presented with Stevens-Johnson syndrome under therapy with lamotrigine; and 2 out of 6 presented with a toxic epidermal necrolysis, one of them under therapy with valproic acid, and the other one under therapy with lamotrigine. Alternative anticonvulsants tolerated after the reaction were: clonazepam, levetiracetam, diazepam, delorazepam and lormetazepam. CONCLUSIONS: In our cases we observed that non aromatic anticonvulsants and benzodiazepines were well tolerated as alternative treatments in six patients with reactions to aromatic anticonvulsivants and that the risk of hypersensitivity reactions to other drug classes was not increased as compared to general population.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T1",
       "canon:span": {
         "start": 564,
         "end": 588
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T2",
       "canon:span": {
         "start": 1381,
         "end": 1391
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29026345_causative-agent_0000783#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

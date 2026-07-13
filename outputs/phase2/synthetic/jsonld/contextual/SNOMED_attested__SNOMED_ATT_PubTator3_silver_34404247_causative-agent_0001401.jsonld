@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "A systematic review of treatment for patients with burning mouth syndrome. BACKGROUND: Burning mouth syndrome is a chronic idiopathic intractable intraoral dysaesthesia that remains a challenge to clinicians due to its poorly understood pathogenesis and inconsistent response to various treatments. AIM: This review aimed to study the short- (<=3 months) and long-term (>3 months) effectiveness and sustainable benefit of different burning mouth syndrome treatment strategies and the associated side effects. MATERIALS AND METHODS: Randomised controlled trials of burning mouth syndrome treatment compared with placebo or other interventions with a minimum follow up of 2 months were searched from the PubMed, Embase and Cochrane database (published to July 2020). RESULTS: Twenty-two studies were selected based on the inclusion and exclusion criteria and analysed. Nine categories of burning mouth syndrome treatment were identified: Anticonvulsant and antidepressant agents, phytomedicine and alpha lipoic acid supplements, low-level laser therapy, saliva substitute, transcranial magnetic stimulation, and cognitive behaviour therapy. Cognitive behaviour therapy, topical capsaicin and clonazepam, and laser therapy demonstrated favourable outcome in both short- and long-term assessment. Phytomedicines reported a short-term benefit in pain score reduction. The pooled effect of alpha lipoic acid (ALA) pain score improvement was low, but its positive effects increased in long term assessment. CONCLUSION: A more significant volume in terms of sample size, multi-centres, and multi-arm comparison of therapeutic agents with placebo and longitudinal follow-up studies is recommended to establish a standardised burning mouth syndrome treatment protocol. Further studies are required to assess the analgesic benefits of topical clonazepam and capsaicin, alternative medicines with neurodegenerative prevention capability and psychology support in treating burning mouth syndrome and reducing systemic adverse drug reactions.Registration International Prospective Register of Systematic Reviews (PROSPERO):Protocol ID - CRD42020160892.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T1",
       "canon:span": {
         "start": 2013,
         "end": 2027
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T2",
       "canon:span": {
         "start": 1190,
         "end": 1200
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34404247_causative-agent_0001401#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

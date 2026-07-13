@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Pharmacological manipulation of cGMP and NO/cGMP in CNS drug discovery. The development of small molecule modulators of NO/cGMP signaling for use in the CNS has lagged far behind the use of such clinical agents in the periphery, despite the central role played by NO/cGMP in learning and memory, and the substantial evidence that this signaling pathway is perturbed in neurodegenerative disorders, including Alzheimer's disease. The NO-chimeras, NMZ and Nitrosynapsin, have yielded beneficial and disease-modifying responses in multiple preclinical animal models, acting on GABAA and NMDA receptors, respectively, providing additional mechanisms of action relevant to synaptic and neuronal dysfunction. Several inhibitors of cGMP-specific phosphodiesterases (PDE) have replicated some of the actions of these NO-chimeras in the CNS. There is no evidence that nitrate tolerance is a phenomenon relevant to the CNS actions of NO-chimeras, and studies on nitroglycerin in the periphery continue to challenge the dogma of nitrate tolerance mechanisms. Hybrid nitrates have shown much promise in the periphery and CNS, but to date only one treatment has received FDA approval, for glaucoma. The potential for allosteric modulation of soluble guanylate cyclase (sGC) in brain disorders has not yet been fully explored nor exploited; whereas multiple applications of PDE inhibitors have been explored and many have stalled in clinical trials.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T1",
       "canon:span": {
         "start": 32,
         "end": 36
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T2",
       "canon:span": {
         "start": 44,
         "end": 48
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T3",
       "canon:span": {
         "start": 123,
         "end": 127
@@ -73,7 +152,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T4",
       "canon:span": {
         "start": 267,
         "end": 271
@@ -94,7 +173,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T5",
       "canon:span": {
         "start": 369,
         "end": 396
@@ -115,7 +194,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T6",
       "canon:span": {
         "start": 408,
         "end": 427
@@ -136,7 +215,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T7",
       "canon:span": {
         "start": 446,
         "end": 449
@@ -155,7 +234,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T8",
       "canon:span": {
         "start": 454,
         "end": 467
@@ -174,7 +253,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T9",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T9",
       "canon:span": {
         "start": 681,
         "end": 701
@@ -195,7 +274,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T10",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T10",
       "canon:span": {
         "start": 725,
         "end": 729
@@ -216,7 +295,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T11",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T11",
       "canon:span": {
         "start": 859,
         "end": 866
@@ -237,7 +316,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T12",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T12",
       "canon:span": {
         "start": 952,
         "end": 965
@@ -258,7 +337,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T13",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T13",
       "canon:span": {
         "start": 1018,
         "end": 1025
@@ -279,7 +358,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T14",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T14",
       "canon:span": {
         "start": 1055,
         "end": 1063
@@ -300,7 +379,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T15",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T15",
       "canon:span": {
         "start": 1176,
         "end": 1184
@@ -321,7 +400,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T16",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T16",
       "canon:span": {
         "start": 1264,
         "end": 1279
@@ -344,12 +423,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T6"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T6"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -390,12 +469,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#relation-2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#relation-2",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T5"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T5"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -436,12 +515,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#relation-3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#relation-3",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T11"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T11"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/30394348#mention-T15"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/30394348#mention-T15"
       },
       "canon:sourceRelation": "Negative_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#treats",

@@ -1,0 +1,370 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/20143913",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "dev",
+  "canon:pmid": "20143913",
+  "canon:title": "Large deletion involving exon 5 of the arylsulfatase B gene caused apparent homozygosity in a mucopolysaccharidosis type VI patient.",
+  "canon:abstract": "Apparent homozygosity for the mutation p.R315X present on exon 5 of the arylsulfatase B (ARSB) gene in a mucopolysaccharidosis type VI patient was solved in this study by further testing for a second mutation. Patient cDNA analysis revealed that the entire exon 5 of the ARSB gene was lacking; this new mutation was identified as c.899-1142del. As the genomic DNA sequencing excluded the presence of splicing mutations, polymerase chain reaction analysis was performed for polymorphisms listed in the NCBI SNP database for the ARSB gene. This allowed the mutation at the genomic DNA level to be identified as g.99367-102002del; this gross deletion, involving the entire exon 5 of the gene and parts of introns 4 and 5 led to a frameshift starting at amino acid 300 and resulting in a protein with 39% amino acids different from the normal enzyme. We stress that extensive DNA analysis needs to be performed in case of apparent homozygosity to avoid potential errors in genetic counseling.",
+  "canon:text": "Large deletion involving exon 5 of the arylsulfatase B gene caused apparent homozygosity in a mucopolysaccharidosis type VI patient. Apparent homozygosity for the mutation p.R315X present on exon 5 of the arylsulfatase B (ARSB) gene in a mucopolysaccharidosis type VI patient was solved in this study by further testing for a second mutation. Patient cDNA analysis revealed that the entire exon 5 of the ARSB gene was lacking; this new mutation was identified as c.899-1142del. As the genomic DNA sequencing excluded the presence of splicing mutations, polymerase chain reaction analysis was performed for polymorphisms listed in the NCBI SNP database for the ARSB gene. This allowed the mutation at the genomic DNA level to be identified as g.99367-102002del; this gross deletion, involving the entire exon 5 of the gene and parts of introns 4 and 5 led to a frameshift starting at amino acid 300 and resulting in a protein with 39% amino acids different from the normal enzyme. We stress that extensive DNA analysis needs to be performed in case of apparent homozygosity to avoid potential errors in genetic counseling.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T1",
+      "canon:span": {
+        "start": 39,
+        "end": 54
+      },
+      "canon:surface": "arylsulfatase B",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "411",
+      "canon:sourceNotation": "411",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T2",
+      "canon:span": {
+        "start": 94,
+        "end": 123
+      },
+      "canon:surface": "mucopolysaccharidosis type VI",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009087",
+      "canon:sourceNotation": "D009087",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T3",
+      "canon:span": {
+        "start": 124,
+        "end": 131
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T4",
+      "canon:span": {
+        "start": 172,
+        "end": 179
+      },
+      "canon:surface": "p.R315X",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "p|SUB|R|315|X",
+      "canon:sourceNotation": "p|SUB|R|315|X",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T5",
+      "canon:span": {
+        "start": 205,
+        "end": 220
+      },
+      "canon:surface": "arylsulfatase B",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "411",
+      "canon:sourceNotation": "411",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T6",
+      "canon:span": {
+        "start": 222,
+        "end": 226
+      },
+      "canon:surface": "ARSB",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "411",
+      "canon:sourceNotation": "411",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T7",
+      "canon:span": {
+        "start": 238,
+        "end": 267
+      },
+      "canon:surface": "mucopolysaccharidosis type VI",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009087",
+      "canon:sourceNotation": "D009087",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T8",
+      "canon:span": {
+        "start": 268,
+        "end": 275
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T9",
+      "canon:span": {
+        "start": 343,
+        "end": 350
+      },
+      "canon:surface": "Patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T10",
+      "canon:span": {
+        "start": 404,
+        "end": 408
+      },
+      "canon:surface": "ARSB",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "411",
+      "canon:sourceNotation": "411",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T11",
+      "canon:span": {
+        "start": 463,
+        "end": 476
+      },
+      "canon:surface": "c.899-1142del",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "c|DEL|899_1142|",
+      "canon:sourceNotation": "c|DEL|899_1142|",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T12",
+      "canon:span": {
+        "start": 660,
+        "end": 664
+      },
+      "canon:surface": "ARSB",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "411",
+      "canon:sourceNotation": "411",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T13",
+      "canon:span": {
+        "start": 742,
+        "end": 759
+      },
+      "canon:surface": "g.99367-102002del",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "g|DEL|99367_102002|",
+      "canon:sourceNotation": "g|DEL|99367_102002|",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T13"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T2"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T4"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20143913#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/20143913#mention-T11"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

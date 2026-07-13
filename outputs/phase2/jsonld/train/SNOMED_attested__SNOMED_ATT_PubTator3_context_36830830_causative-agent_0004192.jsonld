@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Crosstalk between Gut Microbiota and Host Immunity: Impact on Inflammation and Immunotherapy. Gut microbes and their metabolites are actively involved in the development and regulation of host immunity, which can influence disease susceptibility. Herein, we review the most recent research advancements in the gut microbiota-immune axis. We discuss in detail how the gut microbiota is a tipping point for neonatal immune development as indicated by newly uncovered phenomenon, such as maternal imprinting, in utero intestinal metabolome, and weaning reaction. We describe how the gut microbiota shapes both innate and adaptive immunity with emphasis on the metabolites short-chain fatty acids and secondary bile acids. We also comprehensively delineate how disruption in the microbiota-immune axis results in immune-mediated diseases, such as gastrointestinal infections, inflammatory bowel diseases, cardiometabolic disorders (e.g., cardiovascular diseases, diabetes, and hypertension), autoimmunity (e.g., rheumatoid arthritis), hypersensitivity (e.g., asthma and allergies), psychological disorders (e.g., anxiety), and cancer (e.g., colorectal and hepatic). We further encompass the role of fecal microbiota transplantation, probiotics, prebiotics, and dietary polyphenols in reshaping the gut microbiota and their therapeutic potential. Continuing, we examine how the gut microbiota modulates immune therapies, including immune checkpoint inhibitors, JAK inhibitors, and anti-TNF therapies. We lastly mention the current challenges in metagenomics, germ-free models, and microbiota recapitulation to a achieve fundamental understanding for how gut microbiota regulates immunity. Altogether, this review proposes improving immunotherapy efficacy from the perspective of microbiome-targeted interventions.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T1",
       "canon:span": {
         "start": 1031,
         "end": 1047
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T2",
       "canon:span": {
         "start": 707,
         "end": 717
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36830830_causative-agent_0004192#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

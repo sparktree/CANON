@@ -1,0 +1,399 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/12600698",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "dev",
+  "canon:pmid": "12600698",
+  "canon:title": "Protective effect of edaravone against streptomycin-induced vestibulotoxicity in the guinea pig.",
+  "canon:abstract": "This study investigated alleviation of streptomycin-induced vestibulotoxicity by edaravone in guinea pigs. Edaravone, a free radical scavenger, has potent free radical quenching action and is used in clinical practice to treat cerebral infarction. Streptomycin was administered to the inner ear by osmotic pump for 24 h, and edaravone (n=8) or saline (n=6) was intraperitoneally injected once a day for 7 days. We observed horizontal vestibulo-ocular reflex as a marker of postoperative vestibular function. Animals injected with saline showed statistically smaller gains than those injected with edaravone. These results suggest that edaravone suppresses streptomycin-induced vestibulotoxicity.",
+  "canon:text": "Protective effect of edaravone against streptomycin-induced vestibulotoxicity in the guinea pig. This study investigated alleviation of streptomycin-induced vestibulotoxicity by edaravone in guinea pigs. Edaravone, a free radical scavenger, has potent free radical quenching action and is used in clinical practice to treat cerebral infarction. Streptomycin was administered to the inner ear by osmotic pump for 24 h, and edaravone (n=8) or saline (n=6) was intraperitoneally injected once a day for 7 days. We observed horizontal vestibulo-ocular reflex as a marker of postoperative vestibular function. Animals injected with saline showed statistically smaller gains than those injected with edaravone. These results suggest that edaravone suppresses streptomycin-induced vestibulotoxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T1",
+      "canon:span": {
+        "start": 21,
+        "end": 30
+      },
+      "canon:surface": "edaravone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C005435",
+      "canon:sourceNotation": "C005435",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T2",
+      "canon:span": {
+        "start": 39,
+        "end": 51
+      },
+      "canon:surface": "streptomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013307",
+      "canon:sourceNotation": "D013307",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387223008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T3",
+      "canon:span": {
+        "start": 60,
+        "end": 77
+      },
+      "canon:surface": "vestibulotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D015837",
+      "canon:sourceNotation": "D015837",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/20425006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T4",
+      "canon:span": {
+        "start": 136,
+        "end": 148
+      },
+      "canon:surface": "streptomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013307",
+      "canon:sourceNotation": "D013307",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387223008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T5",
+      "canon:span": {
+        "start": 157,
+        "end": 174
+      },
+      "canon:surface": "vestibulotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D015837",
+      "canon:sourceNotation": "D015837",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/20425006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T6",
+      "canon:span": {
+        "start": 178,
+        "end": 187
+      },
+      "canon:surface": "edaravone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C005435",
+      "canon:sourceNotation": "C005435",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T7",
+      "canon:span": {
+        "start": 204,
+        "end": 213
+      },
+      "canon:surface": "Edaravone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C005435",
+      "canon:sourceNotation": "C005435",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T8",
+      "canon:span": {
+        "start": 324,
+        "end": 343
+      },
+      "canon:surface": "cerebral infarction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002544",
+      "canon:sourceNotation": "D002544",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/432504007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T9",
+      "canon:span": {
+        "start": 345,
+        "end": 357
+      },
+      "canon:surface": "Streptomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013307",
+      "canon:sourceNotation": "D013307",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387223008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T10",
+      "canon:span": {
+        "start": 422,
+        "end": 431
+      },
+      "canon:surface": "edaravone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C005435",
+      "canon:sourceNotation": "C005435",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T11",
+      "canon:span": {
+        "start": 694,
+        "end": 703
+      },
+      "canon:surface": "edaravone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C005435",
+      "canon:sourceNotation": "C005435",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T12",
+      "canon:span": {
+        "start": 732,
+        "end": 741
+      },
+      "canon:surface": "edaravone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C005435",
+      "canon:sourceNotation": "C005435",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T13",
+      "canon:span": {
+        "start": 753,
+        "end": 765
+      },
+      "canon:surface": "streptomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013307",
+      "canon:sourceNotation": "D013307",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387223008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T14",
+      "canon:span": {
+        "start": 774,
+        "end": 791
+      },
+      "canon:surface": "vestibulotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D015837",
+      "canon:sourceNotation": "D015837",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/20425006",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/12600698#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/12600698#mention-T3"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

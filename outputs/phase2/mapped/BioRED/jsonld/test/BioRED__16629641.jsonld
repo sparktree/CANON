@@ -1,0 +1,1028 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/16629641",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "test",
+  "canon:pmid": "16629641",
+  "canon:title": "Definition and management of anemia in patients infected with hepatitis C virus.",
+  "canon:abstract": "Chronic infection with hepatitis C virus (HCV) can progress to cirrhosis, hepatocellular carcinoma, and end-stage liver disease. The current best treatment for HCV infection is combination therapy with pegylated interferon and ribavirin. Although this regimen produces sustained virologic responses (SVRs) in approximately 50% of patients, it can be associated with a potentially dose-limiting hemolytic anemia. Hemoglobin concentrations decrease mainly as a result of ribavirin-induced hemolysis, and this anemia can be problematic in patients with HCV infection, especially those who have comorbid renal or cardiovascular disorders. In general, anemia can increase the risk of morbidity and mortality, and may have negative effects on cerebral function and quality of life. Although ribavirin-associated anemia can be reversed by dose reduction or discontinuation, this approach compromises outcomes by significantly decreasing SVR rates. Recombinant human erythropoietin has been used to manage ribavirin-associated anemia but has other potential disadvantages. Viramidine, a liver-targeting prodrug of ribavirin, has the potential to maintain the virologic efficacy of ribavirin while decreasing the risk of hemolytic anemia in patients with chronic hepatitis C.",
+  "canon:text": "Definition and management of anemia in patients infected with hepatitis C virus. Chronic infection with hepatitis C virus (HCV) can progress to cirrhosis, hepatocellular carcinoma, and end-stage liver disease. The current best treatment for HCV infection is combination therapy with pegylated interferon and ribavirin. Although this regimen produces sustained virologic responses (SVRs) in approximately 50% of patients, it can be associated with a potentially dose-limiting hemolytic anemia. Hemoglobin concentrations decrease mainly as a result of ribavirin-induced hemolysis, and this anemia can be problematic in patients with HCV infection, especially those who have comorbid renal or cardiovascular disorders. In general, anemia can increase the risk of morbidity and mortality, and may have negative effects on cerebral function and quality of life. Although ribavirin-associated anemia can be reversed by dose reduction or discontinuation, this approach compromises outcomes by significantly decreasing SVR rates. Recombinant human erythropoietin has been used to manage ribavirin-associated anemia but has other potential disadvantages. Viramidine, a liver-targeting prodrug of ribavirin, has the potential to maintain the virologic efficacy of ribavirin while decreasing the risk of hemolytic anemia in patients with chronic hepatitis C.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T1",
+      "canon:span": {
+        "start": 29,
+        "end": 35
+      },
+      "canon:surface": "anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000740",
+      "canon:sourceNotation": "D000740",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/271737000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T2",
+      "canon:span": {
+        "start": 39,
+        "end": 47
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T3",
+      "canon:span": {
+        "start": 48,
+        "end": 79
+      },
+      "canon:surface": "infected with hepatitis C virus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006526",
+      "canon:sourceNotation": "D006526",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/50711007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T4",
+      "canon:span": {
+        "start": 81,
+        "end": 121
+      },
+      "canon:surface": "Chronic infection with hepatitis C virus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D019698",
+      "canon:sourceNotation": "D019698",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/128302006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T5",
+      "canon:span": {
+        "start": 123,
+        "end": 126
+      },
+      "canon:surface": "HCV",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/11103",
+      "canon:sourceNotation": "11103",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T6",
+      "canon:span": {
+        "start": 144,
+        "end": 153
+      },
+      "canon:surface": "cirrhosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005355",
+      "canon:sourceNotation": "D005355",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/112674009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T7",
+      "canon:span": {
+        "start": 155,
+        "end": 179
+      },
+      "canon:surface": "hepatocellular carcinoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006528",
+      "canon:sourceNotation": "D006528",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/109841003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T8",
+      "canon:span": {
+        "start": 185,
+        "end": 208
+      },
+      "canon:surface": "end-stage liver disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D058625",
+      "canon:sourceNotation": "D058625",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/235886005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T9",
+      "canon:span": {
+        "start": 241,
+        "end": 254
+      },
+      "canon:surface": "HCV infection",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006526",
+      "canon:sourceNotation": "D006526",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/50711007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T10",
+      "canon:span": {
+        "start": 283,
+        "end": 303
+      },
+      "canon:surface": "pegylated interferon",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3439",
+      "canon:sourceNotation": "3439",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11",
+      "canon:span": {
+        "start": 308,
+        "end": 317
+      },
+      "canon:surface": "ribavirin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012254",
+      "canon:sourceNotation": "D012254",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T12",
+      "canon:span": {
+        "start": 411,
+        "end": 419
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T13",
+      "canon:span": {
+        "start": 475,
+        "end": 491
+      },
+      "canon:surface": "hemolytic anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000743",
+      "canon:sourceNotation": "D000743",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/61261009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T14",
+      "canon:span": {
+        "start": 493,
+        "end": 503
+      },
+      "canon:surface": "Hemoglobin",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3039",
+      "canon:sourceNotation": "3039",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T15",
+      "canon:span": {
+        "start": 550,
+        "end": 559
+      },
+      "canon:surface": "ribavirin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012254",
+      "canon:sourceNotation": "D012254",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T16",
+      "canon:span": {
+        "start": 568,
+        "end": 577
+      },
+      "canon:surface": "hemolysis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006461",
+      "canon:sourceNotation": "D006461",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Finding"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/15601008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T17",
+      "canon:span": {
+        "start": 588,
+        "end": 594
+      },
+      "canon:surface": "anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000740",
+      "canon:sourceNotation": "D000740",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/271737000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T18",
+      "canon:span": {
+        "start": 617,
+        "end": 625
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T19",
+      "canon:span": {
+        "start": 631,
+        "end": 644
+      },
+      "canon:surface": "HCV infection",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006526",
+      "canon:sourceNotation": "D006526",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/50711007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T20",
+      "canon:span": {
+        "start": 681,
+        "end": 714
+      },
+      "canon:surface": "renal or cardiovascular disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002318",
+      "canon:sourceNotation": "D002318,D007674",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/49601007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T21",
+      "canon:span": {
+        "start": 728,
+        "end": 734
+      },
+      "canon:surface": "anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000740",
+      "canon:sourceNotation": "D000740",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/271737000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T22",
+      "canon:span": {
+        "start": 866,
+        "end": 875
+      },
+      "canon:surface": "ribavirin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012254",
+      "canon:sourceNotation": "D012254",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T23",
+      "canon:span": {
+        "start": 887,
+        "end": 893
+      },
+      "canon:surface": "anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000740",
+      "canon:sourceNotation": "D000740",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/271737000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T24",
+      "canon:span": {
+        "start": 1034,
+        "end": 1039
+      },
+      "canon:surface": "human",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T25",
+      "canon:span": {
+        "start": 1040,
+        "end": 1054
+      },
+      "canon:surface": "erythropoietin",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/2056",
+      "canon:sourceNotation": "2056",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T26",
+      "canon:span": {
+        "start": 1079,
+        "end": 1088
+      },
+      "canon:surface": "ribavirin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012254",
+      "canon:sourceNotation": "D012254",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T27",
+      "canon:span": {
+        "start": 1100,
+        "end": 1106
+      },
+      "canon:surface": "anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000740",
+      "canon:sourceNotation": "D000740",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/271737000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T28",
+      "canon:span": {
+        "start": 1146,
+        "end": 1156
+      },
+      "canon:surface": "Viramidine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C026956",
+      "canon:sourceNotation": "C026956",
+      "canon:confidence": 0.65,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372701006",
+      "canon:mappingProperty": "skos:broadMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T29",
+      "canon:span": {
+        "start": 1187,
+        "end": 1196
+      },
+      "canon:surface": "ribavirin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012254",
+      "canon:sourceNotation": "D012254",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T30",
+      "canon:span": {
+        "start": 1254,
+        "end": 1263
+      },
+      "canon:surface": "ribavirin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D012254",
+      "canon:sourceNotation": "D012254",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T31",
+      "canon:span": {
+        "start": 1293,
+        "end": 1309
+      },
+      "canon:surface": "hemolytic anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000743",
+      "canon:sourceNotation": "D000743",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/61261009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T32",
+      "canon:span": {
+        "start": 1313,
+        "end": 1321
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T33",
+      "canon:span": {
+        "start": 1327,
+        "end": 1346
+      },
+      "canon:surface": "chronic hepatitis C",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D019698",
+      "canon:sourceNotation": "D019698",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/128302006",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T10"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:sourceRelation": "Cotreatment",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T10"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T28"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T4"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T28"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T13"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T28"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-7",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T25"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-8",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T25"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-9",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T14"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T16"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-10",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T14"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-11",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T4"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-12",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T1"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-13",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T16"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16629641#relation-14",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T11"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16629641#mention-T13"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    }
+  ]
+}

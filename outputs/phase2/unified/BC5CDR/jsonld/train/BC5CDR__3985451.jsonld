@@ -1,0 +1,434 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/3985451",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "train",
+  "canon:pmid": "3985451",
+  "canon:title": "Warfarin-induced iliopsoas hemorrhage with subsequent femoral nerve palsy.",
+  "canon:abstract": "We present the case of a 28-year-old man on chronic warfarin therapy who sustained a minor muscle tear and developed increasing pain and a flexure contracture of the right hip. Surgical exploration revealed an iliopsoas hematoma and femoral nerve entrapment, resulting in a femoral nerve palsy and partial loss of quadriceps functions. Anticoagulant-induced femoral nerve palsy represents the most common form of warfarin-induced peripheral neuropathy; it is characterized by severe pain in the inguinal region, varying degrees of motor and sensory impairment, and flexure contracture of the involved extremity.",
+  "canon:text": "Warfarin-induced iliopsoas hemorrhage with subsequent femoral nerve palsy. We present the case of a 28-year-old man on chronic warfarin therapy who sustained a minor muscle tear and developed increasing pain and a flexure contracture of the right hip. Surgical exploration revealed an iliopsoas hematoma and femoral nerve entrapment, resulting in a femoral nerve palsy and partial loss of quadriceps functions. Anticoagulant-induced femoral nerve palsy represents the most common form of warfarin-induced peripheral neuropathy; it is characterized by severe pain in the inguinal region, varying degrees of motor and sensory impairment, and flexure contracture of the involved extremity.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 8
+      },
+      "canon:surface": "Warfarin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014859",
+      "canon:sourceNotation": "D014859",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T2",
+      "canon:span": {
+        "start": 27,
+        "end": 37
+      },
+      "canon:surface": "hemorrhage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006470",
+      "canon:sourceNotation": "D006470",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T3",
+      "canon:span": {
+        "start": 54,
+        "end": 73
+      },
+      "canon:surface": "femoral nerve palsy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020428",
+      "canon:sourceNotation": "D020428",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T4",
+      "canon:span": {
+        "start": 127,
+        "end": 135
+      },
+      "canon:surface": "warfarin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014859",
+      "canon:sourceNotation": "D014859",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T5",
+      "canon:span": {
+        "start": 166,
+        "end": 177
+      },
+      "canon:surface": "muscle tear",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009135",
+      "canon:sourceNotation": "D009135",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T6",
+      "canon:span": {
+        "start": 203,
+        "end": 207
+      },
+      "canon:surface": "pain",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010146",
+      "canon:sourceNotation": "D010146",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T7",
+      "canon:span": {
+        "start": 222,
+        "end": 233
+      },
+      "canon:surface": "contracture",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003286",
+      "canon:sourceNotation": "D003286",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T8",
+      "canon:span": {
+        "start": 295,
+        "end": 303
+      },
+      "canon:surface": "hematoma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006406",
+      "canon:sourceNotation": "D006406",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T9",
+      "canon:span": {
+        "start": 316,
+        "end": 332
+      },
+      "canon:surface": "nerve entrapment",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009408",
+      "canon:sourceNotation": "D009408",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T10",
+      "canon:span": {
+        "start": 349,
+        "end": 368
+      },
+      "canon:surface": "femoral nerve palsy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020428",
+      "canon:sourceNotation": "D020428",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T11",
+      "canon:span": {
+        "start": 373,
+        "end": 409
+      },
+      "canon:surface": "partial loss of quadriceps functions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009135",
+      "canon:sourceNotation": "D009135",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T12",
+      "canon:span": {
+        "start": 433,
+        "end": 452
+      },
+      "canon:surface": "femoral nerve palsy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020428",
+      "canon:sourceNotation": "D020428",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T13",
+      "canon:span": {
+        "start": 488,
+        "end": 496
+      },
+      "canon:surface": "warfarin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014859",
+      "canon:sourceNotation": "D014859",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T14",
+      "canon:span": {
+        "start": 505,
+        "end": 526
+      },
+      "canon:surface": "peripheral neuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010523",
+      "canon:sourceNotation": "D010523",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T15",
+      "canon:span": {
+        "start": 558,
+        "end": 562
+      },
+      "canon:surface": "pain",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010146",
+      "canon:sourceNotation": "D010146",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T16",
+      "canon:span": {
+        "start": 606,
+        "end": 634
+      },
+      "canon:surface": "motor and sensory impairment",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D015417",
+      "canon:sourceNotation": "D015417",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T17",
+      "canon:span": {
+        "start": 648,
+        "end": 659
+      },
+      "canon:surface": "contracture",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003286",
+      "canon:sourceNotation": "D003286",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T3"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T9"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T5"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/3985451#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/3985451#mention-T8"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

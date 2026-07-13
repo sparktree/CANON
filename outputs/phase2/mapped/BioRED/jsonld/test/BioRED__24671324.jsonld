@@ -1,0 +1,752 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/24671324",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "test",
+  "canon:pmid": "24671324",
+  "canon:title": "Necrotising fasciitis after bortezomib and dexamethasone-containing regimen in an elderly patient of Waldenstrom macroglobulinaemia.",
+  "canon:abstract": "Bortezomib and high-dose dexamethasone-containing regimens are considered to be generally tolerable with few severe bacterial infections in patients with B-cell malignancies. However, information is limited concerning the safety of the regimen in elderly patients. We report a case of a 76-year-old man with Waldenstrom macroglobulinaemia who suffered necrotising fasciitis without neutropenia after the combination treatment with bortezomib, high-dose dexamethasone and rituximab. Despite immediate intravenous antimicrobial therapy, he succumbed 23 h after the onset. Physicians should recognise the possibility of fatal bacterial infections related to bortezomib plus high-dose dexamethasone in elderly patients, and we believe this case warrants further investigation.",
+  "canon:text": "Necrotising fasciitis after bortezomib and dexamethasone-containing regimen in an elderly patient of Waldenstrom macroglobulinaemia. Bortezomib and high-dose dexamethasone-containing regimens are considered to be generally tolerable with few severe bacterial infections in patients with B-cell malignancies. However, information is limited concerning the safety of the regimen in elderly patients. We report a case of a 76-year-old man with Waldenstrom macroglobulinaemia who suffered necrotising fasciitis without neutropenia after the combination treatment with bortezomib, high-dose dexamethasone and rituximab. Despite immediate intravenous antimicrobial therapy, he succumbed 23 h after the onset. Physicians should recognise the possibility of fatal bacterial infections related to bortezomib plus high-dose dexamethasone in elderly patients, and we believe this case warrants further investigation.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 21
+      },
+      "canon:surface": "Necrotising fasciitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D019115",
+      "canon:sourceNotation": "D019115",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/52486002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T2",
+      "canon:span": {
+        "start": 28,
+        "end": 38
+      },
+      "canon:surface": "bortezomib",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000069286",
+      "canon:sourceNotation": "D000069286",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T3",
+      "canon:span": {
+        "start": 43,
+        "end": 56
+      },
+      "canon:surface": "dexamethasone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003907",
+      "canon:sourceNotation": "D003907",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372584003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T4",
+      "canon:span": {
+        "start": 90,
+        "end": 97
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T5",
+      "canon:span": {
+        "start": 101,
+        "end": 131
+      },
+      "canon:surface": "Waldenstrom macroglobulinaemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008258",
+      "canon:sourceNotation": "D008258",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/190817009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T6",
+      "canon:span": {
+        "start": 133,
+        "end": 143
+      },
+      "canon:surface": "Bortezomib",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000069286",
+      "canon:sourceNotation": "D000069286",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T7",
+      "canon:span": {
+        "start": 158,
+        "end": 171
+      },
+      "canon:surface": "dexamethasone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003907",
+      "canon:sourceNotation": "D003907",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372584003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T8",
+      "canon:span": {
+        "start": 249,
+        "end": 269
+      },
+      "canon:surface": "bacterial infections",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001424",
+      "canon:sourceNotation": "D001424",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/87628006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T9",
+      "canon:span": {
+        "start": 273,
+        "end": 281
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T10",
+      "canon:span": {
+        "start": 294,
+        "end": 306
+      },
+      "canon:surface": "malignancies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009369",
+      "canon:sourceNotation": "D009369",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/108369006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T11",
+      "canon:span": {
+        "start": 388,
+        "end": 396
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T12",
+      "canon:span": {
+        "start": 432,
+        "end": 435
+      },
+      "canon:surface": "man",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T13",
+      "canon:span": {
+        "start": 441,
+        "end": 471
+      },
+      "canon:surface": "Waldenstrom macroglobulinaemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008258",
+      "canon:sourceNotation": "D008258",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/190817009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T14",
+      "canon:span": {
+        "start": 485,
+        "end": 506
+      },
+      "canon:surface": "necrotising fasciitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D019115",
+      "canon:sourceNotation": "D019115",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/52486002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T15",
+      "canon:span": {
+        "start": 515,
+        "end": 526
+      },
+      "canon:surface": "neutropenia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009503",
+      "canon:sourceNotation": "D009503",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/303011007",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T16",
+      "canon:span": {
+        "start": 564,
+        "end": 574
+      },
+      "canon:surface": "bortezomib",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000069286",
+      "canon:sourceNotation": "D000069286",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T17",
+      "canon:span": {
+        "start": 586,
+        "end": 599
+      },
+      "canon:surface": "dexamethasone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003907",
+      "canon:sourceNotation": "D003907",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372584003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T18",
+      "canon:span": {
+        "start": 604,
+        "end": 613
+      },
+      "canon:surface": "rituximab",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000069283",
+      "canon:sourceNotation": "D000069283",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Immunologic Factor",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T19",
+      "canon:span": {
+        "start": 756,
+        "end": 776
+      },
+      "canon:surface": "bacterial infections",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001424",
+      "canon:sourceNotation": "D001424",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/87628006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T20",
+      "canon:span": {
+        "start": 788,
+        "end": 798
+      },
+      "canon:surface": "bortezomib",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D000069286",
+      "canon:sourceNotation": "D000069286",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T21",
+      "canon:span": {
+        "start": 814,
+        "end": 827
+      },
+      "canon:surface": "dexamethasone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003907",
+      "canon:sourceNotation": "D003907",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372584003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T22",
+      "canon:span": {
+        "start": 839,
+        "end": 847
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T8"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T3"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T8"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T2"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T18"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T5"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T10"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T18"
+      },
+      "canon:sourceRelation": "Cotreatment",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T5"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-7",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T10"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-8",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T18"
+      },
+      "canon:sourceRelation": "Cotreatment",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-9",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T5"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-10",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T3"
+      },
+      "canon:sourceRelation": "Cotreatment",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-11",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T3"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/24671324#relation-12",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/24671324#mention-T2"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

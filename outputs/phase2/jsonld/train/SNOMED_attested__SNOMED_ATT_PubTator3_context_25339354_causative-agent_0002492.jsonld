@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Dynamic carbon 13 breath tests for the study of liver function and gastric emptying. In gastroenterological practice, breath tests (BTs) are diagnostic tools used for indirect, non-invasive assessment of several pathophysiological metabolic processes, by monitoring the appearance in breath of a metabolite of a specific substrate. Labelled substrates originally employed radioactive carbon 14 ((14)C) and, more recently, the stable carbon 13 isotope ((13)C) has been introduced to label specific substrates. The ingested (13)C-substrate is metabolized, and exhaled (13)CO2 is measured by mass spectrometry or infrared spectroscopy. Some (13)C-BTs evaluate specific (microsomal, cytosolic, and mitochondrial) hepatic metabolic pathways and can be employed in liver diseases (i.e. simple liver steatosis, non-alcoholic steato-hepatitis, liver fibrosis, cirrhosis, hepatocellular carcinoma, drug and alcohol effects). Another field of clinical application for (13)C-BTs is the assessment of gastric emptying kinetics in response to liquids ((13)C-acetate) or solids ((13)C-octanoic acid in egg yolk or in a pre-packed muffin or the (13)C-Spirulina platensis given with a meal or a biscuit). Studies have shown that (13)C-BTs, used for gastric emptying studies, yield results that are comparable to scintigraphy and can be useful in detecting either delayed- (gastroparesis) or accelerated gastric emptying or changes of gastric kinetics due to pharmacological effects. Thus, (13)C-BTs represent an indirect, cost-effective and easy method of evaluating dynamic liver function and gastric kinetics in health and disease, and several other potential applications are being studied. ",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T1",
       "canon:span": {
         "start": 804,
         "end": 834
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T2",
       "canon:span": {
         "start": 384,
         "end": 390
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

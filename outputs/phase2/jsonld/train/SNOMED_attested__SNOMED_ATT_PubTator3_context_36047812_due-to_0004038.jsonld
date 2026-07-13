@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Reevaluation of lock solutions for Central venous catheters in hemodialysis: a narrative review. BACKGROUND: A significant proportion of incident and prevalent hemodialysis patients have central venous catheters for vascular access. No consensus is available on the prevention of catheter dysfunction or catheter-related bloodstream infections in patients undergoing hemodialysis by means of catheter lock solutions. METHOD: We reviewed the effects of single and combined anticoagulants with antibacterial catheter lock solutions or other antimicrobials for the prevention of thrombosis or infections in hemodialysis patients. Relative risks with 95% confidence intervals for trials of the same type of catheter locking solution were pooled. SOURCES OF INFORMATION: We included original research articles in English from PubMed, EMBASE, SpringerLink, Elsevier and Ovid using the search terms 'hemodialysis,' 'central venous catheter,' 'locking solution,' 'UFH,' 'low molecular weight heparin,' 'EDTA,' 'citrate,' 'rt-PA,' 'urokinase,' 'gentamicin,' 'vancomycin', 'taurolidine,' 'sodium bicarbonate,' 'hypertonic saline' and 'ethanol' and 'catheter'. FINDINGS: Low-dose heparin lock solution (< 5000 U/ml) can efficiently achieve anticoagulation and will not increase the risk of bleeding. Low-concentration citrate (< 5%) combined with rt-PA can effectively prevent catheter infection and dysfunction. Catheter-related infections may be minimized by choosing the appropriate antibiotic and dose. LIMITATIONS: There is a lack of follow-up validation data for LMWH, EDTA, taurolidine, sodium bicarbonate, ethanol, and other lock solutions. IMPLICATIONS: Since catheterization is common in hemodialysis units, studies on long-term treatment and preventative strategies for catheter dysfunction and catheter-related infection are warranted.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T1",
       "canon:span": {
         "start": 321,
         "end": 343
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T2",
       "canon:span": {
         "start": 280,
         "end": 288
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36047812_due-to_0004038#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

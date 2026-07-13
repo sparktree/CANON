@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Methylenetetrahydrofolate reductase C677T and A1298C gene variants in adult non-Hodgkin's lymphoma patients: association with toxicity and survival. BACKGROUND AND OBJECTIVES: Common methylenetetrahydrofolate reductase gene variants (MTHFR C677T and A1298C) have been described to have opposite effects on cancer patients. They may reduce cancer susceptibility and increase drug-related toxicity when folate antagonists (e.g. methotrexate) are utilized. We analyzed 110 patients with high-grade non-Hodgkin's lymphoma (NHL), 68 of whom were eligible for a chemotherapy combination containing methotrexate (MACOP-B) and 42 for chemotherapy without methotrexate (CHOP). DESIGN AND METHODS: Patients were genotyped by polymerase chain reaction and stratified by MTHFR variants. These data were related to the toxicity (WHO grade GO-4) that the patients suffered and their survival. Overall 64 cases (58.2%) developed some form of toxicity and 23 (20.9%) had grade 3/4 toxicity. RESULTS: When considering toxicity of any grade (grade 1-4), the 677TT genotype was significantly over-represented among cases with mucositis (OR=4.85; 95% CI, 1.47-15.97; p=0.009) and those with hepatic toxicity (OR=3.43; 95% CI, 0.99-11.86; p=0.052). Sub-analyses in the group treated with MACOP-B showed a slight increase in the risk of developing mucositis (OR=5.22; 95% CI, 1.20-27.27; p=0.03), and a strong increase in the risk of hepatic toxicity (OR=7.08; 95% CI, 1.38-36.2; p=0.019) and thrombocytopenia (OR=7.69, 95% CI 1.0-58.94; p=0.05). Interestingly, compared to the risk of developing toxicity of any grade, the risk of developing severe (grade 3/4) mucositis was almost doubled in the whole group of cases with 677TT (OR=8.13; 95% CI 1.61-41.04; p=0.011) and dramatically increased in the MACOP-B-treated cases with this gene variant (OR=24.6; 95% CI 2.49-87.41; p=0.001). There were significant results for 1298CC cases exclusively for mucositis (any grade, OR=5.33; 95% CI, 1.25-22.70; p=0.023 and OR=9.15; 95% CI, 1.14-73.41; p=0.037; for the whole group and the MACOP-B-treated group, respectively). Similarly, the risk of 1298CC patients developing severe mucositis increased (OR=9.24; 95% CI, 1.47-58.0; p=0.017 and OR=11.53; 0.93-143.18; p=0.057; in the whole group and in the MACOP-B-treated group, respectively). Event-free survival analysis revealed a lower probability of event-free survival at 5 years for 677T-carriers (log-ranks, p=0.05 and p=0.07 in the whole group and in the MACOP-B-treated group, respectively). More significant results were obtained when 1298CC cases were excluded from the reference group (log-ranks, p=0.03 and p=0.04, respectively). No significant associations were found in the CHOP-treated group. INTERPRETATION AND CONCLUSIONS: Our data suggest that MTHFR gene variants play a critical role in NHL outcome, possibly by interfering with the action of methotrexate with significant effects on toxicity and survival. Genotyping of folate pathway gene variants might be useful to enable reduction of chemotherapy toxicity and/or to improve survival by indicating when dose adjustments or alternative treatments are necessary.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T1",
       "canon:span": {
         "start": 1171,
         "end": 1187
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T2",
       "canon:span": {
         "start": 401,
         "end": 407
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17488658_causative-agent_0002148#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

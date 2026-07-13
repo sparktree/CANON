@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Myogenic Disease and Metabolic Acidosis: Consider Multiple Acyl-Coenzyme A Dehydrogenase Deficiency. BACKGROUND: Multiple acyl-coA dehydrogenase deficiency (MADD) is a rare, inherited, autosomal-recessive disorder leading to the accumulation of acylcarnitine of all chain lengths. Acute decompensation with cardiac, respiratory or hepatic failure and metabolic abnormalities may be life-threatening. CASE PRESENTATION: A 29-year-old woman presented with severe lactic acidosis associated with intense myalgia and muscle weakness. The clinical examination revealed symmetric upper and lower limb motor impairment (rated at 2 or 3 out of 5 on the Medical Research Council scale) and clear amyotrophy. Laboratory tests had revealed severe rhabdomyolysis, with a serum creatine phosphokinase level of 8,700 IU/L and asymptomatic hypoglycemia in the absence of ketosis. Electromyography revealed myotonic bursts in all four limbs. The absence of myositis-specific autoantibodies ruled out a diagnosis of autoimmune myositis. Finally, Acylcarnitine profile and gas chromatography-mass spectrometry analysis of organic acids led to the diagnosis of MADD. A treatment based on the intravenous infusion of glucose solutes, administration of riboflavin, and supplementation with coenzyme Q10 and carnitine was effective. Lipid consumption was strictly prohibited in the early stages of treatment. The clinical and biochemical parameters rapidly improved and we noticed a complete disappearance of the motor deficit, without sequelae. CONCLUSION: A diagnosis of MADD must be considered whenever acute or chronic muscle involvement is associated with metabolic disorders. Acute heart, respiratory or hepatic failure and metabolic abnormalities caused by MADD may be life-threatening, and will require intensive care.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T1",
       "canon:span": {
         "start": 687,
         "end": 697
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T2",
       "canon:span": {
         "start": 21,
         "end": 39
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31934457_due-to_0003219#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

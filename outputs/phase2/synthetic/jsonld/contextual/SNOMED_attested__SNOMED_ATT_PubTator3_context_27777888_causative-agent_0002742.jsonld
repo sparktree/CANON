@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Ursodeoxycholic Acid in Treatment of Non-cholestatic Liver Diseases: A Systematic Review. Aims: To systematically evaluate the literature for evidence to support the use of bile acids in non-cholestatic liver conditions. Methods: Searches were conducted on the databases of Medline (1948-March 31, 2015), Embase (1980-March 31, 2015) and the Cochrane Central Register of Controlled Trials, and on Google and Google Scholar to identify articles describing ursodeoxycholic acid (UDCA) and its derivatives for non-cholestatic hepatic indications. Combinations of the following search terms were used: ursodeoxycholic acid, ursodiol, bile acids and/or salts, non alcoholic fatty liver, non alcoholic steatohepatitis, fatty liver, alcoholic hepatitis, alcohol, liver disease, autoimmune, autoimmune hepatitis, liver transplant, liver graft, transplant rejection, graft rejection, ischemic reperfusion injury, reperfusion injury, hepatitis B, hepatitis C, viral hepatitis, chronic hepatitis, acute hepatitis, transaminases, alanine transaminase, liver enzymes, aspartate aminotransferase, gamma-glutamyl transferase, gamma-glutamyl transpeptidase, bilirubin, alkaline phosphatase. No search limits were applied. Additionally, references of the included studies were reviewed to identify additional articles. Results: The literature search yielded articles meeting inclusion criteria for the following indications: non-alcoholic fatty liver disease (n = 5); alcoholic liver disease (n = 2); autoimmune hepatitis (n = 6), liver transplant (n = 2) and viral hepatitis (n = 9). Bile acid use was associated with improved normalization of liver biochemistry in non-alcoholic fatty liver disease, autoimmune hepatitis and hepatitis B and C infections. In contrast, liver biochemistry normalization was inconsistent in alcoholic liver disease and liver transplantation. The majority of studies reviewed showed that normalization of liver biochemistry did not correlate to improvement in histologic disease. In the prospective trials reviewed, adverse effects associated with the bile acids were limited to minor gastrointestinal complaints (most often, diarrhea) and did not occur at increased frequency as compared to controls. As administration of bile acids was often limited to durations of 12 months or less, long-term side effects for non-cholestatic indications cannot be excluded. Conclusions: Based on the available literature, bile acids cannot be widely recommended for non-cholestatic liver diseases at present.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T1",
       "canon:span": {
         "start": 726,
         "end": 745
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T2",
       "canon:span": {
         "start": 173,
         "end": 183
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27777888_causative-agent_0002742#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

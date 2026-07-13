@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "TRPM2 channel-mediated cell death: An important mechanism linking oxidative stress-inducing pathological factors to associated pathological conditions. Oxidative stress resulting from the accumulation of high levels of reactive oxygen species is a salient feature of, and a well-recognised pathological factor for, diverse pathologies. One common mechanism for oxidative stress damage is via the disruption of intracellular ion homeostasis to induce cell death. TRPM2 is a non-selective Ca2+-permeable cation channel with a wide distribution throughout the body and is highly sensitive to activation by oxidative stress. Recent studies have collected abundant evidence to show its important role in mediating cell death induced by miscellaneous oxidative stress-inducing pathological factors, both endogenous and exogenous, including ischemia/reperfusion and the neurotoxicants amyloid-beta peptides and MPTP/MPP+ that cause neuronal demise in the brain, myocardial ischemia/reperfusion, proinflammatory mediators that disrupt endothelial function, diabetogenic agent streptozotocin and diabetes risk factor free fatty acids that induce loss of pancreatic beta-cells, bile acids that damage pancreatic acinar cells, renal ischemia/reperfusion and albuminuria that are detrimental to kidney cells, acetaminophen that triggers hepatocyte death, and nanoparticles that injure pericytes. Studies have also shed light on the signalling mechanisms by which these pathological factors activate the TRPM2 channel to alter intracellular ion homeostasis leading to aberrant initiation of various cell death pathways. TRPM2-mediated cell death thus emerges as an important mechanism in the pathogenesis of conditions including ischemic stroke, neurodegenerative diseases, cardiovascular diseases, diabetes, pancreatitis, chronic kidney disease, liver damage and neurovascular injury. These findings raise the exciting perspective of targeting the TRPM2 channel as a novel therapeutic strategy to treat such oxidative stress-associated diseases.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T1",
       "canon:span": {
         "start": 1834,
         "end": 1846
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T2",
       "canon:span": {
         "start": 904,
         "end": 908
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33130440_causative-agent_0001200#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Neuropharmacological Potential of Diterpenoid Alkaloids. This study provides a narrative review of diterpenoid alkaloids (DAs), a family of extremely important natural products found predominantly in some species of Aconitum and Delphinium (Ranunculaceae). DAs have long been a focus of research attention due to their numerous intricate structures and diverse biological activities, especially in the central nervous system (CNS). These alkaloids originate through the amination reaction of tetra or pentacyclic diterpenoids, which are classified into three categories and 46 types based on the number of carbon atoms in the backbone structure and structural differences. The main chemical characteristics of DAs are their heterocyclic systems containing beta-aminoethanol, methylamine, or ethylamine functionality. Although the role of tertiary nitrogen in ring A and the polycyclic complex structure are of great importance in drug-receptor affinity, in silico studies have emphasized the role of certain sidechains in C13, C14, and C8. DAs showed antiepileptic effects in preclinical studies mostly through Na+ channels. Aconitine (1) and 3-acetyl aconitine (2) can desensitize Na+ channels after persistent activation. Lappaconitine (3), N-deacetyllapaconitine (4), 6-benzoylheteratisine (5), and 1-benzoylnapelline (6) deactivate these channels. Methyllycaconitine (16), mainly found in Delphinium species, possesses an extreme affinity for the binding sites of alpha7 nicotinic acetylcholine receptors (nAChR) and contributes to a wide range of neurologic functions and the release of neurotransmitters. Several DAs such as bulleyaconitine A (17), (3), and mesaconitine (8) from Aconitum species have a drastic analgesic effect. Among them, compound 17 has been used in China for decades. Their effect is explained by increasing the release of dynorphin A, activating the inhibitory noradrenergic neurons in the beta-adrenergic system, and preventing the transmission of pain messages by inactivating the Na+ channels that have been stressed. Acetylcholinesterase inhibitory, neuroprotective, antidepressant, and anxiolytic activities are other CNS effects that have been investigated for certain DAs. However, despite various CNS effects, recent advances in developing new drugs from DAs were insignificant due to their neurotoxicity.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T1",
       "canon:span": {
         "start": 2328,
         "end": 2341
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T2",
       "canon:span": {
         "start": 606,
         "end": 612
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37242531_causative-agent_0004287#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

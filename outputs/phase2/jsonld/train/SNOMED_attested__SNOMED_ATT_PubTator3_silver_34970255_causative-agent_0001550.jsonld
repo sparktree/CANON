@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Disseminated Human Parvovirus B19 Infection Induced Multiple Organ Dysfunction Syndrome in an Adult Patient With Alcoholic Hepatitis Complicated by Hemolytic Anemia: A Case Report and Literature Review. Background: Human parvovirus B19 (B19) can cause acute hepatitis and is attributed to the high mortality of alcoholic hepatitis (AH). B19 infection is generally self-healing in previously healthy people, but it can cause fatal effects in some high-risk groups and increase its virulence and infectivity. Disseminated B19 infection-induced multiple organ dysfunction syndrome (MODS) in patients with AH has not been reported yet. Here, we described B19 viremia in an adult patient with AH accompanied by hemolytic anemia (HA), leading to disseminated infection and secondary MODS, as well as self-limiting B19 infections in seven nurses caring for him. Meanwhile, we reviewed the literature on AH and B19 infection. Case Presentation: A 43-year-old male patient with AH accompanied by HA was transferred to the Third Affiliated Hospital of Sun Yat-sen University, Guangzhou, China, on March 31, 2021. After supportive treatment, his transaminase and bilirubin levels were reduced, but his anemia worsened. He received a red blood cell (RBC) infusion on April 9 for hemoglobin (Hb) lower than 6 g/dl. On April 13, he suddenly had a high fever. Under empirical anti-infection, his high fever dropped and maintained at a low fever level; however, his anemia worsened. On April 25, he was transferred to the medical intensive care unit (MICU) due to severe pneumonia, acute respiratory distress syndrome (ARDS), acute aplastic crisis (AAC), and hemophagocytic syndrome (HPS), which were subsequently confirmed to be related to B19 infection. After methylprednisolone, intravenous immunoglobulin (IVIG), empirical anti-infection, and supportive treatment, the lung infection improved, but hematopoietic and liver abnormalities aggravated, and systemic B19 infection occurred. Finally, the patient developed a refractory arrhythmia, heart failure, and shock and was referred to a local hospital by his family on May 8, 2021. Unfortunately, he died the next day. Fourteen days after he was transferred to MICU, seven nurses caring for him in his first two days in the MICU developed self-limiting erythema infectiosum (EI). Conclusions: B19 infection is self-limiting in healthy people, with low virulence and infectivity; however, in AH patients with HA, it can lead to fatal consequences and high contagion.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T1",
       "canon:span": {
         "start": 258,
         "end": 267
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T2",
       "canon:span": {
         "start": 1152,
         "end": 1161
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34970255_causative-agent_0001550#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

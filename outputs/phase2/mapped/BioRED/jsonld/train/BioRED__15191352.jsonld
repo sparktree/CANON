@@ -1,0 +1,775 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/15191352",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "train",
+  "canon:pmid": "15191352",
+  "canon:title": "Severe form of thyroid hormone resistance in a patient with homozygous/hemizygous mutation of T3 receptor gene.",
+  "canon:abstract": "Resistance to thyroid hormone syndrome (RTH) is a rare disorder, usually inherited as an autosomal dominant trait. Patients with RTH are usually euthyroid but can occasionally present with signs and symptoms of thyrotoxicosis or rarely with hypothyroidism. Affected individuals are usually heterozygous for mutations in the thyroid hormone receptor beta gene (TR-beta). We present a patient with RTH found to be homo-/hemizygous for a mutation in the TR-beta gene. The single nucleotide substitution I280S (1123T-->G) was present either on both alleles or in a hemizygous form with complete deletion of the second allele. The I280S mutation was recently reported in a heterozygous patient. The severe phenotype with seriously impaired intellectual development, hyperkinetic behaviour, tachycardia, hearing and visual impairment is probably due to the dominant negative effect of the I280S mutant protein and the absence of any functional TR-beta.",
+  "canon:text": "Severe form of thyroid hormone resistance in a patient with homozygous/hemizygous mutation of T3 receptor gene. Resistance to thyroid hormone syndrome (RTH) is a rare disorder, usually inherited as an autosomal dominant trait. Patients with RTH are usually euthyroid but can occasionally present with signs and symptoms of thyrotoxicosis or rarely with hypothyroidism. Affected individuals are usually heterozygous for mutations in the thyroid hormone receptor beta gene (TR-beta). We present a patient with RTH found to be homo-/hemizygous for a mutation in the TR-beta gene. The single nucleotide substitution I280S (1123T-->G) was present either on both alleles or in a hemizygous form with complete deletion of the second allele. The I280S mutation was recently reported in a heterozygous patient. The severe phenotype with seriously impaired intellectual development, hyperkinetic behaviour, tachycardia, hearing and visual impairment is probably due to the dominant negative effect of the I280S mutant protein and the absence of any functional TR-beta.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T1",
+      "canon:span": {
+        "start": 15,
+        "end": 41
+      },
+      "canon:surface": "thyroid hormone resistance",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018382",
+      "canon:sourceNotation": "D018382",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/237559000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T2",
+      "canon:span": {
+        "start": 47,
+        "end": 54
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T3",
+      "canon:span": {
+        "start": 94,
+        "end": 105
+      },
+      "canon:surface": "T3 receptor",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/7068",
+      "canon:sourceNotation": "7068",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T4",
+      "canon:span": {
+        "start": 112,
+        "end": 150
+      },
+      "canon:surface": "Resistance to thyroid hormone syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018382",
+      "canon:sourceNotation": "D018382",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/237559000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T5",
+      "canon:span": {
+        "start": 152,
+        "end": 155
+      },
+      "canon:surface": "RTH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018382",
+      "canon:sourceNotation": "D018382",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/237559000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T6",
+      "canon:span": {
+        "start": 227,
+        "end": 235
+      },
+      "canon:surface": "Patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T7",
+      "canon:span": {
+        "start": 241,
+        "end": 244
+      },
+      "canon:surface": "RTH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018382",
+      "canon:sourceNotation": "D018382",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/237559000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T8",
+      "canon:span": {
+        "start": 323,
+        "end": 337
+      },
+      "canon:surface": "thyrotoxicosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013971",
+      "canon:sourceNotation": "D013971",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/90739004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T9",
+      "canon:span": {
+        "start": 353,
+        "end": 367
+      },
+      "canon:surface": "hypothyroidism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007037",
+      "canon:sourceNotation": "D007037",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/40930008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T10",
+      "canon:span": {
+        "start": 436,
+        "end": 465
+      },
+      "canon:surface": "thyroid hormone receptor beta",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/7068",
+      "canon:sourceNotation": "7068",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T11",
+      "canon:span": {
+        "start": 472,
+        "end": 479
+      },
+      "canon:surface": "TR-beta",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/7068",
+      "canon:sourceNotation": "7068",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T12",
+      "canon:span": {
+        "start": 495,
+        "end": 502
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T13",
+      "canon:span": {
+        "start": 508,
+        "end": 511
+      },
+      "canon:surface": "RTH",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018382",
+      "canon:sourceNotation": "D018382",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/237559000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T14",
+      "canon:span": {
+        "start": 563,
+        "end": 570
+      },
+      "canon:surface": "TR-beta",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/7068",
+      "canon:sourceNotation": "7068",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T15",
+      "canon:span": {
+        "start": 612,
+        "end": 617
+      },
+      "canon:surface": "I280S",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/p",
+      "canon:sourceNotation": "p|SUB|I|280|S",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T16",
+      "canon:span": {
+        "start": 619,
+        "end": 628
+      },
+      "canon:surface": "1123T-->G",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/g",
+      "canon:sourceNotation": "g|SUB|T|1123|G",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T17",
+      "canon:span": {
+        "start": 738,
+        "end": 743
+      },
+      "canon:surface": "I280S",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/p",
+      "canon:sourceNotation": "p|SUB|I|280|S",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T18",
+      "canon:span": {
+        "start": 793,
+        "end": 800
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T19",
+      "canon:span": {
+        "start": 838,
+        "end": 871
+      },
+      "canon:surface": "impaired intellectual development",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008607",
+      "canon:sourceNotation": "D008607",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Mental or Behavioral Dysfunction"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/110359009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T20",
+      "canon:span": {
+        "start": 873,
+        "end": 885
+      },
+      "canon:surface": "hyperkinetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006948",
+      "canon:sourceNotation": "D006948",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome",
+        "Mental or Behavioral Dysfunction"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/44548000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T21",
+      "canon:span": {
+        "start": 897,
+        "end": 908
+      },
+      "canon:surface": "tachycardia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013610",
+      "canon:sourceNotation": "D013610",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Finding"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/86651002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T22",
+      "canon:span": {
+        "start": 910,
+        "end": 939
+      },
+      "canon:surface": "hearing and visual impairment",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006311",
+      "canon:sourceNotation": "D006311,D014786",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/20364005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T23",
+      "canon:span": {
+        "start": 995,
+        "end": 1000
+      },
+      "canon:surface": "I280S",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/p",
+      "canon:sourceNotation": "p|SUB|I|280|S",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T24",
+      "canon:span": {
+        "start": 1050,
+        "end": 1057
+      },
+      "canon:surface": "TR-beta",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/7068",
+      "canon:sourceNotation": "7068",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T19"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T15"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T21"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T15"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T20"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T15"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T19"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T21"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T20"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-7",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T19"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-8",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T21"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-9",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T20"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-10",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T16"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-11",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T15"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15191352#relation-12",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15191352#mention-T3"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

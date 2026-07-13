@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Clinical Trials of the BTK Inhibitors Ibrutinib and Acalabrutinib in Human Diseases Beyond B Cell Malignancies. The BTK inhibitors ibrutinib and acalabrutinib are FDA-approved drugs for the treatment of B cell malignances. Both drugs have demonstrated clinical efficacy and safety profiles superior to chemoimmunotherapy regimens in patients with chronic lymphocytic leukemia. Mounting preclinical and clinical evidence indicates that both ibrutinib and acalabrutinib are versatile and have direct effects on many immune cell subsets as well as other cell types beyond B cells. The versatility and immunomodulatory effects of both drugs have been exploited to expand their therapeutic potential in a wide variety of human diseases. Over 470 clinical trials are currently registered at ClinicalTrials.gov to test the efficacy of ibrutinib or acalabrutinib not only in almost every type of B cell malignancies, but also in hematological malignancies of myeloid cells and T cells, solid tumors, chronic graft versus host disease (cGHVD), autoimmune diseases, allergy and COVID-19 (http:www.clinicaltrials.gov). In this review, we present brief discussions of the clinical trials and relevant key preclinical evidence of ibrutinib and acalabrutinib as monotherapies or as part of combination therapies for the treatment of human diseases beyond B cell malignancies. Adding to the proven efficacy of ibrutinib for cGVHD, preliminary results of clinical trials have shown promising efficacy of ibrutinib or acalabrutinib for certain T cell malignancies, allergies and severe COVID-19. However, both BTK inhibitors have no or limited efficacy for refractory or recurrent solid tumors. These clinical data together with additional pending results from ongoing trials will provide valuable information to guide the design and improvement of future trials, including optimization of combination regimens and dosing sequences as well as better patient stratification and more efficient delivery strategies. Such information will further advance the precise implementation of BTK inhibitors into the clinical toolbox for the treatment of different human diseases.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T1",
       "canon:span": {
         "start": 1056,
         "end": 1063
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T2",
       "canon:span": {
         "start": 38,
         "end": 47
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34778053_causative-agent_0001507#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

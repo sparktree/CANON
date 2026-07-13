@@ -1,0 +1,517 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/16321363",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "train",
+  "canon:pmid": "16321363",
+  "canon:title": "Congenital disorder of glycosylation Ic due to a de novo deletion and an hALG-6 mutation.",
+  "canon:abstract": "We describe a new cause of congenital disorder of glycosylation-Ic (CDG-Ic) in a young girl with a rather mild CDG phenotype. Her cells accumulated lipid-linked oligosaccharides lacking three glucose residues, and sequencing of the ALG6 gene showed what initially appeared to be a homozygous novel point mutation (338G>A). However, haplotype analysis showed that the patient does not carry any paternal DNA markers extending 33kb in the telomeric direction from the ALG6 region, and microsatellite analysis extended the abnormal region to at least 2.5Mb. We used high-resolution karyotyping to confirm a deletion (10-12Mb) [del(1)(p31.2p32.3)] and found no structural abnormalities in the father, suggesting a de novo event. Our findings extend the causes of CDG to larger DNA deletions and identify the first Japanese CDG-Ic mutation.",
+  "canon:text": "Congenital disorder of glycosylation Ic due to a de novo deletion and an hALG-6 mutation. We describe a new cause of congenital disorder of glycosylation-Ic (CDG-Ic) in a young girl with a rather mild CDG phenotype. Her cells accumulated lipid-linked oligosaccharides lacking three glucose residues, and sequencing of the ALG6 gene showed what initially appeared to be a homozygous novel point mutation (338G>A). However, haplotype analysis showed that the patient does not carry any paternal DNA markers extending 33kb in the telomeric direction from the ALG6 region, and microsatellite analysis extended the abnormal region to at least 2.5Mb. We used high-resolution karyotyping to confirm a deletion (10-12Mb) [del(1)(p31.2p32.3)] and found no structural abnormalities in the father, suggesting a de novo event. Our findings extend the causes of CDG to larger DNA deletions and identify the first Japanese CDG-Ic mutation.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 39
+      },
+      "canon:surface": "Congenital disorder of glycosylation Ic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C535741",
+      "canon:sourceNotation": "C535741",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/709412006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T2",
+      "canon:span": {
+        "start": 73,
+        "end": 79
+      },
+      "canon:surface": "hALG-6",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/29929",
+      "canon:sourceNotation": "29929",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T3",
+      "canon:span": {
+        "start": 117,
+        "end": 156
+      },
+      "canon:surface": "congenital disorder of glycosylation-Ic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C535741",
+      "canon:sourceNotation": "C535741",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/709412006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T4",
+      "canon:span": {
+        "start": 158,
+        "end": 164
+      },
+      "canon:surface": "CDG-Ic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C535741",
+      "canon:sourceNotation": "C535741",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/709412006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T5",
+      "canon:span": {
+        "start": 201,
+        "end": 204
+      },
+      "canon:surface": "CDG",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018981",
+      "canon:sourceNotation": "D018981",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/238049009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T6",
+      "canon:span": {
+        "start": 238,
+        "end": 267
+      },
+      "canon:surface": "lipid-linked oligosaccharides",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C023023",
+      "canon:sourceNotation": "C023023",
+      "canon:confidence": 0.65,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/3325005",
+      "canon:mappingProperty": "skos:broadMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T7",
+      "canon:span": {
+        "start": 282,
+        "end": 289
+      },
+      "canon:surface": "glucose",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005947",
+      "canon:sourceNotation": "D005947",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Biologically Active Substance",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/67079006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T8",
+      "canon:span": {
+        "start": 322,
+        "end": 326
+      },
+      "canon:surface": "ALG6",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/29929",
+      "canon:sourceNotation": "29929",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T9",
+      "canon:span": {
+        "start": 404,
+        "end": 410
+      },
+      "canon:surface": "338G>A",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs768372697",
+      "canon:sourceNotation": "rs768372697",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T10",
+      "canon:span": {
+        "start": 457,
+        "end": 464
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T11",
+      "canon:span": {
+        "start": 556,
+        "end": 560
+      },
+      "canon:surface": "ALG6",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/29929",
+      "canon:sourceNotation": "29929",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T12",
+      "canon:span": {
+        "start": 694,
+        "end": 712
+      },
+      "canon:surface": "deletion (10-12Mb)",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/c",
+      "canon:sourceNotation": "c|DEL||10-12MB",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T13",
+      "canon:span": {
+        "start": 714,
+        "end": 732
+      },
+      "canon:surface": "del(1)(p31.2p32.3)",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/c",
+      "canon:sourceNotation": "c|DEL|p31.2_p32.3|",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T14",
+      "canon:span": {
+        "start": 849,
+        "end": 852
+      },
+      "canon:surface": "CDG",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018981",
+      "canon:sourceNotation": "D018981",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/238049009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T15",
+      "canon:span": {
+        "start": 909,
+        "end": 915
+      },
+      "canon:surface": "CDG-Ic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C535741",
+      "canon:sourceNotation": "C535741",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/709412006",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T9"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T1"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T13"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T5"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T13"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T1"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T12"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T5"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T12"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T1"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T5"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/16321363#relation-7",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/16321363#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

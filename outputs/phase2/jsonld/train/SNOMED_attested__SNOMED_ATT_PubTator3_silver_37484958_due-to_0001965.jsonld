@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Efficacy and safety of high-dose intramuscular vitamin D2 injection in type 2 diabetes mellitus with distal symmetric polyneuropathy combined with vitamin D insufficiency: study protocol for a multicenter, randomized, double-blinded, and placebo-controlled trial. Background: Distal symmetric polyneuropathy (DSPN) is the most common chronic complication of type 2 diabetes mellitus (T2DM). DSPN may lead to more serious complications, such as diabetic foot ulcer, amputation, and reduced life expectancy. Observational studies have suggested that vitamin D deficiency may be associated with the development of DSPN in T2DM. However, interventional studies have found that low-dose vitamin D supplementation does not significantly improve neuropathy in DSPN. This study aims to evaluate the efficacy and safety of intramuscular injection of high-dose vitamin D (HDVD) in T2DM with DSPN combined with vitamin D insufficiency. Methods and analysis: We will conduct a multicenter, randomized, double-blinded, and placebo-controlled trial in four large hospitals. All eligible participants will be randomly assigned to either the vitamin D2 supplement or placebo control group and injected intramuscularly monthly for 3 months. Additionally, anthropometric measurements and clinical data will be collected at baseline and 3 months. Adverse events will be collected at 1, 2, and 3 months. The primary outcome measure is the change in the mean Michigan Neuropathy Screening Instrument (MNSI) score at baseline and 3 months post-intervention. We will use the gold-standard liquid chromatography-tandem mass spectrometry method to distinguish between 25(OH)D2 and 25(OH)D3 levels. The MNSN score before the intervention will be used as a covariate to compare the changes between both groups before and after the intervention, and the analysis of covariance will be used to analyze the change in the MNSI score after HDVD supplementation. Discussion: Glycemic control alone does not prevent the progression of DSPN in T2DM. Some studies have suggested that vitamin D may improve DSPN; however, the exact dose, method, and duration of vitamin D supplementation are unknown. Additionally, neuropathy repair requires HDVD supplementation to sustain adequate vitamin D levels. This once-a-month intramuscular method avoids daily medication; therefore, compliance is high. This study will be the first randomized controlled trial in China to analyze the efficacy and safety of HDVD supplementation for patients with T2DM and DSPN and will provide new ideas for pharmacological research and clinical treatment of diabetic neuropathy. Clinical trial registration: https://www.chictr.org.cn/, identifier ChiCTR2200062266.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T1",
       "canon:span": {
         "start": 2598,
         "end": 2617
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T2",
       "canon:span": {
         "start": 71,
         "end": 95
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37484958_due-to_0001965#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Cardiac Tamponade as Initial Presentation of Systemic Lupus Erythematosus in Third-Trimester Pregnancy. BACKGROUND Systemic lupus erythematosus (SLE) is a common autoimmune disorder in women of childbearing age. It can present during pregnancy and may lead to poor maternal and fetal outcomes with a higher risk of preterm birth and pre-eclampsia. Women are at a higher risk of lupus flares during pregnancy, especially if undiagnosed or disease is poorly controlled. Cardiac tamponade is a rare complication of SLE and can be fatal. CASE REPORT A 21-year-old primigravida African-American female with a history of asthma presented with progressive pleuritic left shoulder pain. She had a recent history of sore throat, facial rash, and depressed mood after sun exposure. Work-up was strongly positive for antinuclear antigen, anti-smith, anti-smith/ribonucleoprotein, anti-chromatin, anti-SSA, anti-SSB, anti-dsDNA, and low C3. Echocardiogram showed hemodynamically stable cardiac tamponade. Patient also had proteinuria and hypertension attributed to pre-eclampsia. However, a renal biopsy confirmed lupus nephritis. The patient was treated with pericardiocentesis, prednisone, azathioprine, and hydroxychloroquine. There was significant clinical improvement with resolution of cardiac tamponade and improvement in renal function. CONCLUSIONS Cardiac tamponade is a rare and life-threatening manifestation of SLE. Prompt work-up and treatment with immunosuppressants and pericardiocentesis is needed to improve maternal and fetal outcomes. SLE patients are at a higher likelihood of exacerbations of the disease during pregnancy. It also important to rule out lupus nephritis in an SLE patient with pre-eclampsia. This report has shown the importance of accurate diagnosis of SLE in pregnancy and the appropriate management to ensure the best outcomes for the mother and fetus.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T1",
       "canon:span": {
         "start": 1102,
         "end": 1117
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T2",
       "canon:span": {
         "start": 737,
         "end": 751
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35810325_due-to_0001725#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

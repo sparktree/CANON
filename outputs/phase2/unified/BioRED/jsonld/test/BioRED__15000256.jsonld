@@ -1,0 +1,516 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/15000256",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "test",
+  "canon:pmid": "15000256",
+  "canon:title": "Single-strand conformation polymorphism analysis of the FMR1 gene in autistic and mentally retarded children in Japan.",
+  "canon:abstract": "Fragile X syndrome is one of the most common causes of mental retardation in males, and patients with fragile X syndrome occasionally develop autism. It is usually caused by an expansion of the trinucleotide repeat in the 5'-untranslated region of the FMR1 gene, but in a small number of patients deletions and point mutations have been identified. We screened all 17 exons of the FMR1 gene for mutations in 90 autistic or mentally retarded children using polymerase chain reaction (PCR)-single strand conformation polymorphism (SSCP) analysis. No mutations were found in 76 male patients. However, one female patient was heterozygous for a normal allele and a mutant allele with an A to C substitution at nucleotide 879 in exon 9. This mutation was not found in 50 controls. Reverse transcription-PCR revealed that a large proportion of the mutant transcripts were spliced aberrantly, causing premature termination of the protein synthesis. Although uncommon, point mutations in the FMR1 gene may be a cause of autism and mental retardation in Japanese patients.",
+  "canon:text": "Single-strand conformation polymorphism analysis of the FMR1 gene in autistic and mentally retarded children in Japan. Fragile X syndrome is one of the most common causes of mental retardation in males, and patients with fragile X syndrome occasionally develop autism. It is usually caused by an expansion of the trinucleotide repeat in the 5'-untranslated region of the FMR1 gene, but in a small number of patients deletions and point mutations have been identified. We screened all 17 exons of the FMR1 gene for mutations in 90 autistic or mentally retarded children using polymerase chain reaction (PCR)-single strand conformation polymorphism (SSCP) analysis. No mutations were found in 76 male patients. However, one female patient was heterozygous for a normal allele and a mutant allele with an A to C substitution at nucleotide 879 in exon 9. This mutation was not found in 50 controls. Reverse transcription-PCR revealed that a large proportion of the mutant transcripts were spliced aberrantly, causing premature termination of the protein synthesis. Although uncommon, point mutations in the FMR1 gene may be a cause of autism and mental retardation in Japanese patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T1",
+      "canon:span": {
+        "start": 56,
+        "end": 60
+      },
+      "canon:surface": "FMR1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "2332",
+      "canon:sourceNotation": "2332",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T2",
+      "canon:span": {
+        "start": 69,
+        "end": 77
+      },
+      "canon:surface": "autistic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001321",
+      "canon:sourceNotation": "D001321",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T3",
+      "canon:span": {
+        "start": 82,
+        "end": 99
+      },
+      "canon:surface": "mentally retarded",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008607",
+      "canon:sourceNotation": "D008607",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T4",
+      "canon:span": {
+        "start": 119,
+        "end": 137
+      },
+      "canon:surface": "Fragile X syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D005600",
+      "canon:sourceNotation": "D005600",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T5",
+      "canon:span": {
+        "start": 174,
+        "end": 192
+      },
+      "canon:surface": "mental retardation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008607",
+      "canon:sourceNotation": "D008607",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T6",
+      "canon:span": {
+        "start": 207,
+        "end": 215
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T7",
+      "canon:span": {
+        "start": 221,
+        "end": 239
+      },
+      "canon:surface": "fragile X syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D005600",
+      "canon:sourceNotation": "D005600",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T8",
+      "canon:span": {
+        "start": 261,
+        "end": 267
+      },
+      "canon:surface": "autism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001321",
+      "canon:sourceNotation": "D001321",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T9",
+      "canon:span": {
+        "start": 371,
+        "end": 375
+      },
+      "canon:surface": "FMR1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "2332",
+      "canon:sourceNotation": "2332",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T10",
+      "canon:span": {
+        "start": 407,
+        "end": 415
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T11",
+      "canon:span": {
+        "start": 500,
+        "end": 504
+      },
+      "canon:surface": "FMR1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "2332",
+      "canon:sourceNotation": "2332",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T12",
+      "canon:span": {
+        "start": 530,
+        "end": 538
+      },
+      "canon:surface": "autistic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001321",
+      "canon:sourceNotation": "D001321",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T13",
+      "canon:span": {
+        "start": 542,
+        "end": 559
+      },
+      "canon:surface": "mentally retarded",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008607",
+      "canon:sourceNotation": "D008607",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T14",
+      "canon:span": {
+        "start": 699,
+        "end": 707
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T15",
+      "canon:span": {
+        "start": 729,
+        "end": 736
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T16",
+      "canon:span": {
+        "start": 802,
+        "end": 839
+      },
+      "canon:surface": "A to C substitution at nucleotide 879",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "rs782013865",
+      "canon:sourceNotation": "rs782013865",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T17",
+      "canon:span": {
+        "start": 1103,
+        "end": 1107
+      },
+      "canon:surface": "FMR1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "2332",
+      "canon:sourceNotation": "2332",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T18",
+      "canon:span": {
+        "start": 1131,
+        "end": 1137
+      },
+      "canon:surface": "autism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001321",
+      "canon:sourceNotation": "D001321",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T19",
+      "canon:span": {
+        "start": 1142,
+        "end": 1160
+      },
+      "canon:surface": "mental retardation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008607",
+      "canon:sourceNotation": "D008607",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T20",
+      "canon:span": {
+        "start": 1173,
+        "end": 1181
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T2"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T3"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T4"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T2"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T3"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15000256#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15000256#mention-T4"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    }
+  ]
+}

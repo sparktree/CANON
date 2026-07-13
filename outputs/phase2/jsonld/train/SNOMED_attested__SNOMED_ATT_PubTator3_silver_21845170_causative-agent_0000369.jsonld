@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Features of microglia and neuroinflammation relevant to environmental exposure and neurotoxicity. Microglia are resident cells of the brain involved in regulatory processes critical for development, maintenance of the neural environment, injury and repair. They belong to the monocytic-macrophage lineage and serve as brain immune cells to orchestrate innate immune responses; however, they are distinct from other tissue macrophages due to their relatively quiescent phenotype and tight regulation by the CNS microenvironment. Microglia actively survey the surrounding parenchyma and respond rapidly to changes such that any disruption to neural architecture or function can contribute to the loss in regulation of the microglia phenotype. In many models of neurodegeneration and neurotoxicity, early events of synaptic degeneration and neuronal loss are accompanied by an inflammatory response including activation of microglia, perivascular monocytes, and recruitment of leukocytes. In culture, microglia have been shown to be capable of releasing several potentially cytotoxic substances, such as reactive oxygen intermediates, nitric oxide, proteases, arachidonic acid derivatives, excitatory amino acids, and cytokines; however, they also produce various neurotrophic factors and quench damage from free radicals and excitotoxins. As the primary source for pro-inflammatory cytokines, microglia are implicated as pivotal mediators of neuroinflammation and can induce or modulate a broad spectrum of cellular responses. Neuroinflammation should be considered as a balanced network of processes whereby subtle modifications can shift the cells toward disparate outcomes. For any evaluation of neuroinflammation and microglial responses, within the framework of neurotoxicity or degeneration, one key question in determining the consequence of neuroinflammation is whether the response is an initiating event or the consequence of tissue damage. As examples of environmental exposure-related neuroinflammation in the literature, we provide an evaluation of data on manganese and diesel exhaust particles.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T1",
       "canon:span": {
         "start": 83,
         "end": 96
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T2",
       "canon:span": {
         "start": 1157,
         "end": 1173
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21845170_causative-agent_0000369#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

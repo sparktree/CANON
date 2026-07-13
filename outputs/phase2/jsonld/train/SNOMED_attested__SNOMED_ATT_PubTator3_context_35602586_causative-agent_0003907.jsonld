@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Antioxidant Properties, Phytoactive Compounds and Potential Protective Action of Salvia officinalis Flowers Against Combined Gastro-Intestinal Ulcer and Diarrhea Experimentally Induced in Rat. The present study was conducted to investigate the protective action of Salvia officinalis flowers aqueous extract (SOFAE) against combined gastro-intestinal (GI) disorders-induced by ethanol and castor oil administration in rats. Adult male Wistar rats were divided into seven groups of ten each and various doses of SOFAE (50, 100, and 200 mg kg-1, b.w., p.o.) and sulfasalazine (100 mg kg-1, b.w., p.o.) were daily administrated during 15 days. After, animals were intoxicated with a single oral administration of ethanol (4 g kg-1, b.w., p.o.) and castor oil (5 mL kg-1, b.w., p.o.). We found that SOFAE contains several phytoactive compounds with a strong ABTS scavenging ability. In vivo, we showed that SOFAE protected against EtOH/CO-induced macroscopic and histological alterations in GI tract accompanied by intestinal fluid accumulation and gastric juice decrease. SOFAE significantly counteracted lipoperoxydation increase and reversed the depletion of both enzymatic and non-enzymatic antioxidants. More importantly, SOFAE significantly reduced the levels of inflammatory markers (CRP and ALP) in plasma and mucosal GI tract. In conclusion, our data clearly indicate that the SOFAE exerted a potential protective effect against EtOH-induced peptic ulcer combined with CO-induced diarrhea in rats. These effects could be associated with its antioxidant and anti-inflammatory properties.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T1",
       "canon:span": {
         "start": 661,
         "end": 672
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T2",
       "canon:span": {
         "start": 377,
         "end": 384
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

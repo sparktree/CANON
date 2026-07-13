@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "The hyperornithinemia-hyperammonemia-homocitrullinuria syndrome. BACKGROUND: Hyperornithinemia-hyperammonemia-homocitrullinuria (HHH) syndrome is a rare autosomal recessive disorder of the urea cycle. HHH has a panethnic distribution, with a major prevalence in Canada, Italy and Japan. Acute clinical signs include intermittent episodes of vomiting, confusion or coma and hepatitis-like attacks. Alternatively, patients show a chronic course with aversion for protein rich foods, developmental delay/intellectual disability, myoclonic seizures, ataxia and pyramidal dysfunction. HHH syndrome is caused by impaired ornithine transport across the inner mitochondrial membrane due to mutations in SLC25A15 gene, which encodes for the mitochondrial ornithine carrier ORC1. The diagnosis relies on clinical signs and the peculiar metabolic triad of hyperammonemia, hyperornithinemia, and urinary excretion of homocitrulline. HHH syndrome enters in the differential diagnosis with other inherited or acquired conditions presenting with hyperammonemia. METHODS: A systematic review of publications reporting patients with HHH syndrome was performed. RESULTS: We retrospectively evaluated the clinical, biochemical and genetic profile of 111 HHH syndrome patients, 109 reported in 61 published articles, and two unpublished cases. Lethargy and coma are frequent at disease onset, whereas pyramidal dysfunction and cognitive/behavioural abnormalities represent the most common clinical features in late-onset cases or during the disease course. Two common mutations, F188del and R179* account respectively for about 30% and 15% of patients with the HHH syndrome. Interestingly, the majority of mutations are located in residues that have side chains protruding into the internal pore of ORC1, suggesting their possible interference with substrate translocation. Acute and chronic management consists in the control of hyperammonemia with protein-restricted diet supplemented with citrulline/arginine and ammonia scavengers. Prognosis of HHH syndrome is variable, ranging from a severe course with disabling manifestations to milder variants compatible with an almost normal life. CONCLUSIONS: This paper provides detailed information on the clinical, metabolic and genetic profiles of all HHH syndrome patients published to date. The clinical phenotype is extremely variable and its severity does not correlate with the genotype or with recorded ammonium/ornithine plasma levels. Early intervention allows almost normal life span but the prognosis is variable, suggesting the need for a better understanding of the still unsolved pathophysiology of the disease.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T1",
       "canon:span": {
         "start": 373,
         "end": 382
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T2",
       "canon:span": {
         "start": 615,
         "end": 624
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25874378_causative-agent_0000579#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

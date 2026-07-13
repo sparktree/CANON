@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Occupational neurotoxic diseases in taiwan. Occupational neurotoxic diseases have become increasingly common in Taiwan due to industrialization. Over the past 40 years, Taiwan has transformed from an agricultural society to an industrial society. The most common neurotoxic diseases also changed from organophosphate poisoning to heavy metal intoxication, and then to organic solvent and semiconductor agent poisoning. The nervous system is particularly vulnerable to toxic agents because of its high metabolic rate. Neurological manifestations may be transient or permanent, and may range from cognitive dysfunction, cerebellar ataxia, Parkinsonism, sensorimotor neuropathy and autonomic dysfunction to neuromuscular junction disorders. This study attempts to provide a review of the major outbreaks of occupational neurotoxins from 1968 to 2012. A total of 16 occupational neurotoxins, including organophosphates, toxic gases, heavy metals, organic solvents, and other toxic chemicals, were reviewed. Peer-reviewed articles related to the electrophysiology, neuroimaging, treatment and long-term follow up of these neurotoxic diseases were also obtained. The heavy metals involved consisted of lead, manganese, organic tin, mercury, arsenic, and thallium. The organic solvents included n-hexane, toluene, mixed solvents and carbon disulfide. Toxic gases such as carbon monoxide, and hydrogen sulfide were also included, along with toxic chemicals including polychlorinated biphenyls, tetramethylammonium hydroxide, organophosphates, and dimethylamine borane. In addition we attempted to correlate these events to the timeline of industrial development in Taiwan. By researching this topic, the hope is that it may help other developing countries to improve industrial hygiene and promote occupational safety and health care during the process of industrialization.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T1",
       "canon:span": {
         "start": 13,
         "end": 32
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T2",
       "canon:span": {
         "start": 1364,
         "end": 1379
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000426#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

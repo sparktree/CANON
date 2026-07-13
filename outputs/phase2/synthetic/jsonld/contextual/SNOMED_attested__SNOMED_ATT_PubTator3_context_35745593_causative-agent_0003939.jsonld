@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Pharmacovigilance Signals of the Opioid Epidemic over 10 Years: Data Mining Methods in the Analysis of Pharmacovigilance Datasets Collecting Adverse Drug Reactions (ADRs) Reported to EudraVigilance (EV) and the FDA Adverse Event Reporting System (FAERS). In the past twenty years, the consumption of opioid medications has reached significant proportions, leading to a rise in drug misuse and abuse and increased opioid dependence and related fatalities. Thus, the purpose of this study was to determine whether there are pharmacovigilance signals of abuse, misuse, and dependence and their nature for the following prescription opioids: codeine, dihydrocodeine, fentanyl, oxycodone, pentazocine, and tramadol. Both the pharmacovigilance datasets EudraVigilance (EV) and the FDA Adverse Events Reporting System (FAERS) were analyzed to identify and describe possible misuse-/abuse-/dependence-related issues. A descriptive analysis of the selected Adverse Drug Reactions (ADRs) was performed, and pharmacovigilance signal measures (i.e., reporting odds ratio, proportional reporting ratio, information component, and empirical Bayesian geometric mean) were computed for preferred terms (PTs) of abuse, misuse, dependence, and withdrawal, as well as PTs eventually related to them (e.g., aggression). From 2003 to 2018, there was an increase in ADR reports for the selected opioids in both datasets. Overall, 16,506 and 130,293 individual ADRs for the selected opioids were submitted to EV and FAERS, respectively. Compared with other opioids, abuse concerns were mostly recorded in relation to fentanyl and oxycodone, while tramadol and oxycodone were more strongly associated with drug dependence and withdrawal. Benzodiazepines, antidepressants, other opioids, antihistamines, recreational drugs (e.g., cocaine and alcohol), and several new psychoactive substances, including mitragynine and cathinones, were the most commonly reported concomitant drugs. ADRs reports in pharmacovigilance databases confirmed the availability of data on the abuse and dependence of prescription opioids and should be considered a resource for monitoring and preventing such issues. Psychiatrists and clinicians prescribing opioids should be aware of their misuse and dependence liability and effects that may accompany their use, especially together with concomitant drugs.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T1",
       "canon:span": {
         "start": 149,
         "end": 163
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T2",
       "canon:span": {
         "start": 673,
         "end": 682
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35745593_causative-agent_0003939#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Primum non nocere: an evolutionary analysis of whether antidepressants do more harm than good. Antidepressant medications are the first-line treatment for people meeting current diagnostic criteria for major depressive disorder. Most antidepressants are designed to perturb the mechanisms that regulate the neurotransmitter serotonin - an evolutionarily ancient biochemical found in plants, animals, and fungi. Many adaptive processes evolved to be regulated by serotonin, including emotion, development, neuronal growth and death, platelet activation and the clotting process, attention, electrolyte balance, and reproduction. It is a principle of evolutionary medicine that the disruption of evolved adaptations will degrade biological functioning. Because serotonin regulates many adaptive processes, antidepressants could have many adverse health effects. For instance, while antidepressants are modestly effective in reducing depressive symptoms, they increase the brain's susceptibility to future episodes after they have been discontinued. Contrary to a widely held belief in psychiatry, studies that purport to show that antidepressants promote neurogenesis are flawed because they all use a method that cannot, by itself, distinguish between neurogenesis and neuronal death. In fact, antidepressants cause neuronal damage and mature neurons to revert to an immature state, both of which may explain why antidepressants also cause neurons to undergo apoptosis (programmed death). Antidepressants can also cause developmental problems, they have adverse effects on sexual and romantic life, and they increase the risk of hyponatremia (low sodium in the blood plasma), bleeding, stroke, and death in the elderly. Our review supports the conclusion that antidepressants generally do more harm than good by disrupting a number of adaptive processes regulated by serotonin. However, there may be specific conditions for which their use is warranted (e.g., cancer, recovery from stroke). We conclude that altered informed consent practices and greater caution in the prescription of antidepressants are warranted.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T1",
       "canon:span": {
         "start": 202,
         "end": 227
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T2",
       "canon:span": {
         "start": 324,
         "end": 333
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T3",
       "canon:span": {
         "start": 462,
         "end": 471
@@ -73,7 +152,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T4",
       "canon:span": {
         "start": 505,
         "end": 530
@@ -92,7 +171,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T5",
       "canon:span": {
         "start": 759,
         "end": 768
@@ -113,7 +192,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T6",
       "canon:span": {
         "start": 931,
         "end": 950
@@ -134,7 +213,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T7",
       "canon:span": {
         "start": 1268,
         "end": 1282
@@ -153,7 +232,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T8",
       "canon:span": {
         "start": 1315,
         "end": 1330
@@ -172,7 +251,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T9",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T9",
       "canon:span": {
         "start": 1480,
         "end": 1485
@@ -193,7 +272,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T10",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T10",
       "canon:span": {
         "start": 1628,
         "end": 1640
@@ -214,7 +293,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T11",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T11",
       "canon:span": {
         "start": 1646,
         "end": 1652
@@ -235,7 +314,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T12",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T12",
       "canon:span": {
         "start": 1675,
         "end": 1683
@@ -256,7 +335,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T13",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T13",
       "canon:span": {
         "start": 1685,
         "end": 1691
@@ -277,7 +356,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T14",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T14",
       "canon:span": {
         "start": 1697,
         "end": 1702
@@ -298,7 +377,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T15",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T15",
       "canon:span": {
         "start": 1866,
         "end": 1875
@@ -319,7 +398,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T16",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T16",
       "canon:span": {
         "start": 1959,
         "end": 1965
@@ -340,7 +419,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T17",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T17",
       "canon:span": {
         "start": 1981,
         "end": 1987
@@ -363,12 +442,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T2"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T2"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/22536191#mention-T4"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/22536191#mention-T4"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",

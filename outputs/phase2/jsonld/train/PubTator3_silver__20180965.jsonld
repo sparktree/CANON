@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Buccal alterations in diabetes mellitus. Long standing hyperglycaemia besides damaging the kidneys, eyes, nerves, blood vessels, heart, can also impair the function of the salivary glands leading to a reduction in the salivary flow. When salivary flow decreases, as a consequence of an acute hyperglycaemia, many buccal or oral alterations can occur such as: a) increased concentration of mucin and glucose; b) impaired production and/or action of many antimicrobial factors; c) absence of a metalloprotein called gustin, that contains zinc and is responsible for the constant maturation of taste papillae; d) bad taste; e) oral candidiasis f) increased cells exfoliation after contact, because of poor lubrication; g) increased proliferation of pathogenic microorganisms; h) coated tongue; i) halitosis; and many others may occur as a consequence of chronic hyperglycaemia: a) tongue alterations, generally a burning mouth; b) periodontal disease; c) white spots due to demineralization in the teeth; d) caries; e) delayed healing of wounds; f) greater tendency to infections; g) lichen planus; h) mucosa ulcerations. Buccal alterations found in diabetic patients, although not specific of this disease, have its incidence and progression increased when an inadequate glycaemic control is present.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T1",
       "canon:span": {
         "start": 22,
         "end": 39
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T2",
       "canon:span": {
         "start": 55,
         "end": 69
@@ -48,7 +127,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T3",
       "canon:span": {
         "start": 292,
         "end": 306
@@ -65,7 +144,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T4",
       "canon:span": {
         "start": 399,
         "end": 406
@@ -86,7 +165,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T5",
       "canon:span": {
         "start": 514,
         "end": 520
@@ -105,7 +184,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T6",
       "canon:span": {
         "start": 591,
         "end": 596
@@ -126,7 +205,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T7",
       "canon:span": {
         "start": 614,
         "end": 619
@@ -147,7 +226,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T8",
       "canon:span": {
         "start": 624,
         "end": 640
@@ -168,7 +247,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T9",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T9",
       "canon:span": {
         "start": 794,
         "end": 803
@@ -187,7 +266,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T10",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T10",
       "canon:span": {
         "start": 859,
         "end": 873
@@ -204,7 +283,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T11",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T11",
       "canon:span": {
         "start": 928,
         "end": 947
@@ -223,7 +302,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T12",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T12",
       "canon:span": {
         "start": 1005,
         "end": 1011
@@ -244,7 +323,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T13",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T13",
       "canon:span": {
         "start": 1066,
         "end": 1076
@@ -263,7 +342,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T14",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T14",
       "canon:span": {
         "start": 1081,
         "end": 1094
@@ -282,7 +361,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T15",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T15",
       "canon:span": {
         "start": 1099,
         "end": 1117
@@ -303,7 +382,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T16",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T16",
       "canon:span": {
         "start": 1147,
         "end": 1155
@@ -324,7 +403,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T17",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T17",
       "canon:span": {
         "start": 1156,
         "end": 1164
@@ -345,12 +424,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T6"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T6"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/20180965#mention-T5"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/20180965#mention-T5"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",

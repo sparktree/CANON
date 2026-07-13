@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "New insight into the management of renal excretion and hyperuricemia: Potential therapeutic strategies with natural bioactive compounds. Hyperuricemia is the result of increased production and/or underexcretion of uric acid. Hyperuricemia has been epidemiologically associated with multiple comorbidities, including metabolic syndrome, gout with long-term systemic inflammation, chronic kidney disease, urolithiasis, cardiovascular disease, hypertension, rheumatoid arthritis, dyslipidemia, diabetes/insulin resistance and increased oxidative stress. Dysregulation of xanthine oxidoreductase (XOD), the enzyme that catalyzes uric acid biosynthesis primarily in the liver, and urate transporters that reabsorb urate in the renal proximal tubules (URAT1, GLUT9, OAT4 and OAT10) and secrete urate (ABCG2, OAT1, OAT3, NPT1, and NPT4) in the renal tubules and intestine, is a major cause of hyperuricemia, along with variations in the genes encoding these proteins. The first-line therapeutic drugs used to lower serum uric acid levels include XOD inhibitors that limit uric acid biosynthesis and uricosurics that decrease urate reabsorption in the renal proximal tubules and increase urate excretion into the urine and intestine via urate transporters. However, long-term use of high doses of these drugs induces acute kidney disease, chronic kidney disease and liver toxicity. Therefore, there is an urgent need for new nephroprotective drugs with improved safety profiles and tolerance. The current systematic review summarizes the characteristics of major urate transporters, the mechanisms underlying the pathogenesis of hyperuricemia, and the regulation of uric acid biosynthesis and transport. Most importantly, this review highlights the potential mechanisms of action of some naturally occurring bioactive compounds with antihyperuricemic and nephroprotective potential isolated from various medicinal plants.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T1",
       "canon:span": {
         "start": 1358,
         "end": 1372
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T2",
       "canon:span": {
         "start": 214,
         "end": 223
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36483739_causative-agent_0004137#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

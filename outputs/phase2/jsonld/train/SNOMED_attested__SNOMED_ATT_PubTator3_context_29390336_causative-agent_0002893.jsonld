@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Hemophagocytic lymphohistiocytosis complicated by multiorgan failure: A case report. RATIONALE: We present a case of hemophagocytic lymphohistiocytosis (HLH) with severe pulmonary complication and acute respiratory distress syndrome (ARDS) hospitalized in our intensive care unit (ICU) in 2014; distinctive trait of this case has been the challenging diagnosis, with a bone marrow biopsy always negative, the severe pulmonary complication with ARDS and severe pulmonary hypertension, and the ferritin temporal kinetics that precisely followed the clinical course of disease. PATIENT CONCERNS: A 32-year-old woman from the Philippines first diagnosed with upper airway infection, was subsequently hospitalized in infectious disease department and treated for community acquired pneumonia. DIAGNOSES: After clinical picture worsened with a profound respiratory insufficiency, the patient was intubated and transferred to our ICU. During this hospitalization, the clinical picture of fever, cutaneous rashes, lymphadenitis, hepatitis, leukopenia, anemia, hyperferritinemia, hypertriglyceridemia, high level of auto-antibodies, and low NK activity suggested an hemophagocytic lymphohistiocytosis syndrome, even if bone marrow biopsy was negative for hemophagocytosis. INTERVENTIONS: Immunosuppressive therapy with dexamethasone and etoposide was started, and the patient was discharged from ICU 4 months after admission. LESSONS: HLH is a rare disorder of the mononuclear phagocytic system, characterized by systemic proliferation of non- neoplastic histiocytes. The diagnosis is often challenging and not all of the diagnostic criteria may be present at the same time; this case shows how complex the diagnosis could be, how hematic ferritin levels could help in following the course of the disease, and the possibility of severe pulmonary complication either due to the disease itself and to possible sovra infections.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T1",
       "canon:span": {
         "start": 1021,
         "end": 1030
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T2",
       "canon:span": {
         "start": 1310,
         "end": 1323
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29390336_causative-agent_0002893#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Keeping an eye on the diabetic foot: The connection between diabetic eye disease and wound healing in the lower extremity. Diabetic eye disease is strongly associated with the development of diabetic foot ulcers (DFUs). DFUs are a common and significant complication of diabetes mellitus (DM) that arise from a combination of micro- and macrovascular compromise. Hyperglycemia and associated metabolic dysfunction in DM lead to impaired wound healing, immune dysregulation, peripheral vascular disease, and diabetic neuropathy that predisposes the lower extremities to repetitive injury and progressive tissue damage that may ultimately necessitate amputation. Diabetic retinopathy (DR) is caused by cumulative damage to the retinal mic-rovasculature from hyperglycemia and other diabetes-associated factors. The severity of DR is closely associated with the development of DFUs and the need for lower extremity revascularization procedures and/or amputation. Like the lower extremity, the eye may also suffer end-organ damage from macrovascular compromise in the form of cranial neuropathies that impair its motility, cause optic neuropathy, or result in partial or complete blindness. Additionally, poor perfusion of the eye can cause ischemic retinopathy leading to the development of proliferative diabetic retinopathy or neovascular glaucoma, both serious, vision-threatening conditions. Finally, diabetic corneal ulcers and DFUs share many aspects of impaired wound healing resulting from neurovascular, sensory, and immunologic compromise. Notably, alterations in serum biomarkers, such as hemoglobin A1c, ceruloplasmin, creatinine, low-density lipoprotein, and high-density lipoprotein, are associated with both DR and DFUs. Monitoring these parameters can aid in prognosticating long-term outcomes and shed light on shared pathogenic mechanisms that lead to end-organ damage. The frequent co-occurrence of diabetic eye and foot problems mandate that patients affected by either condition undergo reciprocal comprehensive eye and foot evaluations in addition to optimizing diabetes management.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T1",
       "canon:span": {
         "start": 507,
         "end": 526
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T2",
       "canon:span": {
         "start": 22,
         "end": 30
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36578874_due-to_0004149#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

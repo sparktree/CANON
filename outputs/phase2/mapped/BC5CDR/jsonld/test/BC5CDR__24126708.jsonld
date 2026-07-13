@@ -1,0 +1,401 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/24126708",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "test",
+  "canon:pmid": "24126708",
+  "canon:title": "Association of common genetic variants of HOMER1 gene with levodopa adverse effects in Parkinson's disease patients.",
+  "canon:abstract": "Levodopa is the most effective symptomatic therapy for Parkinson's disease, but its chronic use could lead to chronic adverse outcomes, such as motor fluctuations, dyskinesia and visual hallucinations. HOMER1 is a protein with pivotal function in glutamate transmission, which has been related to the pathogenesis of these complications. This study investigates whether polymorphisms in the HOMER1 gene promoter region are associated with the occurrence of the chronic complications of levodopa therapy. A total of 205 patients with idiopathic Parkinson's disease were investigated. Patients were genotyped for rs4704559, rs10942891 and rs4704560 by allelic discrimination with Taqman assays. The rs4704559 G allele was associated with a lower prevalence of dyskinesia (prevalence ratio (PR)=0.615, 95% confidence interval (CI) 0.426-0.887, P=0.009) and visual hallucinations (PR=0.515, 95% CI 0.295-0.899, P=0.020). Our data suggest that HOMER1 rs4704559 G allele has a protective role for the development of levodopa adverse effects.",
+  "canon:text": "Association of common genetic variants of HOMER1 gene with levodopa adverse effects in Parkinson's disease patients. Levodopa is the most effective symptomatic therapy for Parkinson's disease, but its chronic use could lead to chronic adverse outcomes, such as motor fluctuations, dyskinesia and visual hallucinations. HOMER1 is a protein with pivotal function in glutamate transmission, which has been related to the pathogenesis of these complications. This study investigates whether polymorphisms in the HOMER1 gene promoter region are associated with the occurrence of the chronic complications of levodopa therapy. A total of 205 patients with idiopathic Parkinson's disease were investigated. Patients were genotyped for rs4704559, rs10942891 and rs4704560 by allelic discrimination with Taqman assays. The rs4704559 G allele was associated with a lower prevalence of dyskinesia (prevalence ratio (PR)=0.615, 95% confidence interval (CI) 0.426-0.887, P=0.009) and visual hallucinations (PR=0.515, 95% CI 0.295-0.899, P=0.020). Our data suggest that HOMER1 rs4704559 G allele has a protective role for the development of levodopa adverse effects.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T1",
+      "canon:span": {
+        "start": 59,
+        "end": 67
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Biologically Active Substance",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387086006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T2",
+      "canon:span": {
+        "start": 87,
+        "end": 106
+      },
+      "canon:surface": "Parkinson's disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D010300",
+      "canon:sourceNotation": "D010300",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/49049000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T3",
+      "canon:span": {
+        "start": 117,
+        "end": 125
+      },
+      "canon:surface": "Levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Biologically Active Substance",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387086006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T4",
+      "canon:span": {
+        "start": 172,
+        "end": 191
+      },
+      "canon:surface": "Parkinson's disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D010300",
+      "canon:sourceNotation": "D010300",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/49049000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T5",
+      "canon:span": {
+        "start": 281,
+        "end": 291
+      },
+      "canon:surface": "dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/102448004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T6",
+      "canon:span": {
+        "start": 296,
+        "end": 317
+      },
+      "canon:surface": "visual hallucinations",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006212",
+      "canon:sourceNotation": "D006212",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Mental or Behavioral Dysfunction"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/7011001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T7",
+      "canon:span": {
+        "start": 364,
+        "end": 373
+      },
+      "canon:surface": "glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D018698",
+      "canon:sourceNotation": "D018698",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Biologically Active Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/430503006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T8",
+      "canon:span": {
+        "start": 603,
+        "end": 611
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Biologically Active Substance",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387086006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T9",
+      "canon:span": {
+        "start": 650,
+        "end": 680
+      },
+      "canon:surface": "idiopathic Parkinson's disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D010300",
+      "canon:sourceNotation": "D010300",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/49049000",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T10",
+      "canon:span": {
+        "start": 875,
+        "end": 885
+      },
+      "canon:surface": "dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/102448004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T11",
+      "canon:span": {
+        "start": 971,
+        "end": 992
+      },
+      "canon:surface": "visual hallucinations",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006212",
+      "canon:sourceNotation": "D006212",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Mental or Behavioral Dysfunction"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/7011001",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T12",
+      "canon:span": {
+        "start": 1127,
+        "end": 1135
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Biologically Active Substance",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387086006",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T6"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/24126708#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/24126708#mention-T5"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

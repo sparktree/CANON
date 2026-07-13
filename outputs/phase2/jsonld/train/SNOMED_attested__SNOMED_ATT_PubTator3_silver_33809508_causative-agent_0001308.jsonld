@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Doxepin Exacerbates Renal Damage, Glucose Intolerance, Nonalcoholic Fatty Liver Disease, and Urinary Chromium Loss in Obese Mice. Doxepin is commonly prescribed for depression and anxiety treatment. Doxepin-related disruptions to metabolism and renal/hepatic adverse effects remain unclear; thus, the underlying mechanism of action warrants further research. Here, we investigated how doxepin affects lipid change, glucose homeostasis, chromium (Cr) distribution, renal impairment, liver damage, and fatty liver scores in C57BL6/J mice subjected to a high-fat diet and 5 mg/kg/day doxepin treatment for eight weeks. We noted that the treated mice had higher body, kidney, liver, retroperitoneal, and epididymal white adipose tissue weights; serum and liver triglyceride, alanine aminotransferase, aspartate aminotransferase, blood urea nitrogen, and creatinine levels; daily food efficiency; and liver lipid regulation marker expression. They also demonstrated exacerbated insulin resistance and glucose intolerance with lower Akt phosphorylation, GLUT4 expression, and renal damage as well as higher reactive oxygen species and interleukin 1 and lower catalase, superoxide dismutase, and glutathione peroxidase levels. The treated mice had a net-negative Cr balance due to increased urinary excretion, leading to Cr mobilization, delaying hyperglycemia recovery. Furthermore, they had considerably increased fatty liver scores, paralleling increases in adiponectin, FASN, PNPLA3, FABP4 mRNA, and SREBP1 mRNA levels. In conclusion, doxepin administration potentially worsens renal injury, nonalcoholic fatty liver disease, and diabetes.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T1",
       "canon:span": {
         "start": 245,
         "end": 274
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T2",
       "canon:span": {
         "start": 401,
         "end": 406
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001308#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

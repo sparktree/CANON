@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Biomarker selection and imaging design in cancer: A link with biochemical pathways for imminent engineering. Malignant cells reprogram metabolic pathways to meet the demands of growth and proliferation. These altered manners of metabolism are now identified as hallmarks of cancer. Studies have revealed tumor cells alter specific pathways such as glycolysis, fatty acid synthesis and amino acid synthesis to support their proliferation. In this review, we provide a theoretical framework to understand metabolic reprogramming and the mechanisms accompanying distorted metabolism to tumor progression. How these alterations will be assisting in cancer diagnostics and advances in standard techniques in marker identification and imagining are also discussed.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T1",
       "canon:span": {
         "start": 42,
         "end": 48
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T2",
       "canon:span": {
         "start": 274,
         "end": 280
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T3",
       "canon:span": {
         "start": 304,
         "end": 309
@@ -73,7 +152,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T4",
       "canon:span": {
         "start": 360,
         "end": 370
@@ -94,7 +173,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T5",
       "canon:span": {
         "start": 583,
         "end": 588
@@ -115,7 +194,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T6",
       "canon:span": {
         "start": 645,
         "end": 651
@@ -138,12 +217,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T4"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T4"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/32055737#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/32055737#mention-T1"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",

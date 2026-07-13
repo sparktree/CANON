@@ -1,0 +1,453 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/20080916",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "train",
+  "canon:pmid": "20080916",
+  "canon:title": "Promoter insertion/deletion in the IRF5 gene is highly associated with susceptibility to systemic lupus erythematosus in distinct populations, but exerts a modest effect on gene expression in peripheral blood mononuclear cells.",
+  "canon:abstract": "OBJECTIVE: We examined the genetic association of the promoter insertion/deletion (indel) in IRF5 gene with systemic lupus erythematosus (SLE) in distinct populations and assessed its role in gene expression. METHODS: Four IRF5 polymorphisms were genotyped in 1488 SLE patients and 1466 controls. Gene expression was analyzed by quantitative real-time PCR using RNA from peripheral blood mononuclear cells (PBMC). RESULTS: The promoter indel and rs2070197 had independent genetic effects, which accounted for the association of rs2004640 and rs10954213. Gene expression analysis revealed that rs10954213 exerted the greatest influence on IRF5 transcript levels. CONCLUSION: We corroborated the association of the promoter indel with SLE in 5 different populations and revealed that rs10954213 is the main single-nucleotide polymorphism responsible for altered IRF5 expression in PBMC.",
+  "canon:text": "Promoter insertion/deletion in the IRF5 gene is highly associated with susceptibility to systemic lupus erythematosus in distinct populations, but exerts a modest effect on gene expression in peripheral blood mononuclear cells. OBJECTIVE: We examined the genetic association of the promoter insertion/deletion (indel) in IRF5 gene with systemic lupus erythematosus (SLE) in distinct populations and assessed its role in gene expression. METHODS: Four IRF5 polymorphisms were genotyped in 1488 SLE patients and 1466 controls. Gene expression was analyzed by quantitative real-time PCR using RNA from peripheral blood mononuclear cells (PBMC). RESULTS: The promoter indel and rs2070197 had independent genetic effects, which accounted for the association of rs2004640 and rs10954213. Gene expression analysis revealed that rs10954213 exerted the greatest influence on IRF5 transcript levels. CONCLUSION: We corroborated the association of the promoter indel with SLE in 5 different populations and revealed that rs10954213 is the main single-nucleotide polymorphism responsible for altered IRF5 expression in PBMC.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T1",
+      "canon:span": {
+        "start": 35,
+        "end": 39
+      },
+      "canon:surface": "IRF5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3663",
+      "canon:sourceNotation": "3663",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T2",
+      "canon:span": {
+        "start": 89,
+        "end": 117
+      },
+      "canon:surface": "systemic lupus erythematosus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/55464009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T3",
+      "canon:span": {
+        "start": 321,
+        "end": 325
+      },
+      "canon:surface": "IRF5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3663",
+      "canon:sourceNotation": "3663",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T4",
+      "canon:span": {
+        "start": 336,
+        "end": 364
+      },
+      "canon:surface": "systemic lupus erythematosus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/55464009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T5",
+      "canon:span": {
+        "start": 366,
+        "end": 369
+      },
+      "canon:surface": "SLE",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/55464009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T6",
+      "canon:span": {
+        "start": 451,
+        "end": 455
+      },
+      "canon:surface": "IRF5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3663",
+      "canon:sourceNotation": "3663",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T7",
+      "canon:span": {
+        "start": 493,
+        "end": 496
+      },
+      "canon:surface": "SLE",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/55464009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T8",
+      "canon:span": {
+        "start": 497,
+        "end": 505
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T9",
+      "canon:span": {
+        "start": 674,
+        "end": 683
+      },
+      "canon:surface": "rs2070197",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs2070197",
+      "canon:sourceNotation": "rs2070197",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T10",
+      "canon:span": {
+        "start": 756,
+        "end": 765
+      },
+      "canon:surface": "rs2004640",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs2004640",
+      "canon:sourceNotation": "rs2004640",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T11",
+      "canon:span": {
+        "start": 770,
+        "end": 780
+      },
+      "canon:surface": "rs10954213",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs10954213",
+      "canon:sourceNotation": "rs10954213",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T12",
+      "canon:span": {
+        "start": 821,
+        "end": 831
+      },
+      "canon:surface": "rs10954213",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs10954213",
+      "canon:sourceNotation": "rs10954213",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T13",
+      "canon:span": {
+        "start": 866,
+        "end": 870
+      },
+      "canon:surface": "IRF5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3663",
+      "canon:sourceNotation": "3663",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T14",
+      "canon:span": {
+        "start": 961,
+        "end": 964
+      },
+      "canon:surface": "SLE",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/55464009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T15",
+      "canon:span": {
+        "start": 1010,
+        "end": 1020
+      },
+      "canon:surface": "rs10954213",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs10954213",
+      "canon:sourceNotation": "rs10954213",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T16",
+      "canon:span": {
+        "start": 1088,
+        "end": 1092
+      },
+      "canon:surface": "IRF5",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3663",
+      "canon:sourceNotation": "3663",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T10"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T11"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/20080916#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/20080916#mention-T11"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

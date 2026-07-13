@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "A Case of Linezolid Toxicity Presenting as a Sepsis Mimic. Linezolid is an efficacious and well tolerated antimicrobial but can have serious adverse effects including myelo-suppression, serotonin syndrome, neuropathy, hypoglycemia, liver dysfunction, and lactic acidosis. The side effects are generally duration dependent; linezolid use is not recommended for more than 28 days. Case. A 59-year-old female presented with malaise, loss of appetite, and altered mentation. She had multiple medical comorbidities and required long-term anticoagulation with warfarin for venous thromboembolism. She had multiple medication allergies. Prior to admission, she was on linezolid for cellulitis of foot due to Methicillin-resistant Staphylococcus aureus (MRSA). On physical exam, she was drowsy and required endotracheal intubation for airway protection. Initial laboratory parameters showed lactic acidosis, thrombocytopenia, supra-therapeutic coagulation profile, low blood glucose, and transaminitis. Her altered mentation was due to hypoglycemia. The interaction with warfarin led to altered coagulation profile. She developed shock and vasopressors were initiated. Given her presentation, she was managed as severe sepsis. There were no active infectious foci attributing to decline of her clinical status. Linezolid was discontinued and she was managed with intravenous polymyxin B, aztreonam, and vancomycin. Her hemodynamic status improved within one day. She was extubated on Day 5 of her presentation. Her laboratory parameters showed gradual improvement over 12 days after discontinuation of linezolid. Retrospective evaluation revealed linezolid toxicity as possible cause of presentation. Linezolid toxicity can present as sepsis mimic and should be considered as a differential diagnosis while managing sepsis with other antimicrobial agents.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T1",
       "canon:span": {
         "start": 186,
         "end": 204
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T2",
       "canon:span": {
         "start": 1395,
         "end": 1405
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001065#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Pharmacological treatment of chronic obstructive pulmonary disease. None of the drugs currently available for chronic obstructive pulmonary disease (COPD) are able to reduce the progressive decline in lung function which is the hallmark of this disease. Smoking cessation is the only intervention that has proved effective. The current pharmacological treatment of COPD is symptomatic and is mainly based on bronchodilators, such as selective beta2-adrenergic agonists (short- and long-acting), anticholinergics, theophylline, or a combination of these drugs. Glucocorticoids are not generally recommended for patients with stable mild to moderate COPD due to their lack of efficacy, side effects, and high costs. However, glucocorticoids are recommended for severe COPD and frequent exacerbations of COPD. New pharmacological strategies for COPD need to be developed because the current treatment is inadequate.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T1",
       "canon:span": {
         "start": 29,
         "end": 66
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T2",
       "canon:span": {
         "start": 110,
         "end": 147
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T3",
       "canon:span": {
         "start": 149,
         "end": 153
@@ -73,7 +152,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T4",
       "canon:span": {
         "start": 365,
         "end": 369
@@ -94,7 +173,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T5",
       "canon:span": {
         "start": 513,
         "end": 525
@@ -115,7 +194,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T6",
       "canon:span": {
         "start": 610,
         "end": 618
@@ -134,7 +213,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T7",
       "canon:span": {
         "start": 648,
         "end": 652
@@ -155,7 +234,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T8",
       "canon:span": {
         "start": 766,
         "end": 770
@@ -176,7 +255,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T9",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T9",
       "canon:span": {
         "start": 801,
         "end": 805
@@ -197,7 +276,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T10",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T10",
       "canon:span": {
         "start": 842,
         "end": 846
@@ -220,12 +299,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T5"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T5"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/18044097#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/18044097#mention-T1"
       },
       "canon:sourceRelation": "Negative_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#treats",

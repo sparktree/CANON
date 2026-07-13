@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "L-DOPA-induced dyskinesia is associated with regional increase of striatal dynorphin peptides as elucidated by imaging mass spectrometry. Opioid peptides are involved in various pathophysiological processes, including algesia, epilepsy, and drug dependence. A strong association between L-DOPA-induced dyskinesia (LID) and elevated prodynorphin mRNA levels has been established in both patients and in animal models of Parkinson's disease, but to date the endogenous prodynorphin peptide products have not been determined. Here, matrix-assisted laser desorption ionization (MALDI) imaging mass spectrometry (IMS) was used for characterization, localization, and relative quantification of striatal neuropeptides in a rat model of LID in Parkinson's disease. MALDI IMS has the unique advantage of high sensitivity and high molecular specificity, allowing comprehensive detection of multiple molecular species in a single tissue section. Indeed, several dynorphins and enkephalins could be detected in the present study, including dynorphin A(1-8), dynorphin B, alpha-neoendorphin, MetEnkRF, MetEnkRGL, PEnk (198-209, 219-229). IMS analysis revealed elevated levels of dynorphin B, alpha-neoendorphin, substance P, and PEnk (220-229) in the dorsolateral striatum of high-dyskinetic animals compared with low-dyskinetic and lesion-only control rats. Furthermore, the peak-intensities of the prodynorphin derived peptides, dynorphin B and alpha-neoendorphin, were strongly and positively correlated with LID severity. Interestingly, these LID associated dynorphin peptides are not those with high affinity to kappa opioid receptors, but are known to bind and activate also mu- and Delta-opioid receptors. In addition, the peak intensities of a novel endogenous metabolite of alpha-neoendorphin lacking the N-terminal tyrosine correlated positively with dyskinesia severity. MALDI IMS of striatal sections from Pdyn knockout mice verified the identity of fully processed dynorphin peptides and the presence of endogenous des-tyrosine alpha-neoendorphin. Des-tyrosine dynorphins display reduced opioid receptor binding and this points to possible novel nonopioid receptor mediated changes in the striatum of dyskinetic rats. Because des-tyrosine dynorphins can only be detected by mass spectrometry, as no antibodies are available, these findings highlight the importance of MALDI IMS analysis for the study of molecular dynamics in neurological diseases.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T1",
       "canon:span": {
         "start": 15,
         "end": 25
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T2",
       "canon:span": {
         "start": 0,
         "end": 6
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21737418_causative-agent_0002294#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "A review of the alleged health hazards of monosodium glutamate. Monosodium glutamate (MSG) is an umami substance widely used as flavor enhancer. Although it is generally recognized as being safe by food safety regulatory agencies, several studies have questioned its long-term safety. The purpose of this review was to survey the available literature on preclinical studies and clinical trials regarding the alleged adverse effects of MSG. Here, we aim to provide a comprehensive overview of the reported possible risks that may potentially arise following chronic exposure. Furthermore, we intend to critically evaluate the relevance of this data for dietary human intake. Preclinical studies have associated MSG administration with cardiotoxicity, hepatotoxicity, neurotoxicity, low-grade inflammation, metabolic disarray and premalignant alterations, along with behavioral changes. Moreover, links between MSG consumption and tumorigenesis, increased oxidative stress and apoptosis in thymocytes, as well as genotoxic effects in lymphocytes have been reported. However, in reviewing the available literature, we detected several methodological flaws, which led us to conclude that these studies have limited relevance for extrapolation to dietary human intakes of MSG risk exposure. Clinical trials have focused mainly on the effects of MSG on food intake and energy expenditure. Besides its well-known impact on food palatability, MSG enhances salivary secretion and interferes with carbohydrate metabolism, while the impact on satiety and post-meal recovery of hunger varied in relation to meal composition. Reports on MSG hypersensitivity, also known as 'Chinese restaurant syndrome', or links of its use to increased pain sensitivity and atopic dermatitis were found to have little supporting evidence. Based on the available literature, we conclude that further clinical and epidemiological studies are needed, with an appropriate design, accounting for both added and naturally occurring dietary MSG. Critical analysis of existing literature, establishes that many of the reported negative health effects of MSG have little relevance for chronic human exposure and are poorly informative as they are based on excessive dosing that does not meet with levels normally consumed in food products.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T1",
       "canon:span": {
         "start": 766,
         "end": 779
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T2",
       "canon:span": {
         "start": 1487,
         "end": 1499
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31920467_causative-agent_0001061#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Production of first- and second-generation ethanol for use in alcohol-based hand sanitizers and disinfectants in India. Emergence of \"severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2)\" causing \"COVID-19\" or \"coronavirus disease 19\" as pandemic has got worldwide attention towards hygiene as the first line of defense for the infection control. It is first line of defense not only from COVID-19 but also from other infectious diseases caused by deadly pathogens such as cholera, hepatitis, tuberculosis, polio, etc. Absence of any particular vaccine or treatment let World Health Organization (WHO) recommend to the public to maintain social distancing along with regularly washing their hands with soap, sanitize their hands (where washing is not possible), and disinfect their belongings and buildings to avoid the infection. Out of various formulations available in the market, WHO has recommended alcohol-based hand sanitizers, which mainly comprise of ethanol, isopropyl alcohols, and hydrogen peroxides in different combinations due to their high potential to kill the broad range of pathogens including bacterial, viral, fungal, helminthes, etc. Therefore, alcohol-based sanitizers are in high demand since centuries to prevent infection from pathogenic diseases. Ethanol is the most common and popular alcohol in terms of vanishing wide range of pathogens, convenient to use and its production. Ethanol is produced worldwide and is used in various sectors, e.g., beauty and cosmetics, food and beverages, and as the most demanding gasoline additive. The present review is focused on the ethanol production in India, its diversified applications emphasizing hand sanitizers with discussions on formulation of sanitizer and disinfectants, and viability of lignocellulosic and food grain-based ethanol. The review article also emphasizes on the technological details of 1G and 2G ethanol production, their associated challenges, and inputs for the improved ethanol yields so as to strengthen the supply chain of ethanol in India, and making \"Atmanirbhar Bharat\" (Self-reliant India) campaign of Indian government successfully viable.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T1",
       "canon:span": {
         "start": 490,
         "end": 499
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T2",
       "canon:span": {
         "start": 43,
         "end": 50
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34075327_causative-agent_0003565#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Impact of peroxisome proliferator-activated receptor-alpha on diabetic cardiomyopathy. The prevalence of cardiomyopathy is higher in diabetic patients than those without diabetes. Diabetic cardiomyopathy (DCM) is defined as a clinical condition of abnormal myocardial structure and performance in diabetic patients without other cardiac risk factors, such as coronary artery disease, hypertension, and significant valvular disease. Multiple molecular events contribute to the development of DCM, which include the alterations in energy metabolism (fatty acid, glucose, ketone and branched chain amino acids) and the abnormalities of subcellular components in the heart, such as impaired insulin signaling, increased oxidative stress, calcium mishandling and inflammation. There are no specific drugs in treating DCM despite of decades of basic and clinical investigations. This is, in part, due to the lack of our understanding as to how heart failure initiates and develops, especially in diabetic patients without an underlying ischemic cause. Some of the traditional anti-diabetic or lipid-lowering agents aimed at shifting the balance of cardiac metabolism from utilizing fat to glucose have been shown inadequately targeting multiple aspects of the conditions. Peroxisome proliferator-activated receptor alpha (PPARalpha), a transcription factor, plays an important role in mediating DCM-related molecular events. Pharmacological targeting of PPARalpha activation has been demonstrated to be one of the important strategies for patients with diabetes, metabolic syndrome, and atherosclerotic cardiovascular diseases. The aim of this review is to provide a contemporary view of PPARalpha in association with the underlying pathophysiological changes in DCM. We discuss the PPARalpha-related drugs in clinical applications and facts related to the drugs that may be considered as risky (such as fenofibrate, bezafibrate, clofibrate) or safe (pemafibrate, metformin and glucagon-like peptide 1-receptor agonists) or having the potential (sodium-glucose co-transporter 2 inhibitor) in treating DCM.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T1",
       "canon:span": {
         "start": 62,
         "end": 85
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T2",
       "canon:span": {
         "start": 133,
         "end": 141
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33397369_due-to_0003429#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

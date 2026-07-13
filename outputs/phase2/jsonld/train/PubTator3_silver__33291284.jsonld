@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Natural Polysaccharide Carriers in Brain Delivery: Challenge and Perspective. Targeted drug delivery systems represent valuable tools to enhance the accumulation of therapeutics in the brain. Here, the presence of the blood brain barrier strongly hinders the passage of foreign substances, often limiting the effectiveness of pharmacological therapies. Among the plethora of materials used for the development of these systems, natural polysaccharides are attracting growing interest because of their biocompatibility, muco-adhesion, and chemical versatility which allow a wide range of carriers with tailored physico-chemical features to be synthetized. This review describes the state of the art in the field of targeted carriers based on natural polysaccharides over the last five years, focusing on the main targeting strategies, namely passive and active transport, stimuli-responsive materials and the administration route. In addition, in the last section, the efficacy of the reviewed carriers in each specific brain diseases is summarized and commented on in terms of enhancement of either blood brain barrier (BBB) permeation ability or drug bioavailability in the brain.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284#mention-T1",
       "canon:span": {
         "start": 8,
         "end": 22
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284#mention-T2",
       "canon:span": {
         "start": 436,
         "end": 451
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284#mention-T3",
       "canon:span": {
         "start": 749,
         "end": 764
@@ -73,7 +152,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284#mention-T4",
       "canon:span": {
         "start": 1019,
         "end": 1033
@@ -96,12 +175,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33291284#mention-T4"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33291284#mention-T4"
       },
       "canon:sourceRelation": "Negative_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#treats",

@@ -1,0 +1,320 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/17273972",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "train",
+  "canon:pmid": "17273972",
+  "canon:title": "Human TBX1 missense mutations cause gain of function resulting in the same phenotype as 22q11.2 deletions.",
+  "canon:abstract": "Deletion 22q11.2 syndrome is the most frequent known microdeletion syndrome and is associated with a highly variable phenotype, including DiGeorge and Shprintzen (velocardiofacial) syndromes. Although haploinsufficiency of the T-box transcription factor gene TBX1 is thought to cause the phenotype, to date, only four different point mutations in TBX1 have been reported in association with six of the major features of 22q11.2 deletion syndrome. Although, for the two truncating mutations, loss of function was previously shown, the pathomechanism of the missense mutations remains unknown. We report a novel heterozygous missense mutation, H194Q, in a familial case of Shprintzen syndrome and show that this and the two previously reported missense mutations result in gain of function, possibly through stabilization of the protein dimer DNA complex. We therefore conclude that TBX1 gain-of-function mutations can result in the same phenotypic spectrum as haploinsufficiency caused by loss-of-function mutations or deletions.",
+  "canon:text": "Human TBX1 missense mutations cause gain of function resulting in the same phenotype as 22q11.2 deletions. Deletion 22q11.2 syndrome is the most frequent known microdeletion syndrome and is associated with a highly variable phenotype, including DiGeorge and Shprintzen (velocardiofacial) syndromes. Although haploinsufficiency of the T-box transcription factor gene TBX1 is thought to cause the phenotype, to date, only four different point mutations in TBX1 have been reported in association with six of the major features of 22q11.2 deletion syndrome. Although, for the two truncating mutations, loss of function was previously shown, the pathomechanism of the missense mutations remains unknown. We report a novel heterozygous missense mutation, H194Q, in a familial case of Shprintzen syndrome and show that this and the two previously reported missense mutations result in gain of function, possibly through stabilization of the protein dimer DNA complex. We therefore conclude that TBX1 gain-of-function mutations can result in the same phenotypic spectrum as haploinsufficiency caused by loss-of-function mutations or deletions.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 5
+      },
+      "canon:surface": "Human",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T2",
+      "canon:span": {
+        "start": 6,
+        "end": 10
+      },
+      "canon:surface": "TBX1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "6899",
+      "canon:sourceNotation": "6899",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T3",
+      "canon:span": {
+        "start": 88,
+        "end": 105
+      },
+      "canon:surface": "22q11.2 deletions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004062",
+      "canon:sourceNotation": "D004062",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T4",
+      "canon:span": {
+        "start": 107,
+        "end": 132
+      },
+      "canon:surface": "Deletion 22q11.2 syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004062",
+      "canon:sourceNotation": "D004062",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T5",
+      "canon:span": {
+        "start": 245,
+        "end": 297
+      },
+      "canon:surface": "DiGeorge and Shprintzen (velocardiofacial) syndromes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004062",
+      "canon:sourceNotation": "D004062",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T6",
+      "canon:span": {
+        "start": 334,
+        "end": 360
+      },
+      "canon:surface": "T-box transcription factor",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "6899",
+      "canon:sourceNotation": "6899",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T7",
+      "canon:span": {
+        "start": 366,
+        "end": 370
+      },
+      "canon:surface": "TBX1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "6899",
+      "canon:sourceNotation": "6899",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T8",
+      "canon:span": {
+        "start": 454,
+        "end": 458
+      },
+      "canon:surface": "TBX1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "6899",
+      "canon:sourceNotation": "6899",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T9",
+      "canon:span": {
+        "start": 527,
+        "end": 552
+      },
+      "canon:surface": "22q11.2 deletion syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004062",
+      "canon:sourceNotation": "D004062",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T10",
+      "canon:span": {
+        "start": 749,
+        "end": 754
+      },
+      "canon:surface": "H194Q",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "rs74315522",
+      "canon:sourceNotation": "rs74315522",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T11",
+      "canon:span": {
+        "start": 778,
+        "end": 797
+      },
+      "canon:surface": "Shprintzen syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004062",
+      "canon:sourceNotation": "D004062",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T12",
+      "canon:span": {
+        "start": 988,
+        "end": 992
+      },
+      "canon:surface": "TBX1",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "6899",
+      "canon:sourceNotation": "6899",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T10"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T3"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/17273972#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/17273972#mention-T3"
+      },
+      "canon:sourceRelation": "Negative_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

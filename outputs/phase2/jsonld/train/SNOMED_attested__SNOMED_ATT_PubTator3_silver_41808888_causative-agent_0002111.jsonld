@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "GATA2 deficiency exacerbates chronic liver injury via disrupting hepatocyte death-regeneration balance: Clinical, histopathological, and molecular evidence. BACKGROUND: GATA-binding protein 2 (GATA2) is a critical transcription factor that plays an essential role in maintaining the stemness of hematopoietic stem cells. Mutations in GATA2 are recognized as disease-causing mutations for aplastic anemia (AA) and myelodysplastic syndromes; however, the mechanisms linking these mutations to chronic liver injury (CLI) (e.g., cirrhosis) remain elusive. AIM: To investigate the molecular mechanisms through which GATA2 deficiency promotes CLI. METHODS: Whole genome sequencing was performed to identify loss-of-function mutations in GATA2 in a 55-year-old female patient who was suspected of and later diagnosed with AA and developed cirrhosis one year post-diagnosis. After establishing the genetic association between GATA2 mutations and cirrhosis through clinical case analysis, liver injury murine and hepatocyte models were developed to characterize GATA2 expression in response to liver injury. rAAV8-TBG-Gata2-shRNA-mediated liver-specific Gata2 knockdown was employed to elucidate the role of GATA2 in exacerbating liver injury. RESULTS: The patient presented with a three-year medical history of dizziness, fatigue, and thrombocytopenia. Following conventional treatment, she developed severe fatigue, abdominal distension, and jaundice, indicative of liver disease. Multimodal evaluations, including bone marrow biopsy, flow cytometry, liver biopsy, and genetic testing, confirmed GATA2 mutation-associated AA complicated by cirrhosis. Experimental studies in cellular and animal models demonstrated compensatory upregulation of hepatocyte GATA2 in response to endoplasmic reticulum stress and oxidative stress. Mechanistically, liver-specific Gata2 knockdown exacerbated hepatocyte apoptosis, necroptosis, ferroptosis, and impaired regeneration. Furthermore, Gata2 knockdown suppressed the adaptive unfolded protein response, attenuated the antioxidant response, and inhibited fatty acid beta-oxidation. CONCLUSION: GATA2 deficiency drives the CLI by disrupting the hepatocyte death-regeneration balance.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T1",
       "canon:span": {
         "start": 29,
         "end": 49
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T2",
       "canon:span": {
         "start": 2086,
         "end": 2096
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41808888_causative-agent_0002111#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

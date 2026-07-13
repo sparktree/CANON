@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Role of nonalcoholic fatty liver disease as risk factor for drug-induced hepatotoxicity. BACKGROUND: Obesity is often associated with nonalcoholic fatty liver disease (NAFLD), which refers to a large spectrum of hepatic lesions including fatty liver, nonalcoholic steatohepatitis (NASH) and cirrhosis. Different investigations showed or suggested that obesity and NAFLD are able to increase the risk of hepatotoxicity of different drugs. Some of these drugs could induce more frequently an acute hepatitis in obese individuals whereas others could worsen pre-existing NAFLD. AIM: The main objective of the present review was to collect the available information regarding the role of NAFLD as risk factor for drug-induced hepatotoxicity. For this purpose, we performed a data-mining analysis using different queries including drug-induced liver injury (or DILI), drug-induced hepatotoxicity, fatty liver, nonalcoholic fatty liver disease (or NAFLD), steatosis and obesity. The main data from the collected articles are reported in this review and when available, some pathophysiological hypotheses are put forward. RELEVANCE FOR PATIENTS: Drugs that could pose a potential risk in obese patients include compounds belonging to different pharmacological classes such as acetaminophen, halothane, methotrexate, rosiglitazone, stavudine and tamoxifen. For some of these drugs, experimental investigations in obese rodents confirmed the clinical observations and unveiled different pathophysiological mechanisms which could explain why these pharmaceuticals are particularly hepatotoxic in obesity and NAFLD. Other drugs such as pentoxifylline, phenobarbital and omeprazole might also pose a risk but more investigations are required to determine whether this risk is significant or not. Because obese people often take several drugs for the treatment of different obesity-related diseases such as type 2 diabetes, hyperlipidemia and coronary heart disease, it is urgent to identify the main pharmaceuticals that can cause acute hepatitis on a fatty liver background or induce NAFLD worsening.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T1",
       "canon:span": {
         "start": 212,
         "end": 227
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T2",
       "canon:span": {
         "start": 1284,
         "end": 1293
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28691103_causative-agent_0000756#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

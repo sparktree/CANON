@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Beta-blockers for hypertension. BACKGROUND: Beta-blockers refer to a mixed group of drugs with diverse pharmacodynamic and pharmacokinetic properties. They have shown long-term beneficial effects on mortality and cardiovascular disease (CVD) when used in people with heart failure or acute myocardial infarction. Beta-blockers were thought to have similar beneficial effects when used as first-line therapy for hypertension. However, the benefit of beta-blockers as first-line therapy for hypertension without compelling indications is controversial. This review is an update of a Cochrane Review initially published in 2007 and updated in 2012. OBJECTIVES: To assess the effects of beta-blockers on morbidity and mortality endpoints in adults with hypertension. SEARCH METHODS: The Cochrane Hypertension Information Specialist searched the following databases for randomized controlled trials up to June 2016: the Cochrane Hypertension Specialised Register, the Cochrane Central Register of Controlled Trials (CENTRAL) (2016, Issue 6), MEDLINE (from 1946), Embase (from 1974), and ClinicalTrials.gov. We checked reference lists of relevant reviews, and reference lists of studies potentially eligible for inclusion in this review, and also searched the the World Health Organization International Clinical Trials Registry Platform on 06 July 2015. SELECTION CRITERIA: Randomised controlled trials (RCTs) of at least one year of duration, which assessed the effects of beta-blockers compared to placebo or other drugs, as first-line therapy for hypertension, on mortality and morbidity in adults. DATA COLLECTION AND ANALYSIS: We selected studies and extracted data in duplicate, resolving discrepancies by consensus. We expressed study results as risk ratios (RR) with 95% confidence intervals (CI) and conducted fixed-effect or random-effects meta-analyses, as appropriate. We also used GRADE to assess the certainty of the evidence. GRADE classifies the certainty of evidence as high (if we are confident that the true effect lies close to that of the estimate of effect), moderate (if the true effect is likely to be close to the estimate of effect), low (if the true effect may be substantially different from the estimate of effect), and very low (if we are very uncertain about the estimate of effect). MAIN RESULTS: Thirteen RCTs met inclusion criteria. They compared beta-blockers to placebo (4 RCTs, 23,613 participants), diuretics (5 RCTs, 18,241 participants), calcium-channel blockers (CCBs: 4 RCTs, 44,825 participants), and renin-angiotensin system (RAS) inhibitors (3 RCTs, 10,828 participants). These RCTs were conducted between the 1970s and 2000s and most of them had a high risk of bias resulting from limitations in study design, conduct, and data analysis. There were 40,245 participants taking beta-blockers, three-quarters of them taking atenolol. We found no outcome trials involving the newer vasodilating beta-blockers (e.g. nebivolol).There was no difference in all-cause mortality between beta-blockers and placebo (RR 0.99, 95% CI 0.88 to 1.11), diuretics or RAS inhibitors, but it was higher for beta-blockers compared to CCBs (RR 1.07, 95% CI 1.00 to 1.14). The evidence on mortality was of moderate-certainty for all comparisons.Total CVD was lower for beta-blockers compared to placebo (RR 0.88, 95% CI 0.79 to 0.97; low-certainty evidence), a reflection of the decrease in stroke (RR 0.80, 95% CI 0.66 to 0.96; low-certainty evidence) since there was no difference in coronary heart disease (CHD: RR 0.93, 95% CI 0.81 to 1.07; moderate-certainty evidence). The effect of beta-blockers on CVD was worse than that of CCBs (RR 1.18, 95% CI 1.08 to 1.29; moderate-certainty evidence), but was not different from that of diuretics (moderate-certainty) or RAS inhibitors (low-certainty). In addition, there was an increase in stroke in beta-blockers compared to CCBs (RR 1.24, 95% CI 1.11 to 1.40; moderate-certainty evidence) and RAS inhibitors (RR 1.30, 95% CI 1.11 to 1.53; moderate-certainty evidence). However, there was little or no difference in CHD between beta-blockers and diuretics (low-certainty evidence), CCBs (moderate-certainty evidence) or RAS inhibitors (low-certainty evidence). In the single trial involving participants aged 65 years and older, atenolol was associated with an increased CHD incidence compared to diuretics (RR 1.63, 95% CI 1.15 to 2.32). Participants taking beta-blockers were more likely to discontinue treatment due to adverse events than participants taking RAS inhibitors (RR 1.41, 95% CI 1.29 to 1.54; moderate-certainty evidence), but there was little or no difference with placebo, diuretics or CCBs (low-certainty evidence). AUTHORS' CONCLUSIONS: Most outcome RCTs on beta-blockers as initial therapy for hypertension have high risk of bias. Atenolol was the beta-blocker most used. Current evidence suggests that initiating treatment of hypertension with beta-blockers leads to modest CVD reductions and little or no effects on mortality. These beta-blocker effects are inferior to those of other antihypertensive drugs. Further research should be of high quality and should explore whether there are differences between different subtypes of beta-blockers or whether beta-blockers have differential effects on younger and older people.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T1",
       "canon:span": {
         "start": 18,
         "end": 30
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T2",
       "canon:span": {
         "start": 213,
         "end": 235
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T3",
       "canon:span": {
         "start": 237,
         "end": 240
@@ -73,7 +152,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T4",
       "canon:span": {
         "start": 267,
         "end": 280
@@ -94,7 +173,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T5",
       "canon:span": {
         "start": 290,
         "end": 311
@@ -115,7 +194,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T6",
       "canon:span": {
         "start": 411,
         "end": 423
@@ -136,7 +215,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T7",
       "canon:span": {
         "start": 489,
         "end": 501
@@ -157,7 +236,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T8",
       "canon:span": {
         "start": 749,
         "end": 761
@@ -178,7 +257,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T9",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T9",
       "canon:span": {
         "start": 792,
         "end": 804
@@ -199,7 +278,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T10",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T10",
       "canon:span": {
         "start": 924,
         "end": 936
@@ -220,7 +299,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T11",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T11",
       "canon:span": {
         "start": 1545,
         "end": 1557
@@ -241,7 +320,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T12",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T12",
       "canon:span": {
         "start": 2417,
         "end": 2429
@@ -260,7 +339,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T13",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T13",
       "canon:span": {
         "start": 2458,
         "end": 2470
@@ -279,7 +358,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T14",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T14",
       "canon:span": {
         "start": 2520,
         "end": 2532
@@ -298,7 +377,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T15",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T15",
       "canon:span": {
         "start": 2539,
         "end": 2580
@@ -317,7 +396,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T16",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T16",
       "canon:span": {
         "start": 2597,
         "end": 2609
@@ -336,7 +415,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T17",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T17",
       "canon:span": {
         "start": 2797,
         "end": 2809
@@ -355,7 +434,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T18",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T18",
       "canon:span": {
         "start": 2862,
         "end": 2870
@@ -376,7 +455,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T19",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T19",
       "canon:span": {
         "start": 2952,
         "end": 2961
@@ -395,7 +474,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T20",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T20",
       "canon:span": {
         "start": 3089,
         "end": 3103
@@ -414,7 +493,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T21",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T21",
       "canon:span": {
         "start": 3268,
         "end": 3271
@@ -435,7 +514,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T22",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T22",
       "canon:span": {
         "start": 3408,
         "end": 3414
@@ -456,7 +535,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T23",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T23",
       "canon:span": {
         "start": 3503,
         "end": 3525
@@ -477,7 +556,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T24",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T24",
       "canon:span": {
         "start": 3527,
         "end": 3530
@@ -494,7 +573,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T25",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T25",
       "canon:span": {
         "start": 3623,
         "end": 3626
@@ -515,7 +594,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T26",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T26",
       "canon:span": {
         "start": 3785,
         "end": 3799
@@ -534,7 +613,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T27",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T27",
       "canon:span": {
         "start": 3855,
         "end": 3861
@@ -555,7 +634,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T28",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T28",
       "canon:span": {
         "start": 3960,
         "end": 3974
@@ -574,7 +653,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T29",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T29",
       "canon:span": {
         "start": 4082,
         "end": 4085
@@ -591,7 +670,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T30",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T30",
       "canon:span": {
         "start": 4186,
         "end": 4200
@@ -610,7 +689,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T31",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T31",
       "canon:span": {
         "start": 4257,
         "end": 4269
@@ -629,7 +708,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T32",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T32",
       "canon:span": {
         "start": 4295,
         "end": 4303
@@ -650,7 +729,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T33",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T33",
       "canon:span": {
         "start": 4337,
         "end": 4340
@@ -667,7 +746,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T34",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T34",
       "canon:span": {
         "start": 4405,
         "end": 4417
@@ -686,7 +765,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T35",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T35",
       "canon:span": {
         "start": 4508,
         "end": 4520
@@ -705,7 +784,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T36",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T36",
       "canon:span": {
         "start": 4528,
         "end": 4542
@@ -724,7 +803,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T37",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T37",
       "canon:span": {
         "start": 4780,
         "end": 4792
@@ -745,7 +824,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T38",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T38",
       "canon:span": {
         "start": 4817,
         "end": 4825
@@ -766,7 +845,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T39",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T39",
       "canon:span": {
         "start": 4913,
         "end": 4925
@@ -787,7 +866,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T40",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T40",
       "canon:span": {
         "start": 4961,
         "end": 4964
@@ -810,12 +889,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T18"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T18"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T22"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T22"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -856,12 +935,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#relation-2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#relation-2",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T19"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T19"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T23"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T23"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -902,12 +981,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#relation-3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#relation-3",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T19"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T19"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T22"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T22"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -948,12 +1027,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#relation-4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#relation-4",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T19"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T19"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T18"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T18"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -984,12 +1063,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#relation-5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#relation-5",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T19"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T19"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T1"
       },
       "canon:sourceRelation": "Negative_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#treats",
@@ -1040,12 +1119,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#relation-6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#relation-6",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T18"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T18"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/28107561#mention-T23"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/28107561#mention-T23"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",

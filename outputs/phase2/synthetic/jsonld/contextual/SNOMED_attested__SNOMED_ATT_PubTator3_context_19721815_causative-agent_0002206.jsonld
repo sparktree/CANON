@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Targeting the progression of Parkinson's disease. By the time a patient first presents with symptoms of Parkinson's disease at the clinic, a significant proportion (50-70%) of the cells in the substantia nigra (SN) has already been destroyed. This degeneration progresses until, within a few years, most of the cells have died. Except for rare cases of familial PD, the initial trigger for cell loss is unknown. However, we do have some clues as to why the damage, once initiated, progresses unabated. It would represent a major advance in therapy to arrest cell loss at the stage when the patient first presents at the clinic. Current therapies for Parkinson's disease focus on relieving the motor symptoms of the disease, these unfortunately lose their effectiveness as the neurodegeneration and symptoms progress. Many experimental approaches are currently being investigated attempting to alter the progression of the disease. These range from replacement of the lost neurons to neuroprotective therapies; each of these will be briefly discussed in this review. The main thrust of this review is to explore the interactions between dopamine, alpha synuclein and redox-active metals. There is abundant evidence suggesting that destruction of SN cells occurs as a result of a self-propagating series of reactions involving dopamine, alpha synuclein and redox-active metals. A potent reducing agent, the neurotransmitter dopamine has a central role in this scheme, acting through redox metallo-chemistry to catalyze the formation of toxic oligomers of alpha-synuclein and neurotoxic metabolites including 6-hydroxydopamine. It has been hypothesized that these feed the cycle of neurodegeneration by generating further oxidative stress. The goal of dissecting and understanding the observed pathological changes is to identify therapeutic targets to mitigate the progression of this debilitating disease.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T1",
       "canon:span": {
         "start": 1573,
         "end": 1583
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T2",
       "canon:span": {
         "start": 1136,
         "end": 1144
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19721815_causative-agent_0002206#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

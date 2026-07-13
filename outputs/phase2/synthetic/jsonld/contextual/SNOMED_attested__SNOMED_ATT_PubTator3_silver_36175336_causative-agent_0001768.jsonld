@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Prevention, diagnosis, and treatment of opioid use disorder under the supervision of opioid stewardship programs: it's time to act now. The third opium war may have already started, not only due to illicit opioid trafficking from the Golden Crescent and Golden Triangle on the international front but also through indiscriminate opioid prescription and opioid diversion at home. Opioid use disorder (OUD), among unintentional injuries, has become one of the top 4 causes of death in the United States (U.S.). An OUD is defined as a problematic pattern of opioid use resulting in clinically significant impairment or distress, consisting of 2 or more of 11 problems within 1 year, as described by the Diagnostic and Statistical Manual for Mental Disorders, Fifth Edition. Observation of aberrant behaviors of OUD is also helpful for overworked clinicians. For the prevention of OUD, the Opioid Risk Tool and the Current Opioid Misuse Measure are appropriate screening tests before and during opioid administration, respectively. Treatment of OUD consists of 3 opioid-based U.S. Food and Drug Administration-approved medications, including methadone, buprenorphine, and naltrexone, and non-opioid-based symptomatic medications for reducing opioid withdrawal syndromes, such as alpha2 agonists, beta-blockers, antidiarrheals, antiemetics, non-steroidal anti-inflammatory drugs, and benzodiazepines. There are at least 6 recommendable guidelines and essential terms related to OUD. Opioid stewardship programs are now critical to promoting appropriate use of opioid medications, improving patient outcomes, and reducing misuse of opioids, influenced by the successful implementation of antimicrobial stewardship programs. Despite the lack of previous motivation, now is the critical time for trying to reduce the risk of OUD.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T1",
       "canon:span": {
         "start": 40,
         "end": 59
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T2",
       "canon:span": {
         "start": 1149,
         "end": 1162
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36175336_causative-agent_0001768#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

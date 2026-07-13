@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Risk factors for discontinuation of buprenorphine treatment for opioid use disorders in a multi-state sample of Medicaid enrollees. INTRODUCTION: Recent U.S. trends demonstrate sharp rises in adverse opioid-related health outcomes, including opioid use disorder (OUD), overdose, and death. Yet few affected people receive treatment for OUD and a minority of those who receive treatment are effectively retained in care. The purpose of this study was to examine duration of buprenorphine treatment for OUD following treatment initiation to identify risk factors for early discontinuation. METHODS: We analyzed insurance claims from the 2013-2015 MarketScan multi-state Medicaid database. The sample included adults 18-64 years old with an OUD diagnosis in the 6 months before initiating buprenorphine treatment, defined as 6 months without a buprenorphine claim prior to the index buprenorphine claim (N = 17,329 individuals). We used Cox proportional hazards regression to estimate risk of discontinuing treatment (>30 days without buprenorphine supply), and logistic regression to estimate the odds of persistent treatment for a minimum of 180 days. RESULTS: Over one-quarter of the sample discontinued buprenorphine in the first month of treatment (N = 4928; 28.4%) and most discontinued before 180 days (N = 11,189; 64.6%). In the proportional hazards model, risk factors for discontinuation included a lower initial buprenorphine dose (<=4 mg; Hazard Ratio [HR] = 1.72, p < .001), male sex (HR = 1.19, p < .001), younger age (HR = 1.34, p < .001), minority race/ethnicity (black HR = 1.31, p < .001; Hispanic HR = 1.24, p = .01; other HR = 1.09, p < .001), capitated insurance (HR = 1.21, p < .001), comorbid substance use disorders (alcohol HR = 1.07, p = .04; non-opioid drugs HR = 1.14, p < .001), hepatitis C (HR = 1.06, p = .01), opioid overdose history (HR = 1.20, p = .001), or any inpatient care (HR = 1.22, p < .001) in the 6-month baseline period. In logistic models, these risk factors were similarly associated with significantly lower odds of treatment retention for at least 180 days. CONCLUSION: For Medicaid beneficiaries with OUD treated with buprenorphine, there is a need to implement treatment models that more effectively address barriers to treatment retention. These barriers are particularly challenging for minorities, younger individuals, and those with additional substance use disorders.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T1",
       "canon:span": {
         "start": 64,
         "end": 84
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T2",
       "canon:span": {
         "start": 36,
         "end": 49
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30352671_causative-agent_0003008#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

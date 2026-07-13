@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "A Contemporary Insight of Metabolomics Approach for Type 1 Diabetes: Potential for Novel Diagnostic Targets. High-throughput omics has been widely applied in metabolic disease, type 1 diabetes (T1D) was one of the most typical diseases. Effective prevention and early diagnosis are very important because of infancy and persistent characteristics of T1D. The occurrence and development of T1D is a chronic and continuous process, in which the production of autoantibodies (ie serum transformation) occupies the central position. Metabolomics can evaluate the metabolic characteristics of serum before seroconversion, the changes with age and T1D complications. And the addition of natural drug metabolomics is more conducive to the systematic and comprehensive diagnosis and treatment of T1D. This paper reviewed the metabolic changes and main pathogenesis from pre-diagnosis to treatment in T1D. The metabolic spectrum of significant abnormal energy and glucose-related metabolic pathway, down-regulation of lipid metabolism and up-regulation of some antioxidant pathways has appeared before seroconversion, indicating that the body has been in the dual state of disease progression and disease resistance before T1D onset. Some metabolites (such as methionine) are closely related to age, and the types of autoantibodies produced are age-specific. Some metabolites may jointly predict DN with eGFR, and metabolomics can further contribute to the pathogenesis based on the correlation between DN and DR. Many natural drug components have been proved to act on abnormal metabolic pathways of T1D and have a positive impact on some metabolic levels, which is very important for further finding therapeutic targets and developing new drugs with small side effects. Metabolomics can provide auxiliary value for the diagnosis of T1D and provide a new direction to reveal the pathogenesis of T1D and find new therapeutic targets. The development of T1D metabolomics shows that high-throughput research methods are expected to be introduced into clinical practice.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T1",
       "canon:span": {
         "start": 642,
         "end": 659
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T2",
       "canon:span": {
         "start": 52,
         "end": 67
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35642181_due-to_0001680#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

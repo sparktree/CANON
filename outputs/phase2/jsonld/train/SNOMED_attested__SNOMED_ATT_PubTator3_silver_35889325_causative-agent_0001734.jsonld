@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "The Therapeutic Potential of Carnosine as an Antidote against Drug-Induced Cardiotoxicity and Neurotoxicity: Focus on Nrf2 Pathway. Different drug classes such as antineoplastic drugs (anthracyclines, cyclophosphamide, 5-fluorouracil, taxanes, tyrosine kinase inhibitors), antiretroviral drugs, antipsychotic, and immunosuppressant drugs are known to induce cardiotoxic and neurotoxic effects. Recent studies have demonstrated that the impairment of the nuclear factor erythroid 2-related factor 2 (Nrf2) pathway is a primary event in the pathophysiology of drug-induced cardiotoxicity and neurotoxicity. The Nrf2 pathway regulates the expression of different genes whose products are involved in antioxidant and inflammatory responses and the detoxification of toxic species. Cardiotoxic drugs, such as the anthracycline doxorubicin, or neurotoxic drugs, such as paclitaxel, suppress or impair the Nrf2 pathway, whereas the rescue of this pathway counteracts both the oxidative stress and inflammation that are related to drug-induced cardiotoxicity and neurotoxicity. Therefore Nrf2 represents a novel pharmacological target to develop new antidotes in the field of clinical toxicology. Interestingly, carnosine (beta-alanyl-l-histidine), an endogenous dipeptide that is characterized by strong antioxidant, anti-inflammatory, and neuroprotective properties is able to rescue/activate the Nrf2 pathway, as demonstrated by different preclinical studies and preliminary clinical evidence. Starting from these new data, in the present review, we examined the evidence on the therapeutic potential of carnosine as an endogenous antidote that is able to rescue the Nrf2 pathway and then counteract drug-induced cardiotoxicity and neurotoxicity.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T1",
       "canon:span": {
         "start": 94,
         "end": 107
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T2",
       "canon:span": {
         "start": 864,
         "end": 874
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35889325_causative-agent_0001734#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

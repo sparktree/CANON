@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Prediction of liver injury induced by chemicals in human with a multiparametric assay on isolated mouse liver mitochondria. Drug-induced liver injury (DILI) in humans is difficult to predict using classical in vitro cytotoxicity screening and regulatory animal studies. This explains why numerous compounds are stopped during clinical trials or withdrawn from the market due to hepatotoxicity. Thus, it is important to improve early prediction of DILI in human. In this study, we hypothesized that this goal could be achieved by investigating drug-induced mitochondrial dysfunction as this toxic effect is a major mechanism of DILI. To this end, we developed a high-throughput screening platform using isolated mouse liver mitochondria. Our broad spectrum multiparametric assay was designed to detect the global mitochondrial membrane permeabilization (swelling), inner membrane permeabilization (transmembrane potential), outer membrane permeabilization (cytochrome c release), and alteration of mitochondrial respiration driven by succinate or malate/glutamate. A pool of 124 chemicals (mainly drugs) was selected, including 87 with documented DILI and 37 without reported clinical hepatotoxicity. Our screening assay revealed an excellent sensitivity for clinical outcome of DILI (94 or 92% depending on cutoff) and a high positive predictive value (89 or 82%). A highly significant relationship between drug-induced mitochondrial toxicity and DILI occurrence in patients was calculated (p < 0.001). Moreover, this multiparametric assay allowed identifying several compounds for which mitochondrial toxicity had never been described before and even helped to clarify mechanisms with some drugs already known to be mitochondriotoxic. Investigation of drug-induced loss of mitochondrial integrity and function with this multiparametric assay should be considered for integration into basic screening processes at early stage to select drug candidates with lower risk of DILI in human. This assay is also a valuable tool for assessing the mitochondrial toxicity profile and investigating the mechanism of action of new compounds and marketed compounds.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T1",
       "canon:span": {
         "start": 124,
         "end": 149
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T2",
       "canon:span": {
         "start": 1053,
         "end": 1062
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

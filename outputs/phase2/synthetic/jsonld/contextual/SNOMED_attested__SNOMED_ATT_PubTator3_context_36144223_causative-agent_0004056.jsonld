@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Iron Metabolism in the Disorders of Heme Biosynthesis. Given its remarkable property to easily switch between different oxidative states, iron is essential in countless cellular functions which involve redox reactions. At the same time, uncontrolled interactions between iron and its surrounding milieu may be damaging to cells and tissues. Heme-the iron-chelated form of protoporphyrin IX-is a macrocyclic tetrapyrrole and a coordination complex for diatomic gases, accurately engineered by evolution to exploit the catalytic, oxygen-binding, and oxidoreductive properties of iron while minimizing its damaging effects on tissues. The majority of the body production of heme is ultimately incorporated into hemoglobin within mature erythrocytes; thus, regulation of heme biosynthesis by iron is central in erythropoiesis. Additionally, heme is a cofactor in several metabolic pathways, which can be modulated by iron-dependent signals as well. Impairment in some steps of the pathway of heme biosynthesis is the main pathogenetic mechanism of two groups of diseases collectively known as porphyrias and congenital sideroblastic anemias. In porphyrias, according to the specific enzyme involved, heme precursors accumulate up to the enzyme stop in disease-specific patterns and organs. Therefore, different porphyrias manifest themselves under strikingly different clinical pictures. In congenital sideroblastic anemias, instead, an altered utilization of mitochondrial iron by erythroid precursors leads to mitochondrial iron overload and an accumulation of ring sideroblasts in the bone marrow. In line with the complexity of the processes involved, the role of iron in these conditions is then multifarious. This review aims to summarise the most important lines of evidence concerning the interplay between iron and heme metabolism, as well as the clinical and experimental aspects of the role of iron in inherited conditions of altered heme biosynthesis.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T1",
       "canon:span": {
         "start": 1508,
         "end": 1535
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T2",
       "canon:span": {
         "start": 0,
         "end": 4
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36144223_causative-agent_0004056#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

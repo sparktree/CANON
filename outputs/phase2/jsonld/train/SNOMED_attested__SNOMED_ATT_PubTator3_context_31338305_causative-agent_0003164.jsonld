@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Evaluation of neurotoxicity and hepatotoxicity effects of acute and sub-acute oral administration of unripe ackee (Blighia sapida) fruit extract. Ackee (Blighia sapida) is a commonly eaten fruit that is indigenous to West Africa and Jamaica. Ackee poisoning in young children have been reported in parts of Nigeria due to consumption of the unripe fruits. This study was designed to identify potential mechanisms of acute and sub-acute toxicity of unripe B. sapida fruit extract (BSE). Acute toxic effect was investigated in mice of either sex administered BSE 2000 mg/kg. The sub-acute toxicity effects were investigated in mice of either sex that received 28 days repeated administration of BSE (100 and 500 mg/kg, p.o.). Locomotor activity and memory performance were measured as well as seizure vulnerability in PTZ-induced model. Liver enzymes were assessed in the serum. Acetylcholinesterase, oxidative stress parameters and histopathological changes were assessed in the brain and liver tissues. Signs and symptoms of toxicity such as urination, tremor, depressed locomotion and death were observed in acute toxicity test. Sub-acute dosing caused significant impairment in locomotor activity and memory performance in mice. Seizure threshold was shortened in BSE-treated compared to control mice. Brain acetylcholinesterase activity was significantly increased. Alkaline phosphatase (ALP) was significantly elevated in mice that received BSE (500 mg/kg). Furthermore, BSE caused significant increase in oxidative stress expressed in nitrite, malondialdehyde, reduced glutathione and catalase in the brain and liver tissues. Histological staining revealed neuronal damage of brain hippocampus and hepatocellular swelling and necrosis. Blighia sapida unripe fruit extract increased susceptibility to seizure and impaired locomotor and memory function. The biochemical and histopathological findings revealed potential toxicity mechanisms related to neurotoxicity and hepatotoxicity.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T1",
       "canon:span": {
         "start": 14,
         "end": 27
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T2",
       "canon:span": {
         "start": 1549,
         "end": 1564
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31338305_causative-agent_0003164#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

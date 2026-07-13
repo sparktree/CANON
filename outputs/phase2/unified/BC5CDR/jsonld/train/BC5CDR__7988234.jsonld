@@ -1,0 +1,384 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BC5CDR/7988234",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "train",
+  "canon:pmid": "7988234",
+  "canon:title": "Angioedema following the intravenous administration of metoprolol.",
+  "canon:abstract": "A 72-year-old woman was admitted to the hospital with \"flash\" pulmonary edema, preceded by chest pain, requiring intubation. Her medical history included coronary artery disease with previous myocardial infarctions, hypertension, and diabetes mellitus. A history of angioedema secondary to lisinopril therapy was elicited. Current medications did not include angiotensin-converting enzyme inhibitors or beta-blockers. She had no previous beta-blocking drug exposure. During the first day of hospitalization (while intubated), intravenous metoprolol was given, resulting in severe angioedema. The angioedema resolved after therapy with intravenous steroids and diphenhydramine hydrochloride.",
+  "canon:text": "Angioedema following the intravenous administration of metoprolol. A 72-year-old woman was admitted to the hospital with \"flash\" pulmonary edema, preceded by chest pain, requiring intubation. Her medical history included coronary artery disease with previous myocardial infarctions, hypertension, and diabetes mellitus. A history of angioedema secondary to lisinopril therapy was elicited. Current medications did not include angiotensin-converting enzyme inhibitors or beta-blockers. She had no previous beta-blocking drug exposure. During the first day of hospitalization (while intubated), intravenous metoprolol was given, resulting in severe angioedema. The angioedema resolved after therapy with intravenous steroids and diphenhydramine hydrochloride.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 10
+      },
+      "canon:surface": "Angioedema",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000799",
+      "canon:sourceNotation": "D000799",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T2",
+      "canon:span": {
+        "start": 55,
+        "end": 65
+      },
+      "canon:surface": "metoprolol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008790",
+      "canon:sourceNotation": "D008790",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T3",
+      "canon:span": {
+        "start": 129,
+        "end": 144
+      },
+      "canon:surface": "pulmonary edema",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011654",
+      "canon:sourceNotation": "D011654",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T4",
+      "canon:span": {
+        "start": 158,
+        "end": 168
+      },
+      "canon:surface": "chest pain",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002637",
+      "canon:sourceNotation": "D002637",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T5",
+      "canon:span": {
+        "start": 221,
+        "end": 244
+      },
+      "canon:surface": "coronary artery disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003324",
+      "canon:sourceNotation": "D003324",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T6",
+      "canon:span": {
+        "start": 259,
+        "end": 281
+      },
+      "canon:surface": "myocardial infarctions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009203",
+      "canon:sourceNotation": "D009203",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T7",
+      "canon:span": {
+        "start": 283,
+        "end": 295
+      },
+      "canon:surface": "hypertension",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006973",
+      "canon:sourceNotation": "D006973",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T8",
+      "canon:span": {
+        "start": 301,
+        "end": 318
+      },
+      "canon:surface": "diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T9",
+      "canon:span": {
+        "start": 333,
+        "end": 343
+      },
+      "canon:surface": "angioedema",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000799",
+      "canon:sourceNotation": "D000799",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T10",
+      "canon:span": {
+        "start": 357,
+        "end": 367
+      },
+      "canon:surface": "lisinopril",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D017706",
+      "canon:sourceNotation": "D017706",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T11",
+      "canon:span": {
+        "start": 426,
+        "end": 437
+      },
+      "canon:surface": "angiotensin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000809",
+      "canon:sourceNotation": "D000809",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T12",
+      "canon:span": {
+        "start": 605,
+        "end": 615
+      },
+      "canon:surface": "metoprolol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008790",
+      "canon:sourceNotation": "D008790",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T13",
+      "canon:span": {
+        "start": 647,
+        "end": 657
+      },
+      "canon:surface": "angioedema",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000799",
+      "canon:sourceNotation": "D000799",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T14",
+      "canon:span": {
+        "start": 663,
+        "end": 673
+      },
+      "canon:surface": "angioedema",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000799",
+      "canon:sourceNotation": "D000799",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T15",
+      "canon:span": {
+        "start": 714,
+        "end": 722
+      },
+      "canon:surface": "steroids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T16",
+      "canon:span": {
+        "start": 727,
+        "end": 742
+      },
+      "canon:surface": "diphenhydramine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004155",
+      "canon:sourceNotation": "D004155",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BC5CDR/7988234#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T10"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BC5CDR/7988234#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": null,
+      "canon:extra": {}
+    }
+  ]
+}

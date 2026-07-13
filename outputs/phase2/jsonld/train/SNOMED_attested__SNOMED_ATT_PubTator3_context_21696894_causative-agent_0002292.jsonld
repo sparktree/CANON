@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "A double-blind, placebo-controlled assessment of the safety of potential interactions between intravenous cocaine, ethanol, and oral disulfiram. BACKGROUND: A majority of cocaine addicts have a comorbid alcohol use disorder. Previous studies demonstrated efficacy of disulfiram in the treatment of cocaine dependence among patients with comorbid alcohol use disorder or opioid dependence. However, the cardiac risks of a disulfiram-ethanol reaction (DER) in individuals who drink, when coupled with the cardiac effects of cocaine, could result in significant toxicity or lethality due to the 3-way drug interaction. AIMS: This study examined the safety of combining cocaine (30 mg i.v.) and ethanol (0.4 g/kg i.v.) in disulfiram-treated (0, 250, and 500 mg/d, p.o.) cocaine-dependent research volunteers. RESULTS: The results showed that disulfiram did not enhance the cardiovascular effects of cocaine and may have reduced the subjective high from cocaine. In contrast, ethanol produced adverse ECG changes including QTc prolongation and a DER consisting of hypotension, tachycardia, nausea, and flushing in disulfiram-treated subjects. The severity of the DER was related to disulfiram dose and the trial with 500 mg/d was stopped prematurely due to safety concerns. The DER-related hypotension and tachycardia seen with ethanol infusion alone in disulfiram-treated subjects, was not exacerbated when combined with cocaine. In fact, cocaine tended to counteract the ethanol-related hypotension though it did exacerbate the tachycardia in two of seven subjects. CONCLUSIONS: Though conclusions are limited by the moderate doses of cocaine, ethanol, and disulfiram tested, the data do suggest that the risks of the moderate use of cocaine and ethanol in individuals treated with moderate doses of disulfiram (<= 250 mg/d) may not be as problematic as some may assume.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T1",
       "canon:span": {
         "start": 203,
         "end": 223
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T2",
       "canon:span": {
         "start": 115,
         "end": 122
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21696894_causative-agent_0002292#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

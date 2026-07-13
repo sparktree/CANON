@@ -1,0 +1,578 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/27292643",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "train",
+  "canon:pmid": "27292643",
+  "canon:title": "Negative Selection and Chromosome Instability Induced by Mad2 Overexpression Delay Breast Cancer but Facilitate Oncogene-Independent Outgrowth.",
+  "canon:abstract": "Chromosome instability (CIN) is associated with poor survival and therapeutic outcome in a number of malignancies. Despite this correlation, CIN can also lead to growth disadvantages. Here, we show that simultaneous overexpression of the mitotic checkpoint protein Mad2 with Kras(G12D) or Her2 in mammary glands of adult mice results in mitotic checkpoint overactivation and a delay in tumor onset. Time-lapse imaging of organotypic cultures and pathologic analysis prior to tumor establishment reveals error-prone mitosis, mitotic arrest, and cell death. Nonetheless, Mad2 expression persists and increases karyotype complexity in Kras tumors. Faced with the selective pressure of oncogene withdrawal, Mad2-positive tumors have a higher frequency of developing persistent subclones that avoid remission and continue to grow.",
+  "canon:text": "Negative Selection and Chromosome Instability Induced by Mad2 Overexpression Delay Breast Cancer but Facilitate Oncogene-Independent Outgrowth. Chromosome instability (CIN) is associated with poor survival and therapeutic outcome in a number of malignancies. Despite this correlation, CIN can also lead to growth disadvantages. Here, we show that simultaneous overexpression of the mitotic checkpoint protein Mad2 with Kras(G12D) or Her2 in mammary glands of adult mice results in mitotic checkpoint overactivation and a delay in tumor onset. Time-lapse imaging of organotypic cultures and pathologic analysis prior to tumor establishment reveals error-prone mitosis, mitotic arrest, and cell death. Nonetheless, Mad2 expression persists and increases karyotype complexity in Kras tumors. Faced with the selective pressure of oncogene withdrawal, Mad2-positive tumors have a higher frequency of developing persistent subclones that avoid remission and continue to grow.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T1",
+      "canon:span": {
+        "start": 23,
+        "end": 45
+      },
+      "canon:surface": "Chromosome Instability",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D043171",
+      "canon:sourceNotation": "D043171",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/404684003",
+      "canon:mappingProperty": "skos:relatedMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T2",
+      "canon:span": {
+        "start": 57,
+        "end": 61
+      },
+      "canon:surface": "Mad2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/56150",
+      "canon:sourceNotation": "56150",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T3",
+      "canon:span": {
+        "start": 83,
+        "end": 96
+      },
+      "canon:surface": "Breast Cancer",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001943",
+      "canon:sourceNotation": "D001943",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/126926005",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T4",
+      "canon:span": {
+        "start": 144,
+        "end": 166
+      },
+      "canon:surface": "Chromosome instability",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D043171",
+      "canon:sourceNotation": "D043171",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/404684003",
+      "canon:mappingProperty": "skos:relatedMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T5",
+      "canon:span": {
+        "start": 168,
+        "end": 171
+      },
+      "canon:surface": "CIN",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D043171",
+      "canon:sourceNotation": "D043171",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/404684003",
+      "canon:mappingProperty": "skos:relatedMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T6",
+      "canon:span": {
+        "start": 245,
+        "end": 257
+      },
+      "canon:surface": "malignancies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009369",
+      "canon:sourceNotation": "D009369",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/108369006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T7",
+      "canon:span": {
+        "start": 285,
+        "end": 288
+      },
+      "canon:surface": "CIN",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D043171",
+      "canon:sourceNotation": "D043171",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/404684003",
+      "canon:mappingProperty": "skos:relatedMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T8",
+      "canon:span": {
+        "start": 409,
+        "end": 413
+      },
+      "canon:surface": "Mad2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/56150",
+      "canon:sourceNotation": "56150",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T9",
+      "canon:span": {
+        "start": 419,
+        "end": 423
+      },
+      "canon:surface": "Kras",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/16653",
+      "canon:sourceNotation": "16653",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T10",
+      "canon:span": {
+        "start": 424,
+        "end": 428
+      },
+      "canon:surface": "G12D",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/16653",
+      "canon:sourceNotation": "16653",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T11",
+      "canon:span": {
+        "start": 433,
+        "end": 437
+      },
+      "canon:surface": "Her2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/13866",
+      "canon:sourceNotation": "13866",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T12",
+      "canon:span": {
+        "start": 465,
+        "end": 469
+      },
+      "canon:surface": "mice",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/10090",
+      "canon:sourceNotation": "10090",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T13",
+      "canon:span": {
+        "start": 530,
+        "end": 535
+      },
+      "canon:surface": "tumor",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009369",
+      "canon:sourceNotation": "D009369",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/108369006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T14",
+      "canon:span": {
+        "start": 619,
+        "end": 624
+      },
+      "canon:surface": "tumor",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009369",
+      "canon:sourceNotation": "D009369",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/108369006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T15",
+      "canon:span": {
+        "start": 713,
+        "end": 717
+      },
+      "canon:surface": "Mad2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/56150",
+      "canon:sourceNotation": "56150",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T16",
+      "canon:span": {
+        "start": 776,
+        "end": 780
+      },
+      "canon:surface": "Kras",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/16653",
+      "canon:sourceNotation": "16653",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T17",
+      "canon:span": {
+        "start": 781,
+        "end": 787
+      },
+      "canon:surface": "tumors",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009369",
+      "canon:sourceNotation": "D009369",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/108369006",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T18",
+      "canon:span": {
+        "start": 847,
+        "end": 851
+      },
+      "canon:surface": "Mad2",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/56150",
+      "canon:sourceNotation": "56150",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T19",
+      "canon:span": {
+        "start": 861,
+        "end": 867
+      },
+      "canon:surface": "tumors",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D009369",
+      "canon:sourceNotation": "D009369",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Neoplastic Process"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/108369006",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T11"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T6"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T9"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T6"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T9"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T6"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T3"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/27292643#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/27292643#mention-T2"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

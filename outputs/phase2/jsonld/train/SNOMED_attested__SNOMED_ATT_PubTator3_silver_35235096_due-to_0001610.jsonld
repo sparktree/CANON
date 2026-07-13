@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Lipotoxicity-induced mtDNA release promotes diabetic cardiomyopathy by activating the cGAS-STING pathway in obesity-related diabetes. Diabetic cardiomyopathy (DCM) is characterized by lipid accumulation, mitochondrial dysfunction, and aseptic inflammatory activation. Mitochondria-derived cytosolic DNA has been reported to induce inflammation by activating cyclic GMP-AMP synthase (cGAS)/the stimulator of interferon genes (STING) pathway in the adipose, liver, and kidney tissues. However, the role of cytosolic mtDNA in the progression of DCM is unclear. In this study, with an obesity-related DCM mouse model established by feeding db/db mice with a high-fat diet (HFD), we observed increased mtDNA in the cytosol and activated cGAS-STING signaling pathway during DCM, as well as the downstream targets, IRF3, NF-kappaB, IL-18, and IL-1beta. In a further study with a palmitic acid (PA)-induced lipotoxic cell model established in H9C2 cells, we revealed that the cytosolic mtDNA was the result of PA-induced overproduction of mitochondrial ROS, which also led to the activation of the cGAS/STING system and its downstream targets. Notably, treatment of extracted mtDNA alone was sufficient to activate the cGAS-STING signaling pathway in cultured H9C2 cells. Besides, both knockdown of STING in PA-induced H9C2 cells and inhibition of STING by C-176 injection in the DCM mouse model could remarkably block the inflammation and apoptosis of cardiomyocytes. In conclusion, our study elucidated the critical role of cytosolic mtDNA-induced cGAS-STING activation in the pathogenesis of obesity-related DCM and provided preclinical validation for using a STING inhibitor as a new potential therapeutic strategy for the treatment of DCM.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T1",
       "canon:span": {
         "start": 44,
         "end": 67
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T2",
       "canon:span": {
         "start": 204,
         "end": 229
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35235096_due-to_0001610#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

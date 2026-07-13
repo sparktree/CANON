@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Brain diabetic neurodegeneration segregates with low intrinsic aerobic capacity. OBJECTIVES: Diabetes leads to cognitive impairment and is associated with age-related neurodegenerative diseases including Alzheimer's disease (AD). Thus, understanding diabetes-induced alterations in brain function is important for developing early interventions for neurodegeneration. Low-capacity runner (LCR) rats are obese and manifest metabolic risk factors resembling human \"impaired glucose tolerance\" or metabolic syndrome. We examined hippocampal function in aged LCR rats compared to their high-capacity runner (HCR) rat counterparts. METHODS: Hippocampal function was examined using proton magnetic resonance spectroscopy and imaging, unbiased stereology analysis, and a Y maze. Changes in the mitochondrial respiratory chain function and levels of hyperphosphorylated tau and mitochondrial transcriptional regulators were examined. RESULTS: The levels of glutamate, myo-inositol, taurine, and choline-containing compounds were significantly increased in the aged LCR rats. We observed a significant loss of hippocampal neurons and impaired cognitive function in aged LCR rats. Respiratory chain function and activity were significantly decreased in the aged LCR rats. Hyperphosphorylated tau was accumulated within mitochondria and peroxisome proliferator-activated receptor-gamma coactivator 1alpha, the NAD(+)-dependent protein deacetylase sirtuin 1, and mitochondrial transcription factor A were downregulated in the aged LCR rat hippocampus. INTERPRETATION: These data provide evidence of a neurodegenerative process in the hippocampus of aged LCR rats, consistent with those seen in aged-related dementing illnesses such as AD in humans. The metabolic and mitochondrial abnormalities observed in LCR rat hippocampus are similar to well-described mechanisms that lead to diabetic neuropathy and may provide an important link between cognitive and metabolic dysfunction.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T1",
       "canon:span": {
         "start": 1869,
         "end": 1888
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T2",
       "canon:span": {
         "start": 1755,
         "end": 1782
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25356430_due-to_0002496#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

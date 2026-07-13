@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Vesicular monoamine transporters: structure-function, pharmacology, and medicinal chemistry. Vesicular monoamine transporters (VMAT) are responsible for the uptake of cytosolic monoamines into synaptic vesicles in monoaminergic neurons. Two closely related VMATs with distinct pharmacological properties and tissue distributions have been characterized. VMAT1 is preferentially expressed in neuroendocrine cells and VMAT2 is primarily expressed in the CNS. The neurotoxicity and addictive properties of various psychostimulants have been attributed, at least partly, to their interference with VMAT2 functions. The quantitative assessment of the VMAT2 density by PET scanning has been clinically useful for early diagnosis and monitoring of the progression of Parkinson's and Alzheimer's diseases and drug addiction. The classical VMAT2 inhibitor, tetrabenazine, has long been used for the treatment of chorea associated with Huntington's disease in the United Kingdom, Canada, and Australia, and recently approved in the United States. The VMAT2 imaging may also be useful for exploiting the onset of diabetes mellitus, as VMAT2 is also expressed in the beta-cells of the pancreas. VMAT1 gene SLC18A1 is a locus with strong evidence of linkage with schizophrenia and, thus, the polymorphic forms of the VMAT1 gene may confer susceptibility to schizophrenia. This review summarizes the current understanding of the structure-function relationships of VMAT2, and the role of VMAT2 on addiction and psychostimulant-induced neurotoxicity, and the therapeutic and diagnostic applications of specific VMAT2 ligands. The evidence for the linkage of VMAT1 gene with schizophrenia and bipolar disorder I is also discussed.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T1",
       "canon:span": {
         "start": 461,
         "end": 474
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T2",
       "canon:span": {
         "start": 848,
         "end": 861
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

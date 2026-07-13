@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Acute ischemia induces spatially and transcriptionally distinct microglial subclusters. BACKGROUND: Damage in the ischemic core and penumbra after stroke affects patient prognosis. Microglia immediately respond to ischemic insult and initiate immune inflammation, playing an important role in the cellular injury after stroke. However, the microglial heterogeneity and the mechanisms involved remain unclear. METHODS: We first performed single-cell RNA-sequencing (scRNA-seq) and spatial transcriptomics (ST) on middle cerebral artery occlusion (MCAO) mice from three time points to determine stroke-associated microglial subclusters and their spatial distributions. Furthermore, the expression of microglial subcluster-specific marker genes and the localization of different microglial subclusters were verified on MCAO mice through RNAscope and immunofluorescence. Gene set variation analysis (GSVA) was performed to reveal functional characteristics of microglia sub-clusters. Additionally, ingenuity pathway analysis (IPA) was used to explore upstream regulators of microglial subclusters, which was confirmed by immunofluorescence, RT-qPCR, shRNA-mediated knockdown, and targeted metabolomics. Finally, the infarct size, neurological deficits, and neuronal apoptosis were evaluated in MCAO mice after manipulation of specific microglial subcluster. RESULTS: We discovered stroke-associated microglial subclusters in the brains of MCAO mice. We also identified novel marker genes of these microglial subclusters and defined these cells as ischemic core-associated (ICAM) and ischemic penumbra-associated (IPAM) microglia, according to their spatial distribution. ICAM, induced by damage-associated molecular patterns, are probably fueled by glycolysis, and exhibit increased pro-inflammatory cytokines and chemokines production. BACH1 is a key transcription factor driving ICAM generation. In contrast, glucocorticoids, which are enriched in the penumbra, likely trigger IPAM formation, which are presumably powered by the citrate cycle and oxidative phosphorylation and are characterized by moderate pro-inflammatory responses, inflammation-alleviating metabolic features, and myelinotrophic properties. CONCLUSIONS: ICAM could induce excessive neuroinflammation, aggravating brain injury, whereas IPAM probably exhibit neuroprotective features, which could be essential for the homeostasis and survival of cells in the penumbra. Our findings provide a biological basis for targeting specific microglial subclusters as a potential therapeutic strategy for ischemic stroke.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T1",
       "canon:span": {
         "start": 512,
         "end": 544
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T2",
       "canon:span": {
         "start": 114,
         "end": 122
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38082331_due-to_0004471#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

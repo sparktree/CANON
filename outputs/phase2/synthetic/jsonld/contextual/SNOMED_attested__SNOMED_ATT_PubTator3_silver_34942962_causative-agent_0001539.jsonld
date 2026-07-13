@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Bioactive Compounds in Oxidative Stress-Mediated Diseases: Targeting the NRF2/ARE Signaling Pathway and Epigenetic Regulation. Oxidative stress is a pathological condition occurring due to an imbalance between the oxidants and antioxidant defense systems in the body. Nuclear factor E2-related factor 2 (NRF2), encoded by the gene NFE2L2, is the master regulator of phase II antioxidant enzymes that protect against oxidative stress and inflammation. NRF2/ARE signaling has been considered as a promising target against oxidative stress-mediated diseases like diabetes, fibrosis, neurotoxicity, and cancer. The consumption of dietary phytochemicals acts as an effective modulator of NRF2/ARE in various acute and chronic diseases. In the present review, we discussed the role of NRF2 in diabetes, Alzheimer's disease (AD), Parkinson's disease (PD), cancer, and atherosclerosis. Additionally, we discussed the phytochemicals like curcumin, quercetin, resveratrol, epigallocatechin gallate, apigenin, sulforaphane, and ursolic acid that have effectively modified NRF2 signaling and prevented various diseases in both in vitro and in vivo models. Based on the literature, it is clear that dietary phytochemicals can prevent diseases by (1) blocking oxidative stress-inhibiting inflammatory mediators through inhibiting Keap1 or activating Nrf2 expression and its downstream targets in the nucleus, including HO-1, SOD, and CAT; (2) regulating NRF2 signaling by various kinases like GSK3beta, PI3/AKT, and MAPK; and (3) modifying epigenetic modulation, such as methylation, at the NRF2 promoter region; however, further investigation into other upstream signaling molecules like NRF2 and the effect of phytochemicals on them still need to be investigated in the near future.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T1",
       "canon:span": {
         "start": 580,
         "end": 593
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T2",
       "canon:span": {
         "start": 929,
         "end": 937
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34942962_causative-agent_0001539#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

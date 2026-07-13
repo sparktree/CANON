@@ -1,0 +1,567 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/19681452",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "test",
+  "canon:pmid": "19681452",
+  "canon:title": "Bilateral haemorrhagic infarction of the globus pallidus after cocaine and alcohol intoxication.",
+  "canon:abstract": "Cocaine is a risk factor for both ischemic and haemorrhagic stroke. We present the case of a 31-year-old man with bilateral ischemia of the globus pallidus after excessive alcohol and intranasal cocaine use. Drug-related globus pallidus infarctions are most often associated with heroin. Bilateral basal ganglia infarcts after the use of cocaine, without concurrent heroin use, have never been reported. In our patient, transient cardiac arrhythmia or respiratory dysfunction related to cocaine and/or ethanol use were the most likely causes of cerebral hypoperfusion.",
+  "canon:text": "Bilateral haemorrhagic infarction of the globus pallidus after cocaine and alcohol intoxication. Cocaine is a risk factor for both ischemic and haemorrhagic stroke. We present the case of a 31-year-old man with bilateral ischemia of the globus pallidus after excessive alcohol and intranasal cocaine use. Drug-related globus pallidus infarctions are most often associated with heroin. Bilateral basal ganglia infarcts after the use of cocaine, without concurrent heroin use, have never been reported. In our patient, transient cardiac arrhythmia or respiratory dysfunction related to cocaine and/or ethanol use were the most likely causes of cerebral hypoperfusion.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T1",
+      "canon:span": {
+        "start": 10,
+        "end": 56
+      },
+      "canon:surface": "haemorrhagic infarction of the globus pallidus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002543,D020520",
+      "canon:sourceNotation": "D002543,D020520",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T2",
+      "canon:span": {
+        "start": 63,
+        "end": 70
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T3",
+      "canon:span": {
+        "start": 75,
+        "end": 82
+      },
+      "canon:surface": "alcohol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T4",
+      "canon:span": {
+        "start": 97,
+        "end": 104
+      },
+      "canon:surface": "Cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T5",
+      "canon:span": {
+        "start": 131,
+        "end": 163
+      },
+      "canon:surface": "ischemic and haemorrhagic stroke",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002544,D020521",
+      "canon:sourceNotation": "D002544,D020521",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T6",
+      "canon:span": {
+        "start": 202,
+        "end": 205
+      },
+      "canon:surface": "man",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T7",
+      "canon:span": {
+        "start": 221,
+        "end": 252
+      },
+      "canon:surface": "ischemia of the globus pallidus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002545",
+      "canon:sourceNotation": "D002545",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T8",
+      "canon:span": {
+        "start": 269,
+        "end": 276
+      },
+      "canon:surface": "alcohol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T9",
+      "canon:span": {
+        "start": 292,
+        "end": 299
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T10",
+      "canon:span": {
+        "start": 318,
+        "end": 345
+      },
+      "canon:surface": "globus pallidus infarctions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020520",
+      "canon:sourceNotation": "D020520",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T11",
+      "canon:span": {
+        "start": 377,
+        "end": 383
+      },
+      "canon:surface": "heroin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003932",
+      "canon:sourceNotation": "D003932",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T12",
+      "canon:span": {
+        "start": 395,
+        "end": 417
+      },
+      "canon:surface": "basal ganglia infarcts",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020520",
+      "canon:sourceNotation": "D020520",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T13",
+      "canon:span": {
+        "start": 435,
+        "end": 442
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T14",
+      "canon:span": {
+        "start": 463,
+        "end": 469
+      },
+      "canon:surface": "heroin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003932",
+      "canon:sourceNotation": "D003932",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T15",
+      "canon:span": {
+        "start": 508,
+        "end": 515
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T16",
+      "canon:span": {
+        "start": 527,
+        "end": 545
+      },
+      "canon:surface": "cardiac arrhythmia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001145",
+      "canon:sourceNotation": "D001145",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T17",
+      "canon:span": {
+        "start": 549,
+        "end": 572
+      },
+      "canon:surface": "respiratory dysfunction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012131",
+      "canon:sourceNotation": "D012131",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T18",
+      "canon:span": {
+        "start": 584,
+        "end": 591
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T19",
+      "canon:span": {
+        "start": 599,
+        "end": 606
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T20",
+      "canon:span": {
+        "start": 642,
+        "end": 664
+      },
+      "canon:surface": "cerebral hypoperfusion",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002545",
+      "canon:sourceNotation": "D002545",
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {}
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T7"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T17"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T16"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T10"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T10"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T11"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T7"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-7",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T17"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-8",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T16"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/19681452#relation-9",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/19681452#mention-T10"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

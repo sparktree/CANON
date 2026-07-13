@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Clinical manifestations of wasp stings: a case report and a review of literature. BACKGROUND: Wasp stinging, a neglected tropical entity can have a myriad of local and systemic effects. We present a case of multi-organ injury following multiple wasp stings and a review of literature on the systemic manifestations of wasp stings. CASE PRESENTATION: A 48-year-old Sri Lankan male who suffered multiple wasp stings, developed an anaphylactic shock with respiratory failure, which was treated with adrenaline and mechanical ventilation. Within the next 2 days the patient developed acute fulminant hepatitis, stage III acute kidney injury, rhabdomyolysis, haemolysis and thrombocytopenia. The patient was treated in the intensive care unit with ionopressors and continuous renal replacement therapy (CRRT). Haemoadsorbant therapy was used in adjunct with CRRT. There was a gradual recovery of the organ functions over the 1st week. However, the patient succumbed to fungal sepsis on the 16th day despite treatment. We conducted a literature review to identify the various clinical manifestations of wasp stinging. Wasp venom contains enzymes, amines, peptides and other compounds. These proteins can cause type 1 hypersensitive reactions ranging from local skin irritation to anaphylactic shock. Furthermore, the toxins can cause direct organ injury or delayed hypersensitivity reactions. The commonly affected organs are the kidneys, liver, and muscles. The effect on the haematological system manifests as coagulopathy and/or cytopenia. The heart, nervous system, lungs, intestines and skin can be affected rarely. Treatment is mainly supportive. CONCLUSION: In conclusion, wasp envenomation can result in multi-organ injury and attention should be paid in doing further research and establishing evidence-based treatment practices.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T1",
       "canon:span": {
         "start": 1359,
         "end": 1375
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T2",
       "canon:span": {
         "start": 496,
         "end": 506
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36307881_causative-agent_0001796#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

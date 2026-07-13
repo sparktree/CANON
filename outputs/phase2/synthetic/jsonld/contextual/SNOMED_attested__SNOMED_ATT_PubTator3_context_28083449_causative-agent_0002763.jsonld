@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Acute Abdominal Aorta Thrombosis and Ischemic Rhabdomyolysis Secondary to Severe Alcohol Intoxication. Acute alcohol intoxication is a common cause of emergency visits worldwide. Although moderate alcohol consumption is protective against coronary artery disease, binge drinking is associated with adverse cardiovascular and neurological outcomes and may even cause sudden death. Although, few past accounts of venous thrombosis with alcohol binge drinking are available, arterial thrombosis with the condition has never been reported in the literature. We present the unusual case of a young Afghan male, who presented to us with painful, tender and swollen legs three days after a heavy alcohol binge on a Saturday night. He was diagnosed as a case of acute limb ischemia secondary to massive abdominal aorta and bilateral femoral artery thrombosis. He also had acute renal failure secondary to rhabdomyolysis. Cardiac workup revealed new onset paroxysmal atrial fibrillation and a large thrombus in the left ventricular cavity. His blood ethanol level was high. He was treated by a multidisciplinary team; urgent surgical thrombectomy for thrombotic complications, intravenous fluid hydration and later renal replacement therapy for acute renal failure. To the best of our knowledge, such a constellation of clinical features in association with severe acute alcohol intoxication has not been reported in the literature. We believe, the procoagulant nature of high blood ethanol levels and the onset of atrial fibrillation after the heavy alcohol binge, known as the holiday heart syndrome, precipitated the thrombotic events leading to rhabdomyolysis and acute renal failure. Through this case, we conclude that a very heavy alcohol binge may cause thrombotic occlusion of the abdominal aorta and femoral arteries resulting in ischemic rhabdomyolysis and acute renal failure. A high index of suspicion must be kept, especially for a patient presenting with tender, swollen lower limbs and acute renal failure after an alcohol binge.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T1",
       "canon:span": {
         "start": 103,
         "end": 129
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T2",
       "canon:span": {
         "start": 1041,
         "end": 1048
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28083449_causative-agent_0002763#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

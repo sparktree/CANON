@@ -1,0 +1,639 @@
+{
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/BioRED/15099351",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BioRED",
+  "canon:split": "train",
+  "canon:pmid": "15099351",
+  "canon:title": "Mutations in the PCSK9 gene in Norwegian subjects with autosomal dominant hypercholesterolemia.",
+  "canon:abstract": "Proprotein convertase subtilisin/kexin type 9 (PCSK9) is at a locus for autosomal dominant hypercholesterolemia, and recent data indicate that the PCSK9 gene is involved in cholesterol biosynthesis. Mutations within this gene have previously been found to segregate with hypercholesterolemia. In this study, DNA sequencing of the 12 exons of the PCSK9 gene has been performed in 51 Norwegian subjects with a clinical diagnosis of familial hypercholesterolemia where mutations in the low-density lipoprotein receptor gene and mutation R3500Q in the apolipoprotein B-100 gene had been excluded. Two novel missense mutations were detected in the catalytic subdomain of the PCSK9 gene. Two patients were heterozygotes for D374Y, and one patient was a double heterozygote for D374Y and N157K. D374Y segregated with hypercholesterolemia in the two former families where family members were available for study. Our findings support the notion that mutations in the PCSK9 gene cause autosomal dominant hypercholesterolemia.",
+  "canon:text": "Mutations in the PCSK9 gene in Norwegian subjects with autosomal dominant hypercholesterolemia. Proprotein convertase subtilisin/kexin type 9 (PCSK9) is at a locus for autosomal dominant hypercholesterolemia, and recent data indicate that the PCSK9 gene is involved in cholesterol biosynthesis. Mutations within this gene have previously been found to segregate with hypercholesterolemia. In this study, DNA sequencing of the 12 exons of the PCSK9 gene has been performed in 51 Norwegian subjects with a clinical diagnosis of familial hypercholesterolemia where mutations in the low-density lipoprotein receptor gene and mutation R3500Q in the apolipoprotein B-100 gene had been excluded. Two novel missense mutations were detected in the catalytic subdomain of the PCSK9 gene. Two patients were heterozygotes for D374Y, and one patient was a double heterozygote for D374Y and N157K. D374Y segregated with hypercholesterolemia in the two former families where family members were available for study. Our findings support the notion that mutations in the PCSK9 gene cause autosomal dominant hypercholesterolemia.",
+  "canon:mentions": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T1",
+      "canon:span": {
+        "start": 17,
+        "end": 22
+      },
+      "canon:surface": "PCSK9",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "canon:sourceNotation": "255738",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T2",
+      "canon:span": {
+        "start": 55,
+        "end": 94
+      },
+      "canon:surface": "autosomal dominant hypercholesterolemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006938",
+      "canon:sourceNotation": "D006938",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/190773008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T3",
+      "canon:span": {
+        "start": 96,
+        "end": 141
+      },
+      "canon:surface": "Proprotein convertase subtilisin/kexin type 9",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "canon:sourceNotation": "255738",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T4",
+      "canon:span": {
+        "start": 143,
+        "end": 148
+      },
+      "canon:surface": "PCSK9",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "canon:sourceNotation": "255738",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T5",
+      "canon:span": {
+        "start": 168,
+        "end": 207
+      },
+      "canon:surface": "autosomal dominant hypercholesterolemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006938",
+      "canon:sourceNotation": "D006938",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/190773008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T6",
+      "canon:span": {
+        "start": 243,
+        "end": 248
+      },
+      "canon:surface": "PCSK9",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "canon:sourceNotation": "255738",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T7",
+      "canon:span": {
+        "start": 269,
+        "end": 280
+      },
+      "canon:surface": "cholesterol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D002784",
+      "canon:sourceNotation": "D002784",
+      "canon:confidence": 0.93,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Biologically Active Substance",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/84698008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T8",
+      "canon:span": {
+        "start": 367,
+        "end": 387
+      },
+      "canon:surface": "hypercholesterolemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006937",
+      "canon:sourceNotation": "D006937",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/13644009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T9",
+      "canon:span": {
+        "start": 442,
+        "end": 447
+      },
+      "canon:surface": "PCSK9",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "canon:sourceNotation": "255738",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T10",
+      "canon:span": {
+        "start": 526,
+        "end": 555
+      },
+      "canon:surface": "familial hypercholesterolemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006937",
+      "canon:sourceNotation": "D006937",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/13644009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T11",
+      "canon:span": {
+        "start": 579,
+        "end": 611
+      },
+      "canon:surface": "low-density lipoprotein receptor",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/3949",
+      "canon:sourceNotation": "3949",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T12",
+      "canon:span": {
+        "start": 630,
+        "end": 636
+      },
+      "canon:surface": "R3500Q",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs5742904",
+      "canon:sourceNotation": "rs5742904",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T13",
+      "canon:span": {
+        "start": 644,
+        "end": 664
+      },
+      "canon:surface": "apolipoprotein B-100",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/338",
+      "canon:sourceNotation": "338",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T14",
+      "canon:span": {
+        "start": 766,
+        "end": 771
+      },
+      "canon:surface": "PCSK9",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "canon:sourceNotation": "255738",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T15",
+      "canon:span": {
+        "start": 782,
+        "end": 790
+      },
+      "canon:surface": "patients",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T16",
+      "canon:span": {
+        "start": 814,
+        "end": 819
+      },
+      "canon:surface": "D374Y",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs137852912",
+      "canon:sourceNotation": "rs137852912",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T17",
+      "canon:span": {
+        "start": 829,
+        "end": 836
+      },
+      "canon:surface": "patient",
+      "canon:nerType": "species",
+      "canon:sourceEntityType": "OrganismTaxon",
+      "canon:sourceSemanticClass": "species",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/taxonomy/9606",
+      "canon:sourceNotation": "9606",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Organism"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T18",
+      "canon:span": {
+        "start": 867,
+        "end": 872
+      },
+      "canon:surface": "D374Y",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs137852912",
+      "canon:sourceNotation": "rs137852912",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T19",
+      "canon:span": {
+        "start": 877,
+        "end": 882
+      },
+      "canon:surface": "N157K",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs143117125",
+      "canon:sourceNotation": "rs143117125",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T20",
+      "canon:span": {
+        "start": 884,
+        "end": 889
+      },
+      "canon:surface": "D374Y",
+      "canon:nerType": "variant",
+      "canon:sourceEntityType": "SequenceVariant",
+      "canon:sourceSemanticClass": "variant",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/snp/rs137852912",
+      "canon:sourceNotation": "rs137852912",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Genetic Function"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T21",
+      "canon:span": {
+        "start": 906,
+        "end": 926
+      },
+      "canon:surface": "hypercholesterolemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006937",
+      "canon:sourceNotation": "D006937",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/13644009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T22",
+      "canon:span": {
+        "start": 1055,
+        "end": 1060
+      },
+      "canon:surface": "PCSK9",
+      "canon:nerType": "gene",
+      "canon:sourceEntityType": "GeneOrGeneProduct",
+      "canon:sourceSemanticClass": "gene",
+      "canon:sourceConcept": "https://www.ncbi.nlm.nih.gov/gene/255738",
+      "canon:sourceNotation": "255738",
+      "canon:nonSnomed": true,
+      "canon:umlsSemanticTypes": [
+        "Gene or Genome"
+      ],
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T23",
+      "canon:span": {
+        "start": 1072,
+        "end": 1111
+      },
+      "canon:surface": "autosomal dominant hypercholesterolemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006938",
+      "canon:sourceNotation": "D006938",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/190773008",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#relation-1",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T19"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T2"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#relation-2",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#relation-3",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T7"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#relation-4",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T8"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "No",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#relation-5",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T16"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T2"
+      },
+      "canon:sourceRelation": "Positive_Correlation",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    },
+    {
+      "@id": "https://canon.iu.edu/document/BioRED/15099351#relation-6",
+      "canon:subject": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T8"
+      },
+      "canon:object": {
+        "@id": "https://canon.iu.edu/document/BioRED/15099351#mention-T16"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": null,
+      "canon:tier": null,
+      "canon:probability": null,
+      "canon:confidence": 1.0,
+      "canon:candidates": [],
+      "canon:novelty": "Novel",
+      "canon:extra": {}
+    }
+  ]
+}

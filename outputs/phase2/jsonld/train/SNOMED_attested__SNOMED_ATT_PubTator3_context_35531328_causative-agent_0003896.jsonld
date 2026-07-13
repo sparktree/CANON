@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Virus-Induced Membrane Fusion in Neurodegenerative Disorders. A growing body of epidemiological and research data has associated neurotropic viruses with accelerated brain aging and increased risk of neurodegenerative disorders. Many viruses replicate optimally in senescent cells, as they offer a hospitable microenvironment with persistently elevated cytosolic calcium, abundant intracellular iron, and low interferon type I. As cell-cell fusion is a major driver of cellular senescence, many viruses have developed the ability to promote this phenotype by forming syncytia. Cell-cell fusion is associated with immunosuppression mediated by phosphatidylserine externalization that enable viruses to evade host defenses. In hosts, virus-induced immune dysfunction and premature cellular senescence may predispose to neurodegenerative disorders. This concept is supported by novel studies that found postinfectious cognitive dysfunction in several viral illnesses, including human immunodeficiency virus-1, herpes simplex virus-1, and SARS-CoV-2. Virus-induced pathological syncytia may provide a unified framework for conceptualizing neuronal cell cycle reentry, aneuploidy, somatic mosaicism, viral spreading of pathological Tau and elimination of viable synapses and neurons by neurotoxic astrocytes and microglia. In this narrative review, we take a closer look at cell-cell fusion and vesicular merger in the pathogenesis of neurodegenerative disorders. We present a \"decentralized\" information processing model that conceptualizes neurodegeneration as a systemic illness, triggered by cytoskeletal pathology. We also discuss strategies for reversing cell-cell fusion, including, TMEM16F inhibitors, calcium channel blockers, senolytics, and tubulin stabilizing agents. Finally, going beyond neurodegeneration, we examine the potential benefit of harnessing fusion as a therapeutic strategy in regenerative medicine.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T1",
       "canon:span": {
         "start": 1281,
         "end": 1291
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T2",
       "canon:span": {
         "start": 395,
         "end": 399
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35531328_causative-agent_0003896#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Metabolic Profiles in Ovine Carotid Arteries with Developmental Maturation and Long-Term Hypoxia. BACKGROUND: Long-term hypoxia (LTH) is an important stressor related to health and disease during development. At different time points from fetus to adult, we are exposed to hypoxic stress because of placental insufficiency, high-altitude residence, smoking, chronic anemia, pulmonary, and heart disorders, as well as cancers. Intrauterine hypoxia can lead to fetal growth restriction and long-term sequelae such as cognitive impairments, hypertension, cardiovascular disorders, diabetes, and schizophrenia. Similarly, prolonged hypoxic exposure during adult life can lead to acute mountain sickness, chronic fatigue, chronic headache, cognitive impairment, acute cerebral and/or pulmonary edema, and death. AIM: LTH also can lead to alteration in metabolites such as fumarate, 2-oxoglutarate, malate, and lactate, which are linked to epigenetic regulation of gene expression. Importantly, during the intrauterine life, a fetus is under a relative hypoxic environment, as compared to newborn or adult. Thus, the changes in gene expression with development from fetus to newborn to adult may be as a consequence of underlying changes in the metabolic profile because of the hypoxic environment along with developmental maturation. To examine this possibility, we examined the metabolic profile in carotid arteries from near-term fetus, newborn, and adult sheep in both normoxic and long-term hypoxic acclimatized groups. RESULTS: Our results demonstrate that LTH differentially regulated glucose metabolism, mitochondrial metabolism, nicotinamide cofactor metabolism, oxidative stress and antioxidants, membrane lipid hydrolysis, and free fatty acid metabolism, each of which may play a role in genetic-epigenetic regulation.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T1",
       "canon:span": {
         "start": 374,
         "end": 404
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T2",
       "canon:span": {
         "start": 89,
         "end": 96
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000592#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

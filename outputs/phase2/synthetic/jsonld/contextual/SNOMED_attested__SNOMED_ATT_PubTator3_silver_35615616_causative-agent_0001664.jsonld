@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Preeclampsia and Related Problems. Hypertensive disorders of pregnancy can be classified as chronic hypertension (present before pregnancy), gestational hypertension (onset after 20 weeks of pregnancy), and preeclampsia (onset after 20 weeks of pregnancy, along with proteinuria and other organ dysfunction). Preeclampsia and related disorders are a major cause of maternal and fetal morbidity and mortality. Preeclampsia is believed to result from an angiogenic imbalance in the placenta circulation. Antenatal screening and early diagnosis may help improve outcomes. Severe preeclampsia is characterized by SBP >=160 mm Hg, or DBP >=110 mm Hg, thrombocytopenia (platelet count <100 x 109/L), abnormal liver function, serum creatinine >1.1 mg/dL, or a doubling of the serum creatinine concentration in the absence of other renal diseases, disseminated intravascular coagulation, pulmonary edema, new-onset headache, or visual disturbances. Severe preeclampsia or eclampsia (preeclampsia with seizures) needs ICU management and is the main cause of morbidity and mortality. Severe hypertension can also result in life-threatening intracranial hemorrhage. Blood pressure control, seizure prevention, and appropriate timing of delivery are the cornerstones of the management of preeclampsia. Besides intravenous antihypertensive drugs, intravenous magnesium sulfate is the drug of choice to prevent or treat seizures, when preparing for urgent delivery. At present, delivery remains the most effective treatment for preeclampsia, and organ dysfunction rapidly recovers after delivery. Novel therapeutic interventions are under development to reduce complications. How to cite this article: Narkhede AM, Karnad DR. Preeclampsia and Related Problems. Indian J Crit Care Med 2021;25(Suppl 3):S261-S266.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T1",
       "canon:span": {
         "start": 694,
         "end": 717
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T2",
       "canon:span": {
         "start": 1346,
         "end": 1363
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35615616_causative-agent_0001664#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

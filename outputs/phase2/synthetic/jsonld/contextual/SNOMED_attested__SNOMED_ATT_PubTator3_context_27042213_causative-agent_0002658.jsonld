@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Differential effects of hyaluronan synthase 3 deficiency after acute vs chronic liver injury in mice. BACKGROUND: Hyaluronan (HA) is a ubiquitous extracellular matrix (ECM) glycosaminoglycan synthesized by three different enzymes, hyaluronan synthase (HAS)1, 2, and 3. HA synthesis mediated by HAS3 promotes inflammation and is pathogenic in animal models of human lung and intestinal disease. Liver fibrosis is a common endpoint to chronic liver injury and inflammation for which there is no cure. Although plasma HA is a commonly used biomarker for liver disease, if and how HA contributes to disease pathogenesis remains unclear. Here, we tested the hypothesis that HA synthesized by HAS3 enhances inflammation and fibrosis. To test this hypothesis, we exposed wild-type or Has3-/- mice to carbon tetrachloride (CCl4) once (acute) or ten (chronic) times. RESULTS: HAS3-deficient mice exhibited increased hepatic injury and inflammatory chemokine production 48 h after acute CCl4; this was associated with a threefold reduction in plasma HA levels and alterations in the proportions of specific molecular weight HA polymer pools. Hepatic accumulation of fibrosis-associated transcripts was also greater in livers from HAS3-deficient mice compared to controls after acute CCl4 exposure. Surprisingly, fibrosis was not different between genotypes. Hepatic matrix metalloproteinase (MMP)13 mRNA and MMP13 activity was greater in livers from Has3-null mice after chronic CCl4; this was prevented by a MMP13-specific inhibitor. Collectively, these data suggest that Has3, or more likely HA produced by HAS3, limits hepatic inflammation after acute injury and attenuates MMP13-mediated matrix metabolism after chronic injury. CONCLUSIONS: These data suggest that HA should be investigated further as a novel therapeutic target for acute and chronic liver disease.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T1",
       "canon:span": {
         "start": 907,
         "end": 921
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T2",
       "canon:span": {
         "start": 173,
         "end": 190
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27042213_causative-agent_0002658#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

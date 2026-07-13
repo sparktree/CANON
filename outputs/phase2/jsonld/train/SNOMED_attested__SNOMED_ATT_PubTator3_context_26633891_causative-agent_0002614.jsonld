@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Wild Edible Fruit of Prunus nepalensis Ser. (Steud), a Potential Source of Antioxidants, Ameliorates Iron Overload-Induced Hepatotoxicity and Liver Fibrosis in Mice. The antioxidant and restoration potentials of hepatic injury by Prunus nepalensis Ser. (Steud), a wild fruit plant from the Northeastern region of India, were investigated. The fruit extract (PNME) exhibited excellent antioxidant and reducing properties and also scavenged the 2,2-diphenyl-1-picrylhydrazyl (DPPH) radical (IC50 = 30.92 +- 0.40 mug/ml). PNME demonstrated promising scavenging potency, as assessed by the scavenging of different reactive oxygen and nitrogen species. Moreover, the extract revealed an exceptional iron chelation capacity with an IC50 of 25.64 +- 0.60 mug/ml. The extract induced significant improvement of hepatic injury and liver fibrosis against iron overload induced hepatotoxicity in mice in a dose-dependent manner, and this effect was supported by different histopathological studies. The phytochemical constitutions and their identification by HPLC confirmed the presence of purpurin, tannic acid, methyl gallate, reserpine, gallic acid, ascorbic acid, catechin and rutin. The identified compounds were investigated for their individual radical scavenging and iron chelation activity; some compounds exhibited excellent radical scavenging and iron chelation properties, but most were toxic towards normal cells (WI-38). On the other hand, crude PNME was found to be completely nontoxic to normal cells, suggesting its feasibility as a safe oral drug. The above study suggests that different phytochemicals in PNME contributed to its free radical scavenging and iron chelation activity; however, further studies are required to determine the pathway in which PNME acts to treat iron-overload diseases. ",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T1",
       "canon:span": {
         "start": 101,
         "end": 114
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T2",
       "canon:span": {
         "start": 694,
         "end": 698
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26633891_causative-agent_0002614#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

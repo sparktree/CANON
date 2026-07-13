@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "5-HT2A receptor-mediated PKCdelta phosphorylation is critical for serotonergic impairments induced by p-chloroamphetamine in mice. p-Chloroamphetamine (PCA), an amphetamine derivative, has been shown to induce serotonergic toxicity. However, the precise mechanism of serotonergic toxicity induced by PCA remains unclear. In this study, PCA treatment (20 mg/kg, i.p.) did not significantly change 5-HT1A receptor gene expression, but significantly increased 5-HT2A receptor gene expression. Furthermore, 5-HT2A receptor antagonist MDL11939, but not 5-HT1A receptor antagonist WAY100635, significantly attenuated PCA-induced serotonergic impairments. We investigated whether PCA activated a specific isoform of protein kinase C (PKC), since previous evidence indicated the involvement of PKC in neurotoxicity induced by amphetamines. We observed that PCA treatment significantly increased the expression levels of PKCdelta among all PKC isoforms. MDL11939 treatment significantly attenuated PCA-induced phosphorylation of PKCdelta. However, PCA-induced increase in 5-HT2A receptor gene expression was not altered by rottlerin (a pharmacological inhibitor of PKCdelta) in mice, suggesting that 5-HT2A receptor is an upstream molecule for the activation of PKCdelta. Rottlerin or PKCdelta knockout significantly attenuated serotonergic behaviors. However, MDL11939 did not show any additional effects against the attenuation caused by PKCdelta knockout in mice, suggesting that PKCdelta gene is a molecular target for 5-HT2A receptor-mediated serotonergic effects. Our results suggest that 5-HT2A receptor mediates PCA-induced serotonergic impairments via activation of PKC.delta.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T1",
       "canon:span": {
         "start": 793,
         "end": 806
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T2",
       "canon:span": {
         "start": 161,
         "end": 172
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32437895_causative-agent_0001126#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

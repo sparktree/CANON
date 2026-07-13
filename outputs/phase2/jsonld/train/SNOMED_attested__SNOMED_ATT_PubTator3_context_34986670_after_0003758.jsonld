@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Cardioprotective effects of alantolactone on isoproterenol-induced cardiac injury and cobalt chloride-induced cardiomyocyte injury. OBJECTIVES: Alantolactone (AL) is a compound extracted from the roots of Inula Racemosa that has shown beneficial effects in cardiovascular disease. However, the cardioprotective mechanism of AL against hypoxic/ischemic (H/I) injury is still unclear. This research aimed to determine AL's ability to protect the heart against isoproterenol (ISO)-induced MI injury in vivo and cobalt chloride (CoCl2) induced H/I injury in vitro. METHODS: Electrocardiography (ECG), lactate dehydrogenase (LDH), creatine kinase (CK), and cardiac troponin I (cTnI) assays in addition to histological analysis of the myocardium were used to investigate the effects of AL in vivo. Influences of AL on L-type Ca2+ current (ICa-L) in isolated rat myocytes were observed by the patch-clamp technique. Furthermore, cell viability, apoptosis, oxidative stress injury, mitochondrial membrane potential, and intracellular Ca2+ concentration were examined in vitro. RESULTS: The results indicated that AL treatment ameliorated the morphological and ECG changes associated with MI, and decreased levels of LDH, CK, and cTnI. Furthermore, pretreatment with AL elevated antioxidant enzyme activity and suppressed ROS production. AL prevented H/I-induced apoptosis, mitochondria damage, and calcium overload while reducing ICa-L in a concentration and time dependent fashion. The 50% inhibiting concentration (IC50) and maximal inhibitory effect (Emax) of AL were 17.29 mumol/L and 57.73 +- 1.05%, respectively. CONCLUSION: AL attenuated MI-related injury by reducing oxidative stress, apoptosis, calcium overload, and mitochondria damage. These cardioprotective effects may be related to the direct inhibition of ICa-L.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T1",
       "canon:span": {
         "start": 335,
         "end": 351
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T2",
       "canon:span": {
         "start": 1696,
         "end": 1712
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34986670_after_0003758#mention-T2"
       },
       "canon:sourceRelation": "after",
       "canon:relation": "https://canon.iu.edu/ns#after",

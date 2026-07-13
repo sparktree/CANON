@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Optic neuritis, its differential diagnosis and management. The aim of this review is to summarize the latest information about optic neuritis, its differential diagnosis and management. Optic Neuritis (ON) is defined as inflammation of the optic nerve, which is mostly idiopathic. However it can be associated with variable causes (demyelinating lesions, autoimmune disorders, infectious and inflammatory conditions). Out of these, multiple sclerosis (MS) is the most common cause of demyelinating ON. ON occurs due to inflammatory processes which lead to activation of T-cells that can cross the blood brain barrier and cause hypersensitivity reaction to neuronal structures. For unknown reasons, ON mostly occurs in adult women and people who live in high latitude. The clinical diagnosis of ON consists of the classic triad of visual loss, periocular pain and dyschromatopsia which requires careful ophthalmic, neurologic and systemic examinations to distinguish between typical and atypical ON. ON in neuromyelitis optica (NMO) is initially misdiagnosed as ON in MS or other conditions such as Anterior Ischemic Optic Neuropathy (AION) and Leber's disease. Therefore, differential diagnosis is necessary to make a proper treatment plan. According to Optic Neuritis Treatment Trial (ONTT) the first line of treatment is intravenous methylprednisolone with faster recovery and less chance of recurrence of ON and conversion to MS. However oral prednisolone alone is contraindicated due to increased risk of a second episode. Controlled High-Risk Subjects Avonex( ) Multiple Sclerosis Prevention Study \"CHAMPS\", Betaferon in Newly Emerging Multiple Sclerosis for Initial Treatment \"BENEFIT\" and Early Treatment of MS study \"ETOMS\" have reported that treatment with interferon beta-1a,b results in reduced risk of MS and MRI characteristics of ON. Contrast sensitivity, color vision and visual field are the parameters which remain impaired mostly even after good recovery of visual acuity.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T1",
       "canon:span": {
         "start": 627,
         "end": 643
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T2",
       "canon:span": {
         "start": 1335,
         "end": 1353
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22888383_causative-agent_0000411#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

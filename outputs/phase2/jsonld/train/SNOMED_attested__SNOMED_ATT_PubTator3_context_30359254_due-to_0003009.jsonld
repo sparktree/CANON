@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Genomic approaches in the search for molecular biomarkers in chronic kidney disease. BACKGROUND: Chronic kidney disease (CKD) is recognised as a global public health problem, more prevalent in older persons and associated with multiple co-morbidities. Diabetes mellitus and hypertension are common aetiologies for CKD, but IgA glomerulonephritis, membranous glomerulonephritis, lupus nephritis and autosomal dominant polycystic kidney disease are also common causes of CKD. MAIN BODY: Conventional biomarkers for CKD involving the use of estimated glomerular filtration rate (eGFR) derived from four variables (serum creatinine, age, gender and ethnicity) are recommended by clinical guidelines for the evaluation, classification, and stratification of CKD. However, these clinical biomarkers present some limitations, especially for early stages of CKD, elderly individuals, extreme body mass index values (serum creatinine), or are influenced by inflammation, steroid treatment and thyroid dysfunction (serum cystatin C). There is therefore a need to identify additional non-invasive biomarkers that are useful in clinical practice to help improve CKD diagnosis, inform prognosis and guide therapeutic management. CONCLUSION: CKD is a multifactorial disease with associated genetic and environmental risk factors. Hence, many studies have employed genetic, epigenetic and transcriptomic approaches to identify biomarkers for kidney disease. In this review, we have summarised the most important studies in humans investigating genomic biomarkers for CKD in the last decade. Several genes, including UMOD, SHROOM3 and ELMO1 have been strongly associated with renal diseases, and some of their traits, such as eGFR and serum creatinine. The role of epigenetic and transcriptomic biomarkers in CKD and related diseases is still unclear. The combination of multiple biomarkers into classifiers, including genomic, and/or epigenomic, may give a more complete picture of kidney diseases.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T1",
       "canon:span": {
         "start": 378,
         "end": 393
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T2",
       "canon:span": {
         "start": 61,
         "end": 83
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30359254_due-to_0003009#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

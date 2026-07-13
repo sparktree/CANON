@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Promising influences of hesperidin and hesperetin against diabetes and its complications: a systematic review of molecular, cellular, and metabolic effects. Hesperidin and hesperetin, two flavonoids with potential therapeutic value, have been extensively studied in the context of diabetes management. The main objective of this research is to ascertain their potential as therapeutic options for managing diabetes and its complications. The present study utilized a systematic review methodology and comprehensively explored relevant literature from databases, including PubMed, Scopus, and Web of Science, from inception until July 2023. The review summarized the outcomes related to the molecular, cellular, and metabolic effects of hesperidin and hesperetin in diabetes and its complications. Hesperetin exhibits a potential treatment for preventing diabetes and its associated complications through modulation of inflammatory cytokine release and expression via the pathway of signaling through Toll-like receptor/Myeloid differentiation factor 88/Nuclear factor-kappa B. Hesperidin shows promise as a biomolecule for treating diabetic neuropathy, primarily through activation of nuclear factor erythroid 2-related factor 2 (Nrf-2), as an antioxidant-response element signaling, leading to neuroprotective effects. Both compounds demonstrated the ability to normalize blood glucose levels and reduce serum and liver lipid levels, making them potential candidates for managing hypoglycemia and hypolipidemia in diabetes. Hesperidin also showed potential benefits against diabetic nephropathy by suppressing transforming growth factor-beta1-integrin-linked kinase-Akt signaling and enhancing renal function. Furthermore, hesperidin's antioxidant, anti-inflammatory, and anti-depressant effects in diabetic conditions expanded its potential therapeutic applications. This systematic review provides substantial evidence supporting the consideration of hesperidin and hesperetin for diabetes and its complications. It offers exciting possibilities for developing novel, cost-effective treatment options to enhance diabetes management and patient outcomes.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T1",
       "canon:span": {
         "start": 1132,
         "end": 1151
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T2",
       "canon:span": {
         "start": 58,
         "end": 66
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38234970_due-to_0004492#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Genetic Polymorphisms Associated With the Pharmacokinetics, Pharmacodynamics and Adverse Effects of Olanzapine, Aripiprazole and Risperidone. Olanzapine, aripiprazole and risperidone are atypical antipsychotics or neuroleptics widely used for schizophrenia treatment. They induce various adverse drug reactions depending on their mechanisms of action: metabolic effects, such as weight gain and alterations of glucose and lipid metabolism; hyperprolactinemia and extrapyramidal effects, such as tremor, akathisia, dystonia, anxiety and distress. In this review, we listed polymorphisms associated with individual response variability to olanzapine, aripiprazole and risperidone. Olanzapine is mainly metabolized by cytochrome P450 enzymes, CYP1A2 and CYP2D6, whereas aripiprazole and risperidone metabolism is mainly mediated by CYP2D6 and CYP3A4. Polymorphisms in these genes and other enzymes and transporters, such as enzymes from the uridine 5'-diphospho-glucuronosyltransferase (UGT) family and ATP-binding cassette sub-family B member 1 (ABCB1), are associated to differences in pharmacokinetics. The three antipsychotics act on dopamine and serotonin receptors, among others, and several studies found associations between polymorphisms in these genes and variations in the incidence of adverse effects and in the response to the drug. Since olanzapine is metabolized by CYP1A2, a lower starting dose should be considered in patients treated with fluvoxamine or other CYP1A2 inhibitors. Regarding aripiprazole, a reduced dose should be administered in CYP2D6 poor metabolizers (PMs). Additionally, a reduction to a quarter of the normal dose is recommended if the patient is treated with concomitant CYP3A4 inhibitors. Risperidone dosage should be reduced for CYP2D6 PMs and titrated for CYPD6 ultrarapid metabolizers (UMs). Moreover, risperidone dose should be evaluated when a CYP2D6, CYP3A4 or ABCB1 inhibitor is administered concomitantly.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T1",
       "canon:span": {
         "start": 503,
         "end": 512
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T2",
       "canon:span": {
         "start": 1454,
         "end": 1465
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34335273_causative-agent_0001391#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Metabolic Alterations Caused by Defective Cardiolipin Remodeling in Inherited Cardiomyopathies. The heart is the most energy-consuming organ in the human body. In heart failure, the homeostasis of energy supply and demand is endangered by an increase in cardiomyocyte workload, or by an insufficiency in energy-providing processes. Energy metabolism is directly associated with mitochondrial redox homeostasis. The production of toxic reactive oxygen species (ROS) may overwhelm mitochondrial and cellular ROS defense mechanisms in case of heart failure. Mitochondria are essential cell organelles and provide 95% of the required energy in the heart. Metabolic remodeling, changes in mitochondrial structure or function, and alterations in mitochondrial calcium signaling diminish mitochondrial energy provision in many forms of cardiomyopathy. The mitochondrial respiratory chain creates a proton gradient across the inner mitochondrial membrane, which couples respiration with oxidative phosphorylation and the preservation of energy in the chemical bonds of ATP. Akin to other mitochondrial enzymes, the respiratory chain is integrated into the inner mitochondrial membrane. The tight association with the mitochondrial phospholipid cardiolipin (CL) ensures its structural integrity and coordinates enzymatic activity. This review focuses on how changes in mitochondrial CL may be associated with heart failure. Dysfunctional CL has been found in diabetic cardiomyopathy, ischemia reperfusion injury and the aging heart. Barth syndrome (BTHS) is caused by an inherited defect in the biosynthesis of cardiolipin. Moreover, a dysfunctional CL pool causes other types of rare inherited cardiomyopathies, such as Sengers syndrome and Dilated Cardiomyopathy with Ataxia (DCMA). Here we review the impact of cardiolipin deficiency on mitochondrial functions in cellular and animal models. We describe the molecular mechanisms concerning mitochondrial dysfunction as an incitement of cardiomyopathy and discuss potential therapeutic strategies.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T1",
       "canon:span": {
         "start": 1450,
         "end": 1473
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T2",
       "canon:span": {
         "start": 1934,
         "end": 1959
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33187128_due-to_0003377#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

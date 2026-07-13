@@ -28,13 +28,13 @@ try:
     from config import BIORED_FILES, CDR_FILES, DATA_ROOT, REPO_ROOT, relative_to_repo
     from utils import parse_pubtator
     import entity_scope
-    from unified_format import Document, EntityMention, Relation, write_jsonl
+    from unified_format import Document, EntityMention, Relation, write_canonical
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from config import BIORED_FILES, CDR_FILES, DATA_ROOT, REPO_ROOT, relative_to_repo
     from utils import parse_pubtator
     import entity_scope
-    from unified_format import Document, EntityMention, Relation, write_jsonl
+    from unified_format import Document, EntityMention, Relation, write_canonical
 
 
 OUTPUT_DIR = REPO_ROOT / "outputs" / "phase2" / "unified"
@@ -322,7 +322,7 @@ def _convert_split(
         n_rel += len(doc.relations)
 
     out_path = OUTPUT_DIR / corpus / f"{split}.jsonl"
-    written = write_jsonl(iter(docs), out_path)
+    written = write_canonical(iter(docs), out_path)
     return out_path, written, n_ent, n_rel
 
 

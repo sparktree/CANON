@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "A landscape for drug-target interactions based on network analysis. In this work, we performed an analysis of the networks of interactions between drugs and their targets to assess how connected the compounds are. For our purpose, the interactions were downloaded from the DrugBank database, and we considered all drugs approved by the FDA. Based on topological analysis of this interaction network, we obtained information on degree, clustering coefficient, connected components, and centrality of these interactions. We identified that this drug-target interaction network cannot be divided into two disjoint and independent sets, i.e., it is not bipartite. In addition, the connectivity or associations between every pair of nodes identified that the drug-target network is constituted of 165 connected components, where one giant component contains 4376 interactions that represent 89.99% of all the elements. In this regard, the histamine H1 receptor, which belongs to the family of rhodopsin-like G-protein-coupled receptors and is activated by the biogenic amine histamine, was found to be the most important node in the centrality of input-degrees. In the case of centrality of output-degrees, fostamatinib was found to be the most important node, as this drug interacts with 300 different targets, including arachidonate 5-lipoxygenase or ALOX5, expressed on cells primarily involved in regulation of immune responses. The top 10 hubs interacted with 33% of the target genes. Fostamatinib stands out because it is used for the treatment of chronic immune thrombocytopenia in adults. Finally, 187 highly connected sets of nodes, structured in communities, were also identified. Indeed, the largest communities have more than 400 elements and are related to metabolic diseases, psychiatric disorders and cancer. Our results demonstrate the possibilities to explore these compounds and their targets to improve drug repositioning and contend against emergent diseases.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T1",
       "canon:span": {
         "start": 934,
         "end": 955
@@ -29,7 +108,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T2",
       "canon:span": {
         "start": 1070,
         "end": 1079
@@ -50,7 +129,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T3",
       "canon:span": {
         "start": 1202,
         "end": 1214
@@ -69,7 +148,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T4",
       "canon:span": {
         "start": 1348,
         "end": 1353
@@ -88,7 +167,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T5",
       "canon:span": {
         "start": 1485,
         "end": 1497
@@ -107,7 +186,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T6",
       "canon:span": {
         "start": 1549,
         "end": 1580
@@ -128,7 +207,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T7",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T7",
       "canon:span": {
         "start": 1765,
         "end": 1783
@@ -149,7 +228,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T8",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T8",
       "canon:span": {
         "start": 1785,
         "end": 1806
@@ -170,7 +249,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T9",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T9",
       "canon:span": {
         "start": 1811,
         "end": 1817
@@ -191,7 +270,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T10",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T10",
       "canon:span": {
         "start": 1956,
         "end": 1973
@@ -212,12 +291,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T3"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T3"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T6"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T6"
       },
       "canon:sourceRelation": "Negative_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#treats",
@@ -268,12 +347,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#relation-2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#relation-2",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T2"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T2"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T1"
       },
       "canon:sourceRelation": "Positive_Correlation",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",
@@ -314,12 +393,12 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#relation-3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#relation-3",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T3"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T3"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/33730052#mention-T4"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/33730052#mention-T4"
       },
       "canon:sourceRelation": "Association",
       "canon:relation": "https://canon.iu.edu/ns#associated-with",

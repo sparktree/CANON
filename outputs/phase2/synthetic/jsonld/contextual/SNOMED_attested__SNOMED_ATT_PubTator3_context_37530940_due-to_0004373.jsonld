@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Hydroxychloroquine in nephrology: current status and future directions. Hydroxychloroquine is one of the oldest disease-modifying anti-rheumatic drugs in clinical use. The drug interferes with lysosomal activity and antigen presentation, inhibits autophagy, and decreases transcription of pro-inflammatory cytokines. Owing to its immunomodulatory, anti-inflammatory, anti-thrombotic effect, hydroxychloroquine has been an integral part of therapy for systemic lupus erythematosus and lupus nephritis for several decades. The therapeutic versatility of hydroxychloroquine has led to repurposing it for other clinical conditions, with recent studies showing reduction in proteinuria in IgA nephropathy. Research is also underway to investigate the efficacy of hydroxychloroquine in primary membranous nephropathy, Alport's syndrome, systemic vasculitis, anti-GBM disease, acute kidney injury and for cardiovascular risk reduction in chronic kidney disease. Hydroxychloroquine is well-tolerated, inexpensive, and widely available and therefore, should its indications expand in the future, it would certainly be welcomed. However, clinicians should be aware of the risk of irreversible and progressive retinal toxicity and rarely, cardiomyopathy. Monitoring hydroxychloroquine levels in blood appears to be a promising tool to evaluate compliance, individualize the dose and reduce the risk of retinal toxicity, although this is not yet standard clinical practice. In this review, we discuss the existing knowledge regarding the mechanism of action of hydroxychloroquine, its utility in lupus nephritis and other kidney diseases, the main adverse effects and the evidence gaps that need to be addressed in future research. Created with Biorender.com. HCQ, hydroxychloroquine; GBM, glomerular basement membrane; mDC, myeloid dendritic cell; MHC, major histocompatibility complex; TLR, toll-like receptor.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T1",
       "canon:span": {
         "start": 484,
         "end": 499
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T2",
       "canon:span": {
         "start": 451,
         "end": 479
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37530940_due-to_0004373#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

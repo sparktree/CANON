@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Hepatic safety of antibiotics used in primary care. Antibiotics used by general practitioners frequently appear in adverse-event reports of drug-induced hepatotoxicity. Most cases are idiosyncratic (the adverse reaction cannot be predicted from the drug's pharmacological profile or from pre-clinical toxicology tests) and occur via an immunological reaction or in response to the presence of hepatotoxic metabolites. With the exception of trovafloxacin and telithromycin (now severely restricted), hepatotoxicity crude incidence remains globally low but variable. Thus, amoxicillin/clavulanate and co-trimoxazole, as well as flucloxacillin, cause hepatotoxic reactions at rates that make them visible in general practice (cases are often isolated, may have a delayed onset, sometimes appear only after cessation of therapy and can produce an array of hepatic lesions that mirror hepatobiliary disease, making causality often difficult to establish). Conversely, hepatotoxic reactions related to macrolides, tetracyclines and fluoroquinolones (in that order, from high to low) are much rarer, and are identifiable only through large-scale studies or worldwide pharmacovigilance reporting. For antibiotics specifically used for tuberculosis, adverse effects range from asymptomatic increases in liver enzymes to acute hepatitis and fulminant hepatic failure. Yet, it is difficult to single out individual drugs, as treatment always entails associations. Patients at risk are mainly those with previous experience of hepatotoxic reaction to antibiotics, the aged or those with impaired hepatic function in the absence of close monitoring, making it important to carefully balance potential risks with expected benefits in primary care. Pharmacogenetic testing using the new genome-wide association studies approach holds promise for better understanding the mechanism(s) underlying hepatotoxicity.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T1",
       "canon:span": {
         "start": 852,
         "end": 867
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T2",
       "canon:span": {
         "start": 996,
         "end": 1006
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

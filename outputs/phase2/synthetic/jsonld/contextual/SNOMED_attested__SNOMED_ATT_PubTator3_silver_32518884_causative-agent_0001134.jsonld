@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Neuropathy target esterase (NTE/PNPLA6) and organophosphorus compound-induced delayed neurotoxicity (OPIDN). Systemic inhibition of neuropathy target esterase (NTE) with certain organophosphorus (OP) compounds produces OP compound-induced delayed neurotoxicity (OPIDN), a distal degeneration of axons in the central nervous system (CNS) and peripheral nervous system (PNS), thereby providing a powerful model for studying a spectrum of neurodegenerative diseases. Axonopathies are important medical entities in their own right, but in addition, illnesses once considered primary neuronopathies are now thought to begin with axonal degeneration. These disorders include Alzheimer's disease, Parkinson's disease, and motor neuron diseases such as amyotrophic lateral sclerosis (ALS). Moreover, conditional knockout of NTE in the mouse CNS produces vacuolation and other degenerative changes in large neurons in the hippocampus, thalamus, and cerebellum, along with degeneration and swelling of axons in ascending and descending spinal cord tracts. In humans, NTE mutations cause a variety of neurodegenerative conditions resulting in a range of deficits including spastic paraplegia and blindness. Mutations in the Drosophila NTE orthologue SwissCheese (SWS) produce neurodegeneration characterized by vacuolization that can be partially rescued by expression of wild-type human NTE, suggesting a potential therapeutic approach for certain human neurological disorders. This chapter defines NTE and OPIDN, presents an overview of OP compounds, provides a rationale for NTE research, and traces the history of discovery of NTE and its relationship to OPIDN. It then briefly describes subsequent studies of NTE, including practical applications of the assay; aspects of its domain structure, subcellular localization, and tissue expression; abnormalities associated with NTE mutations, knockdown, and conventional or conditional knockout; and hypothetical models to help guide future research on elucidating the role of NTE in OPIDN.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T1",
       "canon:span": {
         "start": 78,
         "end": 99
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T2",
       "canon:span": {
         "start": 44,
         "end": 69
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32518884_causative-agent_0001134#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

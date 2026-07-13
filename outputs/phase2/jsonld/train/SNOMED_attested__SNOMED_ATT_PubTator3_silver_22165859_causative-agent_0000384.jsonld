@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Drug allergy. Drug allergy encompasses a spectrum of immunologically-mediated hypersensitivity reactions with varying mechanisms and clinical presentations. This type of adverse drug reaction (ADR) not only affects patient quality of life, but may also lead to delayed treatment, unnecessary investigations, and even mortality. Given the myriad of symptoms associated with the condition, diagnosis is often challenging. Therefore, referral to an allergist experienced in the identification, diagnosis and management of drug allergy is recommended if a drug-induced allergic reaction is suspected. Diagnosis relies on a careful history and physical examination. In some instances, skin testing, graded challenges and induction of drug tolerance procedures may be required.The most effective strategy for the management of drug allergy is avoidance or discontinuation of the offending drug. When available, alternative medications with unrelated chemical structures should be substituted. Cross-reactivity among drugs should be taken into consideration when choosing alternative agents. Additional therapy for drug hypersensitivity reactions is largely supportive and may include topical corticosteroids, oral antihistamines and, in severe cases, systemic corticosteroids. In the event of anaphylaxis, the treatment of choice is injectable epinephrine. If a particular drug to which the patient is allergic is indicated and there is no suitable alternative, induction of drug tolerance procedures may be considered to induce temporary tolerance to the drug.This article provides a backgrounder on drug allergy and strategies for the diagnosis and management of some of the most common drug-induced allergic reactions, such allergies to penicillin, sulfonamides, cephalosporins, radiocontrast media, local anesthetics, general anesthetics, acetylsalicylic acid (ASA) and non-steroidal anti-inflammatory drugs.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T1",
       "canon:span": {
         "start": 0,
         "end": 12
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T2",
       "canon:span": {
         "start": 1837,
         "end": 1857
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22165859_causative-agent_0000384#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Iron Overload Damages the Endothelial Mitochondria via the ROS/ADMA/DDAHII/eNOS/NO Pathway. It has been recognized that iron overload may harm the body's health. Vascular endothelial cells (VECs) are one of the main targets of iron overload injury, and the mechanism involved was thought to be related to the excessive generation of reactive oxygen species (ROS). However, the subcellular and temporal characteristics of ROS generation, potential downstream mechanisms, and target organelles in VECs injured by iron overload have not been expounded yet. In this study, we elucidated the abovementioned issues through both in vivo and in vitro experiments. Mice were fed pellet diets that were supplemented with iron for 4 consecutive months. Results showed that the thoracic aortic strips' endothelium-dependent dilation was significantly impaired and associated with inflammatory changes, noticeable under brown TUNEL-positive staining in microscopy analysis. In addition, the serum content of asymmetric dimethylarginine (ADMA) increased, whereas nitric oxide (NO) levels decreased. Furthermore, the dimethylarginine dimethylaminohydrolase II (DDAHII) expression and activity, as well as the phosphorylation of endothelial nitric oxide synthase (eNOS) in aortic tissue, were inhibited. Human umbilical vein endothelial cells were treated with 50 muM iron dextran for 48 hours, after which the cell viability, NO content, DDAHII expression and activity, and phosphorylation of eNOS decreased and lactate dehydrogenase and caspase-3 activity, ADMA content, and apoptotic cells significantly increased. After the addition of L-arginine (L-Arg) or pAD/DDAHII, the abovementioned changes were reversed. By dynamically detecting the changes of ROS generation in the cytoplasm and mitochondria and interfering with different aspects of signaling pathways, we have confirmed for the first time that excessive ROS originates from the cytoplasm and activates the ROS-induced ROS release (RIRR) mechanism, leading to mitochondrial dysfunction. Together, our data suggested that excessive free iron ions produced excess ROS in the cytoplasm. Thus, excess ROS create one vicious circle by activating the ADMA/eNOS/DDAHII/NO pathway and another vicious circle by activation of the RIRR mechanism, which, when combined, induce a ROS burst, resulting in mitochondrial dysfunction and damaged VECs.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T1",
       "canon:span": {
         "start": 0,
         "end": 13
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T2",
       "canon:span": {
         "start": 711,
         "end": 715
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31781327_causative-agent_0003200#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

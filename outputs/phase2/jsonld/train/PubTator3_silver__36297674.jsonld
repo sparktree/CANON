@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "PubTator3_silver",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Interpreting the Benefit and Risk Data in Between-Drug Comparisons: Illustration of the Challenges Using the Example of Mefenamic Acid versus Ibuprofen. Evidence-based pain therapy should rely on precisely defined and personalized criteria. This includes balancing the benefits and risks not only of single drugs but often requires complex between-drug comparisons. Non-steroidal anti-inflammatory drugs (NSAIDs) have been available for several decades and their use is described in an abundance of guidelines. Most of these guidelines recommend that 'the selection of a particular NSAID should be based on the benefit-risk balance for each patient'. However, head-to-head studies are often lacking or of poor quality, reflecting the lower standards for clinical research and regulatory approval at the time. The inconsistency of approved indications between countries due to national applications adds to the complexity. Finally, a fading research interest once drugs become generic points to a general deficit in the post-marketing evaluation of medicines. Far from claiming completeness, this narrative review aimed to illustrate the challenges that physicians encounter when trying to balance benefits and risks in a situation of incomplete and inconsistent data on longstanding treatment concepts. Ibuprofen and mefenamic acid, the most frequently sold NSAIDs in Austria, serve as examples. The illustrated principles are, however, not specific to these drugs and are generalizable to any comparison of older drugs in daily clinical practice.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T1",
       "canon:span": {
         "start": 120,
         "end": 134
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T2",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T2",
       "canon:span": {
         "start": 142,
         "end": 151
@@ -52,7 +131,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T3",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T3",
       "canon:span": {
         "start": 168,
         "end": 172
@@ -73,7 +152,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T4",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T4",
       "canon:span": {
         "start": 641,
         "end": 648
@@ -92,7 +171,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T5",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T5",
       "canon:span": {
         "start": 1303,
         "end": 1312
@@ -113,7 +192,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T6",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T6",
       "canon:span": {
         "start": 1317,
         "end": 1331
@@ -136,12 +215,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#relation-1",
+      "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T2"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T2"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/PubTator3_silver/36297674#mention-T1"
+        "@id": "https://canon.iu.edu/document/PubTator3_silver/36297674#mention-T1"
       },
       "canon:sourceRelation": "Comparison",
       "canon:relation": "https://canon.iu.edu/ns#compared-with",

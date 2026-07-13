@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "\"Manganese-induced neurotoxicity: a review of its behavioral consequences and neuroprotective strategies\". Manganese (Mn) is an essential heavy metal. However, Mn's nutritional aspects are paralleled by its role as a neurotoxicant upon excessive exposure. In this review, we covered recent advances in identifying mechanisms of Mn uptake and its molecular actions in the brain as well as promising neuroprotective strategies. The authors focused on reporting findings regarding Mn transport mechanisms, Mn effects on cholinergic system, behavioral alterations induced by Mn exposure and studies of neuroprotective strategies against Mn intoxication. We report that exposure to Mn may arise from environmental sources, occupational settings, food, total parenteral nutrition (TPN), methcathinone drug abuse or even genetic factors, such as mutation in the transporter SLC30A10. Accumulation of Mn occurs mainly in the basal ganglia and leads to a syndrome called manganism, whose symptoms of cognitive dysfunction and motor impairment resemble Parkinson's disease (PD). Various neurotransmitter systems may be impaired due to Mn, especially dopaminergic, but also cholinergic and GABAergic. Several proteins have been identified to transport Mn, including divalent metal tranporter-1 (DMT-1), SLC30A10, transferrin and ferroportin and allow its accumulation in the central nervous system. Parallel to identification of Mn neurotoxic properties, neuroprotective strategies have been reported, and these include endogenous antioxidants (for instance, vitamin E), plant extracts (complex mixtures containing polyphenols and non-characterized components), iron chelating agents, precursors of glutathione (GSH), and synthetic compounds that can experimentally afford protection against Mn-induced neurotoxicity.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T1",
       "canon:span": {
         "start": 19,
         "end": 32
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T2",
       "canon:span": {
         "start": 1688,
         "end": 1699
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000703#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

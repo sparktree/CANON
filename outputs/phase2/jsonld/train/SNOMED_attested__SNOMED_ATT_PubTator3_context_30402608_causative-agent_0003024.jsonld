@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Epidemiology of cutaneous adverse drug reactions. Epidemiologic investigation of cutaneous adverse drug reactions (cADRs) is important in order to evaluate their impact on dermatology and health care in general as well as their burden on affected patients. Few epidemiologic studies have been performed on frequent non-life-threatening cADR, including reactions of both delayed and immediate hypersensitivity, such as maculopapular exanthema (MPE), fixed drug eruption, and urticaria. Concerning rare but life-threatening severe cutaneous adverse reactions, e.g., toxic epidermal necrolysis (TEN), Stevens-Johnson syndrome (SJS), acute generalized exanthematous pustulosis (AGEP), and drug reaction with eosinophilia and systemic symptoms (DRESS), several epidemiologic studies have been performed to date, some of which are still ongoing. Such studies enable the calculation of reliable incidence rates and demographic data, and also allow researchers to perform risk estimation for drugs. The spectrum of drugs causing cADR differs substantially when separating the various clinical conditions. Whereas antibiotics are by far the most frequent inducers of milder cADRs, like MPE, they have a much lower risk of inducing SJS/TEN, for which \"high-risk\" drugs are anti-infective sulfonamides, allopurinol, certain anti-epileptic drugs, nevirapine, and non-steroidal anti-inflammatory drugs (NSAIDs) of the oxicam-type. In contrast, AGEP is predominantly caused by the antibiotics pristinamycin and aminopenicillins, followed by quinolones, (hydroxy-)chloroquine, and sulfonamides. DRESS can be induced by a number of drugs known to cause SJS/TEN, such as certain antiepileptics and allopurinol, but also other medications (e.g., minocyclin).",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T1",
       "canon:span": {
         "start": 392,
         "end": 408
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T2",
       "canon:span": {
         "start": 1292,
         "end": 1303
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003024#mention-T2"
       },
       "canon:sourceRelation": "causative-agent",
       "canon:relation": "https://canon.iu.edu/ns#causative-agent",

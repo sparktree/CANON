@@ -1,6 +1,85 @@
 {
-  "@context": "../../../scripts/contexts/canon.jsonld",
-  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166",
+  "@context": {
+    "canon": "https://canon.iu.edu/ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "prov": "http://www.w3.org/ns/prov#",
+    "mesh": "http://id.nlm.nih.gov/mesh/",
+    "snomed": "http://snomed.info/id/",
+    "biored": "https://canon.iu.edu/corpus/biored#",
+    "bc5cdr": "https://canon.iu.edu/corpus/bc5cdr#",
+    "ncbi_gene": "https://www.ncbi.nlm.nih.gov/gene/",
+    "dbsnp": "https://www.ncbi.nlm.nih.gov/snp/",
+    "ncbi_taxon": "https://www.ncbi.nlm.nih.gov/taxonomy/",
+    "cellosaurus": "https://www.cellosaurus.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "skos:broader": {
+      "@type": "@id"
+    },
+    "skos:narrower": {
+      "@type": "@id"
+    },
+    "skos:related": {
+      "@type": "@id"
+    },
+    "skos:closeMatch": {
+      "@type": "@id"
+    },
+    "skos:broadMatch": {
+      "@type": "@id"
+    },
+    "skos:narrowMatch": {
+      "@type": "@id"
+    },
+    "skos:relatedMatch": {
+      "@type": "@id"
+    },
+    "skos:inScheme": {
+      "@type": "@id"
+    },
+    "canon:normalizedConcept": {
+      "@type": "@id"
+    },
+    "canon:sourceConcept": {
+      "@type": "@id"
+    },
+    "canon:relation": {
+      "@type": "@id"
+    },
+    "canon:subject": {
+      "@type": "@id"
+    },
+    "canon:object": {
+      "@type": "@id"
+    },
+    "canon:replacedBy": {
+      "@type": "@id"
+    },
+    "canon:tier": {
+      "@type": "xsd:integer"
+    },
+    "canon:probability": {
+      "@type": "xsd:double"
+    },
+    "canon:confidence": {
+      "@type": "xsd:double"
+    },
+    "canon:sourceCorpus": {
+      "@type": "xsd:string"
+    },
+    "canon:split": {
+      "@type": "xsd:string"
+    },
+    "canon:mappingProperty": {
+      "@type": "xsd:string"
+    },
+    "canon:sourceNotation": {
+      "@type": "xsd:string"
+    },
+    "canon:schemaVersion": {
+      "@type": "xsd:string"
+    }
+  },
+  "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166",
   "canon:schemaVersion": "3.0.0",
   "canon:sourceCorpus": "SNOMED_attested",
   "canon:split": "train",
@@ -10,7 +89,7 @@
   "canon:text": "Onopordum acanthium L. extract attenuates pancreatic beta-Cells and cardiac inflammation in streptozocin-induced diabetic rats. BACKGROUND AND OBJECTIVE: Methanolic extract from Onopordum acanthium L. leaves (MEOAL) has been discovered to treat diabetic complications. The objective of this study is to evaluate the ameliorative role of MEOAL on pancreatic islet injury and myocardial inflammation in diabetic rats. METHODS: Forty male Wister albino rats were allocated into five groups of eight rats each. Group A was the negative control group. Single intraperitoneal injection of streptozocin (50mg/kg) were used for the four experimental groups. Group B served as the positive control group. The rats in Groups C, D, and E received glibenclamide (5mg/kg), MEOAL (200, and 400 mg/kg) respectively, for eight weeks. Group C served as the standard drug group. High performance liquid chromatography (HPLC) and 2,2-diphenyl-1-picryl-hydrazyl-hydrate (DPPH) assays for antioxidant activity were conducted in MEOAL. In silico study, calculation of molecular binding energy (DG), and inhibition constant (pKi) of bioactive constituents in MEOAL were performed. RESULTS: Administration of MEOAL significantly increases insulin content in beta-cells with a marked enhancement of pancreatic islet structure, resulting in a significant reduction of blood glucose level and body weight loss. MEOAL treatment suppressed the increase of inflammatory cell score in myocardial tissue with an elevation of M2 -like macrophage. The phytochemical studies recorded the presence of six polyphenols, including catechin, kaempferol, syringic acid, p-coumaric acid, epicatechin and gallic acid in MEOAL. Moreover, the antioxidant activity of the extract was greater than that of standard ascorbic acid. The docking studies of the ligands Catechin, kaempferol and epicatechin with proteins showed high affinities with various targets related in beta-Cells and cardiac inflammation. CONCLUSIONS: The attenuation of pancreatic beta-Cells damage and cardiac inflammation by MEOAL could be attributed to the presence of Catechin, kaempferol and epicatechin which have high affinities with the receptors namely pancreatic alpha-amylase, glucokinase, COX-2, and COX-1.",
   "canon:mentions": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T1",
       "canon:span": {
         "start": 245,
         "end": 267
@@ -31,7 +110,7 @@
       }
     },
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T2",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T2",
       "canon:span": {
         "start": 113,
         "end": 121
@@ -54,12 +133,12 @@
   ],
   "canon:relations": [
     {
-      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#relation-1",
+      "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#relation-1",
       "canon:subject": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T1"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T1"
       },
       "canon:object": {
-        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T2"
+        "@id": "https://canon.iu.edu/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36696433_due-to_0004166#mention-T2"
       },
       "canon:sourceRelation": "due-to",
       "canon:relation": "https://canon.iu.edu/ns#due-to",

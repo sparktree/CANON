@@ -53,13 +53,13 @@ try:
     from config import REPO_ROOT, relative_to_repo
     import skos_schema
     import concept_sty
-    from unified_format import Document, EntityMention, read_jsonl, write_jsonl
+    from unified_format import Document, EntityMention, read_jsonl, write_canonical
 except ImportError:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from config import REPO_ROOT, relative_to_repo
     import skos_schema
     import concept_sty
-    from unified_format import Document, EntityMention, read_jsonl, write_jsonl
+    from unified_format import Document, EntityMention, read_jsonl, write_canonical
 
 
 # ---------------------------------------------------------------------------
@@ -334,7 +334,7 @@ def apply_all(verbose: bool = True) -> dict:
                     n_docs += 1
                     yield stamp_document(doc, table)
 
-            written = write_jsonl(_stamped_docs(), out_path)
+            written = write_canonical(_stamped_docs(), out_path)
 
             # Second pass for counts (small files; read again).
             for doc in read_jsonl(out_path):
