@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27527163_due-to_0000681",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_27527163_due-to_0000681",
+  "canon:title": "Coadjuvants in the Diabetic Complications: Nutraceuticals and Drugs with Pleiotropic Effects.",
+  "canon:abstract": "Because diabetes mellitus (DM) is a multifactorial metabolic disease, its prevention and treatment has been a constant challenge for basic and clinical investigators focused on translating their discoveries into clinical treatment of this complex disorder. In this review, we highlight recent experimental and clinical evidences of potential coadjuvants in the management of DM, such as polyphenols (quercetin, resveratrol and silymarin), cultured probiotic microorganisms and drugs acting through direct/indirect or pleiotropic effects on glycemic control in DM. Among several options, we highlight new promising therapeutic coadjuvants, including chemical scavengers, the probiotic kefir and the phosphodiesterase 5 inhibitors, which besides the reduction of hyperglycemia and ameliorate insulin resistance, they reduce oxidative stress and improve endothelial dysfunction in the systemic vascular circulation. In the near future, experimental studies are expected to clear the intracellular pathways involving coadjuvants. The design of clinical trials may also contribute to new strategies with coadjuvants against the harmful effects of diabetic complications. ",
+  "canon:text": "Coadjuvants in the Diabetic Complications: Nutraceuticals and Drugs with Pleiotropic Effects. Because diabetes mellitus (DM) is a multifactorial metabolic disease, its prevention and treatment has been a constant challenge for basic and clinical investigators focused on translating their discoveries into clinical treatment of this complex disorder. In this review, we highlight recent experimental and clinical evidences of potential coadjuvants in the management of DM, such as polyphenols (quercetin, resveratrol and silymarin), cultured probiotic microorganisms and drugs acting through direct/indirect or pleiotropic effects on glycemic control in DM. Among several options, we highlight new promising therapeutic coadjuvants, including chemical scavengers, the probiotic kefir and the phosphodiesterase 5 inhibitors, which besides the reduction of hyperglycemia and ameliorate insulin resistance, they reduce oxidative stress and improve endothelial dysfunction in the systemic vascular circulation. In the near future, experimental studies are expected to clear the intracellular pathways involving coadjuvants. The design of clinical trials may also contribute to new strategies with coadjuvants against the harmful effects of diabetic complications. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27527163_due-to_0000681#mention-T1",
+      "canon:span": {
+        "start": 19,
+        "end": 41
+      },
+      "canon:surface": "Diabetic Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27527163_due-to_0000681#mention-T2",
+      "canon:span": {
+        "start": 102,
+        "end": 119
+      },
+      "canon:surface": "diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27527163_due-to_0000681#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27527163_due-to_0000681#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27527163_due-to_0000681#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "27527163"
+      }
+    }
+  ]
+}

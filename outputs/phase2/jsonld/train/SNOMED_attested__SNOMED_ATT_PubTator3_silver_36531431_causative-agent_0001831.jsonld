@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36531431_causative-agent_0001831",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36531431_causative-agent_0001831",
+  "canon:title": "Immune-Mediated Inner Ear Disease Associated with Type 1 Autoimmune Hepatitis: A Challenging Coexistence.",
+  "canon:abstract": "Autoimmune hepatitis (AIH) is characterized by elevated serum transaminase, increased immunoglobulin G levels, presence of autoantibodies, and hepatocellular damage. Coexistence with other autoimmune diseases has been reported in almost half of patients with AIH. Here, we report a 60-year-old man who developed rapidly progressive, bilateral, asymmetrical, and asynchronous sensorineural hearing loss that was consistent with immune-mediated inner ear disease (IMIED). This devastating presentation evolved as a late manifestation in the context of a six-month systemic illness that had previously resulted in type 1 AIH. A biochemical remission with normalization of aminotransferases achieved within two months after the initiation of corticosteroids with azathioprine. Further, an acceptable response has also been achieved at the patient regarding the right ear-hearing impairment; though, treatment could not reverse the substantial decrement in hearing capability of the left ear. To our knowledge, this is the first case report of the concurrent development of type 1 AIH and IMIED.",
+  "canon:text": "Immune-Mediated Inner Ear Disease Associated with Type 1 Autoimmune Hepatitis: A Challenging Coexistence. Autoimmune hepatitis (AIH) is characterized by elevated serum transaminase, increased immunoglobulin G levels, presence of autoantibodies, and hepatocellular damage. Coexistence with other autoimmune diseases has been reported in almost half of patients with AIH. Here, we report a 60-year-old man who developed rapidly progressive, bilateral, asymmetrical, and asynchronous sensorineural hearing loss that was consistent with immune-mediated inner ear disease (IMIED). This devastating presentation evolved as a late manifestation in the context of a six-month systemic illness that had previously resulted in type 1 AIH. A biochemical remission with normalization of aminotransferases achieved within two months after the initiation of corticosteroids with azathioprine. Further, an acceptable response has also been achieved at the patient regarding the right ear-hearing impairment; though, treatment could not reverse the substantial decrement in hearing capability of the left ear. To our knowledge, this is the first case report of the concurrent development of type 1 AIH and IMIED.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36531431_causative-agent_0001831#mention-T1",
+      "canon:span": {
+        "start": 249,
+        "end": 270
+      },
+      "canon:surface": "hepatocellular damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36531431_causative-agent_0001831#mention-T2",
+      "canon:span": {
+        "start": 865,
+        "end": 877
+      },
+      "canon:surface": "azathioprine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001379",
+      "canon:sourceNotation": "D001379",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36531431_causative-agent_0001831#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36531431_causative-agent_0001831#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36531431_causative-agent_0001831#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36531431"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34986721_causative-agent_0001552",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34986721_causative-agent_0001552",
+  "canon:title": "Pharmaceutical strategies for preventing toxicity and promoting antioxidant and anti-inflammatory actions of bilirubin.",
+  "canon:abstract": "Bilirubin (BR) is the final product of haem catabolism. Disruptions along BR metabolic/transport pathways resulting from inherited disorders can increase plasma BR concentration (hyperbilirubinaemia). Unconjugated hyperbilirubinemia may induce BR accumulation in brain, potentially causing irreversible neurological damage, a condition known as BR encephalopathy or kernicterus, to which newborns are especially vulnerable. Numerous pharmaceutical strategies, mostly based on hemoperfusion, have been proposed over the last decades to identify new valid, low-risk alternatives for BR removal from plasma. On the other hand, accumulating evidence indicates that BR produces health benefits due to its potent antioxidant, anti-inflammatory and immunomodulatory action with a significant potential for the treatment of a multitude of diseases. The present manuscript reviews both such aspects of BR pharmacology, gathering literature data on applied pharmaceutical strategies adopted to: (i) reduce the plasma BR concentration for preventing neurotoxicity; (ii) produce a therapeutic effect based on BR efficacy in the treatment of many disorders.",
+  "canon:text": "Pharmaceutical strategies for preventing toxicity and promoting antioxidant and anti-inflammatory actions of bilirubin. Bilirubin (BR) is the final product of haem catabolism. Disruptions along BR metabolic/transport pathways resulting from inherited disorders can increase plasma BR concentration (hyperbilirubinaemia). Unconjugated hyperbilirubinemia may induce BR accumulation in brain, potentially causing irreversible neurological damage, a condition known as BR encephalopathy or kernicterus, to which newborns are especially vulnerable. Numerous pharmaceutical strategies, mostly based on hemoperfusion, have been proposed over the last decades to identify new valid, low-risk alternatives for BR removal from plasma. On the other hand, accumulating evidence indicates that BR produces health benefits due to its potent antioxidant, anti-inflammatory and immunomodulatory action with a significant potential for the treatment of a multitude of diseases. The present manuscript reviews both such aspects of BR pharmacology, gathering literature data on applied pharmaceutical strategies adopted to: (i) reduce the plasma BR concentration for preventing neurotoxicity; (ii) produce a therapeutic effect based on BR efficacy in the treatment of many disorders.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34986721_causative-agent_0001552#mention-T1",
+      "canon:span": {
+        "start": 1159,
+        "end": 1172
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34986721_causative-agent_0001552#mention-T2",
+      "canon:span": {
+        "start": 109,
+        "end": 118
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34986721_causative-agent_0001552#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34986721_causative-agent_0001552#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34986721_causative-agent_0001552#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34986721"
+      }
+    }
+  ]
+}

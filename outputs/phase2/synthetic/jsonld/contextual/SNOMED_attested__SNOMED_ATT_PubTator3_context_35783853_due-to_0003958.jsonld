@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35783853_due-to_0003958",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35783853_due-to_0003958",
+  "canon:title": "Mitochondrial Dynamics and Mitophagy in Cardiometabolic Disease.",
+  "canon:abstract": "Mitochondria play a key role in cellular metabolism. Mitochondrial dynamics (fusion and fission) and mitophagy, are critical to mitochondrial function. Fusion allows organelles to share metabolites, proteins, and mitochondrial DNA, promoting complementarity between damaged mitochondria. Fission increases the number of mitochondria to ensure that they are passed on to their offspring during mitosis. Mitophagy is a process of selective removal of excess or damaged mitochondria that helps improve energy metabolism. Cardiometabolic disease is characterized by mitochondrial dysfunction, high production of reactive oxygen species, increased inflammatory response, and low levels of ATP. Cardiometabolic disease is closely related to mitochondrial dynamics and mitophagy. This paper reviewed the mechanisms of mitochondrial dynamics and mitophagy (focus on MFN1, MFN2, OPA1, DRP1, and PINK1 proteins) and their roles in diabetic cardiomyopathy, myocardial infarction, cardiac hypertrophy, heart failure, atherosclerosis, and obesity.",
+  "canon:text": "Mitochondrial Dynamics and Mitophagy in Cardiometabolic Disease. Mitochondria play a key role in cellular metabolism. Mitochondrial dynamics (fusion and fission) and mitophagy, are critical to mitochondrial function. Fusion allows organelles to share metabolites, proteins, and mitochondrial DNA, promoting complementarity between damaged mitochondria. Fission increases the number of mitochondria to ensure that they are passed on to their offspring during mitosis. Mitophagy is a process of selective removal of excess or damaged mitochondria that helps improve energy metabolism. Cardiometabolic disease is characterized by mitochondrial dysfunction, high production of reactive oxygen species, increased inflammatory response, and low levels of ATP. Cardiometabolic disease is closely related to mitochondrial dynamics and mitophagy. This paper reviewed the mechanisms of mitochondrial dynamics and mitophagy (focus on MFN1, MFN2, OPA1, DRP1, and PINK1 proteins) and their roles in diabetic cardiomyopathy, myocardial infarction, cardiac hypertrophy, heart failure, atherosclerosis, and obesity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35783853_due-to_0003958#mention-T1",
+      "canon:span": {
+        "start": 986,
+        "end": 1009
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35783853_due-to_0003958#mention-T2",
+      "canon:span": {
+        "start": 1055,
+        "end": 1068
+      },
+      "canon:surface": "heart failure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006333",
+      "canon:sourceNotation": "D006333",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35783853_due-to_0003958#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35783853_due-to_0003958#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35783853_due-to_0003958#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35783853"
+      }
+    }
+  ]
+}

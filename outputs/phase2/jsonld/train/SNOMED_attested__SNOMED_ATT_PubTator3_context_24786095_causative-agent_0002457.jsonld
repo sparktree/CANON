@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24786095_causative-agent_0002457",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24786095_causative-agent_0002457",
+  "canon:title": "Molecular mechanisms and new treatment strategies for non-alcoholic steatohepatitis (NASH).",
+  "canon:abstract": "Non-alcoholic steatohepatitis (NASH) is a severe form of non-alcoholic fatty liver disease (NAFLD), in which most patients exhibit non-progressive, non-alcoholic fatty liver (NAFL) attributable to simple steatosis. Multiple hits, including genetic differences, fat accumulation, insulin resistance and intestinal microbiota changes, account for the progression of NASH. NAFLD is strongly associated with obesity, which induces adipokine secretion, endoplasmic reticulum (ER) and oxidative stress at the cellular level, which in turn induces hepatic steatosis, inflammation and fibrosis. Among these factors, gut microbiota are acknowledged as having an important role in initiating this multifactorial disease. Oxidative stress is considered to be a key contributor in the progression from NAFL to NASH. Macrophage infiltration is apparent in NAFL and NASH, while T-cell infiltration is apparent in NASH. Although several clinical trials have shown that antioxidative therapy with vitamin E can effectively control hepatitis pathology in the short term, the long-term effects remain obscure and have often proved to be ineffective in many other diseases. Several long-term antioxidant protocols have failed to reduce mortality. New treatment modalities that incorporate current understanding of NAFLD molecular pathogenesis must be considered. ",
+  "canon:text": "Molecular mechanisms and new treatment strategies for non-alcoholic steatohepatitis (NASH). Non-alcoholic steatohepatitis (NASH) is a severe form of non-alcoholic fatty liver disease (NAFLD), in which most patients exhibit non-progressive, non-alcoholic fatty liver (NAFL) attributable to simple steatosis. Multiple hits, including genetic differences, fat accumulation, insulin resistance and intestinal microbiota changes, account for the progression of NASH. NAFLD is strongly associated with obesity, which induces adipokine secretion, endoplasmic reticulum (ER) and oxidative stress at the cellular level, which in turn induces hepatic steatosis, inflammation and fibrosis. Among these factors, gut microbiota are acknowledged as having an important role in initiating this multifactorial disease. Oxidative stress is considered to be a key contributor in the progression from NAFL to NASH. Macrophage infiltration is apparent in NAFL and NASH, while T-cell infiltration is apparent in NASH. Although several clinical trials have shown that antioxidative therapy with vitamin E can effectively control hepatitis pathology in the short term, the long-term effects remain obscure and have often proved to be ineffective in many other diseases. Several long-term antioxidant protocols have failed to reduce mortality. New treatment modalities that incorporate current understanding of NAFLD molecular pathogenesis must be considered. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24786095_causative-agent_0002457#mention-T1",
+      "canon:span": {
+        "start": 1107,
+        "end": 1116
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24786095_causative-agent_0002457#mention-T2",
+      "canon:span": {
+        "start": 1073,
+        "end": 1082
+      },
+      "canon:surface": "vitamin E",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014810",
+      "canon:sourceNotation": "D014810",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24786095_causative-agent_0002457#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24786095_causative-agent_0002457#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24786095_causative-agent_0002457#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24786095"
+      }
+    }
+  ]
+}

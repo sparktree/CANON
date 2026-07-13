@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34131405_due-to_0001355",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34131405_due-to_0001355",
+  "canon:title": "GLP-1 receptor agonists (GLP-1RAs): cardiovascular actions and therapeutic potential.",
+  "canon:abstract": "Type 2 diabetes mellitus (T2DM) is closely associated with cardiovascular diseases (CVD), including atherosclerosis, hypertension and heart failure. Some anti-diabetic medications are linked with an increased risk of weight gain or hypoglycemia which may reduce the efficacy of the intended anti-hyperglycemic effects of these therapies. The recently developed receptor agonists for glucagon-like peptide-1 (GLP-1RAs), stimulate insulin secretion and reduce glycated hemoglobin levels without having side effects such as weight gain and hypoglycemia. In addition, GLP1-RAs demonstrate numerous cardiovascular protective effects in subjects with or without diabetes. There have been several cardiovascular outcomes trials (CVOTs) involving GLP-1RAs, which have supported the overall cardiovascular benefits of these drugs. GLP1-RAs lower plasma lipid levels and lower blood pressure (BP), both of which contribute to a reduction of atherosclerosis and reduced CVD. GLP-1R is expressed in multiple cardiovascular cell types such as monocyte/macrophages, smooth muscle cells, endothelial cells, and cardiomyocytes. Recent studies have indicated that the protective properties against endothelial dysfunction, anti-inflammatory effects on macrophages and the anti-proliferative action on smooth muscle cells may contribute to atheroprotection through GLP-1R signaling. In the present review, we describe the cardiovascular effects and underlying molecular mechanisms of action of GLP-1RAs in CVOTs, animal models and cultured cells, and address how these findings have transformed our understanding of the pharmacotherapy of T2DM and the prevention of CVD.",
+  "canon:text": "GLP-1 receptor agonists (GLP-1RAs): cardiovascular actions and therapeutic potential. Type 2 diabetes mellitus (T2DM) is closely associated with cardiovascular diseases (CVD), including atherosclerosis, hypertension and heart failure. Some anti-diabetic medications are linked with an increased risk of weight gain or hypoglycemia which may reduce the efficacy of the intended anti-hyperglycemic effects of these therapies. The recently developed receptor agonists for glucagon-like peptide-1 (GLP-1RAs), stimulate insulin secretion and reduce glycated hemoglobin levels without having side effects such as weight gain and hypoglycemia. In addition, GLP1-RAs demonstrate numerous cardiovascular protective effects in subjects with or without diabetes. There have been several cardiovascular outcomes trials (CVOTs) involving GLP-1RAs, which have supported the overall cardiovascular benefits of these drugs. GLP1-RAs lower plasma lipid levels and lower blood pressure (BP), both of which contribute to a reduction of atherosclerosis and reduced CVD. GLP-1R is expressed in multiple cardiovascular cell types such as monocyte/macrophages, smooth muscle cells, endothelial cells, and cardiomyocytes. Recent studies have indicated that the protective properties against endothelial dysfunction, anti-inflammatory effects on macrophages and the anti-proliferative action on smooth muscle cells may contribute to atheroprotection through GLP-1R signaling. In the present review, we describe the cardiovascular effects and underlying molecular mechanisms of action of GLP-1RAs in CVOTs, animal models and cultured cells, and address how these findings have transformed our understanding of the pharmacotherapy of T2DM and the prevention of CVD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34131405_due-to_0001355#mention-T1",
+      "canon:span": {
+        "start": 382,
+        "end": 395
+      },
+      "canon:surface": "hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34131405_due-to_0001355#mention-T2",
+      "canon:span": {
+        "start": 86,
+        "end": 110
+      },
+      "canon:surface": "Type 2 diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34131405_due-to_0001355#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34131405_due-to_0001355#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34131405_due-to_0001355#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34131405"
+      }
+    }
+  ]
+}

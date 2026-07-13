@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24397846_due-to_0000476",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24397846_due-to_0000476",
+  "canon:title": "Iron chelation and multiple sclerosis.",
+  "canon:abstract": "Histochemical and MRI studies have demonstrated that MS (multiple sclerosis) patients have abnormal deposition of iron in both gray and white matter structures. Data is emerging indicating that this iron could partake in pathogenesis by various mechanisms, e.g., promoting the production of reactive oxygen species and enhancing the production of proinflammatory cytokines. Iron chelation therapy could be a viable strategy to block iron-related pathological events or it can confer cellular protection by stabilizing hypoxia inducible factor 1alpha, a transcription factor that normally responds to hypoxic conditions. Iron chelation has been shown to protect against disease progression and/or limit iron accumulation in some neurological disorders or their experimental models. Data from studies that administered a chelator to animals with experimental autoimmune encephalomyelitis, a model of MS, support the rationale for examining this treatment approach in MS. Preliminary clinical studies have been performed in MS patients using deferoxamine. Although some side effects were observed, the large majority of patients were able to tolerate the arduous administration regimen, i.e., 6-8 h of subcutaneous infusion, and all side effects resolved upon discontinuation of treatment. Importantly, these preliminary studies did not identify a disqualifying event for this experimental approach. More recently developed chelators, deferasirox and deferiprone, are more desirable for possible use in MS given their oral administration, and importantly, deferiprone can cross the blood-brain barrier. However, experiences from other conditions indicate that the potential for adverse events during chelation therapy necessitates close patient monitoring and a carefully considered administration regimen. ",
+  "canon:text": "Iron chelation and multiple sclerosis. Histochemical and MRI studies have demonstrated that MS (multiple sclerosis) patients have abnormal deposition of iron in both gray and white matter structures. Data is emerging indicating that this iron could partake in pathogenesis by various mechanisms, e.g., promoting the production of reactive oxygen species and enhancing the production of proinflammatory cytokines. Iron chelation therapy could be a viable strategy to block iron-related pathological events or it can confer cellular protection by stabilizing hypoxia inducible factor 1alpha, a transcription factor that normally responds to hypoxic conditions. Iron chelation has been shown to protect against disease progression and/or limit iron accumulation in some neurological disorders or their experimental models. Data from studies that administered a chelator to animals with experimental autoimmune encephalomyelitis, a model of MS, support the rationale for examining this treatment approach in MS. Preliminary clinical studies have been performed in MS patients using deferoxamine. Although some side effects were observed, the large majority of patients were able to tolerate the arduous administration regimen, i.e., 6-8 h of subcutaneous infusion, and all side effects resolved upon discontinuation of treatment. Importantly, these preliminary studies did not identify a disqualifying event for this experimental approach. More recently developed chelators, deferasirox and deferiprone, are more desirable for possible use in MS given their oral administration, and importantly, deferiprone can cross the blood-brain barrier. However, experiences from other conditions indicate that the potential for adverse events during chelation therapy necessitates close patient monitoring and a carefully considered administration regimen. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24397846_due-to_0000476#mention-T1",
+      "canon:span": {
+        "start": 883,
+        "end": 924
+      },
+      "canon:surface": "experimental autoimmune encephalomyelitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004681",
+      "canon:sourceNotation": "D004681",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24397846_due-to_0000476#mention-T2",
+      "canon:span": {
+        "start": 639,
+        "end": 646
+      },
+      "canon:surface": "hypoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002534",
+      "canon:sourceNotation": "D002534",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24397846_due-to_0000476#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24397846_due-to_0000476#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24397846_due-to_0000476#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24397846"
+      }
+    }
+  ]
+}

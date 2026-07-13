@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20616979_causative-agent_0002254",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20616979_causative-agent_0002254",
+  "canon:title": "Alcohol abuse in pregnant women: effects on the fetus and newborn, mode of action and maternal treatment.",
+  "canon:abstract": "Offspring of mothers using ethanol during pregnancy are known to suffer from developmental delays and/or a variety of behavioral changes. Ethanol, may affect the developing fetus in a dose dependent manner. With very high repetitive doses there is a 6-10% chance of the fetus developing the fetal alcoholic syndrome manifested by prenatal and postnatal growth deficiency, specific craniofacial dysmorphic features, mental retardation, behavioral changes and a variety of major anomalies. With lower repetitive doses there is a risk of \"alcoholic effects\" mainly manifested by slight intellectual impairment, growth disturbances and behavioral changes. Binge drinking may impose some danger of slight intellectual deficiency. It is advised to offer maternal abstinence programs prior to pregnancy, but they may also be initiated during pregnancy with accompanying close medical care. The long term intellectual outcome of children born to ethanol dependent mothers is influenced to a large extent by the environment in which the exposed child is raised.",
+  "canon:text": "Alcohol abuse in pregnant women: effects on the fetus and newborn, mode of action and maternal treatment. Offspring of mothers using ethanol during pregnancy are known to suffer from developmental delays and/or a variety of behavioral changes. Ethanol, may affect the developing fetus in a dose dependent manner. With very high repetitive doses there is a 6-10% chance of the fetus developing the fetal alcoholic syndrome manifested by prenatal and postnatal growth deficiency, specific craniofacial dysmorphic features, mental retardation, behavioral changes and a variety of major anomalies. With lower repetitive doses there is a risk of \"alcoholic effects\" mainly manifested by slight intellectual impairment, growth disturbances and behavioral changes. Binge drinking may impose some danger of slight intellectual deficiency. It is advised to offer maternal abstinence programs prior to pregnancy, but they may also be initiated during pregnancy with accompanying close medical care. The long term intellectual outcome of children born to ethanol dependent mothers is influenced to a large extent by the environment in which the exposed child is raised.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20616979_causative-agent_0002254#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 13
+      },
+      "canon:surface": "Alcohol abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20616979_causative-agent_0002254#mention-T2",
+      "canon:span": {
+        "start": 133,
+        "end": 140
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20616979_causative-agent_0002254#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20616979_causative-agent_0002254#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20616979_causative-agent_0002254#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20616979"
+      }
+    }
+  ]
+}

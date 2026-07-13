@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904259_causative-agent_0000489",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24904259_causative-agent_0000489",
+  "canon:title": "Advances in non-dopaminergic treatments for Parkinson's disease.",
+  "canon:abstract": "Since the 1960's treatments for Parkinson's disease (PD) have traditionally been directed to restore or replace dopamine, with L-Dopa being the gold standard. However, chronic L-Dopa use is associated with debilitating dyskinesias, limiting its effectiveness. This has resulted in extensive efforts to develop new therapies that work in ways other than restoring or replacing dopamine. Here we describe newly emerging non-dopaminergic therapeutic strategies for PD, including drugs targeting adenosine, glutamate, adrenergic, and serotonin receptors, as well as GLP-1 agonists, calcium channel blockers, iron chelators, anti-inflammatories, neurotrophic factors, and gene therapies. We provide a detailed account of their success in animal models and their translation to human clinical trials. We then consider how advances in understanding the mechanisms of PD, genetics, the possibility that PD may consist of multiple disease states, understanding of the etiology of PD in non-dopaminergic regions as well as advances in clinical trial design will be essential for ongoing advances. We conclude that despite the challenges ahead, patients have much cause for optimism that novel therapeutics that offer better disease management and/or which slow disease progression are inevitable. ",
+  "canon:text": "Advances in non-dopaminergic treatments for Parkinson's disease. Since the 1960's treatments for Parkinson's disease (PD) have traditionally been directed to restore or replace dopamine, with L-Dopa being the gold standard. However, chronic L-Dopa use is associated with debilitating dyskinesias, limiting its effectiveness. This has resulted in extensive efforts to develop new therapies that work in ways other than restoring or replacing dopamine. Here we describe newly emerging non-dopaminergic therapeutic strategies for PD, including drugs targeting adenosine, glutamate, adrenergic, and serotonin receptors, as well as GLP-1 agonists, calcium channel blockers, iron chelators, anti-inflammatories, neurotrophic factors, and gene therapies. We provide a detailed account of their success in animal models and their translation to human clinical trials. We then consider how advances in understanding the mechanisms of PD, genetics, the possibility that PD may consist of multiple disease states, understanding of the etiology of PD in non-dopaminergic regions as well as advances in clinical trial design will be essential for ongoing advances. We conclude that despite the challenges ahead, patients have much cause for optimism that novel therapeutics that offer better disease management and/or which slow disease progression are inevitable. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904259_causative-agent_0000489#mention-T1",
+      "canon:span": {
+        "start": 284,
+        "end": 295
+      },
+      "canon:surface": "dyskinesias",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904259_causative-agent_0000489#mention-T2",
+      "canon:span": {
+        "start": 16,
+        "end": 28
+      },
+      "canon:surface": "dopaminergic",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004298",
+      "canon:sourceNotation": "D004298",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904259_causative-agent_0000489#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904259_causative-agent_0000489#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904259_causative-agent_0000489#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24904259"
+      }
+    }
+  ]
+}

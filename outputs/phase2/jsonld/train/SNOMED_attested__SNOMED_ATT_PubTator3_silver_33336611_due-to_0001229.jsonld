@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33336611_due-to_0001229",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33336611_due-to_0001229",
+  "canon:title": "4-Hydroxy-2-nonenal, a lipid peroxidation product, as a biomarker in diabetes and its complications: challenges and opportunities.",
+  "canon:abstract": "Over 30 million Americans are diagnosed with diabetes and this number is only expected to increase. There are various causes that induce complications with diabetes, including oxidative stress. In oxidative stress, lipid peroxidation-derived reactive carbonyl species such as 4-hydroxy-2-nonenal (4-HNE) is shown to cause damage in organs that leads to diabetic complications. We provided evidence to show that 4-HNE or/and 4-HNE-protein adducts are elevated in various organ systems of diabetic patients and animal models. We then discussed the advantages and disadvantages of different methodologies used for the detection of 4-HNE in diabetic tissues. We also discussed how novel approaches such as electrochemistry and nanotechnology can be used for monitoring 4-HNE levels in biological systems in real-time. Thus, this review enlightens the involvement of 4-HNE in the pathogenesis of diabetes and its complications and efficient methods to identify it. Furthermore, the article presents that 4-HNE can be developed as a biomarker for end-organ damage in diabetes such as diabetic cardiac complications.",
+  "canon:text": "4-Hydroxy-2-nonenal, a lipid peroxidation product, as a biomarker in diabetes and its complications: challenges and opportunities. Over 30 million Americans are diagnosed with diabetes and this number is only expected to increase. There are various causes that induce complications with diabetes, including oxidative stress. In oxidative stress, lipid peroxidation-derived reactive carbonyl species such as 4-hydroxy-2-nonenal (4-HNE) is shown to cause damage in organs that leads to diabetic complications. We provided evidence to show that 4-HNE or/and 4-HNE-protein adducts are elevated in various organ systems of diabetic patients and animal models. We then discussed the advantages and disadvantages of different methodologies used for the detection of 4-HNE in diabetic tissues. We also discussed how novel approaches such as electrochemistry and nanotechnology can be used for monitoring 4-HNE levels in biological systems in real-time. Thus, this review enlightens the involvement of 4-HNE in the pathogenesis of diabetes and its complications and efficient methods to identify it. Furthermore, the article presents that 4-HNE can be developed as a biomarker for end-organ damage in diabetes such as diabetic cardiac complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33336611_due-to_0001229#mention-T1",
+      "canon:span": {
+        "start": 484,
+        "end": 506
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33336611_due-to_0001229#mention-T2",
+      "canon:span": {
+        "start": 69,
+        "end": 77
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33336611_due-to_0001229#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33336611_due-to_0001229#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33336611_due-to_0001229#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33336611"
+      }
+    }
+  ]
+}

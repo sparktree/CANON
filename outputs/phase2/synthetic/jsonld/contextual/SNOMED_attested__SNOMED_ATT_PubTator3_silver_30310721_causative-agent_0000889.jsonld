@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30310721_causative-agent_0000889",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30310721_causative-agent_0000889",
+  "canon:title": "Cancer Pain Management: Opioid Analgesics, Part 2.",
+  "canon:abstract": "Opioid analgesics are the cornerstone of moderate to severe cancer pain management, and do not have ceiling doses unless unmanageable adverse effects occur. Oral, short-acting pure mu agonists such as morphine are most frequently used, but other agents and administration formulations allow finding the right opioid and dose for most patients. In addition, clinicians must understand the metabolism, pharmacokinetics, and elimination of particular drugs to individualize opioid selection, select initial doses, and appropriately escalate doses to satisfactory pain relief or uncontrollable toxicity. Anticipation and proactive management of possible adverse effects, particularly constipation, confusion or delirium, opioid-specific adverse effects, and opioid abuse, are also integral to primary and secondary prophylaxis and management.",
+  "canon:text": "Cancer Pain Management: Opioid Analgesics, Part 2. Opioid analgesics are the cornerstone of moderate to severe cancer pain management, and do not have ceiling doses unless unmanageable adverse effects occur. Oral, short-acting pure mu agonists such as morphine are most frequently used, but other agents and administration formulations allow finding the right opioid and dose for most patients. In addition, clinicians must understand the metabolism, pharmacokinetics, and elimination of particular drugs to individualize opioid selection, select initial doses, and appropriately escalate doses to satisfactory pain relief or uncontrollable toxicity. Anticipation and proactive management of possible adverse effects, particularly constipation, confusion or delirium, opioid-specific adverse effects, and opioid abuse, are also integral to primary and secondary prophylaxis and management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30310721_causative-agent_0000889#mention-T1",
+      "canon:span": {
+        "start": 805,
+        "end": 817
+      },
+      "canon:surface": "opioid abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30310721_causative-agent_0000889#mention-T2",
+      "canon:span": {
+        "start": 252,
+        "end": 260
+      },
+      "canon:surface": "morphine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009020",
+      "canon:sourceNotation": "D009020",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30310721_causative-agent_0000889#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30310721_causative-agent_0000889#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30310721_causative-agent_0000889#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30310721"
+      }
+    }
+  ]
+}

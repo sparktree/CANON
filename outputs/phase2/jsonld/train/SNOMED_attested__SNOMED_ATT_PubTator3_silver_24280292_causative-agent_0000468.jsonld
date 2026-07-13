@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24280292_causative-agent_0000468",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24280292_causative-agent_0000468",
+  "canon:title": "Drug-drug interactions with oral anti-HCV agents and idiosyncratic hepatotoxicity in the liver transplant setting.",
+  "canon:abstract": "Studies of boceprevir and telaprevir based antiviral therapy in liver transplant (LT) recipients with hepatitis C genotype 1 infection have demonstrated dramatic increases in tacrolimus, cyclosporine, and mTOR inhibitor exposure. In addition to empiric dose reductions, daily monitoring of immunosuppressant blood levels is required when initiating as well as discontinuing the protease inhibitors to maximize patient safety. Although improved suppression of HCV replication is anticipated, 20 to 40% of treated subjects have required early treatment discontinuation due to various adverse events including anemia (100%), infection (30%), nephrotoxicity (20%) and rejection (5 to 10%). Simeprevir and faldaprevir will likely have improved efficacy and safety profiles but potential drug interactions with other OATP1B1 substrates and unconjugated hyperbilirubinemia are expected. In contrast, sofosbuvir and daclatasvir based antiviral therapy are not expected to lead to clinically significant drug-drug interactions in LT recipients but confirmatory studies are needed. Liver transplant recipients may also be at increased risk of developing drug induced liver injury (DILI). Establishing a diagnosis of DILI in the transplant setting is very difficult with the variable latency, laboratory features and histopathological manifestations of hepatotoxicity associated with a given drug, the need to exclude competing causes of allograft injury, and the lack of an objective and verifiable confirmatory test. Nonetheless, a heightened awareness of the possibility of DILI is warranted in light of the large number of medications used in LT recipients and the potential adverse impact that DILI may have on patient outcomes. ",
+  "canon:text": "Drug-drug interactions with oral anti-HCV agents and idiosyncratic hepatotoxicity in the liver transplant setting. Studies of boceprevir and telaprevir based antiviral therapy in liver transplant (LT) recipients with hepatitis C genotype 1 infection have demonstrated dramatic increases in tacrolimus, cyclosporine, and mTOR inhibitor exposure. In addition to empiric dose reductions, daily monitoring of immunosuppressant blood levels is required when initiating as well as discontinuing the protease inhibitors to maximize patient safety. Although improved suppression of HCV replication is anticipated, 20 to 40% of treated subjects have required early treatment discontinuation due to various adverse events including anemia (100%), infection (30%), nephrotoxicity (20%) and rejection (5 to 10%). Simeprevir and faldaprevir will likely have improved efficacy and safety profiles but potential drug interactions with other OATP1B1 substrates and unconjugated hyperbilirubinemia are expected. In contrast, sofosbuvir and daclatasvir based antiviral therapy are not expected to lead to clinically significant drug-drug interactions in LT recipients but confirmatory studies are needed. Liver transplant recipients may also be at increased risk of developing drug induced liver injury (DILI). Establishing a diagnosis of DILI in the transplant setting is very difficult with the variable latency, laboratory features and histopathological manifestations of hepatotoxicity associated with a given drug, the need to exclude competing causes of allograft injury, and the lack of an objective and verifiable confirmatory test. Nonetheless, a heightened awareness of the possibility of DILI is warranted in light of the large number of medications used in LT recipients and the potential adverse impact that DILI may have on patient outcomes. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24280292_causative-agent_0000468#mention-T1",
+      "canon:span": {
+        "start": 1259,
+        "end": 1284
+      },
+      "canon:surface": "drug induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24280292_causative-agent_0000468#mention-T2",
+      "canon:span": {
+        "start": 141,
+        "end": 151
+      },
+      "canon:surface": "telaprevir",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C486464",
+      "canon:sourceNotation": "C486464",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24280292_causative-agent_0000468#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24280292_causative-agent_0000468#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24280292_causative-agent_0000468#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24280292"
+      }
+    }
+  ]
+}

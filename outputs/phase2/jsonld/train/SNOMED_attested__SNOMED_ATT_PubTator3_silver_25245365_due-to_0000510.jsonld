@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25245365_due-to_0000510",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25245365_due-to_0000510",
+  "canon:title": "Aeromonas sobria necrotizing fasciitis and sepsis in an immunocompromised patient: a case report and review of the literature.",
+  "canon:abstract": "INTRODUCTION: Aeromonas veronii biovar sobria is a rare cause of bacteremia, with several studies indicating that this isolate may be of particular clinical significance since it is enterotoxin producing. A wide spectrum of infections has been associated with Aeromonas species in developing countries that include gastroenteritis, wound infections, septicemia and lung infections. This infection, caused by Aeromonas species, is usually more severe in immunocompromised than immunocompetent individuals. We here describe a case of soft tissue infection and severe sepsis due to Aeromonas sobria in an immunocompromised patient. CASE PRESENTATION: A 74-year-old Caucasian man with a clinical history of chronic lymphocytic leukemia and immune thrombocytopenia, periodically treated with steroids, was admitted to our Intensive Care Unit because of necrotizing fasciitis and multiorgan failure due to Aeromonas sobria, which resulted in his death. The unfortunate coexistence of a Candida albicans infection played a key role in the clinical course. CONCLUSION: Our experience suggests that early recognition and aggressive medical and surgical therapy are determinants in the treatment of severe septicemia caused by an Aeromonas sobria in an immunocompromised patient.",
+  "canon:text": "Aeromonas sobria necrotizing fasciitis and sepsis in an immunocompromised patient: a case report and review of the literature. INTRODUCTION: Aeromonas veronii biovar sobria is a rare cause of bacteremia, with several studies indicating that this isolate may be of particular clinical significance since it is enterotoxin producing. A wide spectrum of infections has been associated with Aeromonas species in developing countries that include gastroenteritis, wound infections, septicemia and lung infections. This infection, caused by Aeromonas species, is usually more severe in immunocompromised than immunocompetent individuals. We here describe a case of soft tissue infection and severe sepsis due to Aeromonas sobria in an immunocompromised patient. CASE PRESENTATION: A 74-year-old Caucasian man with a clinical history of chronic lymphocytic leukemia and immune thrombocytopenia, periodically treated with steroids, was admitted to our Intensive Care Unit because of necrotizing fasciitis and multiorgan failure due to Aeromonas sobria, which resulted in his death. The unfortunate coexistence of a Candida albicans infection played a key role in the clinical course. CONCLUSION: Our experience suggests that early recognition and aggressive medical and surgical therapy are determinants in the treatment of severe septicemia caused by an Aeromonas sobria in an immunocompromised patient.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25245365_due-to_0000510#mention-T1",
+      "canon:span": {
+        "start": 43,
+        "end": 49
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25245365_due-to_0000510#mention-T2",
+      "canon:span": {
+        "start": 492,
+        "end": 507
+      },
+      "canon:surface": "lung infections",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012141",
+      "canon:sourceNotation": "D012141",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25245365_due-to_0000510#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25245365_due-to_0000510#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25245365_due-to_0000510#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25245365"
+      }
+    }
+  ]
+}

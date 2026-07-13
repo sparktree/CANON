@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28415925_causative-agent_0000737",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_28415925_causative-agent_0000737",
+  "canon:title": "The role of oxidative stress, inflammation and acetaminophen exposure from birth to early childhood in the induction of autism.",
+  "canon:abstract": "The wide range of factors associated with the induction of autism is invariably linked with either inflammation or oxidative stress, and sometimes both. The use of acetaminophen in babies and young children may be much more strongly associated with autism than its use during pregnancy, perhaps because of well-known deficiencies in the metabolic breakdown of pharmaceuticals during early development. Thus, one explanation for the increased prevalence of autism is that increased exposure to acetaminophen, exacerbated by inflammation and oxidative stress, is neurotoxic in babies and small children. This view mandates extreme urgency in probing the long-term effects of acetaminophen use in babies and the possibility that many cases of infantile autism may actually be induced by acetaminophen exposure shortly after birth.",
+  "canon:text": "The role of oxidative stress, inflammation and acetaminophen exposure from birth to early childhood in the induction of autism. The wide range of factors associated with the induction of autism is invariably linked with either inflammation or oxidative stress, and sometimes both. The use of acetaminophen in babies and young children may be much more strongly associated with autism than its use during pregnancy, perhaps because of well-known deficiencies in the metabolic breakdown of pharmaceuticals during early development. Thus, one explanation for the increased prevalence of autism is that increased exposure to acetaminophen, exacerbated by inflammation and oxidative stress, is neurotoxic in babies and small children. This view mandates extreme urgency in probing the long-term effects of acetaminophen use in babies and the possibility that many cases of infantile autism may actually be induced by acetaminophen exposure shortly after birth.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28415925_causative-agent_0000737#mention-T1",
+      "canon:span": {
+        "start": 689,
+        "end": 699
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28415925_causative-agent_0000737#mention-T2",
+      "canon:span": {
+        "start": 47,
+        "end": 60
+      },
+      "canon:surface": "acetaminophen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28415925_causative-agent_0000737#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28415925_causative-agent_0000737#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28415925_causative-agent_0000737#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "28415925"
+      }
+    }
+  ]
+}

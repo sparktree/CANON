@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_15104799_causative-agent_0000277",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_15104799_causative-agent_0000277",
+  "canon:title": "Special considerations in the treatment of patients with bipolar disorder and medical co-morbidities.",
+  "canon:abstract": "BACKGROUND: The pharmacological treatment of bipolar disorder has dramatically improved with multiple classes of agents being used as mood-stabilizers, including lithium, anticonvulsants, and atypical antipsychotics. However, the use of these medications is not without risk, particularly when a patient with bipolar disorder also has comorbid medical illness. As the physician who likely has the most contact with patients with bipolar disorder, psychiatrists must have a high index of suspicion for medical illness, as well as a basic knowledge of the risks associated with the use of medications in this patient population. METHODS: A review of the literature was conducted and papers addressing this topic were selected by the authors. RESULTS AND DISCUSSION: Common medical comorbidities and treatment-emergent illnesses, including obesity, diabetes mellitus, dyslipidemia, cardiac disease, hepatic disease, renal disease, pulmonary disease and cancer are reviewed with respect to concomitant use of mood stabilizers. Guidance to clinicians regarding effective monitoring and treatment is offered. CONCLUSIONS: Mood-stabilizing medications are necessary in treating patients with bipolar disorder and often must be used in the face of medical illness. Their safe use is possible, but requires increased vigilance in monitoring for treatment-emergent illnesses and effects on comorbid medical illness.",
+  "canon:text": "Special considerations in the treatment of patients with bipolar disorder and medical co-morbidities. BACKGROUND: The pharmacological treatment of bipolar disorder has dramatically improved with multiple classes of agents being used as mood-stabilizers, including lithium, anticonvulsants, and atypical antipsychotics. However, the use of these medications is not without risk, particularly when a patient with bipolar disorder also has comorbid medical illness. As the physician who likely has the most contact with patients with bipolar disorder, psychiatrists must have a high index of suspicion for medical illness, as well as a basic knowledge of the risks associated with the use of medications in this patient population. METHODS: A review of the literature was conducted and papers addressing this topic were selected by the authors. RESULTS AND DISCUSSION: Common medical comorbidities and treatment-emergent illnesses, including obesity, diabetes mellitus, dyslipidemia, cardiac disease, hepatic disease, renal disease, pulmonary disease and cancer are reviewed with respect to concomitant use of mood stabilizers. Guidance to clinicians regarding effective monitoring and treatment is offered. CONCLUSIONS: Mood-stabilizing medications are necessary in treating patients with bipolar disorder and often must be used in the face of medical illness. Their safe use is possible, but requires increased vigilance in monitoring for treatment-emergent illnesses and effects on comorbid medical illness.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_15104799_causative-agent_0000277#mention-T1",
+      "canon:span": {
+        "start": 998,
+        "end": 1013
+      },
+      "canon:surface": "hepatic disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_15104799_causative-agent_0000277#mention-T2",
+      "canon:span": {
+        "start": 264,
+        "end": 271
+      },
+      "canon:surface": "lithium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008094",
+      "canon:sourceNotation": "D008094",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_15104799_causative-agent_0000277#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_15104799_causative-agent_0000277#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_15104799_causative-agent_0000277#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "15104799"
+      }
+    }
+  ]
+}

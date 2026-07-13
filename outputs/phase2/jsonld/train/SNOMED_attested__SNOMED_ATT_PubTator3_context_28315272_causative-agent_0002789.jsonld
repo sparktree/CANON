@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28315272_causative-agent_0002789",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28315272_causative-agent_0002789",
+  "canon:title": "Sigma Receptors and Substance Use Disorders.",
+  "canon:abstract": "Thanks to advances in neuroscience, addiction is now recognized as a chronic brain disease with genetic, developmental, and cultural components. Drugs of abuse, including alcohol, are able to produce significant neuroplastic changes responsible for the profound disturbances shown by drug addicted individuals. The current lack of efficacious pharmacological treatments for substance use disorders has encouraged the search for novel and more effective pharmacotherapies. Growing evidence strongly suggests that Sigma Receptors are involved in the addictive and neurotoxic properties of abused drugs, including cocaine , methamphetamine , and alcohol. The present chapter will review the current scientific knowledge on the role of the Sigma Receptor system in the effects of drugs and alcohol, and proposes that this receptor system may represent a novel therapeutic target for the treatment of substance use disorders and associated neurotoxicity.",
+  "canon:text": "Sigma Receptors and Substance Use Disorders. Thanks to advances in neuroscience, addiction is now recognized as a chronic brain disease with genetic, developmental, and cultural components. Drugs of abuse, including alcohol, are able to produce significant neuroplastic changes responsible for the profound disturbances shown by drug addicted individuals. The current lack of efficacious pharmacological treatments for substance use disorders has encouraged the search for novel and more effective pharmacotherapies. Growing evidence strongly suggests that Sigma Receptors are involved in the addictive and neurotoxic properties of abused drugs, including cocaine , methamphetamine , and alcohol. The present chapter will review the current scientific knowledge on the role of the Sigma Receptor system in the effects of drugs and alcohol, and proposes that this receptor system may represent a novel therapeutic target for the treatment of substance use disorders and associated neurotoxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28315272_causative-agent_0002789#mention-T1",
+      "canon:span": {
+        "start": 607,
+        "end": 617
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28315272_causative-agent_0002789#mention-T2",
+      "canon:span": {
+        "start": 666,
+        "end": 681
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28315272_causative-agent_0002789#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28315272_causative-agent_0002789#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28315272_causative-agent_0002789#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28315272"
+      }
+    }
+  ]
+}

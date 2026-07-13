@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34344290_causative-agent_0001392",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34344290_causative-agent_0001392",
+  "canon:title": "Toxic Effects of Methamphetamine on Perivascular Health: Co-morbid Effects of Stress and Alcohol Use Disorders.",
+  "canon:abstract": "Methamphetamine (Meth) abuse presents a global problem and commonly occurs with stress and/or alcohol use disorders. Regardless, the biological causes and consequences of these comorbidities are unclear. Whereas the mechanisms of Meth, stress, and alcohol abuse have been examined individually and well-characterized, these processes overlap significantly and can impact the neural and peripheral consequences of Meth. This review focuses on the deleterious cardio- and cerebrovascular effects of Meth, stress, alcohol abuse, and their comorbid effects on the brain and periphery. Points of emphasis are on the composition of the blood-brain barrier and their effects on the heart and vasculature. The autonomic nervous system, inflammation, and oxidative stress are specifically highlighted as common mediators of the toxic consequences to vascular and perivascular health. A significant portion of the Meth abusing population also presents with stress and alcohol use disorders, prompting a need to understand the mechanisms underlying their comorbidities. Little is known about their possible convergent effects. Therefore, the purpose of this critical review is to identify shared mechanisms of Meth, chronic stress, and alcohol abuse that contributes to the dysfunction of vascular health and underscores the need for studies that directly address their interactions.",
+  "canon:text": "Toxic Effects of Methamphetamine on Perivascular Health: Co-morbid Effects of Stress and Alcohol Use Disorders. Methamphetamine (Meth) abuse presents a global problem and commonly occurs with stress and/or alcohol use disorders. Regardless, the biological causes and consequences of these comorbidities are unclear. Whereas the mechanisms of Meth, stress, and alcohol abuse have been examined individually and well-characterized, these processes overlap significantly and can impact the neural and peripheral consequences of Meth. This review focuses on the deleterious cardio- and cerebrovascular effects of Meth, stress, alcohol abuse, and their comorbid effects on the brain and periphery. Points of emphasis are on the composition of the blood-brain barrier and their effects on the heart and vasculature. The autonomic nervous system, inflammation, and oxidative stress are specifically highlighted as common mediators of the toxic consequences to vascular and perivascular health. A significant portion of the Meth abusing population also presents with stress and alcohol use disorders, prompting a need to understand the mechanisms underlying their comorbidities. Little is known about their possible convergent effects. Therefore, the purpose of this critical review is to identify shared mechanisms of Meth, chronic stress, and alcohol abuse that contributes to the dysfunction of vascular health and underscores the need for studies that directly address their interactions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34344290_causative-agent_0001392#mention-T1",
+      "canon:span": {
+        "start": 89,
+        "end": 110
+      },
+      "canon:surface": "Alcohol Use Disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34344290_causative-agent_0001392#mention-T2",
+      "canon:span": {
+        "start": 17,
+        "end": 32
+      },
+      "canon:surface": "Methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34344290_causative-agent_0001392#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34344290_causative-agent_0001392#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34344290_causative-agent_0001392#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34344290"
+      }
+    }
+  ]
+}

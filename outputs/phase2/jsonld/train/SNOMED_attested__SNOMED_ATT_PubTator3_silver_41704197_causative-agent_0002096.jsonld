@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41704197_causative-agent_0002096",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_41704197_causative-agent_0002096",
+  "canon:title": "A Review of Alpha-2 Adrenergic Agents Implicated in Opioid Use Disorder.",
+  "canon:abstract": "Opioid use disorder (OUD) has been recognized for many years as a leading public health emergency in the United States, costing almost 80,000 Americans their lives in 2023. Recently, fentanyl, the predominant synthetic opioid implicated in OUD, has begun to be adulterated with the alpha-2 adrenergic receptor (alpha2AR) agonists xylazine and medetomidine. This has a profound effect on the treatment of suspected overdoses, as naloxone, which reverses fentanyl overdoses, does not reverse alpha2 agonist overdoses, and there are no FDA-approved treatments for overdoses with an alpha2 agonist. Xylazine is spreading rapidly through the illicit drug supply in the United States, and to further complicate efforts to mitigate its effects, xylazine users frequently experience necrotic wounds which are difficult to treat. In this review, we comprehensively examined literature sources to compile information on the pharmacology, chemistry, pharmacokinetics, and toxicities of alpha2AR agonists that are implicated in OUD. We hope that this summary will provide a perspective on the way forward in combating the issue of alpha2 agonist-adulterated opioids and lead to the discovery of drugs as reversal agents for alpha2 agonist overdoses.",
+  "canon:text": "A Review of Alpha-2 Adrenergic Agents Implicated in Opioid Use Disorder. Opioid use disorder (OUD) has been recognized for many years as a leading public health emergency in the United States, costing almost 80,000 Americans their lives in 2023. Recently, fentanyl, the predominant synthetic opioid implicated in OUD, has begun to be adulterated with the alpha-2 adrenergic receptor (alpha2AR) agonists xylazine and medetomidine. This has a profound effect on the treatment of suspected overdoses, as naloxone, which reverses fentanyl overdoses, does not reverse alpha2 agonist overdoses, and there are no FDA-approved treatments for overdoses with an alpha2 agonist. Xylazine is spreading rapidly through the illicit drug supply in the United States, and to further complicate efforts to mitigate its effects, xylazine users frequently experience necrotic wounds which are difficult to treat. In this review, we comprehensively examined literature sources to compile information on the pharmacology, chemistry, pharmacokinetics, and toxicities of alpha2AR agonists that are implicated in OUD. We hope that this summary will provide a perspective on the way forward in combating the issue of alpha2 agonist-adulterated opioids and lead to the discovery of drugs as reversal agents for alpha2 agonist overdoses.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41704197_causative-agent_0002096#mention-T1",
+      "canon:span": {
+        "start": 52,
+        "end": 71
+      },
+      "canon:surface": "Opioid Use Disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41704197_causative-agent_0002096#mention-T2",
+      "canon:span": {
+        "start": 256,
+        "end": 264
+      },
+      "canon:surface": "fentanyl",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005283",
+      "canon:sourceNotation": "D005283",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41704197_causative-agent_0002096#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41704197_causative-agent_0002096#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41704197_causative-agent_0002096#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "41704197"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27957238_causative-agent_0002752",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27957238_causative-agent_0002752",
+  "canon:title": "Colonic and Hepatic Modulation by Lipoic Acid and/or N-Acetylcysteine Supplementation in Mild Ulcerative Colitis Induced by Dextran Sodium Sulfate in Rats.",
+  "canon:abstract": "Lipoic acid (LA) and N-acetylcysteine (NAC) are antioxidant and anti-inflammatory agents that have not yet been tested on mild ulcerative colitis (UC). This study aims to evaluate the action of LA and/or NAC, on oxidative stress and inflammation markers in colonic and hepatic rat tissues with mild UC, induced by dextran sodium sulfate (DSS) (2% w/v). LA and/or NAC (100 mg kg day-1, each) were given, once a day, in the diet, in a pretreatment phase (7 days) and during UC induction (5 days). Colitis induction was confirmed by histological and biochemical analyses (high performance liquid chromatography, spectrophotometry, and Multiplex ). A redox imbalance occurred before an immunological disruption in the colon. NAC led to a decrease in hydrogen peroxide (H2O2), malondialdehyde (MDA) levels, and myeloperoxidase activity. In the liver, DSS did not cause damage but treatments with both antioxidants were potentially harmful, with LA increasing MDA and LA + NAC increasing H2O2, tumor necrosis factor alpha, interferon gamma, and transaminases. In summary, NAC exhibited the highest colonic antioxidant and anti-inflammatory activity, while LA + NAC caused hepatic damage.",
+  "canon:text": "Colonic and Hepatic Modulation by Lipoic Acid and/or N-Acetylcysteine Supplementation in Mild Ulcerative Colitis Induced by Dextran Sodium Sulfate in Rats. Lipoic acid (LA) and N-acetylcysteine (NAC) are antioxidant and anti-inflammatory agents that have not yet been tested on mild ulcerative colitis (UC). This study aims to evaluate the action of LA and/or NAC, on oxidative stress and inflammation markers in colonic and hepatic rat tissues with mild UC, induced by dextran sodium sulfate (DSS) (2% w/v). LA and/or NAC (100 mg kg day-1, each) were given, once a day, in the diet, in a pretreatment phase (7 days) and during UC induction (5 days). Colitis induction was confirmed by histological and biochemical analyses (high performance liquid chromatography, spectrophotometry, and Multiplex ). A redox imbalance occurred before an immunological disruption in the colon. NAC led to a decrease in hydrogen peroxide (H2O2), malondialdehyde (MDA) levels, and myeloperoxidase activity. In the liver, DSS did not cause damage but treatments with both antioxidants were potentially harmful, with LA increasing MDA and LA + NAC increasing H2O2, tumor necrosis factor alpha, interferon gamma, and transaminases. In summary, NAC exhibited the highest colonic antioxidant and anti-inflammatory activity, while LA + NAC caused hepatic damage.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27957238_causative-agent_0002752#mention-T1",
+      "canon:span": {
+        "start": 1322,
+        "end": 1336
+      },
+      "canon:surface": "hepatic damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27957238_causative-agent_0002752#mention-T2",
+      "canon:span": {
+        "start": 53,
+        "end": 69
+      },
+      "canon:surface": "N-Acetylcysteine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000111",
+      "canon:sourceNotation": "D000111",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27957238_causative-agent_0002752#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27957238_causative-agent_0002752#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27957238_causative-agent_0002752#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27957238"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37509563_due-to_0004363",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37509563_due-to_0004363",
+  "canon:title": "Diabetic Neuropathic Pain and Serotonin: What Is New in the Last 15 Years?",
+  "canon:abstract": "The neurotransmitter serotonin (5-hydroxytryptamine, 5-HT) is involved in numerous physiological functions and plays a key role in pain modulation including neuropathic pain. Diabetic neuropathy is a common complication of diabetes mellitus often accompanied by chronic neuropathic pain. Animal models of diabetes offer relevant tools for studying the pathophysiological mechanisms and pharmacological sensitivity of diabetic neuropathic pain and for identifying new therapeutic targets. In this review, we report data from preclinical work published over the last 15 years on the analgesic activity of drugs acting on the serotonergic system, such as serotonin and noradrenaline reuptake inhibitor (SNRI) antidepressants, and on the involvement of certain serotonin receptors-in particular 5-HT1A, 5-HT2A/2c and 5-HT6 receptors-in rodent models of painful diabetic neuropathy.",
+  "canon:text": "Diabetic Neuropathic Pain and Serotonin: What Is New in the Last 15 Years? The neurotransmitter serotonin (5-hydroxytryptamine, 5-HT) is involved in numerous physiological functions and plays a key role in pain modulation including neuropathic pain. Diabetic neuropathy is a common complication of diabetes mellitus often accompanied by chronic neuropathic pain. Animal models of diabetes offer relevant tools for studying the pathophysiological mechanisms and pharmacological sensitivity of diabetic neuropathic pain and for identifying new therapeutic targets. In this review, we report data from preclinical work published over the last 15 years on the analgesic activity of drugs acting on the serotonergic system, such as serotonin and noradrenaline reuptake inhibitor (SNRI) antidepressants, and on the involvement of certain serotonin receptors-in particular 5-HT1A, 5-HT2A/2c and 5-HT6 receptors-in rodent models of painful diabetic neuropathy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37509563_due-to_0004363#mention-T1",
+      "canon:span": {
+        "start": 250,
+        "end": 269
+      },
+      "canon:surface": "Diabetic neuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37509563_due-to_0004363#mention-T2",
+      "canon:span": {
+        "start": 298,
+        "end": 315
+      },
+      "canon:surface": "diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37509563_due-to_0004363#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37509563_due-to_0004363#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37509563_due-to_0004363#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37509563"
+      }
+    }
+  ]
+}

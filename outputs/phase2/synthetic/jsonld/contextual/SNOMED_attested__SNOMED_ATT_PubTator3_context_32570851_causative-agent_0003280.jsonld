@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32570851_causative-agent_0003280",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32570851_causative-agent_0003280",
+  "canon:title": "Lead Toxicity and Pollution in Poland.",
+  "canon:abstract": "BACKGROUND: Human exposure to lead can occur in a variety of ways, all of which involve exposure to potentially toxic elements as environmental pollutants. Lead enters the body via ingestion and inhalation from sources such as soil, food, lead dust and lead in products of everyday use and in the workplace. The aim of this review is to describe the toxic effects of lead on the human body from conception to adulthood, and to review the situation regarding lead toxicity in Poland. RESULTS: Pb is very dangerous when it is absorbed and accumulates in the main organs of the body, where it can cause a range of symptoms that vary from person to person, the time of exposure and dose. Lead in adults can cause an increase in blood pressure, slow nerve conduction, fatigue, mood swings, drowsiness, impaired concentration, fertility disorders, decreased sex drive, headaches, constipation and, in severe cases, encephalopathy or death. CONCLUSIONS: Exposure to lead in Poland remains an important public health problem. This review will cover the range of lead exposures, from mild to heavy. Public health interventions and policies also are needed to reduce occupational and environmental exposure to this element.",
+  "canon:text": "Lead Toxicity and Pollution in Poland. BACKGROUND: Human exposure to lead can occur in a variety of ways, all of which involve exposure to potentially toxic elements as environmental pollutants. Lead enters the body via ingestion and inhalation from sources such as soil, food, lead dust and lead in products of everyday use and in the workplace. The aim of this review is to describe the toxic effects of lead on the human body from conception to adulthood, and to review the situation regarding lead toxicity in Poland. RESULTS: Pb is very dangerous when it is absorbed and accumulates in the main organs of the body, where it can cause a range of symptoms that vary from person to person, the time of exposure and dose. Lead in adults can cause an increase in blood pressure, slow nerve conduction, fatigue, mood swings, drowsiness, impaired concentration, fertility disorders, decreased sex drive, headaches, constipation and, in severe cases, encephalopathy or death. CONCLUSIONS: Exposure to lead in Poland remains an important public health problem. This review will cover the range of lead exposures, from mild to heavy. Public health interventions and policies also are needed to reduce occupational and environmental exposure to this element.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32570851_causative-agent_0003280#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 13
+      },
+      "canon:surface": "Lead Toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007855",
+      "canon:sourceNotation": "D007855",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32570851_causative-agent_0003280#mention-T2",
+      "canon:span": {
+        "start": 531,
+        "end": 533
+      },
+      "canon:surface": "Pb",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007854",
+      "canon:sourceNotation": "D007854",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32570851_causative-agent_0003280#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32570851_causative-agent_0003280#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32570851_causative-agent_0003280#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32570851"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26948886_causative-agent_0002644",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26948886_causative-agent_0002644",
+  "canon:title": "Treatment of Severe Alcoholic Hepatitis.",
+  "canon:abstract": "Alcoholic hepatitis (AH) is a syndrome of jaundice and liver failure that occurs in a minority of heavy consumers of alcohol. The diagnosis usually is based on a history of heavy alcohol use, findings from blood tests, and exclusion of other liver diseases by blood and imaging analyses. Liver biopsy specimens, usually collected via the transjugular route, should be analyzed to confirm a diagnosis of AH in patients with an atypical history or presentation. The optimal treatment for patients with severe AH is prednisolone, possibly in combination with N-acetyl cysteine. At present, only short-term increases in survival can be expected-no treatment has been found to increase patient survival beyond 3 months. Abstinence is essential for long-term survival. New treatment options, including liver transplantation, are being tested in trials and results eagerly are awaited. ",
+  "canon:text": "Treatment of Severe Alcoholic Hepatitis. Alcoholic hepatitis (AH) is a syndrome of jaundice and liver failure that occurs in a minority of heavy consumers of alcohol. The diagnosis usually is based on a history of heavy alcohol use, findings from blood tests, and exclusion of other liver diseases by blood and imaging analyses. Liver biopsy specimens, usually collected via the transjugular route, should be analyzed to confirm a diagnosis of AH in patients with an atypical history or presentation. The optimal treatment for patients with severe AH is prednisolone, possibly in combination with N-acetyl cysteine. At present, only short-term increases in survival can be expected-no treatment has been found to increase patient survival beyond 3 months. Abstinence is essential for long-term survival. New treatment options, including liver transplantation, are being tested in trials and results eagerly are awaited. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26948886_causative-agent_0002644#mention-T1",
+      "canon:span": {
+        "start": 20,
+        "end": 39
+      },
+      "canon:surface": "Alcoholic Hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26948886_causative-agent_0002644#mention-T2",
+      "canon:span": {
+        "start": 597,
+        "end": 614
+      },
+      "canon:surface": "N-acetyl cysteine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000111",
+      "canon:sourceNotation": "D000111",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26948886_causative-agent_0002644#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26948886_causative-agent_0002644#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26948886_causative-agent_0002644#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26948886"
+      }
+    }
+  ]
+}

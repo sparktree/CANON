@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470",
+  "canon:title": "Quercetin attenuates neurotoxicity induced by iron oxide nanoparticles.",
+  "canon:abstract": "Iron oxide nanoparticles (IONPs) have been proposed as targeted carriers to deliver therapeutic molecules in the central nervous system (CNS). However, IONPs may damage neural tissue via free iron accumulation, protein aggregation, and oxidative stress. Neuroprotective effects of quercetin (QC) have been proven due to its antioxidant and anti-inflammatory properties. However, poor solubility and low bioavailability of QC have also led researchers to make various QC-involved nanoparticles to overcome these limitations. We wondered how high doses or prolonged treatment with quercetin conjugated superparamagnetic iron oxide nanoparticles (QCSPIONs) could improve cognitive dysfunction and promote neurogenesis without any toxicity. It can be explained that the QC inhibits protein aggregation and acts against iron overload via iron-chelating activity, iron homeostasis genes regulation, radical scavenging, and attenuation of Fenton/Haber-Weiss reaction. In this review, first, we present brain iron homeostasis, molecular mechanisms of iron overload that induced neurotoxicity, and the role of iron in dementia-associated diseases. Then by providing evidence of IONPs neurotoxicity, we discuss how QC neutralizes IONPs neurotoxicity, and finally, we make a brief comparison between QC and conventional iron chelators. In this review, we highlight that QC as supplementation and especially in conjugated form reduces iron oxide nanoparticles neurotoxicity in clinical application.",
+  "canon:text": "Quercetin attenuates neurotoxicity induced by iron oxide nanoparticles. Iron oxide nanoparticles (IONPs) have been proposed as targeted carriers to deliver therapeutic molecules in the central nervous system (CNS). However, IONPs may damage neural tissue via free iron accumulation, protein aggregation, and oxidative stress. Neuroprotective effects of quercetin (QC) have been proven due to its antioxidant and anti-inflammatory properties. However, poor solubility and low bioavailability of QC have also led researchers to make various QC-involved nanoparticles to overcome these limitations. We wondered how high doses or prolonged treatment with quercetin conjugated superparamagnetic iron oxide nanoparticles (QCSPIONs) could improve cognitive dysfunction and promote neurogenesis without any toxicity. It can be explained that the QC inhibits protein aggregation and acts against iron overload via iron-chelating activity, iron homeostasis genes regulation, radical scavenging, and attenuation of Fenton/Haber-Weiss reaction. In this review, first, we present brain iron homeostasis, molecular mechanisms of iron overload that induced neurotoxicity, and the role of iron in dementia-associated diseases. Then by providing evidence of IONPs neurotoxicity, we discuss how QC neutralizes IONPs neurotoxicity, and finally, we make a brief comparison between QC and conventional iron chelators. In this review, we highlight that QC as supplementation and especially in conjugated form reduces iron oxide nanoparticles neurotoxicity in clinical application.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T1",
+      "canon:span": {
+        "start": 21,
+        "end": 34
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T2",
+      "canon:span": {
+        "start": 264,
+        "end": 268
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34663344_causative-agent_0001470#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34663344"
+      }
+    }
+  ]
+}

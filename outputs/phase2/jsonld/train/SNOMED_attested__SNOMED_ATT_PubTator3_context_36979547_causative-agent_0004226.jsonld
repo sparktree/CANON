@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979547_causative-agent_0004226",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36979547_causative-agent_0004226",
+  "canon:title": "Review on Carbon Dot-Based Fluorescent Detection of Biothiols.",
+  "canon:abstract": "Biothiols, such as cysteine (Cys), homocysteine (Hcy), and glutathione (GSH), play a vital role in gene expression, maintaining redox homeostasis, reducing damages caused by free radicals/toxins, etc. Likewise, abnormal levels of biothiols can lead to severe diseases, such as Alzheimer's disease (AD), neurotoxicity, hair depigmentation, liver/skin damage, etc. To quantify the biothiols in a biological system, numerous low-toxic probes, such as fluorescent quantum dots, emissive organic probes, composited nanomaterials, etc., have been reported with real-time applications. Among these fluorescent probes, carbon-dots (CDs) have become attractive for biothiols quantification because of advantages of easy synthesis, nano-size, crystalline properties, low-toxicity, and real-time applicability. A CDs-based biothiols assay can be achieved by fluorescent \"Turn-On\" and \"Turn-Off\" responses via direct binding, metal complex-mediated detection, composite enhanced interaction, reaction-based reports, and so forth. To date, the availability of a review focused on fluorescent CDs-based biothiols detection with information on recent trends, mechanistic aspects, linear ranges, LODs, and real applications is lacking, which allows us to deliver this comprehensive review. This review delivers valuable information on reported carbon-dots-based biothiols assays, the underlying mechanism, their applications, probe/CDs selection, sensory requirement, merits, limitations, and future scopes.",
+  "canon:text": "Review on Carbon Dot-Based Fluorescent Detection of Biothiols. Biothiols, such as cysteine (Cys), homocysteine (Hcy), and glutathione (GSH), play a vital role in gene expression, maintaining redox homeostasis, reducing damages caused by free radicals/toxins, etc. Likewise, abnormal levels of biothiols can lead to severe diseases, such as Alzheimer's disease (AD), neurotoxicity, hair depigmentation, liver/skin damage, etc. To quantify the biothiols in a biological system, numerous low-toxic probes, such as fluorescent quantum dots, emissive organic probes, composited nanomaterials, etc., have been reported with real-time applications. Among these fluorescent probes, carbon-dots (CDs) have become attractive for biothiols quantification because of advantages of easy synthesis, nano-size, crystalline properties, low-toxicity, and real-time applicability. A CDs-based biothiols assay can be achieved by fluorescent \"Turn-On\" and \"Turn-Off\" responses via direct binding, metal complex-mediated detection, composite enhanced interaction, reaction-based reports, and so forth. To date, the availability of a review focused on fluorescent CDs-based biothiols detection with information on recent trends, mechanistic aspects, linear ranges, LODs, and real applications is lacking, which allows us to deliver this comprehensive review. This review delivers valuable information on reported carbon-dots-based biothiols assays, the underlying mechanism, their applications, probe/CDs selection, sensory requirement, merits, limitations, and future scopes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979547_causative-agent_0004226#mention-T1",
+      "canon:span": {
+        "start": 366,
+        "end": 379
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979547_causative-agent_0004226#mention-T2",
+      "canon:span": {
+        "start": 82,
+        "end": 90
+      },
+      "canon:surface": "cysteine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003545",
+      "canon:sourceNotation": "D003545",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979547_causative-agent_0004226#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979547_causative-agent_0004226#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979547_causative-agent_0004226#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36979547"
+      }
+    }
+  ]
+}

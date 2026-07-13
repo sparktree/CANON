@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33322693_causative-agent_0003422",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33322693_causative-agent_0003422",
+  "canon:title": "Antioxidant Properties of Second-Generation Antipsychotics: Focus on Microglia.",
+  "canon:abstract": "Recent studies suggest a primary role of oxidative stress in an early phase of the pathogenesis of schizophrenia and a strong neurobiological link has been found between dopaminergic system dysfunction, microglia overactivation, and oxidative stress. Different risk factors for schizophrenia increase oxidative stress phenomena raising the risk of developing psychosis. Oxidative stress induced by first-generation antipsychotics such as haloperidol significantly contributes to the development of extrapyramidal side effects. Haloperidol also exerts neurotoxic effects by decreasing antioxidant enzyme levels then worsening pro-oxidant events. Opposite to haloperidol, second-generation antipsychotics (or atypical antipsychotics) such as risperidone, clozapine, and olanzapine exert a strong antioxidant activity in experimental models of schizophrenia by rescuing the antioxidant system, with an increase in superoxide dismutase and glutathione (GSH) serum levels. Second-generation antipsychotics also improve the antioxidant status and reduce lipid peroxidation in schizophrenic patients. Interestingly, second-generation antipsychotics, such as risperidone, paliperidone, and in particular clozapine, reduce oxidative stress induced by microglia overactivation, decreasing the production of microglia-derived free radicals, finally protecting neurons against microglia-induced oxidative stress. Further, long-term clinical studies are needed to better understand the link between oxidative stress and the clinical response to antipsychotic drugs and the therapeutic potential of antioxidants to increase the response to antipsychotics.",
+  "canon:text": "Antioxidant Properties of Second-Generation Antipsychotics: Focus on Microglia. Recent studies suggest a primary role of oxidative stress in an early phase of the pathogenesis of schizophrenia and a strong neurobiological link has been found between dopaminergic system dysfunction, microglia overactivation, and oxidative stress. Different risk factors for schizophrenia increase oxidative stress phenomena raising the risk of developing psychosis. Oxidative stress induced by first-generation antipsychotics such as haloperidol significantly contributes to the development of extrapyramidal side effects. Haloperidol also exerts neurotoxic effects by decreasing antioxidant enzyme levels then worsening pro-oxidant events. Opposite to haloperidol, second-generation antipsychotics (or atypical antipsychotics) such as risperidone, clozapine, and olanzapine exert a strong antioxidant activity in experimental models of schizophrenia by rescuing the antioxidant system, with an increase in superoxide dismutase and glutathione (GSH) serum levels. Second-generation antipsychotics also improve the antioxidant status and reduce lipid peroxidation in schizophrenic patients. Interestingly, second-generation antipsychotics, such as risperidone, paliperidone, and in particular clozapine, reduce oxidative stress induced by microglia overactivation, decreasing the production of microglia-derived free radicals, finally protecting neurons against microglia-induced oxidative stress. Further, long-term clinical studies are needed to better understand the link between oxidative stress and the clinical response to antipsychotic drugs and the therapeutic potential of antioxidants to increase the response to antipsychotics.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33322693_causative-agent_0003422#mention-T1",
+      "canon:span": {
+        "start": 631,
+        "end": 641
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33322693_causative-agent_0003422#mention-T2",
+      "canon:span": {
+        "start": 1128,
+        "end": 1133
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33322693_causative-agent_0003422#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33322693_causative-agent_0003422#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33322693_causative-agent_0003422#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33322693"
+      }
+    }
+  ]
+}

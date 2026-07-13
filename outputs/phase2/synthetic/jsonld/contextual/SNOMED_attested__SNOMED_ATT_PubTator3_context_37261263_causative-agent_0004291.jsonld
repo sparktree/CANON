@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37261263_causative-agent_0004291",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37261263_causative-agent_0004291",
+  "canon:title": "Oxidative stress in Wernicke's encephalopathy.",
+  "canon:abstract": "Wernicke's encephalopathy (WE) is a severe life-threatening disease that occurs due to vitamin B1 (thiamine) deficiency (TD). It is characterized by acute mental disorder, ataxia, and ophthalmoplegia. TD occurs because of the following reasons: insufficient intake, increased demand, and long-term drinking due to corresponding organ damage or failure. Recent studies showed that oxidative stress (OS) can damage organs and cause TD in the brain, which further leads to neurodegenerative diseases, such as WE. In this review, we discuss the effects of TD caused by OS on multiple organ systems, including the liver, intestines, and brain in WE. We believe that strengthening the human antioxidant system and reducing TD can effectively treat WE.",
+  "canon:text": "Oxidative stress in Wernicke's encephalopathy. Wernicke's encephalopathy (WE) is a severe life-threatening disease that occurs due to vitamin B1 (thiamine) deficiency (TD). It is characterized by acute mental disorder, ataxia, and ophthalmoplegia. TD occurs because of the following reasons: insufficient intake, increased demand, and long-term drinking due to corresponding organ damage or failure. Recent studies showed that oxidative stress (OS) can damage organs and cause TD in the brain, which further leads to neurodegenerative diseases, such as WE. In this review, we discuss the effects of TD caused by OS on multiple organ systems, including the liver, intestines, and brain in WE. We believe that strengthening the human antioxidant system and reducing TD can effectively treat WE.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37261263_causative-agent_0004291#mention-T1",
+      "canon:span": {
+        "start": 168,
+        "end": 170
+      },
+      "canon:surface": "TD",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37261263_causative-agent_0004291#mention-T2",
+      "canon:span": {
+        "start": 134,
+        "end": 144
+      },
+      "canon:surface": "vitamin B1",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013831",
+      "canon:sourceNotation": "D013831",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37261263_causative-agent_0004291#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37261263_causative-agent_0004291#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37261263_causative-agent_0004291#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37261263"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29951434_due-to_0002958",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29951434_due-to_0002958",
+  "canon:title": "Polyphenols and their effects on diabetes management: A review.",
+  "canon:abstract": "Background: Type 2 diabetes is a growing public health problem and is associated with increased morbidity and mortality. The worldwide prevalence of type 2 diabetes is rising. Polyphenols, such as flavonoids, phenolic acid, and stilbens, are a large and heterogeneous group of phytochemicals in plant-based foods. In this review, we aimed at assessing the studies on polyphenols and diabetes management. Methods: A literature search in the PubMed, EMBASE, Scopus, and ISI Web of Science databases was conducted to identify relevant studies published from 1986 to Jan 2017. Results: Several animal models and a limited number of human studies have revealed that polyphenols decrease hyperglycemia and improve acute insulin secretion and insulin sensitivity. The possible mechanisms include decrease in glucose absorption in the intestine, inhibition of carbohydrates digestion, stimulation of insulin secretion, modulation of glucose release from the liver, activation of insulin receptors and glucose uptake in insulin-sensitive tissues, modulation of intracellular signaling pathways, and gene expression. Conclusion: Growing evidence indicates that various dietary polyphenols may influence blood glucose at different levels and may also help control and prevent diabetes complication. However, we still need more clinical trials to determine the effects of polyphenols- rich foods, their effective dose, and mechanisms of their effects in managing diabetes.",
+  "canon:text": "Polyphenols and their effects on diabetes management: A review. Background: Type 2 diabetes is a growing public health problem and is associated with increased morbidity and mortality. The worldwide prevalence of type 2 diabetes is rising. Polyphenols, such as flavonoids, phenolic acid, and stilbens, are a large and heterogeneous group of phytochemicals in plant-based foods. In this review, we aimed at assessing the studies on polyphenols and diabetes management. Methods: A literature search in the PubMed, EMBASE, Scopus, and ISI Web of Science databases was conducted to identify relevant studies published from 1986 to Jan 2017. Results: Several animal models and a limited number of human studies have revealed that polyphenols decrease hyperglycemia and improve acute insulin secretion and insulin sensitivity. The possible mechanisms include decrease in glucose absorption in the intestine, inhibition of carbohydrates digestion, stimulation of insulin secretion, modulation of glucose release from the liver, activation of insulin receptors and glucose uptake in insulin-sensitive tissues, modulation of intracellular signaling pathways, and gene expression. Conclusion: Growing evidence indicates that various dietary polyphenols may influence blood glucose at different levels and may also help control and prevent diabetes complication. However, we still need more clinical trials to determine the effects of polyphenols- rich foods, their effective dose, and mechanisms of their effects in managing diabetes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29951434_due-to_0002958#mention-T1",
+      "canon:span": {
+        "start": 1329,
+        "end": 1350
+      },
+      "canon:surface": "diabetes complication",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29951434_due-to_0002958#mention-T2",
+      "canon:span": {
+        "start": 76,
+        "end": 91
+      },
+      "canon:surface": "Type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29951434_due-to_0002958#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29951434_due-to_0002958#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29951434_due-to_0002958#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29951434"
+      }
+    }
+  ]
+}

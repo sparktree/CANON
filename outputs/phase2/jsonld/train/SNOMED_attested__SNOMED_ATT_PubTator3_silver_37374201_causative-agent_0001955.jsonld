@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37374201_causative-agent_0001955",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37374201_causative-agent_0001955",
+  "canon:title": "Atopic Dermatitis: Disease Features, Therapeutic Options, and a Multidisciplinary Approach.",
+  "canon:abstract": "The latest findings regarding AD pathogenesis point to an impaired function of the epidermal barrier, changed immune response, colonization of the skin by microorganisms, and certain psychological factors among other causes/triggers. The inflammatory response of AD patients is mainly associated with the activation of T cells (Th2 cells predominate), dendritic cells, macrophages, keratinocytes, mast cells, and eosinophils. Therapy usually involves medical evaluations and adequate management including treatment of concomitant diseases (e.g., allergies and infections), patient education and nursing care, psychological support, and nutritional consultations, which are organized through specific programs and structured educational groups. Systemic AD therapy includes conventional systemic treatment (cyclosporine, methotrexate, azathioprine) and new, specific drugs, interleukin inhibitors (e.g., dupilumab) and JAK inhibitors (baricitinib, abrocitinib, upadacitinib, etc.). Since many AD patients are affected by various psychological factors and comorbidities, they should be assessed and managed through a multidisciplinary approach, involving different professions (psychologists, ear-nose-throat specialists, pulmonologists, allergologists, immunologists, nutritionists, pediatricians, gastroenterologists, psychiatrists (when necessary), and others). A multidisciplinary approach provides better coping strategies and improves control over the disease, patient adherence to therapy, and quality of life. It also has a positive influence on family quality of life while at the same time making more efficient use of dermatology healthcare resources, reducing the economic burden on both patients and society.",
+  "canon:text": "Atopic Dermatitis: Disease Features, Therapeutic Options, and a Multidisciplinary Approach. The latest findings regarding AD pathogenesis point to an impaired function of the epidermal barrier, changed immune response, colonization of the skin by microorganisms, and certain psychological factors among other causes/triggers. The inflammatory response of AD patients is mainly associated with the activation of T cells (Th2 cells predominate), dendritic cells, macrophages, keratinocytes, mast cells, and eosinophils. Therapy usually involves medical evaluations and adequate management including treatment of concomitant diseases (e.g., allergies and infections), patient education and nursing care, psychological support, and nutritional consultations, which are organized through specific programs and structured educational groups. Systemic AD therapy includes conventional systemic treatment (cyclosporine, methotrexate, azathioprine) and new, specific drugs, interleukin inhibitors (e.g., dupilumab) and JAK inhibitors (baricitinib, abrocitinib, upadacitinib, etc.). Since many AD patients are affected by various psychological factors and comorbidities, they should be assessed and managed through a multidisciplinary approach, involving different professions (psychologists, ear-nose-throat specialists, pulmonologists, allergologists, immunologists, nutritionists, pediatricians, gastroenterologists, psychiatrists (when necessary), and others). A multidisciplinary approach provides better coping strategies and improves control over the disease, patient adherence to therapy, and quality of life. It also has a positive influence on family quality of life while at the same time making more efficient use of dermatology healthcare resources, reducing the economic burden on both patients and society.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37374201_causative-agent_0001955#mention-T1",
+      "canon:span": {
+        "start": 638,
+        "end": 647
+      },
+      "canon:surface": "allergies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37374201_causative-agent_0001955#mention-T2",
+      "canon:span": {
+        "start": 898,
+        "end": 910
+      },
+      "canon:surface": "cyclosporine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D016572",
+      "canon:sourceNotation": "D016572",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37374201_causative-agent_0001955#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37374201_causative-agent_0001955#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37374201_causative-agent_0001955#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37374201"
+      }
+    }
+  ]
+}

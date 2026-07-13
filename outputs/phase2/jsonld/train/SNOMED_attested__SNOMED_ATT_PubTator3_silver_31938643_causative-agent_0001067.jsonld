@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31938643_causative-agent_0001067",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31938643_causative-agent_0001067",
+  "canon:title": "Metoclopramide-induced Serotonin Syndrome.",
+  "canon:abstract": "Serotonin syndrome is a clinical diagnosis characterized by a constellation of autonomic and neurological physical examination findings due to the use of one or more serotonergic agents. Due to high morbidity and mortality associated with this condition, high index of suspicion is required in making this diagnosis. Treatment is aimed at discontinuation of the offending agent and supportive care. We present a case of a 28-year-old woman who presented with acetaminophen toxicity, however developed iatrogenic serotonin syndrome due to use of scheduled intravenous metoclopramide. Metoclopramide, by itself, very rarely causes serotonin syndrome and typically results in this condition when used in combination with other pro-serotonergic agents.",
+  "canon:text": "Metoclopramide-induced Serotonin Syndrome. Serotonin syndrome is a clinical diagnosis characterized by a constellation of autonomic and neurological physical examination findings due to the use of one or more serotonergic agents. Due to high morbidity and mortality associated with this condition, high index of suspicion is required in making this diagnosis. Treatment is aimed at discontinuation of the offending agent and supportive care. We present a case of a 28-year-old woman who presented with acetaminophen toxicity, however developed iatrogenic serotonin syndrome due to use of scheduled intravenous metoclopramide. Metoclopramide, by itself, very rarely causes serotonin syndrome and typically results in this condition when used in combination with other pro-serotonergic agents.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31938643_causative-agent_0001067#mention-T1",
+      "canon:span": {
+        "start": 23,
+        "end": 41
+      },
+      "canon:surface": "Serotonin Syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31938643_causative-agent_0001067#mention-T2",
+      "canon:span": {
+        "start": 502,
+        "end": 515
+      },
+      "canon:surface": "acetaminophen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31938643_causative-agent_0001067#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31938643_causative-agent_0001067#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31938643_causative-agent_0001067#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31938643"
+      }
+    }
+  ]
+}

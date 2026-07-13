@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24844652_causative-agent_0002460",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24844652_causative-agent_0002460",
+  "canon:title": "Clinical spectrum of dopa-responsive dystonia and related disorders.",
+  "canon:abstract": "Dopa-responsive dystonia (DRD) has a classic presentation of childhood or adolescent-onset dystonia, mild parkinsonism, marked diurnal fluctuations, improvement with sleep or rest, and a dramatic and sustained response to low doses of L-dopa without motor fluctuations or dyskinesias. However, there have been many papers on patients with a wide range of features, which report them as DRD mainly because they had dystonic syndromes with L-dopa responsiveness. Many mutations in the dopaminergic system have been found as molecular genetic defects. Therefore, the clinical and genetic spectra of DRD are unclear, which lead to difficulties in diagnostic work-ups and planning treatments. We propose the concept of DRD and DRD-plus to clarify the confusion in this area and to help understand the pathophysiology and clinical features, which will help in guiding diagnostic investigations and planning treatments. We critically reviewed the literature on atypical cases and discussed the limitations of the gene study. ",
+  "canon:text": "Clinical spectrum of dopa-responsive dystonia and related disorders. Dopa-responsive dystonia (DRD) has a classic presentation of childhood or adolescent-onset dystonia, mild parkinsonism, marked diurnal fluctuations, improvement with sleep or rest, and a dramatic and sustained response to low doses of L-dopa without motor fluctuations or dyskinesias. However, there have been many papers on patients with a wide range of features, which report them as DRD mainly because they had dystonic syndromes with L-dopa responsiveness. Many mutations in the dopaminergic system have been found as molecular genetic defects. Therefore, the clinical and genetic spectra of DRD are unclear, which lead to difficulties in diagnostic work-ups and planning treatments. We propose the concept of DRD and DRD-plus to clarify the confusion in this area and to help understand the pathophysiology and clinical features, which will help in guiding diagnostic investigations and planning treatments. We critically reviewed the literature on atypical cases and discussed the limitations of the gene study. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24844652_causative-agent_0002460#mention-T1",
+      "canon:span": {
+        "start": 341,
+        "end": 352
+      },
+      "canon:surface": "dyskinesias",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24844652_causative-agent_0002460#mention-T2",
+      "canon:span": {
+        "start": 304,
+        "end": 310
+      },
+      "canon:surface": "L-dopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24844652_causative-agent_0002460#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24844652_causative-agent_0002460#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24844652_causative-agent_0002460#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24844652"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35903308_causative-agent_0004003",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35903308_causative-agent_0004003",
+  "canon:title": "Clinical Manifestations and Genetic Influences in Sulfonamide-Induced Hypersensitivity.",
+  "canon:abstract": "Drug hypersensitivity is an inflammatory or immune reaction induced by drugs. It can be fatal if not appropriately treated and cause the risk of long-term complications. Sulfonamides are classified as antimicrobial drugs with a broad spectrum effective for gram-positive and gram-negative bacteria. This antibacterial agent works by competitively inhibiting folic acid synthesis, which prevents the growth and proliferation of microorganisms. In its use as antibiotics, sulfonamides can also cause adverse reactions in specific individuals. It has been widely reported that sulfonamide antimicrobials cause hypersensitivity reactions mediated by IgE or T cells. This review identifies symptoms or signs that can appear, as well as genes associated with sulfonamide hypersensitivity reactions, as sulfonamide may cause hypersensitivity in the form of uveitis, skin rash, Stevens-Johnson syndrome (SJS)/toxic epidermal necrolysis (TEN), parotitis, angioedema, drug reaction with eosinophilia and systemic symptoms (DRESS), and pruritus. In addition, several genes were found to be associated with sulfonamide hypersensitivity, including HLA-A29, HLA-B12, HLA-DR7, HLA-B44, and HLA A*11:01.",
+  "canon:text": "Clinical Manifestations and Genetic Influences in Sulfonamide-Induced Hypersensitivity. Drug hypersensitivity is an inflammatory or immune reaction induced by drugs. It can be fatal if not appropriately treated and cause the risk of long-term complications. Sulfonamides are classified as antimicrobial drugs with a broad spectrum effective for gram-positive and gram-negative bacteria. This antibacterial agent works by competitively inhibiting folic acid synthesis, which prevents the growth and proliferation of microorganisms. In its use as antibiotics, sulfonamides can also cause adverse reactions in specific individuals. It has been widely reported that sulfonamide antimicrobials cause hypersensitivity reactions mediated by IgE or T cells. This review identifies symptoms or signs that can appear, as well as genes associated with sulfonamide hypersensitivity reactions, as sulfonamide may cause hypersensitivity in the form of uveitis, skin rash, Stevens-Johnson syndrome (SJS)/toxic epidermal necrolysis (TEN), parotitis, angioedema, drug reaction with eosinophilia and systemic symptoms (DRESS), and pruritus. In addition, several genes were found to be associated with sulfonamide hypersensitivity, including HLA-A29, HLA-B12, HLA-DR7, HLA-B44, and HLA A*11:01.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35903308_causative-agent_0004003#mention-T1",
+      "canon:span": {
+        "start": 70,
+        "end": 86
+      },
+      "canon:surface": "Hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35903308_causative-agent_0004003#mention-T2",
+      "canon:span": {
+        "start": 446,
+        "end": 456
+      },
+      "canon:surface": "folic acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005492",
+      "canon:sourceNotation": "D005492",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35903308_causative-agent_0004003#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35903308_causative-agent_0004003#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35903308_causative-agent_0004003#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35903308"
+      }
+    }
+  ]
+}

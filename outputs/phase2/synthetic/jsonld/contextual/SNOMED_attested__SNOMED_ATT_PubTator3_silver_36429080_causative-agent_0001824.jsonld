@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36429080_causative-agent_0001824",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36429080_causative-agent_0001824",
+  "canon:title": "Ferroptosis-A New Dawn in the Treatment of Organ Ischemia-Reperfusion Injury.",
+  "canon:abstract": "Ischemia-reperfusion (I/R) is a common pathological phenomenon that occurs in numerous organs and diseases. It generally results from secondary damage caused by the recovery of blood flow and reoxygenation, followed by ischemia of organ tissues, which is often accompanied by severe cellular damage and death. Currently, effective treatments for I/R injury (IRI) are limited. Ferroptosis, a new type of regulated cell death (RCD), is characterized by iron overload and iron-dependent lipid peroxidation. Mounting evidence has indicated a close relationship between ferroptosis and IRI. Ferroptosis plays a significantly detrimental role in the progression of IRI, and targeting ferroptosis may be a promising approach for treatment of IRI. Considering the substantial progress made in the study of ferroptosis in IRI, in this review, we summarize the pathological mechanisms and therapeutic targets of ferroptosis in IRI.",
+  "canon:text": "Ferroptosis-A New Dawn in the Treatment of Organ Ischemia-Reperfusion Injury. Ischemia-reperfusion (I/R) is a common pathological phenomenon that occurs in numerous organs and diseases. It generally results from secondary damage caused by the recovery of blood flow and reoxygenation, followed by ischemia of organ tissues, which is often accompanied by severe cellular damage and death. Currently, effective treatments for I/R injury (IRI) are limited. Ferroptosis, a new type of regulated cell death (RCD), is characterized by iron overload and iron-dependent lipid peroxidation. Mounting evidence has indicated a close relationship between ferroptosis and IRI. Ferroptosis plays a significantly detrimental role in the progression of IRI, and targeting ferroptosis may be a promising approach for treatment of IRI. Considering the substantial progress made in the study of ferroptosis in IRI, in this review, we summarize the pathological mechanisms and therapeutic targets of ferroptosis in IRI.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36429080_causative-agent_0001824#mention-T1",
+      "canon:span": {
+        "start": 529,
+        "end": 542
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36429080_causative-agent_0001824#mention-T2",
+      "canon:span": {
+        "start": 547,
+        "end": 551
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36429080_causative-agent_0001824#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36429080_causative-agent_0001824#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36429080_causative-agent_0001824#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36429080"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26544861_after_0002607",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26544861_after_0002607",
+  "canon:title": "Pretreatment with Resveratrol Prevents Neuronal Injury and Cognitive Deficits Induced by Perinatal Hypoxia-Ischemia in Rats.",
+  "canon:abstract": "Despite advances in neonatal care, hypoxic-ischemic brain injury is still a serious clinical problem, which is responsible for many cases of perinatal mortality, cerebral palsy, motor impairment and cognitive deficits. Resveratrol, a natural polyphenol with important anti-oxidant and anti-inflammatory properties, is present in grapevines, peanuts and pomegranates. The aim of the present work was to evaluate the possible neuroprotective effect of resveratrol when administered before or immediately after a hypoxic-ischemic brain event in neonatal rats by analyzing brain damage, the mitochondrial status and long-term cognitive impairment. Our results indicate that pretreatment with resveratrol protects against brain damage, reducing infarct volume, preserving myelination and minimizing the astroglial reactive response. Moreover its neuroprotective effect was found to be long lasting, as behavioral outcomes were significantly improved at adulthood. We speculate that one of the mechanisms for this neuroprotection may be related to the maintenance of the mitochondrial inner membrane integrity and potential, and to the reduction of reactive oxygen species. Curiously, none of these protective features was observed when resveratrol was administered immediately after hypoxia-ischemia. ",
+  "canon:text": "Pretreatment with Resveratrol Prevents Neuronal Injury and Cognitive Deficits Induced by Perinatal Hypoxia-Ischemia in Rats. Despite advances in neonatal care, hypoxic-ischemic brain injury is still a serious clinical problem, which is responsible for many cases of perinatal mortality, cerebral palsy, motor impairment and cognitive deficits. Resveratrol, a natural polyphenol with important anti-oxidant and anti-inflammatory properties, is present in grapevines, peanuts and pomegranates. The aim of the present work was to evaluate the possible neuroprotective effect of resveratrol when administered before or immediately after a hypoxic-ischemic brain event in neonatal rats by analyzing brain damage, the mitochondrial status and long-term cognitive impairment. Our results indicate that pretreatment with resveratrol protects against brain damage, reducing infarct volume, preserving myelination and minimizing the astroglial reactive response. Moreover its neuroprotective effect was found to be long lasting, as behavioral outcomes were significantly improved at adulthood. We speculate that one of the mechanisms for this neuroprotection may be related to the maintenance of the mitochondrial inner membrane integrity and potential, and to the reduction of reactive oxygen species. Curiously, none of these protective features was observed when resveratrol was administered immediately after hypoxia-ischemia. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26544861_after_0002607#mention-T1",
+      "canon:span": {
+        "start": 99,
+        "end": 115
+      },
+      "canon:surface": "Hypoxia-Ischemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26544861_after_0002607#mention-T2",
+      "canon:span": {
+        "start": 287,
+        "end": 301
+      },
+      "canon:surface": "cerebral palsy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002547",
+      "canon:sourceNotation": "D002547",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26544861_after_0002607#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26544861_after_0002607#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26544861_after_0002607#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26544861"
+      }
+    }
+  ]
+}

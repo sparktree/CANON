@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33603878_causative-agent_0001267",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33603878_causative-agent_0001267",
+  "canon:title": "A multidisciplinary approach to the management of liver disease and alcohol disorders in psychiatric settings (Review).",
+  "canon:abstract": "Society is burdened with the uncontrolled use of alcohol, an ongoing issue, with a substantial associated morbidity and a pressing economical reverberation. It is inevitable that a series of psychiatric patients who display alcohol disorders will be admitted to hospital while also suffering from health conditions, such as liver disease, due to the consumption of alcohol. Managing comorbid patients in a psychiatric facility is a delicate matter that requires a collaborative team. The aim of this systematic paper is to highlight the following: The possibility of treating alcohol use disorder (AUD) and alcohol withdrawal syndrome (AWS) overlapping alcohol liver disease (ALD) within a psychiatric institution, and the importance of a collaborative multidisciplinary team; correctly dosing psychoactive medication when metabolism is affected by ALD; deciding when is it necessary to seek a transfer to a general hospital. Prescribing medication in patients suffering from ALD is still a not a fully documented territory. Protein binding, metabolism, bioavailability, extraction ratios, excretion route, and half-life must be taken into consideration as well as frequently repeating liver panels. Studies suggest that short-acting benzodiazepines are preferred over their alternatives when treating AWS in ALD. All anticonvulsants can be used in patients with decompensated liver disease with caution, although newer generation antiepileptic agents should be first line. Propofol is favored to benzodiazepines or opioids in the case of decompensated cirrhosis. Patients with ALD are likely to be further compromised by the potential hepatocytotoxicity of some pharmacological agents. On that account, having an integrated perspective of the medical case while taking into consideration the underlying illness as well as possible drug interaction is crucial in treating AUD or AWS in a psychiatric institution.",
+  "canon:text": "A multidisciplinary approach to the management of liver disease and alcohol disorders in psychiatric settings (Review). Society is burdened with the uncontrolled use of alcohol, an ongoing issue, with a substantial associated morbidity and a pressing economical reverberation. It is inevitable that a series of psychiatric patients who display alcohol disorders will be admitted to hospital while also suffering from health conditions, such as liver disease, due to the consumption of alcohol. Managing comorbid patients in a psychiatric facility is a delicate matter that requires a collaborative team. The aim of this systematic paper is to highlight the following: The possibility of treating alcohol use disorder (AUD) and alcohol withdrawal syndrome (AWS) overlapping alcohol liver disease (ALD) within a psychiatric institution, and the importance of a collaborative multidisciplinary team; correctly dosing psychoactive medication when metabolism is affected by ALD; deciding when is it necessary to seek a transfer to a general hospital. Prescribing medication in patients suffering from ALD is still a not a fully documented territory. Protein binding, metabolism, bioavailability, extraction ratios, excretion route, and half-life must be taken into consideration as well as frequently repeating liver panels. Studies suggest that short-acting benzodiazepines are preferred over their alternatives when treating AWS in ALD. All anticonvulsants can be used in patients with decompensated liver disease with caution, although newer generation antiepileptic agents should be first line. Propofol is favored to benzodiazepines or opioids in the case of decompensated cirrhosis. Patients with ALD are likely to be further compromised by the potential hepatocytotoxicity of some pharmacological agents. On that account, having an integrated perspective of the medical case while taking into consideration the underlying illness as well as possible drug interaction is crucial in treating AUD or AWS in a psychiatric institution.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33603878_causative-agent_0001267#mention-T1",
+      "canon:span": {
+        "start": 68,
+        "end": 85
+      },
+      "canon:surface": "alcohol disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33603878_causative-agent_0001267#mention-T2",
+      "canon:span": {
+        "start": 1354,
+        "end": 1369
+      },
+      "canon:surface": "benzodiazepines",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001569",
+      "canon:sourceNotation": "D001569",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33603878_causative-agent_0001267#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33603878_causative-agent_0001267#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33603878_causative-agent_0001267#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33603878"
+      }
+    }
+  ]
+}

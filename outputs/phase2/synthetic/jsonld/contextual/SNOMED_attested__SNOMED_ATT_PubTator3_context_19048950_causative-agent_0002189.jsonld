@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19048950_causative-agent_0002189",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_19048950_causative-agent_0002189",
+  "canon:title": "[Case of a 30-year history of PARK6 --findings from functional imaging of the brain].",
+  "canon:abstract": "We have reported a case of autosomal recessive juvenile parkinsonism PARK6 with a 30-year history. She developed tremor of right lower limb at the age of 23. At the age of 28, she received a clinical diagnosis of early-onset Parkinson's disease. She showed clinical improvements by the treatment with trihexyphenidyl, but symptoms showed slow progression over the subsequent years. L-DOPA therapy was introduced at the age of 42, and five years later, L-DOPA-induced dyskinesia developed. Dystonia, diurnal fluctuation and sleep benefit were absent. She carried a homozygous missense mutation in PINK1 gene, and was diagnosed as PARK6. The brain MRI did not show apparent abnormality. 18F-FDG-positron emission topography (PET) displayed normal uptake in the brain, suggesting normal glucose metabolism. PET imaging with a dopamine D2 receptor ligand 11C-raclopride revealed that postsynaptic 11C-raclopride uptake was normal in the bilateral putamen. After the introduction of pramipexisol, she showed clinical improvements. L-DOPA-induced dyskinesia disappeared with the gradual tapering and withdrawal of L-DOPA. In this PARK6 case, postsynaptic D2 receptors of the nigro-striatal dopaminergic neurons were thought to be maintained despite a long disease history.",
+  "canon:text": "[Case of a 30-year history of PARK6 --findings from functional imaging of the brain]. We have reported a case of autosomal recessive juvenile parkinsonism PARK6 with a 30-year history. She developed tremor of right lower limb at the age of 23. At the age of 28, she received a clinical diagnosis of early-onset Parkinson's disease. She showed clinical improvements by the treatment with trihexyphenidyl, but symptoms showed slow progression over the subsequent years. L-DOPA therapy was introduced at the age of 42, and five years later, L-DOPA-induced dyskinesia developed. Dystonia, diurnal fluctuation and sleep benefit were absent. She carried a homozygous missense mutation in PINK1 gene, and was diagnosed as PARK6. The brain MRI did not show apparent abnormality. 18F-FDG-positron emission topography (PET) displayed normal uptake in the brain, suggesting normal glucose metabolism. PET imaging with a dopamine D2 receptor ligand 11C-raclopride revealed that postsynaptic 11C-raclopride uptake was normal in the bilateral putamen. After the introduction of pramipexisol, she showed clinical improvements. L-DOPA-induced dyskinesia disappeared with the gradual tapering and withdrawal of L-DOPA. In this PARK6 case, postsynaptic D2 receptors of the nigro-striatal dopaminergic neurons were thought to be maintained despite a long disease history.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19048950_causative-agent_0002189#mention-T1",
+      "canon:span": {
+        "start": 553,
+        "end": 563
+      },
+      "canon:surface": "dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19048950_causative-agent_0002189#mention-T2",
+      "canon:span": {
+        "start": 468,
+        "end": 474
+      },
+      "canon:surface": "L-DOPA",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19048950_causative-agent_0002189#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19048950_causative-agent_0002189#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19048950_causative-agent_0002189#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "19048950"
+      }
+    }
+  ]
+}

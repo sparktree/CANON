@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001312",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001312",
+  "canon:title": "Doxepin Exacerbates Renal Damage, Glucose Intolerance, Nonalcoholic Fatty Liver Disease, and Urinary Chromium Loss in Obese Mice.",
+  "canon:abstract": "Doxepin is commonly prescribed for depression and anxiety treatment. Doxepin-related disruptions to metabolism and renal/hepatic adverse effects remain unclear; thus, the underlying mechanism of action warrants further research. Here, we investigated how doxepin affects lipid change, glucose homeostasis, chromium (Cr) distribution, renal impairment, liver damage, and fatty liver scores in C57BL6/J mice subjected to a high-fat diet and 5 mg/kg/day doxepin treatment for eight weeks. We noted that the treated mice had higher body, kidney, liver, retroperitoneal, and epididymal white adipose tissue weights; serum and liver triglyceride, alanine aminotransferase, aspartate aminotransferase, blood urea nitrogen, and creatinine levels; daily food efficiency; and liver lipid regulation marker expression. They also demonstrated exacerbated insulin resistance and glucose intolerance with lower Akt phosphorylation, GLUT4 expression, and renal damage as well as higher reactive oxygen species and interleukin 1 and lower catalase, superoxide dismutase, and glutathione peroxidase levels. The treated mice had a net-negative Cr balance due to increased urinary excretion, leading to Cr mobilization, delaying hyperglycemia recovery. Furthermore, they had considerably increased fatty liver scores, paralleling increases in adiponectin, FASN, PNPLA3, FABP4 mRNA, and SREBP1 mRNA levels. In conclusion, doxepin administration potentially worsens renal injury, nonalcoholic fatty liver disease, and diabetes.",
+  "canon:text": "Doxepin Exacerbates Renal Damage, Glucose Intolerance, Nonalcoholic Fatty Liver Disease, and Urinary Chromium Loss in Obese Mice. Doxepin is commonly prescribed for depression and anxiety treatment. Doxepin-related disruptions to metabolism and renal/hepatic adverse effects remain unclear; thus, the underlying mechanism of action warrants further research. Here, we investigated how doxepin affects lipid change, glucose homeostasis, chromium (Cr) distribution, renal impairment, liver damage, and fatty liver scores in C57BL6/J mice subjected to a high-fat diet and 5 mg/kg/day doxepin treatment for eight weeks. We noted that the treated mice had higher body, kidney, liver, retroperitoneal, and epididymal white adipose tissue weights; serum and liver triglyceride, alanine aminotransferase, aspartate aminotransferase, blood urea nitrogen, and creatinine levels; daily food efficiency; and liver lipid regulation marker expression. They also demonstrated exacerbated insulin resistance and glucose intolerance with lower Akt phosphorylation, GLUT4 expression, and renal damage as well as higher reactive oxygen species and interleukin 1 and lower catalase, superoxide dismutase, and glutathione peroxidase levels. The treated mice had a net-negative Cr balance due to increased urinary excretion, leading to Cr mobilization, delaying hyperglycemia recovery. Furthermore, they had considerably increased fatty liver scores, paralleling increases in adiponectin, FASN, PNPLA3, FABP4 mRNA, and SREBP1 mRNA levels. In conclusion, doxepin administration potentially worsens renal injury, nonalcoholic fatty liver disease, and diabetes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001312#mention-T1",
+      "canon:span": {
+        "start": 245,
+        "end": 274
+      },
+      "canon:surface": "renal/hepatic adverse effects",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001312#mention-T2",
+      "canon:span": {
+        "start": 850,
+        "end": 860
+      },
+      "canon:surface": "creatinine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003404",
+      "canon:sourceNotation": "D003404",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001312#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001312#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33809508_causative-agent_0001312#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33809508"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37533800_due-to_0001984",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37533800_due-to_0001984",
+  "canon:title": "Pulmonary function testing in patients with liver cirrhosis (Review).",
+  "canon:abstract": "Liver cirrhosis is a common long-term outcome of chronic hepatic inflammation. Patients with liver cirrhosis may also have pulmonary complications. There are several reasons for pulmonary dysfunction in liver cirrhosis, including intrinsic cardiopulmonary dysfunction unrelated to liver disease and specific disorders related to the presence of liver cirrhosis and/or portal hypertension. The most prevalent and clinically significant pulmonary complications are hepatic hydrothorax, hepatopulmonary syndrome, spontaneous pulmonary empyema and portopulmonary hypertension. Pulmonary function tests (PFTs) have traditionally been used to assess the lung function of patients with liver cirrhosis. To the best of our knowledge, the present review is the first to detail all types of PFTs performed in patients with liver cirrhosis and discuss their clinical significance. Patients with liver cirrhosis have reduced values of spirometric parameters, diffusion capacity for carbon monoxide (DLCO), lung volumes, maximal inspiratory pressure and maximal expiratory pressure. Furthermore, they have a higher closing volume, a greater airway occlusion pressure 0.1 sec after the onset of inspiratory flow and greater exhaled nitric oxide values. In order to improve pulmonary function, patients with ascites may require therapeutic paracentesis. Such findings should be considered when evaluating individuals with liver disease, particularly those who may require surgery. Poor lung function, particularly restrictive lung disease, can have an impact on post-transplant outcomes, such as ventilator time, length of hospital duration and post-operative pulmonary complications; thus, the transplant care team needs to be aware of its prevalence and relevance.",
+  "canon:text": "Pulmonary function testing in patients with liver cirrhosis (Review). Liver cirrhosis is a common long-term outcome of chronic hepatic inflammation. Patients with liver cirrhosis may also have pulmonary complications. There are several reasons for pulmonary dysfunction in liver cirrhosis, including intrinsic cardiopulmonary dysfunction unrelated to liver disease and specific disorders related to the presence of liver cirrhosis and/or portal hypertension. The most prevalent and clinically significant pulmonary complications are hepatic hydrothorax, hepatopulmonary syndrome, spontaneous pulmonary empyema and portopulmonary hypertension. Pulmonary function tests (PFTs) have traditionally been used to assess the lung function of patients with liver cirrhosis. To the best of our knowledge, the present review is the first to detail all types of PFTs performed in patients with liver cirrhosis and discuss their clinical significance. Patients with liver cirrhosis have reduced values of spirometric parameters, diffusion capacity for carbon monoxide (DLCO), lung volumes, maximal inspiratory pressure and maximal expiratory pressure. Furthermore, they have a higher closing volume, a greater airway occlusion pressure 0.1 sec after the onset of inspiratory flow and greater exhaled nitric oxide values. In order to improve pulmonary function, patients with ascites may require therapeutic paracentesis. Such findings should be considered when evaluating individuals with liver disease, particularly those who may require surgery. Poor lung function, particularly restrictive lung disease, can have an impact on post-transplant outcomes, such as ventilator time, length of hospital duration and post-operative pulmonary complications; thus, the transplant care team needs to be aware of its prevalence and relevance.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37533800_due-to_0001984#mention-T1",
+      "canon:span": {
+        "start": 248,
+        "end": 269
+      },
+      "canon:surface": "pulmonary dysfunction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011660",
+      "canon:sourceNotation": "D011660",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37533800_due-to_0001984#mention-T2",
+      "canon:span": {
+        "start": 1363,
+        "end": 1370
+      },
+      "canon:surface": "ascites",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001201",
+      "canon:sourceNotation": "D001201",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37533800_due-to_0001984#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37533800_due-to_0001984#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37533800_due-to_0001984#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37533800"
+      }
+    }
+  ]
+}

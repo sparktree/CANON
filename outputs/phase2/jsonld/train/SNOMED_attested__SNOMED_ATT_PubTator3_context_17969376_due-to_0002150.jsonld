@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17969376_due-to_0002150",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_17969376_due-to_0002150",
+  "canon:title": "Managing hypertension in diabetic patients--focus on trandolapril/verapamil combination.",
+  "canon:abstract": "Hypertensive diabetes individuals are at higher risk for cardiovascular events and progression to end stage renal disease. Several well conducted clinical trials indicate that aggressive treatment of hypertension in individual with diabetes reduces these complications. Combinations of two or more antihypertensive drugs are frequently required to reach the target blood pressure and to improve the cardiovascular and renal outcomes in these patients. There are physiological and clinical rationales for renin-angiotensin system blockade in hypertensive diabetics. Trandolapril/verapamil sustained released (SR) is a fixed-dose combination of trandolapril and a sustained release formulation of verapamil and indicated in treatment of hypertension in patients who require more than one drug to reach target blood pressure. The antihypertensive efficacy of trandolapril/verapamil SR has been evaluated extensively in large trials. In the INVEST trial, a verapamil SR-based treatment strategy that included trandolapril in most patients was effective in reducing the primary outcome in hypertensive patients with coronary artery disease. The new onset of diabetes was also significantly lower in the verapamil SR/trandolapril treatment group in comparison with those on the atenolol/hydroclorothiazide treatment group. The BErgamo NEphrologic Diabetes Complications Trial (BENEDICT) documented that in hypertensive diabetes and normoalbuminuria, trandolapril plus verapamil or trandolapril alone delayed the onset of microalbuminuria independent of their blood pressure-reducing effect. Thus, trandolapril/verapamil is an effective option for treatment of hypertensive diabetes patients requiring more than one agent to achieve target blood pressure.",
+  "canon:text": "Managing hypertension in diabetic patients--focus on trandolapril/verapamil combination. Hypertensive diabetes individuals are at higher risk for cardiovascular events and progression to end stage renal disease. Several well conducted clinical trials indicate that aggressive treatment of hypertension in individual with diabetes reduces these complications. Combinations of two or more antihypertensive drugs are frequently required to reach the target blood pressure and to improve the cardiovascular and renal outcomes in these patients. There are physiological and clinical rationales for renin-angiotensin system blockade in hypertensive diabetics. Trandolapril/verapamil sustained released (SR) is a fixed-dose combination of trandolapril and a sustained release formulation of verapamil and indicated in treatment of hypertension in patients who require more than one drug to reach target blood pressure. The antihypertensive efficacy of trandolapril/verapamil SR has been evaluated extensively in large trials. In the INVEST trial, a verapamil SR-based treatment strategy that included trandolapril in most patients was effective in reducing the primary outcome in hypertensive patients with coronary artery disease. The new onset of diabetes was also significantly lower in the verapamil SR/trandolapril treatment group in comparison with those on the atenolol/hydroclorothiazide treatment group. The BErgamo NEphrologic Diabetes Complications Trial (BENEDICT) documented that in hypertensive diabetes and normoalbuminuria, trandolapril plus verapamil or trandolapril alone delayed the onset of microalbuminuria independent of their blood pressure-reducing effect. Thus, trandolapril/verapamil is an effective option for treatment of hypertensive diabetes patients requiring more than one agent to achieve target blood pressure.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17969376_due-to_0002150#mention-T1",
+      "canon:span": {
+        "start": 1430,
+        "end": 1452
+      },
+      "canon:surface": "Diabetes Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17969376_due-to_0002150#mention-T2",
+      "canon:span": {
+        "start": 25,
+        "end": 33
+      },
+      "canon:surface": "diabetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17969376_due-to_0002150#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17969376_due-to_0002150#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17969376_due-to_0002150#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "17969376"
+      }
+    }
+  ]
+}

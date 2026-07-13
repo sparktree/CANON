@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35698764_causative-agent_0003930",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35698764_causative-agent_0003930",
+  "canon:title": "Review of remimazolam and sedatives in the intensive care unit.",
+  "canon:abstract": "Remimazolam is a novel intravenous ultra-short acting benzodiazepine that has the potential of being a safe and effective new sedative for use in intensive care unit (ICU) settings. Because remimazolam metabolizes rapidly by being hydrolyzed to an inactive metabolite (CNS 7054) through non-specific tissue esterase activity, specific dosing adjustment for older adults and for patients with renal or hepatic impairment patients (except for those with severe hepatic impairment) is not required. In addition, research has shown that remimazolam may be reversed by administration of flumazenil, as its half time was sufficiently short compared to flumazenil. It shows a lower incidence of cardiorespiratory depression, less injection pain, and no fatal complications such as propofol infusion syndrome and malignant hyperthermia of inhalational anesthetics. Future studies to study the suitability of remimazolam for managing the sedation of ICU patients who need sedation for a long time over several days is required.",
+  "canon:text": "Review of remimazolam and sedatives in the intensive care unit. Remimazolam is a novel intravenous ultra-short acting benzodiazepine that has the potential of being a safe and effective new sedative for use in intensive care unit (ICU) settings. Because remimazolam metabolizes rapidly by being hydrolyzed to an inactive metabolite (CNS 7054) through non-specific tissue esterase activity, specific dosing adjustment for older adults and for patients with renal or hepatic impairment patients (except for those with severe hepatic impairment) is not required. In addition, research has shown that remimazolam may be reversed by administration of flumazenil, as its half time was sufficiently short compared to flumazenil. It shows a lower incidence of cardiorespiratory depression, less injection pain, and no fatal complications such as propofol infusion syndrome and malignant hyperthermia of inhalational anesthetics. Future studies to study the suitability of remimazolam for managing the sedation of ICU patients who need sedation for a long time over several days is required.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35698764_causative-agent_0003930#mention-T1",
+      "canon:span": {
+        "start": 869,
+        "end": 891
+      },
+      "canon:surface": "malignant hyperthermia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008305",
+      "canon:sourceNotation": "D008305",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35698764_causative-agent_0003930#mention-T2",
+      "canon:span": {
+        "start": 646,
+        "end": 656
+      },
+      "canon:surface": "flumazenil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005442",
+      "canon:sourceNotation": "D005442",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35698764_causative-agent_0003930#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35698764_causative-agent_0003930#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35698764_causative-agent_0003930#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35698764"
+      }
+    }
+  ]
+}

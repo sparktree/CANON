@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36362415_causative-agent_0001810",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36362415_causative-agent_0001810",
+  "canon:title": "Astrocytes as a Therapeutic Target in Alzheimer's Disease-Comprehensive Review and Recent Developments.",
+  "canon:abstract": "Alzheimer's disease (AD) is a frequent and disabling neurodegenerative disorder, in which astrocytes participate in several pathophysiological processes including neuroinflammation, excitotoxicity, oxidative stress and lipid metabolism (along with a critical role in apolipoprotein E function). Current evidence shows that astrocytes have both neuroprotective and neurotoxic effects depending on the disease stage and microenvironmental factors. Furthermore, astrocytes appear to be affected by the presence of amyloid-beta (Abeta), with alterations in calcium levels, gliotransmission and proinflammatory activity via RAGE-NF-kappaB pathway. In addition, astrocytes play an important role in the metabolism of tau and clearance of Abeta through the glymphatic system. In this review, we will discuss novel pharmacological and non-pharmacological treatments focused on astrocytes as therapeutic targets for AD. These interventions include effects on anti-inflammatory/antioxidant systems, glutamate activity, lipid metabolism, neurovascular coupling and glymphatic system, calcium dysregulation, and in the release of peptides which affects glial and neuronal function. According to the AD stage, these therapies may be of benefit in either preventing or delaying the progression of the disease.",
+  "canon:text": "Astrocytes as a Therapeutic Target in Alzheimer's Disease-Comprehensive Review and Recent Developments. Alzheimer's disease (AD) is a frequent and disabling neurodegenerative disorder, in which astrocytes participate in several pathophysiological processes including neuroinflammation, excitotoxicity, oxidative stress and lipid metabolism (along with a critical role in apolipoprotein E function). Current evidence shows that astrocytes have both neuroprotective and neurotoxic effects depending on the disease stage and microenvironmental factors. Furthermore, astrocytes appear to be affected by the presence of amyloid-beta (Abeta), with alterations in calcium levels, gliotransmission and proinflammatory activity via RAGE-NF-kappaB pathway. In addition, astrocytes play an important role in the metabolism of tau and clearance of Abeta through the glymphatic system. In this review, we will discuss novel pharmacological and non-pharmacological treatments focused on astrocytes as therapeutic targets for AD. These interventions include effects on anti-inflammatory/antioxidant systems, glutamate activity, lipid metabolism, neurovascular coupling and glymphatic system, calcium dysregulation, and in the release of peptides which affects glial and neuronal function. According to the AD stage, these therapies may be of benefit in either preventing or delaying the progression of the disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36362415_causative-agent_0001810#mention-T1",
+      "canon:span": {
+        "start": 468,
+        "end": 478
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36362415_causative-agent_0001810#mention-T2",
+      "canon:span": {
+        "start": 1093,
+        "end": 1102
+      },
+      "canon:surface": "glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018698",
+      "canon:sourceNotation": "D018698",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36362415_causative-agent_0001810#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36362415_causative-agent_0001810#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36362415_causative-agent_0001810#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36362415"
+      }
+    }
+  ]
+}

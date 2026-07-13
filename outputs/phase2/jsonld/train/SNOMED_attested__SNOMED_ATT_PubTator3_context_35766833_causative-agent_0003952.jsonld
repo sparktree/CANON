@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35766833_causative-agent_0003952",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35766833_causative-agent_0003952",
+  "canon:title": "Paying the Iron Price: Liver Iron Homeostasis and Metabolic Disease.",
+  "canon:abstract": "Iron is an essential metal element whose bioavailability is tightly regulated. Under normal conditions, systemic and cellular iron homeostases are synchronized for optimal function, based on the needs of each system. During metabolic dysfunction, this synchrony is lost, and markers of systemic iron homeostasis are no longer coupled to the iron status of key metabolic organs such as the liver and adipose tissue. The effects of dysmetabolic iron overload syndrome in the liver have been tied to hepatic insulin resistance, nonalcoholic fatty liver disease, and nonalcoholic steatohepatitis. While the existence of a relationship between iron dysregulation and metabolic dysfunction has long been acknowledged, identifying correlative relationships is complicated by the prognostic reliance on systemic measures of iron homeostasis. What is lacking and perhaps more informative is an understanding of how cellular iron homeostasis changes with metabolic dysfunction. This article explores bidirectional relationships between different proteins involved in iron homeostasis and metabolic dysfunction in the liver.   2022 American Physiological Society. Compr Physiol 12:3641-3663, 2022.",
+  "canon:text": "Paying the Iron Price: Liver Iron Homeostasis and Metabolic Disease. Iron is an essential metal element whose bioavailability is tightly regulated. Under normal conditions, systemic and cellular iron homeostases are synchronized for optimal function, based on the needs of each system. During metabolic dysfunction, this synchrony is lost, and markers of systemic iron homeostasis are no longer coupled to the iron status of key metabolic organs such as the liver and adipose tissue. The effects of dysmetabolic iron overload syndrome in the liver have been tied to hepatic insulin resistance, nonalcoholic fatty liver disease, and nonalcoholic steatohepatitis. While the existence of a relationship between iron dysregulation and metabolic dysfunction has long been acknowledged, identifying correlative relationships is complicated by the prognostic reliance on systemic measures of iron homeostasis. What is lacking and perhaps more informative is an understanding of how cellular iron homeostasis changes with metabolic dysfunction. This article explores bidirectional relationships between different proteins involved in iron homeostasis and metabolic dysfunction in the liver.   2022 American Physiological Society. Compr Physiol 12:3641-3663, 2022.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35766833_causative-agent_0003952#mention-T1",
+      "canon:span": {
+        "start": 512,
+        "end": 525
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35766833_causative-agent_0003952#mention-T2",
+      "canon:span": {
+        "start": 11,
+        "end": 15
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35766833_causative-agent_0003952#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35766833_causative-agent_0003952#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35766833_causative-agent_0003952#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35766833"
+      }
+    }
+  ]
+}

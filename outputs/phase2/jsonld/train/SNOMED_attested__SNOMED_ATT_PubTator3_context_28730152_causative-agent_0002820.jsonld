@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28730152_causative-agent_0002820",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28730152_causative-agent_0002820",
+  "canon:title": "Zebrafish Get Connected: Investigating Neurotransmission Targets and Alterations in Chemical Toxicity.",
+  "canon:abstract": "Neurotransmission is the basis of neuronal communication and is critical for normal brain development, behavior, learning, and memory. Exposure to drugs and chemicals can alter neurotransmission, often through unknown pathways and mechanisms. The zebrafish (Danio rerio) model system is increasingly being used to study the brain and chemical neurotoxicity. In this review, the major neurotransmitter systems, including glutamate, GABA, dopamine, norepinephrine, serotonin, acetylcholine, histamine, and glutamate are surveyed and pathways of synthesis, transport, metabolism, and action are examined. Differences between human and zebrafish neurochemical pathways are highlighted. We also review techniques for evaluating neurological function, including the measurement of neurotransmitter levels, assessment of gene expression through transcriptomic analysis, and the recording of neurobehavior. Finally examples of chemical toxicity studies evaluating alterations in neurotransmitter systems in the zebrafish model are reviewed.",
+  "canon:text": "Zebrafish Get Connected: Investigating Neurotransmission Targets and Alterations in Chemical Toxicity. Neurotransmission is the basis of neuronal communication and is critical for normal brain development, behavior, learning, and memory. Exposure to drugs and chemicals can alter neurotransmission, often through unknown pathways and mechanisms. The zebrafish (Danio rerio) model system is increasingly being used to study the brain and chemical neurotoxicity. In this review, the major neurotransmitter systems, including glutamate, GABA, dopamine, norepinephrine, serotonin, acetylcholine, histamine, and glutamate are surveyed and pathways of synthesis, transport, metabolism, and action are examined. Differences between human and zebrafish neurochemical pathways are highlighted. We also review techniques for evaluating neurological function, including the measurement of neurotransmitter levels, assessment of gene expression through transcriptomic analysis, and the recording of neurobehavior. Finally examples of chemical toxicity studies evaluating alterations in neurotransmitter systems in the zebrafish model are reviewed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28730152_causative-agent_0002820#mention-T1",
+      "canon:span": {
+        "start": 446,
+        "end": 459
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28730152_causative-agent_0002820#mention-T2",
+      "canon:span": {
+        "start": 550,
+        "end": 564
+      },
+      "canon:surface": "norepinephrine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009638",
+      "canon:sourceNotation": "D009638",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28730152_causative-agent_0002820#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28730152_causative-agent_0002820#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28730152_causative-agent_0002820#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28730152"
+      }
+    }
+  ]
+}

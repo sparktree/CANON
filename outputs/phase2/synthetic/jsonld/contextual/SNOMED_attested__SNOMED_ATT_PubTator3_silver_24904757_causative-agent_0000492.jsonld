@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904757_causative-agent_0000492",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24904757_causative-agent_0000492",
+  "canon:title": "Treatment of Gambling Disorders.",
+  "canon:abstract": "Preclinical and clinical research implicate several neurotransmitter systems in the pathophysiology of gambling disorder (GD). In particular, neurobiological research suggests alterations in serotonergic, dopaminergic, glutamatergic and opioidergic functioning. The relative efficacy of medications targeting these systems remains a topic of ongoing research, and there is currently no Food and Drug Administration (FDA) approved medication with an indication for GD. Considering co-occurring disorders may be particularly important when devising a treatment plan for GD: extant data suggest that the opioid antagonist naltrexone may by the most effective form of current pharmacotherapy for GD, particularly for individuals with a co-occurring substance-use disorder (SUD) or with a family history of alcoholism. In contrast, lithium or other mood stabilizers may be most effective for GD for patients presenting with a co-occurring bipolar-spectrum disorder (BSD). Further, serotonin reuptake inhibitors (SRIs) may be efficacious in reducing GD symptoms for individuals also presenting with a (non-BSD) mood or anxiety disorder. Finally, elevated rates of GD (and other Impulse Control Disorders; ICDs) have been noted among individuals with Parkinson's Disease (PD), and clinicians should assess for vulnerability to GD when considering treatment options for PD. Reducing levodopa or dopamine agonist (DA) dosages may partially reduce GD symptoms among patients with co-occurring PD. For GD patients not willing to consider drug treatment, n-acetyl cysteine or behavioral therapies may be effective. Ongoing research into the effectiveness of combined behavioral and pharmacotherapies is being conducted; thus combined treatments should also be considered.",
+  "canon:text": "Treatment of Gambling Disorders. Preclinical and clinical research implicate several neurotransmitter systems in the pathophysiology of gambling disorder (GD). In particular, neurobiological research suggests alterations in serotonergic, dopaminergic, glutamatergic and opioidergic functioning. The relative efficacy of medications targeting these systems remains a topic of ongoing research, and there is currently no Food and Drug Administration (FDA) approved medication with an indication for GD. Considering co-occurring disorders may be particularly important when devising a treatment plan for GD: extant data suggest that the opioid antagonist naltrexone may by the most effective form of current pharmacotherapy for GD, particularly for individuals with a co-occurring substance-use disorder (SUD) or with a family history of alcoholism. In contrast, lithium or other mood stabilizers may be most effective for GD for patients presenting with a co-occurring bipolar-spectrum disorder (BSD). Further, serotonin reuptake inhibitors (SRIs) may be efficacious in reducing GD symptoms for individuals also presenting with a (non-BSD) mood or anxiety disorder. Finally, elevated rates of GD (and other Impulse Control Disorders; ICDs) have been noted among individuals with Parkinson's Disease (PD), and clinicians should assess for vulnerability to GD when considering treatment options for PD. Reducing levodopa or dopamine agonist (DA) dosages may partially reduce GD symptoms among patients with co-occurring PD. For GD patients not willing to consider drug treatment, n-acetyl cysteine or behavioral therapies may be effective. Ongoing research into the effectiveness of combined behavioral and pharmacotherapies is being conducted; thus combined treatments should also be considered.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904757_causative-agent_0000492#mention-T1",
+      "canon:span": {
+        "start": 835,
+        "end": 845
+      },
+      "canon:surface": "alcoholism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904757_causative-agent_0000492#mention-T2",
+      "canon:span": {
+        "start": 860,
+        "end": 867
+      },
+      "canon:surface": "lithium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008094",
+      "canon:sourceNotation": "D008094",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904757_causative-agent_0000492#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904757_causative-agent_0000492#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24904757_causative-agent_0000492#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24904757"
+      }
+    }
+  ]
+}

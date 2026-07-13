@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32326261_due-to_0001119",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32326261_due-to_0001119",
+  "canon:title": "Glycopeptide Hypersensitivity and Adverse Reactions.",
+  "canon:abstract": "Glycopeptides, such as vancomycin and teicoplanin, are primarily used in the treatment of methicillin-resistant Staphylococcus aureus (MRSA) infections, such as cellulitis, endocarditis, meningitis, pneumonia, and septicemia, and are some of the most commonly prescribed parenteral antimicrobials. Parenteral glycopeptides are first-line therapy for severe MRSA infections; however, oral vancomycin is used as a first-line treatment of Clostridioides difficile infections. Also, we currently have the longer-acting lipoglycopeptides, such as dalbavancin, oritavancin, and telavancin to our armamentarium for the treatment of MRSA infections. Lastly, vancomycin is often used as an alternative treatment for patients with beta-lactam hypersensitivity. Common adverse effects associated with glycopeptide use include nephrotoxicity, ototoxicity, and Redman Syndrome (RMS). The RMS is often mistaken for a true allergy; however, it is a histamine-related infusion reaction rather than a true immunoglobulin E (IgE)-mediated allergic reaction. Although hypersensitivity to glycopeptides is rare, both immune-mediated and delayed reactions have been reported in the literature. We describe the various types of glycopeptide hypersensitivity reactions associated with glycopeptides and lipoglycopeptides, including IgE-mediated reactions, RMS, and linear immunoglobulin A bullous dermatosis, as well as describe cross-reactivity with other glycopeptides.",
+  "canon:text": "Glycopeptide Hypersensitivity and Adverse Reactions. Glycopeptides, such as vancomycin and teicoplanin, are primarily used in the treatment of methicillin-resistant Staphylococcus aureus (MRSA) infections, such as cellulitis, endocarditis, meningitis, pneumonia, and septicemia, and are some of the most commonly prescribed parenteral antimicrobials. Parenteral glycopeptides are first-line therapy for severe MRSA infections; however, oral vancomycin is used as a first-line treatment of Clostridioides difficile infections. Also, we currently have the longer-acting lipoglycopeptides, such as dalbavancin, oritavancin, and telavancin to our armamentarium for the treatment of MRSA infections. Lastly, vancomycin is often used as an alternative treatment for patients with beta-lactam hypersensitivity. Common adverse effects associated with glycopeptide use include nephrotoxicity, ototoxicity, and Redman Syndrome (RMS). The RMS is often mistaken for a true allergy; however, it is a histamine-related infusion reaction rather than a true immunoglobulin E (IgE)-mediated allergic reaction. Although hypersensitivity to glycopeptides is rare, both immune-mediated and delayed reactions have been reported in the literature. We describe the various types of glycopeptide hypersensitivity reactions associated with glycopeptides and lipoglycopeptides, including IgE-mediated reactions, RMS, and linear immunoglobulin A bullous dermatosis, as well as describe cross-reactivity with other glycopeptides.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32326261_due-to_0001119#mention-T1",
+      "canon:span": {
+        "start": 267,
+        "end": 277
+      },
+      "canon:surface": "septicemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32326261_due-to_0001119#mention-T2",
+      "canon:span": {
+        "start": 252,
+        "end": 261
+      },
+      "canon:surface": "pneumonia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011014",
+      "canon:sourceNotation": "D011014",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32326261_due-to_0001119#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32326261_due-to_0001119#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32326261_due-to_0001119#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32326261"
+      }
+    }
+  ]
+}

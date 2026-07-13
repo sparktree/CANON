@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34177178_causative-agent_0003596",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34177178_causative-agent_0003596",
+  "canon:title": "Drug-related Stevens-Johnson Syndrome and Toxic Epidermal Necrolysis: A Review.",
+  "canon:abstract": "INTRODUCTION: Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN) are rare, life-threatening, allergic reactions affecting the skin and mucous membranes. SJS is considered to be a milder form with less than 10% of body surface area (BSA) involvement. We report successful management of two cases of SJS and TEN. Firstly, a case of a 24-year-old female who presented with rashes over face, chest, and upper limbs after the oral intake of ciprofloxacin and local application of moxifloxacin eye drops. She developed high-grade fever and difficulty in breathing requiring intubation and lung-protective mechanical ventilation and was treated with high-dose methylprednisolone, azithromycin, soframycin skin dressings, and topical ocular antibiotics. Secondly, another case of a 16-year-old female who developed bullous eruptions over the trunk, arms, hands, face, and sole involving 60% of BSA, after oral intake of albendazole. She was diagnosed as TEN and successfully managed with sterile silver nitrate, soframycin dressings, and antibiotics. KEY MESSAGE: Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN) are life-threatening, allergic reactions affecting the skin and mucous membranes. Early identification, withdrawal of the suspected drug, and early transfer to a specialized center decrease mortality. HOW TO CITE THIS ARTICLE: Arora R, Pande RK, Panwar S, Gupta V. Drug-related Stevens-Johnson Syndrome and Toxic Epidermal Necrolysis: A Review. Indian J Crit Care Med 2021;25(5):575-579.",
+  "canon:text": "Drug-related Stevens-Johnson Syndrome and Toxic Epidermal Necrolysis: A Review. INTRODUCTION: Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN) are rare, life-threatening, allergic reactions affecting the skin and mucous membranes. SJS is considered to be a milder form with less than 10% of body surface area (BSA) involvement. We report successful management of two cases of SJS and TEN. Firstly, a case of a 24-year-old female who presented with rashes over face, chest, and upper limbs after the oral intake of ciprofloxacin and local application of moxifloxacin eye drops. She developed high-grade fever and difficulty in breathing requiring intubation and lung-protective mechanical ventilation and was treated with high-dose methylprednisolone, azithromycin, soframycin skin dressings, and topical ocular antibiotics. Secondly, another case of a 16-year-old female who developed bullous eruptions over the trunk, arms, hands, face, and sole involving 60% of BSA, after oral intake of albendazole. She was diagnosed as TEN and successfully managed with sterile silver nitrate, soframycin dressings, and antibiotics. KEY MESSAGE: Stevens-Johnson syndrome (SJS) and toxic epidermal necrolysis (TEN) are life-threatening, allergic reactions affecting the skin and mucous membranes. Early identification, withdrawal of the suspected drug, and early transfer to a specialized center decrease mortality. HOW TO CITE THIS ARTICLE: Arora R, Pande RK, Panwar S, Gupta V. Drug-related Stevens-Johnson Syndrome and Toxic Epidermal Necrolysis: A Review. Indian J Crit Care Med 2021;25(5):575-579.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34177178_causative-agent_0003596#mention-T1",
+      "canon:span": {
+        "start": 190,
+        "end": 208
+      },
+      "canon:surface": "allergic reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34177178_causative-agent_0003596#mention-T2",
+      "canon:span": {
+        "start": 750,
+        "end": 768
+      },
+      "canon:surface": "methylprednisolone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008775",
+      "canon:sourceNotation": "D008775",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34177178_causative-agent_0003596#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34177178_causative-agent_0003596#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34177178_causative-agent_0003596#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34177178"
+      }
+    }
+  ]
+}

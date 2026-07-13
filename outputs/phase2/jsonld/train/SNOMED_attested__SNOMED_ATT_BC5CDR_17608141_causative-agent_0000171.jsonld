@@ -1,0 +1,86 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_17608141_causative-agent_0000171",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_17608141_causative-agent_0000171",
+  "canon:title": "Attenuation of methamphetamine-induced nigrostriatal dopaminergic neurotoxicity in mice by lipopolysaccharide pretreatment.",
+  "canon:abstract": "Immunological activation has been proposed to play a role in methamphetamine-induced dopaminergic terminal damage. In this study, we examined the roles of lipopolysaccharide, a pro-inflammatory and inflammatory factor, treatment in modulating the methamphetamine-induced nigrostriatal dopamine neurotoxicity. Lipopolysaccharide pretreatment did not affect the basal body temperature or methamphetamine-elicited hyperthermia three days later. Such systemic lipopolysaccharide treatment mitigated methamphetamine-induced striatal dopamine and 3,4-dihydroxyphenylacetic acid depletions in a dose-dependent manner. As the most potent dose (1 mg/kg) of lipopolysaccharide was administered two weeks, one day before or after the methamphetamine dosing regimen, methamphetamine-induced striatal dopamine and 3,4-dihydroxyphenylacetic acid depletions remained unaltered. Moreover, systemic lipopolysaccharide pretreatment (1 mg/kg) attenuated local methamphetamine infusion-produced dopamine and 3,4-dihydroxyphenylacetic acid depletions in the striatum, indicating that the protective effect of lipopolysaccharide is less likely due to interrupted peripheral distribution or metabolism of methamphetamine. We concluded a critical time window for systemic lipopolysaccharide pretreatment in exerting effective protection against methamphetamine-induced nigrostriatal dopamine neurotoxicity.",
+  "canon:text": "Attenuation of methamphetamine-induced nigrostriatal dopaminergic neurotoxicity in mice by lipopolysaccharide pretreatment. Immunological activation has been proposed to play a role in methamphetamine-induced dopaminergic terminal damage. In this study, we examined the roles of lipopolysaccharide, a pro-inflammatory and inflammatory factor, treatment in modulating the methamphetamine-induced nigrostriatal dopamine neurotoxicity. Lipopolysaccharide pretreatment did not affect the basal body temperature or methamphetamine-elicited hyperthermia three days later. Such systemic lipopolysaccharide treatment mitigated methamphetamine-induced striatal dopamine and 3,4-dihydroxyphenylacetic acid depletions in a dose-dependent manner. As the most potent dose (1 mg/kg) of lipopolysaccharide was administered two weeks, one day before or after the methamphetamine dosing regimen, methamphetamine-induced striatal dopamine and 3,4-dihydroxyphenylacetic acid depletions remained unaltered. Moreover, systemic lipopolysaccharide pretreatment (1 mg/kg) attenuated local methamphetamine infusion-produced dopamine and 3,4-dihydroxyphenylacetic acid depletions in the striatum, indicating that the protective effect of lipopolysaccharide is less likely due to interrupted peripheral distribution or metabolism of methamphetamine. We concluded a critical time window for systemic lipopolysaccharide pretreatment in exerting effective protection against methamphetamine-induced nigrostriatal dopamine neurotoxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_17608141_causative-agent_0000171#mention-T1",
+      "canon:span": {
+        "start": 66,
+        "end": 79
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/19466003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_17608141_causative-agent_0000171#mention-T2",
+      "canon:span": {
+        "start": 91,
+        "end": 109
+      },
+      "canon:surface": "lipopolysaccharide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008070",
+      "canon:sourceNotation": "D008070",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/3325005",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_17608141_causative-agent_0000171#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_17608141_causative-agent_0000171#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_17608141_causative-agent_0000171#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "17608141"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32021008_causative-agent_0001074",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32021008_causative-agent_0001074",
+  "canon:title": "Poisoning with Drugs of Abuse: Identification and Management.",
+  "canon:abstract": "Substances of abuse include alcohol, nicotine, cannabinoids, opioids, sedatives, volatile solvents, stimulants, and hallucinogens. With the increasing prevalence of drug abuse in India, intensivists are likely to encounter more cases of intentional and accidental poisoning due to drugs of abuse. We aim to sensitize the intensivists to challenges involved in diagnosing and treating poisoning with drugs of abuse. We also aim to provide a hands-on primer that can augment the usual protocols of \"approach to life-threatening poisoning\". A toxidrome approach along with urine drug testing can help in speedily arriving at a diagnosis and instituting definitive treatment. In this article, we discuss spurious alcohol poisoning (methanol poisoning), benzodiazepine, opioid, and stimulant poisoning in detail and poisoning due to other substances including newer psychoactive substances is discussed briefly. HOW TO CITE THIS ARTICLE: Shukla L, Ghadigaonkar DS, Murthy P. Poisoning with Drugs of Abuse: Identification and Management. Indian J Crit Care Med 2019;23(Suppl 4):S296-S304.",
+  "canon:text": "Poisoning with Drugs of Abuse: Identification and Management. Substances of abuse include alcohol, nicotine, cannabinoids, opioids, sedatives, volatile solvents, stimulants, and hallucinogens. With the increasing prevalence of drug abuse in India, intensivists are likely to encounter more cases of intentional and accidental poisoning due to drugs of abuse. We aim to sensitize the intensivists to challenges involved in diagnosing and treating poisoning with drugs of abuse. We also aim to provide a hands-on primer that can augment the usual protocols of \"approach to life-threatening poisoning\". A toxidrome approach along with urine drug testing can help in speedily arriving at a diagnosis and instituting definitive treatment. In this article, we discuss spurious alcohol poisoning (methanol poisoning), benzodiazepine, opioid, and stimulant poisoning in detail and poisoning due to other substances including newer psychoactive substances is discussed briefly. HOW TO CITE THIS ARTICLE: Shukla L, Ghadigaonkar DS, Murthy P. Poisoning with Drugs of Abuse: Identification and Management. Indian J Crit Care Med 2019;23(Suppl 4):S296-S304.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32021008_causative-agent_0001074#mention-T1",
+      "canon:span": {
+        "start": 771,
+        "end": 788
+      },
+      "canon:surface": "alcohol poisoning",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32021008_causative-agent_0001074#mention-T2",
+      "canon:span": {
+        "start": 99,
+        "end": 107
+      },
+      "canon:surface": "nicotine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009538",
+      "canon:sourceNotation": "D009538",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32021008_causative-agent_0001074#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32021008_causative-agent_0001074#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32021008_causative-agent_0001074#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32021008"
+      }
+    }
+  ]
+}

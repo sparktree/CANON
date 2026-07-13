@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36172538_causative-agent_0004072",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36172538_causative-agent_0004072",
+  "canon:title": "Disease severity and status in Stevens-Johnson syndrome and toxic epidermal necrolysis: Key knowledge gaps and research needs.",
+  "canon:abstract": "Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS/TEN) are on a spectrum of cutaneous drug reactions characterized by pan-epidermal necrosis with SJS affecting < 10% of body surface area (BSA), TEN > 30%, and SJS/TEN overlap between 10 and 30%. Severity-of-illness score for toxic epidermal necrolysis (SCORTEN) is a validated tool to predict mortality rates based on age, heart rate, BSA, malignancy and serum urea, bicarbonate, and glucose. Despite improved understanding, SJS/TEN mortality remains constant and therapeutic interventions are not universally accepted for a number of reasons, including rarity of SJS/TEN; inconsistent definition of cases, disease severity, and endpoints in studies; low efficacy of interventions; and variations in treatment protocols. Apart from mortality, none of the other endpoints used to evaluate interventions, including duration of hospitalization, is sufficiently standardized to be reproducible across cases and treatment centers. Some of the gaps in SJS/TEN research can be narrowed through international collaboration to harmonize research endpoints. A case is made for an urgent international collaborative effort to develop consensus on definitions of endpoints such as disease status, progression, cessation, and complete re-epithelialization in interventional studies. The deficiencies of using BSA as the sole determinant of SJS/TEN severity, excluding internal organ involvement and extension of skin necrosis beyond the epidermis, are discussed and the role these factors play on time to healing and mortality beyond the acute stage is highlighted. The potential role of artificial intelligence, biomarkers, and PET/CT scan with radiolabeled glucose as markers of disease status, activity, and therapeutic response is also discussed.",
+  "canon:text": "Disease severity and status in Stevens-Johnson syndrome and toxic epidermal necrolysis: Key knowledge gaps and research needs. Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS/TEN) are on a spectrum of cutaneous drug reactions characterized by pan-epidermal necrosis with SJS affecting < 10% of body surface area (BSA), TEN > 30%, and SJS/TEN overlap between 10 and 30%. Severity-of-illness score for toxic epidermal necrolysis (SCORTEN) is a validated tool to predict mortality rates based on age, heart rate, BSA, malignancy and serum urea, bicarbonate, and glucose. Despite improved understanding, SJS/TEN mortality remains constant and therapeutic interventions are not universally accepted for a number of reasons, including rarity of SJS/TEN; inconsistent definition of cases, disease severity, and endpoints in studies; low efficacy of interventions; and variations in treatment protocols. Apart from mortality, none of the other endpoints used to evaluate interventions, including duration of hospitalization, is sufficiently standardized to be reproducible across cases and treatment centers. Some of the gaps in SJS/TEN research can be narrowed through international collaboration to harmonize research endpoints. A case is made for an urgent international collaborative effort to develop consensus on definitions of endpoints such as disease status, progression, cessation, and complete re-epithelialization in interventional studies. The deficiencies of using BSA as the sole determinant of SJS/TEN severity, excluding internal organ involvement and extension of skin necrosis beyond the epidermis, are discussed and the role these factors play on time to healing and mortality beyond the acute stage is highlighted. The potential role of artificial intelligence, biomarkers, and PET/CT scan with radiolabeled glucose as markers of disease status, activity, and therapeutic response is also discussed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36172538_causative-agent_0004072#mention-T1",
+      "canon:span": {
+        "start": 214,
+        "end": 238
+      },
+      "canon:surface": "cutaneous drug reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36172538_causative-agent_0004072#mention-T2",
+      "canon:span": {
+        "start": 549,
+        "end": 553
+      },
+      "canon:surface": "urea",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014508",
+      "canon:sourceNotation": "D014508",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36172538_causative-agent_0004072#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36172538_causative-agent_0004072#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36172538_causative-agent_0004072#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36172538"
+      }
+    }
+  ]
+}

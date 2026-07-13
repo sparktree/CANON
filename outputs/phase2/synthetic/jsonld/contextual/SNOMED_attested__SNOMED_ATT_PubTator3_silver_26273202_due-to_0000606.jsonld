@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26273202_due-to_0000606",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26273202_due-to_0000606",
+  "canon:title": "Rare and very rare adverse effects of clozapine.",
+  "canon:abstract": "Clozapine (CLZ) is the drug of choice for the treatment of resistant schizophrenia; however, its suitable use is limited by the complex adverse effects' profile. The best-described adverse effects in the literature are represented by agranulocytosis, myocarditis, sedation, weight gain, hypotension, and drooling; nevertheless, there are other known adverse effects that psychiatrists should readily recognize and manage. This review covers the \"rare\" and \"very rare\" known adverse effects of CLZ, which have been accurately described in literature. An extensive search on the basis of predefined criteria was made using CLZ and its combination with adverse effects as keywords in electronic databases. Data show the association between the use of CLZ and uncommon adverse effects, including ischemic colitis, paralytic ileus, hematemesis, gastroesophageal reflux disease, priapism, urinary incontinence, pityriasis rosea, intertriginous erythema, pulmonary thromboembolism, pseudo-pheochromocytoma, periorbital edema, and parotitis, which are influenced by other variables including age, early diagnosis, and previous/current pharmacological therapies. Some of these adverse effects, although unpredictable, are often manageable if promptly recognized and treated. Others are serious and potentially life-threatening. However, an adequate knowledge of the drug, clinical vigilance, and rapid intervention can drastically reduce the morbidity and mortality related to CLZ treatment. ",
+  "canon:text": "Rare and very rare adverse effects of clozapine. Clozapine (CLZ) is the drug of choice for the treatment of resistant schizophrenia; however, its suitable use is limited by the complex adverse effects' profile. The best-described adverse effects in the literature are represented by agranulocytosis, myocarditis, sedation, weight gain, hypotension, and drooling; nevertheless, there are other known adverse effects that psychiatrists should readily recognize and manage. This review covers the \"rare\" and \"very rare\" known adverse effects of CLZ, which have been accurately described in literature. An extensive search on the basis of predefined criteria was made using CLZ and its combination with adverse effects as keywords in electronic databases. Data show the association between the use of CLZ and uncommon adverse effects, including ischemic colitis, paralytic ileus, hematemesis, gastroesophageal reflux disease, priapism, urinary incontinence, pityriasis rosea, intertriginous erythema, pulmonary thromboembolism, pseudo-pheochromocytoma, periorbital edema, and parotitis, which are influenced by other variables including age, early diagnosis, and previous/current pharmacological therapies. Some of these adverse effects, although unpredictable, are often manageable if promptly recognized and treated. Others are serious and potentially life-threatening. However, an adequate knowledge of the drug, clinical vigilance, and rapid intervention can drastically reduce the morbidity and mortality related to CLZ treatment. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26273202_due-to_0000606#mention-T1",
+      "canon:span": {
+        "start": 841,
+        "end": 857
+      },
+      "canon:surface": "ischemic colitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017091",
+      "canon:sourceNotation": "D017091",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26273202_due-to_0000606#mention-T2",
+      "canon:span": {
+        "start": 118,
+        "end": 131
+      },
+      "canon:surface": "schizophrenia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012559",
+      "canon:sourceNotation": "D012559",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26273202_due-to_0000606#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26273202_due-to_0000606#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26273202_due-to_0000606#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26273202"
+      }
+    }
+  ]
+}

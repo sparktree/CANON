@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33784950_due-to_0001297",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33784950_due-to_0001297",
+  "canon:title": "Estrogen and estrogen receptors in kidney diseases.",
+  "canon:abstract": "Acute kidney injury (AKI) and chronic kidney disease (CKD) are posing great threats to global health within this century. Studies have suggested that estrogen and estrogen receptors (ERs) play important roles in many physiological processes in the kidney. For instance, they are crucial in maintaining mitochondrial homeostasis and modulating endothelin-1 (ET-1) system in the kidney. Estrogen takes part in the kidney repair and regeneration via its receptors. Estrogen also participates in the regulation of phosphorus homeostasis via its receptors in the proximal tubule. The ERalpha polymorphisms have been associated with the susceptibilities and outcomes of several renal diseases. As a consequence, the altered or dysregulated estrogen/ERs signaling pathways may contribute to a variety of kidney diseases, including various causes-induced AKI, diabetic kidney disease (DKD), lupus nephritis (LN), IgA nephropathy (IgAN), CKD complications, etc. Experimental and clinical studies have shown that targeting estrogen/ERs signaling pathways might have protective effects against certain renal disorders. However, many unsolved problems still exist in knowledge regarding the roles of estrogen and ERs in distinct kidney diseases. Further research is needed to shed light on this area and to enable the discovery of pathway-specific therapies for kidney diseases.",
+  "canon:text": "Estrogen and estrogen receptors in kidney diseases. Acute kidney injury (AKI) and chronic kidney disease (CKD) are posing great threats to global health within this century. Studies have suggested that estrogen and estrogen receptors (ERs) play important roles in many physiological processes in the kidney. For instance, they are crucial in maintaining mitochondrial homeostasis and modulating endothelin-1 (ET-1) system in the kidney. Estrogen takes part in the kidney repair and regeneration via its receptors. Estrogen also participates in the regulation of phosphorus homeostasis via its receptors in the proximal tubule. The ERalpha polymorphisms have been associated with the susceptibilities and outcomes of several renal diseases. As a consequence, the altered or dysregulated estrogen/ERs signaling pathways may contribute to a variety of kidney diseases, including various causes-induced AKI, diabetic kidney disease (DKD), lupus nephritis (LN), IgA nephropathy (IgAN), CKD complications, etc. Experimental and clinical studies have shown that targeting estrogen/ERs signaling pathways might have protective effects against certain renal disorders. However, many unsolved problems still exist in knowledge regarding the roles of estrogen and ERs in distinct kidney diseases. Further research is needed to shed light on this area and to enable the discovery of pathway-specific therapies for kidney diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33784950_due-to_0001297#mention-T1",
+      "canon:span": {
+        "start": 935,
+        "end": 950
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33784950_due-to_0001297#mention-T2",
+      "canon:span": {
+        "start": 82,
+        "end": 104
+      },
+      "canon:surface": "chronic kidney disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D051436",
+      "canon:sourceNotation": "D051436",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33784950_due-to_0001297#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33784950_due-to_0001297#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33784950_due-to_0001297#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33784950"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33732695_causative-agent_0003493",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33732695_causative-agent_0003493",
+  "canon:title": "A Critical Perspective on 3D Liver Models for Drug Metabolism and Toxicology Studies.",
+  "canon:abstract": "The poor predictability of human liver toxicity is still causing high attrition rates of drug candidates in the pharmaceutical industry at the non-clinical, clinical, and post-marketing authorization stages. This is in part caused by animal models that fail to predict various human adverse drug reactions (ADRs), resulting in undetected hepatotoxicity at the non-clinical phase of drug development. In an effort to increase the prediction of human hepatotoxicity, different approaches to enhance the physiological relevance of hepatic in vitro systems are being pursued. Three-dimensional (3D) or microfluidic technologies allow to better recapitulate hepatocyte organization and cell-matrix contacts, to include additional cell types, to incorporate fluid flow and to create gradients of oxygen and nutrients, which have led to improved differentiated cell phenotype and functionality. This comprehensive review addresses the drug-induced hepatotoxicity mechanisms and the currently available 3D liver in vitro models, their characteristics, as well as their advantages and limitations for human hepatotoxicity assessment. In addition, since toxic responses are greatly dependent on the culture model, a comparative analysis of the toxicity studies performed using two-dimensional (2D) and 3D in vitro strategies with recognized hepatotoxic compounds, such as paracetamol, diclofenac, and troglitazone is performed, further highlighting the need for harmonization of the respective characterization methods. Finally, taking a step forward, we propose a roadmap for the assessment of drugs hepatotoxicity based on fully characterized fit-for-purpose in vitro models, taking advantage of the best of each model, which will ultimately contribute to more informed decision-making in the drug development and risk assessment fields.",
+  "canon:text": "A Critical Perspective on 3D Liver Models for Drug Metabolism and Toxicology Studies. The poor predictability of human liver toxicity is still causing high attrition rates of drug candidates in the pharmaceutical industry at the non-clinical, clinical, and post-marketing authorization stages. This is in part caused by animal models that fail to predict various human adverse drug reactions (ADRs), resulting in undetected hepatotoxicity at the non-clinical phase of drug development. In an effort to increase the prediction of human hepatotoxicity, different approaches to enhance the physiological relevance of hepatic in vitro systems are being pursued. Three-dimensional (3D) or microfluidic technologies allow to better recapitulate hepatocyte organization and cell-matrix contacts, to include additional cell types, to incorporate fluid flow and to create gradients of oxygen and nutrients, which have led to improved differentiated cell phenotype and functionality. This comprehensive review addresses the drug-induced hepatotoxicity mechanisms and the currently available 3D liver in vitro models, their characteristics, as well as their advantages and limitations for human hepatotoxicity assessment. In addition, since toxic responses are greatly dependent on the culture model, a comparative analysis of the toxicity studies performed using two-dimensional (2D) and 3D in vitro strategies with recognized hepatotoxic compounds, such as paracetamol, diclofenac, and troglitazone is performed, further highlighting the need for harmonization of the respective characterization methods. Finally, taking a step forward, we propose a roadmap for the assessment of drugs hepatotoxicity based on fully characterized fit-for-purpose in vitro models, taking advantage of the best of each model, which will ultimately contribute to more informed decision-making in the drug development and risk assessment fields.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33732695_causative-agent_0003493#mention-T1",
+      "canon:span": {
+        "start": 119,
+        "end": 133
+      },
+      "canon:surface": "liver toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33732695_causative-agent_0003493#mention-T2",
+      "canon:span": {
+        "start": 1448,
+        "end": 1459
+      },
+      "canon:surface": "paracetamol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33732695_causative-agent_0003493#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33732695_causative-agent_0003493#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33732695_causative-agent_0003493#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33732695"
+      }
+    }
+  ]
+}

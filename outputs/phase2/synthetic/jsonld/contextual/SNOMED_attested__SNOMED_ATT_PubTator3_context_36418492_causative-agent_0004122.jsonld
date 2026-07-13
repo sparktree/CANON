@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36418492_causative-agent_0004122",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36418492_causative-agent_0004122",
+  "canon:title": "Inhibition of VMAT2 by beta2-adrenergic agonists, antagonists, and the atypical antipsychotic ziprasidone.",
+  "canon:abstract": "Vesicular monoamine transporter 2 (VMAT2) is responsible for packing monoamine neurotransmitters into synaptic vesicles for storage and subsequent neurotransmission. VMAT2 inhibitors are approved for symptomatic treatment of tardive dyskinesia and Huntington's chorea, but despite being much-studied inhibitors their exact binding site and mechanism behind binding and inhibition of monoamine transport are not known. Here we report the identification of several approved drugs, notably beta2-adrenergic agonists salmeterol, vilanterol and formoterol, beta2-adrenergic antagonist carvedilol and the atypical antipsychotic ziprasidone as inhibitors of rat VMAT2. Further, plausible binding modes of the established VMAT2 inhibitors reserpine and tetrabenazine and hit compounds salmeterol and ziprasidone were identified using molecular dynamics simulations and functional assays using VMAT2 wild-type and mutants. Our findings show VMAT2 as a potential off-target of treatments with several approved drugs in use today and can also provide important first steps in both drug repurposing and therapy development targeting VMAT2 function.",
+  "canon:text": "Inhibition of VMAT2 by beta2-adrenergic agonists, antagonists, and the atypical antipsychotic ziprasidone. Vesicular monoamine transporter 2 (VMAT2) is responsible for packing monoamine neurotransmitters into synaptic vesicles for storage and subsequent neurotransmission. VMAT2 inhibitors are approved for symptomatic treatment of tardive dyskinesia and Huntington's chorea, but despite being much-studied inhibitors their exact binding site and mechanism behind binding and inhibition of monoamine transport are not known. Here we report the identification of several approved drugs, notably beta2-adrenergic agonists salmeterol, vilanterol and formoterol, beta2-adrenergic antagonist carvedilol and the atypical antipsychotic ziprasidone as inhibitors of rat VMAT2. Further, plausible binding modes of the established VMAT2 inhibitors reserpine and tetrabenazine and hit compounds salmeterol and ziprasidone were identified using molecular dynamics simulations and functional assays using VMAT2 wild-type and mutants. Our findings show VMAT2 as a potential off-target of treatments with several approved drugs in use today and can also provide important first steps in both drug repurposing and therapy development targeting VMAT2 function.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36418492_causative-agent_0004122#mention-T1",
+      "canon:span": {
+        "start": 332,
+        "end": 350
+      },
+      "canon:surface": "tardive dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36418492_causative-agent_0004122#mention-T2",
+      "canon:span": {
+        "start": 94,
+        "end": 105
+      },
+      "canon:surface": "ziprasidone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C092292",
+      "canon:sourceNotation": "C092292",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36418492_causative-agent_0004122#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36418492_causative-agent_0004122#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36418492_causative-agent_0004122#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36418492"
+      }
+    }
+  ]
+}

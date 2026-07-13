@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37511973_due-to_0004371",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37511973_due-to_0004371",
+  "canon:title": "The Role of Renin-Angiotensin System in Diabetic Cardiomyopathy: A Narrative Review.",
+  "canon:abstract": "Diabetic cardiomyopathy refers to myocardial dysfunction in type 2 diabetes, but without the traditional cardiovascular risk factors or overt clinical atherosclerosis and valvular disease. The activation of the renin-angiotensin system (RAS), oxidative stress, lipotoxicity, maladaptive immune responses, imbalanced mitochondrial dynamics, impaired myocyte autophagy, increased myocyte apoptosis, and fibrosis contribute to diabetic cardiomyopathy. This review summarizes the studies that address the link between cardiomyopathy and the RAS in humans and presents proposed pathophysiological mechanisms underlying this association. The RAS plays an important role in the development and progression of diabetic cardiomyopathy. The over-activation of the classical RAS axis in diabetes leads to the increased production of angiotensin (Ang) II, angiotensin type 1 receptor activation, and aldosterone release, contributing to increased oxidative stress, fibrosis, and cardiac remodeling. In contrast, Ang-(1-7) suppresses oxidative stress, inhibits tissue fibrosis, and prevents extensive cardiac remodeling. Angiotensin-converting-enzyme (ACE) inhibitors and angiotensin receptor blockers improve heart functioning and reduce the occurrence of diabetic cardiomyopathy. Experimental studies also show beneficial effects for Ang-(1-7) and angiotensin-converting enzyme 2 infusion in improving heart functioning and tissue injury. Further research is necessary to fully understand the pathophysiology of diabetic cardiomyopathy and to translate experimental findings into clinical practice.",
+  "canon:text": "The Role of Renin-Angiotensin System in Diabetic Cardiomyopathy: A Narrative Review. Diabetic cardiomyopathy refers to myocardial dysfunction in type 2 diabetes, but without the traditional cardiovascular risk factors or overt clinical atherosclerosis and valvular disease. The activation of the renin-angiotensin system (RAS), oxidative stress, lipotoxicity, maladaptive immune responses, imbalanced mitochondrial dynamics, impaired myocyte autophagy, increased myocyte apoptosis, and fibrosis contribute to diabetic cardiomyopathy. This review summarizes the studies that address the link between cardiomyopathy and the RAS in humans and presents proposed pathophysiological mechanisms underlying this association. The RAS plays an important role in the development and progression of diabetic cardiomyopathy. The over-activation of the classical RAS axis in diabetes leads to the increased production of angiotensin (Ang) II, angiotensin type 1 receptor activation, and aldosterone release, contributing to increased oxidative stress, fibrosis, and cardiac remodeling. In contrast, Ang-(1-7) suppresses oxidative stress, inhibits tissue fibrosis, and prevents extensive cardiac remodeling. Angiotensin-converting-enzyme (ACE) inhibitors and angiotensin receptor blockers improve heart functioning and reduce the occurrence of diabetic cardiomyopathy. Experimental studies also show beneficial effects for Ang-(1-7) and angiotensin-converting enzyme 2 infusion in improving heart functioning and tissue injury. Further research is necessary to fully understand the pathophysiology of diabetic cardiomyopathy and to translate experimental findings into clinical practice.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37511973_due-to_0004371#mention-T1",
+      "canon:span": {
+        "start": 40,
+        "end": 63
+      },
+      "canon:surface": "Diabetic Cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37511973_due-to_0004371#mention-T2",
+      "canon:span": {
+        "start": 861,
+        "end": 869
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37511973_due-to_0004371#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37511973_due-to_0004371#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37511973_due-to_0004371#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37511973"
+      }
+    }
+  ]
+}

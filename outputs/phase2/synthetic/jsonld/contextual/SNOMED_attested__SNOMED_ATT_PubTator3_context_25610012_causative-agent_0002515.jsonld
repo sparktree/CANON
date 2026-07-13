@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25610012_causative-agent_0002515",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25610012_causative-agent_0002515",
+  "canon:title": "New developments in the management of opioid dependence: focus on sublingual buprenorphine-naloxone.",
+  "canon:abstract": "Opioid maintenance therapy is a well-established first-line treatment approach in opioid dependence. Buprenorphine, a partial opioid agonist, has been found by numerous studies to be an effective and safe medication in the treatment of opioid dependence. At present, buprenorphine is available as a monodrug or in a fixed 4:1 ratio combination with naloxone. A diminished risk of diversion and abuse for the buprenorphine-naloxone combination is likely but not firmly established. Conventional formulations are given sublingually to avoid the hepatic first-pass effect. A novel film tablet is available only in the US and Australia. Other novel, sustained-release formulations (implant, depot) are currently being developed and tested. Recent studies, including a Cochrane meta-analysis, suggest that the retention with buprenorphine is lower than for methadone, but that buprenorphine may be associated with less drug use. Higher doses of buprenorphine are associated with better retention rates. Buprenorphine has a ceiling effect at the opioid receptor with regard to respiratory depression, and may cause fewer fatal intoxications than methadone. Possible antidepressant effects of buprenorphine and its use in comorbid psychiatric patients has not been studied in much detail. Clinical implications are discussed. ",
+  "canon:text": "New developments in the management of opioid dependence: focus on sublingual buprenorphine-naloxone. Opioid maintenance therapy is a well-established first-line treatment approach in opioid dependence. Buprenorphine, a partial opioid agonist, has been found by numerous studies to be an effective and safe medication in the treatment of opioid dependence. At present, buprenorphine is available as a monodrug or in a fixed 4:1 ratio combination with naloxone. A diminished risk of diversion and abuse for the buprenorphine-naloxone combination is likely but not firmly established. Conventional formulations are given sublingually to avoid the hepatic first-pass effect. A novel film tablet is available only in the US and Australia. Other novel, sustained-release formulations (implant, depot) are currently being developed and tested. Recent studies, including a Cochrane meta-analysis, suggest that the retention with buprenorphine is lower than for methadone, but that buprenorphine may be associated with less drug use. Higher doses of buprenorphine are associated with better retention rates. Buprenorphine has a ceiling effect at the opioid receptor with regard to respiratory depression, and may cause fewer fatal intoxications than methadone. Possible antidepressant effects of buprenorphine and its use in comorbid psychiatric patients has not been studied in much detail. Clinical implications are discussed. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25610012_causative-agent_0002515#mention-T1",
+      "canon:span": {
+        "start": 38,
+        "end": 55
+      },
+      "canon:surface": "opioid dependence",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25610012_causative-agent_0002515#mention-T2",
+      "canon:span": {
+        "start": 953,
+        "end": 962
+      },
+      "canon:surface": "methadone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008691",
+      "canon:sourceNotation": "D008691",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25610012_causative-agent_0002515#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25610012_causative-agent_0002515#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25610012_causative-agent_0002515#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25610012"
+      }
+    }
+  ]
+}

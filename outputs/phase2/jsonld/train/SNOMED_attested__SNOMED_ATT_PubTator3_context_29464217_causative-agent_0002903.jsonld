@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29464217_causative-agent_0002903",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29464217_causative-agent_0002903",
+  "canon:title": "A retrospective analysis of cases with neuroleptic malignant syndrome and an evaluation of risk factors for mortality.",
+  "canon:abstract": "OBJECTIVE: Neuroleptic malignant syndrome (NMS) is a neurological emergency rarely encountered in clinical practice but with a high mortality rate. Cases associated with atypical antipsychotic use or termination of dopamine agonists have been seen in recent years. The purpose of this study was to assess the presence of risk factors for mortality by investigating all clinical and laboratory characteristics of cases with NMS. MATERIAL AND METHODS: This descriptive, cross-sectional study retrospectively investigated all clinical and laboratory characteristics by scanning the ICD-10 codes of patients presenting to the XXXX Faculty of Medicine Emergency Department and diagnosed with NMS between 2006 and 2016. Patients were divided into surviving and non-surviving groups, and the data elicited were subjected to statistical comparisons. RESULTS: The mean age of the 18 patients diagnosed with NMS was 46.9 +- 4.8 years, and 50% were women. In addition to antipsychotics among the drugs leading to NMS, the syndrome also developed as a result of levodopa withdrawal in three patients and metoclopramide use in one patient. Statistically significant differences were determined between the surviving and non-surviving patients in terms of blood pressure, blood urea nitrogen (BUN), creatine kinase (CK) and mean platelet volume (MPV) values (p <= 0.05). CONCLUSION: In this study the most common agent that cause NMS was atypical antipsychotics. Also advanced age, increased blood pressure and serum CK, BUN and MPV values were identified as potential risk factors for mortality in NMS.",
+  "canon:text": "A retrospective analysis of cases with neuroleptic malignant syndrome and an evaluation of risk factors for mortality. OBJECTIVE: Neuroleptic malignant syndrome (NMS) is a neurological emergency rarely encountered in clinical practice but with a high mortality rate. Cases associated with atypical antipsychotic use or termination of dopamine agonists have been seen in recent years. The purpose of this study was to assess the presence of risk factors for mortality by investigating all clinical and laboratory characteristics of cases with NMS. MATERIAL AND METHODS: This descriptive, cross-sectional study retrospectively investigated all clinical and laboratory characteristics by scanning the ICD-10 codes of patients presenting to the XXXX Faculty of Medicine Emergency Department and diagnosed with NMS between 2006 and 2016. Patients were divided into surviving and non-surviving groups, and the data elicited were subjected to statistical comparisons. RESULTS: The mean age of the 18 patients diagnosed with NMS was 46.9 +- 4.8 years, and 50% were women. In addition to antipsychotics among the drugs leading to NMS, the syndrome also developed as a result of levodopa withdrawal in three patients and metoclopramide use in one patient. Statistically significant differences were determined between the surviving and non-surviving patients in terms of blood pressure, blood urea nitrogen (BUN), creatine kinase (CK) and mean platelet volume (MPV) values (p <= 0.05). CONCLUSION: In this study the most common agent that cause NMS was atypical antipsychotics. Also advanced age, increased blood pressure and serum CK, BUN and MPV values were identified as potential risk factors for mortality in NMS.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29464217_causative-agent_0002903#mention-T1",
+      "canon:span": {
+        "start": 39,
+        "end": 69
+      },
+      "canon:surface": "neuroleptic malignant syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009459",
+      "canon:sourceNotation": "D009459",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29464217_causative-agent_0002903#mention-T2",
+      "canon:span": {
+        "start": 1169,
+        "end": 1177
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29464217_causative-agent_0002903#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29464217_causative-agent_0002903#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29464217_causative-agent_0002903#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29464217"
+      }
+    }
+  ]
+}

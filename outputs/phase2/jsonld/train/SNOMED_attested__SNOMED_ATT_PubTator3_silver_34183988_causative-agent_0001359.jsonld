@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34183988_causative-agent_0001359",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34183988_causative-agent_0001359",
+  "canon:title": "Effect of alcohol on the central nervous system to develop neurological disorder: pathophysiological and lifestyle modulation can be potential therapeutic options for alcohol-induced neurotoxication.",
+  "canon:abstract": "The central nervous system (CNS) is the major target for adverse effects of alcohol and extensively promotes the development of a significant number of neurological diseases such as stroke, brain tumor, multiple sclerosis (MS), Alzheimer's disease (AD), and amyotrophic lateral sclerosis (ALS). Excessive alcohol consumption causes severe neuro-immunological changes in the internal organs including irreversible brain injury and it also reacts with the defense mechanism of the blood-brain barrier (BBB) which in turn leads to changes in the configuration of the tight junction of endothelial cells and white matter thickness of the brain. Neuronal injury associated with malnutrition and oxidative stress-related BBB dysfunction may cause neuronal degeneration and demyelination in patients with alcohol use disorder (AUD); however, the underlying mechanism still remains unknown. To address this question, studies need to be performed on the contributing mechanisms of alcohol on pathological relationships of neurodegeneration that cause permanent neuronal damage. Moreover, alcohol-induced molecular changes of white matter with conduction disturbance in neurotransmission are a likely cause of myelin defect or axonal loss which correlates with cognitive dysfunctions in AUD. To extend our current knowledge in developing a neuroprotective environment, we need to explore the pathophysiology of ethanol (EtOH) metabolism and its effect on the CNS. Recent epidemiological studies and experimental animal research have revealed the association between excessive alcohol consumption and neurodegeneration. This review supports an interdisciplinary treatment protocol to protect the nervous system and to improve the cognitive outcomes of patients who suffer from alcohol-related neurodegeneration as well as clarify the pathological involvement of alcohol in causing other major neurological disorders.",
+  "canon:text": "Effect of alcohol on the central nervous system to develop neurological disorder: pathophysiological and lifestyle modulation can be potential therapeutic options for alcohol-induced neurotoxication. The central nervous system (CNS) is the major target for adverse effects of alcohol and extensively promotes the development of a significant number of neurological diseases such as stroke, brain tumor, multiple sclerosis (MS), Alzheimer's disease (AD), and amyotrophic lateral sclerosis (ALS). Excessive alcohol consumption causes severe neuro-immunological changes in the internal organs including irreversible brain injury and it also reacts with the defense mechanism of the blood-brain barrier (BBB) which in turn leads to changes in the configuration of the tight junction of endothelial cells and white matter thickness of the brain. Neuronal injury associated with malnutrition and oxidative stress-related BBB dysfunction may cause neuronal degeneration and demyelination in patients with alcohol use disorder (AUD); however, the underlying mechanism still remains unknown. To address this question, studies need to be performed on the contributing mechanisms of alcohol on pathological relationships of neurodegeneration that cause permanent neuronal damage. Moreover, alcohol-induced molecular changes of white matter with conduction disturbance in neurotransmission are a likely cause of myelin defect or axonal loss which correlates with cognitive dysfunctions in AUD. To extend our current knowledge in developing a neuroprotective environment, we need to explore the pathophysiology of ethanol (EtOH) metabolism and its effect on the CNS. Recent epidemiological studies and experimental animal research have revealed the association between excessive alcohol consumption and neurodegeneration. This review supports an interdisciplinary treatment protocol to protect the nervous system and to improve the cognitive outcomes of patients who suffer from alcohol-related neurodegeneration as well as clarify the pathological involvement of alcohol in causing other major neurological disorders.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34183988_causative-agent_0001359#mention-T1",
+      "canon:span": {
+        "start": 998,
+        "end": 1018
+      },
+      "canon:surface": "alcohol use disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34183988_causative-agent_0001359#mention-T2",
+      "canon:span": {
+        "start": 1601,
+        "end": 1608
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34183988_causative-agent_0001359#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34183988_causative-agent_0001359#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34183988_causative-agent_0001359#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34183988"
+      }
+    }
+  ]
+}

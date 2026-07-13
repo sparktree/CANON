@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36726136_causative-agent_0004169",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36726136_causative-agent_0004169",
+  "canon:title": "Fetal demise and Wernicke-Korsakoff syndrome in a patient with hyperemesis gravidarum: a case report.",
+  "canon:abstract": "BACKGROUND: Wernicke-Korsakoff syndrome is a neuropsychiatric disorder caused by thiamine deficiency composed of two related disorders accounting for an acute presentation and chronic progression. Hyperemesis gravidarum presents a significant risk factor for Wernicke-Korsakoff syndrome as symptoms may rapidly progress in the setting of pregnancy. We present the first-reported case of hyperemesis-gravidarum-associated Wernicke encephalopathy in a patient in the first half of pregnancy in which a missed diagnosis led to septic shock, fetal demise, and eventual profound Korsakoff syndrome. CASE PRESENTATION: We present the case of a 33-year-old primigravid African American woman at 15 weeks gestational age who initially presented at a community emergency department with nausea and vomiting that ultimately progressed to severe hyperemesis-gravidarum-associated Wernicke-Korsakoff syndrome, fetal demise, and septic shock. The patient received a total of 6 weeks of high-dose parenteral thiamine. Magnetic resonance imaging of the head and formal neuropsychological assessment following treatment plateau confirmed the diagnosis of Wernicke-Korsakoff syndrome. CONCLUSIONS: The multisystem complications seen in severe thiamine deficiency can delay timely administration of high-dose thiamine, particularly in pregnancy, in which the classic triad of Wernicke-Korsakoff syndrome may not raise clinical suspicion due to rapid progression of neurological sequelae in this population. We advise a low threshold for parenteral thiamine repletion in pregnant women with persistent vomiting as hyperemesis gravidarum-induced severe thiamine deficiency can result in Wernicke-Korsakoff syndrome, sepsis, and fetal demise.",
+  "canon:text": "Fetal demise and Wernicke-Korsakoff syndrome in a patient with hyperemesis gravidarum: a case report. BACKGROUND: Wernicke-Korsakoff syndrome is a neuropsychiatric disorder caused by thiamine deficiency composed of two related disorders accounting for an acute presentation and chronic progression. Hyperemesis gravidarum presents a significant risk factor for Wernicke-Korsakoff syndrome as symptoms may rapidly progress in the setting of pregnancy. We present the first-reported case of hyperemesis-gravidarum-associated Wernicke encephalopathy in a patient in the first half of pregnancy in which a missed diagnosis led to septic shock, fetal demise, and eventual profound Korsakoff syndrome. CASE PRESENTATION: We present the case of a 33-year-old primigravid African American woman at 15 weeks gestational age who initially presented at a community emergency department with nausea and vomiting that ultimately progressed to severe hyperemesis-gravidarum-associated Wernicke-Korsakoff syndrome, fetal demise, and septic shock. The patient received a total of 6 weeks of high-dose parenteral thiamine. Magnetic resonance imaging of the head and formal neuropsychological assessment following treatment plateau confirmed the diagnosis of Wernicke-Korsakoff syndrome. CONCLUSIONS: The multisystem complications seen in severe thiamine deficiency can delay timely administration of high-dose thiamine, particularly in pregnancy, in which the classic triad of Wernicke-Korsakoff syndrome may not raise clinical suspicion due to rapid progression of neurological sequelae in this population. We advise a low threshold for parenteral thiamine repletion in pregnant women with persistent vomiting as hyperemesis gravidarum-induced severe thiamine deficiency can result in Wernicke-Korsakoff syndrome, sepsis, and fetal demise.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36726136_causative-agent_0004169#mention-T1",
+      "canon:span": {
+        "start": 17,
+        "end": 44
+      },
+      "canon:surface": "Wernicke-Korsakoff syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020915",
+      "canon:sourceNotation": "D020915",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36726136_causative-agent_0004169#mention-T2",
+      "canon:span": {
+        "start": 1096,
+        "end": 1104
+      },
+      "canon:surface": "thiamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013831",
+      "canon:sourceNotation": "D013831",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36726136_causative-agent_0004169#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36726136_causative-agent_0004169#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36726136_causative-agent_0004169#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36726136"
+      }
+    }
+  ]
+}

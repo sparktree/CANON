@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37935702_causative-agent_0004457",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37935702_causative-agent_0004457",
+  "canon:title": "Safety comparisons among monoamine oxidase inhibitors against Parkinson's disease using FDA adverse event reporting system.",
+  "canon:abstract": "Monoamine oxidase B (MAO-B) inhibitors are used to control Parkinson's disease (PD). Selegiline, rasagiline, and safinamide are widely used as MAO-B inhibitors worldwide. Although these drugs inhibit MAO-B, there are pharmacological and chemical differences, such as the inhibitory activity, the non-dopaminergic properties in safinamide, and the amphetamine-like structure in selegiline. MAO-B inhibitors may differ in adverse events (AEs). However, differences in actual practical clinics are not fully investigated. A retrospective study was conducted using FAERS, the largest database of spontaneous adverse events. AE signals for MAO-B inhibitors, including selegiline, rasagiline, and safinamide, were detected using the reporting odds ratio method and compared. Hypocomplementemia, hepatic cyst, hepatic function abnormal, liver disorder and cholangitis were detected for selegiline as drug-specific signals. The amphetamine effect was not confirmed for any of the three MAO-B inhibitors. The tyramine reaction was detected as an AE signal only for rasagiline. Moreover, the REM sleep behavior disorder was not detected as an AE signal for safinamide, suggesting that non-dopaminergic effects might be beneficial. Considering the differences in AEs for MAO-B inhibitors will assist with the appropriate PD medication.",
+  "canon:text": "Safety comparisons among monoamine oxidase inhibitors against Parkinson's disease using FDA adverse event reporting system. Monoamine oxidase B (MAO-B) inhibitors are used to control Parkinson's disease (PD). Selegiline, rasagiline, and safinamide are widely used as MAO-B inhibitors worldwide. Although these drugs inhibit MAO-B, there are pharmacological and chemical differences, such as the inhibitory activity, the non-dopaminergic properties in safinamide, and the amphetamine-like structure in selegiline. MAO-B inhibitors may differ in adverse events (AEs). However, differences in actual practical clinics are not fully investigated. A retrospective study was conducted using FAERS, the largest database of spontaneous adverse events. AE signals for MAO-B inhibitors, including selegiline, rasagiline, and safinamide, were detected using the reporting odds ratio method and compared. Hypocomplementemia, hepatic cyst, hepatic function abnormal, liver disorder and cholangitis were detected for selegiline as drug-specific signals. The amphetamine effect was not confirmed for any of the three MAO-B inhibitors. The tyramine reaction was detected as an AE signal only for rasagiline. Moreover, the REM sleep behavior disorder was not detected as an AE signal for safinamide, suggesting that non-dopaminergic effects might be beneficial. Considering the differences in AEs for MAO-B inhibitors will assist with the appropriate PD medication.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37935702_causative-agent_0004457#mention-T1",
+      "canon:span": {
+        "start": 927,
+        "end": 952
+      },
+      "canon:surface": "hepatic function abnormal",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37935702_causative-agent_0004457#mention-T2",
+      "canon:span": {
+        "start": 471,
+        "end": 482
+      },
+      "canon:surface": "amphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000661",
+      "canon:sourceNotation": "D000661",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37935702_causative-agent_0004457#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37935702_causative-agent_0004457#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37935702_causative-agent_0004457#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37935702"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31309133_causative-agent_0000998",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31309133_causative-agent_0000998",
+  "canon:title": "\"CHOICES\": An acronym to aid in delineating potential causes of non-metabolic, non-infectious acute toxic leukoencephalopathy.",
+  "canon:abstract": "PURPOSE: To describe non-metabolic, non-infectious etiologies of acute toxic leukoencephalopathy (ATL) on DWI MRI, and provide a useful acronym to remember them. MATERIAL AND METHODS: Our PACS archive was reviewed, yielding 185 patients with suspected ATL per MRI reports and clinical follow up; infectious or metabolic causes were excluded. RESULT/DISCUSSION: The 87 included non-infectious, non-metabolic ATL patients' etiologies are represented by the acronym 'CHOICES': chemotherapy ('C',n = 34); heroin-induced ('H',n = 6), opioid analogues ('O',n = 14); immunosuppressant ('I',n = 11) or imidazole (n = 2); cocaine ('C',n = 1); environmental or ethanol abuse ('E',n = 5), splenial lesions ('S',n = 9), and 'other' (n = 5). CONCLUSION: The \"CHOICES\" acronym delineates various toxic etiologies of ATL.",
+  "canon:text": "\"CHOICES\": An acronym to aid in delineating potential causes of non-metabolic, non-infectious acute toxic leukoencephalopathy. PURPOSE: To describe non-metabolic, non-infectious etiologies of acute toxic leukoencephalopathy (ATL) on DWI MRI, and provide a useful acronym to remember them. MATERIAL AND METHODS: Our PACS archive was reviewed, yielding 185 patients with suspected ATL per MRI reports and clinical follow up; infectious or metabolic causes were excluded. RESULT/DISCUSSION: The 87 included non-infectious, non-metabolic ATL patients' etiologies are represented by the acronym 'CHOICES': chemotherapy ('C',n = 34); heroin-induced ('H',n = 6), opioid analogues ('O',n = 14); immunosuppressant ('I',n = 11) or imidazole (n = 2); cocaine ('C',n = 1); environmental or ethanol abuse ('E',n = 5), splenial lesions ('S',n = 9), and 'other' (n = 5). CONCLUSION: The \"CHOICES\" acronym delineates various toxic etiologies of ATL.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31309133_causative-agent_0000998#mention-T1",
+      "canon:span": {
+        "start": 740,
+        "end": 747
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31309133_causative-agent_0000998#mention-T2",
+      "canon:span": {
+        "start": 628,
+        "end": 634
+      },
+      "canon:surface": "heroin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003932",
+      "canon:sourceNotation": "D003932",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31309133_causative-agent_0000998#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31309133_causative-agent_0000998#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31309133_causative-agent_0000998#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31309133"
+      }
+    }
+  ]
+}

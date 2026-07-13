@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28959615_causative-agent_0002853",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28959615_causative-agent_0002853",
+  "canon:title": "Effect of taurine on chronic and acute liver injury: Focus on blood and brain ammonia.",
+  "canon:abstract": "Hyperammonemia is associated with chronic and acute liver injury. There is no promising therapeutic agent against ammonia-induced complications. Hence, finding therapeutic molecules with safe profile of administration has clinical value. The present study was conducted to evaluate the role of taurine (TA) administration on plasma and brain ammonia and its consequent events in different models of chronic and acute liver injury and hyperammonemia. Bile duct ligated (BDL) rats were used as a model of chronic liver injury. Thioacetamide and acetaminophen-induced acute liver failure were used as acute liver injury models. A high level of ammonia was detected in blood and brain of experimental groups. An increase in brain ammonia level coincided with a decreased total locomotor activity of animals and significant changes in the biochemistry of blood and also liver tissue. TA administration (500 and 1000 mg/kg, i.p), effectively alleviated liver injury and its consequent events including rise in plasma and brain ammonia and brain edema. The data suggested that TA is not only a useful and safe agent to preserve liver function, but also prevented hyperammonemia as a deleterious consequence of acute and chronic liver injury.",
+  "canon:text": "Effect of taurine on chronic and acute liver injury: Focus on blood and brain ammonia. Hyperammonemia is associated with chronic and acute liver injury. There is no promising therapeutic agent against ammonia-induced complications. Hence, finding therapeutic molecules with safe profile of administration has clinical value. The present study was conducted to evaluate the role of taurine (TA) administration on plasma and brain ammonia and its consequent events in different models of chronic and acute liver injury and hyperammonemia. Bile duct ligated (BDL) rats were used as a model of chronic liver injury. Thioacetamide and acetaminophen-induced acute liver failure were used as acute liver injury models. A high level of ammonia was detected in blood and brain of experimental groups. An increase in brain ammonia level coincided with a decreased total locomotor activity of animals and significant changes in the biochemistry of blood and also liver tissue. TA administration (500 and 1000 mg/kg, i.p), effectively alleviated liver injury and its consequent events including rise in plasma and brain ammonia and brain edema. The data suggested that TA is not only a useful and safe agent to preserve liver function, but also prevented hyperammonemia as a deleterious consequence of acute and chronic liver injury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28959615_causative-agent_0002853#mention-T1",
+      "canon:span": {
+        "start": 590,
+        "end": 610
+      },
+      "canon:surface": "chronic liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056487",
+      "canon:sourceNotation": "D056487",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28959615_causative-agent_0002853#mention-T2",
+      "canon:span": {
+        "start": 630,
+        "end": 643
+      },
+      "canon:surface": "acetaminophen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28959615_causative-agent_0002853#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28959615_causative-agent_0002853#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28959615_causative-agent_0002853#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28959615"
+      }
+    }
+  ]
+}

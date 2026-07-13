@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32922732_causative-agent_0003320",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32922732_causative-agent_0003320",
+  "canon:title": "Dopamine-receptor blocking agent-associated akathisia: a summary of current understanding and proposal for a rational approach to treatment.",
+  "canon:abstract": "Dopamine-receptor blocking agent-associated akathisia (DRBA-A) is an adverse effect that can significantly limit the use of these important medications for the treatment of a variety of psychiatric diseases, yet there is no unifying theory regarding its pathophysiology. This knowledge gap limits clinicians' ability to effectively manage DRBA-A and mitigate negative outcomes in an already vulnerable patient population. Based on a review of the current literature on the subject, it is hypothesized that dopaminergic and noradrenergic signaling is perturbed in DRBA-A. Accordingly, it is proposed that the optimal agent to manage this extrapyramidal symptom should increase dopamine signaling in the affected areas of the brain and counteract compensatory noradrenergic signaling via antagonism of adrenergic or serotonergic receptors.",
+  "canon:text": "Dopamine-receptor blocking agent-associated akathisia: a summary of current understanding and proposal for a rational approach to treatment. Dopamine-receptor blocking agent-associated akathisia (DRBA-A) is an adverse effect that can significantly limit the use of these important medications for the treatment of a variety of psychiatric diseases, yet there is no unifying theory regarding its pathophysiology. This knowledge gap limits clinicians' ability to effectively manage DRBA-A and mitigate negative outcomes in an already vulnerable patient population. Based on a review of the current literature on the subject, it is hypothesized that dopaminergic and noradrenergic signaling is perturbed in DRBA-A. Accordingly, it is proposed that the optimal agent to manage this extrapyramidal symptom should increase dopamine signaling in the affected areas of the brain and counteract compensatory noradrenergic signaling via antagonism of adrenergic or serotonergic receptors.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32922732_causative-agent_0003320#mention-T1",
+      "canon:span": {
+        "start": 44,
+        "end": 53
+      },
+      "canon:surface": "akathisia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017109",
+      "canon:sourceNotation": "D017109",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32922732_causative-agent_0003320#mention-T2",
+      "canon:span": {
+        "start": 817,
+        "end": 825
+      },
+      "canon:surface": "dopamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004298",
+      "canon:sourceNotation": "D004298",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32922732_causative-agent_0003320#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32922732_causative-agent_0003320#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32922732_causative-agent_0003320#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32922732"
+      }
+    }
+  ]
+}

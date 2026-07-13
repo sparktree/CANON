@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30002817_causative-agent_0000870",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30002817_causative-agent_0000870",
+  "canon:title": "Recent advances in understanding liver fibrosis: bridging basic science and individualized treatment concepts.",
+  "canon:abstract": "Hepatic fibrosis is characterized by the formation and deposition of excess fibrous connective tissue, leading to progressive architectural tissue remodeling. Irrespective of the underlying noxious trigger, tissue damage induces an inflammatory response involving the local vascular system and the immune system and a systemic mobilization of endocrine and neurological mediators, ultimately leading to the activation of matrix-producing cell populations. Genetic disorders, chronic viral infection, alcohol abuse, autoimmune attacks, metabolic disorders, cholestasis, alterations in bile acid composition or concentration, venous obstruction, and parasite infections are well-established factors that predispose one to hepatic fibrosis. In addition, excess fat and other lipotoxic mediators provoking endoplasmic reticulum stress, alteration of mitochondrial function, oxidative stress, and modifications in the microbiota are associated with non-alcoholic fatty liver disease and, subsequently, the initiation and progression of hepatic fibrosis. Multidisciplinary panels of experts have developed practice guidelines, including recommendations of preferred therapeutic approaches to a specific cause of hepatic disease, stage of fibrosis, or occurring co-morbidities associated with ongoing loss of hepatic function. Here, we summarize the factors leading to liver fibrosis and the current concepts in anti-fibrotic therapies.",
+  "canon:text": "Recent advances in understanding liver fibrosis: bridging basic science and individualized treatment concepts. Hepatic fibrosis is characterized by the formation and deposition of excess fibrous connective tissue, leading to progressive architectural tissue remodeling. Irrespective of the underlying noxious trigger, tissue damage induces an inflammatory response involving the local vascular system and the immune system and a systemic mobilization of endocrine and neurological mediators, ultimately leading to the activation of matrix-producing cell populations. Genetic disorders, chronic viral infection, alcohol abuse, autoimmune attacks, metabolic disorders, cholestasis, alterations in bile acid composition or concentration, venous obstruction, and parasite infections are well-established factors that predispose one to hepatic fibrosis. In addition, excess fat and other lipotoxic mediators provoking endoplasmic reticulum stress, alteration of mitochondrial function, oxidative stress, and modifications in the microbiota are associated with non-alcoholic fatty liver disease and, subsequently, the initiation and progression of hepatic fibrosis. Multidisciplinary panels of experts have developed practice guidelines, including recommendations of preferred therapeutic approaches to a specific cause of hepatic disease, stage of fibrosis, or occurring co-morbidities associated with ongoing loss of hepatic function. Here, we summarize the factors leading to liver fibrosis and the current concepts in anti-fibrotic therapies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30002817_causative-agent_0000870#mention-T1",
+      "canon:span": {
+        "start": 1317,
+        "end": 1332
+      },
+      "canon:surface": "hepatic disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30002817_causative-agent_0000870#mention-T2",
+      "canon:span": {
+        "start": 695,
+        "end": 704
+      },
+      "canon:surface": "bile acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001647",
+      "canon:sourceNotation": "D001647",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30002817_causative-agent_0000870#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30002817_causative-agent_0000870#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30002817_causative-agent_0000870#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30002817"
+      }
+    }
+  ]
+}

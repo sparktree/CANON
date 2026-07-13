@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38123539_causative-agent_0002035",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_38123539_causative-agent_0002035",
+  "canon:title": "Mtfp1 ablation enhances mitochondrial respiration and protects against hepatic steatosis.",
+  "canon:abstract": "Hepatic steatosis is the result of imbalanced nutrient delivery and metabolism in the liver and is the first hallmark of Metabolic dysfunction-associated steatotic liver disease (MASLD). MASLD is the most common chronic liver disease and involves the accumulation of excess lipids in hepatocytes, inflammation, and cancer. Mitochondria play central roles in liver metabolism yet the specific mitochondrial functions causally linked to MASLD remain unclear. Here, we identify Mitochondrial Fission Process 1 protein (MTFP1) as a key regulator of mitochondrial and metabolic activity in the liver. Deletion of Mtfp1 in hepatocytes is physiologically benign in mice yet leads to the upregulation of oxidative phosphorylation (OXPHOS) activity and mitochondrial respiration, independently of mitochondrial biogenesis. Consequently, liver-specific knockout mice are protected against high fat diet-induced steatosis and metabolic dysregulation. Additionally, Mtfp1 deletion inhibits mitochondrial permeability transition pore opening in hepatocytes, conferring protection against apoptotic liver damage in vivo and ex vivo. Our work uncovers additional functions of MTFP1 in the liver, positioning this gene as an unexpected regulator of OXPHOS and a therapeutic candidate for MASLD.",
+  "canon:text": "Mtfp1 ablation enhances mitochondrial respiration and protects against hepatic steatosis. Hepatic steatosis is the result of imbalanced nutrient delivery and metabolism in the liver and is the first hallmark of Metabolic dysfunction-associated steatotic liver disease (MASLD). MASLD is the most common chronic liver disease and involves the accumulation of excess lipids in hepatocytes, inflammation, and cancer. Mitochondria play central roles in liver metabolism yet the specific mitochondrial functions causally linked to MASLD remain unclear. Here, we identify Mitochondrial Fission Process 1 protein (MTFP1) as a key regulator of mitochondrial and metabolic activity in the liver. Deletion of Mtfp1 in hepatocytes is physiologically benign in mice yet leads to the upregulation of oxidative phosphorylation (OXPHOS) activity and mitochondrial respiration, independently of mitochondrial biogenesis. Consequently, liver-specific knockout mice are protected against high fat diet-induced steatosis and metabolic dysregulation. Additionally, Mtfp1 deletion inhibits mitochondrial permeability transition pore opening in hepatocytes, conferring protection against apoptotic liver damage in vivo and ex vivo. Our work uncovers additional functions of MTFP1 in the liver, positioning this gene as an unexpected regulator of OXPHOS and a therapeutic candidate for MASLD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38123539_causative-agent_0002035#mention-T1",
+      "canon:span": {
+        "start": 1175,
+        "end": 1187
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38123539_causative-agent_0002035#mention-T2",
+      "canon:span": {
+        "start": 364,
+        "end": 370
+      },
+      "canon:surface": "lipids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38123539_causative-agent_0002035#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38123539_causative-agent_0002035#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38123539_causative-agent_0002035#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "38123539"
+      }
+    }
+  ]
+}

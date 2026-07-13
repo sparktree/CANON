@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473",
+  "canon:title": "Human alcohol-related neuropathology.",
+  "canon:abstract": "Alcohol-related diseases of the nervous system are caused by excessive exposures to alcohol, with or without co-existing nutritional or vitamin deficiencies. Toxic and metabolic effects of alcohol (ethanol) vary with brain region, age/developmental stage, dose, and duration of exposures. In the mature brain, heavy chronic or binge alcohol exposures can cause severe debilitating diseases of the central and peripheral nervous systems, and skeletal muscle. Most commonly, long-standing heavy alcohol abuse leads to disproportionate loss of cerebral white matter and impairments in executive function. The cerebellum (especially the vermis), cortical-limbic circuits, skeletal muscle, and peripheral nerves are also important targets of chronic alcohol-related metabolic injury and degeneration. Although all cell types within the nervous system are vulnerable to the toxic, metabolic, and degenerative effects of alcohol, astrocytes, oligodendrocytes, and synaptic terminals are major targets, accounting for the white matter atrophy, neural inflammation and toxicity, and impairments in synaptogenesis. Besides chronic degenerative neuropathology, alcoholics are predisposed to develop severe potentially life-threatening acute or subacute symmetrical hemorrhagic injury in the diencephalon and brainstem due to thiamine deficiency, which exerts toxic/metabolic effects on glia, myelin, and the microvasculature. Alcohol also has devastating neurotoxic and teratogenic effects on the developing brain in association with fetal alcohol spectrum disorder/fetal alcohol syndrome. Alcohol impairs function of neurons and glia, disrupting a broad array of functions including neuronal survival, cell migration, and glial cell (astrocytes and oligodendrocytes) differentiation. Further progress is needed to better understand the pathophysiology of this exposure-related constellation of nervous system diseases and better correlate the underlying pathology with in vivo imaging and biochemical lesions. ",
+  "canon:text": "Human alcohol-related neuropathology. Alcohol-related diseases of the nervous system are caused by excessive exposures to alcohol, with or without co-existing nutritional or vitamin deficiencies. Toxic and metabolic effects of alcohol (ethanol) vary with brain region, age/developmental stage, dose, and duration of exposures. In the mature brain, heavy chronic or binge alcohol exposures can cause severe debilitating diseases of the central and peripheral nervous systems, and skeletal muscle. Most commonly, long-standing heavy alcohol abuse leads to disproportionate loss of cerebral white matter and impairments in executive function. The cerebellum (especially the vermis), cortical-limbic circuits, skeletal muscle, and peripheral nerves are also important targets of chronic alcohol-related metabolic injury and degeneration. Although all cell types within the nervous system are vulnerable to the toxic, metabolic, and degenerative effects of alcohol, astrocytes, oligodendrocytes, and synaptic terminals are major targets, accounting for the white matter atrophy, neural inflammation and toxicity, and impairments in synaptogenesis. Besides chronic degenerative neuropathology, alcoholics are predisposed to develop severe potentially life-threatening acute or subacute symmetrical hemorrhagic injury in the diencephalon and brainstem due to thiamine deficiency, which exerts toxic/metabolic effects on glia, myelin, and the microvasculature. Alcohol also has devastating neurotoxic and teratogenic effects on the developing brain in association with fetal alcohol spectrum disorder/fetal alcohol syndrome. Alcohol impairs function of neurons and glia, disrupting a broad array of functions including neuronal survival, cell migration, and glial cell (astrocytes and oligodendrocytes) differentiation. Further progress is needed to better understand the pathophysiology of this exposure-related constellation of nervous system diseases and better correlate the underlying pathology with in vivo imaging and biochemical lesions. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T1",
+      "canon:span": {
+        "start": 531,
+        "end": 544
+      },
+      "canon:surface": "alcohol abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T2",
+      "canon:span": {
+        "start": 236,
+        "end": 243
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24370929_causative-agent_0000473#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24370929"
+      }
+    }
+  ]
+}

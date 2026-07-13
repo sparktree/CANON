@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32676236_causative-agent_0003283",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32676236_causative-agent_0003283",
+  "canon:title": "Cocaine and Alcohol Co-Ingestion-Induced Severe Rhabdomyolysis With Acute Kidney Injury Culminating in Hemodialysis-Dependent End-Stage Renal Disease: A Case Report and Literature Review.",
+  "canon:abstract": "Cocaine toxicity is associated with several organ dysfunctions, including acute kidney injury (AKI). Rhabdomyolysis is the most likely mechanism that mediates AKI, and associated alcohol co-ingestion can amplify the situation. AKI, if severe, can result in end-stage renal disease (ESRD) requiring renal replacement therapy (RRT). All patients with cocaine intoxication should be screened for rhabdomyolysis and AKI along with testing for other drug toxicity, including alcohol. Aggressive measures should be taken to treat the underlying cause that contributes to AKI, and the patients need to be educated about this severe condition. Our patient is a unique case where cocaine and alcohol co-ingestion led to severe rhabdomyolysis, AKI, and subsequently developed ESRD requiring ongoing hemodialysis (HD). He was on daily cocaine and alcohol co-ingestion for seven days and subsequently developed AKI with oliguria from rhabdomyolysis. His creatine kinase (CK) was significantly elevated to 141974 IU/L, and his serum creatinine was 11 mg/dl. Despite aggressive intravenous hydration, his kidney function did not improve, and he ended up needing HD for more than one year despite abstaining from cocaine.",
+  "canon:text": "Cocaine and Alcohol Co-Ingestion-Induced Severe Rhabdomyolysis With Acute Kidney Injury Culminating in Hemodialysis-Dependent End-Stage Renal Disease: A Case Report and Literature Review. Cocaine toxicity is associated with several organ dysfunctions, including acute kidney injury (AKI). Rhabdomyolysis is the most likely mechanism that mediates AKI, and associated alcohol co-ingestion can amplify the situation. AKI, if severe, can result in end-stage renal disease (ESRD) requiring renal replacement therapy (RRT). All patients with cocaine intoxication should be screened for rhabdomyolysis and AKI along with testing for other drug toxicity, including alcohol. Aggressive measures should be taken to treat the underlying cause that contributes to AKI, and the patients need to be educated about this severe condition. Our patient is a unique case where cocaine and alcohol co-ingestion led to severe rhabdomyolysis, AKI, and subsequently developed ESRD requiring ongoing hemodialysis (HD). He was on daily cocaine and alcohol co-ingestion for seven days and subsequently developed AKI with oliguria from rhabdomyolysis. His creatine kinase (CK) was significantly elevated to 141974 IU/L, and his serum creatinine was 11 mg/dl. Despite aggressive intravenous hydration, his kidney function did not improve, and he ended up needing HD for more than one year despite abstaining from cocaine.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32676236_causative-agent_0003283#mention-T1",
+      "canon:span": {
+        "start": 537,
+        "end": 557
+      },
+      "canon:surface": "cocaine intoxication",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000435",
+      "canon:sourceNotation": "D000435",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32676236_causative-agent_0003283#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 7
+      },
+      "canon:surface": "Cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32676236_causative-agent_0003283#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32676236_causative-agent_0003283#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32676236_causative-agent_0003283#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32676236"
+      }
+    }
+  ]
+}

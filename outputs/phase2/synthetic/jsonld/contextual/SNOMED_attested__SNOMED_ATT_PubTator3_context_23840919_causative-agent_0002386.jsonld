@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23840919_causative-agent_0002386",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23840919_causative-agent_0002386",
+  "canon:title": "Oxidant status and lipid composition of erythrocyte membranes in patients with type 2 diabetes, chronic liver damage, and a combination of both pathologies.",
+  "canon:abstract": "There is an important set of cirrhotic and diabetic patients that present both diseases. However, information about metabolic and cellular blood markers that are altered, in conjunction or distinctively, in the 3 pathological conditions is scarce. The aim of this project was to evaluate several indicators of prooxidant reactions and the membrane composition of blood samples (serum and red blood cells (RBCs)) from patients clinically classified as diabetic (n = 60), cirrhotic (n = 70), and diabetic with liver cirrhosis (n = 25) as compared to samples from a similar population of healthy individuals (n = 60). The results showed that levels of TBARS, nitrites, cysteine, and conjugated dienes in the RBC of cirrhotic patients were significantly increased. However, the coincidence of diabetes and cirrhosis partially reduced the alterations promoted by the cirrhotic condition. The amount of total phospholipids and cholesterol was greatly enhanced in the patients with both pathologies (between 60 and 200% according to the type of phospholipid) but not in the patients with only one disease. Overall, the data indicate that the cooccurrence of diabetes and cirrhosis elicits a physiopathological equilibrium that is different from the alterations typical of each individual malady. ",
+  "canon:text": "Oxidant status and lipid composition of erythrocyte membranes in patients with type 2 diabetes, chronic liver damage, and a combination of both pathologies. There is an important set of cirrhotic and diabetic patients that present both diseases. However, information about metabolic and cellular blood markers that are altered, in conjunction or distinctively, in the 3 pathological conditions is scarce. The aim of this project was to evaluate several indicators of prooxidant reactions and the membrane composition of blood samples (serum and red blood cells (RBCs)) from patients clinically classified as diabetic (n = 60), cirrhotic (n = 70), and diabetic with liver cirrhosis (n = 25) as compared to samples from a similar population of healthy individuals (n = 60). The results showed that levels of TBARS, nitrites, cysteine, and conjugated dienes in the RBC of cirrhotic patients were significantly increased. However, the coincidence of diabetes and cirrhosis partially reduced the alterations promoted by the cirrhotic condition. The amount of total phospholipids and cholesterol was greatly enhanced in the patients with both pathologies (between 60 and 200% according to the type of phospholipid) but not in the patients with only one disease. Overall, the data indicate that the cooccurrence of diabetes and cirrhosis elicits a physiopathological equilibrium that is different from the alterations typical of each individual malady. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23840919_causative-agent_0002386#mention-T1",
+      "canon:span": {
+        "start": 96,
+        "end": 116
+      },
+      "canon:surface": "chronic liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056487",
+      "canon:sourceNotation": "D056487",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23840919_causative-agent_0002386#mention-T2",
+      "canon:span": {
+        "start": 823,
+        "end": 831
+      },
+      "canon:surface": "cysteine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003545",
+      "canon:sourceNotation": "D003545",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23840919_causative-agent_0002386#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23840919_causative-agent_0002386#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23840919_causative-agent_0002386#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23840919"
+      }
+    }
+  ]
+}

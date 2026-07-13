@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30818779_causative-agent_0003088",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30818779_causative-agent_0003088",
+  "canon:title": "Green Coffee Extract Improves Cardiometabolic Parameters and Modulates Gut Microbiota in High-Fat-Diet-Fed ApoE-/- Mice.",
+  "canon:abstract": "Chlorogenic acids (CGA) are the most abundant phenolic compounds in green coffee beans and in the human diet and have been suggested to mitigate several cardiometabolic risk factors. Here, we aimed to evaluate the effect of a water-based standardized green coffee extract (GCE) on cardiometabolic parameters in ApoE-/- mice and to explore the potential underlying mechanisms. Mice were fed an atherogenic diet without (vehicle) or with GCE by gavage (equivalent to 220 mg/kg of CGA) for 14 weeks. We assessed several metabolic, pathological, and inflammatory parameters and inferred gut microbiota composition, diversity, and functional potential. Although GCE did not reduce atherosclerotic lesion progression or plasma lipid levels, it induced important favorable changes. Specifically, improved metabolic parameters, including fasting glucose, insulin resistance, serum leptin, urinary catecholamines, and liver triglycerides, were observed. These changes were accompanied by reduced weight gain, decreased adiposity, lower inflammatory infiltrate in adipose tissue, and protection against liver damage. Interestingly, GCE also modulated hepatic IL-6 and total serum IgM and induced shifts in gut microbiota. Altogether, our results reveal the cooccurrence of these beneficial cardiometabolic effects in response to GCE in the same experimental model and suggest potential mediators and pathways involved.",
+  "canon:text": "Green Coffee Extract Improves Cardiometabolic Parameters and Modulates Gut Microbiota in High-Fat-Diet-Fed ApoE-/- Mice. Chlorogenic acids (CGA) are the most abundant phenolic compounds in green coffee beans and in the human diet and have been suggested to mitigate several cardiometabolic risk factors. Here, we aimed to evaluate the effect of a water-based standardized green coffee extract (GCE) on cardiometabolic parameters in ApoE-/- mice and to explore the potential underlying mechanisms. Mice were fed an atherogenic diet without (vehicle) or with GCE by gavage (equivalent to 220 mg/kg of CGA) for 14 weeks. We assessed several metabolic, pathological, and inflammatory parameters and inferred gut microbiota composition, diversity, and functional potential. Although GCE did not reduce atherosclerotic lesion progression or plasma lipid levels, it induced important favorable changes. Specifically, improved metabolic parameters, including fasting glucose, insulin resistance, serum leptin, urinary catecholamines, and liver triglycerides, were observed. These changes were accompanied by reduced weight gain, decreased adiposity, lower inflammatory infiltrate in adipose tissue, and protection against liver damage. Interestingly, GCE also modulated hepatic IL-6 and total serum IgM and induced shifts in gut microbiota. Altogether, our results reveal the cooccurrence of these beneficial cardiometabolic effects in response to GCE in the same experimental model and suggest potential mediators and pathways involved.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30818779_causative-agent_0003088#mention-T1",
+      "canon:span": {
+        "start": 1214,
+        "end": 1226
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30818779_causative-agent_0003088#mention-T2",
+      "canon:span": {
+        "start": 347,
+        "end": 352
+      },
+      "canon:surface": "water",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014867",
+      "canon:sourceNotation": "D014867",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30818779_causative-agent_0003088#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30818779_causative-agent_0003088#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30818779_causative-agent_0003088#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30818779"
+      }
+    }
+  ]
+}

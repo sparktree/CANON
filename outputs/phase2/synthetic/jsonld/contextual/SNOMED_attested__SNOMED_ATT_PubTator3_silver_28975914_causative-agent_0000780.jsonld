@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28975914_causative-agent_0000780",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_28975914_causative-agent_0000780",
+  "canon:title": "Posaconazole: An Update of Its Clinical Use.",
+  "canon:abstract": "Posaconazole (PCZ) is a relatively new addition to the azole antifungals. It has fungicidal activities against Aspergillus fumigatus, Blastomyces dermatitidis, selected Candida species, Crytopcoccus neoformans, and Trichosporon. PCZ also has fungistatic activities against Candida, Coccidioides, selected Fusarium spp., Histoplasma, Scedosporium and Zygomycetes. In addition, combining the drug with caspofungin or amphotericin B results in a synergistic interaction against A. fumigatus, C. glabrata and C. neoformans. The absorption of PCZ suspension is enhanced when given with food, nutritional supplements, and carbonated beverages. Oral administration of PCZ in divided doses also increases its bioavailability. PCZ has a large volume of distribution and is highly protein bound (>95%). The main elimination route of PCZ is fecal. PCZ is an inhibitor of the CYP3A4 enzyme; therefore, monitoring for drug-drug interactions is warranted with other CYP3A4 substrates/inhibitors/inducers. The most common adverse effects include headache, fatigue, nausea, vomiting and elevated hepatic enzymes. PCZ, with its unique antifungal activities, expands the azole class of antifungal agents. Because of its limit in formulation, PCZ oral suspension is recommended in immunocompromised patients with functional gastrointestinaltracts who fail conventional antifungal therapies or who are suspected to have a breakthrough fungal infection. However, a delayed-release tablet formulation and intravenous (IV) injection became available in 2014, expanding the use of PCZ in other patient populations, including individuals who are unable to take oral formulations.",
+  "canon:text": "Posaconazole: An Update of Its Clinical Use. Posaconazole (PCZ) is a relatively new addition to the azole antifungals. It has fungicidal activities against Aspergillus fumigatus, Blastomyces dermatitidis, selected Candida species, Crytopcoccus neoformans, and Trichosporon. PCZ also has fungistatic activities against Candida, Coccidioides, selected Fusarium spp., Histoplasma, Scedosporium and Zygomycetes. In addition, combining the drug with caspofungin or amphotericin B results in a synergistic interaction against A. fumigatus, C. glabrata and C. neoformans. The absorption of PCZ suspension is enhanced when given with food, nutritional supplements, and carbonated beverages. Oral administration of PCZ in divided doses also increases its bioavailability. PCZ has a large volume of distribution and is highly protein bound (>95%). The main elimination route of PCZ is fecal. PCZ is an inhibitor of the CYP3A4 enzyme; therefore, monitoring for drug-drug interactions is warranted with other CYP3A4 substrates/inhibitors/inducers. The most common adverse effects include headache, fatigue, nausea, vomiting and elevated hepatic enzymes. PCZ, with its unique antifungal activities, expands the azole class of antifungal agents. Because of its limit in formulation, PCZ oral suspension is recommended in immunocompromised patients with functional gastrointestinaltracts who fail conventional antifungal therapies or who are suspected to have a breakthrough fungal infection. However, a delayed-release tablet formulation and intravenous (IV) injection became available in 2014, expanding the use of PCZ in other patient populations, including individuals who are unable to take oral formulations.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28975914_causative-agent_0000780#mention-T1",
+      "canon:span": {
+        "start": 1125,
+        "end": 1140
+      },
+      "canon:surface": "hepatic enzymes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28975914_causative-agent_0000780#mention-T2",
+      "canon:span": {
+        "start": 460,
+        "end": 474
+      },
+      "canon:surface": "amphotericin B",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000666",
+      "canon:sourceNotation": "D000666",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28975914_causative-agent_0000780#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28975914_causative-agent_0000780#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28975914_causative-agent_0000780#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "28975914"
+      }
+    }
+  ]
+}

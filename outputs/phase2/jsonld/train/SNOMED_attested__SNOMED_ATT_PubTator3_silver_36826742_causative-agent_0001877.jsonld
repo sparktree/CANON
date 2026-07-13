@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36826742_causative-agent_0001877",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36826742_causative-agent_0001877",
+  "canon:title": "New Synthetic Opioids: Clinical Considerations and Dangers.",
+  "canon:abstract": "Since the early 2010s, synthetic opioids have significantly contributed to overall opioid-related overdose mortalities. For point of reference, of the 68,630 opioid-related deaths recorded in 2020, 56,516 involved synthetic opioids. During much of this period, fentanyl has been the most commonly used synthetic opioid. This time when fentanyl was the most popular opioid has been called the \"third wave\" of the opioid crisis, partly because it led to a sharp rise in deaths from overdoses. Other synthetic opioids, such as carfentanil, protonitazene, and isotonitazene, have also become more widely diverted for nonmedical used. Carfentanil is an even more potent fentanyl derivative that was initially used in the mid-1980s as a general anesthetic for large animals such as elephants. Related to its strong affinity for mu opioid receptors, carfentanil is still utilized in medicine and science today as a radiotracer for positron emission tomography imaging. Protonitazene and isotonitazene belong to a novel class of synthetic opioids called benzimidazoles that were manufactured in the 1950s as novel analgesics. These agents have come under recent scrutiny as designer synthetic opioids becoming more prevalent. However, to date, there is incomplete data regarding the prevalence of synthetic opioids, as traditional toxicology screenings may not be sensitive to detect these compounds at such low doses post-mortem, particularly when blood is drawn from the periphery instead of central tissues such as the brain, lung, or heart. This narrative review aims to highlight the clinical challenges presented by these new synthetic opioids.",
+  "canon:text": "New Synthetic Opioids: Clinical Considerations and Dangers. Since the early 2010s, synthetic opioids have significantly contributed to overall opioid-related overdose mortalities. For point of reference, of the 68,630 opioid-related deaths recorded in 2020, 56,516 involved synthetic opioids. During much of this period, fentanyl has been the most commonly used synthetic opioid. This time when fentanyl was the most popular opioid has been called the \"third wave\" of the opioid crisis, partly because it led to a sharp rise in deaths from overdoses. Other synthetic opioids, such as carfentanil, protonitazene, and isotonitazene, have also become more widely diverted for nonmedical used. Carfentanil is an even more potent fentanyl derivative that was initially used in the mid-1980s as a general anesthetic for large animals such as elephants. Related to its strong affinity for mu opioid receptors, carfentanil is still utilized in medicine and science today as a radiotracer for positron emission tomography imaging. Protonitazene and isotonitazene belong to a novel class of synthetic opioids called benzimidazoles that were manufactured in the 1950s as novel analgesics. These agents have come under recent scrutiny as designer synthetic opioids becoming more prevalent. However, to date, there is incomplete data regarding the prevalence of synthetic opioids, as traditional toxicology screenings may not be sensitive to detect these compounds at such low doses post-mortem, particularly when blood is drawn from the periphery instead of central tissues such as the brain, lung, or heart. This narrative review aims to highlight the clinical challenges presented by these new synthetic opioids.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36826742_causative-agent_0001877#mention-T1",
+      "canon:span": {
+        "start": 472,
+        "end": 478
+      },
+      "canon:surface": "opioid",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36826742_causative-agent_0001877#mention-T2",
+      "canon:span": {
+        "start": 321,
+        "end": 329
+      },
+      "canon:surface": "fentanyl",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005283",
+      "canon:sourceNotation": "D005283",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36826742_causative-agent_0001877#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36826742_causative-agent_0001877#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36826742_causative-agent_0001877#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36826742"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22937775_due-to_0002355",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_22937775_due-to_0002355",
+  "canon:title": "Drug-induced lupus erythematosus with emphasis on skin manifestations and the role of anti-TNFalpha agents.",
+  "canon:abstract": "Drug-induced lupus erythematosus (DILE) is a lupus-like syndrome temporally related to continuous drug exposure which resolves upon drug discontinuation. There are currently no standard diagnostic criteria for DILE. Findings include skin manifestations, arthritis, serositis, anti-nuclear and anti-histone antibodies positivity. Similarly to idiopathic lupus erythematosus, DILE can be divided into systemic (SLE), subacute cutaneous (SCLE) and chronic cutaneous lupus (CCLE). Systemic DILE presents as a milder version of idiopathic SLE, and the drugs most frequently implicated are hydralazine, procainamide and quinidine. Anti-TNFalpha therapies are the latest class of medications found to be associated, although rarely, with a \"lupus-like\" syndrome, which is however clinically distinct from classical DILE. Drug-induced SCLE is the most common form of DILE. It is very similar to idiopathic SCLE in terms of clinical and serologic characteristics. The most commonly implicated drugs are antihypertensive drugs and terbinafine, but in recent years also proton pump inhibitors and chemotherapeutic agents have been associated. Drug-induced CCLE is very rare and usually caused by fluorouracil agents and NSAIDS, but some cases have induced by pantoprazole and anti-TNFalpha agents.",
+  "canon:text": "Drug-induced lupus erythematosus with emphasis on skin manifestations and the role of anti-TNFalpha agents. Drug-induced lupus erythematosus (DILE) is a lupus-like syndrome temporally related to continuous drug exposure which resolves upon drug discontinuation. There are currently no standard diagnostic criteria for DILE. Findings include skin manifestations, arthritis, serositis, anti-nuclear and anti-histone antibodies positivity. Similarly to idiopathic lupus erythematosus, DILE can be divided into systemic (SLE), subacute cutaneous (SCLE) and chronic cutaneous lupus (CCLE). Systemic DILE presents as a milder version of idiopathic SLE, and the drugs most frequently implicated are hydralazine, procainamide and quinidine. Anti-TNFalpha therapies are the latest class of medications found to be associated, although rarely, with a \"lupus-like\" syndrome, which is however clinically distinct from classical DILE. Drug-induced SCLE is the most common form of DILE. It is very similar to idiopathic SCLE in terms of clinical and serologic characteristics. The most commonly implicated drugs are antihypertensive drugs and terbinafine, but in recent years also proton pump inhibitors and chemotherapeutic agents have been associated. Drug-induced CCLE is very rare and usually caused by fluorouracil agents and NSAIDS, but some cases have induced by pantoprazole and anti-TNFalpha agents.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22937775_due-to_0002355#mention-T1",
+      "canon:span": {
+        "start": 523,
+        "end": 541
+      },
+      "canon:surface": "subacute cutaneous",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008178",
+      "canon:sourceNotation": "D008178",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22937775_due-to_0002355#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 32
+      },
+      "canon:surface": "Drug-induced lupus erythematosus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22937775_due-to_0002355#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22937775_due-to_0002355#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22937775_due-to_0002355#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "22937775"
+      }
+    }
+  ]
+}

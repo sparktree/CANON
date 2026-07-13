@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35761351_causative-agent_0003951",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35761351_causative-agent_0003951",
+  "canon:title": "Consideration of sex and gender differences in addiction medication response.",
+  "canon:abstract": "Substance use continues to contribute to significant morbidity and mortality in the United States, for both women and men, more so than another other preventable health condition. To reduce the public health burden attributable to substances, the National Institute on Drug Abuse and the National Institute on Alcohol Abuse and Alcoholism have identified that medication development for substance use disorder is a high priority research area. Furthermore, both Institutes have stated that research on sex and gender differences in substance use medication development is a critical area. The purpose of the current narrative review is to highlight how sex and gender have been considered (or not) in medication trials for substance use disorders to clarify and summarize what is known regarding sex and gender differences in efficacy and to provide direction to the field to advance medication development that is consistent with current NIH 'sex as a biological variable' (SABV) policy. To that end, we reviewed major classes of abused substances (nicotine, alcohol, cocaine, cannabis, opioids) demonstrating that, sex and gender have not been well-considered in addiction medication development research. However, when adequate data on sex and gender differences have been evaluated (i.e., in tobacco cessation), clinically significant differences in response have been identified between women and men. Across the other drugs of abuse reviewed, data also suggest sex and gender may be predictive of outcome for some agents, although the relatively low representation of women in clinical research samples limits making definitive conclusions. We recommend the incorporation of sex and gender into clinical care guidelines and improved access to publicly available sex-stratified data from medication development investigations.",
+  "canon:text": "Consideration of sex and gender differences in addiction medication response. Substance use continues to contribute to significant morbidity and mortality in the United States, for both women and men, more so than another other preventable health condition. To reduce the public health burden attributable to substances, the National Institute on Drug Abuse and the National Institute on Alcohol Abuse and Alcoholism have identified that medication development for substance use disorder is a high priority research area. Furthermore, both Institutes have stated that research on sex and gender differences in substance use medication development is a critical area. The purpose of the current narrative review is to highlight how sex and gender have been considered (or not) in medication trials for substance use disorders to clarify and summarize what is known regarding sex and gender differences in efficacy and to provide direction to the field to advance medication development that is consistent with current NIH 'sex as a biological variable' (SABV) policy. To that end, we reviewed major classes of abused substances (nicotine, alcohol, cocaine, cannabis, opioids) demonstrating that, sex and gender have not been well-considered in addiction medication development research. However, when adequate data on sex and gender differences have been evaluated (i.e., in tobacco cessation), clinically significant differences in response have been identified between women and men. Across the other drugs of abuse reviewed, data also suggest sex and gender may be predictive of outcome for some agents, although the relatively low representation of women in clinical research samples limits making definitive conclusions. We recommend the incorporation of sex and gender into clinical care guidelines and improved access to publicly available sex-stratified data from medication development investigations.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35761351_causative-agent_0003951#mention-T1",
+      "canon:span": {
+        "start": 388,
+        "end": 401
+      },
+      "canon:surface": "Alcohol Abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35761351_causative-agent_0003951#mention-T2",
+      "canon:span": {
+        "start": 1147,
+        "end": 1154
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35761351_causative-agent_0003951#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35761351_causative-agent_0003951#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35761351_causative-agent_0003951#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35761351"
+      }
+    }
+  ]
+}

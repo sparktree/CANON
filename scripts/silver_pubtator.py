@@ -389,9 +389,11 @@ def fetch_biocxml(
     batch_size: int = PMIDS_PER_BATCH,
     sleep: float = API_RATE_SLEEP,
     verbose: bool = True,
+    cache_dir: Optional[Path] = None,
 ) -> Tuple[List[Path], dict]:
-    """Fetch BioC-XML batches; cache to CACHE_DIR. Idempotent on re-run."""
-    CACHE_DIR.mkdir(parents=True, exist_ok=True)
+    """Fetch BioC-XML batches; cache to *cache_dir* (default CACHE_DIR). Idempotent."""
+    CACHE_DIR_LOCAL = cache_dir or CACHE_DIR
+    CACHE_DIR_LOCAL.mkdir(parents=True, exist_ok=True)
     pmids_sorted = sorted(set(pmids), key=int)
     n_batches = (len(pmids_sorted) + batch_size - 1) // batch_size
     cache_hits = 0
@@ -402,7 +404,7 @@ def fetch_biocxml(
     for batch_idx in range(n_batches):
         start = batch_idx * batch_size
         batch = pmids_sorted[start : start + batch_size]
-        cache_path = CACHE_DIR / f"batch_{batch_idx + 1:04d}.xml"
+        cache_path = CACHE_DIR_LOCAL / f"batch_{batch_idx + 1:04d}.xml"
         if cache_path.exists() and cache_path.stat().st_size > 0:
             paths.append(cache_path)
             cache_hits += 1

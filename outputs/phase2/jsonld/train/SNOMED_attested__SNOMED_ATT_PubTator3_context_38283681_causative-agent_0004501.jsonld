@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38283681_causative-agent_0004501",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_38283681_causative-agent_0004501",
+  "canon:title": "Iron homeostasis and post-hemorrhagic hydrocephalus: a review.",
+  "canon:abstract": "Iron physiology is regulated by a complex interplay of extracellular transport systems, coordinated transcriptional responses, and iron efflux mechanisms. Dysregulation of iron metabolism can result in defects in myelination, neurotransmitter synthesis, and neuronal maturation. In neonates, germinal matrix-intraventricular hemorrhage (GMH-IVH) causes iron overload as a result of blood breakdown in the ventricles and brain parenchyma which can lead to post-hemorrhagic hydrocephalus (PHH). However, the precise mechanisms by which GMH-IVH results in PHH remain elusive. Understanding the molecular determinants of iron homeostasis in the developing brain may lead to improved therapies. This manuscript reviews the various roles iron has in brain development, characterizes our understanding of iron transport in the developing brain, and describes potential mechanisms by which iron overload may cause PHH and brain injury. We also review novel preclinical treatments for IVH that specifically target iron. Understanding iron handling within the brain and central nervous system may provide a basis for preventative, targeted treatments for iron-mediated pathogenesis of GMH-IVH and PHH.",
+  "canon:text": "Iron homeostasis and post-hemorrhagic hydrocephalus: a review. Iron physiology is regulated by a complex interplay of extracellular transport systems, coordinated transcriptional responses, and iron efflux mechanisms. Dysregulation of iron metabolism can result in defects in myelination, neurotransmitter synthesis, and neuronal maturation. In neonates, germinal matrix-intraventricular hemorrhage (GMH-IVH) causes iron overload as a result of blood breakdown in the ventricles and brain parenchyma which can lead to post-hemorrhagic hydrocephalus (PHH). However, the precise mechanisms by which GMH-IVH results in PHH remain elusive. Understanding the molecular determinants of iron homeostasis in the developing brain may lead to improved therapies. This manuscript reviews the various roles iron has in brain development, characterizes our understanding of iron transport in the developing brain, and describes potential mechanisms by which iron overload may cause PHH and brain injury. We also review novel preclinical treatments for IVH that specifically target iron. Understanding iron handling within the brain and central nervous system may provide a basis for preventative, targeted treatments for iron-mediated pathogenesis of GMH-IVH and PHH.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38283681_causative-agent_0004501#mention-T1",
+      "canon:span": {
+        "start": 416,
+        "end": 429
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38283681_causative-agent_0004501#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 4
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38283681_causative-agent_0004501#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38283681_causative-agent_0004501#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38283681_causative-agent_0004501#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "38283681"
+      }
+    }
+  ]
+}

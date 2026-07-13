@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_16604332_causative-agent_0002138",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_16604332_causative-agent_0002138",
+  "canon:title": "Role of L-type Ca2+ channels in iron transport and iron-overload cardiomyopathy.",
+  "canon:abstract": "Excessive body iron or iron overload occurs under conditions such as primary (hereditary) hemochromatosis and secondary iron overload (hemosiderosis), which are reaching epidemic levels worldwide. Primary hemochromatosis is the most common genetic disorder with an allele frequency greater than 10% in individuals of European ancestry, while hemosiderosis is less common but associated with a much higher morbidity and mortality. Iron overload leads to iron deposition in many tissues especially the liver, brain, heart and endocrine tissues. Elevated cardiac iron leads to diastolic dysfunction, arrhythmias and dilated cardiomyopathy, and is the primary determinant of survival in patients with secondary iron overload as well as a leading cause of morbidity and mortality in primary hemochromatosis patients. In addition, iron-induced cardiac injury plays a role in acute iron toxicosis (iron poisoning), myocardial ischemia-reperfusion injury, Friedreich ataxia and neurodegenerative diseases. Patients with iron overload also routinely suffer from a range of endocrinopathies, including diabetes mellitus and anterior pituitary dysfunction. Despite clear connections between elevated iron and clinical disease, iron transport remains poorly understood. While low-capacity divalent metal and transferrin-bound transporters are critical under normal physiological conditions, L-type Ca2+ channels (LTCC) are high-capacity pathways of ferrous iron (Fe2+) uptake into cardiomyocytes especially under iron overload conditions. Fe2+ uptake through L-type Ca2+ channels may also be crucial in other excitable cells such as pancreatic beta cells, anterior pituitary cells and neurons. Consequently, LTCC blockers represent a potential new therapy to reduce the toxic effects of excess iron.",
+  "canon:text": "Role of L-type Ca2+ channels in iron transport and iron-overload cardiomyopathy. Excessive body iron or iron overload occurs under conditions such as primary (hereditary) hemochromatosis and secondary iron overload (hemosiderosis), which are reaching epidemic levels worldwide. Primary hemochromatosis is the most common genetic disorder with an allele frequency greater than 10% in individuals of European ancestry, while hemosiderosis is less common but associated with a much higher morbidity and mortality. Iron overload leads to iron deposition in many tissues especially the liver, brain, heart and endocrine tissues. Elevated cardiac iron leads to diastolic dysfunction, arrhythmias and dilated cardiomyopathy, and is the primary determinant of survival in patients with secondary iron overload as well as a leading cause of morbidity and mortality in primary hemochromatosis patients. In addition, iron-induced cardiac injury plays a role in acute iron toxicosis (iron poisoning), myocardial ischemia-reperfusion injury, Friedreich ataxia and neurodegenerative diseases. Patients with iron overload also routinely suffer from a range of endocrinopathies, including diabetes mellitus and anterior pituitary dysfunction. Despite clear connections between elevated iron and clinical disease, iron transport remains poorly understood. While low-capacity divalent metal and transferrin-bound transporters are critical under normal physiological conditions, L-type Ca2+ channels (LTCC) are high-capacity pathways of ferrous iron (Fe2+) uptake into cardiomyocytes especially under iron overload conditions. Fe2+ uptake through L-type Ca2+ channels may also be crucial in other excitable cells such as pancreatic beta cells, anterior pituitary cells and neurons. Consequently, LTCC blockers represent a potential new therapy to reduce the toxic effects of excess iron.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_16604332_causative-agent_0002138#mention-T1",
+      "canon:span": {
+        "start": 158,
+        "end": 186
+      },
+      "canon:surface": "(hereditary) hemochromatosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006432",
+      "canon:sourceNotation": "D006432",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_16604332_causative-agent_0002138#mention-T2",
+      "canon:span": {
+        "start": 32,
+        "end": 36
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_16604332_causative-agent_0002138#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_16604332_causative-agent_0002138#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_16604332_causative-agent_0002138#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "16604332"
+      }
+    }
+  ]
+}

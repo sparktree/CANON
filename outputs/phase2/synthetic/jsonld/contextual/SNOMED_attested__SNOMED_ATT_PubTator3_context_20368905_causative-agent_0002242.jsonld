@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20368905_causative-agent_0002242",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20368905_causative-agent_0002242",
+  "canon:title": "New atypical antipsychotics for schizophrenia: iloperidone.",
+  "canon:abstract": "The optimal treatment of schizophrenia poses a challenge to develop more effective treatments and safer drugs, to overcome poor compliance, discontinuation and frequent switching with available antipsychotics. Iloperidone is a new dopamine type 2/serotonin type 2A (D(2)/5-HT(2A)) antagonist structurally related to risperidone, expected to give better efficacy with less extrapyramidal symptoms than D(2) receptor antagonist antipsychotics. In double-blind phase III trials iloperidone reduced the symptoms of schizophrenia at oral doses from 12 to 24 mg. It was more effective than placebo in reducing positive and negative syndrome total score and Brief Psychiatric Rating scale scores; it was as effective as haloperidol and risperidone in post-hoc analysis. Its long-term efficacy was equivalent to that of haloperidol. The most common adverse events were dizziness, dry mouth, dyspepsia and somnolence, with few extrapyramidal symptoms and metabolic changes in short- and long-term studies in adults. Akathisia was rare, but prolongation of the corrected QT (QTc) interval was comparable to haloperidol and ziprasidone, which is of particular concern. Further comparative studies are needed to clarify the benefit/risk profile of iloperidone and its role in the treatment of schizophrenia.",
+  "canon:text": "New atypical antipsychotics for schizophrenia: iloperidone. The optimal treatment of schizophrenia poses a challenge to develop more effective treatments and safer drugs, to overcome poor compliance, discontinuation and frequent switching with available antipsychotics. Iloperidone is a new dopamine type 2/serotonin type 2A (D(2)/5-HT(2A)) antagonist structurally related to risperidone, expected to give better efficacy with less extrapyramidal symptoms than D(2) receptor antagonist antipsychotics. In double-blind phase III trials iloperidone reduced the symptoms of schizophrenia at oral doses from 12 to 24 mg. It was more effective than placebo in reducing positive and negative syndrome total score and Brief Psychiatric Rating scale scores; it was as effective as haloperidol and risperidone in post-hoc analysis. Its long-term efficacy was equivalent to that of haloperidol. The most common adverse events were dizziness, dry mouth, dyspepsia and somnolence, with few extrapyramidal symptoms and metabolic changes in short- and long-term studies in adults. Akathisia was rare, but prolongation of the corrected QT (QTc) interval was comparable to haloperidol and ziprasidone, which is of particular concern. Further comparative studies are needed to clarify the benefit/risk profile of iloperidone and its role in the treatment of schizophrenia.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20368905_causative-agent_0002242#mention-T1",
+      "canon:span": {
+        "start": 1067,
+        "end": 1076
+      },
+      "canon:surface": "Akathisia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017109",
+      "canon:sourceNotation": "D017109",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20368905_causative-agent_0002242#mention-T2",
+      "canon:span": {
+        "start": 773,
+        "end": 784
+      },
+      "canon:surface": "haloperidol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006220",
+      "canon:sourceNotation": "D006220",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20368905_causative-agent_0002242#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20368905_causative-agent_0002242#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20368905_causative-agent_0002242#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20368905"
+      }
+    }
+  ]
+}

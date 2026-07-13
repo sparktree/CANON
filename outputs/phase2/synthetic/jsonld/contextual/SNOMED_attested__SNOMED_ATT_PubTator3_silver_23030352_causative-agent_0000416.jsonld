@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23030352_causative-agent_0000416",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_23030352_causative-agent_0000416",
+  "canon:title": "Substance of abuse and movement disorders: complex interactions and comorbidities.",
+  "canon:abstract": "The relationship between movement disorders and substance abuse, which we previously reviewed, is updated. We examine these relationships bidirectionally with focus on drugs of abuse that are known to cause movement disorders, as well as primary movement disorders that are associated with use and abuse of alcohol and dopaminergic medications. First, we review the movement disorders that may develop from the acute use or withdrawal of frequent drugs of abuse, including alcohol, cocaine, heroin, amphetamine and methcathinone. We then comment on the interaction between alcoholism and alcohol-responsive movement disorders, such as essential tremor and myoclonus-dystonia. Lastly, we discuss the potential for abuse of antiparkinsonian dopaminergic agents in patients with Parkinson's disease (PD).",
+  "canon:text": "Substance of abuse and movement disorders: complex interactions and comorbidities. The relationship between movement disorders and substance abuse, which we previously reviewed, is updated. We examine these relationships bidirectionally with focus on drugs of abuse that are known to cause movement disorders, as well as primary movement disorders that are associated with use and abuse of alcohol and dopaminergic medications. First, we review the movement disorders that may develop from the acute use or withdrawal of frequent drugs of abuse, including alcohol, cocaine, heroin, amphetamine and methcathinone. We then comment on the interaction between alcoholism and alcohol-responsive movement disorders, such as essential tremor and myoclonus-dystonia. Lastly, we discuss the potential for abuse of antiparkinsonian dopaminergic agents in patients with Parkinson's disease (PD).",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23030352_causative-agent_0000416#mention-T1",
+      "canon:span": {
+        "start": 656,
+        "end": 666
+      },
+      "canon:surface": "alcoholism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23030352_causative-agent_0000416#mention-T2",
+      "canon:span": {
+        "start": 574,
+        "end": 580
+      },
+      "canon:surface": "heroin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003932",
+      "canon:sourceNotation": "D003932",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23030352_causative-agent_0000416#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23030352_causative-agent_0000416#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23030352_causative-agent_0000416#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "23030352"
+      }
+    }
+  ]
+}

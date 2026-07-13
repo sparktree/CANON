@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22244239_causative-agent_0000386",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_22244239_causative-agent_0000386",
+  "canon:title": "Food-induced anaphylaxis.",
+  "canon:abstract": "Food-induced anaphylaxis (FIA) is a serious allergic reaction that may cause death rapidly in otherwise healthy individuals. There is no universal agreement on its definition or criteria for diagnosis. Hospital admissions for FIA have more than doubled in the last decade. Food is one of the most common causes of anaphylaxis, with most surveys indicating that food-induced reactions account for 30% to 50% of cases. The most commonly implicated foods are peanut, tree nuts, milk, eggs, sesame seeds, fish, and shellfish. The only life-saving treatment for anaphylaxis is allergen avoidance, and epinephrine injection if an anaphylactic event occurs.",
+  "canon:text": "Food-induced anaphylaxis. Food-induced anaphylaxis (FIA) is a serious allergic reaction that may cause death rapidly in otherwise healthy individuals. There is no universal agreement on its definition or criteria for diagnosis. Hospital admissions for FIA have more than doubled in the last decade. Food is one of the most common causes of anaphylaxis, with most surveys indicating that food-induced reactions account for 30% to 50% of cases. The most commonly implicated foods are peanut, tree nuts, milk, eggs, sesame seeds, fish, and shellfish. The only life-saving treatment for anaphylaxis is allergen avoidance, and epinephrine injection if an anaphylactic event occurs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22244239_causative-agent_0000386#mention-T1",
+      "canon:span": {
+        "start": 70,
+        "end": 87
+      },
+      "canon:surface": "allergic reaction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22244239_causative-agent_0000386#mention-T2",
+      "canon:span": {
+        "start": 622,
+        "end": 633
+      },
+      "canon:surface": "epinephrine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004837",
+      "canon:sourceNotation": "D004837",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22244239_causative-agent_0000386#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22244239_causative-agent_0000386#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22244239_causative-agent_0000386#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "22244239"
+      }
+    }
+  ]
+}

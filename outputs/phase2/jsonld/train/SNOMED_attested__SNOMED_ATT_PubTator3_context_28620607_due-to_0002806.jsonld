@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28620607_due-to_0002806",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28620607_due-to_0002806",
+  "canon:title": "Metabolic and Biochemical Stressors in Diabetic Cardiomyopathy.",
+  "canon:abstract": "Diabetic cardiomyopathy (DCM) or diabetes-induced cardiac dysfunction is a direct consequence of uncontrolled metabolic syndrome and is widespread in US population and worldwide. Despite of the heterogeneous and distinct features of DCM, the clinical relevance of DCM is now becoming established. DCM progresses to pathological cardiac remodeling with the higher risk of heart attack and subsequent heart failure in diabetic patients. In this review, we emphasize lipid substrate quality and the phenotypic, metabolic, and biochemical stressors of DCM in the rodent and human pathophysiology. We discuss lipoxygenase signaling in the inflammatory pathway with multiple contributing and confounding factors leading to DCM. Additionally, emerging biochemical pathways are emphasized to make progress toward therapeutic advancement to treat DCM.",
+  "canon:text": "Metabolic and Biochemical Stressors in Diabetic Cardiomyopathy. Diabetic cardiomyopathy (DCM) or diabetes-induced cardiac dysfunction is a direct consequence of uncontrolled metabolic syndrome and is widespread in US population and worldwide. Despite of the heterogeneous and distinct features of DCM, the clinical relevance of DCM is now becoming established. DCM progresses to pathological cardiac remodeling with the higher risk of heart attack and subsequent heart failure in diabetic patients. In this review, we emphasize lipid substrate quality and the phenotypic, metabolic, and biochemical stressors of DCM in the rodent and human pathophysiology. We discuss lipoxygenase signaling in the inflammatory pathway with multiple contributing and confounding factors leading to DCM. Additionally, emerging biochemical pathways are emphasized to make progress toward therapeutic advancement to treat DCM.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28620607_due-to_0002806#mention-T1",
+      "canon:span": {
+        "start": 39,
+        "end": 62
+      },
+      "canon:surface": "Diabetic Cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28620607_due-to_0002806#mention-T2",
+      "canon:span": {
+        "start": 441,
+        "end": 447
+      },
+      "canon:surface": "attack",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009203",
+      "canon:sourceNotation": "D009203",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28620607_due-to_0002806#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28620607_due-to_0002806#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28620607_due-to_0002806#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28620607"
+      }
+    }
+  ]
+}

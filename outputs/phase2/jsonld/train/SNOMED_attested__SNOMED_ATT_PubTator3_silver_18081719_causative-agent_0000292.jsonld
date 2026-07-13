@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18081719_causative-agent_0000292",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_18081719_causative-agent_0000292",
+  "canon:title": "The heart in transfusion dependent homozygous thalassaemia today--prediction, prevention and management.",
+  "canon:abstract": "Cardiac disease remains the major cause of death in thalassaemia major. This review deals with the mechanisms involved in heart failure development, the peculiar clinical presentation of congestive heart failure and provides guidelines for diagnosis and management of the acute phase of cardiac failure. It emphasizes the need for intensive medical--cardiac care and aggressive iron chelating management as, with such approaches, today, the patients outcomes can be favourable in the long term. It covers advances in the assessment of cardiac iron overload with the use of magnetic resonance imaging and makes recommendations for preventing the onset of cardiac problems by tailoring iron chelation therapy appropriate to the degree of cardiac iron loading found.",
+  "canon:text": "The heart in transfusion dependent homozygous thalassaemia today--prediction, prevention and management. Cardiac disease remains the major cause of death in thalassaemia major. This review deals with the mechanisms involved in heart failure development, the peculiar clinical presentation of congestive heart failure and provides guidelines for diagnosis and management of the acute phase of cardiac failure. It emphasizes the need for intensive medical--cardiac care and aggressive iron chelating management as, with such approaches, today, the patients outcomes can be favourable in the long term. It covers advances in the assessment of cardiac iron overload with the use of magnetic resonance imaging and makes recommendations for preventing the onset of cardiac problems by tailoring iron chelation therapy appropriate to the degree of cardiac iron loading found.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18081719_causative-agent_0000292#mention-T1",
+      "canon:span": {
+        "start": 648,
+        "end": 661
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18081719_causative-agent_0000292#mention-T2",
+      "canon:span": {
+        "start": 483,
+        "end": 487
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18081719_causative-agent_0000292#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18081719_causative-agent_0000292#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18081719_causative-agent_0000292#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "18081719"
+      }
+    }
+  ]
+}

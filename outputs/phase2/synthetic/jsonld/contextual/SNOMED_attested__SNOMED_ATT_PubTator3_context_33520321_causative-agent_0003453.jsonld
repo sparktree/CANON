@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33520321_causative-agent_0003453",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33520321_causative-agent_0003453",
+  "canon:title": "Development of Neuroleptic Malignant Syndrome in a Patient with Lewy Body Dementia after Intramuscular Administration of Paliperidone.",
+  "canon:abstract": "Neuroleptic malignant syndrome (NMS) is a potentially fatal diagnosis composed of hyperpyrexia, muscle rigidity, altered mental status, and autonomic instability. This syndrome has significant systemic complications including acute renal failure, rhabdomyolysis, hyperkalemia, and seizure. It is associated with the use of both typical and atypical antipsychotics. Due to the extensive neurodegenerative destruction of dopaminergic and acetylcholinergic pathways, patients with Lewy body dementia (LBD) are particularly sensitive to antidopaminergic and anticholinergic medications, making them more susceptible to extrapyramidal side effects and NMS. We present a case of a 72-year-old female with LBD who developed muscular rigidity, vital sign instability, and altered mental status after receiving one dose of paliperidone palmitate injection two weeks prior to admission. Initial blood work was unrevealing. Extensive workup including EEG, lumbar puncture with cerebrospinal fluid analysis, and brain MRI was unremarkable. She was treated with seven days of bromocriptine and a lorazepam taper with improvement in muscle rigidity. However, her mental status never improved, and she remained comatose. She was later intubated for airway protection after an aspiration event that led to hypoxia. Her respiratory status never recovered, and she was transitioned to comfort care. This case demonstrates the complexity and potential fatality of NMS. Clinicians should be aware of this dangerous complication of antipsychotic use in patients with LBD as these patients may be more susceptible to this complication.",
+  "canon:text": "Development of Neuroleptic Malignant Syndrome in a Patient with Lewy Body Dementia after Intramuscular Administration of Paliperidone. Neuroleptic malignant syndrome (NMS) is a potentially fatal diagnosis composed of hyperpyrexia, muscle rigidity, altered mental status, and autonomic instability. This syndrome has significant systemic complications including acute renal failure, rhabdomyolysis, hyperkalemia, and seizure. It is associated with the use of both typical and atypical antipsychotics. Due to the extensive neurodegenerative destruction of dopaminergic and acetylcholinergic pathways, patients with Lewy body dementia (LBD) are particularly sensitive to antidopaminergic and anticholinergic medications, making them more susceptible to extrapyramidal side effects and NMS. We present a case of a 72-year-old female with LBD who developed muscular rigidity, vital sign instability, and altered mental status after receiving one dose of paliperidone palmitate injection two weeks prior to admission. Initial blood work was unrevealing. Extensive workup including EEG, lumbar puncture with cerebrospinal fluid analysis, and brain MRI was unremarkable. She was treated with seven days of bromocriptine and a lorazepam taper with improvement in muscle rigidity. However, her mental status never improved, and she remained comatose. She was later intubated for airway protection after an aspiration event that led to hypoxia. Her respiratory status never recovered, and she was transitioned to comfort care. This case demonstrates the complexity and potential fatality of NMS. Clinicians should be aware of this dangerous complication of antipsychotic use in patients with LBD as these patients may be more susceptible to this complication.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33520321_causative-agent_0003453#mention-T1",
+      "canon:span": {
+        "start": 15,
+        "end": 45
+      },
+      "canon:surface": "Neuroleptic Malignant Syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009459",
+      "canon:sourceNotation": "D009459",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33520321_causative-agent_0003453#mention-T2",
+      "canon:span": {
+        "start": 1198,
+        "end": 1211
+      },
+      "canon:surface": "bromocriptine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001971",
+      "canon:sourceNotation": "D001971",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33520321_causative-agent_0003453#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33520321_causative-agent_0003453#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33520321_causative-agent_0003453#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33520321"
+      }
+    }
+  ]
+}

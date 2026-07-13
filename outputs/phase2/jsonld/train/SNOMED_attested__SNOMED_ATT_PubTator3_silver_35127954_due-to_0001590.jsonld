@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35127954_due-to_0001590",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35127954_due-to_0001590",
+  "canon:title": "An Insight into Potential Pharmacotherapeutic Agents for Painful Diabetic Neuropathy.",
+  "canon:abstract": "Diabetes is the 4th most common disease affecting the world's population. It is accompanied by many complications that deteriorate the quality of life. Painful diabetic neuropathy (PDN) is one of the debilitating consequences of diabetes that effects one-third of diabetic patients. Unfortunately, there is no internationally recommended drug that directly hinders the pathological mechanisms that result in painful diabetic neuropathy. Clinical studies have shown that anticonvulsant and antidepressant therapies have proven fruitful in management of pain associated with PDN. Currently, the FDA approved medications for painful diabetic neuropathies include duloxetine, pregabalin, tapentadol extended release, and capsaicin (for foot PDN only). The FDA has also approved the use of spinal cord stimulation system for the treatment of diabetic neuropathy pain. The drugs recommended by other regulatory bodies include gabapentin, amitriptyline, dextromethorphan, tramadol, venlafaxine, sodium valproate, and 5 % lidocaine patch. These drugs are only partially effective and have adverse effects associated with their use. Treating painful symptoms in diabetic patient can be frustrating not only for the patients but also for health care workers, so additional clinical trials for novel and conventional treatments are required to devise more effective treatment for PDN with minimal side effects. This review gives an insight on the pathways involved in the pathogenesis of PDN and the potential pharmacotherapeutic agents. This will be followed by an overview on the FDA-approved drugs for PDN and commercially available topical analgesic and their effects on painful diabetic neuropathies.",
+  "canon:text": "An Insight into Potential Pharmacotherapeutic Agents for Painful Diabetic Neuropathy. Diabetes is the 4th most common disease affecting the world's population. It is accompanied by many complications that deteriorate the quality of life. Painful diabetic neuropathy (PDN) is one of the debilitating consequences of diabetes that effects one-third of diabetic patients. Unfortunately, there is no internationally recommended drug that directly hinders the pathological mechanisms that result in painful diabetic neuropathy. Clinical studies have shown that anticonvulsant and antidepressant therapies have proven fruitful in management of pain associated with PDN. Currently, the FDA approved medications for painful diabetic neuropathies include duloxetine, pregabalin, tapentadol extended release, and capsaicin (for foot PDN only). The FDA has also approved the use of spinal cord stimulation system for the treatment of diabetic neuropathy pain. The drugs recommended by other regulatory bodies include gabapentin, amitriptyline, dextromethorphan, tramadol, venlafaxine, sodium valproate, and 5 % lidocaine patch. These drugs are only partially effective and have adverse effects associated with their use. Treating painful symptoms in diabetic patient can be frustrating not only for the patients but also for health care workers, so additional clinical trials for novel and conventional treatments are required to devise more effective treatment for PDN with minimal side effects. This review gives an insight on the pathways involved in the pathogenesis of PDN and the potential pharmacotherapeutic agents. This will be followed by an overview on the FDA-approved drugs for PDN and commercially available topical analgesic and their effects on painful diabetic neuropathies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35127954_due-to_0001590#mention-T1",
+      "canon:span": {
+        "start": 57,
+        "end": 84
+      },
+      "canon:surface": "Painful Diabetic Neuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35127954_due-to_0001590#mention-T2",
+      "canon:span": {
+        "start": 86,
+        "end": 94
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35127954_due-to_0001590#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35127954_due-to_0001590#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35127954_due-to_0001590#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35127954"
+      }
+    }
+  ]
+}

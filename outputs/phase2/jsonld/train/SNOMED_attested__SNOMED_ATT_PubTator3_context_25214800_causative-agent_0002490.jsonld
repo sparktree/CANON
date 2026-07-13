@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25214800_causative-agent_0002490",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25214800_causative-agent_0002490",
+  "canon:title": "Quantitative assessment of the multiple processes responsible for bilirubin homeostasis in health and disease.",
+  "canon:abstract": "Serum bilirubin measurements are commonly obtained for the evaluation of ill patients and to screen for liver disease in routine physical exams. An enormous research effort has identified the multiple mechanisms involved in the production and metabolism of conjugated (CB) and unconjugated bilirubin (UB). While the qualitative effects of these mechanisms are well understood, their expected quantitative influence on serum bilirubin homeostasis has received less attention. In this review, each of the steps involved in bilirubin production, metabolism, hepatic cell uptake, and excretion is quantitatively examined. We then attempt to predict the expected effect of normal and defective function on serum UB and CB levels in health and disease states including hemolysis, extra- and intrahepatic cholestasis, hepatocellular diseases (eg, cirrhosis, hepatitis), and various congenital defects in bilirubin conjugation and secretion (eg, Gilbert's, Dubin-Johnson, Crigler-Najjar, Rotor syndromes). Novel aspects of this review include: 1) quantitative estimates of the free and total UB and CB in the plasma, hepatocyte, and bile; 2) detailed discussion of the important implications of the recently recognized role of the hepatic OATP transporters in the maintenance of CB homeostasis; 3) discussion of the differences between the standard diazo assay versus chromatographic measurement of CB and UB; 4) pharmacokinetic implications of the extremely high-affinity albumin binding of UB; 5) role of the enterohepatic circulation in physiologic jaundice of newborn and fasting hyperbilirubinemia; and 6) insights concerning the clinical interpretation of bilirubin measurements. ",
+  "canon:text": "Quantitative assessment of the multiple processes responsible for bilirubin homeostasis in health and disease. Serum bilirubin measurements are commonly obtained for the evaluation of ill patients and to screen for liver disease in routine physical exams. An enormous research effort has identified the multiple mechanisms involved in the production and metabolism of conjugated (CB) and unconjugated bilirubin (UB). While the qualitative effects of these mechanisms are well understood, their expected quantitative influence on serum bilirubin homeostasis has received less attention. In this review, each of the steps involved in bilirubin production, metabolism, hepatic cell uptake, and excretion is quantitatively examined. We then attempt to predict the expected effect of normal and defective function on serum UB and CB levels in health and disease states including hemolysis, extra- and intrahepatic cholestasis, hepatocellular diseases (eg, cirrhosis, hepatitis), and various congenital defects in bilirubin conjugation and secretion (eg, Gilbert's, Dubin-Johnson, Crigler-Najjar, Rotor syndromes). Novel aspects of this review include: 1) quantitative estimates of the free and total UB and CB in the plasma, hepatocyte, and bile; 2) detailed discussion of the important implications of the recently recognized role of the hepatic OATP transporters in the maintenance of CB homeostasis; 3) discussion of the differences between the standard diazo assay versus chromatographic measurement of CB and UB; 4) pharmacokinetic implications of the extremely high-affinity albumin binding of UB; 5) role of the enterohepatic circulation in physiologic jaundice of newborn and fasting hyperbilirubinemia; and 6) insights concerning the clinical interpretation of bilirubin measurements. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25214800_causative-agent_0002490#mention-T1",
+      "canon:span": {
+        "start": 962,
+        "end": 971
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25214800_causative-agent_0002490#mention-T2",
+      "canon:span": {
+        "start": 66,
+        "end": 75
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25214800_causative-agent_0002490#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25214800_causative-agent_0002490#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25214800_causative-agent_0002490#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25214800"
+      }
+    }
+  ]
+}

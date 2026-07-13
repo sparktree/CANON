@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35327450_causative-agent_0001622",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35327450_causative-agent_0001622",
+  "canon:title": "Cutting-Edge Therapies and Novel Strategies for Acute Intermittent Porphyria: Step-by-Step towards the Solution.",
+  "canon:abstract": "Acute intermittent porphyria (AIP) is an autosomal dominant disease caused by the hepatic deficiency of porphobilinogen deaminase (PBGD) and the slowdown of heme biosynthesis. AIP symptomatology includes life-threatening, acute neurovisceral or neuropsychiatric attacks manifesting in response to precipitating factors. The latter promote the upregulation of 5-aminolevulinic acid synthase-1 (ALAS1), the first enzyme of heme biosynthesis, which promotes the overload of neurotoxic porphyrin precursors. Hemin or glucose infusions are the first-line therapies for the reduction of ALAS1 levels in patients with mild to severe AIP, while liver transplantation is the only curative treatment for refractory patients. Recently, the RNA-interference against ALAS1 was approved as a treatment for adult and adolescent patients with AIP. These emerging therapies aim to substitute dysfunctional PBGD with adeno-associated vectors for genome editing, human PBGD mRNA encapsulated in lipid nanoparticles, or PBGD protein linked to apolipoprotein A1. Finally, the impairment of glucose metabolism linked to insulin resistance, and mitochondrial aberrations during AIP pathophysiology provided new therapeutic targets. Therefore, the use of liver-targeted insulin and insulin-mimetics such as alpha-lipoic acid may be useful for overcoming metabolic dysfunction in these subjects. Herein, the present review aims to provide an overview of AIP pathophysiology and management, focusing on conventional and recent therapeutical approaches.",
+  "canon:text": "Cutting-Edge Therapies and Novel Strategies for Acute Intermittent Porphyria: Step-by-Step towards the Solution. Acute intermittent porphyria (AIP) is an autosomal dominant disease caused by the hepatic deficiency of porphobilinogen deaminase (PBGD) and the slowdown of heme biosynthesis. AIP symptomatology includes life-threatening, acute neurovisceral or neuropsychiatric attacks manifesting in response to precipitating factors. The latter promote the upregulation of 5-aminolevulinic acid synthase-1 (ALAS1), the first enzyme of heme biosynthesis, which promotes the overload of neurotoxic porphyrin precursors. Hemin or glucose infusions are the first-line therapies for the reduction of ALAS1 levels in patients with mild to severe AIP, while liver transplantation is the only curative treatment for refractory patients. Recently, the RNA-interference against ALAS1 was approved as a treatment for adult and adolescent patients with AIP. These emerging therapies aim to substitute dysfunctional PBGD with adeno-associated vectors for genome editing, human PBGD mRNA encapsulated in lipid nanoparticles, or PBGD protein linked to apolipoprotein A1. Finally, the impairment of glucose metabolism linked to insulin resistance, and mitochondrial aberrations during AIP pathophysiology provided new therapeutic targets. Therefore, the use of liver-targeted insulin and insulin-mimetics such as alpha-lipoic acid may be useful for overcoming metabolic dysfunction in these subjects. Herein, the present review aims to provide an overview of AIP pathophysiology and management, focusing on conventional and recent therapeutical approaches.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35327450_causative-agent_0001622#mention-T1",
+      "canon:span": {
+        "start": 584,
+        "end": 594
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35327450_causative-agent_0001622#mention-T2",
+      "canon:span": {
+        "start": 626,
+        "end": 633
+      },
+      "canon:surface": "glucose",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005947",
+      "canon:sourceNotation": "D005947",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35327450_causative-agent_0001622#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35327450_causative-agent_0001622#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35327450_causative-agent_0001622#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35327450"
+      }
+    }
+  ]
+}

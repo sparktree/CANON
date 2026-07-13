@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31540456_causative-agent_0001030",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31540456_causative-agent_0001030",
+  "canon:title": "Macrolide Allergic Reactions.",
+  "canon:abstract": "Macrolides are antimicrobial agents that can be used to treat a variety of infections. Allergic reactions to macrolides occur infrequently but can include minor to severe cutaneous reactions as well as systemic life-threatening reactions such as anaphylaxis. Most reports of allergic reactions occurred in patients without prior exposure to a macrolide. Cross-reactivity among macrolides may occur due to the similarities in their chemical structures; however, some published literature indicates that some patients can tolerate a different macrolide. Most published reports detailed an allergic reaction to erythromycin. Desensitization protocols to clarithromycin and azithromycin have been described in the literature. The purpose of this article is to summarize macrolide-associated allergic reactions reported in published literature. An extensive literature search was conducted to identify publications linking macrolides to hypersensitivity reactions.",
+  "canon:text": "Macrolide Allergic Reactions. Macrolides are antimicrobial agents that can be used to treat a variety of infections. Allergic reactions to macrolides occur infrequently but can include minor to severe cutaneous reactions as well as systemic life-threatening reactions such as anaphylaxis. Most reports of allergic reactions occurred in patients without prior exposure to a macrolide. Cross-reactivity among macrolides may occur due to the similarities in their chemical structures; however, some published literature indicates that some patients can tolerate a different macrolide. Most published reports detailed an allergic reaction to erythromycin. Desensitization protocols to clarithromycin and azithromycin have been described in the literature. The purpose of this article is to summarize macrolide-associated allergic reactions reported in published literature. An extensive literature search was conducted to identify publications linking macrolides to hypersensitivity reactions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31540456_causative-agent_0001030#mention-T1",
+      "canon:span": {
+        "start": 10,
+        "end": 28
+      },
+      "canon:surface": "Allergic Reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31540456_causative-agent_0001030#mention-T2",
+      "canon:span": {
+        "start": 700,
+        "end": 712
+      },
+      "canon:surface": "azithromycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D017963",
+      "canon:sourceNotation": "D017963",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31540456_causative-agent_0001030#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31540456_causative-agent_0001030#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31540456_causative-agent_0001030#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31540456"
+      }
+    }
+  ]
+}

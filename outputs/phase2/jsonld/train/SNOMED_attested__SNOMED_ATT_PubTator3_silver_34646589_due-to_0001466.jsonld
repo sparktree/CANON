@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34646589_due-to_0001466",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34646589_due-to_0001466",
+  "canon:title": "Leukocytoclastic Vasculitis: Depiction of the Diagnostic Dilemma.",
+  "canon:abstract": "Vasculitis is classified based on the size of the blood vessels involved. Sub-group Leukocytoclastic vasculitis (LCV) refers to small blood vessel inflammation, which involves cutaneous capillaries and venules. To date, there have been myriad primary and secondary probable causes of LCV. Here, we present a case of an 86-year-old male who presented with non-blanchable purpura involving the ankles, knees, and palms. The patient had idiopathic pulmonary fibrosis (IPF), for which he had been on long-term oxygen therapy and chronic corticosteroids. He was recently started on Bactrim DS (trimethoprim-sulfamethoxazole double strength) for prophylaxis of pneumocystis pneumonia. After a meticulous workup, including a skin biopsy, the causative agent of the LCV was established to be Bactrim DS, and the event was likely triggered by superimposed acute stress of sepsis secondary to UTI and bacteremia. There were several diagnostic dilemmas due to the ongoing chronic medical conditions; however, the occurrence of LCV while being on chronic corticosteroids was concerning as it should have prevented such an untoward occurrence. Eventually, the presentation subsided past an increase in the dose of corticosteroids and discontinuation of Bactrim DS. This raises concern regarding either the dose-dependent immunosuppressive effects of corticosteroids or deficits in our current understanding of the mechanism of action. Additionally, it necessitates further exploration into the causes of LCV and a thorough understanding of its pathogenesis.",
+  "canon:text": "Leukocytoclastic Vasculitis: Depiction of the Diagnostic Dilemma. Vasculitis is classified based on the size of the blood vessels involved. Sub-group Leukocytoclastic vasculitis (LCV) refers to small blood vessel inflammation, which involves cutaneous capillaries and venules. To date, there have been myriad primary and secondary probable causes of LCV. Here, we present a case of an 86-year-old male who presented with non-blanchable purpura involving the ankles, knees, and palms. The patient had idiopathic pulmonary fibrosis (IPF), for which he had been on long-term oxygen therapy and chronic corticosteroids. He was recently started on Bactrim DS (trimethoprim-sulfamethoxazole double strength) for prophylaxis of pneumocystis pneumonia. After a meticulous workup, including a skin biopsy, the causative agent of the LCV was established to be Bactrim DS, and the event was likely triggered by superimposed acute stress of sepsis secondary to UTI and bacteremia. There were several diagnostic dilemmas due to the ongoing chronic medical conditions; however, the occurrence of LCV while being on chronic corticosteroids was concerning as it should have prevented such an untoward occurrence. Eventually, the presentation subsided past an increase in the dose of corticosteroids and discontinuation of Bactrim DS. This raises concern regarding either the dose-dependent immunosuppressive effects of corticosteroids or deficits in our current understanding of the mechanism of action. Additionally, it necessitates further exploration into the causes of LCV and a thorough understanding of its pathogenesis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34646589_due-to_0001466#mention-T1",
+      "canon:span": {
+        "start": 929,
+        "end": 935
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34646589_due-to_0001466#mention-T2",
+      "canon:span": {
+        "start": 721,
+        "end": 743
+      },
+      "canon:surface": "pneumocystis pneumonia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011020",
+      "canon:sourceNotation": "D011020",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34646589_due-to_0001466#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34646589_due-to_0001466#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34646589_due-to_0001466#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34646589"
+      }
+    }
+  ]
+}

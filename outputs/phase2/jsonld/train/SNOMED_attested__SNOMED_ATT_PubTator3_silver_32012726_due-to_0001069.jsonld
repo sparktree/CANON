@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012726_due-to_0001069",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32012726_due-to_0001069",
+  "canon:title": "The Coming Age of Flavonoids in the Treatment of Diabetic Complications.",
+  "canon:abstract": "Diabetes mellitus (DM), and its micro and macrovascular complications, is one of the biggest challenges for world public health. Despite overall improvement in prevention, diagnosis and treatment, its incidence is expected to continue increasing over the next years. Nowadays, finding therapies to prevent or retard the progression of diabetic complications remains an unmet need due to the complexity of mechanisms involved, which include inflammation, oxidative stress and angiogenesis, among others. Flavonoids are natural antioxidant compounds that have been shown to possess anti-diabetic properties. Moreover, increasing scientific evidence has demonstrated their potential anti-inflammatory and anti-oxidant effects. Consequently, the use of these compounds as anti-diabetic drugs has generated growing interest, as is reflected in the numerous in vitro and in vivo studies related to this field. Therefore, the aim of this review is to assess the recent pre-clinical and clinical research about the potential effect of flavonoids in the amelioration of diabetic complications. In brief, we provide updated information concerning the discrepancy between the numerous experimental studies supporting the efficacy of flavonoids on diabetic complications and the lack of appropriate and well-designed clinical trials. Due to the well-described beneficial effects on different mechanisms involved in diabetic complications, the excellent tolerability and low cost, future randomized controlled studies with compounds that have adequate bioavailability should be evaluated as add-on therapy on well-established anti-diabetic drugs.",
+  "canon:text": "The Coming Age of Flavonoids in the Treatment of Diabetic Complications. Diabetes mellitus (DM), and its micro and macrovascular complications, is one of the biggest challenges for world public health. Despite overall improvement in prevention, diagnosis and treatment, its incidence is expected to continue increasing over the next years. Nowadays, finding therapies to prevent or retard the progression of diabetic complications remains an unmet need due to the complexity of mechanisms involved, which include inflammation, oxidative stress and angiogenesis, among others. Flavonoids are natural antioxidant compounds that have been shown to possess anti-diabetic properties. Moreover, increasing scientific evidence has demonstrated their potential anti-inflammatory and anti-oxidant effects. Consequently, the use of these compounds as anti-diabetic drugs has generated growing interest, as is reflected in the numerous in vitro and in vivo studies related to this field. Therefore, the aim of this review is to assess the recent pre-clinical and clinical research about the potential effect of flavonoids in the amelioration of diabetic complications. In brief, we provide updated information concerning the discrepancy between the numerous experimental studies supporting the efficacy of flavonoids on diabetic complications and the lack of appropriate and well-designed clinical trials. Due to the well-described beneficial effects on different mechanisms involved in diabetic complications, the excellent tolerability and low cost, future randomized controlled studies with compounds that have adequate bioavailability should be evaluated as add-on therapy on well-established anti-diabetic drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012726_due-to_0001069#mention-T1",
+      "canon:span": {
+        "start": 49,
+        "end": 71
+      },
+      "canon:surface": "Diabetic Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012726_due-to_0001069#mention-T2",
+      "canon:span": {
+        "start": 73,
+        "end": 90
+      },
+      "canon:surface": "Diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012726_due-to_0001069#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012726_due-to_0001069#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012726_due-to_0001069#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32012726"
+      }
+    }
+  ]
+}

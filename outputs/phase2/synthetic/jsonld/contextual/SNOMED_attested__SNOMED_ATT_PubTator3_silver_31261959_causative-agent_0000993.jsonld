@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31261959_causative-agent_0000993",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31261959_causative-agent_0000993",
+  "canon:title": "Recent Topics on The Mechanisms of Immunosuppressive Therapy-Related Neurotoxicities.",
+  "canon:abstract": "Although transplantation procedures have been developed for patients with end-stage hepatic insufficiency or other diseases, allograft rejection still threatens patient health and lifespan. Over the last few decades, the emergence of immunosuppressive agents such as calcineurin inhibitors (CNIs) and mammalian target of rapamycin (mTOR) inhibitors have strikingly increased graft survival. Unfortunately, immunosuppressive agent-related neurotoxicity commonly occurs in clinical practice, with the majority of neurotoxicity cases caused by CNIs. The possible mechanisms through which CNIs cause neurotoxicity include increasing the permeability or injury of the blood-brain barrier, alterations of mitochondrial function, and alterations in the electrophysiological state. Other immunosuppressants can also induce neuropsychiatric complications. For example, mTOR inhibitors induce seizures, mycophenolate mofetil induces depression and headaches, methotrexate affects the central nervous system, the mouse monoclonal immunoglobulin G2 antibody (used against the cluster of differentiation 3) also induces headaches, and patients using corticosteroids usually experience cognitive alteration. Therapeutic drug monitoring, individual therapy based on pharmacogenetics, and early recognition of symptoms help reduce neurotoxic events considerably. Once neurotoxicity occurs, a reduction in the drug dosage, switching to other immunosuppressants, combination therapy with drugs used to treat the neuropsychiatric manifestation, or blood purification therapy have proven to be effective against neurotoxicity. In this review, we summarize recent topics on the mechanisms of immunosuppressive drug-related neurotoxicity. In addition, information about the neuroprotective effects of several immunosuppressants is also discussed.",
+  "canon:text": "Recent Topics on The Mechanisms of Immunosuppressive Therapy-Related Neurotoxicities. Although transplantation procedures have been developed for patients with end-stage hepatic insufficiency or other diseases, allograft rejection still threatens patient health and lifespan. Over the last few decades, the emergence of immunosuppressive agents such as calcineurin inhibitors (CNIs) and mammalian target of rapamycin (mTOR) inhibitors have strikingly increased graft survival. Unfortunately, immunosuppressive agent-related neurotoxicity commonly occurs in clinical practice, with the majority of neurotoxicity cases caused by CNIs. The possible mechanisms through which CNIs cause neurotoxicity include increasing the permeability or injury of the blood-brain barrier, alterations of mitochondrial function, and alterations in the electrophysiological state. Other immunosuppressants can also induce neuropsychiatric complications. For example, mTOR inhibitors induce seizures, mycophenolate mofetil induces depression and headaches, methotrexate affects the central nervous system, the mouse monoclonal immunoglobulin G2 antibody (used against the cluster of differentiation 3) also induces headaches, and patients using corticosteroids usually experience cognitive alteration. Therapeutic drug monitoring, individual therapy based on pharmacogenetics, and early recognition of symptoms help reduce neurotoxic events considerably. Once neurotoxicity occurs, a reduction in the drug dosage, switching to other immunosuppressants, combination therapy with drugs used to treat the neuropsychiatric manifestation, or blood purification therapy have proven to be effective against neurotoxicity. In this review, we summarize recent topics on the mechanisms of immunosuppressive drug-related neurotoxicity. In addition, information about the neuroprotective effects of several immunosuppressants is also discussed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31261959_causative-agent_0000993#mention-T1",
+      "canon:span": {
+        "start": 69,
+        "end": 84
+      },
+      "canon:surface": "Neurotoxicities",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31261959_causative-agent_0000993#mention-T2",
+      "canon:span": {
+        "start": 1035,
+        "end": 1047
+      },
+      "canon:surface": "methotrexate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008727",
+      "canon:sourceNotation": "D008727",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31261959_causative-agent_0000993#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31261959_causative-agent_0000993#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31261959_causative-agent_0000993#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31261959"
+      }
+    }
+  ]
+}

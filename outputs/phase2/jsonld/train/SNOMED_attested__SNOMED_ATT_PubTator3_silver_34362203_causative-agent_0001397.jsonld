@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362203_causative-agent_0001397",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34362203_causative-agent_0001397",
+  "canon:title": "Paracetamol: A Review of Guideline Recommendations.",
+  "canon:abstract": "Musculoskeletal pain conditions are age-related, leading contributors to chronic pain and pain-related disability, which are expected to rise with the rapid global population aging. Current medical treatments provide only partial relief. Furthermore, non-steroidal anti-inflammatory drugs (NSAIDs) and opioids are effective in young and otherwise healthy individuals but are often contraindicated in elderly and frail patients. As a result of its favorable safety and tolerability record, paracetamol has long been the most common drug for treating pain. Strikingly, recent reports questioned its therapeutic value and safety. This review aims to present guideline recommendations. Paracetamol has been assessed in different conditions and demonstrated therapeutic efficacy on both acute and chronic pain. It is active as a single agent and is additive or synergistic with NSAIDs and opioids, improving their efficacy and safety. However, a lack of significant efficacy and hepatic toxicity have also been reported. Fast dissolving formulations of paracetamol provide superior and more extended pain relief that is similar to intravenous paracetamol. A dose reduction is recommended in patients with liver disease or malnourished. Genotyping may improve efficacy and safety. Within the current trend toward the minimization of opioid analgesia, it is consistently included in multimodal, non-opioid, or opioid-sparing therapies. Paracetamol is being recommended by guidelines as a first or second-line drug for acute pain and chronic pain, especially for patients with limited therapeutic options and for the elderly.",
+  "canon:text": "Paracetamol: A Review of Guideline Recommendations. Musculoskeletal pain conditions are age-related, leading contributors to chronic pain and pain-related disability, which are expected to rise with the rapid global population aging. Current medical treatments provide only partial relief. Furthermore, non-steroidal anti-inflammatory drugs (NSAIDs) and opioids are effective in young and otherwise healthy individuals but are often contraindicated in elderly and frail patients. As a result of its favorable safety and tolerability record, paracetamol has long been the most common drug for treating pain. Strikingly, recent reports questioned its therapeutic value and safety. This review aims to present guideline recommendations. Paracetamol has been assessed in different conditions and demonstrated therapeutic efficacy on both acute and chronic pain. It is active as a single agent and is additive or synergistic with NSAIDs and opioids, improving their efficacy and safety. However, a lack of significant efficacy and hepatic toxicity have also been reported. Fast dissolving formulations of paracetamol provide superior and more extended pain relief that is similar to intravenous paracetamol. A dose reduction is recommended in patients with liver disease or malnourished. Genotyping may improve efficacy and safety. Within the current trend toward the minimization of opioid analgesia, it is consistently included in multimodal, non-opioid, or opioid-sparing therapies. Paracetamol is being recommended by guidelines as a first or second-line drug for acute pain and chronic pain, especially for patients with limited therapeutic options and for the elderly.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362203_causative-agent_0001397#mention-T1",
+      "canon:span": {
+        "start": 1026,
+        "end": 1042
+      },
+      "canon:surface": "hepatic toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362203_causative-agent_0001397#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 11
+      },
+      "canon:surface": "Paracetamol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362203_causative-agent_0001397#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362203_causative-agent_0001397#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362203_causative-agent_0001397#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34362203"
+      }
+    }
+  ]
+}

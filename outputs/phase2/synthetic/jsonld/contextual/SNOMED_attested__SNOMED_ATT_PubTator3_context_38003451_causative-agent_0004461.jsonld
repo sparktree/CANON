@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38003451_causative-agent_0004461",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_38003451_causative-agent_0004461",
+  "canon:title": "Endocrinopathies in Hemoglobinopathies: What Is the Role of Iron?",
+  "canon:abstract": "Hemoglobinopathies, including beta-thalassemia and sickle cell disease (SCD), are common genetic blood disorders. Endocrine disorders are frequent manifestations of organ damage observed mainly in patients with beta-thalassemia and rarely in SCD. Iron overload, oxidative stress-induced cellular damage, chronic anemia, and HCV infection contribute to the development of endocrinopathies in beta-thalassemia. The above factors, combined with vaso-occlusive events and microcirculation defects, are crucial for endocrine dysfunction in SCD patients. These endocrinopathies include diabetes mellitus, hypothyroidism, parathyroid dysfunction, gonadal and growth failure, osteoporosis, and adrenal insufficiency, affecting the quality of life of these patients. Thus, we aim to provide current knowledge and data about the epidemiology, pathogenesis, diagnosis, and management of endocrine disorders in beta-thalassemia and SCD. We conducted a comprehensive review of the literature and examined the available data, mostly using the PubMed and Medline search engines for original articles. In the era of precision medicine, more studies investigating the potential role of genetic modifiers in the development of endocrinopathies in hemoglobinopathies are essential.",
+  "canon:text": "Endocrinopathies in Hemoglobinopathies: What Is the Role of Iron? Hemoglobinopathies, including beta-thalassemia and sickle cell disease (SCD), are common genetic blood disorders. Endocrine disorders are frequent manifestations of organ damage observed mainly in patients with beta-thalassemia and rarely in SCD. Iron overload, oxidative stress-induced cellular damage, chronic anemia, and HCV infection contribute to the development of endocrinopathies in beta-thalassemia. The above factors, combined with vaso-occlusive events and microcirculation defects, are crucial for endocrine dysfunction in SCD patients. These endocrinopathies include diabetes mellitus, hypothyroidism, parathyroid dysfunction, gonadal and growth failure, osteoporosis, and adrenal insufficiency, affecting the quality of life of these patients. Thus, we aim to provide current knowledge and data about the epidemiology, pathogenesis, diagnosis, and management of endocrine disorders in beta-thalassemia and SCD. We conducted a comprehensive review of the literature and examined the available data, mostly using the PubMed and Medline search engines for original articles. In the era of precision medicine, more studies investigating the potential role of genetic modifiers in the development of endocrinopathies in hemoglobinopathies are essential.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38003451_causative-agent_0004461#mention-T1",
+      "canon:span": {
+        "start": 313,
+        "end": 326
+      },
+      "canon:surface": "Iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38003451_causative-agent_0004461#mention-T2",
+      "canon:span": {
+        "start": 60,
+        "end": 64
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38003451_causative-agent_0004461#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38003451_causative-agent_0004461#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38003451_causative-agent_0004461#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "38003451"
+      }
+    }
+  ]
+}

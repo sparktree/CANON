@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28215999_causative-agent_0002784",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28215999_causative-agent_0002784",
+  "canon:title": "Rat animal models for screening medications to treat alcohol use disorders.",
+  "canon:abstract": "The purpose of this review is to present animal research models that can be used to screen and/or repurpose medications for the treatment of alcohol abuse and dependence. The focus will be on rats and in particular selectively bred rats. Brief introductions discuss various aspects of the clinical picture, which provide characteristics of individuals with alcohol use disorders (AUDs) to model in animals. Following this, multiple selectively bred rat lines will be described and evaluated in the context of animal models used to screen medications to treat AUDs. Next, common behavioral tests for drug efficacy will be discussed particularly as they relate to stages in the addiction cycle. Tables highlighting studies that have tested the effects of compounds using the respective techniques are included. Wherever possible the Tables are organized chronologically in ascending order to describe changes in the focus of research on AUDs over time. In general, high ethanol-consuming selectively bred rats have been used to test a wide range of compounds. Older studies usually followed neurobiological findings in the selected lines that supported an association with a propensity for high ethanol intake. Most of these tests evaluated the compound's effects on the maintenance of ethanol drinking. Very few compounds have been tested during ethanol-seeking and/or relapse and fewer still have assessed their effects during the acquisition of AUDs. Overall, while a substantial number of neurotransmitter and neuromodulatory system targets have been assessed; the roles of sex- and age-of-animal, as well as the acquisition of AUDs, ethanol-seeking and relapse continue to be factors and behaviors needing further study. This article is part of the Special Issue entitled \"Alcoholism\".",
+  "canon:text": "Rat animal models for screening medications to treat alcohol use disorders. The purpose of this review is to present animal research models that can be used to screen and/or repurpose medications for the treatment of alcohol abuse and dependence. The focus will be on rats and in particular selectively bred rats. Brief introductions discuss various aspects of the clinical picture, which provide characteristics of individuals with alcohol use disorders (AUDs) to model in animals. Following this, multiple selectively bred rat lines will be described and evaluated in the context of animal models used to screen medications to treat AUDs. Next, common behavioral tests for drug efficacy will be discussed particularly as they relate to stages in the addiction cycle. Tables highlighting studies that have tested the effects of compounds using the respective techniques are included. Wherever possible the Tables are organized chronologically in ascending order to describe changes in the focus of research on AUDs over time. In general, high ethanol-consuming selectively bred rats have been used to test a wide range of compounds. Older studies usually followed neurobiological findings in the selected lines that supported an association with a propensity for high ethanol intake. Most of these tests evaluated the compound's effects on the maintenance of ethanol drinking. Very few compounds have been tested during ethanol-seeking and/or relapse and fewer still have assessed their effects during the acquisition of AUDs. Overall, while a substantial number of neurotransmitter and neuromodulatory system targets have been assessed; the roles of sex- and age-of-animal, as well as the acquisition of AUDs, ethanol-seeking and relapse continue to be factors and behaviors needing further study. This article is part of the Special Issue entitled \"Alcoholism\".",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28215999_causative-agent_0002784#mention-T1",
+      "canon:span": {
+        "start": 53,
+        "end": 74
+      },
+      "canon:surface": "alcohol use disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28215999_causative-agent_0002784#mention-T2",
+      "canon:span": {
+        "start": 1044,
+        "end": 1051
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28215999_causative-agent_0002784#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28215999_causative-agent_0002784#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28215999_causative-agent_0002784#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28215999"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27690014_causative-agent_0000688",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_27690014_causative-agent_0000688",
+  "canon:title": "New Treatment Strategies for Alcohol-Induced Heart Damage.",
+  "canon:abstract": "High-dose alcohol misuse induces multiple noxious cardiac effects, including myocyte hypertrophy and necrosis, interstitial fibrosis, decreased ventricular contraction and ventricle enlargement. These effects produce diastolic and systolic ventricular dysfunction leading to congestive heart failure, arrhythmias and an increased death rate. There are multiple, dose-dependent, synchronic and synergistic mechanisms of alcohol-induced cardiac damage. Ethanol alters membrane permeability and composition, interferes with receptors and intracellular transients, induces oxidative, metabolic and energy damage, decreases protein synthesis, excitation-contraction coupling and increases cell apoptosis. In addition, ethanol decreases myocyte protective and repair mechanisms and their regeneration. Although there are diverse different strategies to directly target alcohol-induced heart damage, they are partially effective, and can only be used as support medication in a multidisciplinary approach. Alcohol abstinence is the preferred goal, but control drinking is useful in alcohol-addicted subjects not able to abstain. Correction of nutrition, ionic and vitamin deficiencies and control of alcohol-related systemic organ damage are compulsory. Recently, several growth factors (myostatin, IGF-1, leptin, ghrelin, miRNA, and ROCK inhibitors) and new cardiomyokines such as FGF21 have been described to regulate cardiac plasticity and decrease cardiac damage, improving cardiac repair mechanisms, and they are promising agents in this field. New potential therapeutic targets aim to control oxidative damage, myocyte hypertrophy, interstitial fibrosis and persistent apoptosis In addition, stem-cell therapy may improve myocyte regeneration. However, these strategies are not yet approved for clinical use.",
+  "canon:text": "New Treatment Strategies for Alcohol-Induced Heart Damage. High-dose alcohol misuse induces multiple noxious cardiac effects, including myocyte hypertrophy and necrosis, interstitial fibrosis, decreased ventricular contraction and ventricle enlargement. These effects produce diastolic and systolic ventricular dysfunction leading to congestive heart failure, arrhythmias and an increased death rate. There are multiple, dose-dependent, synchronic and synergistic mechanisms of alcohol-induced cardiac damage. Ethanol alters membrane permeability and composition, interferes with receptors and intracellular transients, induces oxidative, metabolic and energy damage, decreases protein synthesis, excitation-contraction coupling and increases cell apoptosis. In addition, ethanol decreases myocyte protective and repair mechanisms and their regeneration. Although there are diverse different strategies to directly target alcohol-induced heart damage, they are partially effective, and can only be used as support medication in a multidisciplinary approach. Alcohol abstinence is the preferred goal, but control drinking is useful in alcohol-addicted subjects not able to abstain. Correction of nutrition, ionic and vitamin deficiencies and control of alcohol-related systemic organ damage are compulsory. Recently, several growth factors (myostatin, IGF-1, leptin, ghrelin, miRNA, and ROCK inhibitors) and new cardiomyokines such as FGF21 have been described to regulate cardiac plasticity and decrease cardiac damage, improving cardiac repair mechanisms, and they are promising agents in this field. New potential therapeutic targets aim to control oxidative damage, myocyte hypertrophy, interstitial fibrosis and persistent apoptosis In addition, stem-cell therapy may improve myocyte regeneration. However, these strategies are not yet approved for clinical use.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27690014_causative-agent_0000688#mention-T1",
+      "canon:span": {
+        "start": 69,
+        "end": 76
+      },
+      "canon:surface": "alcohol",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27690014_causative-agent_0000688#mention-T2",
+      "canon:span": {
+        "start": 510,
+        "end": 517
+      },
+      "canon:surface": "Ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27690014_causative-agent_0000688#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27690014_causative-agent_0000688#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27690014_causative-agent_0000688#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "27690014"
+      }
+    }
+  ]
+}

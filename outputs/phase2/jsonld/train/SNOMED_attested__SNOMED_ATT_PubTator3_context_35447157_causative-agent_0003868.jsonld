@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35447157_causative-agent_0003868",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35447157_causative-agent_0003868",
+  "canon:title": "Prenatal and adolescent alcohol exposure programs immunity across the lifespan: CNS-mediated regulation.",
+  "canon:abstract": "For many individuals, first exposure to alcohol occurs either prenatally due to maternal drinking, or during adolescence, when alcohol consumption is most likely to be initiated. Prenatal Alcohol Exposure (PAE) and its associated Fetal Alcohol Spectrum Disorders (FASD) in humans is associated with earlier initiation of alcohol use and increased rates of Alcohol Use Disorders (AUD). Initiation of alcohol use and misuse in early adolescence correlates highly with later AUD diagnosis as well. Thus, PAE and adolescent binge drinking set the stage for long-term health consequences due to adverse effects of alcohol on subsequent immune function, effects that may persist across the lifespan. The overarching goal of this review, therefore, is to determine the extent to which early developmental exposure to alcohol produces long-lasting, and potentially life-long, changes in immunological function. Alcohol affects the whole body, yet most studies are narrowly focused on individual features of immune function, largely ignoring the systems-level interactions required for effective host defense. We therefore emphasize the crucial role of the Central Nervous System (CNS) in orchestrating host defense processes. We argue that alcohol-mediated disruption of host immunity can occur through both (a) direct action of ethanol on neuroimmune processes, that subsequently disrupt peripheral immune function (top down); and (b) indirect action of ethanol on peripheral immune organs/cells, which in turn elicit consequent changes in CNS neuroimmune function (bottom up). Recognizing that alcohol consumption across the entire body, we argue in favor of integrative, whole-organism approaches toward understanding alcohol effects on immune function, and highlight the need for more work specifically examining long-lasting effects of early developmental exposure to alcohol (prenatal and adolescent periods) on host immunity.",
+  "canon:text": "Prenatal and adolescent alcohol exposure programs immunity across the lifespan: CNS-mediated regulation. For many individuals, first exposure to alcohol occurs either prenatally due to maternal drinking, or during adolescence, when alcohol consumption is most likely to be initiated. Prenatal Alcohol Exposure (PAE) and its associated Fetal Alcohol Spectrum Disorders (FASD) in humans is associated with earlier initiation of alcohol use and increased rates of Alcohol Use Disorders (AUD). Initiation of alcohol use and misuse in early adolescence correlates highly with later AUD diagnosis as well. Thus, PAE and adolescent binge drinking set the stage for long-term health consequences due to adverse effects of alcohol on subsequent immune function, effects that may persist across the lifespan. The overarching goal of this review, therefore, is to determine the extent to which early developmental exposure to alcohol produces long-lasting, and potentially life-long, changes in immunological function. Alcohol affects the whole body, yet most studies are narrowly focused on individual features of immune function, largely ignoring the systems-level interactions required for effective host defense. We therefore emphasize the crucial role of the Central Nervous System (CNS) in orchestrating host defense processes. We argue that alcohol-mediated disruption of host immunity can occur through both (a) direct action of ethanol on neuroimmune processes, that subsequently disrupt peripheral immune function (top down); and (b) indirect action of ethanol on peripheral immune organs/cells, which in turn elicit consequent changes in CNS neuroimmune function (bottom up). Recognizing that alcohol consumption across the entire body, we argue in favor of integrative, whole-organism approaches toward understanding alcohol effects on immune function, and highlight the need for more work specifically examining long-lasting effects of early developmental exposure to alcohol (prenatal and adolescent periods) on host immunity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35447157_causative-agent_0003868#mention-T1",
+      "canon:span": {
+        "start": 426,
+        "end": 437
+      },
+      "canon:surface": "alcohol use",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35447157_causative-agent_0003868#mention-T2",
+      "canon:span": {
+        "start": 1426,
+        "end": 1433
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35447157_causative-agent_0003868#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35447157_causative-agent_0003868#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35447157_causative-agent_0003868#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35447157"
+      }
+    }
+  ]
+}

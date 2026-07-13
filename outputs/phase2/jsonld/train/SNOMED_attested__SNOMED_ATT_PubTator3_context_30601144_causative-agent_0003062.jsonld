@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30601144_causative-agent_0003062",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30601144_causative-agent_0003062",
+  "canon:title": "Stimulant Use in Pregnancy: An Under-recognized Epidemic Among Pregnant Women.",
+  "canon:abstract": "Stimulant use, including cocaine, methamphetamines, ecstasy, and prescription stimulants, in pregnancy is increasingly common. In the United States, stimulants are the second most widely used and abused substances during pregnancy and pregnant women using stimulants in pregnancy are at increased risk of adverse perinatal, neonatal, and childhood outcomes. In this review, we describe the pharmacology, pathophysiology, and epidemiology of stimulants, summarize the maternal and neonatal effects of perinatal stimulant use, and outline treatment options for stimulant use disorders among pregnant women. Development of effective treatment strategies for stimulant use disorders identified among pregnant women are urgently needed.",
+  "canon:text": "Stimulant Use in Pregnancy: An Under-recognized Epidemic Among Pregnant Women. Stimulant use, including cocaine, methamphetamines, ecstasy, and prescription stimulants, in pregnancy is increasingly common. In the United States, stimulants are the second most widely used and abused substances during pregnancy and pregnant women using stimulants in pregnancy are at increased risk of adverse perinatal, neonatal, and childhood outcomes. In this review, we describe the pharmacology, pathophysiology, and epidemiology of stimulants, summarize the maternal and neonatal effects of perinatal stimulant use, and outline treatment options for stimulant use disorders among pregnant women. Development of effective treatment strategies for stimulant use disorders identified among pregnant women are urgently needed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30601144_causative-agent_0003062#mention-T1",
+      "canon:span": {
+        "start": 638,
+        "end": 661
+      },
+      "canon:surface": "stimulant use disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30601144_causative-agent_0003062#mention-T2",
+      "canon:span": {
+        "start": 104,
+        "end": 111
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30601144_causative-agent_0003062#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30601144_causative-agent_0003062#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30601144_causative-agent_0003062#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30601144"
+      }
+    }
+  ]
+}

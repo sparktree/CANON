@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17506224_causative-agent_0000288",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_17506224_causative-agent_0000288",
+  "canon:title": "Neuropsychiatric consequences of cardiovascular medications.",
+  "canon:abstract": "The use of cardiovascular medications can have a variety of neuropsychiatric consequences. Many cardiovascular agents cause higher rates of fatigue and sedation than placebo, and case reports of medication-induced mood syndromes, psychosis, and cognitive disturbances exist for many cardiovascular drugs. Depression has been associated with P3-blockers, methyldopa, and reserpine, but more recent syntheses of the data have suggested that these associations are much weaker than originally believed. Though low cholesterol levels have been associated with depression and suicide, lipid-lowering agents have not been associated with these adverse effects. Finally, cardiovascular medications may have beneficial neuropsychiatric consequences; for example, the use of clonidine in patients with attention deficit-hyperactivity disorder, the use of prazosin for patients with post-traumatic stress disorder; and the use of propranolol for performance anxiety and akathisia.",
+  "canon:text": "Neuropsychiatric consequences of cardiovascular medications. The use of cardiovascular medications can have a variety of neuropsychiatric consequences. Many cardiovascular agents cause higher rates of fatigue and sedation than placebo, and case reports of medication-induced mood syndromes, psychosis, and cognitive disturbances exist for many cardiovascular drugs. Depression has been associated with P3-blockers, methyldopa, and reserpine, but more recent syntheses of the data have suggested that these associations are much weaker than originally believed. Though low cholesterol levels have been associated with depression and suicide, lipid-lowering agents have not been associated with these adverse effects. Finally, cardiovascular medications may have beneficial neuropsychiatric consequences; for example, the use of clonidine in patients with attention deficit-hyperactivity disorder, the use of prazosin for patients with post-traumatic stress disorder; and the use of propranolol for performance anxiety and akathisia.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17506224_causative-agent_0000288#mention-T1",
+      "canon:span": {
+        "start": 1021,
+        "end": 1030
+      },
+      "canon:surface": "akathisia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017109",
+      "canon:sourceNotation": "D017109",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17506224_causative-agent_0000288#mention-T2",
+      "canon:span": {
+        "start": 431,
+        "end": 440
+      },
+      "canon:surface": "reserpine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012110",
+      "canon:sourceNotation": "D012110",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17506224_causative-agent_0000288#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17506224_causative-agent_0000288#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17506224_causative-agent_0000288#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "17506224"
+      }
+    }
+  ]
+}

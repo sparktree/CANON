@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17396159_causative-agent_0000282",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_17396159_causative-agent_0000282",
+  "canon:title": "Rasburicase represents a new tool for hyperuricemia in tumor lysis syndrome and in gout.",
+  "canon:abstract": "Hyperuricemia is a feature of several pathologies and requires an appropriate and often early treatment, owing to the severe consequences that it may cause. A rapid and massive raise of uric acid, during tumor lysis syndrome (TLS), and also a lower and chronic hyperuricemia, as in gout, mainly damage the kidney. To prevent or treat these consequences, a new therapeutic option is represented by rasburicase, a recombinant form of an enzyme, urate oxidase. This enzyme converts hypoxanthine and xanthine into allantoin, a more soluble molecule, easily cleared by kidney. The several types of urate oxidase have followed each other, with progressive reduction of adverse reactions. The most important among them are allergenicity and the development of antibodies which compromise their effectiveness. Nevertheless, a limit of rasburicase's use remains its cost, which obliges to a judicious choice to prevent TLS in high risk patients with cancer and in case of allergy or impossibility to take allopurinol orally both in TLS and in gout. A large body of evidence confirms the efficacy and safety of rasburicase, even in comparison to the standard drugs used in the aforementioned pathologies.",
+  "canon:text": "Rasburicase represents a new tool for hyperuricemia in tumor lysis syndrome and in gout. Hyperuricemia is a feature of several pathologies and requires an appropriate and often early treatment, owing to the severe consequences that it may cause. A rapid and massive raise of uric acid, during tumor lysis syndrome (TLS), and also a lower and chronic hyperuricemia, as in gout, mainly damage the kidney. To prevent or treat these consequences, a new therapeutic option is represented by rasburicase, a recombinant form of an enzyme, urate oxidase. This enzyme converts hypoxanthine and xanthine into allantoin, a more soluble molecule, easily cleared by kidney. The several types of urate oxidase have followed each other, with progressive reduction of adverse reactions. The most important among them are allergenicity and the development of antibodies which compromise their effectiveness. Nevertheless, a limit of rasburicase's use remains its cost, which obliges to a judicious choice to prevent TLS in high risk patients with cancer and in case of allergy or impossibility to take allopurinol orally both in TLS and in gout. A large body of evidence confirms the efficacy and safety of rasburicase, even in comparison to the standard drugs used in the aforementioned pathologies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17396159_causative-agent_0000282#mention-T1",
+      "canon:span": {
+        "start": 1052,
+        "end": 1059
+      },
+      "canon:surface": "allergy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17396159_causative-agent_0000282#mention-T2",
+      "canon:span": {
+        "start": 1085,
+        "end": 1096
+      },
+      "canon:surface": "allopurinol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000493",
+      "canon:sourceNotation": "D000493",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17396159_causative-agent_0000282#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17396159_causative-agent_0000282#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_17396159_causative-agent_0000282#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "17396159"
+      }
+    }
+  ]
+}

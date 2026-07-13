@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24218017_causative-agent_0002407",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24218017_causative-agent_0002407",
+  "canon:title": "Epigenetics, drugs of abuse, and the retroviral promoter.",
+  "canon:abstract": "Drug abuse alone has been shown to cause epigenetic changes in brain tissue that have been shown to play roles in addictive behaviors. In conjunction with HIV-1 infection, it can cause epigenetic changes at the viral promoter that can result in altered gene expression, and exacerbate disease progression overall. This review entails an in-depth look at research conducted on the epigenetic effects of three of the most widely abused drugs (cannabinoids, opioids, and cocaine), with a particular focus on the mechanisms through which these drugs interact with HIV-1 infection at the viral promoter. Here we discuss the impact of this interplay on disease progression from the point of view of the nature of gene regulation at the level of chromatin accessibility, chromatin remodeling, and nucleosome repositioning. Given the importance of chromatin remodeling and DNA methylation in controlling the retroviral promoter, and the high susceptibility of the drug abusing population of individuals to HIV infection, it would be beneficial to understand the way in which the host genome is modified and regulated by drugs of abuse. ",
+  "canon:text": "Epigenetics, drugs of abuse, and the retroviral promoter. Drug abuse alone has been shown to cause epigenetic changes in brain tissue that have been shown to play roles in addictive behaviors. In conjunction with HIV-1 infection, it can cause epigenetic changes at the viral promoter that can result in altered gene expression, and exacerbate disease progression overall. This review entails an in-depth look at research conducted on the epigenetic effects of three of the most widely abused drugs (cannabinoids, opioids, and cocaine), with a particular focus on the mechanisms through which these drugs interact with HIV-1 infection at the viral promoter. Here we discuss the impact of this interplay on disease progression from the point of view of the nature of gene regulation at the level of chromatin accessibility, chromatin remodeling, and nucleosome repositioning. Given the importance of chromatin remodeling and DNA methylation in controlling the retroviral promoter, and the high susceptibility of the drug abusing population of individuals to HIV infection, it would be beneficial to understand the way in which the host genome is modified and regulated by drugs of abuse. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24218017_causative-agent_0002407#mention-T1",
+      "canon:span": {
+        "start": 172,
+        "end": 191
+      },
+      "canon:surface": "addictive behaviors",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24218017_causative-agent_0002407#mention-T2",
+      "canon:span": {
+        "start": 526,
+        "end": 533
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24218017_causative-agent_0002407#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24218017_causative-agent_0002407#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24218017_causative-agent_0002407#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24218017"
+      }
+    }
+  ]
+}

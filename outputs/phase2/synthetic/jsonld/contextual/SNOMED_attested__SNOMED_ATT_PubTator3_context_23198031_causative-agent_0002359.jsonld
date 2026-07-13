@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23198031_causative-agent_0002359",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23198031_causative-agent_0002359",
+  "canon:title": "Malignant hyperthermia.",
+  "canon:abstract": "Malignant hyperthermia (MH) is an uncommon, life-threatening pharmacogenetic disorder of the skeletal muscle. It presents as a hypermetabolic response in susceptible individuals to potent volatile anesthetics with/without depolarizing muscle relaxants; in rare cases, to stress from exertion or heat stress. Susceptibility to malignant hyperthermia (MHS) is inherited as an autosomally dominant trait with variable expression and incomplete penetrance. It is known that the pathophysiology of MH is related to an uncontrolled rise of myoplasmic calcium, which activates biochemical processes resulting in hypermetabolism of the skeletal muscle. In most cases, defects in the ryanodine receptor are responsible for the functional changes of calcium regulation in MH, and more than 300 mutations have been identified in the RYR1 gene, located on chromosome 19q13.1. The classic signs of MH include increase of end-tidal carbon dioxide, tachycardia, skeletal muscle rigidity, tachycardia, hyperthermia and acidosis. Up to now, muscle contracture test is regarded as the gold standard for the diagnosis of MHS though molecular genetic test is used, on a limited basis so far to diagnose MHS. The mortality of MH is dramatically decreased from 70-80% to less than 5%, due to an introduction of dantrolene sodium for treatment of MH, early detection of MH episode using capnography, and the introduction of diagnostic testing for MHS. This review summarizes the clinically essential and important knowledge of MH, and presents new developments in the field.",
+  "canon:text": "Malignant hyperthermia. Malignant hyperthermia (MH) is an uncommon, life-threatening pharmacogenetic disorder of the skeletal muscle. It presents as a hypermetabolic response in susceptible individuals to potent volatile anesthetics with/without depolarizing muscle relaxants; in rare cases, to stress from exertion or heat stress. Susceptibility to malignant hyperthermia (MHS) is inherited as an autosomally dominant trait with variable expression and incomplete penetrance. It is known that the pathophysiology of MH is related to an uncontrolled rise of myoplasmic calcium, which activates biochemical processes resulting in hypermetabolism of the skeletal muscle. In most cases, defects in the ryanodine receptor are responsible for the functional changes of calcium regulation in MH, and more than 300 mutations have been identified in the RYR1 gene, located on chromosome 19q13.1. The classic signs of MH include increase of end-tidal carbon dioxide, tachycardia, skeletal muscle rigidity, tachycardia, hyperthermia and acidosis. Up to now, muscle contracture test is regarded as the gold standard for the diagnosis of MHS though molecular genetic test is used, on a limited basis so far to diagnose MHS. The mortality of MH is dramatically decreased from 70-80% to less than 5%, due to an introduction of dantrolene sodium for treatment of MH, early detection of MH episode using capnography, and the introduction of diagnostic testing for MHS. This review summarizes the clinically essential and important knowledge of MH, and presents new developments in the field.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23198031_causative-agent_0002359#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 22
+      },
+      "canon:surface": "Malignant hyperthermia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008305",
+      "canon:sourceNotation": "D008305",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23198031_causative-agent_0002359#mention-T2",
+      "canon:span": {
+        "start": 1313,
+        "end": 1330
+      },
+      "canon:surface": "dantrolene sodium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003620",
+      "canon:sourceNotation": "D003620",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23198031_causative-agent_0002359#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23198031_causative-agent_0002359#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23198031_causative-agent_0002359#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23198031"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38020895_due-to_0002030",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_38020895_due-to_0002030",
+  "canon:title": "Mitochondrial quality control in health and cardiovascular diseases.",
+  "canon:abstract": "Cardiovascular diseases (CVDs) are one of the primary causes of mortality worldwide. An optimal mitochondrial function is central to supplying tissues with high energy demand, such as the cardiovascular system. In addition to producing ATP as a power source, mitochondria are also heavily involved in adaptation to environmental stress and fine-tuning tissue functions. Mitochondrial quality control (MQC) through fission, fusion, mitophagy, and biogenesis ensures the clearance of dysfunctional mitochondria and preserves mitochondrial homeostasis in cardiovascular tissues. Furthermore, mitochondria generate reactive oxygen species (ROS), which trigger the production of pro-inflammatory cytokines and regulate cell survival. Mitochondrial dysfunction has been implicated in multiple CVDs, including ischemia-reperfusion (I/R), atherosclerosis, heart failure, cardiac hypertrophy, hypertension, diabetic and genetic cardiomyopathies, and Kawasaki Disease (KD). Thus, MQC is pivotal in promoting cardiovascular health. Here, we outline the mechanisms of MQC and discuss the current literature on mitochondrial adaptation in CVDs.",
+  "canon:text": "Mitochondrial quality control in health and cardiovascular diseases. Cardiovascular diseases (CVDs) are one of the primary causes of mortality worldwide. An optimal mitochondrial function is central to supplying tissues with high energy demand, such as the cardiovascular system. In addition to producing ATP as a power source, mitochondria are also heavily involved in adaptation to environmental stress and fine-tuning tissue functions. Mitochondrial quality control (MQC) through fission, fusion, mitophagy, and biogenesis ensures the clearance of dysfunctional mitochondria and preserves mitochondrial homeostasis in cardiovascular tissues. Furthermore, mitochondria generate reactive oxygen species (ROS), which trigger the production of pro-inflammatory cytokines and regulate cell survival. Mitochondrial dysfunction has been implicated in multiple CVDs, including ischemia-reperfusion (I/R), atherosclerosis, heart failure, cardiac hypertrophy, hypertension, diabetic and genetic cardiomyopathies, and Kawasaki Disease (KD). Thus, MQC is pivotal in promoting cardiovascular health. Here, we outline the mechanisms of MQC and discuss the current literature on mitochondrial adaptation in CVDs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38020895_due-to_0002030#mention-T1",
+      "canon:span": {
+        "start": 967,
+        "end": 1004
+      },
+      "canon:surface": "diabetic and genetic cardiomyopathies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38020895_due-to_0002030#mention-T2",
+      "canon:span": {
+        "start": 872,
+        "end": 881
+      },
+      "canon:surface": "ischemia-",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007511",
+      "canon:sourceNotation": "D007511",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38020895_due-to_0002030#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38020895_due-to_0002030#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38020895_due-to_0002030#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "38020895"
+      }
+    }
+  ]
+}

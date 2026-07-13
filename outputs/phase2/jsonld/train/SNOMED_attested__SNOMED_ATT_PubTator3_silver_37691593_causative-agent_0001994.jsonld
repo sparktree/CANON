@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37691593_causative-agent_0001994",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37691593_causative-agent_0001994",
+  "canon:title": "Current clinical application of dantrolene sodium.",
+  "canon:abstract": "Dantrolene sodium (DS) was first introduced as an oral antispasmodic drug. However, in 1975, DS was demonstrated to be effective for managing malignant hyperthermia (MH) and was adopted as the primary therapeutic drug after intravenous administration. However, it is difficult to administer DS intravenously to manage MH. MH is life-threatening, pharmacogenomically related, and induced by depolarizing neuromuscular blocking agents or inhalational anesthetics. All anesthesiologists should know the pharmacology of DS. DS suppresses Ca2+ release from ryanodine receptors (RyRs). RyRs are expressed in various tissues, although their distribution differs among subtypes. The anatomical and physiological functions of RyRs have also been demonstrated as effective therapeutic drugs for cardiac arrhythmias, Alzheimer's disease, and other RyR-related diseases. Recently, a new formulation was introduced that enhanced the hydrophilicity of the lipophilic DS. The authors summarize the pharmacological properties of DS and comment on its indications, contraindications, adverse effects, and interactions with other drugs by reviewing reference articles.",
+  "canon:text": "Current clinical application of dantrolene sodium. Dantrolene sodium (DS) was first introduced as an oral antispasmodic drug. However, in 1975, DS was demonstrated to be effective for managing malignant hyperthermia (MH) and was adopted as the primary therapeutic drug after intravenous administration. However, it is difficult to administer DS intravenously to manage MH. MH is life-threatening, pharmacogenomically related, and induced by depolarizing neuromuscular blocking agents or inhalational anesthetics. All anesthesiologists should know the pharmacology of DS. DS suppresses Ca2+ release from ryanodine receptors (RyRs). RyRs are expressed in various tissues, although their distribution differs among subtypes. The anatomical and physiological functions of RyRs have also been demonstrated as effective therapeutic drugs for cardiac arrhythmias, Alzheimer's disease, and other RyR-related diseases. Recently, a new formulation was introduced that enhanced the hydrophilicity of the lipophilic DS. The authors summarize the pharmacological properties of DS and comment on its indications, contraindications, adverse effects, and interactions with other drugs by reviewing reference articles.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37691593_causative-agent_0001994#mention-T1",
+      "canon:span": {
+        "start": 193,
+        "end": 215
+      },
+      "canon:surface": "malignant hyperthermia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008305",
+      "canon:sourceNotation": "D008305",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37691593_causative-agent_0001994#mention-T2",
+      "canon:span": {
+        "start": 32,
+        "end": 49
+      },
+      "canon:surface": "dantrolene sodium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003620",
+      "canon:sourceNotation": "D003620",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37691593_causative-agent_0001994#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37691593_causative-agent_0001994#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37691593_causative-agent_0001994#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37691593"
+      }
+    }
+  ]
+}

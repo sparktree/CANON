@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25789242_causative-agent_0002546",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25789242_causative-agent_0002546",
+  "canon:title": "The role of inhalational anesthetic drugs in patients with hepatic dysfunction: a review article.",
+  "canon:abstract": "CONTEXT: Anesthetic drugs including halogenated anesthetics have been common for many years. Consequent hepatic injury has been reported in the literature. The mechanism of injury is immunoallergic. The first generation drug was halothane; it had the most toxicity when compared to other drugs. The issue becomes more important when the patient has an underlying hepatic dysfunction. EVIDENCE ACQUISITION: In this paper, reputable internet databases from 1957-2014 were analyzed and 43 original articles, 3 case reports, and 3 books were studied. A search was performed based on the following keywords: inhalational anesthesia, hepatic dysfunction, halogenated anesthetics, general anesthesia in patients with hepatic diseases, and side effects of halogenated anesthetics from reliable databases. Reputable websites like PubMed and Cochrane were used for the searches. RESULTS: In patients with hepatic dysfunction in addition to hepatic system and dramatic hemostatic dysfunction, dysfunction of cardiovascular, renal, respiratory, gastrointestinal, and central nervous systems may occur. On the other hand, exposure to inhalational halogenated anesthetics may have a negative impact (similar to hepatitis) on all aforementioned systems in addition to direct effects on liver function as well as the effects are more pronounced in halothane. CONCLUSIONS: Despite the adverse effects of inhalational halogenated anesthetics (especially halothane) on hepatic patients when necessary. The effects on all systems must be considered and the necessary preparations must be provided. These drugs are still used, if necessary, due to the presence of positive effects and advantages mentioned in other studies as well as the adverse effects of other drugs.",
+  "canon:text": "The role of inhalational anesthetic drugs in patients with hepatic dysfunction: a review article. CONTEXT: Anesthetic drugs including halogenated anesthetics have been common for many years. Consequent hepatic injury has been reported in the literature. The mechanism of injury is immunoallergic. The first generation drug was halothane; it had the most toxicity when compared to other drugs. The issue becomes more important when the patient has an underlying hepatic dysfunction. EVIDENCE ACQUISITION: In this paper, reputable internet databases from 1957-2014 were analyzed and 43 original articles, 3 case reports, and 3 books were studied. A search was performed based on the following keywords: inhalational anesthesia, hepatic dysfunction, halogenated anesthetics, general anesthesia in patients with hepatic diseases, and side effects of halogenated anesthetics from reliable databases. Reputable websites like PubMed and Cochrane were used for the searches. RESULTS: In patients with hepatic dysfunction in addition to hepatic system and dramatic hemostatic dysfunction, dysfunction of cardiovascular, renal, respiratory, gastrointestinal, and central nervous systems may occur. On the other hand, exposure to inhalational halogenated anesthetics may have a negative impact (similar to hepatitis) on all aforementioned systems in addition to direct effects on liver function as well as the effects are more pronounced in halothane. CONCLUSIONS: Despite the adverse effects of inhalational halogenated anesthetics (especially halothane) on hepatic patients when necessary. The effects on all systems must be considered and the necessary preparations must be provided. These drugs are still used, if necessary, due to the presence of positive effects and advantages mentioned in other studies as well as the adverse effects of other drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25789242_causative-agent_0002546#mention-T1",
+      "canon:span": {
+        "start": 202,
+        "end": 216
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25789242_causative-agent_0002546#mention-T2",
+      "canon:span": {
+        "start": 327,
+        "end": 336
+      },
+      "canon:surface": "halothane",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006221",
+      "canon:sourceNotation": "D006221",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25789242_causative-agent_0002546#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25789242_causative-agent_0002546#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25789242_causative-agent_0002546#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25789242"
+      }
+    }
+  ]
+}

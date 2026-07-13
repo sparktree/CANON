@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22855656_causative-agent_0002353",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_22855656_causative-agent_0002353",
+  "canon:title": "Transient Psychotic Episode Induced by Helicobacter pylori Triple Therapy Treatment.",
+  "canon:abstract": "The term 'antibiomania' refers to manic episodes that occur after a patient starts taking antibiotics. We report the case of a 49-year-old male who developed acute psychosis secondary to initiation of triple therapy for Helicobacter pylori eradication. Unlike with proton pump inhibitors, there have been several reported cases of central nervous system side effects and psychiatric consequences due to amoxicillin, however evidence points to clarithromycin as the likely culprit. On average onset of symptoms occurred within 1-5 days of initiating therapy. In all cases, symptoms resolved upon cessation of clarithromycin, mostly within 1-3 days. Unfortunately, the mechanism through which clarithromycin causes neurotoxicity remains unclear. Clinicians should be cognizant of psychiatric side effects secondary to clarithromycin, and discontinuation should be prompt for rapid recovery of mental status.",
+  "canon:text": "Transient Psychotic Episode Induced by Helicobacter pylori Triple Therapy Treatment. The term 'antibiomania' refers to manic episodes that occur after a patient starts taking antibiotics. We report the case of a 49-year-old male who developed acute psychosis secondary to initiation of triple therapy for Helicobacter pylori eradication. Unlike with proton pump inhibitors, there have been several reported cases of central nervous system side effects and psychiatric consequences due to amoxicillin, however evidence points to clarithromycin as the likely culprit. On average onset of symptoms occurred within 1-5 days of initiating therapy. In all cases, symptoms resolved upon cessation of clarithromycin, mostly within 1-3 days. Unfortunately, the mechanism through which clarithromycin causes neurotoxicity remains unclear. Clinicians should be cognizant of psychiatric side effects secondary to clarithromycin, and discontinuation should be prompt for rapid recovery of mental status.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22855656_causative-agent_0002353#mention-T1",
+      "canon:span": {
+        "start": 798,
+        "end": 811
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22855656_causative-agent_0002353#mention-T2",
+      "canon:span": {
+        "start": 528,
+        "end": 542
+      },
+      "canon:surface": "clarithromycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D017291",
+      "canon:sourceNotation": "D017291",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22855656_causative-agent_0002353#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22855656_causative-agent_0002353#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22855656_causative-agent_0002353#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "22855656"
+      }
+    }
+  ]
+}

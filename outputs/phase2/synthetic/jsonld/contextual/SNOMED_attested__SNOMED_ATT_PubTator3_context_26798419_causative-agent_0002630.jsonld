@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26798419_causative-agent_0002630",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26798419_causative-agent_0002630",
+  "canon:title": "Is Liver Enzyme Release Really Associated with Cell Necrosis Induced by Oxidant Stress?",
+  "canon:abstract": "Hepatic diseases are a major concern worldwide. Increased specific plasma enzyme activities are considered diagnostic features for liver diseases, since enzymes are released into the blood compartment following the deterioration of the organ. Release of liver mitochondrial enzymes is considered strong evidence for hepatic necrosis, which is associated with an increased production of ROS, often leading to greater hepatic lipid peroxidation. Lipotoxic mediators and intracellular signals activated Kupffer cells, which provides evidence strongly suggesting the participation of oxidant stress in acute liver damage, inducing the progression of liver injury to chronic liver damage. Elevated transaminase activities are considered as an index marker of hepatotoxicity, linked to oxidant stress. However, a drastic increase of serum activities of liver enzyme markers ought not necessarily to reflect liver cell death. In fact, increased serum levels of cytoplasmic enzymes have readily been observed after partial hepatectomy (PH) in the regenerating liver of rats. In this regard, we are now showing that in vitro modifications of the oxidant status affect differentially the release of liver enzymes, indicating that this release is a strictly controlled event and not directly related to the onset of oxidant stress of the liver. ",
+  "canon:text": "Is Liver Enzyme Release Really Associated with Cell Necrosis Induced by Oxidant Stress? Hepatic diseases are a major concern worldwide. Increased specific plasma enzyme activities are considered diagnostic features for liver diseases, since enzymes are released into the blood compartment following the deterioration of the organ. Release of liver mitochondrial enzymes is considered strong evidence for hepatic necrosis, which is associated with an increased production of ROS, often leading to greater hepatic lipid peroxidation. Lipotoxic mediators and intracellular signals activated Kupffer cells, which provides evidence strongly suggesting the participation of oxidant stress in acute liver damage, inducing the progression of liver injury to chronic liver damage. Elevated transaminase activities are considered as an index marker of hepatotoxicity, linked to oxidant stress. However, a drastic increase of serum activities of liver enzyme markers ought not necessarily to reflect liver cell death. In fact, increased serum levels of cytoplasmic enzymes have readily been observed after partial hepatectomy (PH) in the regenerating liver of rats. In this regard, we are now showing that in vitro modifications of the oxidant status affect differentially the release of liver enzymes, indicating that this release is a strictly controlled event and not directly related to the onset of oxidant stress of the liver. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26798419_causative-agent_0002630#mention-T1",
+      "canon:span": {
+        "start": 88,
+        "end": 104
+      },
+      "canon:surface": "Hepatic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26798419_causative-agent_0002630#mention-T2",
+      "canon:span": {
+        "start": 512,
+        "end": 517
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26798419_causative-agent_0002630#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26798419_causative-agent_0002630#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26798419_causative-agent_0002630#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26798419"
+      }
+    }
+  ]
+}

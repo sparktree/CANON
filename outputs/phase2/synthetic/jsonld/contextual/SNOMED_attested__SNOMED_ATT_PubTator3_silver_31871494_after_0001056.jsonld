@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31871494_after_0001056",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31871494_after_0001056",
+  "canon:title": "Therapeutic Approaches for Peripheral and Central Neuropathic Pain.",
+  "canon:abstract": "Neuropathic pain is a chronic secondary pain condition, which is a consequence of peripheral or central nervous (somatosensory) system lesions or diseases. It is a devastating condition, which affects around 7% of the general population. Numerous etiological factors contribute to the development of chronic neuropathic pain. It can originate from the peripheral part of the nervous system such as in the case of trigeminal or postherpetic neuralgia, peripheral nerve injury, painful polyneuropathies, or radiculopathies. Central chronic neuropathic pain can develop as a result of spinal cord or brain injury, stroke, or multiple sclerosis. As first-line pharmacological treatment options, tricyclic antidepressants, serotonin-norepinephrine reuptake inhibitors, and gabapentinoids are recommended. In trigeminal neuralgia, carbamazepine and oxcarbazepine are the first-choice drugs. In drug-refractory cases, interventional, physical, and psychological therapies are available. This review was structured based on a PubMed search of papers published in the field from 2010 until May 2019.",
+  "canon:text": "Therapeutic Approaches for Peripheral and Central Neuropathic Pain. Neuropathic pain is a chronic secondary pain condition, which is a consequence of peripheral or central nervous (somatosensory) system lesions or diseases. It is a devastating condition, which affects around 7% of the general population. Numerous etiological factors contribute to the development of chronic neuropathic pain. It can originate from the peripheral part of the nervous system such as in the case of trigeminal or postherpetic neuralgia, peripheral nerve injury, painful polyneuropathies, or radiculopathies. Central chronic neuropathic pain can develop as a result of spinal cord or brain injury, stroke, or multiple sclerosis. As first-line pharmacological treatment options, tricyclic antidepressants, serotonin-norepinephrine reuptake inhibitors, and gabapentinoids are recommended. In trigeminal neuralgia, carbamazepine and oxcarbazepine are the first-choice drugs. In drug-refractory cases, interventional, physical, and psychological therapies are available. This review was structured based on a PubMed search of papers published in the field from 2010 until May 2019.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31871494_after_0001056#mention-T1",
+      "canon:span": {
+        "start": 481,
+        "end": 517
+      },
+      "canon:surface": "trigeminal or postherpetic neuralgia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D051474",
+      "canon:sourceNotation": "D051474",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31871494_after_0001056#mention-T2",
+      "canon:span": {
+        "start": 871,
+        "end": 891
+      },
+      "canon:surface": "trigeminal neuralgia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D014277",
+      "canon:sourceNotation": "D014277",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31871494_after_0001056#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31871494_after_0001056#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31871494_after_0001056#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31871494"
+      }
+    }
+  ]
+}

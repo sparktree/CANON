@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21318009_causative-agent_0000358",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21318009_causative-agent_0000358",
+  "canon:title": "Cellular and mitochondrial effects of alcohol consumption.",
+  "canon:abstract": "Alcohol dependence is correlated with a wide spectrum of medical, psychological, behavioral, and social problems. Acute alcohol abuse causes damage to and functional impairment of several organs affecting protein, carbohydrate, and fat metabolism. Mitochondria participate with the conversion of acetaldehyde into acetate and the generation of increased amounts of NADH. Prenatal exposure to ethanol during fetal development induces a wide spectrum of adverse effects in offspring, such as neurologic abnormalities and pre- and post-natal growth retardation. Antioxidant effects have been described due to that alcoholic beverages contain different compounds, such as polyphenols as well as resveratrol. This review analyzes diverse topics on the alcohol consumption effects in several human organs and demonstrates the direct participation of mitochondria as potential target of compounds that can be used to prevent therapies for alcohol abusers.",
+  "canon:text": "Cellular and mitochondrial effects of alcohol consumption. Alcohol dependence is correlated with a wide spectrum of medical, psychological, behavioral, and social problems. Acute alcohol abuse causes damage to and functional impairment of several organs affecting protein, carbohydrate, and fat metabolism. Mitochondria participate with the conversion of acetaldehyde into acetate and the generation of increased amounts of NADH. Prenatal exposure to ethanol during fetal development induces a wide spectrum of adverse effects in offspring, such as neurologic abnormalities and pre- and post-natal growth retardation. Antioxidant effects have been described due to that alcoholic beverages contain different compounds, such as polyphenols as well as resveratrol. This review analyzes diverse topics on the alcohol consumption effects in several human organs and demonstrates the direct participation of mitochondria as potential target of compounds that can be used to prevent therapies for alcohol abusers.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21318009_causative-agent_0000358#mention-T1",
+      "canon:span": {
+        "start": 59,
+        "end": 77
+      },
+      "canon:surface": "Alcohol dependence",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21318009_causative-agent_0000358#mention-T2",
+      "canon:span": {
+        "start": 451,
+        "end": 458
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21318009_causative-agent_0000358#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21318009_causative-agent_0000358#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21318009_causative-agent_0000358#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21318009"
+      }
+    }
+  ]
+}

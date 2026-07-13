@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41750227_causative-agent_0004546",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_41750227_causative-agent_0004546",
+  "canon:title": "Parkinson's Disease: Conventional Pharmacotherapy, Drug Delivery Innovations, and Emerging Therapeutic Targets.",
+  "canon:abstract": "Parkinson's disease (PD) is a progressive neurodegenerative disorder characterized by motor symptoms (bradykinesia, rigidity, resting tremor) and a wide range of non-motor features. The core pathological process is degeneration of dopaminergic neurons in the substantia nigra pars compacta, leading to striatal dopamine deficiency, while additional neurotransmitter systems contribute to non-motor symptoms. PD is a common age-related disorder; global estimates for 2019 indicate that more than 8.5 million people were living with PD, and prevalence increases steeply with age. Current pharmacological therapy is mainly symptomatic and is centered on levodopa and other dopaminergic strategies, but treatment response can be limited by motor fluctuations, dyskinesia, and adverse effects. Therefore, formulation and delivery innovations (e.g., dispersible preparations, intestinal gel, and continuous infusion approaches) aim to stabilize drug exposure and improve convenience, especially in patients with swallowing difficulties or advanced disease. This review summarizes conventional drug classes and their dosage forms, highlights formulation-driven strategies to improve efficacy and tolerability, and outlines emerging pathways and targets being explored for future therapies.",
+  "canon:text": "Parkinson's Disease: Conventional Pharmacotherapy, Drug Delivery Innovations, and Emerging Therapeutic Targets. Parkinson's disease (PD) is a progressive neurodegenerative disorder characterized by motor symptoms (bradykinesia, rigidity, resting tremor) and a wide range of non-motor features. The core pathological process is degeneration of dopaminergic neurons in the substantia nigra pars compacta, leading to striatal dopamine deficiency, while additional neurotransmitter systems contribute to non-motor symptoms. PD is a common age-related disorder; global estimates for 2019 indicate that more than 8.5 million people were living with PD, and prevalence increases steeply with age. Current pharmacological therapy is mainly symptomatic and is centered on levodopa and other dopaminergic strategies, but treatment response can be limited by motor fluctuations, dyskinesia, and adverse effects. Therefore, formulation and delivery innovations (e.g., dispersible preparations, intestinal gel, and continuous infusion approaches) aim to stabilize drug exposure and improve convenience, especially in patients with swallowing difficulties or advanced disease. This review summarizes conventional drug classes and their dosage forms, highlights formulation-driven strategies to improve efficacy and tolerability, and outlines emerging pathways and targets being explored for future therapies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41750227_causative-agent_0004546#mention-T1",
+      "canon:span": {
+        "start": 868,
+        "end": 878
+      },
+      "canon:surface": "dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41750227_causative-agent_0004546#mention-T2",
+      "canon:span": {
+        "start": 763,
+        "end": 771
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41750227_causative-agent_0004546#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41750227_causative-agent_0004546#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41750227_causative-agent_0004546#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "41750227"
+      }
+    }
+  ]
+}

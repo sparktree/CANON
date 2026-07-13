@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18360588_causative-agent_0000305",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_18360588_causative-agent_0000305",
+  "canon:title": "Voriconazole in the management of nosocomial invasive fungal infections.",
+  "canon:abstract": "Voriconazole is a new triazole developed for the treatment of life-threatening fungal infections. The drug is available for both oral and intravenous administration; the oral formulation has excellent bioavailability. The side-effect profile of voriconazole presents an acceptable safety and tolerability spectrum: transient visual disturbances, liver enzyme abnormalities, and skin rashes are the most frequently reported side effects but rarely lead to discontinuation. The potential for drug-drug interactions is high, because of its extensive hepatic metabolism. Careful attention to dosage is required, and serum levels and the effects of interacting drugs should be monitored. Review of 25 470 isolates of yeasts and 3216 isolates of filamentous fungi showed voriconazole to have broad-spectrum activity against pathogenic yeasts including intrinsically fluconazole-resistant isolates such as Candida krusei, dimorphic fungi, and opportunistic moulds like Aspergillus spp, amphotericin-B-resistant Aspergillus terreus, Fusarium spp, and Scedosporium apiospermum. It displays excellent clinical efficacy in patients with fluconazole-resistant and -susceptible Candida infections, invasive bone and central nervous system aspergillosis, and various refractory fungal infections. Voriconazole has been approved by the US Food and Drug Administration and by the European Medicines Agency for the treatment of invasive aspergillosis, serious infections caused by Fusarium and S. apiospermum, fluconazole-resistant invasive Candida infections, and candidemia in nonneutropenic patients.",
+  "canon:text": "Voriconazole in the management of nosocomial invasive fungal infections. Voriconazole is a new triazole developed for the treatment of life-threatening fungal infections. The drug is available for both oral and intravenous administration; the oral formulation has excellent bioavailability. The side-effect profile of voriconazole presents an acceptable safety and tolerability spectrum: transient visual disturbances, liver enzyme abnormalities, and skin rashes are the most frequently reported side effects but rarely lead to discontinuation. The potential for drug-drug interactions is high, because of its extensive hepatic metabolism. Careful attention to dosage is required, and serum levels and the effects of interacting drugs should be monitored. Review of 25 470 isolates of yeasts and 3216 isolates of filamentous fungi showed voriconazole to have broad-spectrum activity against pathogenic yeasts including intrinsically fluconazole-resistant isolates such as Candida krusei, dimorphic fungi, and opportunistic moulds like Aspergillus spp, amphotericin-B-resistant Aspergillus terreus, Fusarium spp, and Scedosporium apiospermum. It displays excellent clinical efficacy in patients with fluconazole-resistant and -susceptible Candida infections, invasive bone and central nervous system aspergillosis, and various refractory fungal infections. Voriconazole has been approved by the US Food and Drug Administration and by the European Medicines Agency for the treatment of invasive aspergillosis, serious infections caused by Fusarium and S. apiospermum, fluconazole-resistant invasive Candida infections, and candidemia in nonneutropenic patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18360588_causative-agent_0000305#mention-T1",
+      "canon:span": {
+        "start": 419,
+        "end": 445
+      },
+      "canon:surface": "liver enzyme abnormalities",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18360588_causative-agent_0000305#mention-T2",
+      "canon:span": {
+        "start": 1052,
+        "end": 1066
+      },
+      "canon:surface": "amphotericin-B",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000666",
+      "canon:sourceNotation": "D000666",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18360588_causative-agent_0000305#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18360588_causative-agent_0000305#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18360588_causative-agent_0000305#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "18360588"
+      }
+    }
+  ]
+}

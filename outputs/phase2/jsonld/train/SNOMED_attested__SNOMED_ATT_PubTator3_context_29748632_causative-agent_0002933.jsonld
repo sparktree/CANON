@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29748632_causative-agent_0002933",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29748632_causative-agent_0002933",
+  "canon:title": "Chronic cannabis promotes pro-hallucinogenic signaling of 5-HT2A receptors through Akt/mTOR pathway.",
+  "canon:abstract": "Long-term use of potent cannabis during adolescence increases the risk of developing schizophrenia later in life, but to date, the mechanisms involved remain unknown. Several findings suggest that the functional selectivity of serotonin 2A receptor (5-HT2AR) through inhibitory G-proteins is involved in the molecular mechanisms responsible for psychotic symptoms. Moreover, this receptor is dysregulated in the frontal cortex of schizophrenia patients. In this context, studies involving cannabis exposure and 5-HT2AR are scarce. Here, we tested in mice the effect of an early chronic Delta9-tetrahydrocannabinol (THC) exposure on cortical 5-HT2AR expression, as well as on its in vivo and in vitro functionality. Long-term exposure to THC induced a pro-hallucinogenic molecular conformation of the 5-HT2AR and exacerbated schizophrenia-like responses, such as prepulse inhibition disruption. Supersensitive coupling of 5-HT2AR toward inhibitory Galphai1-, Galphai3-, Galphao-, and Galphaz-proteins after chronic THC exposure was observed, without changes in the canonical Galphaq/11-protein pathway. In addition, we found that inhibition of Akt/mTOR pathway by rapamycin blocks the changes in 5-HT2AR signaling pattern and the supersensitivity to schizophrenia-like effects induced by chronic THC. The present study provides the first evidence of a mechanistic explanation for the relationship between chronic cannabis exposure in early life and increased risk of developing psychosis-like behaviors in adulthood.",
+  "canon:text": "Chronic cannabis promotes pro-hallucinogenic signaling of 5-HT2A receptors through Akt/mTOR pathway. Long-term use of potent cannabis during adolescence increases the risk of developing schizophrenia later in life, but to date, the mechanisms involved remain unknown. Several findings suggest that the functional selectivity of serotonin 2A receptor (5-HT2AR) through inhibitory G-proteins is involved in the molecular mechanisms responsible for psychotic symptoms. Moreover, this receptor is dysregulated in the frontal cortex of schizophrenia patients. In this context, studies involving cannabis exposure and 5-HT2AR are scarce. Here, we tested in mice the effect of an early chronic Delta9-tetrahydrocannabinol (THC) exposure on cortical 5-HT2AR expression, as well as on its in vivo and in vitro functionality. Long-term exposure to THC induced a pro-hallucinogenic molecular conformation of the 5-HT2AR and exacerbated schizophrenia-like responses, such as prepulse inhibition disruption. Supersensitive coupling of 5-HT2AR toward inhibitory Galphai1-, Galphai3-, Galphao-, and Galphaz-proteins after chronic THC exposure was observed, without changes in the canonical Galphaq/11-protein pathway. In addition, we found that inhibition of Akt/mTOR pathway by rapamycin blocks the changes in 5-HT2AR signaling pattern and the supersensitivity to schizophrenia-like effects induced by chronic THC. The present study provides the first evidence of a mechanistic explanation for the relationship between chronic cannabis exposure in early life and increased risk of developing psychosis-like behaviors in adulthood.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29748632_causative-agent_0002933#mention-T1",
+      "canon:span": {
+        "start": 1578,
+        "end": 1602
+      },
+      "canon:surface": "psychosis-like behaviors",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011605",
+      "canon:sourceNotation": "D011605",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29748632_causative-agent_0002933#mention-T2",
+      "canon:span": {
+        "start": 687,
+        "end": 714
+      },
+      "canon:surface": "Delta9-tetrahydrocannabinol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013759",
+      "canon:sourceNotation": "D013759",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29748632_causative-agent_0002933#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29748632_causative-agent_0002933#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29748632_causative-agent_0002933#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29748632"
+      }
+    }
+  ]
+}

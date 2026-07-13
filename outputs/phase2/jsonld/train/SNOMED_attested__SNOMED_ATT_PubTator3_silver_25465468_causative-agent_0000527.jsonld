@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25465468_causative-agent_0000527",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25465468_causative-agent_0000527",
+  "canon:title": "Mitochondrial dysfunction and tissue injury by alcohol, high fat, nonalcoholic substances and pathological conditions through post-translational protein modifications.",
+  "canon:abstract": "Mitochondria are critically important in providing cellular energy ATP as well as their involvement in anti-oxidant defense, fat oxidation, intermediary metabolism and cell death processes. It is well-established that mitochondrial functions are suppressed when living cells or organisms are exposed to potentially toxic agents including alcohol, high fat diets, smoking and certain drugs or in many pathophysiological states through increased levels of oxidative/nitrative stress. Under elevated nitroxidative stress, cellular macromolecules proteins, DNA, and lipids can undergo different oxidative modifications, leading to disruption of their normal, sometimes critical, physiological functions. Recent reports also indicated that many mitochondrial proteins are modified via various post-translation modifications (PTMs) and primarily inactivated. Because of the recently-emerging information, in this review, we specifically focus on the mechanisms and roles of five major PTMs (namely oxidation, nitration, phosphorylation, acetylation, and adduct formation with lipid-peroxides, reactive metabolites, or advanced glycation end products) in experimental models of alcoholic and nonalcoholic fatty liver disease as well as acute hepatic injury caused by toxic compounds. We also highlight the role of the ethanol-inducible cytochrome P450-2E1 (CYP2E1) in some of these PTM changes. Finally, we discuss translational research opportunities with natural and/or synthetic anti-oxidants, which can prevent or delay the onset of mitochondrial dysfunction, fat accumulation and tissue injury.",
+  "canon:text": "Mitochondrial dysfunction and tissue injury by alcohol, high fat, nonalcoholic substances and pathological conditions through post-translational protein modifications. Mitochondria are critically important in providing cellular energy ATP as well as their involvement in anti-oxidant defense, fat oxidation, intermediary metabolism and cell death processes. It is well-established that mitochondrial functions are suppressed when living cells or organisms are exposed to potentially toxic agents including alcohol, high fat diets, smoking and certain drugs or in many pathophysiological states through increased levels of oxidative/nitrative stress. Under elevated nitroxidative stress, cellular macromolecules proteins, DNA, and lipids can undergo different oxidative modifications, leading to disruption of their normal, sometimes critical, physiological functions. Recent reports also indicated that many mitochondrial proteins are modified via various post-translation modifications (PTMs) and primarily inactivated. Because of the recently-emerging information, in this review, we specifically focus on the mechanisms and roles of five major PTMs (namely oxidation, nitration, phosphorylation, acetylation, and adduct formation with lipid-peroxides, reactive metabolites, or advanced glycation end products) in experimental models of alcoholic and nonalcoholic fatty liver disease as well as acute hepatic injury caused by toxic compounds. We also highlight the role of the ethanol-inducible cytochrome P450-2E1 (CYP2E1) in some of these PTM changes. Finally, we discuss translational research opportunities with natural and/or synthetic anti-oxidants, which can prevent or delay the onset of mitochondrial dysfunction, fat accumulation and tissue injury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25465468_causative-agent_0000527#mention-T1",
+      "canon:span": {
+        "start": 1403,
+        "end": 1417
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25465468_causative-agent_0000527#mention-T2",
+      "canon:span": {
+        "start": 1244,
+        "end": 1253
+      },
+      "canon:surface": "peroxides",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010545",
+      "canon:sourceNotation": "D010545",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25465468_causative-agent_0000527#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25465468_causative-agent_0000527#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25465468_causative-agent_0000527#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25465468"
+      }
+    }
+  ]
+}

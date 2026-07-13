@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35795578_due-to_0003969",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35795578_due-to_0003969",
+  "canon:title": "Rituximab Used for the Treatment of Nonuremic Calciphylaxis: A Complication of Prolonged Steroid Use in Lupus Nephritis.",
+  "canon:abstract": "Nonuremic calciphylaxis (NUC) is a rare and debilitating form of panniculitis. NUC is associated with a high mortality rate within the first year of diagnosis. Connective tissue diseases account for a small fraction of the reported cases. However, there have also been reported cases of patients developing NUC while on treatment with chronic corticosteroid immunosuppressive therapy. The pathophysiology of NUC is still not fully established. Several risk factors including underlying diseases, obesity, female gender, and medications have been associated with the development of NUC. The diagnosis remains challenging due to the condition's similarities with other forms of panniculitis. The gold standard for diagnosis is a tissue biopsy showing calcifications within the medial layer of arterioles and the presence of microthrombi with surrounding necrosis. The treatment for NUC has not advanced much in recent years and focuses on the management of the underlying condition, wound care, and treating any superimposed infection. Treating superimposed infections remains important as most of the associated mortality from NUC occurs due to sepsis. We describe a case of a young woman with lupus nephritis who developed NUC while on prolonged corticosteroid therapy. She did not respond to several immunosuppressive agents and was ultimately treated with rituximab, a monoclonal antibody against CD20 antigen, as salvage therapy.",
+  "canon:text": "Rituximab Used for the Treatment of Nonuremic Calciphylaxis: A Complication of Prolonged Steroid Use in Lupus Nephritis. Nonuremic calciphylaxis (NUC) is a rare and debilitating form of panniculitis. NUC is associated with a high mortality rate within the first year of diagnosis. Connective tissue diseases account for a small fraction of the reported cases. However, there have also been reported cases of patients developing NUC while on treatment with chronic corticosteroid immunosuppressive therapy. The pathophysiology of NUC is still not fully established. Several risk factors including underlying diseases, obesity, female gender, and medications have been associated with the development of NUC. The diagnosis remains challenging due to the condition's similarities with other forms of panniculitis. The gold standard for diagnosis is a tissue biopsy showing calcifications within the medial layer of arterioles and the presence of microthrombi with surrounding necrosis. The treatment for NUC has not advanced much in recent years and focuses on the management of the underlying condition, wound care, and treating any superimposed infection. Treating superimposed infections remains important as most of the associated mortality from NUC occurs due to sepsis. We describe a case of a young woman with lupus nephritis who developed NUC while on prolonged corticosteroid therapy. She did not respond to several immunosuppressive agents and was ultimately treated with rituximab, a monoclonal antibody against CD20 antigen, as salvage therapy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35795578_due-to_0003969#mention-T1",
+      "canon:span": {
+        "start": 104,
+        "end": 119
+      },
+      "canon:surface": "Lupus Nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35795578_due-to_0003969#mention-T2",
+      "canon:span": {
+        "start": 1265,
+        "end": 1271
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35795578_due-to_0003969#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35795578_due-to_0003969#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35795578_due-to_0003969#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35795578"
+      }
+    }
+  ]
+}

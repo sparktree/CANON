@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140610_causative-agent_0003801",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35140610_causative-agent_0003801",
+  "canon:title": "Genetic Factors Associated With Tardive Dyskinesia: From Pre-clinical Models to Clinical Studies.",
+  "canon:abstract": "Tardive dyskinesia is a severe motor adverse event of antipsychotic medication, characterized by involuntary athetoid movements of the trunk, limbs, and/or orofacial areas. It affects two to ten patients under long-term administration of antipsychotics that do not subside for years even after the drug is stopped. Dopamine, serotonin, cannabinoid receptors, oxidative stress, plasticity factors, signaling cascades, as well as CYP isoenzymes and transporters have been associated with tardive dyskinesia (TD) occurrence in terms of genetic variability and metabolic capacity. Besides the factors related to the drug and the dose and patients' clinical characteristics, a very crucial variable of TD development is individual susceptibility and genetic predisposition. This review summarizes the studies in experimental animal models and clinical studies focusing on the impact of genetic variations on TD occurrence. We identified eight genes emerging from preclinical findings that also reached statistical significance in at least one clinical study. The results of clinical studies are often conflicting and non-conclusive enough to support implementation in clinical practice.",
+  "canon:text": "Genetic Factors Associated With Tardive Dyskinesia: From Pre-clinical Models to Clinical Studies. Tardive dyskinesia is a severe motor adverse event of antipsychotic medication, characterized by involuntary athetoid movements of the trunk, limbs, and/or orofacial areas. It affects two to ten patients under long-term administration of antipsychotics that do not subside for years even after the drug is stopped. Dopamine, serotonin, cannabinoid receptors, oxidative stress, plasticity factors, signaling cascades, as well as CYP isoenzymes and transporters have been associated with tardive dyskinesia (TD) occurrence in terms of genetic variability and metabolic capacity. Besides the factors related to the drug and the dose and patients' clinical characteristics, a very crucial variable of TD development is individual susceptibility and genetic predisposition. This review summarizes the studies in experimental animal models and clinical studies focusing on the impact of genetic variations on TD occurrence. We identified eight genes emerging from preclinical findings that also reached statistical significance in at least one clinical study. The results of clinical studies are often conflicting and non-conclusive enough to support implementation in clinical practice.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140610_causative-agent_0003801#mention-T1",
+      "canon:span": {
+        "start": 32,
+        "end": 50
+      },
+      "canon:surface": "Tardive Dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140610_causative-agent_0003801#mention-T2",
+      "canon:span": {
+        "start": 423,
+        "end": 432
+      },
+      "canon:surface": "serotonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012701",
+      "canon:sourceNotation": "D012701",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140610_causative-agent_0003801#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140610_causative-agent_0003801#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140610_causative-agent_0003801#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35140610"
+      }
+    }
+  ]
+}

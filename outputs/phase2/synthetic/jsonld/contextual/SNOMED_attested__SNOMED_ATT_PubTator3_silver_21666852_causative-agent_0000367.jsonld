@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21666852_causative-agent_0000367",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21666852_causative-agent_0000367",
+  "canon:title": "Corticosteroids in brain cancer patients: benefits and pitfalls.",
+  "canon:abstract": "Glucocorticoids have been used for decades in the treatment of brain tumor patients and belong to the most powerful class of agents in reducing tumor-associated edema and minimizing side effects and the risk of encephalopathy in patients undergoing radiation therapy. Unfortunately, corticosteroids are associated with numerous and well-characterized adverse effects, constituting a major challenge in patients requiring long-term application of corticosteroids. Novel antiangiogenic agents, such as bevacizumab (Avastin ), which have been increasingly used in cancer patients, are associated with significant steroid-sparing effects, allowing neuro-oncologists to reduce the overall use of corticosteroids in patients with progressive malignant brain tumors. Recent experimental studies have revealed novel insights into the mechanisms and effects of corticosteroids in cancer patients, including modulation of tumor biology, angiogenesis and steroid-associated neurotoxicity. This article summarizes current concepts of using corticosteroids in brain cancer patients and highlights potential pitfalls in their effects on both tumor and neural progenitor cells.",
+  "canon:text": "Corticosteroids in brain cancer patients: benefits and pitfalls. Glucocorticoids have been used for decades in the treatment of brain tumor patients and belong to the most powerful class of agents in reducing tumor-associated edema and minimizing side effects and the risk of encephalopathy in patients undergoing radiation therapy. Unfortunately, corticosteroids are associated with numerous and well-characterized adverse effects, constituting a major challenge in patients requiring long-term application of corticosteroids. Novel antiangiogenic agents, such as bevacizumab (Avastin ), which have been increasingly used in cancer patients, are associated with significant steroid-sparing effects, allowing neuro-oncologists to reduce the overall use of corticosteroids in patients with progressive malignant brain tumors. Recent experimental studies have revealed novel insights into the mechanisms and effects of corticosteroids in cancer patients, including modulation of tumor biology, angiogenesis and steroid-associated neurotoxicity. This article summarizes current concepts of using corticosteroids in brain cancer patients and highlights potential pitfalls in their effects on both tumor and neural progenitor cells.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21666852_causative-agent_0000367#mention-T1",
+      "canon:span": {
+        "start": 1028,
+        "end": 1041
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21666852_causative-agent_0000367#mention-T2",
+      "canon:span": {
+        "start": 675,
+        "end": 682
+      },
+      "canon:surface": "steroid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21666852_causative-agent_0000367#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21666852_causative-agent_0000367#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21666852_causative-agent_0000367#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21666852"
+      }
+    }
+  ]
+}

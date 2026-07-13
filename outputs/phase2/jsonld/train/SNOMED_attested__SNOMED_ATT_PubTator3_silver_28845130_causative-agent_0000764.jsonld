@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28845130_causative-agent_0000764",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_28845130_causative-agent_0000764",
+  "canon:title": "Anaesthetic challenges in cancer patients: current therapies and pain management.",
+  "canon:abstract": "THE OBJECTIVE: The aim is to present the major effects of cancer treatment (chemotherapy, radiotherapy, surgery) that the anaesthesiologist should consider preoperatively, and to review techniques of the analgesic management of the disease. MATERIALS AND METHODS: To summarize the major challenges that cancer patients present for the anaesthesiologists, a literature review was conducted. Articles presenting evidence or reviewing the possible effects of anaesthetics on cancer cells were also included. Online databases of Science Direct, PubMed, and ELSEVIER, as well as reference lists of included studies were searched. Articles published from 2005 to 2016 were selected. RESULTS: Anaesthesiologists should pay attention to patients receiving chemotherapy and its side effects on organ systems. Bleomycin causes pulmonary damage, anthracyclines are cardiotoxic, and platinum-based chemotherapy agents are nephrotoxic. A lot of chemotherapy agents lead to abnormal liver function, vomiting, diarrhoea, etc. Surgery itself is suspected to be associated with an increased risk of metastasis and recurrence of cancer. Regional anaesthesia and general anaesthesia with propofol should be used and volatile agents should be avoided to prevent cancer patients from perioperative immunosuppression that leads to increased risk of cancer recurrence. Pain management for palliative patients remains a major problem. CONCLUSIONS: To provide the best treatment for cancer patients, cooperation of anaesthesiologists with oncologists and surgeons becomes imperative. It has been established that anaesthetic techniques and drugs could minimize the perioperative inflammation. However, further research of the perioperative \"onco-anaesthetic\" is needed.",
+  "canon:text": "Anaesthetic challenges in cancer patients: current therapies and pain management. THE OBJECTIVE: The aim is to present the major effects of cancer treatment (chemotherapy, radiotherapy, surgery) that the anaesthesiologist should consider preoperatively, and to review techniques of the analgesic management of the disease. MATERIALS AND METHODS: To summarize the major challenges that cancer patients present for the anaesthesiologists, a literature review was conducted. Articles presenting evidence or reviewing the possible effects of anaesthetics on cancer cells were also included. Online databases of Science Direct, PubMed, and ELSEVIER, as well as reference lists of included studies were searched. Articles published from 2005 to 2016 were selected. RESULTS: Anaesthesiologists should pay attention to patients receiving chemotherapy and its side effects on organ systems. Bleomycin causes pulmonary damage, anthracyclines are cardiotoxic, and platinum-based chemotherapy agents are nephrotoxic. A lot of chemotherapy agents lead to abnormal liver function, vomiting, diarrhoea, etc. Surgery itself is suspected to be associated with an increased risk of metastasis and recurrence of cancer. Regional anaesthesia and general anaesthesia with propofol should be used and volatile agents should be avoided to prevent cancer patients from perioperative immunosuppression that leads to increased risk of cancer recurrence. Pain management for palliative patients remains a major problem. CONCLUSIONS: To provide the best treatment for cancer patients, cooperation of anaesthesiologists with oncologists and surgeons becomes imperative. It has been established that anaesthetic techniques and drugs could minimize the perioperative inflammation. However, further research of the perioperative \"onco-anaesthetic\" is needed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28845130_causative-agent_0000764#mention-T1",
+      "canon:span": {
+        "start": 1042,
+        "end": 1065
+      },
+      "canon:surface": "abnormal liver function",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28845130_causative-agent_0000764#mention-T2",
+      "canon:span": {
+        "start": 953,
+        "end": 961
+      },
+      "canon:surface": "platinum",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010984",
+      "canon:sourceNotation": "D010984",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28845130_causative-agent_0000764#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28845130_causative-agent_0000764#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28845130_causative-agent_0000764#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "28845130"
+      }
+    }
+  ]
+}

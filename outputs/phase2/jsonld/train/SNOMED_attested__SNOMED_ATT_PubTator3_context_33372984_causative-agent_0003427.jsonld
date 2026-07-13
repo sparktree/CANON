@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33372984_causative-agent_0003427",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33372984_causative-agent_0003427",
+  "canon:title": "Transforming Growth Factor Beta-Induced Foxo3a Acts as a Profibrotic Mediator in Hepatic Stellate Cells.",
+  "canon:abstract": "Hepatic stellate cells (HSCs) are major contributors to hepatic fibrogenesis facilitating liver fibrosis. Forkhead box O 3a (FoxO3a) is a member of the forkhead transcription factor family, which mediates cell proliferation and differentiation. However, the expression and function of FoxO3a during HSC activation remain largely unknown. FoxO3a overexpression was related to fibrosis in patients, and its expression was colocalized with desmin or alpha-smooth muscle actin, representative HSC markers. We also observed upregulated FoxO3a levels in two animal hepatic fibrosis models, a carbon tetrachloride-injected model and a bile duct ligation model. In addition, transforming growth factor beta (TGF-beta) treatment in mouse primary HSCs or LX-2 cells elevated FoxO3a expression. When FoxO3a was upregulated by TGF-beta in LX-2 cells, both the cytosolic and nuclear levels of FoxO3a increased. In addition, we found that the induction of FoxO3a by TGF-beta was due to both transcriptional and proteasome-dependent mechanisms. Moreover, FoxO3a overexpression promoted TGF-beta-mediated Smad activation. Furthermore, FoxO3a increased fibrogenic gene expression, which was reversed by FoxO3a knockdown. TGF-beta-mediated FoxO3a overexpression in HSCs facilitated hepatic fibrogenesis, suggesting that FoxO3a may be a novel target for liver fibrosis prevention and treatment.",
+  "canon:text": "Transforming Growth Factor Beta-Induced Foxo3a Acts as a Profibrotic Mediator in Hepatic Stellate Cells. Hepatic stellate cells (HSCs) are major contributors to hepatic fibrogenesis facilitating liver fibrosis. Forkhead box O 3a (FoxO3a) is a member of the forkhead transcription factor family, which mediates cell proliferation and differentiation. However, the expression and function of FoxO3a during HSC activation remain largely unknown. FoxO3a overexpression was related to fibrosis in patients, and its expression was colocalized with desmin or alpha-smooth muscle actin, representative HSC markers. We also observed upregulated FoxO3a levels in two animal hepatic fibrosis models, a carbon tetrachloride-injected model and a bile duct ligation model. In addition, transforming growth factor beta (TGF-beta) treatment in mouse primary HSCs or LX-2 cells elevated FoxO3a expression. When FoxO3a was upregulated by TGF-beta in LX-2 cells, both the cytosolic and nuclear levels of FoxO3a increased. In addition, we found that the induction of FoxO3a by TGF-beta was due to both transcriptional and proteasome-dependent mechanisms. Moreover, FoxO3a overexpression promoted TGF-beta-mediated Smad activation. Furthermore, FoxO3a increased fibrogenic gene expression, which was reversed by FoxO3a knockdown. TGF-beta-mediated FoxO3a overexpression in HSCs facilitated hepatic fibrogenesis, suggesting that FoxO3a may be a novel target for liver fibrosis prevention and treatment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33372984_causative-agent_0003427#mention-T1",
+      "canon:span": {
+        "start": 161,
+        "end": 181
+      },
+      "canon:surface": "hepatic fibrogenesis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33372984_causative-agent_0003427#mention-T2",
+      "canon:span": {
+        "start": 691,
+        "end": 711
+      },
+      "canon:surface": "carbon tetrachloride",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002251",
+      "canon:sourceNotation": "D002251",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33372984_causative-agent_0003427#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33372984_causative-agent_0003427#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33372984_causative-agent_0003427#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33372984"
+      }
+    }
+  ]
+}

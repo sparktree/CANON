@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35456053_causative-agent_0003871",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35456053_causative-agent_0003871",
+  "canon:title": "Key Signaling in Alcohol-Associated Liver Disease: The Role of Bile Acids.",
+  "canon:abstract": "Alcohol-associated liver disease (ALD) is a spectrum of diseases, the onset and progression of which are due to chronic alcohol use. ALD ranges, by increasing severity, from hepatic steatosis to alcoholic hepatitis (AH) and alcohol-associated cirrhosis (AC), and in some cases, can lead to the development of hepatocellular carcinoma (HCC). ALD continues to be a significant health burden and is now the main cause of liver transplantations in the United States. ALD leads to biological, microbial, physical, metabolic, and inflammatory changes in patients that vary depending on disease severity. ALD deaths have been increasing in recent years and are projected to continue to increase. Current treatment centers focus on abstinence and symptom management, with little in the way of resolving disease progression. Due to the metabolic disruption and gut dysbiosis in ALD, bile acid (BA) signaling and metabolism are also notably affected and play a prominent role in disease progression in ALD, as well as other liver disease states, such as non-alcoholic fatty liver disease (NAFLD). In this review, we summarize the recent advances in the understanding of the mechanisms by which alcohol consumption induces hepatic injury and the role of BA-mediated signaling in the pathogenesis of ALD.",
+  "canon:text": "Key Signaling in Alcohol-Associated Liver Disease: The Role of Bile Acids. Alcohol-associated liver disease (ALD) is a spectrum of diseases, the onset and progression of which are due to chronic alcohol use. ALD ranges, by increasing severity, from hepatic steatosis to alcoholic hepatitis (AH) and alcohol-associated cirrhosis (AC), and in some cases, can lead to the development of hepatocellular carcinoma (HCC). ALD continues to be a significant health burden and is now the main cause of liver transplantations in the United States. ALD leads to biological, microbial, physical, metabolic, and inflammatory changes in patients that vary depending on disease severity. ALD deaths have been increasing in recent years and are projected to continue to increase. Current treatment centers focus on abstinence and symptom management, with little in the way of resolving disease progression. Due to the metabolic disruption and gut dysbiosis in ALD, bile acid (BA) signaling and metabolism are also notably affected and play a prominent role in disease progression in ALD, as well as other liver disease states, such as non-alcoholic fatty liver disease (NAFLD). In this review, we summarize the recent advances in the understanding of the mechanisms by which alcohol consumption induces hepatic injury and the role of BA-mediated signaling in the pathogenesis of ALD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35456053_causative-agent_0003871#mention-T1",
+      "canon:span": {
+        "start": 1287,
+        "end": 1301
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35456053_causative-agent_0003871#mention-T2",
+      "canon:span": {
+        "start": 63,
+        "end": 73
+      },
+      "canon:surface": "Bile Acids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001647",
+      "canon:sourceNotation": "D001647",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35456053_causative-agent_0003871#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35456053_causative-agent_0003871#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35456053_causative-agent_0003871#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35456053"
+      }
+    }
+  ]
+}

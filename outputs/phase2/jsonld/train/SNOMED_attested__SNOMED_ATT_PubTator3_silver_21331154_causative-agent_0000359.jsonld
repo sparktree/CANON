@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21331154_causative-agent_0000359",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21331154_causative-agent_0000359",
+  "canon:title": "The endotoxin-induced neuroinflammation model of Parkinson's disease.",
+  "canon:abstract": "Parkinson's disease (PD) is a common neurodegenerative disorder characterized by the progressive loss of dopaminergic (DA) neurons in the substantia nigra. Although the exact cause of the dopaminergic neurodegeneration remains elusive, recent postmortem and experimental studies have revealed an essential role for neuroinflammation that is initiated and driven by activated microglial and infiltrated peripheral immune cells and their neurotoxic products (such as proinflammatory cytokines, reactive oxygen species, and nitric oxide) in the pathogenesis of PD. A bacterial endotoxin-based experimental model of PD has been established, representing a purely inflammation-driven animal model for the induction of nigrostriatal dopaminergic neurodegeneration. This model, by itself or together with genetic and toxin-based animal models, provides an important tool to delineate the precise mechanisms of neuroinflammation-mediated dopaminergic neuron loss. Here, we review the characteristics of this model and the contribution of neuroinflammatory processes, induced by the in vivo administration of bacterial endotoxin, to neurodegeneration. Furthermore, we summarize the recent experimental therapeutic strategies targeting endotoxin-induced neuroinflammation to elicit neuroprotection in the nigrostriatal dopaminergic system. The potential of the endotoxin-based PD model in the development of an early-stage specific diagnostic biomarker is also emphasized.",
+  "canon:text": "The endotoxin-induced neuroinflammation model of Parkinson's disease. Parkinson's disease (PD) is a common neurodegenerative disorder characterized by the progressive loss of dopaminergic (DA) neurons in the substantia nigra. Although the exact cause of the dopaminergic neurodegeneration remains elusive, recent postmortem and experimental studies have revealed an essential role for neuroinflammation that is initiated and driven by activated microglial and infiltrated peripheral immune cells and their neurotoxic products (such as proinflammatory cytokines, reactive oxygen species, and nitric oxide) in the pathogenesis of PD. A bacterial endotoxin-based experimental model of PD has been established, representing a purely inflammation-driven animal model for the induction of nigrostriatal dopaminergic neurodegeneration. This model, by itself or together with genetic and toxin-based animal models, provides an important tool to delineate the precise mechanisms of neuroinflammation-mediated dopaminergic neuron loss. Here, we review the characteristics of this model and the contribution of neuroinflammatory processes, induced by the in vivo administration of bacterial endotoxin, to neurodegeneration. Furthermore, we summarize the recent experimental therapeutic strategies targeting endotoxin-induced neuroinflammation to elicit neuroprotection in the nigrostriatal dopaminergic system. The potential of the endotoxin-based PD model in the development of an early-stage specific diagnostic biomarker is also emphasized.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21331154_causative-agent_0000359#mention-T1",
+      "canon:span": {
+        "start": 506,
+        "end": 516
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21331154_causative-agent_0000359#mention-T2",
+      "canon:span": {
+        "start": 591,
+        "end": 603
+      },
+      "canon:surface": "nitric oxide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009569",
+      "canon:sourceNotation": "D009569",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21331154_causative-agent_0000359#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21331154_causative-agent_0000359#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21331154_causative-agent_0000359#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21331154"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32347537_causative-agent_0001122",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32347537_causative-agent_0001122",
+  "canon:title": "Chemotherapy-induced peripheral neuropathy-part 2: focus on the prevention of oxaliplatin-induced neurotoxicity.",
+  "canon:abstract": "BACKGROUND: Chemotherapy-induced peripheral neuropathy (CIPN) is regarded as one of the most common dose-limiting adverse effects of several chemotherapeutic agents, such as platinum derivatives (oxaliplatin and cisplatin), taxanes, vinca alkaloids and bortezomib. CIPN affects more than 60% of patients receiving anticancer therapy and although it is a nonfatal condition, it significantly worsens patients' quality of life. The number of analgesic drugs used to relieve pain symptoms in CIPN is very limited and their efficacy in CIPN is significantly lower than that observed in other neuropathic pain types. Importantly, there are currently no recommended options for effective prevention of CIPN, and strong evidence for the utility and clinical efficacy of some previously tested preventive therapies is still limited. METHODS: The present article is the second one in the two-part series of review articles focused on CIPN. It summarizes the most recent advances in the field of studies on CIPN caused by oxaliplatin, the third-generation platinum-based antitumor drug used to treat colorectal cancer. Pharmacological properties of oxaliplatin, genetic, molecular and clinical features of oxaliplatin-induced neuropathy are discussed. RESULTS: Available therapies, as well as results from clinical trials assessing drug candidates for the prevention of oxaliplatin-induced neuropathy are summarized. CONCLUSION: Emerging novel chemical structures-potential future preventative pharmacotherapies for CIPN caused by oxaliplatin are reported.",
+  "canon:text": "Chemotherapy-induced peripheral neuropathy-part 2: focus on the prevention of oxaliplatin-induced neurotoxicity. BACKGROUND: Chemotherapy-induced peripheral neuropathy (CIPN) is regarded as one of the most common dose-limiting adverse effects of several chemotherapeutic agents, such as platinum derivatives (oxaliplatin and cisplatin), taxanes, vinca alkaloids and bortezomib. CIPN affects more than 60% of patients receiving anticancer therapy and although it is a nonfatal condition, it significantly worsens patients' quality of life. The number of analgesic drugs used to relieve pain symptoms in CIPN is very limited and their efficacy in CIPN is significantly lower than that observed in other neuropathic pain types. Importantly, there are currently no recommended options for effective prevention of CIPN, and strong evidence for the utility and clinical efficacy of some previously tested preventive therapies is still limited. METHODS: The present article is the second one in the two-part series of review articles focused on CIPN. It summarizes the most recent advances in the field of studies on CIPN caused by oxaliplatin, the third-generation platinum-based antitumor drug used to treat colorectal cancer. Pharmacological properties of oxaliplatin, genetic, molecular and clinical features of oxaliplatin-induced neuropathy are discussed. RESULTS: Available therapies, as well as results from clinical trials assessing drug candidates for the prevention of oxaliplatin-induced neuropathy are summarized. CONCLUSION: Emerging novel chemical structures-potential future preventative pharmacotherapies for CIPN caused by oxaliplatin are reported.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32347537_causative-agent_0001122#mention-T1",
+      "canon:span": {
+        "start": 98,
+        "end": 111
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32347537_causative-agent_0001122#mention-T2",
+      "canon:span": {
+        "start": 346,
+        "end": 361
+      },
+      "canon:surface": "vinca alkaloids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014748",
+      "canon:sourceNotation": "D014748",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32347537_causative-agent_0001122#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32347537_causative-agent_0001122#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32347537_causative-agent_0001122#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32347537"
+      }
+    }
+  ]
+}

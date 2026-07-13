@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36299900_causative-agent_0001793",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36299900_causative-agent_0001793",
+  "canon:title": "The neuroprotective effects of fisetin, a natural flavonoid in neurodegenerative diseases: Focus on the role of oxidative stress.",
+  "canon:abstract": "Oxidative stress (OS) disrupts the chemical integrity of macromolecules and increases the risk of neurodegenerative diseases. Fisetin is a flavonoid that exhibits potent antioxidant properties and protects the cells against OS. We have viewed the NCBI database, PubMed, Science Direct (Elsevier), Springer-Nature, ResearchGate, and Google Scholar databases to search and collect relevant articles during the preparation of this review. The search keywords are OS, neurodegenerative diseases, fisetin, etc. High level of ROS in the brain tissue decreases ATP levels, and mitochondrial membrane potential and induces lipid peroxidation, chronic inflammation, DNA damage, and apoptosis. The subsequent results are various neuronal diseases. Fisetin is a polyphenolic compound, commonly present in dietary ingredients. The antioxidant properties of this flavonoid diminish oxidative stress, ROS production, neurotoxicity, neuro-inflammation, and neurological disorders. Moreover, it maintains the redox profiles, and mitochondrial functions and inhibits NO production. At the molecular level, fisetin regulates the activity of PI3K/Akt, Nrf2, NF-kappaB, protein kinase C, and MAPK pathways to prevent OS, inflammatory response, and cytotoxicity. The antioxidant properties of fisetin protect the neural cells from inflammation and apoptotic degeneration. Thus, it can be used in the prevention of neurodegenerative disorders.",
+  "canon:text": "The neuroprotective effects of fisetin, a natural flavonoid in neurodegenerative diseases: Focus on the role of oxidative stress. Oxidative stress (OS) disrupts the chemical integrity of macromolecules and increases the risk of neurodegenerative diseases. Fisetin is a flavonoid that exhibits potent antioxidant properties and protects the cells against OS. We have viewed the NCBI database, PubMed, Science Direct (Elsevier), Springer-Nature, ResearchGate, and Google Scholar databases to search and collect relevant articles during the preparation of this review. The search keywords are OS, neurodegenerative diseases, fisetin, etc. High level of ROS in the brain tissue decreases ATP levels, and mitochondrial membrane potential and induces lipid peroxidation, chronic inflammation, DNA damage, and apoptosis. The subsequent results are various neuronal diseases. Fisetin is a polyphenolic compound, commonly present in dietary ingredients. The antioxidant properties of this flavonoid diminish oxidative stress, ROS production, neurotoxicity, neuro-inflammation, and neurological disorders. Moreover, it maintains the redox profiles, and mitochondrial functions and inhibits NO production. At the molecular level, fisetin regulates the activity of PI3K/Akt, Nrf2, NF-kappaB, protein kinase C, and MAPK pathways to prevent OS, inflammatory response, and cytotoxicity. The antioxidant properties of fisetin protect the neural cells from inflammation and apoptotic degeneration. Thus, it can be used in the prevention of neurodegenerative disorders.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36299900_causative-agent_0001793#mention-T1",
+      "canon:span": {
+        "start": 1033,
+        "end": 1046
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36299900_causative-agent_0001793#mention-T2",
+      "canon:span": {
+        "start": 50,
+        "end": 59
+      },
+      "canon:surface": "flavonoid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005419",
+      "canon:sourceNotation": "D005419",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36299900_causative-agent_0001793#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36299900_causative-agent_0001793#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36299900_causative-agent_0001793#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36299900"
+      }
+    }
+  ]
+}

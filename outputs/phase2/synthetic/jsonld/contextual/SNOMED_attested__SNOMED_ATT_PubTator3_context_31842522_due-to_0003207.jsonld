@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31842522_due-to_0003207",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31842522_due-to_0003207",
+  "canon:title": "Exercise as A Potential Therapeutic Target for Diabetic Cardiomyopathy: Insight into the Underlying Mechanisms.",
+  "canon:abstract": "Diabetes mellitus is associated with cardiovascular, ophthalmic, and renal comorbidities. Among these, diabetic cardiomyopathy (DCM) causes the most severe symptoms and is considered to be a major health problem worldwide. Exercise is widely known as an effective strategy for the prevention and treatment of many chronic diseases. Importantly, the onset of complications arising due to diabetes can be delayed or even prevented by exercise. Regular exercise is reported to have positive effects on diabetes mellitus and the development of DCM. The protective effects of exercise include prevention of cardiac apoptosis, fibrosis, oxidative stress, and microvascular diseases, as well as improvement in cardiac mitochondrial function and calcium regulation. This review summarizes the recent scientific findings to describe the potential mechanisms by which exercise may prevent DCM and heart failure.",
+  "canon:text": "Exercise as A Potential Therapeutic Target for Diabetic Cardiomyopathy: Insight into the Underlying Mechanisms. Diabetes mellitus is associated with cardiovascular, ophthalmic, and renal comorbidities. Among these, diabetic cardiomyopathy (DCM) causes the most severe symptoms and is considered to be a major health problem worldwide. Exercise is widely known as an effective strategy for the prevention and treatment of many chronic diseases. Importantly, the onset of complications arising due to diabetes can be delayed or even prevented by exercise. Regular exercise is reported to have positive effects on diabetes mellitus and the development of DCM. The protective effects of exercise include prevention of cardiac apoptosis, fibrosis, oxidative stress, and microvascular diseases, as well as improvement in cardiac mitochondrial function and calcium regulation. This review summarizes the recent scientific findings to describe the potential mechanisms by which exercise may prevent DCM and heart failure.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31842522_due-to_0003207#mention-T1",
+      "canon:span": {
+        "start": 47,
+        "end": 70
+      },
+      "canon:surface": "Diabetic Cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31842522_due-to_0003207#mention-T2",
+      "canon:span": {
+        "start": 714,
+        "end": 731
+      },
+      "canon:surface": "cardiac apoptosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006331",
+      "canon:sourceNotation": "D006331",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31842522_due-to_0003207#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31842522_due-to_0003207#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31842522_due-to_0003207#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31842522"
+      }
+    }
+  ]
+}

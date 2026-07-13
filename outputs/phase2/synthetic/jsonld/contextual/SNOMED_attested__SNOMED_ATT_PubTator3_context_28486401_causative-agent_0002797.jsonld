@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28486401_causative-agent_0002797",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28486401_causative-agent_0002797",
+  "canon:title": "Drug-Induced Liver Injury: Cascade of Events Leading to Cell Death, Apoptosis or Necrosis.",
+  "canon:abstract": "Drug-induced liver injury (DILI) can broadly be divided into predictable and dose dependent such as acetaminophen (APAP) and unpredictable or idiosyncratic DILI (IDILI). Liver injury from drug hepatotoxicity (whether idiosyncratic or predictable) results in hepatocyte cell death and inflammation. The cascade of events leading to DILI and the cell death subroutine (apoptosis or necrosis) of the cell depend largely on the culprit drug. Direct toxins to hepatocytes likely induce oxidative organelle stress (such as endoplasmic reticulum (ER) and mitochondrial stress) leading to necrosis or apoptosis, while cell death in idiosyncratic DILI (IDILI) is usually the result of engagement of the innate and adaptive immune system (likely apoptotic), involving death receptors (DR). Here, we review the hepatocyte cell death pathways both in direct hepatotoxicity such as in APAP DILI as well as in IDILI. We examine the known signaling pathways in APAP toxicity, a model of necrotic liver cell death. We also explore what is known about the genetic basis of IDILI and the molecular pathways leading to immune activation and how these events can trigger hepatotoxicity and cell death.",
+  "canon:text": "Drug-Induced Liver Injury: Cascade of Events Leading to Cell Death, Apoptosis or Necrosis. Drug-induced liver injury (DILI) can broadly be divided into predictable and dose dependent such as acetaminophen (APAP) and unpredictable or idiosyncratic DILI (IDILI). Liver injury from drug hepatotoxicity (whether idiosyncratic or predictable) results in hepatocyte cell death and inflammation. The cascade of events leading to DILI and the cell death subroutine (apoptosis or necrosis) of the cell depend largely on the culprit drug. Direct toxins to hepatocytes likely induce oxidative organelle stress (such as endoplasmic reticulum (ER) and mitochondrial stress) leading to necrosis or apoptosis, while cell death in idiosyncratic DILI (IDILI) is usually the result of engagement of the innate and adaptive immune system (likely apoptotic), involving death receptors (DR). Here, we review the hepatocyte cell death pathways both in direct hepatotoxicity such as in APAP DILI as well as in IDILI. We examine the known signaling pathways in APAP toxicity, a model of necrotic liver cell death. We also explore what is known about the genetic basis of IDILI and the molecular pathways leading to immune activation and how these events can trigger hepatotoxicity and cell death.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28486401_causative-agent_0002797#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 25
+      },
+      "canon:surface": "Drug-Induced Liver Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28486401_causative-agent_0002797#mention-T2",
+      "canon:span": {
+        "start": 191,
+        "end": 204
+      },
+      "canon:surface": "acetaminophen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28486401_causative-agent_0002797#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28486401_causative-agent_0002797#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28486401_causative-agent_0002797#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28486401"
+      }
+    }
+  ]
+}

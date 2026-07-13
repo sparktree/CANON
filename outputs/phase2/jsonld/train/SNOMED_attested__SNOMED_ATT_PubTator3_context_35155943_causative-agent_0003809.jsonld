@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35155943_causative-agent_0003809",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35155943_causative-agent_0003809",
+  "canon:title": "Myricetin (3,3',4',5,5',7-Hexahydroxyflavone) Prevents 5-Fluorouracil-Induced Cardiotoxicity.",
+  "canon:abstract": "5-Fluorouracil (5-FU) is a strong anti-cancer drug used to manage numerous cancers. Cardiotoxicity, renal toxicity, and liver toxicity are some of the adverse effects which confine its clinical use to some extent. 5-FU-induced organ injuries are associated with redox imbalance, inflammation, and damage to heart functioning, particularly in the present study. Myricetin is an abundant flavonoid, commonly extracted from berries and herbs having anti-oxidative and anti-cancer activities. We planned the current work to explore the beneficial effects of myricetin against 5-FU-induced cardiac injury in Wistar rats through a biochemical and histological approach. Prophylactic myricetin treatment at two doses (25 and 50 mg/kg) was given to rats orally for 21 days against cardiac injury induced by a single injection of 5-FU (150 mg/kg b.wt.) given on the 20th day intraperitoneally. The 5-FU injection induced oxidative stress, inflammation, and extensive cardiac damage. Nevertheless, myricetin alleviated markers of inflammation, apoptosis, cardiac toxicity, oxidative stress, and upregulated anti-oxidative machinery. The histology of heart further supports our biochemical findings mitigated by the prophylactic treatment of myricetin. Henceforth, myricetin mitigates 5-FU-induced cardiac damage by modulating oxidative stress, inflammation, and cardiac-specific markers, as found in the present study.",
+  "canon:text": "Myricetin (3,3',4',5,5',7-Hexahydroxyflavone) Prevents 5-Fluorouracil-Induced Cardiotoxicity. 5-Fluorouracil (5-FU) is a strong anti-cancer drug used to manage numerous cancers. Cardiotoxicity, renal toxicity, and liver toxicity are some of the adverse effects which confine its clinical use to some extent. 5-FU-induced organ injuries are associated with redox imbalance, inflammation, and damage to heart functioning, particularly in the present study. Myricetin is an abundant flavonoid, commonly extracted from berries and herbs having anti-oxidative and anti-cancer activities. We planned the current work to explore the beneficial effects of myricetin against 5-FU-induced cardiac injury in Wistar rats through a biochemical and histological approach. Prophylactic myricetin treatment at two doses (25 and 50 mg/kg) was given to rats orally for 21 days against cardiac injury induced by a single injection of 5-FU (150 mg/kg b.wt.) given on the 20th day intraperitoneally. The 5-FU injection induced oxidative stress, inflammation, and extensive cardiac damage. Nevertheless, myricetin alleviated markers of inflammation, apoptosis, cardiac toxicity, oxidative stress, and upregulated anti-oxidative machinery. The histology of heart further supports our biochemical findings mitigated by the prophylactic treatment of myricetin. Henceforth, myricetin mitigates 5-FU-induced cardiac damage by modulating oxidative stress, inflammation, and cardiac-specific markers, as found in the present study.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35155943_causative-agent_0003809#mention-T1",
+      "canon:span": {
+        "start": 214,
+        "end": 228
+      },
+      "canon:surface": "liver toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35155943_causative-agent_0003809#mention-T2",
+      "canon:span": {
+        "start": 480,
+        "end": 489
+      },
+      "canon:surface": "flavonoid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005419",
+      "canon:sourceNotation": "D005419",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35155943_causative-agent_0003809#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35155943_causative-agent_0003809#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35155943_causative-agent_0003809#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35155943"
+      }
+    }
+  ]
+}

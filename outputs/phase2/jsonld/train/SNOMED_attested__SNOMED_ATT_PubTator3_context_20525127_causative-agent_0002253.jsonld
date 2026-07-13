@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20525127_causative-agent_0002253",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20525127_causative-agent_0002253",
+  "canon:title": "Patch testing in non-immediate drug eruptions.",
+  "canon:abstract": ": The present review addresses the literature regarding the sensitivity and specificity of the various diagnostic methods for evaluating non-immediate (ie, occurring more than 1 hour after drug administration) hypersensitivity reactions associated with beta-lactams and other antibiotics, anticonvulsants, heparins, iodinated contrast media, etc. Such reactions include several clinical entities, which range from mild reactions, such as maculopapular rash and delayed-appearing urticaria, to severe ones, such as acute generalized exanthematous pustulosis (AGEP), Stevens-Johnson syndrome, and toxic epidermal necrolysis (TEN). Clinical and laboratory studies indicate that a cell-mediated pathogenic mechanism is often involved in maculopapular rashes. However, this mechanism has also been demonstrated in other non-immediate reactions, such as urticarial and/or angioedematous manifestations, TEN, bullous exanthems, and AGEP. Patch tests, together with delayed-reading intradermal tests, lymphocyte transformation tests, and challenges, are useful tools for evaluating non-immediate drug eruptions. Patch tests can be performed with any form of commercial drugs and are safer than intradermal tests. However, patch tests are less sensitive than intradermal tests, and their sensitivity may vary, depending on the vehicle used.",
+  "canon:text": "Patch testing in non-immediate drug eruptions. : The present review addresses the literature regarding the sensitivity and specificity of the various diagnostic methods for evaluating non-immediate (ie, occurring more than 1 hour after drug administration) hypersensitivity reactions associated with beta-lactams and other antibiotics, anticonvulsants, heparins, iodinated contrast media, etc. Such reactions include several clinical entities, which range from mild reactions, such as maculopapular rash and delayed-appearing urticaria, to severe ones, such as acute generalized exanthematous pustulosis (AGEP), Stevens-Johnson syndrome, and toxic epidermal necrolysis (TEN). Clinical and laboratory studies indicate that a cell-mediated pathogenic mechanism is often involved in maculopapular rashes. However, this mechanism has also been demonstrated in other non-immediate reactions, such as urticarial and/or angioedematous manifestations, TEN, bullous exanthems, and AGEP. Patch tests, together with delayed-reading intradermal tests, lymphocyte transformation tests, and challenges, are useful tools for evaluating non-immediate drug eruptions. Patch tests can be performed with any form of commercial drugs and are safer than intradermal tests. However, patch tests are less sensitive than intradermal tests, and their sensitivity may vary, depending on the vehicle used.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20525127_causative-agent_0002253#mention-T1",
+      "canon:span": {
+        "start": 31,
+        "end": 45
+      },
+      "canon:surface": "drug eruptions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003875",
+      "canon:sourceNotation": "D003875",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20525127_causative-agent_0002253#mention-T2",
+      "canon:span": {
+        "start": 353,
+        "end": 361
+      },
+      "canon:surface": "heparins",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006493",
+      "canon:sourceNotation": "D006493",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20525127_causative-agent_0002253#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20525127_causative-agent_0002253#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20525127_causative-agent_0002253#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20525127"
+      }
+    }
+  ]
+}

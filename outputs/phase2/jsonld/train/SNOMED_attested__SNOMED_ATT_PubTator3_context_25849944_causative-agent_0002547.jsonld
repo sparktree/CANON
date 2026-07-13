@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25849944_causative-agent_0002547",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25849944_causative-agent_0002547",
+  "canon:title": "Chronic iron deficiency as an emerging risk factor for osteoporosis: a hypothesis.",
+  "canon:abstract": "Iron is essential in oxygen transport and participates in many enzymatic systems in the body, with important roles in collagen synthesis and vitamin D metabolism. The relationship between iron and bone health comes from clinical observations in iron overload patients who suffered bone loss. The opposite scenario--whether iron deficiency, with or without anemia, affects bone metabolism--has not been fully addressed. This is of great interest, as this nutrient deficiency is a worldwide public health problem and at the same time osteoporosis and bone alterations are highly prevalent. This review presents current knowledge on nutritional iron deficiency and bone remodeling, the biomarkers to evaluate iron status and bone formation and resorption, and the link between iron and bone metabolism. Finally, it is hypothesized that chronic iron deficiency induces bone resorption and risk of osteoporosis, thus complete recovery from anemia and its prevention should be promoted in order to improve quality of life including bone health. Several mechanisms are suggested; hence, further investigation on the possible impact of chronic iron deficiency on the development of osteoporosis is needed.",
+  "canon:text": "Chronic iron deficiency as an emerging risk factor for osteoporosis: a hypothesis. Iron is essential in oxygen transport and participates in many enzymatic systems in the body, with important roles in collagen synthesis and vitamin D metabolism. The relationship between iron and bone health comes from clinical observations in iron overload patients who suffered bone loss. The opposite scenario--whether iron deficiency, with or without anemia, affects bone metabolism--has not been fully addressed. This is of great interest, as this nutrient deficiency is a worldwide public health problem and at the same time osteoporosis and bone alterations are highly prevalent. This review presents current knowledge on nutritional iron deficiency and bone remodeling, the biomarkers to evaluate iron status and bone formation and resorption, and the link between iron and bone metabolism. Finally, it is hypothesized that chronic iron deficiency induces bone resorption and risk of osteoporosis, thus complete recovery from anemia and its prevention should be promoted in order to improve quality of life including bone health. Several mechanisms are suggested; hence, further investigation on the possible impact of chronic iron deficiency on the development of osteoporosis is needed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25849944_causative-agent_0002547#mention-T1",
+      "canon:span": {
+        "start": 328,
+        "end": 341
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25849944_causative-agent_0002547#mention-T2",
+      "canon:span": {
+        "start": 83,
+        "end": 87
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25849944_causative-agent_0002547#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25849944_causative-agent_0002547#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25849944_causative-agent_0002547#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25849944"
+      }
+    }
+  ]
+}

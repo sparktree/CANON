@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887284_due-to_0002008",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37887284_due-to_0002008",
+  "canon:title": "Voclosporin: Unique Chemistry, Pharmacology and Toxicity Profile, and Possible Options for Implementation into the Management of Lupus Nephritis.",
+  "canon:abstract": "Calcineurin inhibitors (CNI) can suppress allo- and autoimmunity by suppressing T cell function but also have anti-proteinuric effects by stabilizing the cellular components of the kidney's filtration barrier. Therefore, CNI are used in autoimmune kidney diseases with proteinuria. However, the traditional CNI, cyclosporine A and tacrolimus, have a narrow therapeutic range, need monitoring of drug levels, and their use is associated with nephrotoxicity and metabolic alterations. Voclosporin (VOC), a novel CNI, no longer requires drug level monitoring and seems to lack these adverse effects, although hypertension and drug-drug interactions still occur. VOC demonstrated efficacy superior to standard-of-care in controlling active lupus nephritis in the phase 2 AURA-LV and the phase 3 AURORA-1 trials and was approved for the treatment of active lupus nephritis. However, how to implement VOC into the current and changing treatment landscape of lupus nephritis is still debated. Here, we review the unique chemistry, pharmacology, and toxicity profile of VOC, summarize the efficacy and safety data from the AURA-LV and AURORA-1 trials, and discuss the following four possible options to implement VOC into the management of lupus nephritis, namely regarding B cell-targeting therapy with belimumab (BEL). These include: 1. patient stratification to either VOC or BEL, 2. VOC/BEL combination therapy, 3. VOC-BEL sequential therapy, or 4. alternative options for the rapid antiproteinuric effect of VOC.",
+  "canon:text": "Voclosporin: Unique Chemistry, Pharmacology and Toxicity Profile, and Possible Options for Implementation into the Management of Lupus Nephritis. Calcineurin inhibitors (CNI) can suppress allo- and autoimmunity by suppressing T cell function but also have anti-proteinuric effects by stabilizing the cellular components of the kidney's filtration barrier. Therefore, CNI are used in autoimmune kidney diseases with proteinuria. However, the traditional CNI, cyclosporine A and tacrolimus, have a narrow therapeutic range, need monitoring of drug levels, and their use is associated with nephrotoxicity and metabolic alterations. Voclosporin (VOC), a novel CNI, no longer requires drug level monitoring and seems to lack these adverse effects, although hypertension and drug-drug interactions still occur. VOC demonstrated efficacy superior to standard-of-care in controlling active lupus nephritis in the phase 2 AURA-LV and the phase 3 AURORA-1 trials and was approved for the treatment of active lupus nephritis. However, how to implement VOC into the current and changing treatment landscape of lupus nephritis is still debated. Here, we review the unique chemistry, pharmacology, and toxicity profile of VOC, summarize the efficacy and safety data from the AURA-LV and AURORA-1 trials, and discuss the following four possible options to implement VOC into the management of lupus nephritis, namely regarding B cell-targeting therapy with belimumab (BEL). These include: 1. patient stratification to either VOC or BEL, 2. VOC/BEL combination therapy, 3. VOC-BEL sequential therapy, or 4. alternative options for the rapid antiproteinuric effect of VOC.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887284_due-to_0002008#mention-T1",
+      "canon:span": {
+        "start": 129,
+        "end": 144
+      },
+      "canon:surface": "Lupus Nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887284_due-to_0002008#mention-T2",
+      "canon:span": {
+        "start": 752,
+        "end": 764
+      },
+      "canon:surface": "hypertension",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006973",
+      "canon:sourceNotation": "D006973",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887284_due-to_0002008#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887284_due-to_0002008#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887284_due-to_0002008#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37887284"
+      }
+    }
+  ]
+}

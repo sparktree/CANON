@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34624383_causative-agent_0003696",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34624383_causative-agent_0003696",
+  "canon:title": "Neuroprotective effects of dopamine D2 receptor agonist on neuroinflammatory injury in olfactory bulb neurons in vitro and in vivo in a mouse model of allergic rhinitis.",
+  "canon:abstract": "Available evidence indicates that dopamine D2 receptor modulates the neurotoxic effects induced by glutamate. However, neurotoxicity mediated by AMPA-subtype glutamate receptor has rarely been studied in the olfactory bulb. This study mainly explores the neuroprotective effects of dopamine D2 receptor agonist on AMPA receptor-mediated neurotoxicity in the olfactory bulb in a mouse model of allergic rhinitis (AR) with olfactory dysfunction (OD). In our study, we found that AR with OD was closely associated with increased surface expression of the AMPA receptor GluR1, reduced surface expression of GluR2, and apoptosis damage in the olfactory bulb in vivo. Quinpirole (a dopamine D2 receptor agonist) improved olfactory function in mice, ameliorated apoptosis injury in the olfactory bulb but not in the olfactory mucosa, and inhibited the internalization of GluR2-containing AMPA receptor in vitro and in vivo. In addition, phosphorylation plays a crucial role in the regulation of AMPA receptor trafficking. Our results showed that quinpirole reduced the phosphorylation of GluR1 S845 and GluR2 S880 in olfactory bulb neurons in vitro, but it had no obvious effect on GluR1 S831. Therefore, dopamine D2 receptor agonist may inhibit the phosphorylation of GluR1 S845 and GluR2 S880, thereby reducing AMPA receptor-mediated neurotoxicity and alleviating neurotoxic injury to the olfactory bulb caused by AR.",
+  "canon:text": "Neuroprotective effects of dopamine D2 receptor agonist on neuroinflammatory injury in olfactory bulb neurons in vitro and in vivo in a mouse model of allergic rhinitis. Available evidence indicates that dopamine D2 receptor modulates the neurotoxic effects induced by glutamate. However, neurotoxicity mediated by AMPA-subtype glutamate receptor has rarely been studied in the olfactory bulb. This study mainly explores the neuroprotective effects of dopamine D2 receptor agonist on AMPA receptor-mediated neurotoxicity in the olfactory bulb in a mouse model of allergic rhinitis (AR) with olfactory dysfunction (OD). In our study, we found that AR with OD was closely associated with increased surface expression of the AMPA receptor GluR1, reduced surface expression of GluR2, and apoptosis damage in the olfactory bulb in vivo. Quinpirole (a dopamine D2 receptor agonist) improved olfactory function in mice, ameliorated apoptosis injury in the olfactory bulb but not in the olfactory mucosa, and inhibited the internalization of GluR2-containing AMPA receptor in vitro and in vivo. In addition, phosphorylation plays a crucial role in the regulation of AMPA receptor trafficking. Our results showed that quinpirole reduced the phosphorylation of GluR1 S845 and GluR2 S880 in olfactory bulb neurons in vitro, but it had no obvious effect on GluR1 S831. Therefore, dopamine D2 receptor agonist may inhibit the phosphorylation of GluR1 S845 and GluR2 S880, thereby reducing AMPA receptor-mediated neurotoxicity and alleviating neurotoxic injury to the olfactory bulb caused by AR.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34624383_causative-agent_0003696#mention-T1",
+      "canon:span": {
+        "start": 239,
+        "end": 249
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34624383_causative-agent_0003696#mention-T2",
+      "canon:span": {
+        "start": 269,
+        "end": 278
+      },
+      "canon:surface": "glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018698",
+      "canon:sourceNotation": "D018698",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34624383_causative-agent_0003696#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34624383_causative-agent_0003696#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34624383_causative-agent_0003696#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34624383"
+      }
+    }
+  ]
+}

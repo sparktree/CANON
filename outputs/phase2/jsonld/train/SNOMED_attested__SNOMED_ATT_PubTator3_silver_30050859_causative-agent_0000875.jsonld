@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30050859_causative-agent_0000875",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30050859_causative-agent_0000875",
+  "canon:title": "Treatment of severe lipophilic intoxications with intravenous lipid emulsion: a case series (2011-2014).",
+  "canon:abstract": "The objective of this retrospective study was to describe the responses to treatment with intravenous lipid emulsion (ILE) and the outcomes for a variety of severe intoxications. This case series includes 10 client-owned animals, 9 dogs and 1 cat, that underwent treatment with ILE for a variety of severe intoxications over a 4-year period. History, physical examination findings, clinical signs, clinicopathological test results, treatment, response to treatment, and outcome were recorded. Eight of the 10 patients survived to discharge. The toxicities included in this case series were baclofen, ivermectin and spinosad plus milbemycin oxime, baclofen and tadalafil, carbamate, methamphetamine, dextroamphetamine sulfate, amlodipine, bromethalin, and organophosphate. The two patients who died were intoxicated with bromethalin and an organophosphate. Six of the 10 patients developed lipemia secondary to ILE administration, and there were no other known adverse effects. Overall, ILE was a safe therapeutic option. This case series provides clinical evidence of successful treatment with ILE as an antidote for previously unpublished toxicities (amlodipine, carbamate, methamphetamine, and dextroamphetamine sulfate), additional evidence of success in treating baclofen and ivermectin toxicosis, as well as unsuccessful treatment of bromethalin and organophosphate toxicities.",
+  "canon:text": "Treatment of severe lipophilic intoxications with intravenous lipid emulsion: a case series (2011-2014). The objective of this retrospective study was to describe the responses to treatment with intravenous lipid emulsion (ILE) and the outcomes for a variety of severe intoxications. This case series includes 10 client-owned animals, 9 dogs and 1 cat, that underwent treatment with ILE for a variety of severe intoxications over a 4-year period. History, physical examination findings, clinical signs, clinicopathological test results, treatment, response to treatment, and outcome were recorded. Eight of the 10 patients survived to discharge. The toxicities included in this case series were baclofen, ivermectin and spinosad plus milbemycin oxime, baclofen and tadalafil, carbamate, methamphetamine, dextroamphetamine sulfate, amlodipine, bromethalin, and organophosphate. The two patients who died were intoxicated with bromethalin and an organophosphate. Six of the 10 patients developed lipemia secondary to ILE administration, and there were no other known adverse effects. Overall, ILE was a safe therapeutic option. This case series provides clinical evidence of successful treatment with ILE as an antidote for previously unpublished toxicities (amlodipine, carbamate, methamphetamine, and dextroamphetamine sulfate), additional evidence of success in treating baclofen and ivermectin toxicosis, as well as unsuccessful treatment of bromethalin and organophosphate toxicities.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30050859_causative-agent_0000875#mention-T1",
+      "canon:span": {
+        "start": 908,
+        "end": 919
+      },
+      "canon:surface": "intoxicated",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000435",
+      "canon:sourceNotation": "D000435",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30050859_causative-agent_0000875#mention-T2",
+      "canon:span": {
+        "start": 804,
+        "end": 829
+      },
+      "canon:surface": "dextroamphetamine sulfate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003913",
+      "canon:sourceNotation": "D003913",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30050859_causative-agent_0000875#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30050859_causative-agent_0000875#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30050859_causative-agent_0000875#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30050859"
+      }
+    }
+  ]
+}

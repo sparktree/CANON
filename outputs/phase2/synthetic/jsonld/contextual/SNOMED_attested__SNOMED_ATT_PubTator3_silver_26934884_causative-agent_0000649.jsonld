@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26934884_causative-agent_0000649",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26934884_causative-agent_0000649",
+  "canon:title": "Diagnosis and Management of Autoimmune Hepatitis: Current Status and Future Directions.",
+  "canon:abstract": "Autoimmune hepatitis is characterized by autoantibodies, hypergammaglobulinemia, and interface hepatitis on histological examination. The features lack diagnostic specificity, and other diseases that may resemble autoimmune hepatitis must be excluded. The clinical presentation may be acute, acute severe (fulminant), or asymptomatic; conventional autoantibodies may be absent; centrilobular necrosis and bile duct changes may be present; and the disease may occur after liver transplantation or with features that suggest overlapping disorders. The diagnostic criteria have been codified, and diagnostic scoring systems can support clinical judgment. Nonstandard autoantibodies, including antibodies to actin, alpha-actinin, soluble liver antigen, perinuclear antineutrophil antigen, asialoglycoprotein receptor, and liver cytosol type 1, are tools that can support the diagnosis, especially in patients with atypical features. Prednisone or prednisolone in combination with azathioprine is the preferred treatment, and strategies using these medications in various doses can ameliorate treatment failure, incomplete response, drug intolerance, and relapse after drug withdrawal. Budesonide, mycophenolate mofetil, and calcineurin inhibitors can be considered in selected patients as frontline or salvage therapies. Molecular (recombinant proteins and monoclonal antibodies), cellular (adoptive transfer and antigenic manipulation), and pharmacological (antioxidants, antifibrotics, and antiapoptotic agents) interventions constitute future directions in management. The evolving knowledge of the pathogenic pathways and the advances in technology promise new management algorithms. ",
+  "canon:text": "Diagnosis and Management of Autoimmune Hepatitis: Current Status and Future Directions. Autoimmune hepatitis is characterized by autoantibodies, hypergammaglobulinemia, and interface hepatitis on histological examination. The features lack diagnostic specificity, and other diseases that may resemble autoimmune hepatitis must be excluded. The clinical presentation may be acute, acute severe (fulminant), or asymptomatic; conventional autoantibodies may be absent; centrilobular necrosis and bile duct changes may be present; and the disease may occur after liver transplantation or with features that suggest overlapping disorders. The diagnostic criteria have been codified, and diagnostic scoring systems can support clinical judgment. Nonstandard autoantibodies, including antibodies to actin, alpha-actinin, soluble liver antigen, perinuclear antineutrophil antigen, asialoglycoprotein receptor, and liver cytosol type 1, are tools that can support the diagnosis, especially in patients with atypical features. Prednisone or prednisolone in combination with azathioprine is the preferred treatment, and strategies using these medications in various doses can ameliorate treatment failure, incomplete response, drug intolerance, and relapse after drug withdrawal. Budesonide, mycophenolate mofetil, and calcineurin inhibitors can be considered in selected patients as frontline or salvage therapies. Molecular (recombinant proteins and monoclonal antibodies), cellular (adoptive transfer and antigenic manipulation), and pharmacological (antioxidants, antifibrotics, and antiapoptotic agents) interventions constitute future directions in management. The evolving knowledge of the pathogenic pathways and the advances in technology promise new management algorithms. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26934884_causative-agent_0000649#mention-T1",
+      "canon:span": {
+        "start": 173,
+        "end": 192
+      },
+      "canon:surface": "interface hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26934884_causative-agent_0000649#mention-T2",
+      "canon:span": {
+        "start": 1064,
+        "end": 1076
+      },
+      "canon:surface": "azathioprine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001379",
+      "canon:sourceNotation": "D001379",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26934884_causative-agent_0000649#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26934884_causative-agent_0000649#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26934884_causative-agent_0000649#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26934884"
+      }
+    }
+  ]
+}

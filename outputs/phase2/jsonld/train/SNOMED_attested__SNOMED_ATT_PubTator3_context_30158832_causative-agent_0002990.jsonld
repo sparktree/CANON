@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30158832_causative-agent_0002990",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30158832_causative-agent_0002990",
+  "canon:title": "Impact of Retinoic Acid on Immune Cells and Inflammatory Diseases.",
+  "canon:abstract": "Vitamin A metabolite retinoic acid (RA) plays important roles in cell growth, differentiation, organogenesis, and reproduction and a key role in mucosal immune responses. RA promotes dendritic cells to express CD103 and to produce RA, enhances the differentiation of Foxp3+ inducible regulatory T cells, and induces gut-homing specificity in T cells. Although vitamin A is crucial for maintaining homeostasis at the intestinal barrier and equilibrating immunity and tolerance, including gut dysbiosis, retinoids perform a wide variety of functions in many settings, such as the central nervous system, skin aging, allergic airway diseases, cancer prevention and therapy, and metabolic diseases. The mechanism of RA is interesting to explore as both a mucosal adjuvant and a combination therapy with other effective agents. Here, we review the effect of RA on innate and adaptive immunity with a special emphasis on inflammatory status.",
+  "canon:text": "Impact of Retinoic Acid on Immune Cells and Inflammatory Diseases. Vitamin A metabolite retinoic acid (RA) plays important roles in cell growth, differentiation, organogenesis, and reproduction and a key role in mucosal immune responses. RA promotes dendritic cells to express CD103 and to produce RA, enhances the differentiation of Foxp3+ inducible regulatory T cells, and induces gut-homing specificity in T cells. Although vitamin A is crucial for maintaining homeostasis at the intestinal barrier and equilibrating immunity and tolerance, including gut dysbiosis, retinoids perform a wide variety of functions in many settings, such as the central nervous system, skin aging, allergic airway diseases, cancer prevention and therapy, and metabolic diseases. The mechanism of RA is interesting to explore as both a mucosal adjuvant and a combination therapy with other effective agents. Here, we review the effect of RA on innate and adaptive immunity with a special emphasis on inflammatory status.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30158832_causative-agent_0002990#mention-T1",
+      "canon:span": {
+        "start": 681,
+        "end": 705
+      },
+      "canon:surface": "allergic airway diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30158832_causative-agent_0002990#mention-T2",
+      "canon:span": {
+        "start": 67,
+        "end": 76
+      },
+      "canon:surface": "Vitamin A",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014801",
+      "canon:sourceNotation": "D014801",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30158832_causative-agent_0002990#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30158832_causative-agent_0002990#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30158832_causative-agent_0002990#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30158832"
+      }
+    }
+  ]
+}

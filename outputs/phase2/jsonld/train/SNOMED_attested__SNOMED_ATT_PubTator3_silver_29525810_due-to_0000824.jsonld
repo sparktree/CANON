@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29525810_due-to_0000824",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29525810_due-to_0000824",
+  "canon:title": "Glucocorticoid-Induced Myopathy in a Patient with Systemic Lupus Erythematosus (SLE): A Case Report and Review of the Literature.",
+  "canon:abstract": "BACKGROUND Chronic intake of high-dose corticosteroids is associated with multiple adverse clinical effects, including hypertension, insulin resistance, impaired wound healing, immunosuppression, myopathy, and osteoporosis. In cases of autoimmune disease, use of steroid-sparing treatment modalities is preferred over chronic steroid therapy to limit these side effects. Glucocorticoid-induced myopathy is a less common side effect of chronic steroid use in patients treated with <10 mg/day of prednisone. However, doses exceeding 40-60 mg/day can induce clinically significant myopathy and weakness. CASE REPORT A 35-year-old woman with a past medical history of hypothyroidism, systemic lupus erythematosus (SLE), and end-stage renal disease secondary to lupus nephritis, on hemodialysis, presented to the local emergency department with progressive bilateral proximal lower extremity weakness. Three months before admission, when her insurance company prematurely discontinued her monthly cyclophosphamide injections, at which time, she was treated with prednisone 60 mg daily. Two months before hospital admission, she reported increasing fatigue, weight gain, difficulty in standing from a seated position and climbing stairs. CONCLUSIONS Elucidating the etiology of progressive neuromotor deficit in immunosuppressed patients can be difficult. The management of SLE and other autoimmune diseases with chronic high-dose steroids is associated with recognized side effects. Differentiating natural disease progression from iatrogenic etiologies is important in this subset of patients, particularly to reduce prolonged clinical management and hospital admissions.",
+  "canon:text": "Glucocorticoid-Induced Myopathy in a Patient with Systemic Lupus Erythematosus (SLE): A Case Report and Review of the Literature. BACKGROUND Chronic intake of high-dose corticosteroids is associated with multiple adverse clinical effects, including hypertension, insulin resistance, impaired wound healing, immunosuppression, myopathy, and osteoporosis. In cases of autoimmune disease, use of steroid-sparing treatment modalities is preferred over chronic steroid therapy to limit these side effects. Glucocorticoid-induced myopathy is a less common side effect of chronic steroid use in patients treated with <10 mg/day of prednisone. However, doses exceeding 40-60 mg/day can induce clinically significant myopathy and weakness. CASE REPORT A 35-year-old woman with a past medical history of hypothyroidism, systemic lupus erythematosus (SLE), and end-stage renal disease secondary to lupus nephritis, on hemodialysis, presented to the local emergency department with progressive bilateral proximal lower extremity weakness. Three months before admission, when her insurance company prematurely discontinued her monthly cyclophosphamide injections, at which time, she was treated with prednisone 60 mg daily. Two months before hospital admission, she reported increasing fatigue, weight gain, difficulty in standing from a seated position and climbing stairs. CONCLUSIONS Elucidating the etiology of progressive neuromotor deficit in immunosuppressed patients can be difficult. The management of SLE and other autoimmune diseases with chronic high-dose steroids is associated with recognized side effects. Differentiating natural disease progression from iatrogenic etiologies is important in this subset of patients, particularly to reduce prolonged clinical management and hospital admissions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29525810_due-to_0000824#mention-T1",
+      "canon:span": {
+        "start": 887,
+        "end": 902
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29525810_due-to_0000824#mention-T2",
+      "canon:span": {
+        "start": 50,
+        "end": 78
+      },
+      "canon:surface": "Systemic Lupus Erythematosus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29525810_due-to_0000824#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29525810_due-to_0000824#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29525810_due-to_0000824#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29525810"
+      }
+    }
+  ]
+}

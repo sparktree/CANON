@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22214450_causative-agent_0000385",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_22214450_causative-agent_0000385",
+  "canon:title": "Glutamate carboxypeptidase II in diagnosis and treatment of neurologic disorders and prostate cancer.",
+  "canon:abstract": "Glutamate carboxypeptidase II (GCPII) is a membrane-bound binuclear zinc metallopeptidase with the highest expression levels found in the nervous and prostatic tissue. Throughout the nervous system, glia-bound GCPII is intimately involved in the neuron-neuron and neuron-glia signaling via the hydrolysis of N-acetylaspartylglutamate (NAAG), the most abundant mammalian peptidic neurotransmitter. The inhibition of the GCPII-controlled NAAG catabolism has been shown to attenuate neurotoxicity associated with enhanced glutamate transmission and GCPII-specific inhibitors demonstrate efficacy in multiple preclinical models including traumatic brain injury, stroke, neuropathic and inflammatory pain, amyotrophic lateral sclerosis, and schizophrenia. The second major area of pharmacological interventions targeting GCPII focuses on prostate carcinoma; GCPII expression levels are highly increased in androgen-independent and metastatic disease. Consequently, the enzyme serves as a potential target for imaging and therapy. This review offers a summary of GCPII structure, physiological functions in healthy tissues, and its association with various pathologies. The review also outlines the development of GCPII-specific small-molecule compounds and their use in preclinical and clinical settings.",
+  "canon:text": "Glutamate carboxypeptidase II in diagnosis and treatment of neurologic disorders and prostate cancer. Glutamate carboxypeptidase II (GCPII) is a membrane-bound binuclear zinc metallopeptidase with the highest expression levels found in the nervous and prostatic tissue. Throughout the nervous system, glia-bound GCPII is intimately involved in the neuron-neuron and neuron-glia signaling via the hydrolysis of N-acetylaspartylglutamate (NAAG), the most abundant mammalian peptidic neurotransmitter. The inhibition of the GCPII-controlled NAAG catabolism has been shown to attenuate neurotoxicity associated with enhanced glutamate transmission and GCPII-specific inhibitors demonstrate efficacy in multiple preclinical models including traumatic brain injury, stroke, neuropathic and inflammatory pain, amyotrophic lateral sclerosis, and schizophrenia. The second major area of pharmacological interventions targeting GCPII focuses on prostate carcinoma; GCPII expression levels are highly increased in androgen-independent and metastatic disease. Consequently, the enzyme serves as a potential target for imaging and therapy. This review offers a summary of GCPII structure, physiological functions in healthy tissues, and its association with various pathologies. The review also outlines the development of GCPII-specific small-molecule compounds and their use in preclinical and clinical settings.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22214450_causative-agent_0000385#mention-T1",
+      "canon:span": {
+        "start": 582,
+        "end": 595
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22214450_causative-agent_0000385#mention-T2",
+      "canon:span": {
+        "start": 621,
+        "end": 630
+      },
+      "canon:surface": "glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018698",
+      "canon:sourceNotation": "D018698",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22214450_causative-agent_0000385#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22214450_causative-agent_0000385#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22214450_causative-agent_0000385#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "22214450"
+      }
+    }
+  ]
+}

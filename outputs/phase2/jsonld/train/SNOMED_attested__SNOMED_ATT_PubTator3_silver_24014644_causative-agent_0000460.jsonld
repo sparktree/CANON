@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24014644_causative-agent_0000460",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24014644_causative-agent_0000460",
+  "canon:title": "Early identification of clinically relevant drug interactions with the human bile salt export pump (BSEP/ABCB11).",
+  "canon:abstract": "A comprehensive analysis was performed to investigate how inhibition of the human bile salt export pump (BSEP/ABCB11) relates to clinically observed drug-induced liver injury (DILI). Inhibition of taurocholate (TA) transport was investigated in BSEP membrane vesicles for a data set of 250 compounds, and 86 BSEP inhibitors were identified. Structure-activity modeling identified BSEP inhibition to correlate strongly with compound lipophilicity, whereas positive molecular charge was associated with a lack of inhibition. All approved drugs in the data set (n = 182) were categorized according to DILI warnings in drug labels issued by the Food and Drug Administration, and a strong correlation between BSEP inhibition and DILI was identified. As many as 38 of the 61 identified BSEP inhibitors were associated with severe DILI, including 9 drugs not previously linked to BSEP inhibition. Further, among the tested compounds, every second drug associated with severe DILI was a BSEP inhibitor. Finally, sandwich-cultured human hepatocytes (SCHH) were used to investigate the relationship between BSEP inhibition, TA transport, and clinically observed DILI in detail. BSEP inhibitors associated with severe DILI greatly reduced the TA canalicular efflux, whereas BSEP inhibitors with less severe or no DILI resulted in weak or no reduction of TA efflux in SCHH. This distinction illustrates the usefulness of SCHH in refined analysis of BSEP inhibition. In conclusion, BSEP inhibition in membrane vesicles was found to correlate to DILI severity, and altered disposition of TA in SCHH was shown to separate BSEP inhibitors associated with severe DILI from those with no or mild DILI.",
+  "canon:text": "Early identification of clinically relevant drug interactions with the human bile salt export pump (BSEP/ABCB11). A comprehensive analysis was performed to investigate how inhibition of the human bile salt export pump (BSEP/ABCB11) relates to clinically observed drug-induced liver injury (DILI). Inhibition of taurocholate (TA) transport was investigated in BSEP membrane vesicles for a data set of 250 compounds, and 86 BSEP inhibitors were identified. Structure-activity modeling identified BSEP inhibition to correlate strongly with compound lipophilicity, whereas positive molecular charge was associated with a lack of inhibition. All approved drugs in the data set (n = 182) were categorized according to DILI warnings in drug labels issued by the Food and Drug Administration, and a strong correlation between BSEP inhibition and DILI was identified. As many as 38 of the 61 identified BSEP inhibitors were associated with severe DILI, including 9 drugs not previously linked to BSEP inhibition. Further, among the tested compounds, every second drug associated with severe DILI was a BSEP inhibitor. Finally, sandwich-cultured human hepatocytes (SCHH) were used to investigate the relationship between BSEP inhibition, TA transport, and clinically observed DILI in detail. BSEP inhibitors associated with severe DILI greatly reduced the TA canalicular efflux, whereas BSEP inhibitors with less severe or no DILI resulted in weak or no reduction of TA efflux in SCHH. This distinction illustrates the usefulness of SCHH in refined analysis of BSEP inhibition. In conclusion, BSEP inhibition in membrane vesicles was found to correlate to DILI severity, and altered disposition of TA in SCHH was shown to separate BSEP inhibitors associated with severe DILI from those with no or mild DILI.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24014644_causative-agent_0000460#mention-T1",
+      "canon:span": {
+        "start": 263,
+        "end": 288
+      },
+      "canon:surface": "drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24014644_causative-agent_0000460#mention-T2",
+      "canon:span": {
+        "start": 311,
+        "end": 323
+      },
+      "canon:surface": "taurocholate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013656",
+      "canon:sourceNotation": "D013656",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24014644_causative-agent_0000460#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24014644_causative-agent_0000460#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24014644_causative-agent_0000460#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24014644"
+      }
+    }
+  ]
+}

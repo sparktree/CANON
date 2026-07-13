@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32630301_causative-agent_0001140",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32630301_causative-agent_0001140",
+  "canon:title": "Neuroprotective Potentials of Marine Algae and Their Bioactive Metabolites: Pharmacological Insights and Therapeutic Advances.",
+  "canon:abstract": "Beyond their significant contribution to the dietary and industrial supplies, marine algae are considered to be a potential source of some unique metabolites with diverse health benefits. The pharmacological properties, such as antioxidant, anti-inflammatory, cholesterol homeostasis, protein clearance and anti-amyloidogenic potentials of algal metabolites endorse their protective efficacy against oxidative stress, neuroinflammation, mitochondrial dysfunction, and impaired proteostasis which are known to be implicated in the pathophysiology of neurodegenerative disorders and the associated complications after cerebral ischemia and brain injuries. As was evident in various preclinical studies, algal compounds conferred neuroprotection against a wide range of neurotoxic stressors, such as oxygen/glucose deprivation, hydrogen peroxide, glutamate, amyloid beta, or 1-methyl-4-phenylpyridinium (MPP+) and, therefore, hold therapeutic promise for brain disorders. While a significant number of algal compounds with promising neuroprotective capacity have been identified over the last decades, a few of them have had access to clinical trials. However, the recent approval of an algal oligosaccharide, sodium oligomannate, for the treatment of Alzheimer's disease enlightened the future of marine algae-based drug discovery. In this review, we briefly outline the pathophysiology of neurodegenerative diseases and brain injuries for identifying the targets of pharmacological intervention, and then review the literature on the neuroprotective potentials of algal compounds along with the underlying pharmacological mechanism, and present an appraisal on the recent therapeutic advances. We also propose a rational strategy to facilitate algal metabolites-based drug development.",
+  "canon:text": "Neuroprotective Potentials of Marine Algae and Their Bioactive Metabolites: Pharmacological Insights and Therapeutic Advances. Beyond their significant contribution to the dietary and industrial supplies, marine algae are considered to be a potential source of some unique metabolites with diverse health benefits. The pharmacological properties, such as antioxidant, anti-inflammatory, cholesterol homeostasis, protein clearance and anti-amyloidogenic potentials of algal metabolites endorse their protective efficacy against oxidative stress, neuroinflammation, mitochondrial dysfunction, and impaired proteostasis which are known to be implicated in the pathophysiology of neurodegenerative disorders and the associated complications after cerebral ischemia and brain injuries. As was evident in various preclinical studies, algal compounds conferred neuroprotection against a wide range of neurotoxic stressors, such as oxygen/glucose deprivation, hydrogen peroxide, glutamate, amyloid beta, or 1-methyl-4-phenylpyridinium (MPP+) and, therefore, hold therapeutic promise for brain disorders. While a significant number of algal compounds with promising neuroprotective capacity have been identified over the last decades, a few of them have had access to clinical trials. However, the recent approval of an algal oligosaccharide, sodium oligomannate, for the treatment of Alzheimer's disease enlightened the future of marine algae-based drug discovery. In this review, we briefly outline the pathophysiology of neurodegenerative diseases and brain injuries for identifying the targets of pharmacological intervention, and then review the literature on the neuroprotective potentials of algal compounds along with the underlying pharmacological mechanism, and present an appraisal on the recent therapeutic advances. We also propose a rational strategy to facilitate algal metabolites-based drug development.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32630301_causative-agent_0001140#mention-T1",
+      "canon:span": {
+        "start": 894,
+        "end": 904
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32630301_causative-agent_0001140#mention-T2",
+      "canon:span": {
+        "start": 924,
+        "end": 930
+      },
+      "canon:surface": "oxygen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010100",
+      "canon:sourceNotation": "D010100",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32630301_causative-agent_0001140#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32630301_causative-agent_0001140#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32630301_causative-agent_0001140#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32630301"
+      }
+    }
+  ]
+}

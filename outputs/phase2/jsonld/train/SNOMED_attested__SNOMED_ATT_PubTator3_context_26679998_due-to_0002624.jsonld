@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26679998_due-to_0002624",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26679998_due-to_0002624",
+  "canon:title": "Selective Inhibition of the Mitochondrial Permeability Transition Pore Protects against Neurodegeneration in Experimental Multiple Sclerosis.",
+  "canon:abstract": "The mitochondrial permeability transition pore is a recognized drug target for neurodegenerative conditions such as multiple sclerosis and for ischemia-reperfusion injury in the brain and heart. The peptidylprolyl isomerase, cyclophilin D (CypD, PPIF), is a positive regulator of the pore, and genetic down-regulation or knock-out improves outcomes in disease models. Current inhibitors of peptidylprolyl isomerases show no selectivity between the tightly conserved cyclophilin paralogs and exhibit significant off-target effects, immunosuppression, and toxicity. We therefore designed and synthesized a new mitochondrially targeted CypD inhibitor, JW47, using a quinolinium cation tethered to cyclosporine. X-ray analysis was used to validate the design concept, and biological evaluation revealed selective cellular inhibition of CypD and the permeability transition pore with reduced cellular toxicity compared with cyclosporine. In an experimental autoimmune encephalomyelitis disease model of neurodegeneration in multiple sclerosis, JW47 demonstrated significant protection of axons and improved motor assessments with minimal immunosuppression. These findings suggest that selective CypD inhibition may represent a viable therapeutic strategy for MS and identify quinolinium as a mitochondrial targeting group for in vivo use. ",
+  "canon:text": "Selective Inhibition of the Mitochondrial Permeability Transition Pore Protects against Neurodegeneration in Experimental Multiple Sclerosis. The mitochondrial permeability transition pore is a recognized drug target for neurodegenerative conditions such as multiple sclerosis and for ischemia-reperfusion injury in the brain and heart. The peptidylprolyl isomerase, cyclophilin D (CypD, PPIF), is a positive regulator of the pore, and genetic down-regulation or knock-out improves outcomes in disease models. Current inhibitors of peptidylprolyl isomerases show no selectivity between the tightly conserved cyclophilin paralogs and exhibit significant off-target effects, immunosuppression, and toxicity. We therefore designed and synthesized a new mitochondrially targeted CypD inhibitor, JW47, using a quinolinium cation tethered to cyclosporine. X-ray analysis was used to validate the design concept, and biological evaluation revealed selective cellular inhibition of CypD and the permeability transition pore with reduced cellular toxicity compared with cyclosporine. In an experimental autoimmune encephalomyelitis disease model of neurodegeneration in multiple sclerosis, JW47 demonstrated significant protection of axons and improved motor assessments with minimal immunosuppression. These findings suggest that selective CypD inhibition may represent a viable therapeutic strategy for MS and identify quinolinium as a mitochondrial targeting group for in vivo use. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26679998_due-to_0002624#mention-T1",
+      "canon:span": {
+        "start": 1081,
+        "end": 1130
+      },
+      "canon:surface": "experimental autoimmune encephalomyelitis disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004681",
+      "canon:sourceNotation": "D004681",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26679998_due-to_0002624#mention-T2",
+      "canon:span": {
+        "start": 88,
+        "end": 105
+      },
+      "canon:surface": "Neurodegeneration",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019636",
+      "canon:sourceNotation": "D019636",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26679998_due-to_0002624#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26679998_due-to_0002624#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26679998_due-to_0002624#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26679998"
+      }
+    }
+  ]
+}

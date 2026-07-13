@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26633044_causative-agent_0000631",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26633044_causative-agent_0000631",
+  "canon:title": "Current and future directions in the treatment and prevention of drug-induced liver injury: a systematic review.",
+  "canon:abstract": "While the pace of discovery of new agents, mechanisms and risk factors involved in drug-induced liver injury (DILI) remains brisk, advances in the treatment of acute DILI seems slow by comparison. In general, the key to treating suspected DILI is to stop using the drug prior to developing irreversible liver failure. However, predicting when to stop is an inexact science, and commonly used ALT monitoring is an ineffective strategy outside of clinical trials. The only specific antidote for acute DILI remains N-acetylcysteine (NAC) for acetaminophen poisoning, although NAC is proving to be beneficial in some cases of non-acetaminophen DILI in adults. Corticosteroids can be effective for DILI associated with autoimmune or systemic hypersensitivity features. Ursodeoxycholic acid, silymarin and glycyrrhizin have been used to treat DILI for decades, but success remains anecdotal. Bile acid washout regimens using cholestyramine appear to be more evidenced based, in particular for leflunomide toxicity. For drug-induced acute liver failure, the use of liver support systems is still investigational in the United States and emergency liver transplant remains limited by its availability. Primary prevention appears to be the key to avoiding DILI and the need for acute treatment. Pharmacogenomics, including human leukocyte antigen genotyping and the discovery of specific DILI biomarkers offers significant promise for the future. This article describes and summarizes the numerous and diverse treatment and prevention modalities that are currently available to manage DILI. ",
+  "canon:text": "Current and future directions in the treatment and prevention of drug-induced liver injury: a systematic review. While the pace of discovery of new agents, mechanisms and risk factors involved in drug-induced liver injury (DILI) remains brisk, advances in the treatment of acute DILI seems slow by comparison. In general, the key to treating suspected DILI is to stop using the drug prior to developing irreversible liver failure. However, predicting when to stop is an inexact science, and commonly used ALT monitoring is an ineffective strategy outside of clinical trials. The only specific antidote for acute DILI remains N-acetylcysteine (NAC) for acetaminophen poisoning, although NAC is proving to be beneficial in some cases of non-acetaminophen DILI in adults. Corticosteroids can be effective for DILI associated with autoimmune or systemic hypersensitivity features. Ursodeoxycholic acid, silymarin and glycyrrhizin have been used to treat DILI for decades, but success remains anecdotal. Bile acid washout regimens using cholestyramine appear to be more evidenced based, in particular for leflunomide toxicity. For drug-induced acute liver failure, the use of liver support systems is still investigational in the United States and emergency liver transplant remains limited by its availability. Primary prevention appears to be the key to avoiding DILI and the need for acute treatment. Pharmacogenomics, including human leukocyte antigen genotyping and the discovery of specific DILI biomarkers offers significant promise for the future. This article describes and summarizes the numerous and diverse treatment and prevention modalities that are currently available to manage DILI. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26633044_causative-agent_0000631#mention-T1",
+      "canon:span": {
+        "start": 850,
+        "end": 866
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26633044_causative-agent_0000631#mention-T2",
+      "canon:span": {
+        "start": 877,
+        "end": 897
+      },
+      "canon:surface": "Ursodeoxycholic acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014580",
+      "canon:sourceNotation": "D014580",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26633044_causative-agent_0000631#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26633044_causative-agent_0000631#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26633044_causative-agent_0000631#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26633044"
+      }
+    }
+  ]
+}

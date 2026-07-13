@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17392574_causative-agent_0002147",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_17392574_causative-agent_0002147",
+  "canon:title": "Relationship between human leucocyte antigen class I and class II and chronic idiopathic urticaria associated with aspirin and/or NSAIDs hypersensitivity.",
+  "canon:abstract": "BACKGROUND: HLA genes play a role in the predisposition of several diseases. The aim was to analyze the prevalence of HLA class I phenotypes and HLA-DRB1* genotype in patients with CIU associated with ASA and NSAIDs hypersensitivity (AICU). METHODS: 69 patients with AICU, and 200 healthy subjects. RESULTS: Subjects with HLA-B44 and HLA-Cw5 antigens were more represented in patients with AICU than in control group. Subjects with HLA-A11, HLA-B13, HLACw4, and HLA-Cw7 antigen were more represented in control group than in patients with AICU. Multiple logistic regression demonstrated an association of HLA-Cw4 and HLA-Cw7 with a lower risk of AICU, whereas carriers of HLA-B44 phenotype had a higher risk of AICU. No differences were found between patients and controls as regards to HLA-DRB1* genotype. CONCLUSIONS: We observed an association between some HLA class-I antigens and AICU. To the best of our knowledge this is the first description of such association.",
+  "canon:text": "Relationship between human leucocyte antigen class I and class II and chronic idiopathic urticaria associated with aspirin and/or NSAIDs hypersensitivity. BACKGROUND: HLA genes play a role in the predisposition of several diseases. The aim was to analyze the prevalence of HLA class I phenotypes and HLA-DRB1* genotype in patients with CIU associated with ASA and NSAIDs hypersensitivity (AICU). METHODS: 69 patients with AICU, and 200 healthy subjects. RESULTS: Subjects with HLA-B44 and HLA-Cw5 antigens were more represented in patients with AICU than in control group. Subjects with HLA-A11, HLA-B13, HLACw4, and HLA-Cw7 antigen were more represented in control group than in patients with AICU. Multiple logistic regression demonstrated an association of HLA-Cw4 and HLA-Cw7 with a lower risk of AICU, whereas carriers of HLA-B44 phenotype had a higher risk of AICU. No differences were found between patients and controls as regards to HLA-DRB1* genotype. CONCLUSIONS: We observed an association between some HLA class-I antigens and AICU. To the best of our knowledge this is the first description of such association.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17392574_causative-agent_0002147#mention-T1",
+      "canon:span": {
+        "start": 130,
+        "end": 153
+      },
+      "canon:surface": "NSAIDs hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17392574_causative-agent_0002147#mention-T2",
+      "canon:span": {
+        "start": 115,
+        "end": 122
+      },
+      "canon:surface": "aspirin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001241",
+      "canon:sourceNotation": "D001241",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17392574_causative-agent_0002147#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17392574_causative-agent_0002147#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_17392574_causative-agent_0002147#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "17392574"
+      }
+    }
+  ]
+}

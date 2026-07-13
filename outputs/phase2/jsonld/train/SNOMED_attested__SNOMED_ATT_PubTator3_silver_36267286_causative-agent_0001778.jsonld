@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36267286_causative-agent_0001778",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36267286_causative-agent_0001778",
+  "canon:title": "Advances in the therapeutic application and pharmacological properties of kinsenoside against inflammation and oxidative stress-induced disorders.",
+  "canon:abstract": "Extensive research has implicated inflammation and oxidative stress in the development of multiple diseases, such as diabetes, hepatitis, and arthritis. Kinsenoside (KD), a bioactive glycoside component extracted from the medicinal plant Anoectochilus roxburghii, has been shown to exhibit potent anti-inflammatory and anti-oxidative abilities. In this review, we summarize multiple effects of KD, including hepatoprotection, pro-osteogenesis, anti-hyperglycemia, vascular protection, immune regulation, vision protection, and infection inhibition, which are partly responsible for suppressing inflammation signaling and oxidative stress. The protective action of KD against dysfunctional lipid metabolism is also associated with limiting inflammatory signals, due to the crosstalk between inflammation and lipid metabolism. Ferroptosis, a process involved in both inflammation and oxidative damage, is potentially regulated by KD. In addition, we discuss the physicochemical properties and pharmacokinetic profiles of KD. Advances in cultivation and artificial synthesis techniques are promising evidence that the shortage in raw materials required for KD production can be overcome. In addition, novel drug delivery systems can improve the in vivo rapid clearance and poor bioavailability of KD. In this integrated review, we aim to offer novel insights into the molecular mechanisms underlying the therapeutic role of KD and lay solid foundations for the utilization of KD in clinical practice.",
+  "canon:text": "Advances in the therapeutic application and pharmacological properties of kinsenoside against inflammation and oxidative stress-induced disorders. Extensive research has implicated inflammation and oxidative stress in the development of multiple diseases, such as diabetes, hepatitis, and arthritis. Kinsenoside (KD), a bioactive glycoside component extracted from the medicinal plant Anoectochilus roxburghii, has been shown to exhibit potent anti-inflammatory and anti-oxidative abilities. In this review, we summarize multiple effects of KD, including hepatoprotection, pro-osteogenesis, anti-hyperglycemia, vascular protection, immune regulation, vision protection, and infection inhibition, which are partly responsible for suppressing inflammation signaling and oxidative stress. The protective action of KD against dysfunctional lipid metabolism is also associated with limiting inflammatory signals, due to the crosstalk between inflammation and lipid metabolism. Ferroptosis, a process involved in both inflammation and oxidative damage, is potentially regulated by KD. In addition, we discuss the physicochemical properties and pharmacokinetic profiles of KD. Advances in cultivation and artificial synthesis techniques are promising evidence that the shortage in raw materials required for KD production can be overcome. In addition, novel drug delivery systems can improve the in vivo rapid clearance and poor bioavailability of KD. In this integrated review, we aim to offer novel insights into the molecular mechanisms underlying the therapeutic role of KD and lay solid foundations for the utilization of KD in clinical practice.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36267286_causative-agent_0001778#mention-T1",
+      "canon:span": {
+        "start": 274,
+        "end": 283
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36267286_causative-agent_0001778#mention-T2",
+      "canon:span": {
+        "start": 836,
+        "end": 841
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36267286_causative-agent_0001778#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36267286_causative-agent_0001778#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36267286_causative-agent_0001778#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36267286"
+      }
+    }
+  ]
+}

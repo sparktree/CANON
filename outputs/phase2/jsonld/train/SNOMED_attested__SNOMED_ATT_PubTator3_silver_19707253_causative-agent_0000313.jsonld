@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19707253_causative-agent_0000313",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_19707253_causative-agent_0000313",
+  "canon:title": "The benefits and risks of testosterone replacement therapy: a review.",
+  "canon:abstract": "Increased longevity and population aging will increase the number of men with late onset hypogonadism. It is a common condition, but often underdiagnosed and undertreated. The indication of testosterone-replacement therapy (TRT) treatment requires the presence of low testosterone level, and symptoms and signs of hypogonadism. Although controversy remains regarding indications for testosterone supplementation in aging men due to lack of large-scale, long-term studies assessing the benefits and risks of testosterone-replacement therapy in men, reports indicate that TRT may produce a wide range of benefits for men with hypogonadism that include improvement in libido and sexual function, bone density, muscle mass, body composition, mood, erythropoiesis, cognition, quality of life and cardiovascular disease. Perhaps the most controversial area is the issue of risk, especially possible stimulation of prostate cancer by testosterone, even though no evidence to support this risk exists. Other possible risks include worsening symptoms of benign prostatic hypertrophy, liver toxicity, hyperviscosity, erythrocytosis, worsening untreated sleep apnea or severe heart failure. Despite this controversy, testosterone supplementation in the United States has increased substantially over the past several years. The physician should discuss with the patient the potential benefits and risks of TRT. The purpose of this review is to discuss what is known and not known regarding the benefits and risks of TRT.",
+  "canon:text": "The benefits and risks of testosterone replacement therapy: a review. Increased longevity and population aging will increase the number of men with late onset hypogonadism. It is a common condition, but often underdiagnosed and undertreated. The indication of testosterone-replacement therapy (TRT) treatment requires the presence of low testosterone level, and symptoms and signs of hypogonadism. Although controversy remains regarding indications for testosterone supplementation in aging men due to lack of large-scale, long-term studies assessing the benefits and risks of testosterone-replacement therapy in men, reports indicate that TRT may produce a wide range of benefits for men with hypogonadism that include improvement in libido and sexual function, bone density, muscle mass, body composition, mood, erythropoiesis, cognition, quality of life and cardiovascular disease. Perhaps the most controversial area is the issue of risk, especially possible stimulation of prostate cancer by testosterone, even though no evidence to support this risk exists. Other possible risks include worsening symptoms of benign prostatic hypertrophy, liver toxicity, hyperviscosity, erythrocytosis, worsening untreated sleep apnea or severe heart failure. Despite this controversy, testosterone supplementation in the United States has increased substantially over the past several years. The physician should discuss with the patient the potential benefits and risks of TRT. The purpose of this review is to discuss what is known and not known regarding the benefits and risks of TRT.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19707253_causative-agent_0000313#mention-T1",
+      "canon:span": {
+        "start": 1145,
+        "end": 1159
+      },
+      "canon:surface": "liver toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19707253_causative-agent_0000313#mention-T2",
+      "canon:span": {
+        "start": 26,
+        "end": 38
+      },
+      "canon:surface": "testosterone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013739",
+      "canon:sourceNotation": "D013739",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19707253_causative-agent_0000313#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19707253_causative-agent_0000313#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_19707253_causative-agent_0000313#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "19707253"
+      }
+    }
+  ]
+}

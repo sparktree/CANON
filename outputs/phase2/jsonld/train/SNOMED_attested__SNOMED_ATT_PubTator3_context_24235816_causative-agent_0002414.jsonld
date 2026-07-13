@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24235816_causative-agent_0002414",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24235816_causative-agent_0002414",
+  "canon:title": "New and emerging treatments for symptomatic tardive dyskinesia.",
+  "canon:abstract": "The aim of this review is to assess new, emerging, and experimental treatment options for tardive dyskinesia (TD). The methods to obtain relevant studies for review included a MEDLINE search and a review of studies in English, along with checking reference lists of articles. The leading explanatory models of TD development include dopamine receptor supersensitivity, GABA depletion, cholinergic deficiency, neurotoxicity, oxidative stress, changes in synaptic plasticity, and defective neuroadaptive signaling. As such, a wide range of treatment options are available. To provide a complete summary of choices we review atypical antipsychotics along with resveratrol, botulinum toxin, Ginkgo biloba, tetrabenazine, clonazepam, melatonin, essential fatty acids, zonisamide, levetiracetam, branched-chain amino acids, drug combinations, and invasive surgical treatments. There is currently no US Food and Drug Administration-approved treatment for TD; however, prudent use of atypical antipsychotics with routine monitoring remain the cornerstone of therapy, with experimental treatment options available for further management. ",
+  "canon:text": "New and emerging treatments for symptomatic tardive dyskinesia. The aim of this review is to assess new, emerging, and experimental treatment options for tardive dyskinesia (TD). The methods to obtain relevant studies for review included a MEDLINE search and a review of studies in English, along with checking reference lists of articles. The leading explanatory models of TD development include dopamine receptor supersensitivity, GABA depletion, cholinergic deficiency, neurotoxicity, oxidative stress, changes in synaptic plasticity, and defective neuroadaptive signaling. As such, a wide range of treatment options are available. To provide a complete summary of choices we review atypical antipsychotics along with resveratrol, botulinum toxin, Ginkgo biloba, tetrabenazine, clonazepam, melatonin, essential fatty acids, zonisamide, levetiracetam, branched-chain amino acids, drug combinations, and invasive surgical treatments. There is currently no US Food and Drug Administration-approved treatment for TD; however, prudent use of atypical antipsychotics with routine monitoring remain the cornerstone of therapy, with experimental treatment options available for further management. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24235816_causative-agent_0002414#mention-T1",
+      "canon:span": {
+        "start": 473,
+        "end": 486
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24235816_causative-agent_0002414#mention-T2",
+      "canon:span": {
+        "start": 793,
+        "end": 802
+      },
+      "canon:surface": "melatonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008550",
+      "canon:sourceNotation": "D008550",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24235816_causative-agent_0002414#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24235816_causative-agent_0002414#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24235816_causative-agent_0002414#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24235816"
+      }
+    }
+  ]
+}

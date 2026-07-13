@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21373307_causative-agent_0000361",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21373307_causative-agent_0000361",
+  "canon:title": "The serotonin syndrome-the need for physician's awareness.",
+  "canon:abstract": "BACKGROUND: Serotonin syndrome is a potentially life-threatening adverse drug reaction that results from therapeutic drug use, usually of selective serotonin reuptake inhibitors (SSRIs), intentional excessive use or interactions between various drugs. CASE PRESENTATION: A 16-year-old Caucasian boy presented to our emergency department (ED) with alteration in his mental status for 6 h prior to arrival. On physical examination in our ED, he was combative and disoriented to time, place and person. He was febrile, hypertensive and tachycardic as well. He had intermittent rigid extremities with myoclonus of both lower extremities. A diagnosis of serotonin syndrome (SS) was made based on history of intake of fluoxetine and clinical signs, which included presence of inducible clonus and agitation. The child received supportive care involving intravenous fluids and intravenous lorazepam. The child was back to his baseline mental status and had a normal neurological exam by 24 h and was discharged home later for follow-up with a psychiatrist. CONCLUSIONS: SS occurs with increasing frequency, and most cases resolve with prompt recognition and supportive care. Failure to make an early diagnosis and to comprehend adverse pharmacological effects of therapy can lead to adverse outcomes.",
+  "canon:text": "The serotonin syndrome-the need for physician's awareness. BACKGROUND: Serotonin syndrome is a potentially life-threatening adverse drug reaction that results from therapeutic drug use, usually of selective serotonin reuptake inhibitors (SSRIs), intentional excessive use or interactions between various drugs. CASE PRESENTATION: A 16-year-old Caucasian boy presented to our emergency department (ED) with alteration in his mental status for 6 h prior to arrival. On physical examination in our ED, he was combative and disoriented to time, place and person. He was febrile, hypertensive and tachycardic as well. He had intermittent rigid extremities with myoclonus of both lower extremities. A diagnosis of serotonin syndrome (SS) was made based on history of intake of fluoxetine and clinical signs, which included presence of inducible clonus and agitation. The child received supportive care involving intravenous fluids and intravenous lorazepam. The child was back to his baseline mental status and had a normal neurological exam by 24 h and was discharged home later for follow-up with a psychiatrist. CONCLUSIONS: SS occurs with increasing frequency, and most cases resolve with prompt recognition and supportive care. Failure to make an early diagnosis and to comprehend adverse pharmacological effects of therapy can lead to adverse outcomes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21373307_causative-agent_0000361#mention-T1",
+      "canon:span": {
+        "start": 4,
+        "end": 22
+      },
+      "canon:surface": "serotonin syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21373307_causative-agent_0000361#mention-T2",
+      "canon:span": {
+        "start": 941,
+        "end": 950
+      },
+      "canon:surface": "lorazepam",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008140",
+      "canon:sourceNotation": "D008140",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21373307_causative-agent_0000361#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21373307_causative-agent_0000361#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21373307_causative-agent_0000361#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21373307"
+      }
+    }
+  ]
+}

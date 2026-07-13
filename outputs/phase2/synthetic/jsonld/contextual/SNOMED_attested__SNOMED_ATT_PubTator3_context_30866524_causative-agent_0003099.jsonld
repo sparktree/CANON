@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30866524_causative-agent_0003099",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30866524_causative-agent_0003099",
+  "canon:title": "Alcohol Interaction with Cocaine, Methamphetamine, Opioids, Nicotine, Cannabis, and gamma-Hydroxybutyric Acid.",
+  "canon:abstract": "Millions of people around the world drink alcoholic beverages to cope with the stress of modern lifestyle. Although moderate alcohol drinking may have some relaxing and euphoric effects, uncontrolled drinking exacerbates the problems associated with alcohol abuse that are exploding in quantity and intensity in the United States and around the world. Recently, mixing of alcohol with other drugs of abuse (such as opioids, cocaine, methamphetamine, nicotine, cannabis, and gamma-hydroxybutyric acid) and medications has become an emerging trend, exacerbating the public health concerns. Mixing of alcohol with other drugs may additively or synergistically augment the seriousness of the adverse effects such as the withdrawal symptoms, cardiovascular disorders, liver damage, reproductive abnormalities, and behavioral abnormalities. Despite the seriousness of the situation, possible mechanisms underlying the interactions is not yet understood. This has been one of the key hindrances in developing effective treatments. Therefore, the aim of this article is to review the consequences of alcohol's interaction with other drugs and decipher the underlying mechanisms.",
+  "canon:text": "Alcohol Interaction with Cocaine, Methamphetamine, Opioids, Nicotine, Cannabis, and gamma-Hydroxybutyric Acid. Millions of people around the world drink alcoholic beverages to cope with the stress of modern lifestyle. Although moderate alcohol drinking may have some relaxing and euphoric effects, uncontrolled drinking exacerbates the problems associated with alcohol abuse that are exploding in quantity and intensity in the United States and around the world. Recently, mixing of alcohol with other drugs of abuse (such as opioids, cocaine, methamphetamine, nicotine, cannabis, and gamma-hydroxybutyric acid) and medications has become an emerging trend, exacerbating the public health concerns. Mixing of alcohol with other drugs may additively or synergistically augment the seriousness of the adverse effects such as the withdrawal symptoms, cardiovascular disorders, liver damage, reproductive abnormalities, and behavioral abnormalities. Despite the seriousness of the situation, possible mechanisms underlying the interactions is not yet understood. This has been one of the key hindrances in developing effective treatments. Therefore, the aim of this article is to review the consequences of alcohol's interaction with other drugs and decipher the underlying mechanisms.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30866524_causative-agent_0003099#mention-T1",
+      "canon:span": {
+        "start": 236,
+        "end": 243
+      },
+      "canon:surface": "alcohol",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30866524_causative-agent_0003099#mention-T2",
+      "canon:span": {
+        "start": 60,
+        "end": 68
+      },
+      "canon:surface": "Nicotine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009538",
+      "canon:sourceNotation": "D009538",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30866524_causative-agent_0003099#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30866524_causative-agent_0003099#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30866524_causative-agent_0003099#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30866524"
+      }
+    }
+  ]
+}

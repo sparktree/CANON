@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38193024_causative-agent_0004482",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_38193024_causative-agent_0004482",
+  "canon:title": "Tiger nut/coconut dietary intervention as antidotal nutritional remediation strategy against neurobehavioural deficits following organophosphate-induced gut-brain axis dysregulation in mice.",
+  "canon:abstract": "Organophosphate poisoning remains a global health crisis without efficacious treatments to prevent neurotoxicity. We examined whether antidotal tiger nut and coconut dietary intervention could ameliorate neurobehavioral deficits from organophosphate dichlorvos-induced gut-brain axis dysregulation in a mouse model. Mice were divided into groups given control diet, dichlorvos-contaminated diets, or dichlorvos plus nut-enriched diets. They were exposed to a DDVP-contaminated diet for 4 weeks before exposure to the treatment diets for another 8 weeks. This was followed by behavioural assessments for cognitive, motor, anxiety-, and depressive-like behaviours. Faecal samples (pre- and post-treatment), as well as blood, brain, and gut tissues, were collected for biochemical assessments following euthanasia. Dichlorvos-exposed mice displayed impairments in cognition, motor function, and mood along with disrupted inflammatory and antioxidant responses, neurotrophic factor levels, and acetylcholinesterase activity in brain and intestinal tissues. Weight loss and altered short-chain fatty acid levels additionally indicated gut dysfunction. However, intervention with tiger nut and/or coconut- enriched diet after dichlorvos exposure attenuated these neurobehavioral, and biochemical alterations. Our findings demonstrate organophosphate-induced communication disruptions between the gut and brain pathways that manifest in neuropsychiatric disturbances. Overall, incorporating fibre-rich nuts may represent an antidotal dietary strategy to reduce neurotoxicity and prevent brain disorders associated with organophosphate poisoning.",
+  "canon:text": "Tiger nut/coconut dietary intervention as antidotal nutritional remediation strategy against neurobehavioural deficits following organophosphate-induced gut-brain axis dysregulation in mice. Organophosphate poisoning remains a global health crisis without efficacious treatments to prevent neurotoxicity. We examined whether antidotal tiger nut and coconut dietary intervention could ameliorate neurobehavioral deficits from organophosphate dichlorvos-induced gut-brain axis dysregulation in a mouse model. Mice were divided into groups given control diet, dichlorvos-contaminated diets, or dichlorvos plus nut-enriched diets. They were exposed to a DDVP-contaminated diet for 4 weeks before exposure to the treatment diets for another 8 weeks. This was followed by behavioural assessments for cognitive, motor, anxiety-, and depressive-like behaviours. Faecal samples (pre- and post-treatment), as well as blood, brain, and gut tissues, were collected for biochemical assessments following euthanasia. Dichlorvos-exposed mice displayed impairments in cognition, motor function, and mood along with disrupted inflammatory and antioxidant responses, neurotrophic factor levels, and acetylcholinesterase activity in brain and intestinal tissues. Weight loss and altered short-chain fatty acid levels additionally indicated gut dysfunction. However, intervention with tiger nut and/or coconut- enriched diet after dichlorvos exposure attenuated these neurobehavioral, and biochemical alterations. Our findings demonstrate organophosphate-induced communication disruptions between the gut and brain pathways that manifest in neuropsychiatric disturbances. Overall, incorporating fibre-rich nuts may represent an antidotal dietary strategy to reduce neurotoxicity and prevent brain disorders associated with organophosphate poisoning.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38193024_causative-agent_0004482#mention-T1",
+      "canon:span": {
+        "start": 290,
+        "end": 303
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38193024_causative-agent_0004482#mention-T2",
+      "canon:span": {
+        "start": 129,
+        "end": 144
+      },
+      "canon:surface": "organophosphate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010755",
+      "canon:sourceNotation": "D010755",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38193024_causative-agent_0004482#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38193024_causative-agent_0004482#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38193024_causative-agent_0004482#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "38193024"
+      }
+    }
+  ]
+}

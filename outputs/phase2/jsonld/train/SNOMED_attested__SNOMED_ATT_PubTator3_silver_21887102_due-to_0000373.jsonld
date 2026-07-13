@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21887102_due-to_0000373",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21887102_due-to_0000373",
+  "canon:title": "Update on the management of diabetic polyneuropathies.",
+  "canon:abstract": "The prevalence of diabetic polyneuropathy (DPN) can approach 50% in subjects with longer-duration diabetes. The most common neuropathies are generalized symmetrical chronic sensorimotor polyneuropathy and autonomic neuropathy. It is important to recognize that 50% of subjects with DPN may have no symptoms and only careful clinical examination may reveal the diagnosis. DPN, especially painful diabetic peripheral neuropathy, is associated with poor quality of life. Although there is a better understanding of the pathophysiology of DPN and the mechanisms of pain, treatment remains challenging and is limited by variable efficacy and side effects of therapies. Intensification of glycemic control remains the cornerstone for the prevention or delay of DPN but optimization of other traditional cardiovascular risk factors may also be of benefit. The management of DPN relies on its early recognition and needs to be individually based on comorbidities and tolerability to medications. To date, most pharmacological strategies focus upon symptom control. In the management of pain, tricyclic antidepressants, selective serotonin noradrenaline reuptake inhibitors, and anticonvulsants alone or in combination are current first-line therapies followed by use of opiates. Topical agents may offer symptomatic relief in some patients. Disease-modifying agents are still in development and to date, antioxidant alpha-lipoic acid has shown the most promising effect. Further development and testing of therapies based upon improved understanding of the complex pathophysiology of this common and disabling complication is urgently required.",
+  "canon:text": "Update on the management of diabetic polyneuropathies. The prevalence of diabetic polyneuropathy (DPN) can approach 50% in subjects with longer-duration diabetes. The most common neuropathies are generalized symmetrical chronic sensorimotor polyneuropathy and autonomic neuropathy. It is important to recognize that 50% of subjects with DPN may have no symptoms and only careful clinical examination may reveal the diagnosis. DPN, especially painful diabetic peripheral neuropathy, is associated with poor quality of life. Although there is a better understanding of the pathophysiology of DPN and the mechanisms of pain, treatment remains challenging and is limited by variable efficacy and side effects of therapies. Intensification of glycemic control remains the cornerstone for the prevention or delay of DPN but optimization of other traditional cardiovascular risk factors may also be of benefit. The management of DPN relies on its early recognition and needs to be individually based on comorbidities and tolerability to medications. To date, most pharmacological strategies focus upon symptom control. In the management of pain, tricyclic antidepressants, selective serotonin noradrenaline reuptake inhibitors, and anticonvulsants alone or in combination are current first-line therapies followed by use of opiates. Topical agents may offer symptomatic relief in some patients. Disease-modifying agents are still in development and to date, antioxidant alpha-lipoic acid has shown the most promising effect. Further development and testing of therapies based upon improved understanding of the complex pathophysiology of this common and disabling complication is urgently required.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21887102_due-to_0000373#mention-T1",
+      "canon:span": {
+        "start": 28,
+        "end": 53
+      },
+      "canon:surface": "diabetic polyneuropathies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21887102_due-to_0000373#mention-T2",
+      "canon:span": {
+        "start": 153,
+        "end": 161
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21887102_due-to_0000373#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21887102_due-to_0000373#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21887102_due-to_0000373#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21887102"
+      }
+    }
+  ]
+}

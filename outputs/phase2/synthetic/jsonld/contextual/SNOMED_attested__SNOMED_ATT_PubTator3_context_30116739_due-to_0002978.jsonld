@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30116739_due-to_0002978",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30116739_due-to_0002978",
+  "canon:title": "Interactions between and Shared Molecular Mechanisms of Diabetic Peripheral Neuropathy and Obstructive Sleep Apnea in Type 2 Diabetes Patients.",
+  "canon:abstract": "Type 2 diabetes (T2D) accounts for about 90% of all diabetes patients and incurs a heavy global public health burden. Up to 50% of T2D patients will eventually develop neuropathy as T2D progresses. Diabetic peripheral neuropathy (DPN) is a common diabetic complication and one of the main causes of increased morbidity and mortality of T2D patients. Obstructive sleep apnea (OSA) affects over 15% of the general population and is associated with a higher prevalence of T2D. Growing evidence also indicates that OSA is highly prevalent in T2D patients probably due to diabetic peripheral neuropathy. However, the interrelations among diabetic peripheral neuropathy, OSA, and T2D hitherto have not been clearly elucidated. Numerous molecular mechanisms have been documented that underlie diabetic peripheral neuropathy and OSA, including oxidative stress, inflammation, endothelin-1, vascular endothelial growth factor (VEGF), accumulation of advanced glycation end products, protein kinase C (PKC) signaling, poly ADP ribose polymerase (PARP), nitrosative stress, plasminogen activator inhibitor-1, and vitamin D deficiency. In this review, we seek to illuminate the relationships among T2D, diabetic peripheral neuropathy, and OSA and how they interact with one another. In addition, we summarize and explain the shared molecular mechanisms involved in diabetic peripheral neuropathy and OSA for further mechanistic investigations and novel therapeutic strategies for attenuating and preventing the development and progression of diabetic peripheral neuropathy and OSA in T2D.",
+  "canon:text": "Interactions between and Shared Molecular Mechanisms of Diabetic Peripheral Neuropathy and Obstructive Sleep Apnea in Type 2 Diabetes Patients. Type 2 diabetes (T2D) accounts for about 90% of all diabetes patients and incurs a heavy global public health burden. Up to 50% of T2D patients will eventually develop neuropathy as T2D progresses. Diabetic peripheral neuropathy (DPN) is a common diabetic complication and one of the main causes of increased morbidity and mortality of T2D patients. Obstructive sleep apnea (OSA) affects over 15% of the general population and is associated with a higher prevalence of T2D. Growing evidence also indicates that OSA is highly prevalent in T2D patients probably due to diabetic peripheral neuropathy. However, the interrelations among diabetic peripheral neuropathy, OSA, and T2D hitherto have not been clearly elucidated. Numerous molecular mechanisms have been documented that underlie diabetic peripheral neuropathy and OSA, including oxidative stress, inflammation, endothelin-1, vascular endothelial growth factor (VEGF), accumulation of advanced glycation end products, protein kinase C (PKC) signaling, poly ADP ribose polymerase (PARP), nitrosative stress, plasminogen activator inhibitor-1, and vitamin D deficiency. In this review, we seek to illuminate the relationships among T2D, diabetic peripheral neuropathy, and OSA and how they interact with one another. In addition, we summarize and explain the shared molecular mechanisms involved in diabetic peripheral neuropathy and OSA for further mechanistic investigations and novel therapeutic strategies for attenuating and preventing the development and progression of diabetic peripheral neuropathy and OSA in T2D.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30116739_due-to_0002978#mention-T1",
+      "canon:span": {
+        "start": 391,
+        "end": 412
+      },
+      "canon:surface": "diabetic complication",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30116739_due-to_0002978#mention-T2",
+      "canon:span": {
+        "start": 118,
+        "end": 133
+      },
+      "canon:surface": "Type 2 Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30116739_due-to_0002978#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30116739_due-to_0002978#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30116739_due-to_0002978#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30116739"
+      }
+    }
+  ]
+}

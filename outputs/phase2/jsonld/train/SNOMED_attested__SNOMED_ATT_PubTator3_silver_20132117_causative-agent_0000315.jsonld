@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20132117_causative-agent_0000315",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_20132117_causative-agent_0000315",
+  "canon:title": "Drug interactions of clinical importance among the opioids, methadone and buprenorphine, and other frequently prescribed medications: a review.",
+  "canon:abstract": "Drug interactions are a leading cause of morbidity and mortality. Methadone and buprenorphine are frequently prescribed for the treatment of opioid addiction. Patients needing treatment with these medications often have co-occurring medical and mental illnesses that require medication treatment. The abuse of illicit substances is also common in opioid-addicted individuals. These clinical realities place patients being treated with methadone and buprenorphine at risk for potentially toxic drug interactions. A substantial literature has accumulated on drug interactions between either methadone or buprenorphine with other medications when ingested concomitantly by humans. This review summarizes current literature in this area.",
+  "canon:text": "Drug interactions of clinical importance among the opioids, methadone and buprenorphine, and other frequently prescribed medications: a review. Drug interactions are a leading cause of morbidity and mortality. Methadone and buprenorphine are frequently prescribed for the treatment of opioid addiction. Patients needing treatment with these medications often have co-occurring medical and mental illnesses that require medication treatment. The abuse of illicit substances is also common in opioid-addicted individuals. These clinical realities place patients being treated with methadone and buprenorphine at risk for potentially toxic drug interactions. A substantial literature has accumulated on drug interactions between either methadone or buprenorphine with other medications when ingested concomitantly by humans. This review summarizes current literature in this area.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20132117_causative-agent_0000315#mention-T1",
+      "canon:span": {
+        "start": 285,
+        "end": 301
+      },
+      "canon:surface": "opioid addiction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20132117_causative-agent_0000315#mention-T2",
+      "canon:span": {
+        "start": 74,
+        "end": 87
+      },
+      "canon:surface": "buprenorphine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002047",
+      "canon:sourceNotation": "D002047",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20132117_causative-agent_0000315#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20132117_causative-agent_0000315#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20132117_causative-agent_0000315#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "20132117"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000422",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000422",
+  "canon:title": "Occupational neurotoxic diseases in taiwan.",
+  "canon:abstract": "Occupational neurotoxic diseases have become increasingly common in Taiwan due to industrialization. Over the past 40 years, Taiwan has transformed from an agricultural society to an industrial society. The most common neurotoxic diseases also changed from organophosphate poisoning to heavy metal intoxication, and then to organic solvent and semiconductor agent poisoning. The nervous system is particularly vulnerable to toxic agents because of its high metabolic rate. Neurological manifestations may be transient or permanent, and may range from cognitive dysfunction, cerebellar ataxia, Parkinsonism, sensorimotor neuropathy and autonomic dysfunction to neuromuscular junction disorders. This study attempts to provide a review of the major outbreaks of occupational neurotoxins from 1968 to 2012. A total of 16 occupational neurotoxins, including organophosphates, toxic gases, heavy metals, organic solvents, and other toxic chemicals, were reviewed. Peer-reviewed articles related to the electrophysiology, neuroimaging, treatment and long-term follow up of these neurotoxic diseases were also obtained. The heavy metals involved consisted of lead, manganese, organic tin, mercury, arsenic, and thallium. The organic solvents included n-hexane, toluene, mixed solvents and carbon disulfide. Toxic gases such as carbon monoxide, and hydrogen sulfide were also included, along with toxic chemicals including polychlorinated biphenyls, tetramethylammonium hydroxide, organophosphates, and dimethylamine borane. In addition we attempted to correlate these events to the timeline of industrial development in Taiwan. By researching this topic, the hope is that it may help other developing countries to improve industrial hygiene and promote occupational safety and health care during the process of industrialization.",
+  "canon:text": "Occupational neurotoxic diseases in taiwan. Occupational neurotoxic diseases have become increasingly common in Taiwan due to industrialization. Over the past 40 years, Taiwan has transformed from an agricultural society to an industrial society. The most common neurotoxic diseases also changed from organophosphate poisoning to heavy metal intoxication, and then to organic solvent and semiconductor agent poisoning. The nervous system is particularly vulnerable to toxic agents because of its high metabolic rate. Neurological manifestations may be transient or permanent, and may range from cognitive dysfunction, cerebellar ataxia, Parkinsonism, sensorimotor neuropathy and autonomic dysfunction to neuromuscular junction disorders. This study attempts to provide a review of the major outbreaks of occupational neurotoxins from 1968 to 2012. A total of 16 occupational neurotoxins, including organophosphates, toxic gases, heavy metals, organic solvents, and other toxic chemicals, were reviewed. Peer-reviewed articles related to the electrophysiology, neuroimaging, treatment and long-term follow up of these neurotoxic diseases were also obtained. The heavy metals involved consisted of lead, manganese, organic tin, mercury, arsenic, and thallium. The organic solvents included n-hexane, toluene, mixed solvents and carbon disulfide. Toxic gases such as carbon monoxide, and hydrogen sulfide were also included, along with toxic chemicals including polychlorinated biphenyls, tetramethylammonium hydroxide, organophosphates, and dimethylamine borane. In addition we attempted to correlate these events to the timeline of industrial development in Taiwan. By researching this topic, the hope is that it may help other developing countries to improve industrial hygiene and promote occupational safety and health care during the process of industrialization.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000422#mention-T1",
+      "canon:span": {
+        "start": 13,
+        "end": 32
+      },
+      "canon:surface": "neurotoxic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000422#mention-T2",
+      "canon:span": {
+        "start": 301,
+        "end": 316
+      },
+      "canon:surface": "organophosphate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010755",
+      "canon:sourceNotation": "D010755",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000422#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000422#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23251841_causative-agent_0000422#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "23251841"
+      }
+    }
+  ]
+}

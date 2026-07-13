@@ -1,0 +1,87 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_11642480_causative-agent_0000159",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_11642480_causative-agent_0000159",
+  "canon:title": "Palpebral twitching in a depressed adolescent on citalopram.",
+  "canon:abstract": "Current estimates suggest that between 0.4% and 8.3% of children and adolescents are affected by major depression. We report a favorable response to treatment with citalopram by a 15-year-old boy with major depression who exhibited palpebral twitching during his first 2 weeks of treatment. This may have been a side effect of citalopram as it remitted with redistribution of doses.",
+  "canon:text": "Palpebral twitching in a depressed adolescent on citalopram. Current estimates suggest that between 0.4% and 8.3% of children and adolescents are affected by major depression. We report a favorable response to treatment with citalopram by a 15-year-old boy with major depression who exhibited palpebral twitching during his first 2 weeks of treatment. This may have been a side effect of citalopram as it remitted with redistribution of doses.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_11642480_causative-agent_0000159#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 19
+      },
+      "canon:surface": "Palpebral twitching",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/102448004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_11642480_causative-agent_0000159#mention-T2",
+      "canon:span": {
+        "start": 49,
+        "end": 59
+      },
+      "canon:surface": "citalopram",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D015283",
+      "canon:sourceNotation": "D015283",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372596005",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_11642480_causative-agent_0000159#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_11642480_causative-agent_0000159#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_11642480_causative-agent_0000159#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "11642480"
+      }
+    }
+  ]
+}

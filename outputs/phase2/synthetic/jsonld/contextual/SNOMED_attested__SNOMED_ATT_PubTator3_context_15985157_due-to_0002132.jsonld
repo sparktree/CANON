@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15985157_due-to_0002132",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_15985157_due-to_0002132",
+  "canon:title": "The central role of vascular extracellular matrix and basement membrane remodeling in metabolic syndrome and type 2 diabetes: the matrix preloaded.",
+  "canon:abstract": "The vascular endothelial basement membrane and extra cellular matrix is a compilation of different macromolecules organized by physical entanglements, opposing ionic charges, chemical covalent bonding, and cross-linking into a biomechanically active polymer. These matrices provide a gel-like form and scaffolding structure with regional tensile strength provided by collagens, elasticity by elastins, adhesiveness by structural glycoproteins, compressibility by proteoglycans--hyaluronans, and communicability by a family of integrins, which exchanges information between cells and between cells and the extracellular matrix of vascular tissues. Each component of the extracellular matrix and specifically the capillary basement membrane possesses unique structural properties and interactions with one another, which determine the separate and combined roles in the multiple diabetic complications or diabetic opathies. Metabolic syndrome, prediabetes, type 2 diabetes mellitus, and their parallel companion (atheroscleropathy) are associated with multiple metabolic toxicities and chronic injurious stimuli. The adaptable quality of a matrix or form genetically preloaded with the necessary information to communicate and respond to an ever-changing environment, which supports the interstitium, capillary and arterial vessel wall is individually examined.",
+  "canon:text": "The central role of vascular extracellular matrix and basement membrane remodeling in metabolic syndrome and type 2 diabetes: the matrix preloaded. The vascular endothelial basement membrane and extra cellular matrix is a compilation of different macromolecules organized by physical entanglements, opposing ionic charges, chemical covalent bonding, and cross-linking into a biomechanically active polymer. These matrices provide a gel-like form and scaffolding structure with regional tensile strength provided by collagens, elasticity by elastins, adhesiveness by structural glycoproteins, compressibility by proteoglycans--hyaluronans, and communicability by a family of integrins, which exchanges information between cells and between cells and the extracellular matrix of vascular tissues. Each component of the extracellular matrix and specifically the capillary basement membrane possesses unique structural properties and interactions with one another, which determine the separate and combined roles in the multiple diabetic complications or diabetic opathies. Metabolic syndrome, prediabetes, type 2 diabetes mellitus, and their parallel companion (atheroscleropathy) are associated with multiple metabolic toxicities and chronic injurious stimuli. The adaptable quality of a matrix or form genetically preloaded with the necessary information to communicate and respond to an ever-changing environment, which supports the interstitium, capillary and arterial vessel wall is individually examined.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15985157_due-to_0002132#mention-T1",
+      "canon:span": {
+        "start": 1025,
+        "end": 1047
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15985157_due-to_0002132#mention-T2",
+      "canon:span": {
+        "start": 109,
+        "end": 124
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15985157_due-to_0002132#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15985157_due-to_0002132#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15985157_due-to_0002132#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "15985157"
+      }
+    }
+  ]
+}

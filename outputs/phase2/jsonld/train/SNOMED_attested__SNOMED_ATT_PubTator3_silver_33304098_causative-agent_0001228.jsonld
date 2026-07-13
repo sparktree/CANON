@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33304098_causative-agent_0001228",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33304098_causative-agent_0001228",
+  "canon:title": "Case Report and Literature Review on Low-Osmolar, Non-Ionic Iodine-Based Contrast-Induced Encephalopathy.",
+  "canon:abstract": "Contrast-induced encephalopathy (CIE) is a rare complication following percutaneous carotid and coronary interventions, and important diagnostic radiological signs include brain edema and cortical enhancement. In this report, we detail a case of probable CIE in an 84-year-old woman following a normal diagnostic coronary angiography (CAG) that involved 20 mL of the low-osmolar, non-ionic monomeric, iodine-based contrast agent iopromide (Ultravist 370). The patient was unconscious and presented with hemiparesis, hemianopia, recurrent seizures, and cardiac and respiratory arrest within minutes to hours following the procedure. Non-contrast computed tomography (CT) of the head showed increased subarachnoid density, cortical enhancement, and brain edema in the right hemisphere. Three days of rehydration, reduction in cranial pressure, and treatment with an anticonvulsant and dexamethasone resulted in a gradual recovery with no neurological deficits. This case highlights that severe neurotoxic symptoms may occur in response to low doses of low-osmolar, non-ionic, monomeric contrast agents. This finding is of importance to interventional cardiologists for diagnostic considerations and development of treatment plans.",
+  "canon:text": "Case Report and Literature Review on Low-Osmolar, Non-Ionic Iodine-Based Contrast-Induced Encephalopathy. Contrast-induced encephalopathy (CIE) is a rare complication following percutaneous carotid and coronary interventions, and important diagnostic radiological signs include brain edema and cortical enhancement. In this report, we detail a case of probable CIE in an 84-year-old woman following a normal diagnostic coronary angiography (CAG) that involved 20 mL of the low-osmolar, non-ionic monomeric, iodine-based contrast agent iopromide (Ultravist 370). The patient was unconscious and presented with hemiparesis, hemianopia, recurrent seizures, and cardiac and respiratory arrest within minutes to hours following the procedure. Non-contrast computed tomography (CT) of the head showed increased subarachnoid density, cortical enhancement, and brain edema in the right hemisphere. Three days of rehydration, reduction in cranial pressure, and treatment with an anticonvulsant and dexamethasone resulted in a gradual recovery with no neurological deficits. This case highlights that severe neurotoxic symptoms may occur in response to low doses of low-osmolar, non-ionic, monomeric contrast agents. This finding is of importance to interventional cardiologists for diagnostic considerations and development of treatment plans.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33304098_causative-agent_0001228#mention-T1",
+      "canon:span": {
+        "start": 1098,
+        "end": 1117
+      },
+      "canon:surface": "neurotoxic symptoms",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33304098_causative-agent_0001228#mention-T2",
+      "canon:span": {
+        "start": 989,
+        "end": 1002
+      },
+      "canon:surface": "dexamethasone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003907",
+      "canon:sourceNotation": "D003907",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33304098_causative-agent_0001228#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33304098_causative-agent_0001228#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33304098_causative-agent_0001228#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33304098"
+      }
+    }
+  ]
+}

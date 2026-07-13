@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35612524_after_0003908",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35612524_after_0003908",
+  "canon:title": "An update on polymyalgia rheumatica.",
+  "canon:abstract": "Polymyalgia rheumatica (PMR) is the most common inflammatory rheumatic disease affecting people older than 50 years and is 2-3 times more common in women. The most common symptoms are pain and morning stiffness in the shoulder and pelvic girdle and the onset may be acute or develop over a few days to weeks. General symptoms such as fatigue, fever and weight loss may occur, likely driven by systemic IL-6 signalling. The pathology includes synovial and periarticular inflammation and muscular vasculopathy. A new observation is that PMR may appear as a side effect of cancer treatment with checkpoint inhibitors. The diagnosis of PMR relies mainly on symptoms and signs combined with laboratory markers of inflammation. Imaging modalities including ultrasound, magnetic resonance imaging and positron emission tomography with computed tomography are promising new tools in the investigation of suspected PMR. However, they are still limited by availability, high cost and unclear performance in the diagnostic workup. Glucocorticoid (GC) therapy is effective in PMR, with most patients responding promptly to 15-25 mg prednisolone per day. There are challenges in the management of patients with PMR as relapses do occur and patients with PMR may need to stay on GC for extended periods. This is associated with high rates of GC-related comorbidities, such as diabetes and osteoporosis, and there are limited data on the use of disease-modifying antirheumatic drugs and biologics as GC sparing agents. Finally, PMR is associated with giant cell arteritis that may complicate the disease course and require more intense and prolonged treatment.",
+  "canon:text": "An update on polymyalgia rheumatica. Polymyalgia rheumatica (PMR) is the most common inflammatory rheumatic disease affecting people older than 50 years and is 2-3 times more common in women. The most common symptoms are pain and morning stiffness in the shoulder and pelvic girdle and the onset may be acute or develop over a few days to weeks. General symptoms such as fatigue, fever and weight loss may occur, likely driven by systemic IL-6 signalling. The pathology includes synovial and periarticular inflammation and muscular vasculopathy. A new observation is that PMR may appear as a side effect of cancer treatment with checkpoint inhibitors. The diagnosis of PMR relies mainly on symptoms and signs combined with laboratory markers of inflammation. Imaging modalities including ultrasound, magnetic resonance imaging and positron emission tomography with computed tomography are promising new tools in the investigation of suspected PMR. However, they are still limited by availability, high cost and unclear performance in the diagnostic workup. Glucocorticoid (GC) therapy is effective in PMR, with most patients responding promptly to 15-25 mg prednisolone per day. There are challenges in the management of patients with PMR as relapses do occur and patients with PMR may need to stay on GC for extended periods. This is associated with high rates of GC-related comorbidities, such as diabetes and osteoporosis, and there are limited data on the use of disease-modifying antirheumatic drugs and biologics as GC sparing agents. Finally, PMR is associated with giant cell arteritis that may complicate the disease course and require more intense and prolonged treatment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35612524_after_0003908#mention-T1",
+      "canon:span": {
+        "start": 85,
+        "end": 115
+      },
+      "canon:surface": "inflammatory rheumatic disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012213",
+      "canon:sourceNotation": "D012213",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35612524_after_0003908#mention-T2",
+      "canon:span": {
+        "start": 523,
+        "end": 544
+      },
+      "canon:surface": "muscular vasculopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009135",
+      "canon:sourceNotation": "D009135",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35612524_after_0003908#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35612524_after_0003908#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35612524_after_0003908#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35612524"
+      }
+    }
+  ]
+}

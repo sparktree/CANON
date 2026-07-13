@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37322012_causative-agent_0001952",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37322012_causative-agent_0001952",
+  "canon:title": "Primary central nervous system lymphoma.",
+  "canon:abstract": "Primary central nervous system lymphoma (PCNSL) is a diffuse large B cell lymphoma in which the brain, spinal cord, leptomeninges and/or eyes are exclusive sites of disease. Pathophysiology is incompletely understood, although a central role seems to comprise immunoglobulins binding to self-proteins expressed in the central nervous system (CNS) and alterations of genes involved in B cell receptor, Toll-like receptor and NF-kappaB signalling. Other factors such as T cells, macrophages or microglia, endothelial cells, chemokines, and interleukins, probably also have important roles. Clinical presentation varies depending on the involved regions of the CNS. Standard of care includes methotrexate-based polychemotherapy followed by age-tailored thiotepa-based conditioned autologous stem cell transplantation and, in patients unsuitable for such treatment, consolidation with whole-brain radiotherapy or single-drug maintenance. Personalized treatment, primary radiotherapy and only supportive care should be considered in unfit, frail patients. Despite available treatments, 15-25% of patients do not respond to chemotherapy and 25-50% relapse after initial response. Relapse rates are higher in older patients, although the prognosis of patients experiencing relapse is poor independent of age. Further research is needed to identify diagnostic biomarkers, treatments with higher efficacy and less neurotoxicity, strategies to improve the penetration of drugs into the CNS, and roles of other therapies such as immunotherapies and adoptive cell therapies.",
+  "canon:text": "Primary central nervous system lymphoma. Primary central nervous system lymphoma (PCNSL) is a diffuse large B cell lymphoma in which the brain, spinal cord, leptomeninges and/or eyes are exclusive sites of disease. Pathophysiology is incompletely understood, although a central role seems to comprise immunoglobulins binding to self-proteins expressed in the central nervous system (CNS) and alterations of genes involved in B cell receptor, Toll-like receptor and NF-kappaB signalling. Other factors such as T cells, macrophages or microglia, endothelial cells, chemokines, and interleukins, probably also have important roles. Clinical presentation varies depending on the involved regions of the CNS. Standard of care includes methotrexate-based polychemotherapy followed by age-tailored thiotepa-based conditioned autologous stem cell transplantation and, in patients unsuitable for such treatment, consolidation with whole-brain radiotherapy or single-drug maintenance. Personalized treatment, primary radiotherapy and only supportive care should be considered in unfit, frail patients. Despite available treatments, 15-25% of patients do not respond to chemotherapy and 25-50% relapse after initial response. Relapse rates are higher in older patients, although the prognosis of patients experiencing relapse is poor independent of age. Further research is needed to identify diagnostic biomarkers, treatments with higher efficacy and less neurotoxicity, strategies to improve the penetration of drugs into the CNS, and roles of other therapies such as immunotherapies and adoptive cell therapies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37322012_causative-agent_0001952#mention-T1",
+      "canon:span": {
+        "start": 1446,
+        "end": 1459
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37322012_causative-agent_0001952#mention-T2",
+      "canon:span": {
+        "start": 730,
+        "end": 742
+      },
+      "canon:surface": "methotrexate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008727",
+      "canon:sourceNotation": "D008727",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37322012_causative-agent_0001952#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37322012_causative-agent_0001952#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37322012_causative-agent_0001952#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37322012"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24135464_causative-agent_0002404",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24135464_causative-agent_0002404",
+  "canon:title": "Subsite awareness in neuropathology evaluation of National Toxicology Program (NTP) studies: a review of select neuroanatomical structures with their functional significance in rodents.",
+  "canon:abstract": "This review article is designed to serve as an introductory guide in neuroanatomy for toxicologic pathologists evaluating general toxicity studies. The article provides an overview of approximately 50 neuroanatomical subsites and their functional significance across 7 transverse sections of the brain. Also reviewed are 3 sections of the spinal cord, cranial and peripheral nerves (trigeminal and sciatic, respectively), and intestinal autonomic ganglia. The review is limited to the evaluation of hematoxylin and eosin-stained tissue sections, as light microscopic evaluation of these sections is an integral part of the first-tier toxicity screening of environmental chemicals, drugs, and other agents. Prominent neuroanatomical sites associated with major neurological disorders are noted. This guide, when used in conjunction with detailed neuroanatomic atlases, may aid in an understanding of the significance of functional neuroanatomy, thereby improving the characterization of neurotoxicity in general toxicity and safety evaluation studies. ",
+  "canon:text": "Subsite awareness in neuropathology evaluation of National Toxicology Program (NTP) studies: a review of select neuroanatomical structures with their functional significance in rodents. This review article is designed to serve as an introductory guide in neuroanatomy for toxicologic pathologists evaluating general toxicity studies. The article provides an overview of approximately 50 neuroanatomical subsites and their functional significance across 7 transverse sections of the brain. Also reviewed are 3 sections of the spinal cord, cranial and peripheral nerves (trigeminal and sciatic, respectively), and intestinal autonomic ganglia. The review is limited to the evaluation of hematoxylin and eosin-stained tissue sections, as light microscopic evaluation of these sections is an integral part of the first-tier toxicity screening of environmental chemicals, drugs, and other agents. Prominent neuroanatomical sites associated with major neurological disorders are noted. This guide, when used in conjunction with detailed neuroanatomic atlases, may aid in an understanding of the significance of functional neuroanatomy, thereby improving the characterization of neurotoxicity in general toxicity and safety evaluation studies. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24135464_causative-agent_0002404#mention-T1",
+      "canon:span": {
+        "start": 1172,
+        "end": 1185
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24135464_causative-agent_0002404#mention-T2",
+      "canon:span": {
+        "start": 701,
+        "end": 706
+      },
+      "canon:surface": "eosin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004801",
+      "canon:sourceNotation": "D004801",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24135464_causative-agent_0002404#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24135464_causative-agent_0002404#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24135464_causative-agent_0002404#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24135464"
+      }
+    }
+  ]
+}

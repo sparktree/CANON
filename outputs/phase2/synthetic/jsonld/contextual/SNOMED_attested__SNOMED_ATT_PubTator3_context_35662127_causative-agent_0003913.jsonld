@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35662127_causative-agent_0003913",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35662127_causative-agent_0003913",
+  "canon:title": "A Review on Response to Device-Aided Therapies Used in Monogenic Parkinsonism and GBA Variants Carriers: A Need for Guidelines and Comparative Studies.",
+  "canon:abstract": "Parkinson's disease (PD) is in some cases predisposed-or-caused by genetic variants, contributing to the expression of different phenotypes. Regardless of etiology, as the disease progresses, motor fluctuations and/or levodopa-induced dyskinesias limit the benefit of pharmacotherapy. Device-aided therapies are good alternatives in advanced disease, including deep brain stimulation (DBS), levodopa-carbidopa intestinal gel, and continuous subcutaneous infusion of apomorphine. Candidate selection and timing are critical for the success of such therapies. Genetic screening in DBS cohorts has shown a higher proportion of mutation carriers than in general cohorts, suggesting that genetic factors may influence candidacy for advanced therapies. The response of monogenic PD to device therapies is not well established, and the contribution of genetic information to decision-making is still a matter of debate. The limited evidence regarding gene-dependent response to device-aided therapies is reviewed here. An accurate understanding of the adequacy and responses of different mutation carriers to device-aided therapies requires the development of specific studies with long-term monitoring.",
+  "canon:text": "A Review on Response to Device-Aided Therapies Used in Monogenic Parkinsonism and GBA Variants Carriers: A Need for Guidelines and Comparative Studies. Parkinson's disease (PD) is in some cases predisposed-or-caused by genetic variants, contributing to the expression of different phenotypes. Regardless of etiology, as the disease progresses, motor fluctuations and/or levodopa-induced dyskinesias limit the benefit of pharmacotherapy. Device-aided therapies are good alternatives in advanced disease, including deep brain stimulation (DBS), levodopa-carbidopa intestinal gel, and continuous subcutaneous infusion of apomorphine. Candidate selection and timing are critical for the success of such therapies. Genetic screening in DBS cohorts has shown a higher proportion of mutation carriers than in general cohorts, suggesting that genetic factors may influence candidacy for advanced therapies. The response of monogenic PD to device therapies is not well established, and the contribution of genetic information to decision-making is still a matter of debate. The limited evidence regarding gene-dependent response to device-aided therapies is reviewed here. An accurate understanding of the adequacy and responses of different mutation carriers to device-aided therapies requires the development of specific studies with long-term monitoring.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35662127_causative-agent_0003913#mention-T1",
+      "canon:span": {
+        "start": 387,
+        "end": 398
+      },
+      "canon:surface": "dyskinesias",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35662127_causative-agent_0003913#mention-T2",
+      "canon:span": {
+        "start": 370,
+        "end": 378
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35662127_causative-agent_0003913#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35662127_causative-agent_0003913#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35662127_causative-agent_0003913#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35662127"
+      }
+    }
+  ]
+}

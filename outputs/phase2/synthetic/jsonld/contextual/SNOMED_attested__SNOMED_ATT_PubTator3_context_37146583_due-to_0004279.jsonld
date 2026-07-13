@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37146583_due-to_0004279",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37146583_due-to_0004279",
+  "canon:title": "Deriving Schwann cells from hPSCs enables disease modeling and drug discovery for diabetic peripheral neuropathy.",
+  "canon:abstract": "Schwann cells (SCs) are the primary glia of the peripheral nervous system. SCs are involved in many debilitating disorders, including diabetic peripheral neuropathy (DPN). Here, we present a strategy for deriving SCs from human pluripotent stem cells (hPSCs) that enables comprehensive studies of SC development, physiology, and disease. hPSC-derived SCs recapitulate the molecular features of primary SCs and are capable of in vitro and in vivo myelination. We established a model of DPN that revealed the selective vulnerability of SCs to high glucose. We performed a high-throughput screen and found that an antidepressant drug, bupropion, counteracts glucotoxicity in SCs. Treatment of hyperglycemic mice with bupropion prevents their sensory dysfunction, SC death, and myelin damage. Further, our retrospective analysis of health records revealed that bupropion treatment is associated with a lower incidence of neuropathy among diabetic patients. These results highlight the power of this approach for identifying therapeutic candidates for DPN.",
+  "canon:text": "Deriving Schwann cells from hPSCs enables disease modeling and drug discovery for diabetic peripheral neuropathy. Schwann cells (SCs) are the primary glia of the peripheral nervous system. SCs are involved in many debilitating disorders, including diabetic peripheral neuropathy (DPN). Here, we present a strategy for deriving SCs from human pluripotent stem cells (hPSCs) that enables comprehensive studies of SC development, physiology, and disease. hPSC-derived SCs recapitulate the molecular features of primary SCs and are capable of in vitro and in vivo myelination. We established a model of DPN that revealed the selective vulnerability of SCs to high glucose. We performed a high-throughput screen and found that an antidepressant drug, bupropion, counteracts glucotoxicity in SCs. Treatment of hyperglycemic mice with bupropion prevents their sensory dysfunction, SC death, and myelin damage. Further, our retrospective analysis of health records revealed that bupropion treatment is associated with a lower incidence of neuropathy among diabetic patients. These results highlight the power of this approach for identifying therapeutic candidates for DPN.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37146583_due-to_0004279#mention-T1",
+      "canon:span": {
+        "start": 804,
+        "end": 817
+      },
+      "canon:surface": "hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37146583_due-to_0004279#mention-T2",
+      "canon:span": {
+        "start": 1048,
+        "end": 1056
+      },
+      "canon:surface": "diabetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37146583_due-to_0004279#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37146583_due-to_0004279#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37146583_due-to_0004279#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37146583"
+      }
+    }
+  ]
+}

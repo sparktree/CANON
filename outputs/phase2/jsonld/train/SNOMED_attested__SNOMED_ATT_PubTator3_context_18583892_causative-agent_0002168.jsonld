@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18583892_causative-agent_0002168",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_18583892_causative-agent_0002168",
+  "canon:title": "Drug Rash with Eosinophilia and Systemic Symptoms (DRESS) syndrome induced by celecoxib and anti-tuberculosis drugs.",
+  "canon:abstract": "Drug Rash with Eosinophilia and Systemic Symptoms (DRESS) syndrome reflects a serious hypersensitivity reaction to drugs, characterized by skin rash, fever, lymph node enlargement, and internal organ involvement. So far, numerous drugs such as sulfonamides, phenobarbital, sulfasalazine, carbamazepine, and phenytoin have been reported to cause the DRESS syndrome. We report a case in a 29-yr-old female patient who had been on celecoxib and anti-tuberculosis drugs for one month to treat knee joint pain and pulmonary tuberculosis. Our patient's clinical manifestations included fever, lymphadenopathy, rash, hypereosinophilia, and visceral involvement (hepatitis and pneumonitis). During the corticosteroid administration for DRESS syndrome, swallowing difficulty with profound muscle weakness had developed. Our patient was diagnosed as DRESS syndrome with eosinophilic polymyositis by a histopathologic study. After complete resolution of all symptoms, patch tests were positive for both celecoxib and ethambutol. Although further investigations might be needed to confirm the causality, celecoxib and ethambutol can be added to the list of drugs as having the possibility of DRESS syndrome.",
+  "canon:text": "Drug Rash with Eosinophilia and Systemic Symptoms (DRESS) syndrome induced by celecoxib and anti-tuberculosis drugs. Drug Rash with Eosinophilia and Systemic Symptoms (DRESS) syndrome reflects a serious hypersensitivity reaction to drugs, characterized by skin rash, fever, lymph node enlargement, and internal organ involvement. So far, numerous drugs such as sulfonamides, phenobarbital, sulfasalazine, carbamazepine, and phenytoin have been reported to cause the DRESS syndrome. We report a case in a 29-yr-old female patient who had been on celecoxib and anti-tuberculosis drugs for one month to treat knee joint pain and pulmonary tuberculosis. Our patient's clinical manifestations included fever, lymphadenopathy, rash, hypereosinophilia, and visceral involvement (hepatitis and pneumonitis). During the corticosteroid administration for DRESS syndrome, swallowing difficulty with profound muscle weakness had developed. Our patient was diagnosed as DRESS syndrome with eosinophilic polymyositis by a histopathologic study. After complete resolution of all symptoms, patch tests were positive for both celecoxib and ethambutol. Although further investigations might be needed to confirm the causality, celecoxib and ethambutol can be added to the list of drugs as having the possibility of DRESS syndrome.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18583892_causative-agent_0002168#mention-T1",
+      "canon:span": {
+        "start": 772,
+        "end": 781
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18583892_causative-agent_0002168#mention-T2",
+      "canon:span": {
+        "start": 424,
+        "end": 433
+      },
+      "canon:surface": "phenytoin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010672",
+      "canon:sourceNotation": "D010672",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18583892_causative-agent_0002168#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18583892_causative-agent_0002168#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18583892_causative-agent_0002168#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "18583892"
+      }
+    }
+  ]
+}

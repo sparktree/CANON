@@ -1,0 +1,145 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "PubTator3_silver",
+  "canon:split": "train",
+  "canon:pmid": "19924131",
+  "canon:title": "Maternal-fetal and neonatal pharmacogenomics: a review of current literature.",
+  "canon:abstract": "Pharmacogenomics, the study of specific genetic variations and their effect on drug response, will likely give rise to many applications in maternal-fetal and neonatal medicine; yet, an understanding of these applications in the field of obstetrics and gynecology and neonatal pediatrics is not widespread. This review describes the underpinnings of the field of pharmacogenomics and summarizes the current pharmacogenomic inquiries in relation to maternal-fetal medicine-including studies on various fetal and neonatal genetic cytochrome P450 (CYP) enzyme variants and their role in drug toxicities (for example, codeine metabolism, sepsis and selective serotonin reuptake inhibitor (SSRI) toxicity). Potential future directions, including alternative drug classification, improvements in drug efficacy and non-invasive pharmacogenomic testing, will also be explored.",
+  "canon:text": "Maternal-fetal and neonatal pharmacogenomics: a review of current literature. Pharmacogenomics, the study of specific genetic variations and their effect on drug response, will likely give rise to many applications in maternal-fetal and neonatal medicine; yet, an understanding of these applications in the field of obstetrics and gynecology and neonatal pediatrics is not widespread. This review describes the underpinnings of the field of pharmacogenomics and summarizes the current pharmacogenomic inquiries in relation to maternal-fetal medicine-including studies on various fetal and neonatal genetic cytochrome P450 (CYP) enzyme variants and their role in drug toxicities (for example, codeine metabolism, sepsis and selective serotonin reuptake inhibitor (SSRI) toxicity). Potential future directions, including alternative drug classification, improvements in drug efficacy and non-invasive pharmacogenomic testing, will also be explored.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131#mention-T1",
+      "canon:span": {
+        "start": 662,
+        "end": 677
+      },
+      "canon:surface": "drug toxicities",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D064420",
+      "canon:sourceNotation": "D064420",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131#mention-T2",
+      "canon:span": {
+        "start": 692,
+        "end": 699
+      },
+      "canon:surface": "codeine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003061",
+      "canon:sourceNotation": "D003061",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131#mention-T3",
+      "canon:span": {
+        "start": 712,
+        "end": 718
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131#mention-T4",
+      "canon:span": {
+        "start": 769,
+        "end": 777
+      },
+      "canon:surface": "toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D064420",
+      "canon:sourceNotation": "D064420",
+      "canon:confidence": 0.4,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/PubTator3_silver/19924131#mention-T1"
+      },
+      "canon:sourceRelation": "Association",
+      "canon:relation": "https://canon.iu.edu/ns#associated-with",
+      "canon:tier": 2,
+      "canon:probability": 0.8,
+      "canon:confidence": 1.0,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#associated-with",
+          "canon:tier": 2,
+          "canon:probability": 0.8
+        },
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 0.2
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "silver": true,
+        "subject_class": "chemical",
+        "object_class": "disease",
+        "pubtator_score": 0.9798,
+        "target_candidates": [
+          {
+            "target_relation": "associated-with",
+            "tier": 2,
+            "probability": 0.8
+          },
+          {
+            "target_relation": "causative-agent",
+            "tier": 1,
+            "probability": 0.2
+          }
+        ],
+        "default_used": false
+      }
+    }
+  ]
+}

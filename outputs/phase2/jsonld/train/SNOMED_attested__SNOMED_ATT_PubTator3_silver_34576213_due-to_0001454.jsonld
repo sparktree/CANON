@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576213_due-to_0001454",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34576213_due-to_0001454",
+  "canon:title": "Effectiveness of Magnolol, a Lignan from Magnolia Bark, in Diabetes, Its Complications and Comorbidities-A Review.",
+  "canon:abstract": "Diabetes mellitus is a chronic metabolic disease characterized by disturbances in carbohydrate, protein, and lipid metabolism, often accompanied by oxidative stress. Diabetes treatment is a complicated process in which, in addition to the standard pharmacological action, it is necessary to append a comprehensive approach. Introducing the aspect of non-pharmacological treatment of diabetes allows one to alleviate its many adverse complications. Therefore, it seems important to look for substances that, when included in the daily diet, can improve diabetic parameters. Magnolol, a polyphenolic compound found in magnolia bark, is known for its health-promoting activities and multidirectional beneficial effects on the body. Accordingly, the goal of this review is to systematize the available scientific literature on its beneficial effects on type 2 diabetes and its complications. Taking the above into consideration, the article collects data on the favorable effects of magnolol on parameters related to glycemia, lipid metabolism, or oxidative stress in the course of diabetes. After careful analysis of many scientific articles, it can be concluded that this lignan is a promising agent supporting the conventional therapies with antidiabetic drugs in order to manage diabetes and diabetes-related diseases.",
+  "canon:text": "Effectiveness of Magnolol, a Lignan from Magnolia Bark, in Diabetes, Its Complications and Comorbidities-A Review. Diabetes mellitus is a chronic metabolic disease characterized by disturbances in carbohydrate, protein, and lipid metabolism, often accompanied by oxidative stress. Diabetes treatment is a complicated process in which, in addition to the standard pharmacological action, it is necessary to append a comprehensive approach. Introducing the aspect of non-pharmacological treatment of diabetes allows one to alleviate its many adverse complications. Therefore, it seems important to look for substances that, when included in the daily diet, can improve diabetic parameters. Magnolol, a polyphenolic compound found in magnolia bark, is known for its health-promoting activities and multidirectional beneficial effects on the body. Accordingly, the goal of this review is to systematize the available scientific literature on its beneficial effects on type 2 diabetes and its complications. Taking the above into consideration, the article collects data on the favorable effects of magnolol on parameters related to glycemia, lipid metabolism, or oxidative stress in the course of diabetes. After careful analysis of many scientific articles, it can be concluded that this lignan is a promising agent supporting the conventional therapies with antidiabetic drugs in order to manage diabetes and diabetes-related diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576213_due-to_0001454#mention-T1",
+      "canon:span": {
+        "start": 1407,
+        "end": 1432
+      },
+      "canon:surface": "diabetes-related diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576213_due-to_0001454#mention-T2",
+      "canon:span": {
+        "start": 59,
+        "end": 67
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576213_due-to_0001454#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576213_due-to_0001454#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576213_due-to_0001454#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34576213"
+      }
+    }
+  ]
+}

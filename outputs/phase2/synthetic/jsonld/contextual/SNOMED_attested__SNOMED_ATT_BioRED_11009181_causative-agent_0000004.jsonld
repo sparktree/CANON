@@ -1,0 +1,86 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BioRED_11009181_causative-agent_0000004",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BioRED_11009181_causative-agent_0000004",
+  "canon:title": "Apomorphine: an underutilized therapy for Parkinson's disease.",
+  "canon:abstract": "Apomorphine was the first dopaminergic drug ever used to treat symptoms of Parkinson's disease. While powerful antiparkinsonian effects had been observed as early as 1951, the potential of treating fluctuating Parkinson's disease by subcutaneous administration of apomorphine has only recently become the subject of systematic study. A number of small scale clinical trials have unequivocally shown that intermittent subcutaneous apomorphine injections produce antiparkinsonian benefit close if not identical to that seen with levodopa and that apomorphine rescue injections can reliably revert off-periods even in patients with complex on-off motor swings. Continuous subcutaneous apomorphine infusions can reduce daily off-time by more than 50% in this group of patients, which appears to be a stronger effect than that generally seen with add-on therapy with oral dopamine agonists or COMT inhibitors. Extended follow-up studies of up to 8 years have demonstrated long-term persistence of apomorphine efficacy. In addition, there is convincing clinical evidence that monotherapy with continuous subcutaneous apomorphine infusions is associated with marked reductions of preexisting levodopa-induced dyskinesias. The main side effects of subcutaneous apomorphine treatment are related to cutaneous tolerability problems, whereas sedation and psychiatric complications play a lesser role. Given the marked degree of efficacy of subcutaneous apomorphine treatment in fluctuating Parkinson's disease, this approach seems to deserve more widespread clinical use.",
+  "canon:text": "Apomorphine: an underutilized therapy for Parkinson's disease. Apomorphine was the first dopaminergic drug ever used to treat symptoms of Parkinson's disease. While powerful antiparkinsonian effects had been observed as early as 1951, the potential of treating fluctuating Parkinson's disease by subcutaneous administration of apomorphine has only recently become the subject of systematic study. A number of small scale clinical trials have unequivocally shown that intermittent subcutaneous apomorphine injections produce antiparkinsonian benefit close if not identical to that seen with levodopa and that apomorphine rescue injections can reliably revert off-periods even in patients with complex on-off motor swings. Continuous subcutaneous apomorphine infusions can reduce daily off-time by more than 50% in this group of patients, which appears to be a stronger effect than that generally seen with add-on therapy with oral dopamine agonists or COMT inhibitors. Extended follow-up studies of up to 8 years have demonstrated long-term persistence of apomorphine efficacy. In addition, there is convincing clinical evidence that monotherapy with continuous subcutaneous apomorphine infusions is associated with marked reductions of preexisting levodopa-induced dyskinesias. The main side effects of subcutaneous apomorphine treatment are related to cutaneous tolerability problems, whereas sedation and psychiatric complications play a lesser role. Given the marked degree of efficacy of subcutaneous apomorphine treatment in fluctuating Parkinson's disease, this approach seems to deserve more widespread clinical use.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BioRED_11009181_causative-agent_0000004#mention-T1",
+      "canon:span": {
+        "start": 1265,
+        "end": 1276
+      },
+      "canon:surface": "dyskinesias",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "DiseaseOrPhenotypicFeature",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/102448004",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BioRED_11009181_causative-agent_0000004#mention-T2",
+      "canon:span": {
+        "start": 951,
+        "end": 966
+      },
+      "canon:surface": "COMT inhibitors",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "ChemicalEntity",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D065098",
+      "canon:sourceNotation": "D065098",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/372646000",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BioRED_11009181_causative-agent_0000004#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BioRED_11009181_causative-agent_0000004#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BioRED_11009181_causative-agent_0000004#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BioRED",
+        "source_pmid": "11009181"
+      }
+    }
+  ]
+}

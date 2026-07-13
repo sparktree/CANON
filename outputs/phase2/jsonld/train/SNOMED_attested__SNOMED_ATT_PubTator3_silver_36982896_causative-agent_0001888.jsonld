@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36982896_causative-agent_0001888",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36982896_causative-agent_0001888",
+  "canon:title": "Molecular and Clinical Links between Drug-Induced Cholestasis and Familial Intrahepatic Cholestasis.",
+  "canon:abstract": "Idiosyncratic Drug-Induced Liver Injury (iDILI) represents an actual health challenge, accounting for more than 40% of hepatitis cases in adults over 50 years and more than 50% of acute fulminant hepatic failure cases. In addition, approximately 30% of iDILI are cholestatic (drug-induced cholestasis (DIC)). The liver's metabolism and clearance of lipophilic drugs depend on their emission into the bile. Therefore, many medications cause cholestasis through their interaction with hepatic transporters. The main canalicular efflux transport proteins include: 1. the bile salt export pump (BSEP) protein (ABCB11); 2. the multidrug resistance protein-2 (MRP2, ABCC2) regulating the bile salts' independent flow by excretion of glutathione; 3. the multidrug resistance-1 protein (MDR1, ABCB1) that transports organic cations; 4. the multidrug resistance-3 protein (MDR3, ABCB4). Two of the most known proteins involved in bile acids' (BAs) metabolism and transport are BSEP and MDR3. BSEP inhibition by drugs leads to reduced BAs' secretion and their retention within hepatocytes, exiting in cholestasis, while mutations in the ABCB4 gene expose the biliary epithelium to the injurious detergent actions of BAs, thus increasing susceptibility to DIC. Herein, we review the leading molecular pathways behind the DIC, the links with the other clinical forms of familial intrahepatic cholestasis, and, finally, the main cholestasis-inducing drugs.",
+  "canon:text": "Molecular and Clinical Links between Drug-Induced Cholestasis and Familial Intrahepatic Cholestasis. Idiosyncratic Drug-Induced Liver Injury (iDILI) represents an actual health challenge, accounting for more than 40% of hepatitis cases in adults over 50 years and more than 50% of acute fulminant hepatic failure cases. In addition, approximately 30% of iDILI are cholestatic (drug-induced cholestasis (DIC)). The liver's metabolism and clearance of lipophilic drugs depend on their emission into the bile. Therefore, many medications cause cholestasis through their interaction with hepatic transporters. The main canalicular efflux transport proteins include: 1. the bile salt export pump (BSEP) protein (ABCB11); 2. the multidrug resistance protein-2 (MRP2, ABCC2) regulating the bile salts' independent flow by excretion of glutathione; 3. the multidrug resistance-1 protein (MDR1, ABCB1) that transports organic cations; 4. the multidrug resistance-3 protein (MDR3, ABCB4). Two of the most known proteins involved in bile acids' (BAs) metabolism and transport are BSEP and MDR3. BSEP inhibition by drugs leads to reduced BAs' secretion and their retention within hepatocytes, exiting in cholestasis, while mutations in the ABCB4 gene expose the biliary epithelium to the injurious detergent actions of BAs, thus increasing susceptibility to DIC. Herein, we review the leading molecular pathways behind the DIC, the links with the other clinical forms of familial intrahepatic cholestasis, and, finally, the main cholestasis-inducing drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36982896_causative-agent_0001888#mention-T1",
+      "canon:span": {
+        "start": 101,
+        "end": 140
+      },
+      "canon:surface": "Idiosyncratic Drug-Induced Liver Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36982896_causative-agent_0001888#mention-T2",
+      "canon:span": {
+        "start": 828,
+        "end": 839
+      },
+      "canon:surface": "glutathione",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005978",
+      "canon:sourceNotation": "D005978",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36982896_causative-agent_0001888#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36982896_causative-agent_0001888#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36982896_causative-agent_0001888#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36982896"
+      }
+    }
+  ]
+}

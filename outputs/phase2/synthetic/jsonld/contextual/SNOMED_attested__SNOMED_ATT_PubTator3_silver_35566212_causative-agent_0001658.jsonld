@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35566212_causative-agent_0001658",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35566212_causative-agent_0001658",
+  "canon:title": "Diels-Alder Adducts of Morphinan-6,8-Dienes and Their Transformations.",
+  "canon:abstract": "6,14-ethenomorphinans are semisynthetic opiate derivatives containing an ethylene bridge between positions 6 and 14 in ring-C of the morphine skeleton that imparts a rigid molecular structure. These compounds represent an important family of opioid receptor ligands in which the 6,14-etheno bridged structural motif originates from a [4 + 2] cycloaddition of morphinan-6,8-dienes with dienophiles. Certain 6,14-ethenomorphinans having extremely high affinity for opioid receptors are often non-selective for opioid receptor subtypes, but this view is now undergoing some revision. The agonist 20R-etorphine and 20R-dihydroetorphine are several thousand times more potent analgesics than morphine, whereas diprenorphine is a high-affinity non-selective antagonist. The partial agonist buprenorphine is used as an analgesic in the management of post-operative pain or in substitution therapy for opiate addiction, sometimes in combination with the non-selective antagonist naloxone. In the context of the current opioid crisis, we communicated a summary of several decades of work toward generating opioid analgesics with lesser side effects or abuse potential. Our summary placed a focus on Diels-Alder reactions of morphinan-6,8-dienes and subsequent transformations of the cycloadducts. We also summarized the pharmacological aspects of radiolabeled 6,14-ethenomorphinans used in molecular imaging of opioid receptors.",
+  "canon:text": "Diels-Alder Adducts of Morphinan-6,8-Dienes and Their Transformations. 6,14-ethenomorphinans are semisynthetic opiate derivatives containing an ethylene bridge between positions 6 and 14 in ring-C of the morphine skeleton that imparts a rigid molecular structure. These compounds represent an important family of opioid receptor ligands in which the 6,14-etheno bridged structural motif originates from a [4 + 2] cycloaddition of morphinan-6,8-dienes with dienophiles. Certain 6,14-ethenomorphinans having extremely high affinity for opioid receptors are often non-selective for opioid receptor subtypes, but this view is now undergoing some revision. The agonist 20R-etorphine and 20R-dihydroetorphine are several thousand times more potent analgesics than morphine, whereas diprenorphine is a high-affinity non-selective antagonist. The partial agonist buprenorphine is used as an analgesic in the management of post-operative pain or in substitution therapy for opiate addiction, sometimes in combination with the non-selective antagonist naloxone. In the context of the current opioid crisis, we communicated a summary of several decades of work toward generating opioid analgesics with lesser side effects or abuse potential. Our summary placed a focus on Diels-Alder reactions of morphinan-6,8-dienes and subsequent transformations of the cycloadducts. We also summarized the pharmacological aspects of radiolabeled 6,14-ethenomorphinans used in molecular imaging of opioid receptors.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35566212_causative-agent_0001658#mention-T1",
+      "canon:span": {
+        "start": 965,
+        "end": 981
+      },
+      "canon:surface": "opiate addiction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35566212_causative-agent_0001658#mention-T2",
+      "canon:span": {
+        "start": 204,
+        "end": 212
+      },
+      "canon:surface": "morphine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009020",
+      "canon:sourceNotation": "D009020",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35566212_causative-agent_0001658#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35566212_causative-agent_0001658#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35566212_causative-agent_0001658#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35566212"
+      }
+    }
+  ]
+}

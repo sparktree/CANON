@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399474_causative-agent_0003860",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35399474_causative-agent_0003860",
+  "canon:title": "A Life-Threatening Case of Torsemide-Induced Toxic Epidermal Necrolysis Associated With the Treatment of Anasarca.",
+  "canon:abstract": "Toxic Epidermal Necrolysis (TEN), along with Stevens-Johnson Syndrome (SJS), are rare, life-threatening delayed type IV hypersensitivity mucocutaneous skin disorders that can often be precipitated by medications. The most common culprits are sulfonamide antibiotics and various antiseizure medications. We report a case of a 41-year-old Black female that initially presented with SJS, which then rapidly progressed to TEN, confirmed by hematoxylin and eosin stain skin biopsies. Approximately 80% of her body surface area had necrosis and epidermal detachment lesions. It was concluded that TEN was caused by the use of torsemide for treatment of her underlying diffuse anasarca attributable to alcoholic cirrhosis. During her one-month hospital stay, a multi-disciplinary team consisting of dermatology, gynecology, rheumatology, nephrology, and infectious disease evaluated and treated the patient. Interventions included various supportive care measures as well as intravenous steroids, cyclosporine, plasma exchange, and intravenous immunoglobulin. Given that the mortality rate for TEN is over 30%, and this patient had end-stage cirrhosis, her prognosis was extremely poor. Even though her TEN eventually healed slowly, the patient experienced complications. This case demonstrates the importance of cautiously using sulfonamide medications in patients with known hypersensitivity to sulfa drugs.",
+  "canon:text": "A Life-Threatening Case of Torsemide-Induced Toxic Epidermal Necrolysis Associated With the Treatment of Anasarca. Toxic Epidermal Necrolysis (TEN), along with Stevens-Johnson Syndrome (SJS), are rare, life-threatening delayed type IV hypersensitivity mucocutaneous skin disorders that can often be precipitated by medications. The most common culprits are sulfonamide antibiotics and various antiseizure medications. We report a case of a 41-year-old Black female that initially presented with SJS, which then rapidly progressed to TEN, confirmed by hematoxylin and eosin stain skin biopsies. Approximately 80% of her body surface area had necrosis and epidermal detachment lesions. It was concluded that TEN was caused by the use of torsemide for treatment of her underlying diffuse anasarca attributable to alcoholic cirrhosis. During her one-month hospital stay, a multi-disciplinary team consisting of dermatology, gynecology, rheumatology, nephrology, and infectious disease evaluated and treated the patient. Interventions included various supportive care measures as well as intravenous steroids, cyclosporine, plasma exchange, and intravenous immunoglobulin. Given that the mortality rate for TEN is over 30%, and this patient had end-stage cirrhosis, her prognosis was extremely poor. Even though her TEN eventually healed slowly, the patient experienced complications. This case demonstrates the importance of cautiously using sulfonamide medications in patients with known hypersensitivity to sulfa drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399474_causative-agent_0003860#mention-T1",
+      "canon:span": {
+        "start": 810,
+        "end": 829
+      },
+      "canon:surface": "alcoholic cirrhosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008104",
+      "canon:sourceNotation": "D008104",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399474_causative-agent_0003860#mention-T2",
+      "canon:span": {
+        "start": 1105,
+        "end": 1117
+      },
+      "canon:surface": "cyclosporine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D016572",
+      "canon:sourceNotation": "D016572",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399474_causative-agent_0003860#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399474_causative-agent_0003860#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399474_causative-agent_0003860#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35399474"
+      }
+    }
+  ]
+}

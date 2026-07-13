@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30558872_causative-agent_0000908",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30558872_causative-agent_0000908",
+  "canon:title": "Antibiotic allergy.",
+  "canon:abstract": "Antibiotics are the commonest cause of life-threatening immune-mediated drug reactions that are considered off-target, including anaphylaxis, and organ-specific and severe cutaneous adverse reactions. However, many antibiotic reactions documented as allergies were unknown or not remembered by the patient, cutaneous reactions unrelated to drug hypersensitivity, drug-infection interactions, or drug intolerances. Although such reactions pose negligible risk to patients, they currently represent a global threat to public health. Antibiotic allergy labels result in displacement of first-line therapies for antibiotic prophylaxis and treatment. A penicillin allergy label, in particular, is associated with increased use of broad-spectrum and non-beta-lactam antibiotics, which results in increased adverse events and antibiotic resistance. Most patients labelled as allergic to penicillins are not allergic when appropriately stratified for risk, tested, and re-challenged. Given the public health importance of penicillin allergy, this Review provides a global update on antibiotic allergy epidemiology, classification, mechanisms, and management.",
+  "canon:text": "Antibiotic allergy. Antibiotics are the commonest cause of life-threatening immune-mediated drug reactions that are considered off-target, including anaphylaxis, and organ-specific and severe cutaneous adverse reactions. However, many antibiotic reactions documented as allergies were unknown or not remembered by the patient, cutaneous reactions unrelated to drug hypersensitivity, drug-infection interactions, or drug intolerances. Although such reactions pose negligible risk to patients, they currently represent a global threat to public health. Antibiotic allergy labels result in displacement of first-line therapies for antibiotic prophylaxis and treatment. A penicillin allergy label, in particular, is associated with increased use of broad-spectrum and non-beta-lactam antibiotics, which results in increased adverse events and antibiotic resistance. Most patients labelled as allergic to penicillins are not allergic when appropriately stratified for risk, tested, and re-challenged. Given the public health importance of penicillin allergy, this Review provides a global update on antibiotic allergy epidemiology, classification, mechanisms, and management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30558872_causative-agent_0000908#mention-T1",
+      "canon:span": {
+        "start": 270,
+        "end": 279
+      },
+      "canon:surface": "allergies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30558872_causative-agent_0000908#mention-T2",
+      "canon:span": {
+        "start": 900,
+        "end": 911
+      },
+      "canon:surface": "penicillins",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010406",
+      "canon:sourceNotation": "D010406",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30558872_causative-agent_0000908#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30558872_causative-agent_0000908#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30558872_causative-agent_0000908#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30558872"
+      }
+    }
+  ]
+}

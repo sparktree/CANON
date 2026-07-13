@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33884128_causative-agent_0003516",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33884128_causative-agent_0003516",
+  "canon:title": "Serotonin Syndrome Mimicking Intrathecal Baclofen Withdrawal in a Patient with Hereditary Spastic Paraparesis.",
+  "canon:abstract": "CONTEXT: Serotonin syndrome is a drug-induced condition related to an increased level of serotonin in the brain, which may induce neuromuscular, autonomic and mental symptoms. CASE REPORT: A 40-year-old woman with hereditary spastic paraparesis (Strumpell-Lorrain disease) with an implanted intrathecal baclofen pump for severe spasticity. Two days after starting a medication known to inhibit serotonin re-uptake (paroxetine), she developed a sudden increase in lower limb spasticity with continuous spasms, fever, tachycardia and hypertension. Intrathecal baclofen withdrawal was excluded, confirming serotonin syndrome. CONCLUSION: Medications that inhibit serotonin reuptake may induce serotonin syndrome, resulting in increased spasticity in patients with spinal cord lesions, and should be prescribed with caution.",
+  "canon:text": "Serotonin Syndrome Mimicking Intrathecal Baclofen Withdrawal in a Patient with Hereditary Spastic Paraparesis. CONTEXT: Serotonin syndrome is a drug-induced condition related to an increased level of serotonin in the brain, which may induce neuromuscular, autonomic and mental symptoms. CASE REPORT: A 40-year-old woman with hereditary spastic paraparesis (Strumpell-Lorrain disease) with an implanted intrathecal baclofen pump for severe spasticity. Two days after starting a medication known to inhibit serotonin re-uptake (paroxetine), she developed a sudden increase in lower limb spasticity with continuous spasms, fever, tachycardia and hypertension. Intrathecal baclofen withdrawal was excluded, confirming serotonin syndrome. CONCLUSION: Medications that inhibit serotonin reuptake may induce serotonin syndrome, resulting in increased spasticity in patients with spinal cord lesions, and should be prescribed with caution.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33884128_causative-agent_0003516#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 18
+      },
+      "canon:surface": "Serotonin Syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33884128_causative-agent_0003516#mention-T2",
+      "canon:span": {
+        "start": 526,
+        "end": 536
+      },
+      "canon:surface": "paroxetine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D017374",
+      "canon:sourceNotation": "D017374",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33884128_causative-agent_0003516#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33884128_causative-agent_0003516#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33884128_causative-agent_0003516#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33884128"
+      }
+    }
+  ]
+}

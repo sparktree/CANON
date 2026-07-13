@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35628931_causative-agent_0001670",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35628931_causative-agent_0001670",
+  "canon:title": "Bruton's Kinase Inhibitors for the Treatment of Immunological Diseases: Current Status and Perspectives.",
+  "canon:abstract": "The use of Bruton's tyrosine kinase (BTK) inhibitors has changed the management of patients with B-cell lymphoid malignancies. BTK is an important molecule that interconnects B-cell antigen receptor (BCR) signaling. BTK inhibitors (BTKis) are classified into three categories, namely covalent irreversible inhibitors, covalent reversible inhibitors, and non-covalent reversible inhibitors. Ibrutinib is the first covalent, irreversible BTK inhibitor approved in 2013 as a breakthrough therapy for chronic lymphocytic leukemia patients. Subsequently, two other covalent, irreversible, second-generation BTKis, acalabrutinib and zanubrutinib, have been developed for lymphoid malignancies to reduce the ibrutinib-mediated adverse effects. More recently, irreversible and reversible BTKis have been under development for immune-mediated diseases, including autoimmune hemolytic anemia, immune thrombocytopenia, multiple sclerosis, pemphigus vulgaris, atopic dermatitis, rheumatoid arthritis, systemic lupus erythematosus, Sjogren's disease, and chronic spontaneous urticaria, among others. This review article summarizes the preclinical and clinical evidence supporting the role of BTKis in various autoimmune, allergic, and inflammatory conditions.",
+  "canon:text": "Bruton's Kinase Inhibitors for the Treatment of Immunological Diseases: Current Status and Perspectives. The use of Bruton's tyrosine kinase (BTK) inhibitors has changed the management of patients with B-cell lymphoid malignancies. BTK is an important molecule that interconnects B-cell antigen receptor (BCR) signaling. BTK inhibitors (BTKis) are classified into three categories, namely covalent irreversible inhibitors, covalent reversible inhibitors, and non-covalent reversible inhibitors. Ibrutinib is the first covalent, irreversible BTK inhibitor approved in 2013 as a breakthrough therapy for chronic lymphocytic leukemia patients. Subsequently, two other covalent, irreversible, second-generation BTKis, acalabrutinib and zanubrutinib, have been developed for lymphoid malignancies to reduce the ibrutinib-mediated adverse effects. More recently, irreversible and reversible BTKis have been under development for immune-mediated diseases, including autoimmune hemolytic anemia, immune thrombocytopenia, multiple sclerosis, pemphigus vulgaris, atopic dermatitis, rheumatoid arthritis, systemic lupus erythematosus, Sjogren's disease, and chronic spontaneous urticaria, among others. This review article summarizes the preclinical and clinical evidence supporting the role of BTKis in various autoimmune, allergic, and inflammatory conditions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35628931_causative-agent_0001670#mention-T1",
+      "canon:span": {
+        "start": 1301,
+        "end": 1350
+      },
+      "canon:surface": "autoimmune, allergic, and inflammatory conditions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35628931_causative-agent_0001670#mention-T2",
+      "canon:span": {
+        "start": 495,
+        "end": 504
+      },
+      "canon:surface": "Ibrutinib",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C551803",
+      "canon:sourceNotation": "C551803",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35628931_causative-agent_0001670#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35628931_causative-agent_0001670#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35628931_causative-agent_0001670#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35628931"
+      }
+    }
+  ]
+}

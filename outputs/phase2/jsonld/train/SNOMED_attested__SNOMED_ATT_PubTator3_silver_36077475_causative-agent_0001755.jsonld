@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36077475_causative-agent_0001755",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36077475_causative-agent_0001755",
+  "canon:title": "Metabolic and Cellular Compartments of Acetyl-CoA in the Healthy and Diseased Brain.",
+  "canon:abstract": "The human brain is characterised by the most diverse morphological, metabolic and functional structure among all body tissues. This is due to the existence of diverse neurons secreting various neurotransmitters and mutually modulating their own activity through thousands of pre- and postsynaptic interconnections in each neuron. Astroglial, microglial and oligodendroglial cells and neurons reciprocally regulate the metabolism of key energy substrates, thereby exerting several neuroprotective, neurotoxic and regulatory effects on neuronal viability and neurotransmitter functions. Maintenance of the pool of mitochondrial acetyl-CoA derived from glycolytic glucose metabolism is a key factor for neuronal survival. Thus, acetyl-CoA is regarded as a direct energy precursor through the TCA cycle and respiratory chain, thereby affecting brain cell viability. It is also used for hundreds of acetylation reactions, including N-acetyl aspartate synthesis in neuronal mitochondria, acetylcholine synthesis in cholinergic neurons, as well as divergent acetylations of several proteins, peptides, histones and low-molecular-weight species in all cellular compartments. Therefore, acetyl-CoA should be considered as the central point of metabolism maintaining equilibrium between anabolic and catabolic pathways in the brain. This review presents data supporting this thesis.",
+  "canon:text": "Metabolic and Cellular Compartments of Acetyl-CoA in the Healthy and Diseased Brain. The human brain is characterised by the most diverse morphological, metabolic and functional structure among all body tissues. This is due to the existence of diverse neurons secreting various neurotransmitters and mutually modulating their own activity through thousands of pre- and postsynaptic interconnections in each neuron. Astroglial, microglial and oligodendroglial cells and neurons reciprocally regulate the metabolism of key energy substrates, thereby exerting several neuroprotective, neurotoxic and regulatory effects on neuronal viability and neurotransmitter functions. Maintenance of the pool of mitochondrial acetyl-CoA derived from glycolytic glucose metabolism is a key factor for neuronal survival. Thus, acetyl-CoA is regarded as a direct energy precursor through the TCA cycle and respiratory chain, thereby affecting brain cell viability. It is also used for hundreds of acetylation reactions, including N-acetyl aspartate synthesis in neuronal mitochondria, acetylcholine synthesis in cholinergic neurons, as well as divergent acetylations of several proteins, peptides, histones and low-molecular-weight species in all cellular compartments. Therefore, acetyl-CoA should be considered as the central point of metabolism maintaining equilibrium between anabolic and catabolic pathways in the brain. This review presents data supporting this thesis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36077475_causative-agent_0001755#mention-T1",
+      "canon:span": {
+        "start": 582,
+        "end": 592
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36077475_causative-agent_0001755#mention-T2",
+      "canon:span": {
+        "start": 1067,
+        "end": 1080
+      },
+      "canon:surface": "acetylcholine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000109",
+      "canon:sourceNotation": "D000109",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36077475_causative-agent_0001755#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36077475_causative-agent_0001755#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36077475_causative-agent_0001755#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36077475"
+      }
+    }
+  ]
+}

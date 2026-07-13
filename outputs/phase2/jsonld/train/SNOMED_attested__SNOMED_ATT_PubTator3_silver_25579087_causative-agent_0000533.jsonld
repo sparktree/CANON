@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25579087_causative-agent_0000533",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25579087_causative-agent_0000533",
+  "canon:title": "Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS/TEN): could retinoids play a causative role?",
+  "canon:abstract": "Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS/TEN) are overlapping manifestations on a spectrum of acute drug-induced conditions associated with severe blistering, skin peeling, and multi-organ damage. TEN is an eruption resembling severe scalding, with >=30% skin detachment. SJS is a mild form of TEN, characterized histologically by epidermal keratinocyte apoptosis with dermo-epidermal separation and extensive small blisters with <10% body surface skin detachment. The syndrome can be induced by numerous medications and typically occurs 1-4 weeks after the initiation of therapy. Granulysin is found in the lesions of patients with SJS/TEN and plays a significant pathogenic role in the condition, but the overall mechanisms linking medications, granulysin, and disease manifestations remain obscure. This paper reviews evidence suggesting that the different medications implicated in SJS/TEN have the common property of interacting and synergizing with endogenous retinoids (vitamin A and its congeners), in many instances causing the latter to accumulate in and damage the liver, the main storage organ for vitamin A. It is hypothesized that liver damage leads to the spillage of toxic retinoid compounds into the circulation, resulting in an endogenous form of hypervitaminosis A and cytotoxicity with widespread apoptosis, mediated by granulysin and recognized as SJS/TEN. Subject to testing, the model suggests that symptom worsening could be arrested at onset by lowering the concentration of circulating retinoids and/or granulysin via phlebotomy or plasmapheresis or by pharmacological measures to limit their expression.",
+  "canon:text": "Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS/TEN): could retinoids play a causative role? Stevens-Johnson syndrome and toxic epidermal necrolysis (SJS/TEN) are overlapping manifestations on a spectrum of acute drug-induced conditions associated with severe blistering, skin peeling, and multi-organ damage. TEN is an eruption resembling severe scalding, with >=30% skin detachment. SJS is a mild form of TEN, characterized histologically by epidermal keratinocyte apoptosis with dermo-epidermal separation and extensive small blisters with <10% body surface skin detachment. The syndrome can be induced by numerous medications and typically occurs 1-4 weeks after the initiation of therapy. Granulysin is found in the lesions of patients with SJS/TEN and plays a significant pathogenic role in the condition, but the overall mechanisms linking medications, granulysin, and disease manifestations remain obscure. This paper reviews evidence suggesting that the different medications implicated in SJS/TEN have the common property of interacting and synergizing with endogenous retinoids (vitamin A and its congeners), in many instances causing the latter to accumulate in and damage the liver, the main storage organ for vitamin A. It is hypothesized that liver damage leads to the spillage of toxic retinoid compounds into the circulation, resulting in an endogenous form of hypervitaminosis A and cytotoxicity with widespread apoptosis, mediated by granulysin and recognized as SJS/TEN. Subject to testing, the model suggests that symptom worsening could be arrested at onset by lowering the concentration of circulating retinoids and/or granulysin via phlebotomy or plasmapheresis or by pharmacological measures to limit their expression.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25579087_causative-agent_0000533#mention-T1",
+      "canon:span": {
+        "start": 1271,
+        "end": 1283
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25579087_causative-agent_0000533#mention-T2",
+      "canon:span": {
+        "start": 73,
+        "end": 82
+      },
+      "canon:surface": "retinoids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012176",
+      "canon:sourceNotation": "D012176",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25579087_causative-agent_0000533#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25579087_causative-agent_0000533#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25579087_causative-agent_0000533#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25579087"
+      }
+    }
+  ]
+}

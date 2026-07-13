@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36278756_causative-agent_0004084",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36278756_causative-agent_0004084",
+  "canon:title": "Narrative Review: Glucocorticoids in Alcoholic Hepatitis-Benefits, Side Effects, and Mechanisms.",
+  "canon:abstract": "Alcoholic hepatitis is a major health and economic burden worldwide. Glucocorticoids (GCs) are the only first-line drugs recommended to treat severe alcoholic hepatitis (sAH), with limited short-term efficacy and significant side effects. In this review, I summarize the major benefits and side effects of GC therapy in sAH and the potential underlying mechanisms. The review of the literature and data mining clearly indicate that the hepatic signaling of glucocorticoid receptor (GR) is markedly impaired in sAH patients. The impaired GR signaling causes hepatic down-regulation of genes essential for gluconeogenesis, lipid catabolism, cytoprotection, and anti-inflammation in sAH patients. The efficacy of GCs in sAH may be compromised by GC resistance and/or GC's extrahepatic side effects, particularly the side effects of intestinal epithelial GR on gut permeability and inflammation in AH. Prednisolone, a major GC used for sAH, activates both the GR and mineralocorticoid receptor (MR). When GC non-responsiveness occurs in sAH patients, the activation of MR by prednisolone might increase the risk of alcohol abuse, liver fibrosis, and acute kidney injury. To improve the GC therapy of sAH, the effort should be focused on developing the biomarker(s) for GC responsiveness, liver-targeting GR agonists, and strategies to overcome GC non-responsiveness and prevent alcohol relapse in sAH patients.",
+  "canon:text": "Narrative Review: Glucocorticoids in Alcoholic Hepatitis-Benefits, Side Effects, and Mechanisms. Alcoholic hepatitis is a major health and economic burden worldwide. Glucocorticoids (GCs) are the only first-line drugs recommended to treat severe alcoholic hepatitis (sAH), with limited short-term efficacy and significant side effects. In this review, I summarize the major benefits and side effects of GC therapy in sAH and the potential underlying mechanisms. The review of the literature and data mining clearly indicate that the hepatic signaling of glucocorticoid receptor (GR) is markedly impaired in sAH patients. The impaired GR signaling causes hepatic down-regulation of genes essential for gluconeogenesis, lipid catabolism, cytoprotection, and anti-inflammation in sAH patients. The efficacy of GCs in sAH may be compromised by GC resistance and/or GC's extrahepatic side effects, particularly the side effects of intestinal epithelial GR on gut permeability and inflammation in AH. Prednisolone, a major GC used for sAH, activates both the GR and mineralocorticoid receptor (MR). When GC non-responsiveness occurs in sAH patients, the activation of MR by prednisolone might increase the risk of alcohol abuse, liver fibrosis, and acute kidney injury. To improve the GC therapy of sAH, the effort should be focused on developing the biomarker(s) for GC responsiveness, liver-targeting GR agonists, and strategies to overcome GC non-responsiveness and prevent alcohol relapse in sAH patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36278756_causative-agent_0004084#mention-T1",
+      "canon:span": {
+        "start": 37,
+        "end": 56
+      },
+      "canon:surface": "Alcoholic Hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36278756_causative-agent_0004084#mention-T2",
+      "canon:span": {
+        "start": 718,
+        "end": 723
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36278756_causative-agent_0004084#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36278756_causative-agent_0004084#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36278756_causative-agent_0004084#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36278756"
+      }
+    }
+  ]
+}

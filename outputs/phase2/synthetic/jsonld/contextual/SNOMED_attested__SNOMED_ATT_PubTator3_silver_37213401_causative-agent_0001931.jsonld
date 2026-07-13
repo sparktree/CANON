@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37213401_causative-agent_0001931",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37213401_causative-agent_0001931",
+  "canon:title": "Alcohol-related hepatitis: A review article.",
+  "canon:abstract": "Alcohol-related hepatitis (ARH) is a unique type of alcohol-associated liver disease characterized by acute liver inflammation caused by significant alcohol use. It ranges in severity from mild to severe and carries significant morbidity and mortality. The refinement of scoring systems has enhanced prognostication and guidance of clinical decision-making in the treatment of this complex disease. Although treatment focuses on supportive care, steroids have shown benefit in select circumstances. There has been a recent interest in this disease process, as coronavirus disease 2019 pandemic led to substantial rise in cases. Although much is known regarding the pathogenesis, prognosis remains grim due to limited treatment options. This article summarizes the epidemiology, genetics, pathogenesis, diagnosis and treatment of ARH.",
+  "canon:text": "Alcohol-related hepatitis: A review article. Alcohol-related hepatitis (ARH) is a unique type of alcohol-associated liver disease characterized by acute liver inflammation caused by significant alcohol use. It ranges in severity from mild to severe and carries significant morbidity and mortality. The refinement of scoring systems has enhanced prognostication and guidance of clinical decision-making in the treatment of this complex disease. Although treatment focuses on supportive care, steroids have shown benefit in select circumstances. There has been a recent interest in this disease process, as coronavirus disease 2019 pandemic led to substantial rise in cases. Although much is known regarding the pathogenesis, prognosis remains grim due to limited treatment options. This article summarizes the epidemiology, genetics, pathogenesis, diagnosis and treatment of ARH.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37213401_causative-agent_0001931#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 25
+      },
+      "canon:surface": "Alcohol-related hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37213401_causative-agent_0001931#mention-T2",
+      "canon:span": {
+        "start": 491,
+        "end": 499
+      },
+      "canon:surface": "steroids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37213401_causative-agent_0001931#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37213401_causative-agent_0001931#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37213401_causative-agent_0001931#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37213401"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31817511_due-to_0001050",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31817511_due-to_0001050",
+  "canon:title": "Management of Hypopituitarism.",
+  "canon:abstract": ": Hypopituitarism includes all clinical conditions that result in partial or complete failure of the anterior and posterior lobe of the pituitary gland's ability to secrete hormones. The aim of management is usually to replace the target-hormone of hypothalamo-pituitary-endocrine gland axis with the exceptions of secondary hypogonadism when fertility is required, and growth hormone deficiency (GHD), and to safely minimise both symptoms and clinical signs. Adrenocorticotropic hormone deficiency replacement is best performed with the immediate-release oral glucocorticoid hydrocortisone (HC) in 2-3 divided doses. However, novel once-daily modified-release HC targets a more physiological exposure of glucocorticoids. GHD is treated currently with daily subcutaneous GH, but current research is focusing on the development of once-weekly administration of recombinant GH. Hypogonadism is targeted with testosterone replacement in men and on estrogen replacement therapy in women; when fertility is wanted, replacement targets secondary or tertiary levels of hormonal settings. Thyroid-stimulating hormone replacement therapy follows the rules of primary thyroid gland failure with L-thyroxine replacement. Central diabetes insipidus is nowadays replaced by desmopressin. Certain clinical scenarios may have to be promptly managed to avoid short-term or long-term sequelae such as pregnancy in patients with hypopituitarism, pituitary apoplexy, adrenal crisis, and pituitary metastases.",
+  "canon:text": "Management of Hypopituitarism. : Hypopituitarism includes all clinical conditions that result in partial or complete failure of the anterior and posterior lobe of the pituitary gland's ability to secrete hormones. The aim of management is usually to replace the target-hormone of hypothalamo-pituitary-endocrine gland axis with the exceptions of secondary hypogonadism when fertility is required, and growth hormone deficiency (GHD), and to safely minimise both symptoms and clinical signs. Adrenocorticotropic hormone deficiency replacement is best performed with the immediate-release oral glucocorticoid hydrocortisone (HC) in 2-3 divided doses. However, novel once-daily modified-release HC targets a more physiological exposure of glucocorticoids. GHD is treated currently with daily subcutaneous GH, but current research is focusing on the development of once-weekly administration of recombinant GH. Hypogonadism is targeted with testosterone replacement in men and on estrogen replacement therapy in women; when fertility is wanted, replacement targets secondary or tertiary levels of hormonal settings. Thyroid-stimulating hormone replacement therapy follows the rules of primary thyroid gland failure with L-thyroxine replacement. Central diabetes insipidus is nowadays replaced by desmopressin. Certain clinical scenarios may have to be promptly managed to avoid short-term or long-term sequelae such as pregnancy in patients with hypopituitarism, pituitary apoplexy, adrenal crisis, and pituitary metastases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31817511_due-to_0001050#mention-T1",
+      "canon:span": {
+        "start": 401,
+        "end": 426
+      },
+      "canon:surface": "growth hormone deficiency",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004393",
+      "canon:sourceNotation": "D004393",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31817511_due-to_0001050#mention-T2",
+      "canon:span": {
+        "start": 346,
+        "end": 368
+      },
+      "canon:surface": "secondary hypogonadism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007006",
+      "canon:sourceNotation": "D007006",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31817511_due-to_0001050#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31817511_due-to_0001050#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31817511_due-to_0001050#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31817511"
+      }
+    }
+  ]
+}

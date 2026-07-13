@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34421642_due-to_0003662",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34421642_due-to_0003662",
+  "canon:title": "Diabetes and Heart Failure: Multi-Omics Approaches.",
+  "canon:abstract": "Diabetes and heart failure, as important global issues, cause substantial expenses to countries and medical systems because of the morbidity and mortality rates. Most people with diabetes suffer from type 2 diabetes, which has an amplifying effect on the prevalence and severity of many health problems such as stroke, neuropathy, retinopathy, kidney injuries, and cardiovascular disease. Type 2 diabetes is one of the cornerstones of heart failure, another health epidemic, with 44% prevalence. Therefore, finding and targeting specific molecular and cellular pathways involved in the pathophysiology of each disease, either in diagnosis or treatment, will be beneficial. For diabetic cardiomyopathy, there are several mechanisms through which clinical heart failure is developed; oxidative stress with mediation of reactive oxygen species (ROS), reduced myocardial perfusion due to endothelial dysfunction, autonomic dysfunction, and metabolic changes, such as impaired glucose levels caused by insulin resistance, are the four main mechanisms. In the field of oxidative stress, advanced glycation end products (AGEs), protein kinase C (PKC), and nuclear factor kappa-light-chain-enhancer of activated B cells (NF-kappaB) are the key mediators that new omics-driven methods can target. Besides, diabetes can affect myocardial function by impairing calcium (Ca) homeostasis, the mechanism in which reduced protein phosphatase 1 (PP1), sarcoplasmic/endoplasmic reticulum Ca2+ ATPase 2a (SERCA2a), and phosphorylated SERCA2a expressions are the main effectors. This article reviewed the recent omics-driven discoveries in the diagnosis and treatment of type 2 diabetes and heart failure with focus on the common molecular mechanisms.",
+  "canon:text": "Diabetes and Heart Failure: Multi-Omics Approaches. Diabetes and heart failure, as important global issues, cause substantial expenses to countries and medical systems because of the morbidity and mortality rates. Most people with diabetes suffer from type 2 diabetes, which has an amplifying effect on the prevalence and severity of many health problems such as stroke, neuropathy, retinopathy, kidney injuries, and cardiovascular disease. Type 2 diabetes is one of the cornerstones of heart failure, another health epidemic, with 44% prevalence. Therefore, finding and targeting specific molecular and cellular pathways involved in the pathophysiology of each disease, either in diagnosis or treatment, will be beneficial. For diabetic cardiomyopathy, there are several mechanisms through which clinical heart failure is developed; oxidative stress with mediation of reactive oxygen species (ROS), reduced myocardial perfusion due to endothelial dysfunction, autonomic dysfunction, and metabolic changes, such as impaired glucose levels caused by insulin resistance, are the four main mechanisms. In the field of oxidative stress, advanced glycation end products (AGEs), protein kinase C (PKC), and nuclear factor kappa-light-chain-enhancer of activated B cells (NF-kappaB) are the key mediators that new omics-driven methods can target. Besides, diabetes can affect myocardial function by impairing calcium (Ca) homeostasis, the mechanism in which reduced protein phosphatase 1 (PP1), sarcoplasmic/endoplasmic reticulum Ca2+ ATPase 2a (SERCA2a), and phosphorylated SERCA2a expressions are the main effectors. This article reviewed the recent omics-driven discoveries in the diagnosis and treatment of type 2 diabetes and heart failure with focus on the common molecular mechanisms.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34421642_due-to_0003662#mention-T1",
+      "canon:span": {
+        "start": 729,
+        "end": 752
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34421642_due-to_0003662#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 8
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34421642_due-to_0003662#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34421642_due-to_0003662#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34421642_due-to_0003662#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34421642"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23710148_causative-agent_0002377",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23710148_causative-agent_0002377",
+  "canon:title": "A review of the mechanism of injury and treatment approaches for illness resulting from exposure to water-damaged buildings, mold, and mycotoxins.",
+  "canon:abstract": "Physicians are increasingly being asked to diagnose and treat people made ill by exposure to water-damaged environments, mold, and mycotoxins. In addition to avoidance of further exposure to these environments and to items contaminated by these environments, a number of approaches have been used to help persons affected by exposure to restore their health. Illness results from a combination of factors present in water-damaged indoor environments including, mold spores and hyphal fragments, mycotoxins, bacteria, bacterial endotoxins, and cell wall components as well as other factors. Mechanisms of illness include inflammation, oxidative stress, toxicity, infection, allergy, and irritant effects of exposure. This paper reviews the scientific literature as it relates to commonly used treatments such as glutathione, antioxidants, antifungals, and sequestering agents such as cholestyramine, charcoal, clay and chlorella, antioxidants, probiotics, and induced sweating.",
+  "canon:text": "A review of the mechanism of injury and treatment approaches for illness resulting from exposure to water-damaged buildings, mold, and mycotoxins. Physicians are increasingly being asked to diagnose and treat people made ill by exposure to water-damaged environments, mold, and mycotoxins. In addition to avoidance of further exposure to these environments and to items contaminated by these environments, a number of approaches have been used to help persons affected by exposure to restore their health. Illness results from a combination of factors present in water-damaged indoor environments including, mold spores and hyphal fragments, mycotoxins, bacteria, bacterial endotoxins, and cell wall components as well as other factors. Mechanisms of illness include inflammation, oxidative stress, toxicity, infection, allergy, and irritant effects of exposure. This paper reviews the scientific literature as it relates to commonly used treatments such as glutathione, antioxidants, antifungals, and sequestering agents such as cholestyramine, charcoal, clay and chlorella, antioxidants, probiotics, and induced sweating.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23710148_causative-agent_0002377#mention-T1",
+      "canon:span": {
+        "start": 820,
+        "end": 827
+      },
+      "canon:surface": "allergy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23710148_causative-agent_0002377#mention-T2",
+      "canon:span": {
+        "start": 1046,
+        "end": 1054
+      },
+      "canon:surface": "charcoal",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002606",
+      "canon:sourceNotation": "D002606",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23710148_causative-agent_0002377#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23710148_causative-agent_0002377#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23710148_causative-agent_0002377#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23710148"
+      }
+    }
+  ]
+}

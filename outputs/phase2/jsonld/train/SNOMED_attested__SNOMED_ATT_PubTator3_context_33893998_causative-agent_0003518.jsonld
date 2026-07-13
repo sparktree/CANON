@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33893998_causative-agent_0003518",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33893998_causative-agent_0003518",
+  "canon:title": "Phytochemistry and pharmacological activity of the genus artemisia.",
+  "canon:abstract": "Artemisia and its allied species have been employed for conventional medicine in the Northern temperate regions of North America, Europe, and Asia for the treatments of digestive problems, morning sickness, irregular menstrual cycle, typhoid, epilepsy, renal problems, bronchitis malaria, etc. The multidisciplinary use of artemisia species has various other health benefits that are related to its traditional and modern pharmaceutical perspectives. The main objective of this review is to evaluate the traditional, modern, biological as well as pharmacological use of the essential oil and herbal extracts of Artemisia nilagirica, Artemisia parviflora, and other allied species of Artemisia. It also discusses the botanical circulation and its phytochemical constituents viz disaccharides, polysaccharides, glycosides, saponins, terpenoids, flavonoids, and carotenoids. The plants have different biological importance like antiparasitic, antimalarial, antihyperlipidemic, antiasthmatic, antiepileptic, antitubercular, antihypertensive, antidiabetic, anxiolytic, antiemetic, antidepressant, anticancer, hepatoprotective, gastroprotective, insecticidal, antiviral activities, and also against COVID-19. Toxicological studies showed that the plants at a low dose and short duration are non or low-toxic. In contrast, a high dose at 3 g/kg and for a longer duration can cause toxicity like rapid respiration, neurotoxicity, reproductive toxicity, etc. However, further in-depth studies are needed to determine the medicinal uses, clinical efficacy and safety are crucial next steps.",
+  "canon:text": "Phytochemistry and pharmacological activity of the genus artemisia. Artemisia and its allied species have been employed for conventional medicine in the Northern temperate regions of North America, Europe, and Asia for the treatments of digestive problems, morning sickness, irregular menstrual cycle, typhoid, epilepsy, renal problems, bronchitis malaria, etc. The multidisciplinary use of artemisia species has various other health benefits that are related to its traditional and modern pharmaceutical perspectives. The main objective of this review is to evaluate the traditional, modern, biological as well as pharmacological use of the essential oil and herbal extracts of Artemisia nilagirica, Artemisia parviflora, and other allied species of Artemisia. It also discusses the botanical circulation and its phytochemical constituents viz disaccharides, polysaccharides, glycosides, saponins, terpenoids, flavonoids, and carotenoids. The plants have different biological importance like antiparasitic, antimalarial, antihyperlipidemic, antiasthmatic, antiepileptic, antitubercular, antihypertensive, antidiabetic, anxiolytic, antiemetic, antidepressant, anticancer, hepatoprotective, gastroprotective, insecticidal, antiviral activities, and also against COVID-19. Toxicological studies showed that the plants at a low dose and short duration are non or low-toxic. In contrast, a high dose at 3 g/kg and for a longer duration can cause toxicity like rapid respiration, neurotoxicity, reproductive toxicity, etc. However, further in-depth studies are needed to determine the medicinal uses, clinical efficacy and safety are crucial next steps.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33893998_causative-agent_0003518#mention-T1",
+      "canon:span": {
+        "start": 1475,
+        "end": 1488
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33893998_causative-agent_0003518#mention-T2",
+      "canon:span": {
+        "start": 911,
+        "end": 921
+      },
+      "canon:surface": "flavonoids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005419",
+      "canon:sourceNotation": "D005419",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33893998_causative-agent_0003518#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33893998_causative-agent_0003518#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33893998_causative-agent_0003518#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33893998"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19577366_due-to_0002198",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_19577366_due-to_0002198",
+  "canon:title": "In vivo silencing of the Ca(V)3.2 T-type calcium channels in sensory neurons alleviates hyperalgesia in rats with streptozocin-induced diabetic neuropathy.",
+  "canon:abstract": "Earlier, we showed that streptozocin (STZ)-induced type 1 diabetes in rats leads to the development of painful peripheral diabetic neuropathy (PDN) manifested as thermal hyperalgesia and mechanical allodynia accompanied by significant enhancement of T-type calcium currents (T-currents) and cellular excitability in medium-sized dorsal root ganglion (DRG) neurons. Here, we studied the in vivo and in vitro effects of gene-silencing therapy specific for the Ca(V)3.2 isoform of T-channels, on thermal and mechanical hypersensitivities, and T-current expression in small- and medium-sized DRG neurons of STZ-treated rats. We found that silencing of the T-channel Ca(V)3.2 isoform using antisense oligonucleotides, had a profound and selective anti-hyperalgesic effect in diabetic rats and is accompanied by significant down-regulation of T-currents in DRG neurons. Anti-hyperalgesic effects of Ca(V)3.2 antisense oligonucleotides in diabetic rats were similar in models of rapid and slow onset of hyperglycemia following intravenous and intraperitoneal injections of STZ, respectively. Furthermore, treatments of diabetic rats with daily insulin injections reversed T-current alterations in DRG neurons in parallel with reversal of thermal and mechanical hypersensitivities in vivo. This confirms that Ca(V)3.2 T-channels, important signal amplifiers in peripheral sensory neurons, may contribute to the cellular hyperexcitability that ultimately leads to the development of painful PDN.",
+  "canon:text": "In vivo silencing of the Ca(V)3.2 T-type calcium channels in sensory neurons alleviates hyperalgesia in rats with streptozocin-induced diabetic neuropathy. Earlier, we showed that streptozocin (STZ)-induced type 1 diabetes in rats leads to the development of painful peripheral diabetic neuropathy (PDN) manifested as thermal hyperalgesia and mechanical allodynia accompanied by significant enhancement of T-type calcium currents (T-currents) and cellular excitability in medium-sized dorsal root ganglion (DRG) neurons. Here, we studied the in vivo and in vitro effects of gene-silencing therapy specific for the Ca(V)3.2 isoform of T-channels, on thermal and mechanical hypersensitivities, and T-current expression in small- and medium-sized DRG neurons of STZ-treated rats. We found that silencing of the T-channel Ca(V)3.2 isoform using antisense oligonucleotides, had a profound and selective anti-hyperalgesic effect in diabetic rats and is accompanied by significant down-regulation of T-currents in DRG neurons. Anti-hyperalgesic effects of Ca(V)3.2 antisense oligonucleotides in diabetic rats were similar in models of rapid and slow onset of hyperglycemia following intravenous and intraperitoneal injections of STZ, respectively. Furthermore, treatments of diabetic rats with daily insulin injections reversed T-current alterations in DRG neurons in parallel with reversal of thermal and mechanical hypersensitivities in vivo. This confirms that Ca(V)3.2 T-channels, important signal amplifiers in peripheral sensory neurons, may contribute to the cellular hyperexcitability that ultimately leads to the development of painful PDN.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19577366_due-to_0002198#mention-T1",
+      "canon:span": {
+        "start": 135,
+        "end": 154
+      },
+      "canon:surface": "diabetic neuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19577366_due-to_0002198#mention-T2",
+      "canon:span": {
+        "start": 207,
+        "end": 222
+      },
+      "canon:surface": "type 1 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003922",
+      "canon:sourceNotation": "D003922",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19577366_due-to_0002198#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19577366_due-to_0002198#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19577366_due-to_0002198#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "19577366"
+      }
+    }
+  ]
+}

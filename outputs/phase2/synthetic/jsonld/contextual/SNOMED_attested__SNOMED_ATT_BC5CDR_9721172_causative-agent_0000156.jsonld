@@ -1,0 +1,88 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9721172_causative-agent_0000156",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_9721172_causative-agent_0000156",
+  "canon:title": "Drug-associated acute-onset vanishing bile duct and Stevens-Johnson syndromes in a child.",
+  "canon:abstract": "Acute vanishing bile duct syndrome is a rare but established cause of progressive cholestasis in adults, is most often drug or toxin related, and is of unknown pathogenesis. It has not been reported previously in children. Stevens-Johnson syndrome is a well-recognized immune complex-mediated hypersensitivity reaction that affects all age groups, is drug or infection induced, and has classic systemic, mucosal, and dermatologic manifestations. A previously healthy child who developed acute, severe, rapidly progressive vanishing bile duct syndrome shortly after Stevens-Johnson syndrome is described; this was temporally associated with ibuprofen use. Despite therapy with ursodeoxycholic acid, prednisone, and then tacrolimus, her cholestatic disease was unrelenting, with cirrhosis shown by biopsy 6 months after presentation. This case documents acute drug-related vanishing bile duct syndrome in the pediatric age group and suggests shared immune mechanisms in the pathogenesis of both Stevens-Johnson syndrome and vanishing bile duct syndrome.",
+  "canon:text": "Drug-associated acute-onset vanishing bile duct and Stevens-Johnson syndromes in a child. Acute vanishing bile duct syndrome is a rare but established cause of progressive cholestasis in adults, is most often drug or toxin related, and is of unknown pathogenesis. It has not been reported previously in children. Stevens-Johnson syndrome is a well-recognized immune complex-mediated hypersensitivity reaction that affects all age groups, is drug or infection induced, and has classic systemic, mucosal, and dermatologic manifestations. A previously healthy child who developed acute, severe, rapidly progressive vanishing bile duct syndrome shortly after Stevens-Johnson syndrome is described; this was temporally associated with ibuprofen use. Despite therapy with ursodeoxycholic acid, prednisone, and then tacrolimus, her cholestatic disease was unrelenting, with cirrhosis shown by biopsy 6 months after presentation. This case documents acute drug-related vanishing bile duct syndrome in the pediatric age group and suggests shared immune mechanisms in the pathogenesis of both Stevens-Johnson syndrome and vanishing bile duct syndrome.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9721172_causative-agent_0000156#mention-T1",
+      "canon:span": {
+        "start": 383,
+        "end": 399
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/416098002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9721172_causative-agent_0000156#mention-T2",
+      "canon:span": {
+        "start": 788,
+        "end": 798
+      },
+      "canon:surface": "prednisone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D011241",
+      "canon:sourceNotation": "D011241",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hormone",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/116602009",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9721172_causative-agent_0000156#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9721172_causative-agent_0000156#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9721172_causative-agent_0000156#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "9721172"
+      }
+    }
+  ]
+}

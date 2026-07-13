@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120",
+  "canon:title": "The Mechanisms of Systemic Inflammatory and Immunosuppressive Acute-on-Chronic Liver Failure and Application Prospect of Single-Cell Sequencing.",
+  "canon:abstract": "Acute-on-chronic liver failure (ACLF) is a complex clinical syndrome, and patients often have high short-term mortality. It occurs with intense systemic inflammation, often accompanied by a proinflammatory event (such as infection or alcoholic hepatitis), and is closely related to single or multiple organ failure. Liver inflammation begins when innate immune cells (such as Kupffer cells (KCs)) are activated by binding of pathogen-associated molecular patterns (PAMPs) from pathogenic microorganisms or damage-associated molecular patterns (DAMPs) of host origin to their pattern recognition receptors (PRRs). Activated KCs can secrete inflammatory factors as well as chemokines and recruit bone marrow-derived cells such as neutrophils and monocytes to the liver to enhance the inflammatory process. Bacterial translocation may contribute to ACLF when there are no obvious precipitating events. Immunometabolism plays an important role in the process (including mitochondrial dysfunction, amino acid metabolism, and lipid metabolism). The late stage of ACLF is mainly characterized by immunosuppression. In this process, the dysfunction of monocyte and macrophage is reflected in the downregulation of HLA-DR and upregulation of MER tyrosine kinase (MERTK), which weakens the antigen presentation function and reduces the secretion of inflammatory cytokines. We also describe the specific function of bacterial translocation and the gut-liver axis in the process of ACLF. Finally, we also describe the transcriptomics in HBV-ACLF and the recent progress of single-cell RNA sequencing as well as its potential application in the study of ACLF in the future, in order to gain a deeper understanding of ACLF in terms of single-cell gene expression.",
+  "canon:text": "The Mechanisms of Systemic Inflammatory and Immunosuppressive Acute-on-Chronic Liver Failure and Application Prospect of Single-Cell Sequencing. Acute-on-chronic liver failure (ACLF) is a complex clinical syndrome, and patients often have high short-term mortality. It occurs with intense systemic inflammation, often accompanied by a proinflammatory event (such as infection or alcoholic hepatitis), and is closely related to single or multiple organ failure. Liver inflammation begins when innate immune cells (such as Kupffer cells (KCs)) are activated by binding of pathogen-associated molecular patterns (PAMPs) from pathogenic microorganisms or damage-associated molecular patterns (DAMPs) of host origin to their pattern recognition receptors (PRRs). Activated KCs can secrete inflammatory factors as well as chemokines and recruit bone marrow-derived cells such as neutrophils and monocytes to the liver to enhance the inflammatory process. Bacterial translocation may contribute to ACLF when there are no obvious precipitating events. Immunometabolism plays an important role in the process (including mitochondrial dysfunction, amino acid metabolism, and lipid metabolism). The late stage of ACLF is mainly characterized by immunosuppression. In this process, the dysfunction of monocyte and macrophage is reflected in the downregulation of HLA-DR and upregulation of MER tyrosine kinase (MERTK), which weakens the antigen presentation function and reduces the secretion of inflammatory cytokines. We also describe the specific function of bacterial translocation and the gut-liver axis in the process of ACLF. Finally, we also describe the transcriptomics in HBV-ACLF and the recent progress of single-cell RNA sequencing as well as its potential application in the study of ACLF in the future, in order to gain a deeper understanding of ACLF in terms of single-cell gene expression.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T1",
+      "canon:span": {
+        "start": 379,
+        "end": 398
+      },
+      "canon:surface": "alcoholic hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T2",
+      "canon:span": {
+        "start": 1165,
+        "end": 1170
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36387424_causative-agent_0004120#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36387424"
+      }
+    }
+  ]
+}

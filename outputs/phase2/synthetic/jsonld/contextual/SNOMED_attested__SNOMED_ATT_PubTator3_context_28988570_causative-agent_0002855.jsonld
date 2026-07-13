@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28988570_causative-agent_0002855",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28988570_causative-agent_0002855",
+  "canon:title": "Alcoholic Liver Disease: Pathogenesis and Current Management.",
+  "canon:abstract": "Excessive alcohol consumption is a global healthcare problem. The liver sustains the greatest degree of tissue injury by heavy drinking because it is the primary site of ethanol metabolism. Chronic and excessive alcohol consumption produces a wide spectrum of hepatic lesions, the most characteristic of which are steatosis, hepatitis, and fibrosis/cirrhosis. Steatosis is the earliest response to heavy drinking and is characterized by the deposition of fat in hepatocytes. Steatosis can progress to steatohepatitis, which is a more severe, inflammatory type of liver injury. This stage of liver disease can lead to the development of fibrosis, during which there is excessive deposition of extracellular matrix proteins. The fibrotic response begins with active pericellular fibrosis, which may progress to cirrhosis, characterized by excessive liver scarring, vascular alterations, and eventual liver failure. Among problem drinkers, about 35 percent develop advanced liver disease because a number of disease modifiers exacerbate, slow, or prevent alcoholic liver disease progression. There are still no FDA-approved pharmacological or nutritional therapies for treating patients with alcoholic liver disease. Cessation of drinking (i.e., abstinence) is an integral part of therapy. Liver transplantation remains the life-saving strategy for patients with end-stage alcoholic liver disease.",
+  "canon:text": "Alcoholic Liver Disease: Pathogenesis and Current Management. Excessive alcohol consumption is a global healthcare problem. The liver sustains the greatest degree of tissue injury by heavy drinking because it is the primary site of ethanol metabolism. Chronic and excessive alcohol consumption produces a wide spectrum of hepatic lesions, the most characteristic of which are steatosis, hepatitis, and fibrosis/cirrhosis. Steatosis is the earliest response to heavy drinking and is characterized by the deposition of fat in hepatocytes. Steatosis can progress to steatohepatitis, which is a more severe, inflammatory type of liver injury. This stage of liver disease can lead to the development of fibrosis, during which there is excessive deposition of extracellular matrix proteins. The fibrotic response begins with active pericellular fibrosis, which may progress to cirrhosis, characterized by excessive liver scarring, vascular alterations, and eventual liver failure. Among problem drinkers, about 35 percent develop advanced liver disease because a number of disease modifiers exacerbate, slow, or prevent alcoholic liver disease progression. There are still no FDA-approved pharmacological or nutritional therapies for treating patients with alcoholic liver disease. Cessation of drinking (i.e., abstinence) is an integral part of therapy. Liver transplantation remains the life-saving strategy for patients with end-stage alcoholic liver disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28988570_causative-agent_0002855#mention-T1",
+      "canon:span": {
+        "start": 322,
+        "end": 337
+      },
+      "canon:surface": "hepatic lesions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28988570_causative-agent_0002855#mention-T2",
+      "canon:span": {
+        "start": 232,
+        "end": 239
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28988570_causative-agent_0002855#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28988570_causative-agent_0002855#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28988570_causative-agent_0002855#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28988570"
+      }
+    }
+  ]
+}

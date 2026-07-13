@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21425984_causative-agent_0000362",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21425984_causative-agent_0000362",
+  "canon:title": "Synthetic and natural iron chelators: therapeutic potential and clinical use.",
+  "canon:abstract": "Iron-chelation therapy has its origins in the treatment of iron-overload syndromes. For many years, the standard for this purpose has been deferoxamine. Recently, considerable progress has been made in identifying synthetic chelators with improved pharmacologic properties relative to deferoxamine. Most notable are deferasirox (Exjade( )) and deferiprone (Ferriprox( )), which are now available clinically. In addition to treatment of iron overload, there is an emerging role for iron chelators in the treatment of diseases characterized by oxidative stress, including cardiovascular disease, atherosclerosis, neurodegenerative diseases and cancer. While iron is not regarded as the underlying cause of these diseases, it does play an important role in disease progression, either through promotion of cellular growth and proliferation or through participation in redox reactions that catalyze the formation of reactive oxygen species and increase oxidative stress. Thus, iron chelators may be of therapeutic benefit in many of these conditions. Phytochemicals, many of which bind iron, may also owe some of their beneficial properties to iron chelation. This review will focus on the advances in iron-chelation therapy for the treatment of iron-overload disease and cancer, as well as neurodegenerative and chronic inflammatory diseases. Established and novel iron chelators will be discussed, as well as the emerging role of dietary plant polyphenols that effectively modulate iron biochemistry.",
+  "canon:text": "Synthetic and natural iron chelators: therapeutic potential and clinical use. Iron-chelation therapy has its origins in the treatment of iron-overload syndromes. For many years, the standard for this purpose has been deferoxamine. Recently, considerable progress has been made in identifying synthetic chelators with improved pharmacologic properties relative to deferoxamine. Most notable are deferasirox (Exjade( )) and deferiprone (Ferriprox( )), which are now available clinically. In addition to treatment of iron overload, there is an emerging role for iron chelators in the treatment of diseases characterized by oxidative stress, including cardiovascular disease, atherosclerosis, neurodegenerative diseases and cancer. While iron is not regarded as the underlying cause of these diseases, it does play an important role in disease progression, either through promotion of cellular growth and proliferation or through participation in redox reactions that catalyze the formation of reactive oxygen species and increase oxidative stress. Thus, iron chelators may be of therapeutic benefit in many of these conditions. Phytochemicals, many of which bind iron, may also owe some of their beneficial properties to iron chelation. This review will focus on the advances in iron-chelation therapy for the treatment of iron-overload disease and cancer, as well as neurodegenerative and chronic inflammatory diseases. Established and novel iron chelators will be discussed, as well as the emerging role of dietary plant polyphenols that effectively modulate iron biochemistry.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21425984_causative-agent_0000362#mention-T1",
+      "canon:span": {
+        "start": 137,
+        "end": 160
+      },
+      "canon:surface": "iron-overload syndromes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21425984_causative-agent_0000362#mention-T2",
+      "canon:span": {
+        "start": 78,
+        "end": 82
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21425984_causative-agent_0000362#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21425984_causative-agent_0000362#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21425984_causative-agent_0000362#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21425984"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20382209_causative-agent_0002245",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20382209_causative-agent_0002245",
+  "canon:title": "Constructs of human neuropathy target esterase catalytic domain containing mutations related to motor neuron disease have altered enzymatic properties.",
+  "canon:abstract": "Neuropathy target esterase (NTE) is a phospholipase/lysophospholipase associated with organophosphorus (OP) compound-induced delayed neurotoxicity (OPIDN). Distal degeneration of motor axons occurs in both OPIDN and the hereditary spastic paraplegias (HSPs). Recently, mutations within the esterase domain of NTE were identified in patients with a novel type of HSP (SPG39) designated NTE-related motor neuron disease (NTE-MND). Two of these mutations, arginine 890 to histidine (R890H) and methionine 1012 to valine (M1012V), were created in human recombinant NTE catalytic domain (NEST) to measure possible changes in catalytic properties. These mutated enzymes had decreased specific activities for hydrolysis of the artificial substrate, phenyl valerate. In addition, the M1012V mutant exhibited a reduced bimolecular rate constant of inhibition (k(i)) for all three inhibitors tested: mipafox, diisopropylphosphorofluoridate, and chlorpyrifos oxon. Finally, while both mutated enzymes inhibited by OP compounds exhibited altered time-dependent loss of their ability to be reactivated by nucleophiles (aging), more pronounced effects were seen with the M1012V mutant. Taken together, the results from specific activity, inhibition, and aging experiments suggest that the mutations found in association with NTE-MND have functional correlates in altered enzymological properties of NTE.",
+  "canon:text": "Constructs of human neuropathy target esterase catalytic domain containing mutations related to motor neuron disease have altered enzymatic properties. Neuropathy target esterase (NTE) is a phospholipase/lysophospholipase associated with organophosphorus (OP) compound-induced delayed neurotoxicity (OPIDN). Distal degeneration of motor axons occurs in both OPIDN and the hereditary spastic paraplegias (HSPs). Recently, mutations within the esterase domain of NTE were identified in patients with a novel type of HSP (SPG39) designated NTE-related motor neuron disease (NTE-MND). Two of these mutations, arginine 890 to histidine (R890H) and methionine 1012 to valine (M1012V), were created in human recombinant NTE catalytic domain (NEST) to measure possible changes in catalytic properties. These mutated enzymes had decreased specific activities for hydrolysis of the artificial substrate, phenyl valerate. In addition, the M1012V mutant exhibited a reduced bimolecular rate constant of inhibition (k(i)) for all three inhibitors tested: mipafox, diisopropylphosphorofluoridate, and chlorpyrifos oxon. Finally, while both mutated enzymes inhibited by OP compounds exhibited altered time-dependent loss of their ability to be reactivated by nucleophiles (aging), more pronounced effects were seen with the M1012V mutant. Taken together, the results from specific activity, inhibition, and aging experiments suggest that the mutations found in association with NTE-MND have functional correlates in altered enzymological properties of NTE.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20382209_causative-agent_0002245#mention-T1",
+      "canon:span": {
+        "start": 277,
+        "end": 298
+      },
+      "canon:surface": "delayed neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20382209_causative-agent_0002245#mention-T2",
+      "canon:span": {
+        "start": 1042,
+        "end": 1049
+      },
+      "canon:surface": "mipafox",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C005238",
+      "canon:sourceNotation": "C005238",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20382209_causative-agent_0002245#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20382209_causative-agent_0002245#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20382209_causative-agent_0002245#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20382209"
+      }
+    }
+  ]
+}

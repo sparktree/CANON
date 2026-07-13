@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29204450_due-to_0000801",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29204450_due-to_0000801",
+  "canon:title": "The Role of Oxidative Stress, Mitochondrial Function, and Autophagy in Diabetic Polyneuropathy.",
+  "canon:abstract": "Diabetic polyneuropathy (DPN) is the most frequent and prevalent chronic complication of diabetes mellitus (DM). The state of persistent hyperglycemia leads to an increase in the production of cytosolic and mitochondrial reactive oxygen species (ROS) and favors deregulation of the antioxidant defenses that are capable of activating diverse metabolic pathways which trigger the presence of nitro-oxidative stress (NOS) and endoplasmic reticulum stress. Hyperglycemia provokes the appearance of micro- and macrovascular complications and favors oxidative damage to the macromolecules (lipids, carbohydrates, and proteins) with an increase in products that damage the DNA. Hyperglycemia produces mitochondrial dysfunction with deregulation between mitochondrial fission/fusion and regulatory factors. Mitochondrial fission appears early in diabetic neuropathy with the ability to facilitate mitochondrial fragmentation. Autophagy is a catabolic process induced by oxidative stress that involves the formation of vesicles by the lysosomes. Autophagy protects cells from diverse stress factors and routine deterioration. Clarification of the mechanisms involved in the appearance of complications in DM will facilitate the selection of specific therapeutic options based on the mechanisms involved in the metabolic pathways affected. Nowadays, the antioxidant agents consumed exogenously form an adjuvant therapeutic alternative in chronic degenerative metabolic diseases, such as DM.",
+  "canon:text": "The Role of Oxidative Stress, Mitochondrial Function, and Autophagy in Diabetic Polyneuropathy. Diabetic polyneuropathy (DPN) is the most frequent and prevalent chronic complication of diabetes mellitus (DM). The state of persistent hyperglycemia leads to an increase in the production of cytosolic and mitochondrial reactive oxygen species (ROS) and favors deregulation of the antioxidant defenses that are capable of activating diverse metabolic pathways which trigger the presence of nitro-oxidative stress (NOS) and endoplasmic reticulum stress. Hyperglycemia provokes the appearance of micro- and macrovascular complications and favors oxidative damage to the macromolecules (lipids, carbohydrates, and proteins) with an increase in products that damage the DNA. Hyperglycemia produces mitochondrial dysfunction with deregulation between mitochondrial fission/fusion and regulatory factors. Mitochondrial fission appears early in diabetic neuropathy with the ability to facilitate mitochondrial fragmentation. Autophagy is a catabolic process induced by oxidative stress that involves the formation of vesicles by the lysosomes. Autophagy protects cells from diverse stress factors and routine deterioration. Clarification of the mechanisms involved in the appearance of complications in DM will facilitate the selection of specific therapeutic options based on the mechanisms involved in the metabolic pathways affected. Nowadays, the antioxidant agents consumed exogenously form an adjuvant therapeutic alternative in chronic degenerative metabolic diseases, such as DM.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29204450_due-to_0000801#mention-T1",
+      "canon:span": {
+        "start": 71,
+        "end": 94
+      },
+      "canon:surface": "Diabetic Polyneuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29204450_due-to_0000801#mention-T2",
+      "canon:span": {
+        "start": 791,
+        "end": 816
+      },
+      "canon:surface": "mitochondrial dysfunction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D028361",
+      "canon:sourceNotation": "D028361",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29204450_due-to_0000801#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29204450_due-to_0000801#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29204450_due-to_0000801#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29204450"
+      }
+    }
+  ]
+}

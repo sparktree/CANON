@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000702",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000702",
+  "canon:title": "\"Manganese-induced neurotoxicity: a review of its behavioral consequences and neuroprotective strategies\".",
+  "canon:abstract": "Manganese (Mn) is an essential heavy metal. However, Mn's nutritional aspects are paralleled by its role as a neurotoxicant upon excessive exposure. In this review, we covered recent advances in identifying mechanisms of Mn uptake and its molecular actions in the brain as well as promising neuroprotective strategies. The authors focused on reporting findings regarding Mn transport mechanisms, Mn effects on cholinergic system, behavioral alterations induced by Mn exposure and studies of neuroprotective strategies against Mn intoxication. We report that exposure to Mn may arise from environmental sources, occupational settings, food, total parenteral nutrition (TPN), methcathinone drug abuse or even genetic factors, such as mutation in the transporter SLC30A10. Accumulation of Mn occurs mainly in the basal ganglia and leads to a syndrome called manganism, whose symptoms of cognitive dysfunction and motor impairment resemble Parkinson's disease (PD). Various neurotransmitter systems may be impaired due to Mn, especially dopaminergic, but also cholinergic and GABAergic. Several proteins have been identified to transport Mn, including divalent metal tranporter-1 (DMT-1), SLC30A10, transferrin and ferroportin and allow its accumulation in the central nervous system. Parallel to identification of Mn neurotoxic properties, neuroprotective strategies have been reported, and these include endogenous antioxidants (for instance, vitamin E), plant extracts (complex mixtures containing polyphenols and non-characterized components), iron chelating agents, precursors of glutathione (GSH), and synthetic compounds that can experimentally afford protection against Mn-induced neurotoxicity.",
+  "canon:text": "\"Manganese-induced neurotoxicity: a review of its behavioral consequences and neuroprotective strategies\". Manganese (Mn) is an essential heavy metal. However, Mn's nutritional aspects are paralleled by its role as a neurotoxicant upon excessive exposure. In this review, we covered recent advances in identifying mechanisms of Mn uptake and its molecular actions in the brain as well as promising neuroprotective strategies. The authors focused on reporting findings regarding Mn transport mechanisms, Mn effects on cholinergic system, behavioral alterations induced by Mn exposure and studies of neuroprotective strategies against Mn intoxication. We report that exposure to Mn may arise from environmental sources, occupational settings, food, total parenteral nutrition (TPN), methcathinone drug abuse or even genetic factors, such as mutation in the transporter SLC30A10. Accumulation of Mn occurs mainly in the basal ganglia and leads to a syndrome called manganism, whose symptoms of cognitive dysfunction and motor impairment resemble Parkinson's disease (PD). Various neurotransmitter systems may be impaired due to Mn, especially dopaminergic, but also cholinergic and GABAergic. Several proteins have been identified to transport Mn, including divalent metal tranporter-1 (DMT-1), SLC30A10, transferrin and ferroportin and allow its accumulation in the central nervous system. Parallel to identification of Mn neurotoxic properties, neuroprotective strategies have been reported, and these include endogenous antioxidants (for instance, vitamin E), plant extracts (complex mixtures containing polyphenols and non-characterized components), iron chelating agents, precursors of glutathione (GSH), and synthetic compounds that can experimentally afford protection against Mn-induced neurotoxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000702#mention-T1",
+      "canon:span": {
+        "start": 19,
+        "end": 32
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000702#mention-T2",
+      "canon:span": {
+        "start": 1651,
+        "end": 1655
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000702#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000702#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27814772_causative-agent_0000702#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "27814772"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36240863_causative-agent_0001773",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36240863_causative-agent_0001773",
+  "canon:title": "Synergistic action of organophosphates and COVID-19 on inflammation, oxidative stress, and renin-angiotensin system can amplify the risk of cardiovascular maladies.",
+  "canon:abstract": "Organophosphates (OPs) are ubiquitous environmental contaminants, widely used as pesticides in agricultural fields. In addition, they serve as flame-retardants, plasticizers, antifoaming or antiwear agents in lacquers, hydraulic fluids, and floor polishing agents. Therefore, world-wide and massive application of these compounds have increased the risk of unintentional exposure to non-targets including the human beings. OPs are neurotoxic agents as they inhibit the activity of acetylcholinesterase at synaptic cleft. Moreover, they can fuel cardiovascular issues in the form of myocardities, cardiac oedema, arrhythmia, systolic malfunction, infarction, and altered electrophysiology. Such pathological outcomes might increase the severity of cardiovascular diseases which are the leading cause of mortality in the developing world. Coronavirus disease-19 (COVID-19) is the ongoing global health emergency caused by SARS-CoV-2 infection. Similar to OPs, SARS-CoV-2 disrupts cytokine homeostasis, redox-balance, and angiotensin-II/AT1R axis to promote cardiovascular injuries. Therefore, during the current pandemic milieu, unintentional exposure to OPs through several environmental sources could escalate cardiac maladies in patients with COVID-19.",
+  "canon:text": "Synergistic action of organophosphates and COVID-19 on inflammation, oxidative stress, and renin-angiotensin system can amplify the risk of cardiovascular maladies. Organophosphates (OPs) are ubiquitous environmental contaminants, widely used as pesticides in agricultural fields. In addition, they serve as flame-retardants, plasticizers, antifoaming or antiwear agents in lacquers, hydraulic fluids, and floor polishing agents. Therefore, world-wide and massive application of these compounds have increased the risk of unintentional exposure to non-targets including the human beings. OPs are neurotoxic agents as they inhibit the activity of acetylcholinesterase at synaptic cleft. Moreover, they can fuel cardiovascular issues in the form of myocardities, cardiac oedema, arrhythmia, systolic malfunction, infarction, and altered electrophysiology. Such pathological outcomes might increase the severity of cardiovascular diseases which are the leading cause of mortality in the developing world. Coronavirus disease-19 (COVID-19) is the ongoing global health emergency caused by SARS-CoV-2 infection. Similar to OPs, SARS-CoV-2 disrupts cytokine homeostasis, redox-balance, and angiotensin-II/AT1R axis to promote cardiovascular injuries. Therefore, during the current pandemic milieu, unintentional exposure to OPs through several environmental sources could escalate cardiac maladies in patients with COVID-19.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36240863_causative-agent_0001773#mention-T1",
+      "canon:span": {
+        "start": 596,
+        "end": 613
+      },
+      "canon:surface": "neurotoxic agents",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36240863_causative-agent_0001773#mention-T2",
+      "canon:span": {
+        "start": 22,
+        "end": 38
+      },
+      "canon:surface": "organophosphates",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010755",
+      "canon:sourceNotation": "D010755",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36240863_causative-agent_0001773#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36240863_causative-agent_0001773#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36240863_causative-agent_0001773#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36240863"
+      }
+    }
+  ]
+}

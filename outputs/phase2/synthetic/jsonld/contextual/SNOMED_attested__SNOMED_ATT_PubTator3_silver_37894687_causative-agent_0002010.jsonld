@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37894687_causative-agent_0002010",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37894687_causative-agent_0002010",
+  "canon:title": "Potential Benefits of Antioxidant Phytochemicals in Type 2 Diabetes.",
+  "canon:abstract": "The clinical relationship between diabetes and inflammation is well established. Evidence clearly indicates that disrupting oxidant-antioxidant equilibrium and elevated lipid peroxidation could be a potential mechanism for chronic kidney disease associated with type 2 diabetes mellitus (T2DM). Under diabetic conditions, hyperglycemia, especially inflammation, and increased reactive oxygen species generation are bidirectionally associated. Inflammation, oxidative stress, and tissue damage are believed to play a role in the development of diabetes. Although the exact mechanism underlying oxidative stress and its impact on diabetes progression remains uncertain, the hyperglycemia-inflammation-oxidative stress interaction clearly plays a significant role in the onset and progression of vascular disease, kidney disease, hepatic injury, and pancreas damage and, therefore, holds promise as a therapeutic target. Evidence strongly indicates that the use of multiple antidiabetic medications fails to achieve the normal range for glycated hemoglobin targets, signifying treatment-resistant diabetes. Antioxidants with polyphenols are considered useful as adjuvant therapy for their potential anti-inflammatory effect and antioxidant activity. We aimed to analyze the current major points reported in preclinical, in vivo, and clinical studies of antioxidants in the prevention or treatment of inflammation in T2DM. Then, we will share our speculative vision for future diabetes clinical trials.",
+  "canon:text": "Potential Benefits of Antioxidant Phytochemicals in Type 2 Diabetes. The clinical relationship between diabetes and inflammation is well established. Evidence clearly indicates that disrupting oxidant-antioxidant equilibrium and elevated lipid peroxidation could be a potential mechanism for chronic kidney disease associated with type 2 diabetes mellitus (T2DM). Under diabetic conditions, hyperglycemia, especially inflammation, and increased reactive oxygen species generation are bidirectionally associated. Inflammation, oxidative stress, and tissue damage are believed to play a role in the development of diabetes. Although the exact mechanism underlying oxidative stress and its impact on diabetes progression remains uncertain, the hyperglycemia-inflammation-oxidative stress interaction clearly plays a significant role in the onset and progression of vascular disease, kidney disease, hepatic injury, and pancreas damage and, therefore, holds promise as a therapeutic target. Evidence strongly indicates that the use of multiple antidiabetic medications fails to achieve the normal range for glycated hemoglobin targets, signifying treatment-resistant diabetes. Antioxidants with polyphenols are considered useful as adjuvant therapy for their potential anti-inflammatory effect and antioxidant activity. We aimed to analyze the current major points reported in preclinical, in vivo, and clinical studies of antioxidants in the prevention or treatment of inflammation in T2DM. Then, we will share our speculative vision for future diabetes clinical trials.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37894687_causative-agent_0002010#mention-T1",
+      "canon:span": {
+        "start": 896,
+        "end": 910
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37894687_causative-agent_0002010#mention-T2",
+      "canon:span": {
+        "start": 1191,
+        "end": 1202
+      },
+      "canon:surface": "polyphenols",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D059808",
+      "canon:sourceNotation": "D059808",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37894687_causative-agent_0002010#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37894687_causative-agent_0002010#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37894687_causative-agent_0002010#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37894687"
+      }
+    }
+  ]
+}

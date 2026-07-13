@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36290725_due-to_0004086",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36290725_due-to_0004086",
+  "canon:title": "A Synopsis of the Associations of Oxidative Stress, ROS, and Antioxidants with Diabetes Mellitus.",
+  "canon:abstract": "The Greek physician, Aretaios, coined the term \"diabetes\" in the 1st Century A.D. \"Mellitus\" arose from the observation that the urine exhibits a sweetness due to its elevated glucose levels. Diabetes mellitus (DM) accounted for 6.7 million deaths globally in 2021 with expenditures of USD 966 billion. Mortality is predicted to rise nearly 10-fold by 2030. Oxidative stress, an imbalance between the generation and removal of reactive oxygen species (ROS), is implicated in the pathophysiology of diabetes. Whereas ROS are generated in euglycemic, natural insulin-regulated glucose metabolism, levels are regulated by factors that regulate cellular respiration, e.g., the availability of NAD-linked substrates, succinate, and oxygen; and antioxidant enzymes that maintain the cellular redox balance. Only about 1-2% of total oxygen consumption results in the formation of superoxide anion and hydrogen peroxide under normal reduced conditions. However, under hyperglycemic conditions, about 10% of the respiratory oxygen consumed may be lost as free radicals. Under hyperglycemic conditions, the two-reaction polyol pathway is activated. Nearly 30% of blood glucose can flux through this pathway-a major path contributing to NADH/NAD+ redox imbalance. Under these conditions, protein glycation and lipid peroxidation increase, and inflammatory cytokines are formed, leading to the further formation of ROS. As mitochondria are the major site of intracellular ROS, these organelles are subject to the deleterious effects of ROS themselves and eventually become dysfunctional-a milestone in Metabolic Syndrome (MetS) of which insulin resistance and diabetes predispose to cardiovascular disease.",
+  "canon:text": "A Synopsis of the Associations of Oxidative Stress, ROS, and Antioxidants with Diabetes Mellitus. The Greek physician, Aretaios, coined the term \"diabetes\" in the 1st Century A.D. \"Mellitus\" arose from the observation that the urine exhibits a sweetness due to its elevated glucose levels. Diabetes mellitus (DM) accounted for 6.7 million deaths globally in 2021 with expenditures of USD 966 billion. Mortality is predicted to rise nearly 10-fold by 2030. Oxidative stress, an imbalance between the generation and removal of reactive oxygen species (ROS), is implicated in the pathophysiology of diabetes. Whereas ROS are generated in euglycemic, natural insulin-regulated glucose metabolism, levels are regulated by factors that regulate cellular respiration, e.g., the availability of NAD-linked substrates, succinate, and oxygen; and antioxidant enzymes that maintain the cellular redox balance. Only about 1-2% of total oxygen consumption results in the formation of superoxide anion and hydrogen peroxide under normal reduced conditions. However, under hyperglycemic conditions, about 10% of the respiratory oxygen consumed may be lost as free radicals. Under hyperglycemic conditions, the two-reaction polyol pathway is activated. Nearly 30% of blood glucose can flux through this pathway-a major path contributing to NADH/NAD+ redox imbalance. Under these conditions, protein glycation and lipid peroxidation increase, and inflammatory cytokines are formed, leading to the further formation of ROS. As mitochondria are the major site of intracellular ROS, these organelles are subject to the deleterious effects of ROS themselves and eventually become dysfunctional-a milestone in Metabolic Syndrome (MetS) of which insulin resistance and diabetes predispose to cardiovascular disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36290725_due-to_0004086#mention-T1",
+      "canon:span": {
+        "start": 1058,
+        "end": 1071
+      },
+      "canon:surface": "hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36290725_due-to_0004086#mention-T2",
+      "canon:span": {
+        "start": 79,
+        "end": 96
+      },
+      "canon:surface": "Diabetes Mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36290725_due-to_0004086#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36290725_due-to_0004086#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36290725_due-to_0004086#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36290725"
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3070035_due-to_0000176",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_3070035_due-to_0000176",
+  "canon:title": "Reversibility of captopril-induced renal insufficiency after prolonged use in an unusual case of renovascular hypertension.",
+  "canon:abstract": "We report a case of severe hypertension with an occluded renal artery to a solitary kidney, who developed sudden deterioration of renal function following treatment with captopril. His renal function remained impaired but stable during 2 years' treatment with captopril but returned to pre-treatment levels soon after cessation of the drug. This indicates reversibility in captopril-induced renal failure even after its prolonged use and suggests that no organic damage occurs to glomerular arterioles following chronic ACE inhibition.",
+  "canon:text": "Reversibility of captopril-induced renal insufficiency after prolonged use in an unusual case of renovascular hypertension. We report a case of severe hypertension with an occluded renal artery to a solitary kidney, who developed sudden deterioration of renal function following treatment with captopril. His renal function remained impaired but stable during 2 years' treatment with captopril but returned to pre-treatment levels soon after cessation of the drug. This indicates reversibility in captopril-induced renal failure even after its prolonged use and suggests that no organic damage occurs to glomerular arterioles following chronic ACE inhibition.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3070035_due-to_0000176#mention-T1",
+      "canon:span": {
+        "start": 97,
+        "end": 122
+      },
+      "canon:surface": "renovascular hypertension",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D006978",
+      "canon:sourceNotation": "D006978",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/123800009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3070035_due-to_0000176#mention-T2",
+      "canon:span": {
+        "start": 35,
+        "end": 54
+      },
+      "canon:surface": "renal insufficiency",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D051437",
+      "canon:sourceNotation": "D051437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/236423003",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3070035_due-to_0000176#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3070035_due-to_0000176#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3070035_due-to_0000176#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "3070035"
+      }
+    }
+  ]
+}

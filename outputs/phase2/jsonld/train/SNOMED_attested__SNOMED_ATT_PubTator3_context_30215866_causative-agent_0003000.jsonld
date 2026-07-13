@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30215866_causative-agent_0003000",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30215866_causative-agent_0003000",
+  "canon:title": "Intersection of Iron and Copper Metabolism in the Mammalian Intestine and Liver.",
+  "canon:abstract": "Iron and copper have similar physiochemical properties; thus, physiologically relevant interactions seem likely. Indeed, points of intersection between these two essential trace minerals have been recognized for many decades, but mechanistic details have been lacking. Investigations in recent years have revealed that copper may positively influence iron homeostasis, and also that iron may antagonize copper metabolism. For example, when body iron stores are low, copper is apparently redistributed to tissues important for regulating iron balance, including enterocytes of upper small bowel, the liver, and blood. Copper in enterocytes may positively influence iron transport, and hepatic copper may enhance biosynthesis of a circulating ferroxidase, ceruloplasmin, which potentiates iron release from stores. Moreover, many intestinal genes related to iron absorption are transactivated by a hypoxia-inducible transcription factor, hypoxia-inducible factor-2alpha (HIF2alpha), during iron deficiency. Interestingly, copper influences the DNA-binding activity of the HIF factors, thus further exemplifying how copper may modulate intestinal iron homeostasis. Copper may also alter the activity of the iron-regulatory hormone hepcidin. Furthermore, copper depletion has been noted in iron-loading disorders, such as hereditary hemochromatosis. Copper depletion may also be caused by high-dose iron supplementation, raising concerns particularly in pregnancy when iron supplementation is widely recommended. This review will cover the basic physiology of intestinal iron and copper absorption as well as the metabolism of these minerals in the liver. Also considered in detail will be current experimental work in this field, with a focus on molecular aspects of intestinal and hepatic iron-copper interplay and how this relates to various disease states.   2018 American Physiological Society. Compr Physiol 8:1433-1461, 2018.",
+  "canon:text": "Intersection of Iron and Copper Metabolism in the Mammalian Intestine and Liver. Iron and copper have similar physiochemical properties; thus, physiologically relevant interactions seem likely. Indeed, points of intersection between these two essential trace minerals have been recognized for many decades, but mechanistic details have been lacking. Investigations in recent years have revealed that copper may positively influence iron homeostasis, and also that iron may antagonize copper metabolism. For example, when body iron stores are low, copper is apparently redistributed to tissues important for regulating iron balance, including enterocytes of upper small bowel, the liver, and blood. Copper in enterocytes may positively influence iron transport, and hepatic copper may enhance biosynthesis of a circulating ferroxidase, ceruloplasmin, which potentiates iron release from stores. Moreover, many intestinal genes related to iron absorption are transactivated by a hypoxia-inducible transcription factor, hypoxia-inducible factor-2alpha (HIF2alpha), during iron deficiency. Interestingly, copper influences the DNA-binding activity of the HIF factors, thus further exemplifying how copper may modulate intestinal iron homeostasis. Copper may also alter the activity of the iron-regulatory hormone hepcidin. Furthermore, copper depletion has been noted in iron-loading disorders, such as hereditary hemochromatosis. Copper depletion may also be caused by high-dose iron supplementation, raising concerns particularly in pregnancy when iron supplementation is widely recommended. This review will cover the basic physiology of intestinal iron and copper absorption as well as the metabolism of these minerals in the liver. Also considered in detail will be current experimental work in this field, with a focus on molecular aspects of intestinal and hepatic iron-copper interplay and how this relates to various disease states.   2018 American Physiological Society. Compr Physiol 8:1433-1461, 2018.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30215866_causative-agent_0003000#mention-T1",
+      "canon:span": {
+        "start": 1399,
+        "end": 1425
+      },
+      "canon:surface": "hereditary hemochromatosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006432",
+      "canon:sourceNotation": "D006432",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30215866_causative-agent_0003000#mention-T2",
+      "canon:span": {
+        "start": 16,
+        "end": 20
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30215866_causative-agent_0003000#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30215866_causative-agent_0003000#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30215866_causative-agent_0003000#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30215866"
+      }
+    }
+  ]
+}

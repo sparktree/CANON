@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21875407_causative-agent_0000371",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21875407_causative-agent_0000371",
+  "canon:title": "N-methyl D-aspartate (NMDA) receptor antagonists and memantine treatment for Alzheimer's disease, vascular dementia and Parkinson's disease.",
+  "canon:abstract": "Memantine, a partial antagonist of N-methyl-D-aspartate receptor (NMDAR), approved for moderate to severe Alzheimer's disease (AD) treatment within the U.S. and Europe under brand name Namenda (Forest), Axura and Akatinol (Merz), and Ebixa and Abixa (Lundbeck), may have potential in alleviating additional neurological conditions, such as vascular dementia (VD) and Parkinson's disease (PD). In various animal models, memantine has been reported to be a neuroprotective agent that positively impacts both neurodegenerative and vascular processes. While excessive levels of glutamate result in neurotoxicity, in part through the over-activation of NMDARs, memantine-as a partial NMDAR antagonist, blocks the NMDA glutamate receptors to normalize the glutamatergic system and ameliorate cognitive and memory deficits. The key to memantine's therapeutic action lies in its uncompetitive binding to the NMDAR through which low affinity and rapid off-rate kinetics of memantine at the level of the NMDAR-channel preserves the physiological function of the receptor, underpinning memantine's tolerability and low adverse event profile. As the biochemical pathways evoked by NMDAR antagonism also play a role in PD and since no other drug is sufficiently effective to substitute for the first-line treatment of L-dopa despite its side effects, memantine may be useful in PD treatment with possibly fewer side effects. In spite of the relative modest nature of its adverse effects, memantine has been shown to provide only a moderate decrease in clinical deterioration in AD and VD, and hence efforts are being undertaken in the design of new and more potent memantine-based drugs to hopefully provide greater efficacy.",
+  "canon:text": "N-methyl D-aspartate (NMDA) receptor antagonists and memantine treatment for Alzheimer's disease, vascular dementia and Parkinson's disease. Memantine, a partial antagonist of N-methyl-D-aspartate receptor (NMDAR), approved for moderate to severe Alzheimer's disease (AD) treatment within the U.S. and Europe under brand name Namenda (Forest), Axura and Akatinol (Merz), and Ebixa and Abixa (Lundbeck), may have potential in alleviating additional neurological conditions, such as vascular dementia (VD) and Parkinson's disease (PD). In various animal models, memantine has been reported to be a neuroprotective agent that positively impacts both neurodegenerative and vascular processes. While excessive levels of glutamate result in neurotoxicity, in part through the over-activation of NMDARs, memantine-as a partial NMDAR antagonist, blocks the NMDA glutamate receptors to normalize the glutamatergic system and ameliorate cognitive and memory deficits. The key to memantine's therapeutic action lies in its uncompetitive binding to the NMDAR through which low affinity and rapid off-rate kinetics of memantine at the level of the NMDAR-channel preserves the physiological function of the receptor, underpinning memantine's tolerability and low adverse event profile. As the biochemical pathways evoked by NMDAR antagonism also play a role in PD and since no other drug is sufficiently effective to substitute for the first-line treatment of L-dopa despite its side effects, memantine may be useful in PD treatment with possibly fewer side effects. In spite of the relative modest nature of its adverse effects, memantine has been shown to provide only a moderate decrease in clinical deterioration in AD and VD, and hence efforts are being undertaken in the design of new and more potent memantine-based drugs to hopefully provide greater efficacy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21875407_causative-agent_0000371#mention-T1",
+      "canon:span": {
+        "start": 735,
+        "end": 748
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21875407_causative-agent_0000371#mention-T2",
+      "canon:span": {
+        "start": 715,
+        "end": 724
+      },
+      "canon:surface": "glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018698",
+      "canon:sourceNotation": "D018698",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21875407_causative-agent_0000371#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21875407_causative-agent_0000371#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21875407_causative-agent_0000371#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21875407"
+      }
+    }
+  ]
+}

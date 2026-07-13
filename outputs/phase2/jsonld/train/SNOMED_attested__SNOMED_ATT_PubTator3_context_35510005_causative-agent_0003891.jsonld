@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35510005_causative-agent_0003891",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35510005_causative-agent_0003891",
+  "canon:title": "Cocaine and Opioid-Induced Acute Liver Injury: A Rare Case Report.",
+  "canon:abstract": "Drug overdose has been a public health burden in the United States. Repeated use of cocaine and heroin may increase the risk of severe acute liver failure. We present the case of a middle-aged man with no significant past medical condition except a chronic history of drug abuse who presented to our hospital after an overdose of cocaine and heroin. Patient received Narcan by paramedics and continued treatment in the emergency room (ER). Patient has exhibited multiple organ failures, such as acute liver failure, rhabdomyolysis, acute kidney injury, and acute respiratory hypoxic hypercapnic respiratory failure likely due to respiratory center depression. The patient was placed on a non-rebreather mask then a bilevel positive airway pressure (BiPAP) machine. Patient failed the BiPAP trial, was intubated and later extubated after five days, and discharged on room air. The patient was admitted to the intensive care unit due to toxic encephalopathy. Liver enzymes were markedly elevated during admission and trended down after supportive management, Narcan, and N-acetylcysteine treatment.",
+  "canon:text": "Cocaine and Opioid-Induced Acute Liver Injury: A Rare Case Report. Drug overdose has been a public health burden in the United States. Repeated use of cocaine and heroin may increase the risk of severe acute liver failure. We present the case of a middle-aged man with no significant past medical condition except a chronic history of drug abuse who presented to our hospital after an overdose of cocaine and heroin. Patient received Narcan by paramedics and continued treatment in the emergency room (ER). Patient has exhibited multiple organ failures, such as acute liver failure, rhabdomyolysis, acute kidney injury, and acute respiratory hypoxic hypercapnic respiratory failure likely due to respiratory center depression. The patient was placed on a non-rebreather mask then a bilevel positive airway pressure (BiPAP) machine. Patient failed the BiPAP trial, was intubated and later extubated after five days, and discharged on room air. The patient was admitted to the intensive care unit due to toxic encephalopathy. Liver enzymes were markedly elevated during admission and trended down after supportive management, Narcan, and N-acetylcysteine treatment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35510005_causative-agent_0003891#mention-T1",
+      "canon:span": {
+        "start": 1002,
+        "end": 1022
+      },
+      "canon:surface": "toxic encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35510005_causative-agent_0003891#mention-T2",
+      "canon:span": {
+        "start": 163,
+        "end": 169
+      },
+      "canon:surface": "heroin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003932",
+      "canon:sourceNotation": "D003932",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35510005_causative-agent_0003891#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35510005_causative-agent_0003891#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35510005_causative-agent_0003891#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35510005"
+      }
+    }
+  ]
+}

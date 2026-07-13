@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35469167_causative-agent_0003875",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35469167_causative-agent_0003875",
+  "canon:title": "Lipid alterations in chronic liver disease and liver cancer.",
+  "canon:abstract": "Lipids are a complex and diverse group of molecules with crucial roles in many physiological processes, as well as in the onset, progression, and maintenance of cancers. Fatty acids and cholesterol are the building blocks of lipids, orchestrating these crucial metabolic processes. In the liver, lipid alterations are prevalent as a cause and consequence of chronic hepatitis B and C virus infections, alcoholic hepatitis, and non-alcoholic fatty liver disease and steatohepatitis. Recent developments in lipidomics have also revealed that dynamic changes in triacylglycerols, phospholipids, sphingolipids, ceramides, fatty acids, and cholesterol are involved in the development and progression of primary liver cancer. Accordingly, the transcriptional landscape of lipid metabolism suggests a carcinogenic role of increasing fatty acids and sterol synthesis. However, limited mechanistic insights into the complex nature of the hepatic lipidome have so far hindered the development of effective therapies.",
+  "canon:text": "Lipid alterations in chronic liver disease and liver cancer. Lipids are a complex and diverse group of molecules with crucial roles in many physiological processes, as well as in the onset, progression, and maintenance of cancers. Fatty acids and cholesterol are the building blocks of lipids, orchestrating these crucial metabolic processes. In the liver, lipid alterations are prevalent as a cause and consequence of chronic hepatitis B and C virus infections, alcoholic hepatitis, and non-alcoholic fatty liver disease and steatohepatitis. Recent developments in lipidomics have also revealed that dynamic changes in triacylglycerols, phospholipids, sphingolipids, ceramides, fatty acids, and cholesterol are involved in the development and progression of primary liver cancer. Accordingly, the transcriptional landscape of lipid metabolism suggests a carcinogenic role of increasing fatty acids and sterol synthesis. However, limited mechanistic insights into the complex nature of the hepatic lipidome have so far hindered the development of effective therapies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35469167_causative-agent_0003875#mention-T1",
+      "canon:span": {
+        "start": 463,
+        "end": 482
+      },
+      "canon:surface": "alcoholic hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35469167_causative-agent_0003875#mention-T2",
+      "canon:span": {
+        "start": 231,
+        "end": 242
+      },
+      "canon:surface": "Fatty acids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005227",
+      "canon:sourceNotation": "D005227",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35469167_causative-agent_0003875#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35469167_causative-agent_0003875#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35469167_causative-agent_0003875#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35469167"
+      }
+    }
+  ]
+}

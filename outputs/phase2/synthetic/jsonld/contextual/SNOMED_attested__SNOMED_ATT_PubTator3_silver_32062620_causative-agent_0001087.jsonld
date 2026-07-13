@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32062620_causative-agent_0001087",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32062620_causative-agent_0001087",
+  "canon:title": "Taurine attenuates hepatic steatosis in a genetic model of fatty liver disease.",
+  "canon:abstract": "Mice lacking the farnesoid X receptor (FXR) are used as a genetic model for nonalcoholic fatty liver disease because their livers exhibit hepatic steatosis and inflammation. The influence of taurine drinking on disrupted hepatic function was investigated using female Fxr-null mice. Significant decreases in the levels of hepatic damage-associated diagnostic markers, hepatic triglycerides, non-esterified fatty acids, and total bile acids were found in Fxr-null mice that had drunk water containing 0.5% taurine for four weeks. Hepatic but not serum taurine concentrations were significantly increased in these mice. The expression levels of oxidative stress-related genes (Hmox1 and Gsta1) and fatty acid synthetic genes (Acc1 and Scd1) were significantly decreased in these mice. These results suggest that drinking taurine improves hepatic steatosis and dysfunction caused by a lack of FXR.",
+  "canon:text": "Taurine attenuates hepatic steatosis in a genetic model of fatty liver disease. Mice lacking the farnesoid X receptor (FXR) are used as a genetic model for nonalcoholic fatty liver disease because their livers exhibit hepatic steatosis and inflammation. The influence of taurine drinking on disrupted hepatic function was investigated using female Fxr-null mice. Significant decreases in the levels of hepatic damage-associated diagnostic markers, hepatic triglycerides, non-esterified fatty acids, and total bile acids were found in Fxr-null mice that had drunk water containing 0.5% taurine for four weeks. Hepatic but not serum taurine concentrations were significantly increased in these mice. The expression levels of oxidative stress-related genes (Hmox1 and Gsta1) and fatty acid synthetic genes (Acc1 and Scd1) were significantly decreased in these mice. These results suggest that drinking taurine improves hepatic steatosis and dysfunction caused by a lack of FXR.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32062620_causative-agent_0001087#mention-T1",
+      "canon:span": {
+        "start": 402,
+        "end": 416
+      },
+      "canon:surface": "hepatic damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32062620_causative-agent_0001087#mention-T2",
+      "canon:span": {
+        "start": 776,
+        "end": 786
+      },
+      "canon:surface": "fatty acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005227",
+      "canon:sourceNotation": "D005227",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32062620_causative-agent_0001087#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32062620_causative-agent_0001087#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32062620_causative-agent_0001087#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32062620"
+      }
+    }
+  ]
+}

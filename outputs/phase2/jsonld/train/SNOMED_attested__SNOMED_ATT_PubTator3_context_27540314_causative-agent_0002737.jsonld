@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27540314_causative-agent_0002737",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27540314_causative-agent_0002737",
+  "canon:title": "Experimental treatment of antipsychotic-induced movement disorders.",
+  "canon:abstract": "Antipsychotic drugs are extensively prescribed for the treatment of schizophrenia and other related psychiatric disorders. These drugs produced their action by blocking dopamine (DA) receptors, and these receptors are widely present throughout the brain. Therefore, extended antipsychotic use also leads to severe extrapyramidal side effects. The short-term effects include parkinsonism and the later appearing tardive dyskinesia. Currently available treatments for these disorders are mostly symptomatic and insufficient, and are often linked with a number of detrimental side effects. Antipsychotic-drug-induced tardive dyskinesia prompted researchers to explore novel drugs with fewer undesirable extrapyramidal side effects. Preclinical studies suggest a role of 5-hydroxytryptamine (serotonin)-1A and 2A/2C receptors in the modulation of dopaminergic neurotransmission and motivating a search for better therapeutic strategies for schizophrenia and related disorders. In addition, adjunctive treatment with antioxidants such as vitamin E, red rice bran oil, and curcumin in the early phases of illness may prevent additional oxidative injury, and thus improve and prevent further possible worsening of related neurological and behavioral deficits in schizophrenia. This review explains the role of serotonergic receptors and oxidative stress, with the aim of providing principles for prospect development of compounds to improve therapeutic effects of antischizophrenic drugs. ",
+  "canon:text": "Experimental treatment of antipsychotic-induced movement disorders. Antipsychotic drugs are extensively prescribed for the treatment of schizophrenia and other related psychiatric disorders. These drugs produced their action by blocking dopamine (DA) receptors, and these receptors are widely present throughout the brain. Therefore, extended antipsychotic use also leads to severe extrapyramidal side effects. The short-term effects include parkinsonism and the later appearing tardive dyskinesia. Currently available treatments for these disorders are mostly symptomatic and insufficient, and are often linked with a number of detrimental side effects. Antipsychotic-drug-induced tardive dyskinesia prompted researchers to explore novel drugs with fewer undesirable extrapyramidal side effects. Preclinical studies suggest a role of 5-hydroxytryptamine (serotonin)-1A and 2A/2C receptors in the modulation of dopaminergic neurotransmission and motivating a search for better therapeutic strategies for schizophrenia and related disorders. In addition, adjunctive treatment with antioxidants such as vitamin E, red rice bran oil, and curcumin in the early phases of illness may prevent additional oxidative injury, and thus improve and prevent further possible worsening of related neurological and behavioral deficits in schizophrenia. This review explains the role of serotonergic receptors and oxidative stress, with the aim of providing principles for prospect development of compounds to improve therapeutic effects of antischizophrenic drugs. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27540314_causative-agent_0002737#mention-T1",
+      "canon:span": {
+        "start": 479,
+        "end": 497
+      },
+      "canon:surface": "tardive dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27540314_causative-agent_0002737#mention-T2",
+      "canon:span": {
+        "start": 1101,
+        "end": 1110
+      },
+      "canon:surface": "vitamin E",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014810",
+      "canon:sourceNotation": "D014810",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27540314_causative-agent_0002737#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27540314_causative-agent_0002737#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27540314_causative-agent_0002737#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27540314"
+      }
+    }
+  ]
+}

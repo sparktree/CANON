@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30909387_causative-agent_0000950",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30909387_causative-agent_0000950",
+  "canon:title": "Mechanisms of Chemotherapy-Induced Peripheral Neuropathy.",
+  "canon:abstract": "Chemotherapy-induced peripheral neuropathy (CIPN) is one of the most frequent side effects caused by antineoplastic agents, with a prevalence from 19% to over 85%. Clinically, CIPN is a mostly sensory neuropathy that may be accompanied by motor and autonomic changes of varying intensity and duration. Due to its high prevalence among cancer patients, CIPN constitutes a major problem for both cancer patients and survivors as well as for their health care providers, especially because, at the moment, there is no single effective method of preventing CIPN; moreover, the possibilities of treating this syndrome are very limited. There are six main substance groups that cause damage to peripheral sensory, motor and autonomic neurons, which result in the development of CIPN: platinum-based antineoplastic agents, vinca alkaloids, epothilones (ixabepilone), taxanes, proteasome inhibitors (bortezomib) and immunomodulatory drugs (thalidomide). Among them, the most neurotoxic are platinum-based agents, taxanes, ixabepilone and thalidomide; other less neurotoxic but also commonlyused drugs are bortezomib and vinca alkaloids. This paper reviews the clinical picture of CIPN and the neurotoxicity mechanisms of the most common antineoplastic agents. A better understanding of the risk factors and underlying mechanisms of CIPN is needed to develop effective preventive and therapeutic strategies.",
+  "canon:text": "Mechanisms of Chemotherapy-Induced Peripheral Neuropathy. Chemotherapy-induced peripheral neuropathy (CIPN) is one of the most frequent side effects caused by antineoplastic agents, with a prevalence from 19% to over 85%. Clinically, CIPN is a mostly sensory neuropathy that may be accompanied by motor and autonomic changes of varying intensity and duration. Due to its high prevalence among cancer patients, CIPN constitutes a major problem for both cancer patients and survivors as well as for their health care providers, especially because, at the moment, there is no single effective method of preventing CIPN; moreover, the possibilities of treating this syndrome are very limited. There are six main substance groups that cause damage to peripheral sensory, motor and autonomic neurons, which result in the development of CIPN: platinum-based antineoplastic agents, vinca alkaloids, epothilones (ixabepilone), taxanes, proteasome inhibitors (bortezomib) and immunomodulatory drugs (thalidomide). Among them, the most neurotoxic are platinum-based agents, taxanes, ixabepilone and thalidomide; other less neurotoxic but also commonlyused drugs are bortezomib and vinca alkaloids. This paper reviews the clinical picture of CIPN and the neurotoxicity mechanisms of the most common antineoplastic agents. A better understanding of the risk factors and underlying mechanisms of CIPN is needed to develop effective preventive and therapeutic strategies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30909387_causative-agent_0000950#mention-T1",
+      "canon:span": {
+        "start": 1025,
+        "end": 1035
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30909387_causative-agent_0000950#mention-T2",
+      "canon:span": {
+        "start": 836,
+        "end": 844
+      },
+      "canon:surface": "platinum",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010984",
+      "canon:sourceNotation": "D010984",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30909387_causative-agent_0000950#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30909387_causative-agent_0000950#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30909387_causative-agent_0000950#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30909387"
+      }
+    }
+  ]
+}

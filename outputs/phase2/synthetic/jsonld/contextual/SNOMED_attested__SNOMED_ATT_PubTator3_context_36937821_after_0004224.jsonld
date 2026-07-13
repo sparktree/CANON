@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36937821_after_0004224",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36937821_after_0004224",
+  "canon:title": "An update on the use of conventional and biological disease-modifying anti-rheumatic drugs in hand osteoarthritis.",
+  "canon:abstract": "Osteoarthritis (OA) is a highly prevalent condition worldwide associated with pain, progressive disability, reduced participation in social activities, and impaired quality of life. Despite its growing burden, the therapeutic options are still limited and almost exclusively addressed to symptoms' management, while no disease-modifying OA drugs able to prevent or retard disease progression are actually available. For these reasons, in the last decades, relevant efforts to find new potential therapeutic targets in OA have been made and a number of existing conventional and biological disease-modifying anti-rheumatic drugs (DMARDs), including hydroxychloroquine (HCQ), methotrexate (MTX), tumor necrosis factor (TNF)-alpha, interleukin (IL)-1, and IL-6 inhibitors, commonly used to treat inflammatory rheumatic diseases, have been repurposed for the treatment of OA and explored also in hand osteoarthritis (HOA). The current narrative review was aimed to provide a comprehensive and updated understanding of the possibilities and the criticisms related to the treatment of HOA with conventional and biological DMARDs. Unfortunately, therapy with conventional and biologic drugs in HOA has not achieved the expected success, despite a rationale for their use exists. Thus, our findings outline the urgent need to enhance the exploration of HOA basic molecular mechanisms to find new potential therapeutic targets, personalized for each patient, and appropriate for the different subsets of HOA and for the different phases of disease.",
+  "canon:text": "An update on the use of conventional and biological disease-modifying anti-rheumatic drugs in hand osteoarthritis. Osteoarthritis (OA) is a highly prevalent condition worldwide associated with pain, progressive disability, reduced participation in social activities, and impaired quality of life. Despite its growing burden, the therapeutic options are still limited and almost exclusively addressed to symptoms' management, while no disease-modifying OA drugs able to prevent or retard disease progression are actually available. For these reasons, in the last decades, relevant efforts to find new potential therapeutic targets in OA have been made and a number of existing conventional and biological disease-modifying anti-rheumatic drugs (DMARDs), including hydroxychloroquine (HCQ), methotrexate (MTX), tumor necrosis factor (TNF)-alpha, interleukin (IL)-1, and IL-6 inhibitors, commonly used to treat inflammatory rheumatic diseases, have been repurposed for the treatment of OA and explored also in hand osteoarthritis (HOA). The current narrative review was aimed to provide a comprehensive and updated understanding of the possibilities and the criticisms related to the treatment of HOA with conventional and biological DMARDs. Unfortunately, therapy with conventional and biologic drugs in HOA has not achieved the expected success, despite a rationale for their use exists. Thus, our findings outline the urgent need to enhance the exploration of HOA basic molecular mechanisms to find new potential therapeutic targets, personalized for each patient, and appropriate for the different subsets of HOA and for the different phases of disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36937821_after_0004224#mention-T1",
+      "canon:span": {
+        "start": 908,
+        "end": 939
+      },
+      "canon:surface": "inflammatory rheumatic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012213",
+      "canon:sourceNotation": "D012213",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36937821_after_0004224#mention-T2",
+      "canon:span": {
+        "start": 211,
+        "end": 221
+      },
+      "canon:surface": "disability",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009069",
+      "canon:sourceNotation": "D009069",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36937821_after_0004224#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36937821_after_0004224#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36937821_after_0004224#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36937821"
+      }
+    }
+  ]
+}

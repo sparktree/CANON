@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31422080_causative-agent_0001012",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31422080_causative-agent_0001012",
+  "canon:title": "Protein kinase Cdelta mediates methamphetamine-induced dopaminergic neurotoxicity in mice via activation of microsomal epoxide hydrolase.",
+  "canon:abstract": "We previously demonstrated that activation of protein kinase Cdelta (PKCdelta) is critical for methamphetamine (MA)-induced dopaminergic toxicity. It was recognized that microsomal epoxide hydrolase (mEH) also induces dopaminergic neurotoxicity. It was demonstrated that inhibition of PKC modulates the expression of mEH. We investigated whether MA-induced PKCdelta activation requires mEH induction in mice. MA treatment (8 mg/kg, i.p., x 4; 2 h interval) significantly enhanced the level of phosphorylated PKCdelta in the striatum of wild type (WT) mice. Subsequently, treatment with MA resulted in significant increases in the expression of cleaved PKCdelta and mEH. Treatment with MA resulted in enhanced interaction between PKCdelta and mEH. PKCdelta knockout mice exhibited significant attenuation of the enhanced mEH expression induced by MA. MA-induced hyperthermia, oxidative stress, proapoptotic potentials, and dopaminergic impairments were attenuated by PKCdelta knockout or mEH knockout in mice. However, treating mEH knockout in mice with PKCdelta inhibitor, rottlerin did not show any additive beneficial effects, indicating that mEH is a critical mediator of neurotoxic potential of PKCdelta. Our results suggest that MA-induced PKCdelta activation requires mEH induction as a downstream signaling pathway and that the modulation of the PKCdelta and mEH interaction is important for the pharmacological intervention against MA-induced dopaminergic neurotoxicity.",
+  "canon:text": "Protein kinase Cdelta mediates methamphetamine-induced dopaminergic neurotoxicity in mice via activation of microsomal epoxide hydrolase. We previously demonstrated that activation of protein kinase Cdelta (PKCdelta) is critical for methamphetamine (MA)-induced dopaminergic toxicity. It was recognized that microsomal epoxide hydrolase (mEH) also induces dopaminergic neurotoxicity. It was demonstrated that inhibition of PKC modulates the expression of mEH. We investigated whether MA-induced PKCdelta activation requires mEH induction in mice. MA treatment (8 mg/kg, i.p., x 4; 2 h interval) significantly enhanced the level of phosphorylated PKCdelta in the striatum of wild type (WT) mice. Subsequently, treatment with MA resulted in significant increases in the expression of cleaved PKCdelta and mEH. Treatment with MA resulted in enhanced interaction between PKCdelta and mEH. PKCdelta knockout mice exhibited significant attenuation of the enhanced mEH expression induced by MA. MA-induced hyperthermia, oxidative stress, proapoptotic potentials, and dopaminergic impairments were attenuated by PKCdelta knockout or mEH knockout in mice. However, treating mEH knockout in mice with PKCdelta inhibitor, rottlerin did not show any additive beneficial effects, indicating that mEH is a critical mediator of neurotoxic potential of PKCdelta. Our results suggest that MA-induced PKCdelta activation requires mEH induction as a downstream signaling pathway and that the modulation of the PKCdelta and mEH interaction is important for the pharmacological intervention against MA-induced dopaminergic neurotoxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31422080_causative-agent_0001012#mention-T1",
+      "canon:span": {
+        "start": 55,
+        "end": 81
+      },
+      "canon:surface": "dopaminergic neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31422080_causative-agent_0001012#mention-T2",
+      "canon:span": {
+        "start": 31,
+        "end": 46
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31422080_causative-agent_0001012#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31422080_causative-agent_0001012#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31422080_causative-agent_0001012#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31422080"
+      }
+    }
+  ]
+}

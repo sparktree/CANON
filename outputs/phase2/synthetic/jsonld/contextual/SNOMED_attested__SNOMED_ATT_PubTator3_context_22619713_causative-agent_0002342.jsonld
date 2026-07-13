@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22619713_causative-agent_0002342",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_22619713_causative-agent_0002342",
+  "canon:title": "Potential for Cell-Transplant Therapy with Human Neuronal Precursors to Treat Neuropathic Pain in Models of PNS and CNS Injury: Comparison of hNT2.17 and hNT2.19 Cell Lines.",
+  "canon:abstract": "Effective treatment of sensory neuropathies in peripheral neuropathies and spinal cord injury (SCI) is one of the most difficult problems in modern clinical practice. Cell therapy to release antinociceptive agents near the injured spinal cord is a logical next step in the development of treatment modalities. But few clinical trials, especially for chronic pain, have tested the potential of transplant of cells to treat chronic pain. Cell lines derived from the human neuronal NT2 cell line parentage, the hNT2.17 and hNT2.19 lines, which synthesize and release the neurotransmitters gamma-aminobutyric acid (GABA) and serotonin (5HT), respectively, have been used to evaluate the potential of cell-based release of antinociceptive agents near the lumbar dorsal (horn) spinal sensory cell centers to relieve neuropathic pain after PNS (partial nerve and diabetes-related injury) and CNS (spinal cord injury) damage in rat models. Both cell lines transplants potently and permanently reverse behavioral hypersensitivity without inducing tumors or other complications after grafting. Functioning as cellular minipumps for antinociception, human neuronal precursors, like these NT2-derived cell lines, would likely provide a useful adjuvant or replacement for current pharmacological treatments for neuropathic pain.",
+  "canon:text": "Potential for Cell-Transplant Therapy with Human Neuronal Precursors to Treat Neuropathic Pain in Models of PNS and CNS Injury: Comparison of hNT2.17 and hNT2.19 Cell Lines. Effective treatment of sensory neuropathies in peripheral neuropathies and spinal cord injury (SCI) is one of the most difficult problems in modern clinical practice. Cell therapy to release antinociceptive agents near the injured spinal cord is a logical next step in the development of treatment modalities. But few clinical trials, especially for chronic pain, have tested the potential of transplant of cells to treat chronic pain. Cell lines derived from the human neuronal NT2 cell line parentage, the hNT2.17 and hNT2.19 lines, which synthesize and release the neurotransmitters gamma-aminobutyric acid (GABA) and serotonin (5HT), respectively, have been used to evaluate the potential of cell-based release of antinociceptive agents near the lumbar dorsal (horn) spinal sensory cell centers to relieve neuropathic pain after PNS (partial nerve and diabetes-related injury) and CNS (spinal cord injury) damage in rat models. Both cell lines transplants potently and permanently reverse behavioral hypersensitivity without inducing tumors or other complications after grafting. Functioning as cellular minipumps for antinociception, human neuronal precursors, like these NT2-derived cell lines, would likely provide a useful adjuvant or replacement for current pharmacological treatments for neuropathic pain.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22619713_causative-agent_0002342#mention-T1",
+      "canon:span": {
+        "start": 1178,
+        "end": 1194
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22619713_causative-agent_0002342#mention-T2",
+      "canon:span": {
+        "start": 795,
+        "end": 804
+      },
+      "canon:surface": "serotonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012701",
+      "canon:sourceNotation": "D012701",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22619713_causative-agent_0002342#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22619713_causative-agent_0002342#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22619713_causative-agent_0002342#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "22619713"
+      }
+    }
+  ]
+}

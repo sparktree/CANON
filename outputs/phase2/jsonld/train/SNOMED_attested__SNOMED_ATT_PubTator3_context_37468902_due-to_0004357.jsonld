@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37468902_due-to_0004357",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37468902_due-to_0004357",
+  "canon:title": "Iron accumulation and lipid peroxidation: implication of ferroptosis in diabetic cardiomyopathy.",
+  "canon:abstract": "Diabetic cardiomyopathy (DC) is a serious heart disease caused by diabetes. It is unrelated to hypertension and coronary artery disease and can lead to heart insufficiency, heart failure and even death. Currently, the pathogenesis of DC is unclear, and clinical intervention is mainly symptomatic therapy and lacks effective intervention objectives. Iron overdose mediated cell death, also known as ferroptosis, is widely present in the physiological and pathological processes of diabetes and DC. Iron is a key trace element in the human body, regulating the metabolism of glucose and lipids, oxidative stress and inflammation, and other biological processes. Excessive iron accumulation can lead to the imbalance of the antioxidant system in DC and activate and aggravate pathological processes such as excessive autophagy and mitochondrial dysfunction, resulting in a chain reaction and accelerating myocardial and microvascular damage. In-depth understanding of the regulating mechanisms of iron metabolism and ferroptosis in cardiovascular vessels can help improve DC management. Therefore, in this review, we summarize the relationship between ferroptosis and the pathogenesis of DC, as well as potential intervention targets, and discuss and analyze the limitations and future development prospects of these targets.",
+  "canon:text": "Iron accumulation and lipid peroxidation: implication of ferroptosis in diabetic cardiomyopathy. Diabetic cardiomyopathy (DC) is a serious heart disease caused by diabetes. It is unrelated to hypertension and coronary artery disease and can lead to heart insufficiency, heart failure and even death. Currently, the pathogenesis of DC is unclear, and clinical intervention is mainly symptomatic therapy and lacks effective intervention objectives. Iron overdose mediated cell death, also known as ferroptosis, is widely present in the physiological and pathological processes of diabetes and DC. Iron is a key trace element in the human body, regulating the metabolism of glucose and lipids, oxidative stress and inflammation, and other biological processes. Excessive iron accumulation can lead to the imbalance of the antioxidant system in DC and activate and aggravate pathological processes such as excessive autophagy and mitochondrial dysfunction, resulting in a chain reaction and accelerating myocardial and microvascular damage. In-depth understanding of the regulating mechanisms of iron metabolism and ferroptosis in cardiovascular vessels can help improve DC management. Therefore, in this review, we summarize the relationship between ferroptosis and the pathogenesis of DC, as well as potential intervention targets, and discuss and analyze the limitations and future development prospects of these targets.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37468902_due-to_0004357#mention-T1",
+      "canon:span": {
+        "start": 72,
+        "end": 95
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37468902_due-to_0004357#mention-T2",
+      "canon:span": {
+        "start": 139,
+        "end": 152
+      },
+      "canon:surface": "heart disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006331",
+      "canon:sourceNotation": "D006331",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37468902_due-to_0004357#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37468902_due-to_0004357#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37468902_due-to_0004357#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37468902"
+      }
+    }
+  ]
+}

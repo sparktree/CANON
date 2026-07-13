@@ -1,0 +1,134 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/BC5CDR/2819587",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "dev",
+  "canon:pmid": "2819587",
+  "canon:title": "Magnetic resonance imaging of cerebral venous thrombosis secondary to \"low-dose\" birth control pills.",
+  "canon:abstract": "The clinical and radiographic features of cerebral deep venous thrombosis in a 21-year-old white woman are presented. This nulliparous patient presented with relatively mild clinical symptoms and progressing mental status changes. The only known risk factor was \"low-dose\" oral contraceptive pills. The magnetic resonance image (MRI) showed increased signal intensity from the internal cerebral veins, vein of Galen, and straight sinus. The diagnosis was confirmed by arterial angiography.",
+  "canon:text": "Magnetic resonance imaging of cerebral venous thrombosis secondary to \"low-dose\" birth control pills. The clinical and radiographic features of cerebral deep venous thrombosis in a 21-year-old white woman are presented. This nulliparous patient presented with relatively mild clinical symptoms and progressing mental status changes. The only known risk factor was \"low-dose\" oral contraceptive pills. The magnetic resonance image (MRI) showed increased signal intensity from the internal cerebral veins, vein of Galen, and straight sinus. The diagnosis was confirmed by arterial angiography.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/2819587#mention-T1",
+      "canon:span": {
+        "start": 39,
+        "end": 56
+      },
+      "canon:surface": "venous thrombosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D020246",
+      "canon:sourceNotation": "D020246",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/111293003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/2819587#mention-T2",
+      "canon:span": {
+        "start": 153,
+        "end": 175
+      },
+      "canon:surface": "deep venous thrombosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D020246",
+      "canon:sourceNotation": "D020246",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/111293003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/2819587#mention-T3",
+      "canon:span": {
+        "start": 375,
+        "end": 393
+      },
+      "canon:surface": "oral contraceptive",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003276",
+      "canon:sourceNotation": "D003276",
+      "canon:confidence": 0.45,
+      "canon:snomedActive": false,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/59261009",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/2819587#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/BC5CDR/2819587#mention-T3"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/BC5CDR/2819587#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": "https://canon.iu.edu/ns#causes",
+      "canon:tier": 2,
+      "canon:probability": 0.65,
+      "canon:confidence": 1.0,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causes",
+          "canon:tier": 2,
+          "canon:probability": 0.65
+        },
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 0.25
+        },
+        {
+          "canon:relation": "https://canon.iu.edu/ns#associated-with",
+          "canon:tier": 2,
+          "canon:probability": 0.1
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "subject_class": "chemical",
+        "object_class": "disease",
+        "target_candidates": [
+          {
+            "target_relation": "causes",
+            "tier": 2,
+            "probability": 0.65
+          },
+          {
+            "target_relation": "causative-agent",
+            "tier": 1,
+            "probability": 0.25
+          },
+          {
+            "target_relation": "associated-with",
+            "tier": 2,
+            "probability": 0.1
+          }
+        ]
+      }
+    }
+  ]
+}

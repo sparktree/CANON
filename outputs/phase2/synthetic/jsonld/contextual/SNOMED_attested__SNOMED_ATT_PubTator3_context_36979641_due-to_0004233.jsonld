@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979641_due-to_0004233",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36979641_due-to_0004233",
+  "canon:title": "Emerging Therapy for Diabetic Cardiomyopathy: From Molecular Mechanism to Clinical Practice.",
+  "canon:abstract": "Diabetic cardiomyopathy is characterized by abnormal myocardial structure or performance in the absence of coronary artery disease or significant valvular heart disease in patients with diabetes mellitus. The spectrum of diabetic cardiomyopathy ranges from subtle myocardial changes to myocardial fibrosis and diastolic function and finally to symptomatic heart failure. Except for sodium-glucose transport protein 2 inhibitors and possibly bariatric and metabolic surgery, there is currently no specific treatment for this distinct disease entity in patients with diabetes. The molecular mechanism of diabetic cardiomyopathy includes impaired nutrient-sensing signaling, dysregulated autophagy, impaired mitochondrial energetics, altered fuel utilization, oxidative stress and lipid peroxidation, advanced glycation end-products, inflammation, impaired calcium homeostasis, abnormal endothelial function and nitric oxide production, aberrant epidermal growth factor receptor signaling, the activation of the renin-angiotensin-aldosterone system and sympathetic hyperactivity, and extracellular matrix accumulation and fibrosis. Here, we summarize several important emerging treatments for diabetic cardiomyopathy targeting specific molecular mechanisms, with evidence from preclinical studies and clinical trials.",
+  "canon:text": "Emerging Therapy for Diabetic Cardiomyopathy: From Molecular Mechanism to Clinical Practice. Diabetic cardiomyopathy is characterized by abnormal myocardial structure or performance in the absence of coronary artery disease or significant valvular heart disease in patients with diabetes mellitus. The spectrum of diabetic cardiomyopathy ranges from subtle myocardial changes to myocardial fibrosis and diastolic function and finally to symptomatic heart failure. Except for sodium-glucose transport protein 2 inhibitors and possibly bariatric and metabolic surgery, there is currently no specific treatment for this distinct disease entity in patients with diabetes. The molecular mechanism of diabetic cardiomyopathy includes impaired nutrient-sensing signaling, dysregulated autophagy, impaired mitochondrial energetics, altered fuel utilization, oxidative stress and lipid peroxidation, advanced glycation end-products, inflammation, impaired calcium homeostasis, abnormal endothelial function and nitric oxide production, aberrant epidermal growth factor receptor signaling, the activation of the renin-angiotensin-aldosterone system and sympathetic hyperactivity, and extracellular matrix accumulation and fibrosis. Here, we summarize several important emerging treatments for diabetic cardiomyopathy targeting specific molecular mechanisms, with evidence from preclinical studies and clinical trials.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979641_due-to_0004233#mention-T1",
+      "canon:span": {
+        "start": 21,
+        "end": 44
+      },
+      "canon:surface": "Diabetic Cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979641_due-to_0004233#mention-T2",
+      "canon:span": {
+        "start": 279,
+        "end": 296
+      },
+      "canon:surface": "diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979641_due-to_0004233#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979641_due-to_0004233#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36979641_due-to_0004233#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36979641"
+      }
+    }
+  ]
+}

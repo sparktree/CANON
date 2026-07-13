@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41752903_causative-agent_0002107",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_41752903_causative-agent_0002107",
+  "canon:title": "Modulation of the Kynurenine Pathway: A New Approach for Treating Neurodegeneration.",
+  "canon:abstract": "Neurodegenerative diseases, such as Parkinson's and Alzheimer's, are becoming an increasingly serious challenge for modern medicine because of the significant increase in incidence and the narrow range of effective therapeutic strategies. In recent years, the kynurenine pathway, which is one of the main pathways of tryptophan metabolism, responsible for the synthesis of products that act oppositely in the CNS including neurotoxic (quinolinic acid) and neuroprotective products, has gained increasing recognition as a potential therapeutic target. Abnormalities in the production of these metabolites, causing a disruption of homeostasis in the CNS, often lead to the development of inflammation, which can cause oxidative stress or neuronal death. This paper aims to discuss strategies useful in modulation of the kynurenine pathway, based on increasing the production of neuroprotective metabolites and reducing the synthesis of neurotoxic compounds, as well as to outline the progress in preclinical and clinical studies and the challenges encountered in these studies, among others, in the search for new KP inhibitors. The pharmacological (IDO and KMO inhibitors) and non-pharmacological (physical activity, diet) strategies are discussed, as well as new approaches from combination and targeted therapies. Together with the results of preclinical studies, they demonstrate the high utility of this target in the treatment of neurodegeneration. Despite its promising activity, further key studies are needed to fully understand the mechanisms involved in metabolism, which may translate into increased efficacy of developed therapies in the future.",
+  "canon:text": "Modulation of the Kynurenine Pathway: A New Approach for Treating Neurodegeneration. Neurodegenerative diseases, such as Parkinson's and Alzheimer's, are becoming an increasingly serious challenge for modern medicine because of the significant increase in incidence and the narrow range of effective therapeutic strategies. In recent years, the kynurenine pathway, which is one of the main pathways of tryptophan metabolism, responsible for the synthesis of products that act oppositely in the CNS including neurotoxic (quinolinic acid) and neuroprotective products, has gained increasing recognition as a potential therapeutic target. Abnormalities in the production of these metabolites, causing a disruption of homeostasis in the CNS, often lead to the development of inflammation, which can cause oxidative stress or neuronal death. This paper aims to discuss strategies useful in modulation of the kynurenine pathway, based on increasing the production of neuroprotective metabolites and reducing the synthesis of neurotoxic compounds, as well as to outline the progress in preclinical and clinical studies and the challenges encountered in these studies, among others, in the search for new KP inhibitors. The pharmacological (IDO and KMO inhibitors) and non-pharmacological (physical activity, diet) strategies are discussed, as well as new approaches from combination and targeted therapies. Together with the results of preclinical studies, they demonstrate the high utility of this target in the treatment of neurodegeneration. Despite its promising activity, further key studies are needed to fully understand the mechanisms involved in metabolism, which may translate into increased efficacy of developed therapies in the future.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41752903_causative-agent_0002107#mention-T1",
+      "canon:span": {
+        "start": 508,
+        "end": 518
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41752903_causative-agent_0002107#mention-T2",
+      "canon:span": {
+        "start": 402,
+        "end": 412
+      },
+      "canon:surface": "tryptophan",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014364",
+      "canon:sourceNotation": "D014364",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41752903_causative-agent_0002107#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41752903_causative-agent_0002107#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41752903_causative-agent_0002107#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "41752903"
+      }
+    }
+  ]
+}

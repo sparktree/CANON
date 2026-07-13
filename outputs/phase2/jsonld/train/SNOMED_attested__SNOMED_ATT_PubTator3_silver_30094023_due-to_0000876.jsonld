@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30094023_due-to_0000876",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30094023_due-to_0000876",
+  "canon:title": "Hyponatremia in kidney transplant patients: its pathophysiologic mechanisms.",
+  "canon:abstract": "Kidney transplant patients (KTPs), and particularly those with advanced chronic kidney rejection, may be affected by opportunistic infections, metabolic alterations and vascular and oncologic diseases that promote clinical conditions that require a variety of treatments, the combinations of which may predispose them to hyponatremia. Salt and water imbalance can induce abnormalities in volemia and/or serum sodium depending on the nature of this alteration (increase or decrease), its absolute magnitude (mild or severe) and its relative magnitude (body sodium:water ratio). Hyponatremia appears when the body sodium:water ratio is reduced due to an increase in body water or a reduction in body sodium. Additionally, hyponatremia is classified as normotonic, hypertonic and hypotonic and while hypotonic hyponatremia is classified in hyponatremia with normal, high or low extracellular fluid. The main causes of hyponatremia in KTPs are hypotonic hyponatremia secondary to water and salt contraction with oral hydration (gastroenteritis, sepsis), free water retention (severe renal failure, syndrome of inappropriate antidiuretic hormone release, hypothyroidism), chronic hypokalemia (rapamycin, malnutrition), sodium loss (tubular dysfunction secondary to nephrocalcinosis, acute tubular necrosis, tubulitis/rejection, interstitial nephritis, adrenal insufficiency, aldosterone resistance, pancreatic drainage, kidney-pancreas transplant) and hyponatremia induced by medication (opioids, cyclophosphamide, psychoactive, potent diuretics and calcineurinic inhibitors). In conclusion, KTPs are predisposed to develop hyponatremia since they are exposed to immunologic, infectious, pharmacologic and oncologic disorders, the combinations of which alter their salt and water homeostatic capacity.",
+  "canon:text": "Hyponatremia in kidney transplant patients: its pathophysiologic mechanisms. Kidney transplant patients (KTPs), and particularly those with advanced chronic kidney rejection, may be affected by opportunistic infections, metabolic alterations and vascular and oncologic diseases that promote clinical conditions that require a variety of treatments, the combinations of which may predispose them to hyponatremia. Salt and water imbalance can induce abnormalities in volemia and/or serum sodium depending on the nature of this alteration (increase or decrease), its absolute magnitude (mild or severe) and its relative magnitude (body sodium:water ratio). Hyponatremia appears when the body sodium:water ratio is reduced due to an increase in body water or a reduction in body sodium. Additionally, hyponatremia is classified as normotonic, hypertonic and hypotonic and while hypotonic hyponatremia is classified in hyponatremia with normal, high or low extracellular fluid. The main causes of hyponatremia in KTPs are hypotonic hyponatremia secondary to water and salt contraction with oral hydration (gastroenteritis, sepsis), free water retention (severe renal failure, syndrome of inappropriate antidiuretic hormone release, hypothyroidism), chronic hypokalemia (rapamycin, malnutrition), sodium loss (tubular dysfunction secondary to nephrocalcinosis, acute tubular necrosis, tubulitis/rejection, interstitial nephritis, adrenal insufficiency, aldosterone resistance, pancreatic drainage, kidney-pancreas transplant) and hyponatremia induced by medication (opioids, cyclophosphamide, psychoactive, potent diuretics and calcineurinic inhibitors). In conclusion, KTPs are predisposed to develop hyponatremia since they are exposed to immunologic, infectious, pharmacologic and oncologic disorders, the combinations of which alter their salt and water homeostatic capacity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30094023_due-to_0000876#mention-T1",
+      "canon:span": {
+        "start": 1118,
+        "end": 1124
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30094023_due-to_0000876#mention-T2",
+      "canon:span": {
+        "start": 194,
+        "end": 218
+      },
+      "canon:surface": "opportunistic infections",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009894",
+      "canon:sourceNotation": "D009894",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30094023_due-to_0000876#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30094023_due-to_0000876#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30094023_due-to_0000876#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30094023"
+      }
+    }
+  ]
+}

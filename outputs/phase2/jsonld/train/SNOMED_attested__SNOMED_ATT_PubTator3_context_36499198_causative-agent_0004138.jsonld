@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36499198_causative-agent_0004138",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36499198_causative-agent_0004138",
+  "canon:title": "A Novel Aryl Hydrocarbon Receptor Antagonist HBU651 Ameliorates Peripheral and Hypothalamic Inflammation in High-Fat Diet-Induced Obese Mice.",
+  "canon:abstract": "Obesity is a chronic peripheral inflammation condition that is strongly correlated with neurodegenerative diseases and associated with exposure to environmental chemicals. The aryl hydrocarbon receptor (AhR) is a ligand-activated nuclear receptor activated by environmental chemical, such as dioxins, and also is a regulator of inflammation through interacting with nuclear factor (NF)-kappaB. In this study, we evaluated the anti-obesity and anti-inflammatory activity of HBU651, a novel AhR antagonist. In BV2 microglia cells, HBU651 successfully inhibited lipopolysaccharide (LPS)-mediated nuclear localization of NF-kappaB and production of NF-kappaB-dependent proinflammatory cytokines, such as tumor necrosis factor (TNF)-alpha, interleukin (IL)-1beta, and IL-6. It also restored LPS-induced mitochondrial dysfunction. While mice being fed a high-fat diet (HFD) induced peripheral and central inflammation and obesity, HBU651 alleviated HFD-induced obesity, insulin resistance, glucose intolerance, dyslipidemia, and liver enzyme activity, without hepatic and renal damage. HBU651 ameliorated the production of inflammatory cytokines and chemokines, proinflammatory Ly6chigh monocytes, and macrophage infiltration in the blood, liver, and adipose tissue. HBU651 also decreased microglial activation in the arcuate nucleus in the hypothalamus. These findings suggest that HBU651 may be a potential candidate for the treatment of obesity-related metabolic diseases.",
+  "canon:text": "A Novel Aryl Hydrocarbon Receptor Antagonist HBU651 Ameliorates Peripheral and Hypothalamic Inflammation in High-Fat Diet-Induced Obese Mice. Obesity is a chronic peripheral inflammation condition that is strongly correlated with neurodegenerative diseases and associated with exposure to environmental chemicals. The aryl hydrocarbon receptor (AhR) is a ligand-activated nuclear receptor activated by environmental chemical, such as dioxins, and also is a regulator of inflammation through interacting with nuclear factor (NF)-kappaB. In this study, we evaluated the anti-obesity and anti-inflammatory activity of HBU651, a novel AhR antagonist. In BV2 microglia cells, HBU651 successfully inhibited lipopolysaccharide (LPS)-mediated nuclear localization of NF-kappaB and production of NF-kappaB-dependent proinflammatory cytokines, such as tumor necrosis factor (TNF)-alpha, interleukin (IL)-1beta, and IL-6. It also restored LPS-induced mitochondrial dysfunction. While mice being fed a high-fat diet (HFD) induced peripheral and central inflammation and obesity, HBU651 alleviated HFD-induced obesity, insulin resistance, glucose intolerance, dyslipidemia, and liver enzyme activity, without hepatic and renal damage. HBU651 ameliorated the production of inflammatory cytokines and chemokines, proinflammatory Ly6chigh monocytes, and macrophage infiltration in the blood, liver, and adipose tissue. HBU651 also decreased microglial activation in the arcuate nucleus in the hypothalamus. These findings suggest that HBU651 may be a potential candidate for the treatment of obesity-related metabolic diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36499198_causative-agent_0004138#mention-T1",
+      "canon:span": {
+        "start": 1196,
+        "end": 1220
+      },
+      "canon:surface": "hepatic and renal damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36499198_causative-agent_0004138#mention-T2",
+      "canon:span": {
+        "start": 701,
+        "end": 719
+      },
+      "canon:surface": "lipopolysaccharide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008070",
+      "canon:sourceNotation": "D008070",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36499198_causative-agent_0004138#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36499198_causative-agent_0004138#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36499198_causative-agent_0004138#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36499198"
+      }
+    }
+  ]
+}

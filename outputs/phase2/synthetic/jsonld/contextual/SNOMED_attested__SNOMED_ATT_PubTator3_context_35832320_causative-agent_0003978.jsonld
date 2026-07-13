@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35832320_causative-agent_0003978",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35832320_causative-agent_0003978",
+  "canon:title": "Amiodarone induced movement disorder after cardiac arrest - A case report.",
+  "canon:abstract": "We describe a case of new onset movement disorder in a patient with ventricular tachycardia storm supported with peripheral VA ECMO. The differential diagnosis of abnormal movements in a post cardiac arrest patient requiring temporary mechanical circulatory support for cardiogenic shock is explored.",
+  "canon:text": "Amiodarone induced movement disorder after cardiac arrest - A case report. We describe a case of new onset movement disorder in a patient with ventricular tachycardia storm supported with peripheral VA ECMO. The differential diagnosis of abnormal movements in a post cardiac arrest patient requiring temporary mechanical circulatory support for cardiogenic shock is explored.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35832320_causative-agent_0003978#mention-T1",
+      "canon:span": {
+        "start": 238,
+        "end": 256
+      },
+      "canon:surface": "abnormal movements",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35832320_causative-agent_0003978#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 10
+      },
+      "canon:surface": "Amiodarone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000638",
+      "canon:sourceNotation": "D000638",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35832320_causative-agent_0003978#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35832320_causative-agent_0003978#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35832320_causative-agent_0003978#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35832320"
+      }
+    }
+  ]
+}

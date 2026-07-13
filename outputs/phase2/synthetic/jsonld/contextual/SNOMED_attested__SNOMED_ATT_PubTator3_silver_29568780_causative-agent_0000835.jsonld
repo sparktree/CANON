@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29568780_causative-agent_0000835",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29568780_causative-agent_0000835",
+  "canon:title": "Drug-Induced Liver Injury: An Institutional Case Series and Review of Literature.",
+  "canon:abstract": "Drug-induced liver injury (DILI) is the most common cause of acute liver failure in the USA. DILI can be broadly classified as Intrinsic and Idiosyncratic. Identifying predictors and at-risk patients are challenging but can have a substantial clinical implication. This case report series demonstrates the importance of valproic acid, fluconazole, and amiodarone as potential hepatoxic agents of drug-induced liver injury leading to acute hepatic failure. The causality in all cases was established by Roussel Uclaf Causality Assessment Method/Council for International Organizations of Medical Sciences score and Naranjo Algorithm. Obesity, hypo-perfusion state, and concurrent hepatotoxic agent might identify at-risk patients. Further studies are required to understand the risk factors.",
+  "canon:text": "Drug-Induced Liver Injury: An Institutional Case Series and Review of Literature. Drug-induced liver injury (DILI) is the most common cause of acute liver failure in the USA. DILI can be broadly classified as Intrinsic and Idiosyncratic. Identifying predictors and at-risk patients are challenging but can have a substantial clinical implication. This case report series demonstrates the importance of valproic acid, fluconazole, and amiodarone as potential hepatoxic agents of drug-induced liver injury leading to acute hepatic failure. The causality in all cases was established by Roussel Uclaf Causality Assessment Method/Council for International Organizations of Medical Sciences score and Naranjo Algorithm. Obesity, hypo-perfusion state, and concurrent hepatotoxic agent might identify at-risk patients. Further studies are required to understand the risk factors.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29568780_causative-agent_0000835#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 25
+      },
+      "canon:surface": "Drug-Induced Liver Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29568780_causative-agent_0000835#mention-T2",
+      "canon:span": {
+        "start": 434,
+        "end": 444
+      },
+      "canon:surface": "amiodarone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000638",
+      "canon:sourceNotation": "D000638",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29568780_causative-agent_0000835#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29568780_causative-agent_0000835#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29568780_causative-agent_0000835#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29568780"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26694382_causative-agent_0000633",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26694382_causative-agent_0000633",
+  "canon:title": "Oxidative Stress and Inflammation in Hepatic Diseases: Therapeutic Possibilities of N-Acetylcysteine.",
+  "canon:abstract": "Liver disease is highly prevalent in the world. Oxidative stress (OS) and inflammation are the most important pathogenetic events in liver diseases, regardless the different etiology and natural course. N-acetyl-l-cysteine (the active form) (NAC) is being studied in diseases characterized by increased OS or decreased glutathione (GSH) level. NAC acts mainly on the supply of cysteine for GSH synthesis. The objective of this review is to examine experimental and clinical studies that evaluate the antioxidant and anti-inflammatory roles of NAC in attenuating markers of inflammation and OS in hepatic damage. The results related to the supplementation of NAC in any form of administration and type of study are satisfactory in 85.5% (n = 59) of the cases evaluated (n = 69, 100%). Within this percentage, the dosage of NAC utilized in studies in vivo varied from 0.204 up to 2 g/kg/day. A standard experimental design of protection and treatment as well as the choice of the route of administration, with a broader evaluation of OS and inflammation markers in the serum or other biological matrixes, in animal models, are necessary. Clinical studies are urgently required, to have a clear view, so that, the professionals can be sure about the effectiveness and safety of NAC prescription. ",
+  "canon:text": "Oxidative Stress and Inflammation in Hepatic Diseases: Therapeutic Possibilities of N-Acetylcysteine. Liver disease is highly prevalent in the world. Oxidative stress (OS) and inflammation are the most important pathogenetic events in liver diseases, regardless the different etiology and natural course. N-acetyl-l-cysteine (the active form) (NAC) is being studied in diseases characterized by increased OS or decreased glutathione (GSH) level. NAC acts mainly on the supply of cysteine for GSH synthesis. The objective of this review is to examine experimental and clinical studies that evaluate the antioxidant and anti-inflammatory roles of NAC in attenuating markers of inflammation and OS in hepatic damage. The results related to the supplementation of NAC in any form of administration and type of study are satisfactory in 85.5% (n = 59) of the cases evaluated (n = 69, 100%). Within this percentage, the dosage of NAC utilized in studies in vivo varied from 0.204 up to 2 g/kg/day. A standard experimental design of protection and treatment as well as the choice of the route of administration, with a broader evaluation of OS and inflammation markers in the serum or other biological matrixes, in animal models, are necessary. Clinical studies are urgently required, to have a clear view, so that, the professionals can be sure about the effectiveness and safety of NAC prescription. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26694382_causative-agent_0000633#mention-T1",
+      "canon:span": {
+        "start": 37,
+        "end": 53
+      },
+      "canon:surface": "Hepatic Diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26694382_causative-agent_0000633#mention-T2",
+      "canon:span": {
+        "start": 84,
+        "end": 100
+      },
+      "canon:surface": "N-Acetylcysteine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000111",
+      "canon:sourceNotation": "D000111",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26694382_causative-agent_0000633#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26694382_causative-agent_0000633#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26694382_causative-agent_0000633#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26694382"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887045_causative-agent_0002006",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37887045_causative-agent_0002006",
+  "canon:title": "Prevalence of Cobalt in the Environment and Its Role in Biological Processes.",
+  "canon:abstract": "Cobalt (Co) is an essential trace element for humans and other animals, but high doses can be harmful to human health. It is present in some foods such as green vegetables, various spices, meat, milk products, seafood, and eggs, and in drinking water. Co is necessary for the metabolism of human beings and animals due to its key role in the formation of vitamin B12, also known as cobalamin, the biological reservoir of Co. In high concentrations, Co may cause some health issues such as vomiting, nausea, diarrhea, bleeding, low blood pressure, heart diseases, thyroid damage, hair loss, bone defects, and the inhibition of some enzyme activities. Conversely, Co deficiency can lead to anorexia, chronic swelling, and detrimental anemia. Co nanoparticles have different and various biomedical applications thanks to their antioxidant, antimicrobial, anticancer, and antidiabetic properties. In addition, Co and cobalt oxide nanoparticles can be used in lithium-ion batteries, as a catalyst, a carrier for targeted drug delivery, a gas sensor, an electronic thin film, and in energy storage. Accumulation of Co in agriculture and humans, due to natural and anthropogenic factors, represents a global problem affecting water quality and human and animal health. Besides the common chelating agents used for Co intoxication, phytoremediation is an interesting environmental technology for cleaning up soil contaminated with Co. The occurrence of Co in the environment is discussed and its involvement in biological processes is underlined. Toxicological aspects related to Co are also examined in this review.",
+  "canon:text": "Prevalence of Cobalt in the Environment and Its Role in Biological Processes. Cobalt (Co) is an essential trace element for humans and other animals, but high doses can be harmful to human health. It is present in some foods such as green vegetables, various spices, meat, milk products, seafood, and eggs, and in drinking water. Co is necessary for the metabolism of human beings and animals due to its key role in the formation of vitamin B12, also known as cobalamin, the biological reservoir of Co. In high concentrations, Co may cause some health issues such as vomiting, nausea, diarrhea, bleeding, low blood pressure, heart diseases, thyroid damage, hair loss, bone defects, and the inhibition of some enzyme activities. Conversely, Co deficiency can lead to anorexia, chronic swelling, and detrimental anemia. Co nanoparticles have different and various biomedical applications thanks to their antioxidant, antimicrobial, anticancer, and antidiabetic properties. In addition, Co and cobalt oxide nanoparticles can be used in lithium-ion batteries, as a catalyst, a carrier for targeted drug delivery, a gas sensor, an electronic thin film, and in energy storage. Accumulation of Co in agriculture and humans, due to natural and anthropogenic factors, represents a global problem affecting water quality and human and animal health. Besides the common chelating agents used for Co intoxication, phytoremediation is an interesting environmental technology for cleaning up soil contaminated with Co. The occurrence of Co in the environment is discussed and its involvement in biological processes is underlined. Toxicological aspects related to Co are also examined in this review.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887045_causative-agent_0002006#mention-T1",
+      "canon:span": {
+        "start": 1385,
+        "end": 1400
+      },
+      "canon:surface": "Co intoxication",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000435",
+      "canon:sourceNotation": "D000435",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887045_causative-agent_0002006#mention-T2",
+      "canon:span": {
+        "start": 1033,
+        "end": 1040
+      },
+      "canon:surface": "lithium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008094",
+      "canon:sourceNotation": "D008094",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887045_causative-agent_0002006#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887045_causative-agent_0002006#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37887045_causative-agent_0002006#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37887045"
+      }
+    }
+  ]
+}

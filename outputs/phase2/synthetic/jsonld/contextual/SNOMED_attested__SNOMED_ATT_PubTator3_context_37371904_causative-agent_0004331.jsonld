@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37371904_causative-agent_0004331",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37371904_causative-agent_0004331",
+  "canon:title": "Beneficial Effects of Opuntia spp. on Liver Health.",
+  "canon:abstract": "The genus Opuntia spp. includes plants capable of growing in arid, temperate and tropical climates. The vast majority of wild species grow in Mexico, but O. ficus-indica (prickly pear or nopal) is cultivated around the world and it is one of the most studied. This review shows the currently available knowledge concerning the action of O. ficus-indica and other Opuntia species (Opuntia vulgaris, Opuntia robusta, Opuntia streptacantha, Opuntia microdasys, Opuntia dillenii and Opuntia dejecta) on liver health. The available data demonstrate the positive effects of extracts, vinegar, juices or seed oil of the Opuntia genus on the alterations induced in the liver by inadequate feeding patterns or the administration of chemicals. In this regard, the potential beneficial effects of nopal are related to the attenuation of triglyceride accumulation, oxidative stress and/or inflammation. Nevertheless, there is no information concerning the bioactive compound's characterisation in most of these studies; consequently, it is not possible to link the therapeutic effects of these plants to the presence of specific compounds in the nopal extracts. Therefore, further research is needed to confirm if the positive effects observed in animal models are also found in humans, in order to determine whether Opuntia can represent an effective tool to prevent and/or manage hepatic alterations.",
+  "canon:text": "Beneficial Effects of Opuntia spp. on Liver Health. The genus Opuntia spp. includes plants capable of growing in arid, temperate and tropical climates. The vast majority of wild species grow in Mexico, but O. ficus-indica (prickly pear or nopal) is cultivated around the world and it is one of the most studied. This review shows the currently available knowledge concerning the action of O. ficus-indica and other Opuntia species (Opuntia vulgaris, Opuntia robusta, Opuntia streptacantha, Opuntia microdasys, Opuntia dillenii and Opuntia dejecta) on liver health. The available data demonstrate the positive effects of extracts, vinegar, juices or seed oil of the Opuntia genus on the alterations induced in the liver by inadequate feeding patterns or the administration of chemicals. In this regard, the potential beneficial effects of nopal are related to the attenuation of triglyceride accumulation, oxidative stress and/or inflammation. Nevertheless, there is no information concerning the bioactive compound's characterisation in most of these studies; consequently, it is not possible to link the therapeutic effects of these plants to the presence of specific compounds in the nopal extracts. Therefore, further research is needed to confirm if the positive effects observed in animal models are also found in humans, in order to determine whether Opuntia can represent an effective tool to prevent and/or manage hepatic alterations.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37371904_causative-agent_0004331#mention-T1",
+      "canon:span": {
+        "start": 1422,
+        "end": 1441
+      },
+      "canon:surface": "hepatic alterations",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37371904_causative-agent_0004331#mention-T2",
+      "canon:span": {
+        "start": 878,
+        "end": 890
+      },
+      "canon:surface": "triglyceride",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014280",
+      "canon:sourceNotation": "D014280",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37371904_causative-agent_0004331#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37371904_causative-agent_0004331#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37371904_causative-agent_0004331#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37371904"
+      }
+    }
+  ]
+}

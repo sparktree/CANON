@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34063611_causative-agent_0001341",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34063611_causative-agent_0001341",
+  "canon:title": "Serotonin-Its Synthesis and Roles in the Healthy and the Critically Ill.",
+  "canon:abstract": "Serotonin (5-hydroxytryptamine, 5-HT) plays two important roles in humans-one central and the other peripheral-depending on the location of the 5-HT pools of on either side of the blood-brain barrier. In the central nervous system it acts as a neurotransmitter, controlling such brain functions as autonomic neural activity, stress response, body temperature, sleep, mood and appetite. This role is very important in intensive care, as in critically ill patients multiple serotoninergic agents like opioids, antiemetics and antidepressants are frequently used. High serotonin levels lead to altered mental status, deliria, rigidity and myoclonus, together recognized as serotonin syndrome. In its role as a peripheral hormone, serotonin is unique in controlling the functions of several organs. In the gastrointestinal tract it is important for regulating motor and secretory functions. Apart from intestinal motility, energy metabolism is regulated by both central and peripheral serotonin signaling. It also has fundamental effects on hemostasis, vascular tone, heart rate, respiratory drive, cell growth and immunity. Serotonin regulates almost all immune cells in response to inflammation, following the activation of platelets.",
+  "canon:text": "Serotonin-Its Synthesis and Roles in the Healthy and the Critically Ill. Serotonin (5-hydroxytryptamine, 5-HT) plays two important roles in humans-one central and the other peripheral-depending on the location of the 5-HT pools of on either side of the blood-brain barrier. In the central nervous system it acts as a neurotransmitter, controlling such brain functions as autonomic neural activity, stress response, body temperature, sleep, mood and appetite. This role is very important in intensive care, as in critically ill patients multiple serotoninergic agents like opioids, antiemetics and antidepressants are frequently used. High serotonin levels lead to altered mental status, deliria, rigidity and myoclonus, together recognized as serotonin syndrome. In its role as a peripheral hormone, serotonin is unique in controlling the functions of several organs. In the gastrointestinal tract it is important for regulating motor and secretory functions. Apart from intestinal motility, energy metabolism is regulated by both central and peripheral serotonin signaling. It also has fundamental effects on hemostasis, vascular tone, heart rate, respiratory drive, cell growth and immunity. Serotonin regulates almost all immune cells in response to inflammation, following the activation of platelets.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34063611_causative-agent_0001341#mention-T1",
+      "canon:span": {
+        "start": 743,
+        "end": 761
+      },
+      "canon:surface": "serotonin syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34063611_causative-agent_0001341#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 9
+      },
+      "canon:surface": "Serotonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012701",
+      "canon:sourceNotation": "D012701",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34063611_causative-agent_0001341#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34063611_causative-agent_0001341#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34063611_causative-agent_0001341#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34063611"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805129_causative-agent_0003970",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35805129_causative-agent_0003970",
+  "canon:title": "Biochemical Mechanisms of Sirtuin-Directed Protein Acylation in Hepatic Pathologies of Mitochondrial Dysfunction.",
+  "canon:abstract": "Mitochondrial protein acetylation is associated with a host of diseases including cancer, Alzheimer's, and metabolic syndrome. Deciphering the mechanisms regarding how protein acetylation contributes to disease pathologies remains difficult due to the complex diversity of pathways targeted by lysine acetylation. Specifically, protein acetylation is thought to direct feedback from metabolism, whereby nutritional status influences mitochondrial pathways including beta-oxidation, the citric acid cycle, and the electron transport chain. Acetylation provides a crucial connection between hepatic metabolism and mitochondrial function. Dysregulation of protein acetylation throughout the cell can alter mitochondrial function and is associated with numerous liver diseases, including non-alcoholic and alcoholic fatty liver disease, steatohepatitis, and hepatocellular carcinoma. This review introduces biochemical mechanisms of protein acetylation in the regulation of mitochondrial function and hepatic diseases and offers a viewpoint on the potential for targeted therapies.",
+  "canon:text": "Biochemical Mechanisms of Sirtuin-Directed Protein Acylation in Hepatic Pathologies of Mitochondrial Dysfunction. Mitochondrial protein acetylation is associated with a host of diseases including cancer, Alzheimer's, and metabolic syndrome. Deciphering the mechanisms regarding how protein acetylation contributes to disease pathologies remains difficult due to the complex diversity of pathways targeted by lysine acetylation. Specifically, protein acetylation is thought to direct feedback from metabolism, whereby nutritional status influences mitochondrial pathways including beta-oxidation, the citric acid cycle, and the electron transport chain. Acetylation provides a crucial connection between hepatic metabolism and mitochondrial function. Dysregulation of protein acetylation throughout the cell can alter mitochondrial function and is associated with numerous liver diseases, including non-alcoholic and alcoholic fatty liver disease, steatohepatitis, and hepatocellular carcinoma. This review introduces biochemical mechanisms of protein acetylation in the regulation of mitochondrial function and hepatic diseases and offers a viewpoint on the potential for targeted therapies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805129_causative-agent_0003970#mention-T1",
+      "canon:span": {
+        "start": 1111,
+        "end": 1127
+      },
+      "canon:surface": "hepatic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805129_causative-agent_0003970#mention-T2",
+      "canon:span": {
+        "start": 600,
+        "end": 611
+      },
+      "canon:surface": "citric acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D019343",
+      "canon:sourceNotation": "D019343",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805129_causative-agent_0003970#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805129_causative-agent_0003970#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805129_causative-agent_0003970#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35805129"
+      }
+    }
+  ]
+}

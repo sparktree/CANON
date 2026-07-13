@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26869865_causative-agent_0000646",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26869865_causative-agent_0000646",
+  "canon:title": "A systematic review of the cardiotoxicity of methadone.",
+  "canon:abstract": "UNLABELLED: Methadone is one of the most popular synthetic opioids in the world with some favorable properties making it useful both in the treatment of moderate to severe pain and for opioid addiction. Increased use of methadone has resulted in an increased prevalence of its toxicity, one aspect of which is cardiotoxicity. In this paper, we review the effects of methadone on the heart as well as cardiac concerns in some special situations such as pregnancy and childhood. METHODS: We searched for the terms methadone, toxicity, poisoning, cardiotoxicity, heart, dysrhythmia, arrhythmia, QT interval prolongation, torsade de pointes, and Electrocardiogram (ECG) in bibliographical databases including TUMS digital library, PubMed, Scopus, and Google Scholar. This review includes relevant articles published between 2000 and 2013. The main cardiac effects of methadone include prolongation of QT interval and torsade de pointes. Other effects include changes in QT dispersion, pathological U waves, Taku-Tsubo syndrome (stress cardiomyopathy), Brugada-like syndrome, and coronary artery diseases. The aim of this paper is to inform physicians and health care staff about these adverse effects. Effectiveness of methadone in the treatment of pain and addiction should be weighed against these adverse effects and physicians should consider the ways to lessen such undesirable effects. This article presents some recommendations to prevent heart toxicity in methadone users.",
+  "canon:text": "A systematic review of the cardiotoxicity of methadone. UNLABELLED: Methadone is one of the most popular synthetic opioids in the world with some favorable properties making it useful both in the treatment of moderate to severe pain and for opioid addiction. Increased use of methadone has resulted in an increased prevalence of its toxicity, one aspect of which is cardiotoxicity. In this paper, we review the effects of methadone on the heart as well as cardiac concerns in some special situations such as pregnancy and childhood. METHODS: We searched for the terms methadone, toxicity, poisoning, cardiotoxicity, heart, dysrhythmia, arrhythmia, QT interval prolongation, torsade de pointes, and Electrocardiogram (ECG) in bibliographical databases including TUMS digital library, PubMed, Scopus, and Google Scholar. This review includes relevant articles published between 2000 and 2013. The main cardiac effects of methadone include prolongation of QT interval and torsade de pointes. Other effects include changes in QT dispersion, pathological U waves, Taku-Tsubo syndrome (stress cardiomyopathy), Brugada-like syndrome, and coronary artery diseases. The aim of this paper is to inform physicians and health care staff about these adverse effects. Effectiveness of methadone in the treatment of pain and addiction should be weighed against these adverse effects and physicians should consider the ways to lessen such undesirable effects. This article presents some recommendations to prevent heart toxicity in methadone users.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26869865_causative-agent_0000646#mention-T1",
+      "canon:span": {
+        "start": 241,
+        "end": 257
+      },
+      "canon:surface": "opioid addiction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26869865_causative-agent_0000646#mention-T2",
+      "canon:span": {
+        "start": 45,
+        "end": 54
+      },
+      "canon:surface": "methadone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008691",
+      "canon:sourceNotation": "D008691",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26869865_causative-agent_0000646#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26869865_causative-agent_0000646#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26869865_causative-agent_0000646#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26869865"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41003533_causative-agent_0004517",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_41003533_causative-agent_0004517",
+  "canon:title": "Bioorganic Chemistry, Toxinology, and Pharmaceutical Uses of Datura Metabolites and Derivatives.",
+  "canon:abstract": "Datura species have been recognized for their potent pharmacological properties, producing a diverse array of tropane and non-tropane alkaloids with significant clinical and toxicological relevance. This review synthesizes current knowledge on the biosynthesis, pharmacology, and therapeutic applications of 43 compounds isolated from Datura, with emphasis on both major constituents-such as atropine, hyoscyamine, and scopolamine-and minor alkaloids, including anisodamine, apoatropine, and datumetine. These alkaloids were classified into four significant categories, drawing on recent advances in plant biochemistry and analytical chemistry. The analysis is based on 204 peer-reviewed scientific publications from the past decade (2015-2025), highlighting both traditional ethnobotanical knowledge and recent pharmacological advances. The review details their enzymatic pathways, mechanisms of action at muscarinic and other receptor systems, pharmacokinetics, and dose-dependent toxicological profiles. Particular attention is given to lesser-studied derivatives and metabolites with emerging therapeutic potential, as well as their role in metabolic engineering, drug discovery, and forensic analysis. Notably, datum tine is highlighted for its unique NMDA receptor modulatory effects and neurotoxic potential, while tropine and hygrine serve as critical biosynthetic intermediates and analytical markers. By integrating biochemical, pharmacological, and toxicological insights, this work provides a comprehensive framework for future exploration of Datura alkaloids as both therapeutic agents and research tools.",
+  "canon:text": "Bioorganic Chemistry, Toxinology, and Pharmaceutical Uses of Datura Metabolites and Derivatives. Datura species have been recognized for their potent pharmacological properties, producing a diverse array of tropane and non-tropane alkaloids with significant clinical and toxicological relevance. This review synthesizes current knowledge on the biosynthesis, pharmacology, and therapeutic applications of 43 compounds isolated from Datura, with emphasis on both major constituents-such as atropine, hyoscyamine, and scopolamine-and minor alkaloids, including anisodamine, apoatropine, and datumetine. These alkaloids were classified into four significant categories, drawing on recent advances in plant biochemistry and analytical chemistry. The analysis is based on 204 peer-reviewed scientific publications from the past decade (2015-2025), highlighting both traditional ethnobotanical knowledge and recent pharmacological advances. The review details their enzymatic pathways, mechanisms of action at muscarinic and other receptor systems, pharmacokinetics, and dose-dependent toxicological profiles. Particular attention is given to lesser-studied derivatives and metabolites with emerging therapeutic potential, as well as their role in metabolic engineering, drug discovery, and forensic analysis. Notably, datum tine is highlighted for its unique NMDA receptor modulatory effects and neurotoxic potential, while tropine and hygrine serve as critical biosynthetic intermediates and analytical markers. By integrating biochemical, pharmacological, and toxicological insights, this work provides a comprehensive framework for future exploration of Datura alkaloids as both therapeutic agents and research tools.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41003533_causative-agent_0004517#mention-T1",
+      "canon:span": {
+        "start": 1391,
+        "end": 1401
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41003533_causative-agent_0004517#mention-T2",
+      "canon:span": {
+        "start": 516,
+        "end": 527
+      },
+      "canon:surface": "scopolamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012601",
+      "canon:sourceNotation": "D012601",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41003533_causative-agent_0004517#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41003533_causative-agent_0004517#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41003533_causative-agent_0004517#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "41003533"
+      }
+    }
+  ]
+}

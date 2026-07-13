@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23584863_causative-agent_0000434",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_23584863_causative-agent_0000434",
+  "canon:title": "Communication networks in the brain: neurons, receptors, neurotransmitters, and alcohol.",
+  "canon:abstract": "Nerve cells (i.e., neurons) communicate via a combination of electrical and chemical signals. Within the neuron, electrical signals driven by charged particles allow rapid conduction from one end of the cell to the other. Communication between neurons occurs at tiny gaps called synapses, where specialized parts of the two cells (i.e., the presynaptic and postsynaptic neurons) come within nanometers of one another to allow for chemical transmission. The presynaptic neuron releases a chemical (i.e., a neurotransmitter) that is received by the postsynaptic neuron's specialized proteins called neurotransmitter receptors. The neurotransmitter molecules bind to the receptor proteins and alter postsynaptic neuronal function. Two types of neurotransmitter receptors exist-ligand-gated ion channels, which permit rapid ion flow directly across the outer cell membrane, and G-protein-coupled receptors, which set into motion chemical signaling events within the cell. Hundreds of molecules are known to act as neurotransmitters in the brain. Neuronal development and function also are affected by peptides known as neurotrophins and by steroid hormones. This article reviews the chemical nature, neuronal actions, receptor subtypes, and therapeutic roles of several transmitters, neurotrophins, and hormones. It focuses on neurotransmitters with important roles in acute and chronic alcohol effects on the brain, such as those that contribute to intoxication, tolerance, dependence, and neurotoxicity, as well as maintained alcohol drinking and addiction.",
+  "canon:text": "Communication networks in the brain: neurons, receptors, neurotransmitters, and alcohol. Nerve cells (i.e., neurons) communicate via a combination of electrical and chemical signals. Within the neuron, electrical signals driven by charged particles allow rapid conduction from one end of the cell to the other. Communication between neurons occurs at tiny gaps called synapses, where specialized parts of the two cells (i.e., the presynaptic and postsynaptic neurons) come within nanometers of one another to allow for chemical transmission. The presynaptic neuron releases a chemical (i.e., a neurotransmitter) that is received by the postsynaptic neuron's specialized proteins called neurotransmitter receptors. The neurotransmitter molecules bind to the receptor proteins and alter postsynaptic neuronal function. Two types of neurotransmitter receptors exist-ligand-gated ion channels, which permit rapid ion flow directly across the outer cell membrane, and G-protein-coupled receptors, which set into motion chemical signaling events within the cell. Hundreds of molecules are known to act as neurotransmitters in the brain. Neuronal development and function also are affected by peptides known as neurotrophins and by steroid hormones. This article reviews the chemical nature, neuronal actions, receptor subtypes, and therapeutic roles of several transmitters, neurotrophins, and hormones. It focuses on neurotransmitters with important roles in acute and chronic alcohol effects on the brain, such as those that contribute to intoxication, tolerance, dependence, and neurotoxicity, as well as maintained alcohol drinking and addiction.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23584863_causative-agent_0000434#mention-T1",
+      "canon:span": {
+        "start": 1576,
+        "end": 1589
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23584863_causative-agent_0000434#mention-T2",
+      "canon:span": {
+        "start": 1225,
+        "end": 1241
+      },
+      "canon:surface": "steroid hormones",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23584863_causative-agent_0000434#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23584863_causative-agent_0000434#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23584863_causative-agent_0000434#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "23584863"
+      }
+    }
+  ]
+}

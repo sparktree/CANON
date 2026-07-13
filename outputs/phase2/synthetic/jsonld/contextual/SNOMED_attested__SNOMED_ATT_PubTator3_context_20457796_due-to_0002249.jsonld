@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20457796_due-to_0002249",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20457796_due-to_0002249",
+  "canon:title": "Imaging myocardial metabolic remodeling.",
+  "canon:abstract": "Myocardial metabolic remodeling is the process in which the heart loses its ability to utilize different substrates, becoming dependent primarily on the metabolism of a single substrate such as glucose or fatty acids for energy production. Myocardial metabolic remodeling is central to the pathogenesis of a variety of cardiac disease processes such as left ventricular hypertrophy, myocardial ischemia, and diabetic cardiomyopathy. As a consequence, there is a growing demand for accurate noninvasive imaging approaches of various aspects of myocardial substrate metabolism that can be performed in both humans and small-animal models of disease, facilitating the crosstalk between the bedside and the bench and leading to improved patient management paradigms. SPECT, PET, and MR spectroscopy are the most commonly used imaging techniques. Discussed in this review are the strengths and weaknesses of these various imaging methods and how they are furthering our understanding of the role of myocardial remodeling in cardiovascular disease. In addition, the role of ultrasound to detect the inflammatory response to myocardial ischemia will be discussed.",
+  "canon:text": "Imaging myocardial metabolic remodeling. Myocardial metabolic remodeling is the process in which the heart loses its ability to utilize different substrates, becoming dependent primarily on the metabolism of a single substrate such as glucose or fatty acids for energy production. Myocardial metabolic remodeling is central to the pathogenesis of a variety of cardiac disease processes such as left ventricular hypertrophy, myocardial ischemia, and diabetic cardiomyopathy. As a consequence, there is a growing demand for accurate noninvasive imaging approaches of various aspects of myocardial substrate metabolism that can be performed in both humans and small-animal models of disease, facilitating the crosstalk between the bedside and the bench and leading to improved patient management paradigms. SPECT, PET, and MR spectroscopy are the most commonly used imaging techniques. Discussed in this review are the strengths and weaknesses of these various imaging methods and how they are furthering our understanding of the role of myocardial remodeling in cardiovascular disease. In addition, the role of ultrasound to detect the inflammatory response to myocardial ischemia will be discussed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20457796_due-to_0002249#mention-T1",
+      "canon:span": {
+        "start": 449,
+        "end": 472
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20457796_due-to_0002249#mention-T2",
+      "canon:span": {
+        "start": 394,
+        "end": 422
+      },
+      "canon:surface": "left ventricular hypertrophy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017379",
+      "canon:sourceNotation": "D017379",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20457796_due-to_0002249#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20457796_due-to_0002249#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20457796_due-to_0002249#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20457796"
+      }
+    }
+  ]
+}

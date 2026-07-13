@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34562559_causative-agent_0001447",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34562559_causative-agent_0001447",
+  "canon:title": "Transfer of alpha-synuclein from neurons to oligodendrocytes triggers myelin sheath destruction in methamphetamine administration mice.",
+  "canon:abstract": "Methamphetamine (METH), a widely abused nervous system stimulant, could induce neurotoxicity through alpha-synuclein (alpha-syn). Not much is known about the neuronal derived alpha-syn transmission that underlies oligodendrocyte pathology in METH mice model. In this study, we tested alpha-syn level, oligodendroglial pathology and autophagy lysosome pathway (ALP) function in corpus callosum in a chronic METH mice model. METH increased alpha-syn level in neurons and then accumulated in oligodendrocytes. METH increased phosphor-mTOR level, decreased transcription factor EB (TFEB) level and triggered autophagy lysosomal pathway (ALP) impairment, leading to myelin sheath destruction, oligodendroglial proteins loss, mature dendritic spine loss, neuron loss, and astrocyte activation. Deleting endogenous alpha-syn increased TFEB level, alleviated ALP deficit, and diminished neuropathology induced by METH. TFEB overexpression in oligodendrocytes exerted beneficial effects in METH mice model. These neuroprotective effects were associated with the rescued ALP machinery after oligodendroglial TFEB overexpression. Our study demonstrated, for the first time, that alpha-syn-TFEB axis might be involve in the METH induced myelin loss, oligodendroglial pathology, and neuropathology. In summary, targeting at the alpha-syn-TFEB axis might be a promising therapeutic strategy for treating METH induced oligodendroglial pathology, and to a broader view, neurodegenerative diseases.",
+  "canon:text": "Transfer of alpha-synuclein from neurons to oligodendrocytes triggers myelin sheath destruction in methamphetamine administration mice. Methamphetamine (METH), a widely abused nervous system stimulant, could induce neurotoxicity through alpha-synuclein (alpha-syn). Not much is known about the neuronal derived alpha-syn transmission that underlies oligodendrocyte pathology in METH mice model. In this study, we tested alpha-syn level, oligodendroglial pathology and autophagy lysosome pathway (ALP) function in corpus callosum in a chronic METH mice model. METH increased alpha-syn level in neurons and then accumulated in oligodendrocytes. METH increased phosphor-mTOR level, decreased transcription factor EB (TFEB) level and triggered autophagy lysosomal pathway (ALP) impairment, leading to myelin sheath destruction, oligodendroglial proteins loss, mature dendritic spine loss, neuron loss, and astrocyte activation. Deleting endogenous alpha-syn increased TFEB level, alleviated ALP deficit, and diminished neuropathology induced by METH. TFEB overexpression in oligodendrocytes exerted beneficial effects in METH mice model. These neuroprotective effects were associated with the rescued ALP machinery after oligodendroglial TFEB overexpression. Our study demonstrated, for the first time, that alpha-syn-TFEB axis might be involve in the METH induced myelin loss, oligodendroglial pathology, and neuropathology. In summary, targeting at the alpha-syn-TFEB axis might be a promising therapeutic strategy for treating METH induced oligodendroglial pathology, and to a broader view, neurodegenerative diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34562559_causative-agent_0001447#mention-T1",
+      "canon:span": {
+        "start": 215,
+        "end": 228
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34562559_causative-agent_0001447#mention-T2",
+      "canon:span": {
+        "start": 99,
+        "end": 114
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34562559_causative-agent_0001447#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34562559_causative-agent_0001447#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34562559_causative-agent_0001447#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34562559"
+      }
+    }
+  ]
+}

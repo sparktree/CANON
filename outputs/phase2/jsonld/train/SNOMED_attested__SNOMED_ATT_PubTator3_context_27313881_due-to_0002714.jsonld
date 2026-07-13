@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27313881_due-to_0002714",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27313881_due-to_0002714",
+  "canon:title": "Omega-3 Fatty Acids: Possible Neuroprotective Mechanisms in the Model of Global Ischemia in Rats.",
+  "canon:abstract": "Background. Omega-3 (omega3) administration was shown to protect against hypoxic-ischemic injury. The objectives were to study the neuroprotective effects of omega3, in a model of global ischemia. Methods. Male Wistar rats were subjected to carotid occlusion (30 min), followed by reperfusion. The groups were SO, untreated ischemic and ischemic treated rats with omega3 (5 and 10 mg/kg, 7 days). The SO and untreated ischemic animals were orally treated with 1% cremophor and, 1 h after the last administration, they were behaviorally tested and euthanized for neurochemical (DA, DOPAC, and NE determinations), histological (Fluoro jade staining), and immunohistochemical (TNF-alpha, COX-2 and iNOS) evaluations. The data were analyzed by ANOVA and Newman-Keuls as the post hoc test. Results. Ischemia increased the locomotor activity and rearing behavior that were partly reversed by omega3. Ischemia decreased striatal DA and DOPAC contents and increased NE contents, effects reversed by omega3. This drug protected hippocampal neuron degeneration, as observed by Fluoro-Jade staining, and the increased immunostainings for TNF-alpha, COX-2, and iNOS were partly or totally blocked by omega3. Conclusion. This study showed a neuroprotective effect of omega3, in great part due to its anti-inflammatory properties, stimulating translational studies focusing on its use in clinic for stroke managing. ",
+  "canon:text": "Omega-3 Fatty Acids: Possible Neuroprotective Mechanisms in the Model of Global Ischemia in Rats. Background. Omega-3 (omega3) administration was shown to protect against hypoxic-ischemic injury. The objectives were to study the neuroprotective effects of omega3, in a model of global ischemia. Methods. Male Wistar rats were subjected to carotid occlusion (30 min), followed by reperfusion. The groups were SO, untreated ischemic and ischemic treated rats with omega3 (5 and 10 mg/kg, 7 days). The SO and untreated ischemic animals were orally treated with 1% cremophor and, 1 h after the last administration, they were behaviorally tested and euthanized for neurochemical (DA, DOPAC, and NE determinations), histological (Fluoro jade staining), and immunohistochemical (TNF-alpha, COX-2 and iNOS) evaluations. The data were analyzed by ANOVA and Newman-Keuls as the post hoc test. Results. Ischemia increased the locomotor activity and rearing behavior that were partly reversed by omega3. Ischemia decreased striatal DA and DOPAC contents and increased NE contents, effects reversed by omega3. This drug protected hippocampal neuron degeneration, as observed by Fluoro-Jade staining, and the increased immunostainings for TNF-alpha, COX-2, and iNOS were partly or totally blocked by omega3. Conclusion. This study showed a neuroprotective effect of omega3, in great part due to its anti-inflammatory properties, stimulating translational studies focusing on its use in clinic for stroke managing. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27313881_due-to_0002714#mention-T1",
+      "canon:span": {
+        "start": 171,
+        "end": 194
+      },
+      "canon:surface": "hypoxic-ischemic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27313881_due-to_0002714#mention-T2",
+      "canon:span": {
+        "start": 80,
+        "end": 88
+      },
+      "canon:surface": "Ischemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007511",
+      "canon:sourceNotation": "D007511",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27313881_due-to_0002714#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27313881_due-to_0002714#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27313881_due-to_0002714#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27313881"
+      }
+    }
+  ]
+}

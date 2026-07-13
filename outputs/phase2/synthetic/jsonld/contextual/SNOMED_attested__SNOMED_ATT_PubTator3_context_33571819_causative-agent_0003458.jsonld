@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33571819_causative-agent_0003458",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33571819_causative-agent_0003458",
+  "canon:title": "Leflunomide an immunomodulator with antineoplastic and antiviral potentials but drug-induced liver injury: A comprehensive review.",
+  "canon:abstract": "Leflunomide (LF) represents the prototype member of dihydroorotate dehydrogenase (DHODH) enzyme inhibitors. DHODH is a mitochondrial inner membrane enzyme responsible for catalytic conversion of dihydroorotate into orotate, a rate-limiting step in the de novo synthesis of the pyrimidine nucleotides. LF produces cellular depletion of pyrimidine nucleotides required for cell growth and proliferation. Based on the affected cells the outcome can be attainable as immunosuppression, antiproliferative, and/or the recently gained attention of the antiviral potentials of LF and its new congeners. Also, protein tyrosine kinase inhibition is an additional mechanistic benefit of LF, which inhibits immunological events such as cellular expansion and immunoglobulin production with an enhanced release of immunosuppressant cytokines. LF is approved for the treatment of autoimmune arthritis of rheumatoid and psoriatic pathogenesis. Also, LF has been used off-label for the treatment of relapsing-remitting multiple sclerosis. However, LF antiviral activity is repurposed and under investigation with related compounds under a phase-I trial as a SARS CoV-2 antiviral in cases with COVID-19. Despite success in improving patients' mobility and reducing joint destruction, reported events of LF-induced liver injury necessitated regulatory precautions. LF should not be used in patients with hepatic impairment or in combination with drugs elaborating a burden on the liver without regular monitoring of liver enzymes and serum bilirubin as safety biomarkers. This study aims to review the pharmacological and safety profile of LF with a focus on the LF-induced hepatic injury from the perspective of pathophysiology and possible protective agents.",
+  "canon:text": "Leflunomide an immunomodulator with antineoplastic and antiviral potentials but drug-induced liver injury: A comprehensive review. Leflunomide (LF) represents the prototype member of dihydroorotate dehydrogenase (DHODH) enzyme inhibitors. DHODH is a mitochondrial inner membrane enzyme responsible for catalytic conversion of dihydroorotate into orotate, a rate-limiting step in the de novo synthesis of the pyrimidine nucleotides. LF produces cellular depletion of pyrimidine nucleotides required for cell growth and proliferation. Based on the affected cells the outcome can be attainable as immunosuppression, antiproliferative, and/or the recently gained attention of the antiviral potentials of LF and its new congeners. Also, protein tyrosine kinase inhibition is an additional mechanistic benefit of LF, which inhibits immunological events such as cellular expansion and immunoglobulin production with an enhanced release of immunosuppressant cytokines. LF is approved for the treatment of autoimmune arthritis of rheumatoid and psoriatic pathogenesis. Also, LF has been used off-label for the treatment of relapsing-remitting multiple sclerosis. However, LF antiviral activity is repurposed and under investigation with related compounds under a phase-I trial as a SARS CoV-2 antiviral in cases with COVID-19. Despite success in improving patients' mobility and reducing joint destruction, reported events of LF-induced liver injury necessitated regulatory precautions. LF should not be used in patients with hepatic impairment or in combination with drugs elaborating a burden on the liver without regular monitoring of liver enzymes and serum bilirubin as safety biomarkers. This study aims to review the pharmacological and safety profile of LF with a focus on the LF-induced hepatic injury from the perspective of pathophysiology and possible protective agents.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33571819_causative-agent_0003458#mention-T1",
+      "canon:span": {
+        "start": 80,
+        "end": 105
+      },
+      "canon:surface": "drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33571819_causative-agent_0003458#mention-T2",
+      "canon:span": {
+        "start": 1653,
+        "end": 1662
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33571819_causative-agent_0003458#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33571819_causative-agent_0003458#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33571819_causative-agent_0003458#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33571819"
+      }
+    }
+  ]
+}

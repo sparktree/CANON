@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36829840_causative-agent_0001879",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36829840_causative-agent_0001879",
+  "canon:title": "Neuroprotective Potentials of Flavonoids: Experimental Studies and Mechanisms of Action.",
+  "canon:abstract": "Neurological and neurodegenerative diseases, particularly those related to aging, are on the rise, but drug therapies are rarely curative. Functional disorders and the organic degeneration of nervous tissue often have complex causes, in which phenomena of oxidative stress, inflammation and cytotoxicity are intertwined. For these reasons, the search for natural substances that can slow down or counteract these pathologies has increased rapidly over the last two decades. In this paper, studies on the neuroprotective effects of flavonoids (especially the two most widely used, hesperidin and quercetin) on animal models of depression, neurotoxicity, Alzheimer's disease (AD) and Parkinson's disease are reviewed. The literature on these topics amounts to a few hundred publications on in vitro and in vivo models (notably in rodents) and provides us with a very detailed picture of the action mechanisms and targets of these substances. These include the decrease in enzymes that produce reactive oxygen and ferroptosis, the inhibition of mono-amine oxidases, the stimulation of the Nrf2/ARE system, the induction of brain-derived neurotrophic factor production and, in the case of AD, the prevention of amyloid-beta aggregation. The inhibition of neuroinflammatory processes has been documented as a decrease in cytokine formation (mainly TNF-alpha and IL-1beta) by microglia and astrocytes, by modulating a number of regulatory proteins such as Nf-kB and NLRP3/inflammasome. Although clinical trials on humans are still scarce, preclinical studies allow us to consider hesperidin, quercetin, and other flavonoids as very interesting and safe dietary molecules to be further investigated as complementary treatments in order to prevent neurodegenerative diseases or to moderate their deleterious effects.",
+  "canon:text": "Neuroprotective Potentials of Flavonoids: Experimental Studies and Mechanisms of Action. Neurological and neurodegenerative diseases, particularly those related to aging, are on the rise, but drug therapies are rarely curative. Functional disorders and the organic degeneration of nervous tissue often have complex causes, in which phenomena of oxidative stress, inflammation and cytotoxicity are intertwined. For these reasons, the search for natural substances that can slow down or counteract these pathologies has increased rapidly over the last two decades. In this paper, studies on the neuroprotective effects of flavonoids (especially the two most widely used, hesperidin and quercetin) on animal models of depression, neurotoxicity, Alzheimer's disease (AD) and Parkinson's disease are reviewed. The literature on these topics amounts to a few hundred publications on in vitro and in vivo models (notably in rodents) and provides us with a very detailed picture of the action mechanisms and targets of these substances. These include the decrease in enzymes that produce reactive oxygen and ferroptosis, the inhibition of mono-amine oxidases, the stimulation of the Nrf2/ARE system, the induction of brain-derived neurotrophic factor production and, in the case of AD, the prevention of amyloid-beta aggregation. The inhibition of neuroinflammatory processes has been documented as a decrease in cytokine formation (mainly TNF-alpha and IL-1beta) by microglia and astrocytes, by modulating a number of regulatory proteins such as Nf-kB and NLRP3/inflammasome. Although clinical trials on humans are still scarce, preclinical studies allow us to consider hesperidin, quercetin, and other flavonoids as very interesting and safe dietary molecules to be further investigated as complementary treatments in order to prevent neurodegenerative diseases or to moderate their deleterious effects.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36829840_causative-agent_0001879#mention-T1",
+      "canon:span": {
+        "start": 727,
+        "end": 740
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36829840_causative-agent_0001879#mention-T2",
+      "canon:span": {
+        "start": 30,
+        "end": 40
+      },
+      "canon:surface": "Flavonoids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005419",
+      "canon:sourceNotation": "D005419",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36829840_causative-agent_0001879#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36829840_causative-agent_0001879#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36829840_causative-agent_0001879#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36829840"
+      }
+    }
+  ]
+}

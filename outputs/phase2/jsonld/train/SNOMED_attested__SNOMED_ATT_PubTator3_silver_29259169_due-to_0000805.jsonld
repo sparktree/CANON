@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29259169_due-to_0000805",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29259169_due-to_0000805",
+  "canon:title": "Systematic screening of generic drugs for progressive multiple sclerosis identifies clomipramine as a promising therapeutic.",
+  "canon:abstract": "The treatment of progressive multiple sclerosis (MS) is unsatisfactory. One reason is that the drivers of disease, which include iron-mediated neurotoxicity, lymphocyte activity, and oxidative stress, are not simultaneously targeted. Here we present a systematic screen to identify generic, orally available medications that target features of progressive MS. Of 249 medications that cross the blood-brain barrier, 35 prevent iron-mediated neurotoxicity in culture. Of these, several antipsychotics and antidepressants strongly reduce T-cell proliferation and oxidative stress. We focus on the antidepressant clomipramine and found that it additionally inhibits B-lymphocyte activity. In mice with experimental autoimmune encephalomyelitis, a model of MS, clomipramine ameliorates clinical signs of acute and chronic phases. Histologically, clomipramine reduces inflammation and microglial activation, and preserves axonal integrity. In summary, we present a systematic approach to identify generic medications for progressive multiple sclerosis with the potential to advance rapidly into clinical trials, and we highlight clomipramine for further development.",
+  "canon:text": "Systematic screening of generic drugs for progressive multiple sclerosis identifies clomipramine as a promising therapeutic. The treatment of progressive multiple sclerosis (MS) is unsatisfactory. One reason is that the drivers of disease, which include iron-mediated neurotoxicity, lymphocyte activity, and oxidative stress, are not simultaneously targeted. Here we present a systematic screen to identify generic, orally available medications that target features of progressive MS. Of 249 medications that cross the blood-brain barrier, 35 prevent iron-mediated neurotoxicity in culture. Of these, several antipsychotics and antidepressants strongly reduce T-cell proliferation and oxidative stress. We focus on the antidepressant clomipramine and found that it additionally inhibits B-lymphocyte activity. In mice with experimental autoimmune encephalomyelitis, a model of MS, clomipramine ameliorates clinical signs of acute and chronic phases. Histologically, clomipramine reduces inflammation and microglial activation, and preserves axonal integrity. In summary, we present a systematic approach to identify generic medications for progressive multiple sclerosis with the potential to advance rapidly into clinical trials, and we highlight clomipramine for further development.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29259169_due-to_0000805#mention-T1",
+      "canon:span": {
+        "start": 823,
+        "end": 864
+      },
+      "canon:surface": "experimental autoimmune encephalomyelitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004681",
+      "canon:sourceNotation": "D004681",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29259169_due-to_0000805#mention-T2",
+      "canon:span": {
+        "start": 268,
+        "end": 281
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29259169_due-to_0000805#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29259169_due-to_0000805#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29259169_due-to_0000805#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29259169"
+      }
+    }
+  ]
+}

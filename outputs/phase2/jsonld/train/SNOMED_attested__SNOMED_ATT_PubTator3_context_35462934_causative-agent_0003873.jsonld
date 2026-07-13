@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35462934_causative-agent_0003873",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35462934_causative-agent_0003873",
+  "canon:title": "Molecular Mechanisms and Therapeutic Strategies for Levodopa-Induced Dyskinesia in Parkinson's Disease: A Perspective Through Preclinical and Clinical Evidence.",
+  "canon:abstract": "Parkinson's disease (PD) is the second leading neurodegenerative disease that is characterized by severe locomotor abnormalities. Levodopa (L-DOPA) treatment has been considered a mainstay for the management of PD; however, its prolonged treatment is often associated with abnormal involuntary movements and results in L-DOPA-induced dyskinesia (LID). Although LID is encountered after chronic administration of L-DOPA, the appearance of dyskinesia after weeks or months of the L-DOPA treatment has complicated our understanding of its pathogenesis. Pathophysiology of LID is mainly associated with alteration of direct and indirect pathways of the cortico-basal ganglia-thalamic loop, which regulates normal fine motor movements. Hypersensitivity of dopamine receptors has been involved in the development of LID; moreover, these symptoms are worsened by concurrent non-dopaminergic innervations including glutamatergic, serotonergic, and peptidergic neurotransmission. The present study is focused on discussing the recent updates in molecular mechanisms and therapeutic approaches for the effective management of LID in PD patients.",
+  "canon:text": "Molecular Mechanisms and Therapeutic Strategies for Levodopa-Induced Dyskinesia in Parkinson's Disease: A Perspective Through Preclinical and Clinical Evidence. Parkinson's disease (PD) is the second leading neurodegenerative disease that is characterized by severe locomotor abnormalities. Levodopa (L-DOPA) treatment has been considered a mainstay for the management of PD; however, its prolonged treatment is often associated with abnormal involuntary movements and results in L-DOPA-induced dyskinesia (LID). Although LID is encountered after chronic administration of L-DOPA, the appearance of dyskinesia after weeks or months of the L-DOPA treatment has complicated our understanding of its pathogenesis. Pathophysiology of LID is mainly associated with alteration of direct and indirect pathways of the cortico-basal ganglia-thalamic loop, which regulates normal fine motor movements. Hypersensitivity of dopamine receptors has been involved in the development of LID; moreover, these symptoms are worsened by concurrent non-dopaminergic innervations including glutamatergic, serotonergic, and peptidergic neurotransmission. The present study is focused on discussing the recent updates in molecular mechanisms and therapeutic approaches for the effective management of LID in PD patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35462934_causative-agent_0003873#mention-T1",
+      "canon:span": {
+        "start": 892,
+        "end": 908
+      },
+      "canon:surface": "Hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35462934_causative-agent_0003873#mention-T2",
+      "canon:span": {
+        "start": 52,
+        "end": 60
+      },
+      "canon:surface": "Levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35462934_causative-agent_0003873#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35462934_causative-agent_0003873#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35462934_causative-agent_0003873#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35462934"
+      }
+    }
+  ]
+}

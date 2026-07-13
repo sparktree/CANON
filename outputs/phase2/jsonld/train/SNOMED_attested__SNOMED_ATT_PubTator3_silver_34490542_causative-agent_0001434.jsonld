@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34490542_causative-agent_0001434",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34490542_causative-agent_0001434",
+  "canon:title": "Problematic Opioid Use Among Older Adults: Epidemiology, Adverse Outcomes and Treatment Considerations.",
+  "canon:abstract": "With the aging population, an increasing number of older adults (> 65 years) will be affected by problematic opioid use and opioid use disorder (OUD), with both illicit and prescription opioids. Problematic opioid use is defined as the use of opioids resulting in social, medical or psychological consequences, whereas OUD is a form of problematic use that meets diagnostic criteria as defined by the Diagnostic and Statistical Manual of Mental Disorders, 5th Edition. Problematic use of opioids by older adults is associated with a number of pertinent adverse effects, including sedation, cognitive impairment, falls, fractures and constipation. Risk factors for problematic opioid use in this population include pain, comorbid medical illnesses, concurrent alcohol use disorder and depression. Treatment of OUD consists of acute detoxification and maintenance therapy. At this time, there have been no randomized controlled trials examining the effectiveness of pharmacological interventions for OUD in this population, with recommendations based on data from younger adults. Despite this, opioid agonist therapy (OAT) is recommended for both stages of treatment in older adults with OUD. Buprenorphine is recommended as a first line agent over methadone in the older adult population, due to a more favourable safety profile and relative accessibility. Use of methadone in this population is complicated by risk of QT interval prolongation and respiratory depression. Available observational data suggests that older adults respond well to OAT and age should not be a barrier to treatment. Further research is required to inform treatment decisions in this population.",
+  "canon:text": "Problematic Opioid Use Among Older Adults: Epidemiology, Adverse Outcomes and Treatment Considerations. With the aging population, an increasing number of older adults (> 65 years) will be affected by problematic opioid use and opioid use disorder (OUD), with both illicit and prescription opioids. Problematic opioid use is defined as the use of opioids resulting in social, medical or psychological consequences, whereas OUD is a form of problematic use that meets diagnostic criteria as defined by the Diagnostic and Statistical Manual of Mental Disorders, 5th Edition. Problematic use of opioids by older adults is associated with a number of pertinent adverse effects, including sedation, cognitive impairment, falls, fractures and constipation. Risk factors for problematic opioid use in this population include pain, comorbid medical illnesses, concurrent alcohol use disorder and depression. Treatment of OUD consists of acute detoxification and maintenance therapy. At this time, there have been no randomized controlled trials examining the effectiveness of pharmacological interventions for OUD in this population, with recommendations based on data from younger adults. Despite this, opioid agonist therapy (OAT) is recommended for both stages of treatment in older adults with OUD. Buprenorphine is recommended as a first line agent over methadone in the older adult population, due to a more favourable safety profile and relative accessibility. Use of methadone in this population is complicated by risk of QT interval prolongation and respiratory depression. Available observational data suggests that older adults respond well to OAT and age should not be a barrier to treatment. Further research is required to inform treatment decisions in this population.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34490542_causative-agent_0001434#mention-T1",
+      "canon:span": {
+        "start": 863,
+        "end": 883
+      },
+      "canon:surface": "alcohol use disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34490542_causative-agent_0001434#mention-T2",
+      "canon:span": {
+        "start": 1351,
+        "end": 1360
+      },
+      "canon:surface": "methadone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008691",
+      "canon:sourceNotation": "D008691",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34490542_causative-agent_0001434#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34490542_causative-agent_0001434#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34490542_causative-agent_0001434#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34490542"
+      }
+    }
+  ]
+}

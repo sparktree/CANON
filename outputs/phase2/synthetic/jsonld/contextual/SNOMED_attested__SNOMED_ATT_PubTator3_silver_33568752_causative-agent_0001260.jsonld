@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33568752_causative-agent_0001260",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33568752_causative-agent_0001260",
+  "canon:title": "Advanced glycation end products (AGEs) and other adducts in aging-related diseases and alcohol-mediated tissue injury.",
+  "canon:abstract": "Advanced glycation end products (AGEs) are potentially harmful and heterogeneous molecules derived from nonenzymatic glycation. The pathological implications of AGEs are ascribed to their ability to promote oxidative stress, inflammation, and apoptosis. Recent studies in basic and translational research have revealed the contributing roles of AGEs in the development and progression of various aging-related pathological conditions, such as diabetes, cardiovascular complications, gut microbiome-associated illnesses, liver or neurodegenerative diseases, and cancer. Excessive chronic and/or acute binge consumption of alcohol (ethanol), a widely consumed addictive substance, is known to cause more than 200 diseases, including alcohol use disorder (addiction), alcoholic liver disease, and brain damage. However, despite the considerable amount of research in this area, the underlying molecular mechanisms by which alcohol abuse causes cellular toxicity and organ damage remain to be further characterized. In this review, we first briefly describe the properties of AGEs: their formation, accumulation, and receptor interactions. We then focus on the causative functions of AGEs that impact various aging-related diseases. We also highlight the biological connection of AGE-alcohol-adduct formations to alcohol-mediated tissue injury. Finally, we describe the potential translational research opportunities for treatment of various AGE- and/or alcohol-related adduct-associated disorders according to the mechanistic insights presented.",
+  "canon:text": "Advanced glycation end products (AGEs) and other adducts in aging-related diseases and alcohol-mediated tissue injury. Advanced glycation end products (AGEs) are potentially harmful and heterogeneous molecules derived from nonenzymatic glycation. The pathological implications of AGEs are ascribed to their ability to promote oxidative stress, inflammation, and apoptosis. Recent studies in basic and translational research have revealed the contributing roles of AGEs in the development and progression of various aging-related pathological conditions, such as diabetes, cardiovascular complications, gut microbiome-associated illnesses, liver or neurodegenerative diseases, and cancer. Excessive chronic and/or acute binge consumption of alcohol (ethanol), a widely consumed addictive substance, is known to cause more than 200 diseases, including alcohol use disorder (addiction), alcoholic liver disease, and brain damage. However, despite the considerable amount of research in this area, the underlying molecular mechanisms by which alcohol abuse causes cellular toxicity and organ damage remain to be further characterized. In this review, we first briefly describe the properties of AGEs: their formation, accumulation, and receptor interactions. We then focus on the causative functions of AGEs that impact various aging-related diseases. We also highlight the biological connection of AGE-alcohol-adduct formations to alcohol-mediated tissue injury. Finally, we describe the potential translational research opportunities for treatment of various AGE- and/or alcohol-related adduct-associated disorders according to the mechanistic insights presented.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33568752_causative-agent_0001260#mention-T1",
+      "canon:span": {
+        "start": 850,
+        "end": 870
+      },
+      "canon:surface": "alcohol use disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33568752_causative-agent_0001260#mention-T2",
+      "canon:span": {
+        "start": 749,
+        "end": 756
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33568752_causative-agent_0001260#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33568752_causative-agent_0001260#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33568752_causative-agent_0001260#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33568752"
+      }
+    }
+  ]
+}

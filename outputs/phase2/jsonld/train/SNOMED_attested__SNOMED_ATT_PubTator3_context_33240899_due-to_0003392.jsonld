@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33240899_due-to_0003392",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33240899_due-to_0003392",
+  "canon:title": "Mitochondria-Associated Endoplasmic Reticulum Membranes in Cardiovascular Diseases.",
+  "canon:abstract": "The endoplasmic reticulum (ER) and mitochondria are physically connected to form dedicated structural domains known as mitochondria-associated ER membranes (MAMs), which participate in fundamental biological processes, including lipid and calcium (Ca2+) homeostasis, mitochondrial dynamics and other related cellular behaviors such as autophagy, ER stress, inflammation and apoptosis. Many studies have proved the importance of MAMs in maintaining the normal function of both organelles, and the abnormal amount, structure or function of MAMs is related to the occurrence of cardiovascular diseases. Here, we review the knowledge regarding the components of MAMs according to their different functions and the specific roles of MAMs in cardiovascular physiology and pathophysiology, focusing on some highly prevalent cardiovascular diseases, including ischemia-reperfusion, diabetic cardiomyopathy, heart failure, pulmonary arterial hypertension and systemic vascular diseases. Finally, we summarize the possible mechanisms of MAM in cardiovascular diseases and put forward some obstacles in the understanding of MAM function we may encounter.",
+  "canon:text": "Mitochondria-Associated Endoplasmic Reticulum Membranes in Cardiovascular Diseases. The endoplasmic reticulum (ER) and mitochondria are physically connected to form dedicated structural domains known as mitochondria-associated ER membranes (MAMs), which participate in fundamental biological processes, including lipid and calcium (Ca2+) homeostasis, mitochondrial dynamics and other related cellular behaviors such as autophagy, ER stress, inflammation and apoptosis. Many studies have proved the importance of MAMs in maintaining the normal function of both organelles, and the abnormal amount, structure or function of MAMs is related to the occurrence of cardiovascular diseases. Here, we review the knowledge regarding the components of MAMs according to their different functions and the specific roles of MAMs in cardiovascular physiology and pathophysiology, focusing on some highly prevalent cardiovascular diseases, including ischemia-reperfusion, diabetic cardiomyopathy, heart failure, pulmonary arterial hypertension and systemic vascular diseases. Finally, we summarize the possible mechanisms of MAM in cardiovascular diseases and put forward some obstacles in the understanding of MAM function we may encounter.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33240899_due-to_0003392#mention-T1",
+      "canon:span": {
+        "start": 958,
+        "end": 981
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33240899_due-to_0003392#mention-T2",
+      "canon:span": {
+        "start": 936,
+        "end": 945
+      },
+      "canon:surface": "ischemia-",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007511",
+      "canon:sourceNotation": "D007511",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33240899_due-to_0003392#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33240899_due-to_0003392#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33240899_due-to_0003392#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33240899"
+      }
+    }
+  ]
+}

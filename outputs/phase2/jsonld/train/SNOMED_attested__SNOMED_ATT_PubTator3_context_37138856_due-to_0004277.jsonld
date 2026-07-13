@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37138856_due-to_0004277",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37138856_due-to_0004277",
+  "canon:title": "Targeting ferroptosis as a promising therapeutic strategy to treat cardiomyopathy.",
+  "canon:abstract": "Cardiomyopathies are a clinically heterogeneous group of cardiac diseases characterized by heart muscle damage, resulting in myocardium disorders, diminished cardiac function, heart failure, and even sudden cardiac death. The molecular mechanisms underlying the damage to cardiomyocytes remain unclear. Emerging studies have demonstrated that ferroptosis, an iron-dependent non-apoptotic regulated form of cell death characterized by iron dyshomeostasis and lipid peroxidation, contributes to the development of ischemic cardiomyopathy, diabetic cardiomyopathy, doxorubicin-induced cardiomyopathy, and septic cardiomyopathy. Numerous compounds have exerted potential therapeutic effects on cardiomyopathies by inhibiting ferroptosis. In this review, we summarize the core mechanism by which ferroptosis leads to the development of these cardiomyopathies. We emphasize the emerging types of therapeutic compounds that can inhibit ferroptosis and delineate their beneficial effects in treating cardiomyopathies. This review suggests that inhibiting ferroptosis pharmacologically may be a potential therapeutic strategy for cardiomyopathy treatment.",
+  "canon:text": "Targeting ferroptosis as a promising therapeutic strategy to treat cardiomyopathy. Cardiomyopathies are a clinically heterogeneous group of cardiac diseases characterized by heart muscle damage, resulting in myocardium disorders, diminished cardiac function, heart failure, and even sudden cardiac death. The molecular mechanisms underlying the damage to cardiomyocytes remain unclear. Emerging studies have demonstrated that ferroptosis, an iron-dependent non-apoptotic regulated form of cell death characterized by iron dyshomeostasis and lipid peroxidation, contributes to the development of ischemic cardiomyopathy, diabetic cardiomyopathy, doxorubicin-induced cardiomyopathy, and septic cardiomyopathy. Numerous compounds have exerted potential therapeutic effects on cardiomyopathies by inhibiting ferroptosis. In this review, we summarize the core mechanism by which ferroptosis leads to the development of these cardiomyopathies. We emphasize the emerging types of therapeutic compounds that can inhibit ferroptosis and delineate their beneficial effects in treating cardiomyopathies. This review suggests that inhibiting ferroptosis pharmacologically may be a potential therapeutic strategy for cardiomyopathy treatment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37138856_due-to_0004277#mention-T1",
+      "canon:span": {
+        "start": 620,
+        "end": 643
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37138856_due-to_0004277#mention-T2",
+      "canon:span": {
+        "start": 283,
+        "end": 303
+      },
+      "canon:surface": "sudden cardiac death",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D016757",
+      "canon:sourceNotation": "D016757",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37138856_due-to_0004277#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37138856_due-to_0004277#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37138856_due-to_0004277#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37138856"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31904761_due-to_0003211",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31904761_due-to_0003211",
+  "canon:title": "Rituximab use in adult glomerulopathies and its rationale.",
+  "canon:abstract": "Glomerulopathies are one of the leading causes of end-stage renal disease. In the last years, clinical research has made significant contributions to the understanding of such conditions. Recently, rituximab (RTX) has appeared as a reasonably safe treatment. The Kidney Disease: Improving Global Outcomes guidelines (KDIGO) recommended RTX only as initial treatment in antineutrophil cytoplasm antibody associated vasculitis (AAV) and in non-responders patients with lupus nephritis (LN), but these guidelines have not been updated since 2012. Nowadays, RTX seems to be at least as effective as other immunosuppressive regimens in idiopathic membranous nephropathy (IMN). In minimal-change disease, (MCD) this drug might allow a long-lasting remission period in steroid-dependent or frequently relapsing patients. Preliminary results support the use of RTX in patients with pure membranous LN and immunoglobulin-mediated membranoproliferative glomerulonephritis (MPGN), but not in patients with class III/IV LN or complement-mediated MPGN. No conclusion can be drawn in idiopathic focal segmental glomerulosclerosis (FSGS) and anti-glomerular basement membrane antibody glomerulonephritis (anti-GBM GN) because studies are small, heterogeneous, and scarce. Lastly, immunosuppression including RTX is not particularly useful in IgA nephropathy. This review presents the general background, outcomes, and safety for RTX treatment in different glomerulopathies. In this regard, we describe randomized controlled trials (RCTs) performed in adults, whenever possible. A literature search was performed using clinicaltrials.gov and PubMed.",
+  "canon:text": "Rituximab use in adult glomerulopathies and its rationale. Glomerulopathies are one of the leading causes of end-stage renal disease. In the last years, clinical research has made significant contributions to the understanding of such conditions. Recently, rituximab (RTX) has appeared as a reasonably safe treatment. The Kidney Disease: Improving Global Outcomes guidelines (KDIGO) recommended RTX only as initial treatment in antineutrophil cytoplasm antibody associated vasculitis (AAV) and in non-responders patients with lupus nephritis (LN), but these guidelines have not been updated since 2012. Nowadays, RTX seems to be at least as effective as other immunosuppressive regimens in idiopathic membranous nephropathy (IMN). In minimal-change disease, (MCD) this drug might allow a long-lasting remission period in steroid-dependent or frequently relapsing patients. Preliminary results support the use of RTX in patients with pure membranous LN and immunoglobulin-mediated membranoproliferative glomerulonephritis (MPGN), but not in patients with class III/IV LN or complement-mediated MPGN. No conclusion can be drawn in idiopathic focal segmental glomerulosclerosis (FSGS) and anti-glomerular basement membrane antibody glomerulonephritis (anti-GBM GN) because studies are small, heterogeneous, and scarce. Lastly, immunosuppression including RTX is not particularly useful in IgA nephropathy. This review presents the general background, outcomes, and safety for RTX treatment in different glomerulopathies. In this regard, we describe randomized controlled trials (RCTs) performed in adults, whenever possible. A literature search was performed using clinicaltrials.gov and PubMed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31904761_due-to_0003211#mention-T1",
+      "canon:span": {
+        "start": 526,
+        "end": 541
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31904761_due-to_0003211#mention-T2",
+      "canon:span": {
+        "start": 428,
+        "end": 483
+      },
+      "canon:surface": "antineutrophil cytoplasm antibody associated vasculitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056648",
+      "canon:sourceNotation": "D056648",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31904761_due-to_0003211#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31904761_due-to_0003211#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31904761_due-to_0003211#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31904761"
+      }
+    }
+  ]
+}

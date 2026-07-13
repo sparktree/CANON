@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33026601_causative-agent_0003342",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33026601_causative-agent_0003342",
+  "canon:title": "Use of Ultraviolet Blood Irradiation Against Viral Infections.",
+  "canon:abstract": "Ultraviolet blood irradiation (UBI) was used with success in the 1930s and 1940s for a variety of diseases. Despite the success, the lack of understanding of the detailed mechanisms of actions, and the achievements of antibiotics, phased off the use of UBI from the 1950s. The emergence of novel viral infections, from HIV/AIDS to Ebola, from SARS and MERS, and SARS-CoV-2, bring back the attention to this therapeutical opportunity. UBI has a complex virucidal activity, mostly acting on the immune system response. It has effects on lymphocytes (T-cells and B-cells), macrophages, monocytes, dendritic cells, low-density lipoprotein (LDL), and lipids. The Knott technique was applied for bacterial infections such as tuberculosis to viral infections such as hepatitis or influenza. The more complex extracorporeal photopheresis (ECP) is also being applied to hematological cancers such as T-cell lymphomas. Further studies of UBI may help to create a useful device that may find applications for novel viruses that are resistant to known antivirals or vaccines, or also bacteria that are resistant to known antibiotics.",
+  "canon:text": "Use of Ultraviolet Blood Irradiation Against Viral Infections. Ultraviolet blood irradiation (UBI) was used with success in the 1930s and 1940s for a variety of diseases. Despite the success, the lack of understanding of the detailed mechanisms of actions, and the achievements of antibiotics, phased off the use of UBI from the 1950s. The emergence of novel viral infections, from HIV/AIDS to Ebola, from SARS and MERS, and SARS-CoV-2, bring back the attention to this therapeutical opportunity. UBI has a complex virucidal activity, mostly acting on the immune system response. It has effects on lymphocytes (T-cells and B-cells), macrophages, monocytes, dendritic cells, low-density lipoprotein (LDL), and lipids. The Knott technique was applied for bacterial infections such as tuberculosis to viral infections such as hepatitis or influenza. The more complex extracorporeal photopheresis (ECP) is also being applied to hematological cancers such as T-cell lymphomas. Further studies of UBI may help to create a useful device that may find applications for novel viruses that are resistant to known antivirals or vaccines, or also bacteria that are resistant to known antibiotics.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33026601_causative-agent_0003342#mention-T1",
+      "canon:span": {
+        "start": 823,
+        "end": 832
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33026601_causative-agent_0003342#mention-T2",
+      "canon:span": {
+        "start": 709,
+        "end": 715
+      },
+      "canon:surface": "lipids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33026601_causative-agent_0003342#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33026601_causative-agent_0003342#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33026601_causative-agent_0003342#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33026601"
+      }
+    }
+  ]
+}

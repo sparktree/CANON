@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34825525_due-to_0001525",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34825525_due-to_0001525",
+  "canon:title": "Emerging Theranostic Nanomaterials in Diabetes and Its Complications.",
+  "canon:abstract": "Diabetes mellitus (DM) refers to a group of metabolic disorders that are characterized by hyperglycemia. Oral subcutaneously administered antidiabetic drugs such as insulin, glipalamide, and metformin can temporarily balance blood sugar levels, however, long-term administration of these therapies is associated with undesirable side effects on the kidney and liver. In addition, due to overproduction of reactive oxygen species and hyperglycemia-induced macrovascular system damage, diabetics have an increased risk of complications. Fortunately, recent advances in nanomaterials have provided new opportunities for diabetes therapy and diagnosis. This review provides a panoramic overview of the current nanomaterials for the detection of diabetic biomarkers and diabetes treatment. Apart from diabetic sensing mechanisms and antidiabetic activities, the applications of these bioengineered nanoparticles for preventing several diabetic complications are elucidated. This review provides an overall perspective in this field, including current challenges and future trends, which may be helpful in informing the development of novel nanomaterials with new functions and properties for diabetes diagnosis and therapy.",
+  "canon:text": "Emerging Theranostic Nanomaterials in Diabetes and Its Complications. Diabetes mellitus (DM) refers to a group of metabolic disorders that are characterized by hyperglycemia. Oral subcutaneously administered antidiabetic drugs such as insulin, glipalamide, and metformin can temporarily balance blood sugar levels, however, long-term administration of these therapies is associated with undesirable side effects on the kidney and liver. In addition, due to overproduction of reactive oxygen species and hyperglycemia-induced macrovascular system damage, diabetics have an increased risk of complications. Fortunately, recent advances in nanomaterials have provided new opportunities for diabetes therapy and diagnosis. This review provides a panoramic overview of the current nanomaterials for the detection of diabetic biomarkers and diabetes treatment. Apart from diabetic sensing mechanisms and antidiabetic activities, the applications of these bioengineered nanoparticles for preventing several diabetic complications are elucidated. This review provides an overall perspective in this field, including current challenges and future trends, which may be helpful in informing the development of novel nanomaterials with new functions and properties for diabetes diagnosis and therapy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34825525_due-to_0001525#mention-T1",
+      "canon:span": {
+        "start": 38,
+        "end": 68
+      },
+      "canon:surface": "Diabetes and Its Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34825525_due-to_0001525#mention-T2",
+      "canon:span": {
+        "start": 70,
+        "end": 87
+      },
+      "canon:surface": "Diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34825525_due-to_0001525#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34825525_due-to_0001525#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34825525_due-to_0001525#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34825525"
+      }
+    }
+  ]
+}

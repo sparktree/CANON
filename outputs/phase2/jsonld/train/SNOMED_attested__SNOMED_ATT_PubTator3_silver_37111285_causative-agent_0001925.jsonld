@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37111285_causative-agent_0001925",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37111285_causative-agent_0001925",
+  "canon:title": "Natural Ingredients to Improve Immunity.",
+  "canon:abstract": "The immune system protects the body from infectious agents such as bacteria, viruses, or fungi. Once encountered with pathogens or antigens, the innate and adaptive arms of the immune system trigger a strong immune response to eliminate them from the system and protect the body. Thus, well-balanced immunity is pivotal for maintaining human health, as an insufficient level of immune defense leads to infections and tumors. In contrast, the excessive functioning of the immune system causes the development of autoimmune diseases and allergies. Strong immunity requires adequate nutrition, dietary interventions, and sufficient intake of certain vitamins (vitamin C, vitamin D, and folic acid) and minerals (magnesium, zinc, and selenium). Therefore, nutritional and micronutrient deficiencies lead to compromised immunity. Several natural ingredients have shown potent immunomodulatory properties. The immune-enhancing properties of many plants and fungi are due to containing bioactive phytoconstituents such as polyphenols, terpenoids, beta-glucans, vitamins, etc. Probiotics and prebiotics can be used as innovative tools to reduce intestinal inflammation and downregulate hypersensitivity reactions. Plant sources of melatonin, a multifunctional molecule with proven anti-inflammatory and immunomodulatory properties, have been discovered relatively recently. The bioactive compounds augment the immune response by directly increasing the cytotoxic activity of natural killer cells, macrophages, and neutrophils. Many phytoconstituents prevent cell damage due to their powerful antimicrobial, antioxidant, and anti-inflammatory properties. The present review attempts to understand the molecular mechanisms underlying the immune-enhancing properties of some bioactive compounds from plants, fungi, animals, microorganisms, and other natural sources.",
+  "canon:text": "Natural Ingredients to Improve Immunity. The immune system protects the body from infectious agents such as bacteria, viruses, or fungi. Once encountered with pathogens or antigens, the innate and adaptive arms of the immune system trigger a strong immune response to eliminate them from the system and protect the body. Thus, well-balanced immunity is pivotal for maintaining human health, as an insufficient level of immune defense leads to infections and tumors. In contrast, the excessive functioning of the immune system causes the development of autoimmune diseases and allergies. Strong immunity requires adequate nutrition, dietary interventions, and sufficient intake of certain vitamins (vitamin C, vitamin D, and folic acid) and minerals (magnesium, zinc, and selenium). Therefore, nutritional and micronutrient deficiencies lead to compromised immunity. Several natural ingredients have shown potent immunomodulatory properties. The immune-enhancing properties of many plants and fungi are due to containing bioactive phytoconstituents such as polyphenols, terpenoids, beta-glucans, vitamins, etc. Probiotics and prebiotics can be used as innovative tools to reduce intestinal inflammation and downregulate hypersensitivity reactions. Plant sources of melatonin, a multifunctional molecule with proven anti-inflammatory and immunomodulatory properties, have been discovered relatively recently. The bioactive compounds augment the immune response by directly increasing the cytotoxic activity of natural killer cells, macrophages, and neutrophils. Many phytoconstituents prevent cell damage due to their powerful antimicrobial, antioxidant, and anti-inflammatory properties. The present review attempts to understand the molecular mechanisms underlying the immune-enhancing properties of some bioactive compounds from plants, fungi, animals, microorganisms, and other natural sources.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37111285_causative-agent_0001925#mention-T1",
+      "canon:span": {
+        "start": 576,
+        "end": 585
+      },
+      "canon:surface": "allergies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37111285_causative-agent_0001925#mention-T2",
+      "canon:span": {
+        "start": 724,
+        "end": 734
+      },
+      "canon:surface": "folic acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005492",
+      "canon:sourceNotation": "D005492",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37111285_causative-agent_0001925#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37111285_causative-agent_0001925#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37111285_causative-agent_0001925#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37111285"
+      }
+    }
+  ]
+}

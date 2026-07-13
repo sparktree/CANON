@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054888_due-to_0001574",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35054888_due-to_0001574",
+  "canon:title": "Effects of Isorhamnetin on Diabetes and Its Associated Complications: A Review of In Vitro and In Vivo Studies and a Post Hoc Transcriptome Analysis of Involved Molecular Pathways.",
+  "canon:abstract": "Diabetes mellitus, especially type 2 (T2DM), is a major public health problem globally. DM is characterized by high levels of glycemia and insulinemia due to impaired insulin secretion and insulin sensitivity of the cells, known as insulin resistance. T2DM causes multiple and severe complications such as nephropathy, neuropathy, and retinopathy causing cell oxidative damages in different internal tissues, particularly the pancreas, heart, adipose tissue, liver, and kidneys. Plant extracts and their bioactive phytochemicals are gaining interest as new therapeutic and preventive alternatives for T2DM and its associated complications. In this regard, isorhamnetin, a plant flavonoid, has long been studied for its potential anti-diabetic effects. This review describes its impact on reducing diabetes-related disorders by decreasing glucose levels, ameliorating the oxidative status, alleviating inflammation, and modulating lipid metabolism and adipocyte differentiation by regulating involved signaling pathways reported in the in vitro and in vivo studies. Additionally, we include a post hoc whole-genome transcriptome analysis of biological activities of isorhamnetin using a stem cell-based tool.",
+  "canon:text": "Effects of Isorhamnetin on Diabetes and Its Associated Complications: A Review of In Vitro and In Vivo Studies and a Post Hoc Transcriptome Analysis of Involved Molecular Pathways. Diabetes mellitus, especially type 2 (T2DM), is a major public health problem globally. DM is characterized by high levels of glycemia and insulinemia due to impaired insulin secretion and insulin sensitivity of the cells, known as insulin resistance. T2DM causes multiple and severe complications such as nephropathy, neuropathy, and retinopathy causing cell oxidative damages in different internal tissues, particularly the pancreas, heart, adipose tissue, liver, and kidneys. Plant extracts and their bioactive phytochemicals are gaining interest as new therapeutic and preventive alternatives for T2DM and its associated complications. In this regard, isorhamnetin, a plant flavonoid, has long been studied for its potential anti-diabetic effects. This review describes its impact on reducing diabetes-related disorders by decreasing glucose levels, ameliorating the oxidative status, alleviating inflammation, and modulating lipid metabolism and adipocyte differentiation by regulating involved signaling pathways reported in the in vitro and in vivo studies. Additionally, we include a post hoc whole-genome transcriptome analysis of biological activities of isorhamnetin using a stem cell-based tool.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054888_due-to_0001574#mention-T1",
+      "canon:span": {
+        "start": 978,
+        "end": 1004
+      },
+      "canon:surface": "diabetes-related disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054888_due-to_0001574#mention-T2",
+      "canon:span": {
+        "start": 27,
+        "end": 35
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054888_due-to_0001574#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054888_due-to_0001574#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054888_due-to_0001574#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35054888"
+      }
+    }
+  ]
+}

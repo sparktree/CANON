@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41751199_causative-agent_0004548",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_41751199_causative-agent_0004548",
+  "canon:title": "The Role of Biomarkers in Personalized Anesthesia: From Physiological Parameters to Molecular Diagnostics.",
+  "canon:abstract": "Personalized anesthesia has emerged as a key direction in modern perioperative medicine, driven by advances in molecular biology, analytical technologies, and digital monitoring. Traditional physiological parameters often fail to detect early stages of organ dysfunction, whereas molecular biomarkers provide earlier and more sensitive insight into inflammation, oxidative stress, neurotoxicity, and renal or hepatic injury. Inflammatory markers such as IL-6, CRP, and PCT indicate early immune activation, while oxidative stress biomarkers, including 8-isoprostanes and malondialdehyde, quantify metabolic imbalance and ischemia-reperfusion injury. Neurotoxicity biomarkers such as S100beta, NSE, and GFAP allow early detection of subclinical cerebral injury, whereas kynurenine-pathway metabolites reflect neuroinflammation and the risk of postoperative cognitive dysfunction. Renal biomarkers such as NGAL, KIM-1, and cystatin C detect acute kidney injury significantly earlier than creatinine, and miR-122 holds strong potential as an early marker of hepatocellular injury. Genetic and epigenetic biomarkers-including polymorphisms in CYP2D6, CYP3A4/5, RYR1, OPRM1, and COMT, as well as microRNA-based signatures-enable individualized drug dosing and optimization of anesthetic strategies. Meanwhile, digital biomarkers such as EEG-derived indices, HRV, and NIRS provide continuous real-time physiological monitoring and can integrate with AI-based algorithms for predictive, adaptive anesthesia management. Although no single biomarker meets all criteria for an ideal clinical indicator, combining molecular, genetic, and digital biomarkers represents the most promising pathway toward fully personalized, safe, and outcome-optimized perioperative care.",
+  "canon:text": "The Role of Biomarkers in Personalized Anesthesia: From Physiological Parameters to Molecular Diagnostics. Personalized anesthesia has emerged as a key direction in modern perioperative medicine, driven by advances in molecular biology, analytical technologies, and digital monitoring. Traditional physiological parameters often fail to detect early stages of organ dysfunction, whereas molecular biomarkers provide earlier and more sensitive insight into inflammation, oxidative stress, neurotoxicity, and renal or hepatic injury. Inflammatory markers such as IL-6, CRP, and PCT indicate early immune activation, while oxidative stress biomarkers, including 8-isoprostanes and malondialdehyde, quantify metabolic imbalance and ischemia-reperfusion injury. Neurotoxicity biomarkers such as S100beta, NSE, and GFAP allow early detection of subclinical cerebral injury, whereas kynurenine-pathway metabolites reflect neuroinflammation and the risk of postoperative cognitive dysfunction. Renal biomarkers such as NGAL, KIM-1, and cystatin C detect acute kidney injury significantly earlier than creatinine, and miR-122 holds strong potential as an early marker of hepatocellular injury. Genetic and epigenetic biomarkers-including polymorphisms in CYP2D6, CYP3A4/5, RYR1, OPRM1, and COMT, as well as microRNA-based signatures-enable individualized drug dosing and optimization of anesthetic strategies. Meanwhile, digital biomarkers such as EEG-derived indices, HRV, and NIRS provide continuous real-time physiological monitoring and can integrate with AI-based algorithms for predictive, adaptive anesthesia management. Although no single biomarker meets all criteria for an ideal clinical indicator, combining molecular, genetic, and digital biomarkers represents the most promising pathway toward fully personalized, safe, and outcome-optimized perioperative care.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41751199_causative-agent_0004548#mention-T1",
+      "canon:span": {
+        "start": 488,
+        "end": 501
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41751199_causative-agent_0004548#mention-T2",
+      "canon:span": {
+        "start": 876,
+        "end": 886
+      },
+      "canon:surface": "kynurenine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007737",
+      "canon:sourceNotation": "D007737",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41751199_causative-agent_0004548#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41751199_causative-agent_0004548#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41751199_causative-agent_0004548#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "41751199"
+      }
+    }
+  ]
+}

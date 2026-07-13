@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142636_causative-agent_0004053",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36142636_causative-agent_0004053",
+  "canon:title": "The Role of Vitamin D and Vitamin D Binding Protein in Chronic Liver Diseases.",
+  "canon:abstract": "Vitamin D (calciferol) is a fat-soluble vitamin that has a significant role in phospho-calcium metabolism, maintaining normal calcium levels and bone health development. The most important compounds of vitamin D are cholecalciferol (vitamin D3, or VD3) and ergocalciferol (vitamin D2, or VD2). Besides its major role in maintaining an adequate level of calcium and phosphate concentrations, vitamin D is involved in cell growth and differentiation and immune function. Recently, the association between vitamin D deficiency and the progression of fibrosis in chronic liver disease (CLD) was confirmed, given the hepatic activation process and high prevalence of vitamin D deficiency in these diseases. There are reports of vitamin D deficiency in CLD regardless of the etiology (chronic viral hepatitis, alcoholic cirrhosis, non-alcoholic fatty liver disease, primary biliary cirrhosis, or autoimmune hepatitis). Vitamin D binding protein (VDBP) is synthesized by the liver and has the role of binding and transporting vitamin D and its metabolites to the target organs. VDBP also plays an important role in inflammatory response secondary to tissue damage, being involved in the degradation of actin. As intense research during the last decades revealed the possible role of vitamin D in liver diseases, a deeper understanding of the vitamin D, vitamin D receptors (VDRs), and VDBP involvement in liver inflammation and fibrogenesis could represent the basis for the development of new strategies for diagnosis, prognosis, and treatment of liver diseases. This narrative review presents an overview of the evidence of the role of vitamin D and VDBP in CLD, both at the experimental and clinical levels.",
+  "canon:text": "The Role of Vitamin D and Vitamin D Binding Protein in Chronic Liver Diseases. Vitamin D (calciferol) is a fat-soluble vitamin that has a significant role in phospho-calcium metabolism, maintaining normal calcium levels and bone health development. The most important compounds of vitamin D are cholecalciferol (vitamin D3, or VD3) and ergocalciferol (vitamin D2, or VD2). Besides its major role in maintaining an adequate level of calcium and phosphate concentrations, vitamin D is involved in cell growth and differentiation and immune function. Recently, the association between vitamin D deficiency and the progression of fibrosis in chronic liver disease (CLD) was confirmed, given the hepatic activation process and high prevalence of vitamin D deficiency in these diseases. There are reports of vitamin D deficiency in CLD regardless of the etiology (chronic viral hepatitis, alcoholic cirrhosis, non-alcoholic fatty liver disease, primary biliary cirrhosis, or autoimmune hepatitis). Vitamin D binding protein (VDBP) is synthesized by the liver and has the role of binding and transporting vitamin D and its metabolites to the target organs. VDBP also plays an important role in inflammatory response secondary to tissue damage, being involved in the degradation of actin. As intense research during the last decades revealed the possible role of vitamin D in liver diseases, a deeper understanding of the vitamin D, vitamin D receptors (VDRs), and VDBP involvement in liver inflammation and fibrogenesis could represent the basis for the development of new strategies for diagnosis, prognosis, and treatment of liver diseases. This narrative review presents an overview of the evidence of the role of vitamin D and VDBP in CLD, both at the experimental and clinical levels.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142636_causative-agent_0004053#mention-T1",
+      "canon:span": {
+        "start": 883,
+        "end": 902
+      },
+      "canon:surface": "alcoholic cirrhosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008104",
+      "canon:sourceNotation": "D008104",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142636_causative-agent_0004053#mention-T2",
+      "canon:span": {
+        "start": 90,
+        "end": 100
+      },
+      "canon:surface": "calciferol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004872",
+      "canon:sourceNotation": "D004872",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142636_causative-agent_0004053#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142636_causative-agent_0004053#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142636_causative-agent_0004053#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36142636"
+      }
+    }
+  ]
+}

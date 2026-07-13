@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32434395_causative-agent_0003267",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32434395_causative-agent_0003267",
+  "canon:title": "Reversible Fulminant Hepatitis Secondary to Cocaine in the Setting of beta-Blocker Use.",
+  "canon:abstract": "Background. Fulminant hepatitis is acute hepatic injury with severe decline in hepatic function manifested by encephalopathy, hypercoagulable state, jaundice, renal failure, hypoglycemia, or a constellation of these symptoms in patients without preexisting liver disease. Etiologies include viral infections, hepatotoxic drugs, autoimmune diseases, vaso-occlusive diseases, sepsis, and malignant infiltration. Case Report. A 56-year-old man presented with acute heart failure in the setting of cocaine use. The patient subsequently developed fulminant hepatic failure manifested by acute hypoglycemia, elevated liver enzyme, and worsening liver function, which resolved over 1 week with supportive care. The patient was on beta-blocker, which was stopped during the admission. He was again admitted on several different occasion for cocaine-induced acute heart failure but did not develop hepatic failure as his beta-blocker was discontinued. Discussion. Cocaine has been known to cause hepatotoxicity in humans. However, our patient developed fulminant hepatic failure in the setting of concomitant cocaine and beta-blocker use likely secondary to unopposed alpha-adrenergic activity and ischemic hepatopathy. The patient did not develop hepatic failure on subsequent admissions with cocaine use after discontinuation of beta-blockers.",
+  "canon:text": "Reversible Fulminant Hepatitis Secondary to Cocaine in the Setting of beta-Blocker Use. Background. Fulminant hepatitis is acute hepatic injury with severe decline in hepatic function manifested by encephalopathy, hypercoagulable state, jaundice, renal failure, hypoglycemia, or a constellation of these symptoms in patients without preexisting liver disease. Etiologies include viral infections, hepatotoxic drugs, autoimmune diseases, vaso-occlusive diseases, sepsis, and malignant infiltration. Case Report. A 56-year-old man presented with acute heart failure in the setting of cocaine use. The patient subsequently developed fulminant hepatic failure manifested by acute hypoglycemia, elevated liver enzyme, and worsening liver function, which resolved over 1 week with supportive care. The patient was on beta-blocker, which was stopped during the admission. He was again admitted on several different occasion for cocaine-induced acute heart failure but did not develop hepatic failure as his beta-blocker was discontinued. Discussion. Cocaine has been known to cause hepatotoxicity in humans. However, our patient developed fulminant hepatic failure in the setting of concomitant cocaine and beta-blocker use likely secondary to unopposed alpha-adrenergic activity and ischemic hepatopathy. The patient did not develop hepatic failure on subsequent admissions with cocaine use after discontinuation of beta-blockers.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32434395_causative-agent_0003267#mention-T1",
+      "canon:span": {
+        "start": 129,
+        "end": 143
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32434395_causative-agent_0003267#mention-T2",
+      "canon:span": {
+        "start": 44,
+        "end": 51
+      },
+      "canon:surface": "Cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32434395_causative-agent_0003267#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32434395_causative-agent_0003267#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32434395_causative-agent_0003267#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32434395"
+      }
+    }
+  ]
+}

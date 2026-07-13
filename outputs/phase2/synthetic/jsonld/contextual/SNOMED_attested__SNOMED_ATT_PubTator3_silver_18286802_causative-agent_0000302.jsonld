@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18286802_causative-agent_0000302",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_18286802_causative-agent_0000302",
+  "canon:title": "Therapeutic options and challenges for substances of abuse.",
+  "canon:abstract": "Addiction to substances continues to be a significant public health concern in the United States. The following review of current pharmacological treatments discusses a range of substances: nicotine, alcohol, cocaine, and opioids. The goal is to provide an overview of currently available and new pharmacological treatments for substance use disorders, while also addressing the pharmacotherapeutic challenges remaining. The significant advances in pharmacotherapy have had limited utilization, however. For example, naltrexone for alcoholism is infrequently prescribed, buprenorphine for opiates still has relatively few qualified prescribers, and stimulants have no Food and Drug Administration-approved pharmacotherapy. These pharmacotherapies are needed, with the rate of even the relatively uncommon abuse of opiates now rising sharply.",
+  "canon:text": "Therapeutic options and challenges for substances of abuse. Addiction to substances continues to be a significant public health concern in the United States. The following review of current pharmacological treatments discusses a range of substances: nicotine, alcohol, cocaine, and opioids. The goal is to provide an overview of currently available and new pharmacological treatments for substance use disorders, while also addressing the pharmacotherapeutic challenges remaining. The significant advances in pharmacotherapy have had limited utilization, however. For example, naltrexone for alcoholism is infrequently prescribed, buprenorphine for opiates still has relatively few qualified prescribers, and stimulants have no Food and Drug Administration-approved pharmacotherapy. These pharmacotherapies are needed, with the rate of even the relatively uncommon abuse of opiates now rising sharply.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18286802_causative-agent_0000302#mention-T1",
+      "canon:span": {
+        "start": 592,
+        "end": 602
+      },
+      "canon:surface": "alcoholism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18286802_causative-agent_0000302#mention-T2",
+      "canon:span": {
+        "start": 269,
+        "end": 276
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18286802_causative-agent_0000302#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18286802_causative-agent_0000302#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_18286802_causative-agent_0000302#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "18286802"
+      }
+    }
+  ]
+}

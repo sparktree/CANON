@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32489556_causative-agent_0001127",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32489556_causative-agent_0001127",
+  "canon:title": "Natural products as safeguards against monosodium glutamate-induced toxicity.",
+  "canon:abstract": "Monosodium glutamate is a sodium salt of a nonessential amino acid, L-glutamic acid, which is widely used in food industry. Glutamate plays an important role in principal brain functions including formation and stabilization of synapses, memory, cognition, learning, as well as cellular metabolism. However, ingestion of foodstuffs rich in monosodium glutamate can result in the outbreak of several health disorders such as neurotoxicity, hepatotoxicity, obesity and diabetes. The usage of medicinal plants and their natural products as a therapy against MSG used in food industry has been suggested to be protective. Calendula officinalis, Curcuma longa, Green Tea, Ginkgo biloba and vitamins are some of the main natural products with protective effect against mentioned monosodium glutamate toxicity through different mechanisms. This review provides a summary on the toxicity of monosodium glutamate and the protective effects of natural products against monosodium glutamate -induced toxicity.",
+  "canon:text": "Natural products as safeguards against monosodium glutamate-induced toxicity. Monosodium glutamate is a sodium salt of a nonessential amino acid, L-glutamic acid, which is widely used in food industry. Glutamate plays an important role in principal brain functions including formation and stabilization of synapses, memory, cognition, learning, as well as cellular metabolism. However, ingestion of foodstuffs rich in monosodium glutamate can result in the outbreak of several health disorders such as neurotoxicity, hepatotoxicity, obesity and diabetes. The usage of medicinal plants and their natural products as a therapy against MSG used in food industry has been suggested to be protective. Calendula officinalis, Curcuma longa, Green Tea, Ginkgo biloba and vitamins are some of the main natural products with protective effect against mentioned monosodium glutamate toxicity through different mechanisms. This review provides a summary on the toxicity of monosodium glutamate and the protective effects of natural products against monosodium glutamate -induced toxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32489556_causative-agent_0001127#mention-T1",
+      "canon:span": {
+        "start": 502,
+        "end": 515
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32489556_causative-agent_0001127#mention-T2",
+      "canon:span": {
+        "start": 39,
+        "end": 59
+      },
+      "canon:surface": "monosodium glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012970",
+      "canon:sourceNotation": "D012970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32489556_causative-agent_0001127#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32489556_causative-agent_0001127#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32489556_causative-agent_0001127#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32489556"
+      }
+    }
+  ]
+}

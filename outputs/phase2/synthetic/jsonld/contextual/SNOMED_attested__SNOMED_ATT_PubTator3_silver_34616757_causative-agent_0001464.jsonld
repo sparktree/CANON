@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34616757_causative-agent_0001464",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34616757_causative-agent_0001464",
+  "canon:title": "Drug-Induced Liver Injury in COVID-19 Patients: A Systematic Review.",
+  "canon:abstract": "Introduction: The severity of COVID-19 may be correlated with the risk of liver injury development. An increasing number of studies indicate that degrees of hepatotoxicity has been associated with using some medications in the management of COVID-19 patients. However, limited studies had systematically investigated the evidence of drug-induced liver injury (DILI) in COVID-19 patients. Thus, this study aimed to examine DILI in COVID-19 patients. Methods: A systematic search was carried out in PubMed/Medline, EMBASE, and Web of Science up to December 30, 2020. Search items included \"SARS-CoV-2\", \"Coronavirus,\" COVID-19, and liver injury. Results: We included 22 related articles. Among included studies, there was five case report, five case series, four randomizes control trial (RCT), seven cohort studies, and one cross-sectional study. The drugs included in this systematic review were remdesivir, favipiravir, tocilizumab, hydroxychloroquine, and lopinavir/ritonavir. Among included studies, some studies revealed a direct role of drugs, while others couldn't certainly confirm that the liver injury was due to SARS-CoV-2 itself or administration of medications. However, a significant number of studies reported that liver injury could be attributable to drug administration. Discussion: Liver injury in COVID-19 patients could be caused by the virus itself or the administration of some types of drug. Intensive liver function monitoring should be considered for patients, especially patients who are treated with drugs such as remdesivir, lopinavir/ritonavir, and tocilizumab.",
+  "canon:text": "Drug-Induced Liver Injury in COVID-19 Patients: A Systematic Review. Introduction: The severity of COVID-19 may be correlated with the risk of liver injury development. An increasing number of studies indicate that degrees of hepatotoxicity has been associated with using some medications in the management of COVID-19 patients. However, limited studies had systematically investigated the evidence of drug-induced liver injury (DILI) in COVID-19 patients. Thus, this study aimed to examine DILI in COVID-19 patients. Methods: A systematic search was carried out in PubMed/Medline, EMBASE, and Web of Science up to December 30, 2020. Search items included \"SARS-CoV-2\", \"Coronavirus,\" COVID-19, and liver injury. Results: We included 22 related articles. Among included studies, there was five case report, five case series, four randomizes control trial (RCT), seven cohort studies, and one cross-sectional study. The drugs included in this systematic review were remdesivir, favipiravir, tocilizumab, hydroxychloroquine, and lopinavir/ritonavir. Among included studies, some studies revealed a direct role of drugs, while others couldn't certainly confirm that the liver injury was due to SARS-CoV-2 itself or administration of medications. However, a significant number of studies reported that liver injury could be attributable to drug administration. Discussion: Liver injury in COVID-19 patients could be caused by the virus itself or the administration of some types of drug. Intensive liver function monitoring should be considered for patients, especially patients who are treated with drugs such as remdesivir, lopinavir/ritonavir, and tocilizumab.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34616757_causative-agent_0001464#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 25
+      },
+      "canon:surface": "Drug-Induced Liver Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34616757_causative-agent_0001464#mention-T2",
+      "canon:span": {
+        "start": 1003,
+        "end": 1021
+      },
+      "canon:surface": "hydroxychloroquine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006886",
+      "canon:sourceNotation": "D006886",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34616757_causative-agent_0001464#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34616757_causative-agent_0001464#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34616757_causative-agent_0001464#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34616757"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34012861_after_0003549",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34012861_after_0003549",
+  "canon:title": "MR spectroscopy in pediatric neuroradiology.",
+  "canon:abstract": "Magnetic resonance spectroscopy (MRS), being able to identify and measure some brain components (metabolites) in pathologic lesions and in normal-appearing tissue, offers a valuable additional diagnostic tool to assess several pediatric neurological diseases. In this review we will illustrate the basic principles and clinical applications of brain proton (H1; hydrogen) MRS (H1MRS), by now the only MRS method widely available in clinical practice. Performing H1MRS in the brain is inherently less complicated than in other tissues (e.g., liver, muscle), in which spectra are heavily affected by magnetic field inhomogeneities, respiration artifacts, and dominating signals from the surrounding adipose tissues. H1MRS in pediatric neuroradiology has some advantages over acquisitions in adults (lack of motion due to children sedation and lack of brain iron deposition allow optimal results), but it requires a deep knowledge of pediatric pathologies and familiarity with the developmental changes in spectral patterns, particularly occurring in the first two years of life. Examples from our database, obtained mainly from a 1.5 Tesla clinical scanner in a time span of 15 years, will demonstrate the efficacy of H1MRS in the diagnosis of a wide range of selected pediatric pathologies, like brain tumors, infections, neonatal hypoxic-ischemic encephalopathy, metabolic and white matter disorders.",
+  "canon:text": "MR spectroscopy in pediatric neuroradiology. Magnetic resonance spectroscopy (MRS), being able to identify and measure some brain components (metabolites) in pathologic lesions and in normal-appearing tissue, offers a valuable additional diagnostic tool to assess several pediatric neurological diseases. In this review we will illustrate the basic principles and clinical applications of brain proton (H1; hydrogen) MRS (H1MRS), by now the only MRS method widely available in clinical practice. Performing H1MRS in the brain is inherently less complicated than in other tissues (e.g., liver, muscle), in which spectra are heavily affected by magnetic field inhomogeneities, respiration artifacts, and dominating signals from the surrounding adipose tissues. H1MRS in pediatric neuroradiology has some advantages over acquisitions in adults (lack of motion due to children sedation and lack of brain iron deposition allow optimal results), but it requires a deep knowledge of pediatric pathologies and familiarity with the developmental changes in spectral patterns, particularly occurring in the first two years of life. Examples from our database, obtained mainly from a 1.5 Tesla clinical scanner in a time span of 15 years, will demonstrate the efficacy of H1MRS in the diagnosis of a wide range of selected pediatric pathologies, like brain tumors, infections, neonatal hypoxic-ischemic encephalopathy, metabolic and white matter disorders.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34012861_after_0003549#mention-T1",
+      "canon:span": {
+        "start": 1375,
+        "end": 1406
+      },
+      "canon:surface": "hypoxic-ischemic encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34012861_after_0003549#mention-T2",
+      "canon:span": {
+        "start": 1408,
+        "end": 1444
+      },
+      "canon:surface": "metabolic and white matter disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056784",
+      "canon:sourceNotation": "D056784",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34012861_after_0003549#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34012861_after_0003549#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34012861_after_0003549#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34012861"
+      }
+    }
+  ]
+}

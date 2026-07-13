@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20407977_causative-agent_0002247",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20407977_causative-agent_0002247",
+  "canon:title": "Pharmacotherapy in the treatment of addiction: methadone.",
+  "canon:abstract": "Methadone maintenance treatment (MMT) is the most widely available pharmacotherapy for opioid addiction and has been shown to be an effective and safe treatment over a period of 40 years. Although women comprise approximately 40% of clients currently being treated in MMT programs, comparatively little research geared specifically toward this group has been published. This article begins with an overview of neurobiological studies on opioid addiction, including a discussion of gender differences, followed by a review of the pharmacology of methadone. The authors then examine the particular needs and differences of women being treated in MMTs, including co-dependence with other substances, women's health issues, and psychosocial needs unique to this population. Research shows that women have different substance abuse treatment needs in comparison to their male counterparts. One New York City MMT program that has attempted to address these differences is highlighted.",
+  "canon:text": "Pharmacotherapy in the treatment of addiction: methadone. Methadone maintenance treatment (MMT) is the most widely available pharmacotherapy for opioid addiction and has been shown to be an effective and safe treatment over a period of 40 years. Although women comprise approximately 40% of clients currently being treated in MMT programs, comparatively little research geared specifically toward this group has been published. This article begins with an overview of neurobiological studies on opioid addiction, including a discussion of gender differences, followed by a review of the pharmacology of methadone. The authors then examine the particular needs and differences of women being treated in MMTs, including co-dependence with other substances, women's health issues, and psychosocial needs unique to this population. Research shows that women have different substance abuse treatment needs in comparison to their male counterparts. One New York City MMT program that has attempted to address these differences is highlighted.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20407977_causative-agent_0002247#mention-T1",
+      "canon:span": {
+        "start": 145,
+        "end": 161
+      },
+      "canon:surface": "opioid addiction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20407977_causative-agent_0002247#mention-T2",
+      "canon:span": {
+        "start": 47,
+        "end": 56
+      },
+      "canon:surface": "methadone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008691",
+      "canon:sourceNotation": "D008691",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20407977_causative-agent_0002247#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20407977_causative-agent_0002247#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20407977_causative-agent_0002247#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20407977"
+      }
+    }
+  ]
+}

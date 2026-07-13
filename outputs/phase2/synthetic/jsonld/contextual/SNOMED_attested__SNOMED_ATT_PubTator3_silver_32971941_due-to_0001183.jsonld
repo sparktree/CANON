@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32971941_due-to_0001183",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32971941_due-to_0001183",
+  "canon:title": "Clinical Evidence of Antidepressant Effects of Insulin and Anti-Hyperglycemic Agents and Implications for the Pathophysiology of Depression-A Literature Review.",
+  "canon:abstract": "Close connections between depression and type 2 diabetes (T2DM) have been suggested by many epidemiological and experimental studies. Disturbances in insulin sensitivity due to the disruption of various molecular pathways cause insulin resistance, which underpins many metabolic disorders, including diabetes, as well as depression. Several anti-hyperglycemic agents have demonstrated antidepressant properties in clinical trials, probably due to their action on brain targets based on the shared pathophysiology of depression and T2DM. In this article, we review reports of clinical trials examining the antidepressant effect of these medications, including insulin, metformin, glucagon like peptide-1 receptor agonists (GLP-1RA), and peroxisome proliferator-activated receptor (PPAR)-gamma agonists, and briefly consider possible molecular mechanisms underlying the associations between amelioration of insulin resistance and improvement of depressive symptoms. In doing so, we intend to suggest an integrative perspective for understanding the pathophysiology of depression.",
+  "canon:text": "Clinical Evidence of Antidepressant Effects of Insulin and Anti-Hyperglycemic Agents and Implications for the Pathophysiology of Depression-A Literature Review. Close connections between depression and type 2 diabetes (T2DM) have been suggested by many epidemiological and experimental studies. Disturbances in insulin sensitivity due to the disruption of various molecular pathways cause insulin resistance, which underpins many metabolic disorders, including diabetes, as well as depression. Several anti-hyperglycemic agents have demonstrated antidepressant properties in clinical trials, probably due to their action on brain targets based on the shared pathophysiology of depression and T2DM. In this article, we review reports of clinical trials examining the antidepressant effect of these medications, including insulin, metformin, glucagon like peptide-1 receptor agonists (GLP-1RA), and peroxisome proliferator-activated receptor (PPAR)-gamma agonists, and briefly consider possible molecular mechanisms underlying the associations between amelioration of insulin resistance and improvement of depressive symptoms. In doing so, we intend to suggest an integrative perspective for understanding the pathophysiology of depression.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32971941_due-to_0001183#mention-T1",
+      "canon:span": {
+        "start": 64,
+        "end": 84
+      },
+      "canon:surface": "Hyperglycemic Agents",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32971941_due-to_0001183#mention-T2",
+      "canon:span": {
+        "start": 461,
+        "end": 469
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32971941_due-to_0001183#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32971941_due-to_0001183#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32971941_due-to_0001183#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32971941"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29527023_causative-agent_0000832",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29527023_causative-agent_0000832",
+  "canon:title": "Drug Reaction with Eosinophilia and Systemic Symptoms: An Update and Review of Recent Literature.",
+  "canon:abstract": "Drug reaction with eosinophilia and systemic symptoms (DRESS) syndrome, is also known as drug induced hypersensitivity syndrome and by various other names. It is now recognised as one of the severe cutaneous adverse reaction (SCAR) and can be potentially life-threatening. Historically, it was most frequently linked with phenytoin and was initially described as phenytoin hypersensitivity syndrome. However, it was later found to be caused by various other medications. Anticonvulsants and sulfonamides are the most common offender. Characteristically DRESS has a latent period of 2 to 6 weeks. The pathophysiology remains incompletely understood but involves reactivation of viruses and activation of lymphocyte. It is manifested most commonly with a morbilliform cutaneous eruption with fever and lymphadenopathy. The severity of this syndrome is related to the systemic involvement, which can result in multi-organ failure. Most important step in the management of DRESS is early diagnosis and immediate cessation of the suspected offending drug. Patients of DRESS syndrome should be managed in an intensive care set up for appropriate supportive care and infection control. Topical corticosteroids can give symptomatic relief, but systemic therapy with steroid and other immunosuppressant is usually required.",
+  "canon:text": "Drug Reaction with Eosinophilia and Systemic Symptoms: An Update and Review of Recent Literature. Drug reaction with eosinophilia and systemic symptoms (DRESS) syndrome, is also known as drug induced hypersensitivity syndrome and by various other names. It is now recognised as one of the severe cutaneous adverse reaction (SCAR) and can be potentially life-threatening. Historically, it was most frequently linked with phenytoin and was initially described as phenytoin hypersensitivity syndrome. However, it was later found to be caused by various other medications. Anticonvulsants and sulfonamides are the most common offender. Characteristically DRESS has a latent period of 2 to 6 weeks. The pathophysiology remains incompletely understood but involves reactivation of viruses and activation of lymphocyte. It is manifested most commonly with a morbilliform cutaneous eruption with fever and lymphadenopathy. The severity of this syndrome is related to the systemic involvement, which can result in multi-organ failure. Most important step in the management of DRESS is early diagnosis and immediate cessation of the suspected offending drug. Patients of DRESS syndrome should be managed in an intensive care set up for appropriate supportive care and infection control. Topical corticosteroids can give symptomatic relief, but systemic therapy with steroid and other immunosuppressant is usually required.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29527023_causative-agent_0000832#mention-T1",
+      "canon:span": {
+        "start": 864,
+        "end": 882
+      },
+      "canon:surface": "cutaneous eruption",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003875",
+      "canon:sourceNotation": "D003875",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29527023_causative-agent_0000832#mention-T2",
+      "canon:span": {
+        "start": 420,
+        "end": 429
+      },
+      "canon:surface": "phenytoin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010672",
+      "canon:sourceNotation": "D010672",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29527023_causative-agent_0000832#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29527023_causative-agent_0000832#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29527023_causative-agent_0000832#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29527023"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26557111_causative-agent_0002610",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26557111_causative-agent_0002610",
+  "canon:title": "The cross-talk of HIV-1 Tat and methamphetamine in HIV-associated neurocognitive disorders.",
+  "canon:abstract": "Antiretroviral therapy has dramatically improved the lives of human immunodeficiency virus 1 (HIV-1) infected individuals. Nonetheless, HIV-associated neurocognitive disorders (HAND), which range from undetectable neurocognitive impairments to severe dementia, still affect approximately 50% of the infected population, hampering their quality of life. The persistence of HAND is promoted by several factors, including longer life expectancies, the residual levels of virus in the central nervous system (CNS) and the continued presence of HIV-1 regulatory proteins such as the transactivator of transcription (Tat) in the brain. Tat is a secreted viral protein that crosses the blood-brain barrier into the CNS, where it has the ability to directly act on neurons and non-neuronal cells alike. These actions result in the release of soluble factors involved in inflammation, oxidative stress and excitotoxicity, ultimately resulting in neuronal damage. The percentage of methamphetamine (MA) abusers is high among the HIV-1-positive population compared to the general population. On the other hand, MA abuse is correlated with increased viral replication, enhanced Tat-mediated neurotoxicity and neurocognitive impairments. Although several strategies have been investigated to reduce HAND and MA use, no clinically approved treatment is currently available. Here, we review the latest findings of the effects of Tat and MA in HAND and discuss a few promising potential therapeutic developments. ",
+  "canon:text": "The cross-talk of HIV-1 Tat and methamphetamine in HIV-associated neurocognitive disorders. Antiretroviral therapy has dramatically improved the lives of human immunodeficiency virus 1 (HIV-1) infected individuals. Nonetheless, HIV-associated neurocognitive disorders (HAND), which range from undetectable neurocognitive impairments to severe dementia, still affect approximately 50% of the infected population, hampering their quality of life. The persistence of HAND is promoted by several factors, including longer life expectancies, the residual levels of virus in the central nervous system (CNS) and the continued presence of HIV-1 regulatory proteins such as the transactivator of transcription (Tat) in the brain. Tat is a secreted viral protein that crosses the blood-brain barrier into the CNS, where it has the ability to directly act on neurons and non-neuronal cells alike. These actions result in the release of soluble factors involved in inflammation, oxidative stress and excitotoxicity, ultimately resulting in neuronal damage. The percentage of methamphetamine (MA) abusers is high among the HIV-1-positive population compared to the general population. On the other hand, MA abuse is correlated with increased viral replication, enhanced Tat-mediated neurotoxicity and neurocognitive impairments. Although several strategies have been investigated to reduce HAND and MA use, no clinically approved treatment is currently available. Here, we review the latest findings of the effects of Tat and MA in HAND and discuss a few promising potential therapeutic developments. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26557111_causative-agent_0002610#mention-T1",
+      "canon:span": {
+        "start": 1271,
+        "end": 1284
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26557111_causative-agent_0002610#mention-T2",
+      "canon:span": {
+        "start": 32,
+        "end": 47
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26557111_causative-agent_0002610#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26557111_causative-agent_0002610#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26557111_causative-agent_0002610#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26557111"
+      }
+    }
+  ]
+}

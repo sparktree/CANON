@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36440223_after_0004136",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36440223_after_0004136",
+  "canon:title": "Syndromic and non-syndromic etiologies causing neonatal hypocalcemic seizures.",
+  "canon:abstract": "Background: The diagnosis of neonatal hypocalcemic seizures (HS) in newborns is made based on clinical signs and serum calcium level. Their etiology is broad and diverse, and timely detection and initiation of treatment is essential. Methods: We retrospectively reviewed 1029 patients admitted to the neonatal intensive care unit. Neonatal HS were diagnosed in 16 patients, and we compared etiologies and clinical outcomes, including clinical seizures and neurodevelopment at least over 1 year old. Results: The etiologies can be broadly categorized into 5 syndromic and 11 non-syndromic neonatal HS. Syndromic neonatal HS included 3 Digeorge syndrome, 1 Kleefstra syndrome and 1 Alstrom syndrome. Non-syndromic neonatal HS included 8 vitamin D deficiency, 1 hypoparathyroidism, and 2 hypoxic-ischemic encephalopathy. Patients with syndromic neonatal HS were found to have worse clinical outcomes than those with nonsyndromic HS. In eight patients with vitamin D deficiency, neurodevelopment was normal. Five of five patients (100%) with syndromic HS used two or more antiseizure drugs. However, among patients with non-syndromic neonatal HS, only one of 11 (9.1%) used more than one drug (p = 0.001). Conclusion: This finding highlighted that syndromic hypocalcemic seizures in newborns have worse neurodevelopmental outcomes and are more often difficult to manage, and would benefit from a genetic diagnostic approach.",
+  "canon:text": "Syndromic and non-syndromic etiologies causing neonatal hypocalcemic seizures. Background: The diagnosis of neonatal hypocalcemic seizures (HS) in newborns is made based on clinical signs and serum calcium level. Their etiology is broad and diverse, and timely detection and initiation of treatment is essential. Methods: We retrospectively reviewed 1029 patients admitted to the neonatal intensive care unit. Neonatal HS were diagnosed in 16 patients, and we compared etiologies and clinical outcomes, including clinical seizures and neurodevelopment at least over 1 year old. Results: The etiologies can be broadly categorized into 5 syndromic and 11 non-syndromic neonatal HS. Syndromic neonatal HS included 3 Digeorge syndrome, 1 Kleefstra syndrome and 1 Alstrom syndrome. Non-syndromic neonatal HS included 8 vitamin D deficiency, 1 hypoparathyroidism, and 2 hypoxic-ischemic encephalopathy. Patients with syndromic neonatal HS were found to have worse clinical outcomes than those with nonsyndromic HS. In eight patients with vitamin D deficiency, neurodevelopment was normal. Five of five patients (100%) with syndromic HS used two or more antiseizure drugs. However, among patients with non-syndromic neonatal HS, only one of 11 (9.1%) used more than one drug (p = 0.001). Conclusion: This finding highlighted that syndromic hypocalcemic seizures in newborns have worse neurodevelopmental outcomes and are more often difficult to manage, and would benefit from a genetic diagnostic approach.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36440223_after_0004136#mention-T1",
+      "canon:span": {
+        "start": 864,
+        "end": 895
+      },
+      "canon:surface": "hypoxic-ischemic encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36440223_after_0004136#mention-T2",
+      "canon:span": {
+        "start": 838,
+        "end": 856
+      },
+      "canon:surface": "hypoparathyroidism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007011",
+      "canon:sourceNotation": "D007011",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36440223_after_0004136#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36440223_after_0004136#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36440223_after_0004136#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36440223"
+      }
+    }
+  ]
+}

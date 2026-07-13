@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31405030_due-to_0001008",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31405030_due-to_0001008",
+  "canon:title": "Insights on the Use of alpha-Lipoic Acid for Therapeutic Purposes.",
+  "canon:abstract": "alpha-lipoic acid (ALA, thioctic acid) is an organosulfur component produced from plants, animals, and humans. It has various properties, among them great antioxidant potential and is widely used as a racemic drug for diabetic polyneuropathy-associated pain and paresthesia. Naturally, ALA is located in mitochondria, where it is used as a cofactor for pyruvate dehydrogenase (PDH) and alpha-ketoglutarate dehydrogenase complexes. Despite its various potentials, ALA therapeutic efficacy is relatively low due to its pharmacokinetic profile. Data suggests that ALA has a short half-life and bioavailability (about 30%) triggered by its hepatic degradation, reduced solubility as well as instability in the stomach. However, the use of various innovative formulations has greatly improved ALA bioavailability. The R enantiomer of ALA shows better pharmacokinetic parameters, including increased bioavailability as compared to its S enantiomer. Indeed, the use of amphiphilic matrices has capability to improve ALA bioavailability and intestinal absorption. Also, ALA's liquid formulations are associated with greater plasma concentration and bioavailability as compared to its solidified dosage form. Thus, improved formulations can increase both ALA absorption and bioavailability, leading to a raise in therapeutic efficacy. Interestingly, ALA bioavailability will be dependent on age, while no difference has been found for gender. The present review aims to provide an updated on studies from preclinical to clinical trials assessing ALA's usages in diabetic patients with neuropathy, obesity, central nervous system-related diseases and abnormalities in pregnancy.",
+  "canon:text": "Insights on the Use of alpha-Lipoic Acid for Therapeutic Purposes. alpha-lipoic acid (ALA, thioctic acid) is an organosulfur component produced from plants, animals, and humans. It has various properties, among them great antioxidant potential and is widely used as a racemic drug for diabetic polyneuropathy-associated pain and paresthesia. Naturally, ALA is located in mitochondria, where it is used as a cofactor for pyruvate dehydrogenase (PDH) and alpha-ketoglutarate dehydrogenase complexes. Despite its various potentials, ALA therapeutic efficacy is relatively low due to its pharmacokinetic profile. Data suggests that ALA has a short half-life and bioavailability (about 30%) triggered by its hepatic degradation, reduced solubility as well as instability in the stomach. However, the use of various innovative formulations has greatly improved ALA bioavailability. The R enantiomer of ALA shows better pharmacokinetic parameters, including increased bioavailability as compared to its S enantiomer. Indeed, the use of amphiphilic matrices has capability to improve ALA bioavailability and intestinal absorption. Also, ALA's liquid formulations are associated with greater plasma concentration and bioavailability as compared to its solidified dosage form. Thus, improved formulations can increase both ALA absorption and bioavailability, leading to a raise in therapeutic efficacy. Interestingly, ALA bioavailability will be dependent on age, while no difference has been found for gender. The present review aims to provide an updated on studies from preclinical to clinical trials assessing ALA's usages in diabetic patients with neuropathy, obesity, central nervous system-related diseases and abnormalities in pregnancy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31405030_due-to_0001008#mention-T1",
+      "canon:span": {
+        "start": 285,
+        "end": 308
+      },
+      "canon:surface": "diabetic polyneuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31405030_due-to_0001008#mention-T2",
+      "canon:span": {
+        "start": 1620,
+        "end": 1628
+      },
+      "canon:surface": "diabetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31405030_due-to_0001008#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31405030_due-to_0001008#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31405030_due-to_0001008#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31405030"
+      }
+    }
+  ]
+}

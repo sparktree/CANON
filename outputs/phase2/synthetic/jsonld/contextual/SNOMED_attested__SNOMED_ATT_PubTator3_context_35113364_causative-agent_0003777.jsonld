@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35113364_causative-agent_0003777",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35113364_causative-agent_0003777",
+  "canon:title": "The Role of Patch Testing in Evaluating Delayed Hypersensitivity Reactions to Medications.",
+  "canon:abstract": "Confirming drug imputability is an important step in the management of cutaneous adverse drug reactions (CADR). Re-challenge is inconvenient and in many cases life threatening. We review the literature on ideal patch testing technique for specific CADRs. Testing should be performed approximately 3 months after the resolution of the eruption using standard patch testing techniques. Commercially available patch test preparations are available for a minority of drugs, so in most cases, testing should be performed with the drug at various recommended concentrations and in different vehicles. Testing to all known excipients, such as dyes, vehicles and preservatives is also important. Immunosuppressive medications should be discontinued or down titrated to the lowest tolerable dose to decrease the risk of false negative reactions. We provide an overview of expert recommendations and extant evidence on the utility of patch testing for identifying the culprit drug in common CADRs and for specific drug or drug classes. Overall, there appears to be significant variability in the patch test positivity of different drugs, which is likely the result of factors intrinsic to the drug such as dermal absorption (as a function of lipophilicity and molecular size) and whether the drug itself or a downstream metabolite is implicated in the immune reaction. Drugs with high patch test positivity rates include beta-lactam antibiotics, aromatic anticonvulsants, phenytoin, and corticosteroids, among others. Patch testing positivity varies both as a function of the drug and type of CADR. The sum of the evidence suggests that patch testing in the setting of morbilliform eruptions, fixed drug eruption, acute generalized exanthematous pustulosis, and possibly also drug-induced hypersensitivity syndrome, photoallergic and eczematous reactions may be worthwhile, although utility of testing may vary on the specific drug in question for the eruption. It appears to be of limited utility and is not recommended in the setting of other complex CADR, such as SJS/TEN and leukocytoclastic vasculitis.",
+  "canon:text": "The Role of Patch Testing in Evaluating Delayed Hypersensitivity Reactions to Medications. Confirming drug imputability is an important step in the management of cutaneous adverse drug reactions (CADR). Re-challenge is inconvenient and in many cases life threatening. We review the literature on ideal patch testing technique for specific CADRs. Testing should be performed approximately 3 months after the resolution of the eruption using standard patch testing techniques. Commercially available patch test preparations are available for a minority of drugs, so in most cases, testing should be performed with the drug at various recommended concentrations and in different vehicles. Testing to all known excipients, such as dyes, vehicles and preservatives is also important. Immunosuppressive medications should be discontinued or down titrated to the lowest tolerable dose to decrease the risk of false negative reactions. We provide an overview of expert recommendations and extant evidence on the utility of patch testing for identifying the culprit drug in common CADRs and for specific drug or drug classes. Overall, there appears to be significant variability in the patch test positivity of different drugs, which is likely the result of factors intrinsic to the drug such as dermal absorption (as a function of lipophilicity and molecular size) and whether the drug itself or a downstream metabolite is implicated in the immune reaction. Drugs with high patch test positivity rates include beta-lactam antibiotics, aromatic anticonvulsants, phenytoin, and corticosteroids, among others. Patch testing positivity varies both as a function of the drug and type of CADR. The sum of the evidence suggests that patch testing in the setting of morbilliform eruptions, fixed drug eruption, acute generalized exanthematous pustulosis, and possibly also drug-induced hypersensitivity syndrome, photoallergic and eczematous reactions may be worthwhile, although utility of testing may vary on the specific drug in question for the eruption. It appears to be of limited utility and is not recommended in the setting of other complex CADR, such as SJS/TEN and leukocytoclastic vasculitis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35113364_causative-agent_0003777#mention-T1",
+      "canon:span": {
+        "start": 425,
+        "end": 433
+      },
+      "canon:surface": "eruption",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003875",
+      "canon:sourceNotation": "D003875",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35113364_causative-agent_0003777#mention-T2",
+      "canon:span": {
+        "start": 1553,
+        "end": 1562
+      },
+      "canon:surface": "phenytoin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010672",
+      "canon:sourceNotation": "D010672",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35113364_causative-agent_0003777#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35113364_causative-agent_0003777#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35113364_causative-agent_0003777#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35113364"
+      }
+    }
+  ]
+}

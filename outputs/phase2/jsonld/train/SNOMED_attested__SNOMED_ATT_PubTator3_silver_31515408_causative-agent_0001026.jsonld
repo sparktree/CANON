@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31515408_causative-agent_0001026",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31515408_causative-agent_0001026",
+  "canon:title": "ERS guidelines on the diagnosis and treatment of chronic cough in adults and children.",
+  "canon:abstract": "These guidelines incorporate the recent advances in chronic cough pathophysiology, diagnosis and treatment. The concept of cough hypersensitivity has allowed an umbrella term that explains the exquisite sensitivity of patients to external stimuli such a cold air, perfumes, smoke and bleach. Thus, adults with chronic cough now have a firm physical explanation for their symptoms based on vagal afferent hypersensitivity. Different treatable traits exist with cough variant asthma (CVA)/eosinophilic bronchitis responding to anti-inflammatory treatment and non-acid reflux being treated with promotility agents rather the anti-acid drugs. An alternative antitussive strategy is to reduce hypersensitivity by neuromodulation. Low-dose morphine is highly effective in a subset of patients with cough resistant to other treatments. Gabapentin and pregabalin are also advocated, but in clinical experience they are limited by adverse events. Perhaps the most promising future developments in pharmacotherapy are drugs which tackle neuronal hypersensitivity by blocking excitability of afferent nerves by inhibiting targets such as the ATP receptor (P2X3). Finally, cough suppression therapy when performed by competent practitioners can be highly effective. Children are not small adults and a pursuit of an underlying cause for cough is advocated. Thus, in toddlers, inhalation of a foreign body is common. Persistent bacterial bronchitis is a common and previously unrecognised cause of wet cough in children. Antibiotics (drug, dose and duration need to be determined) can be curative. A paediatric-specific algorithm should be used.",
+  "canon:text": "ERS guidelines on the diagnosis and treatment of chronic cough in adults and children. These guidelines incorporate the recent advances in chronic cough pathophysiology, diagnosis and treatment. The concept of cough hypersensitivity has allowed an umbrella term that explains the exquisite sensitivity of patients to external stimuli such a cold air, perfumes, smoke and bleach. Thus, adults with chronic cough now have a firm physical explanation for their symptoms based on vagal afferent hypersensitivity. Different treatable traits exist with cough variant asthma (CVA)/eosinophilic bronchitis responding to anti-inflammatory treatment and non-acid reflux being treated with promotility agents rather the anti-acid drugs. An alternative antitussive strategy is to reduce hypersensitivity by neuromodulation. Low-dose morphine is highly effective in a subset of patients with cough resistant to other treatments. Gabapentin and pregabalin are also advocated, but in clinical experience they are limited by adverse events. Perhaps the most promising future developments in pharmacotherapy are drugs which tackle neuronal hypersensitivity by blocking excitability of afferent nerves by inhibiting targets such as the ATP receptor (P2X3). Finally, cough suppression therapy when performed by competent practitioners can be highly effective. Children are not small adults and a pursuit of an underlying cause for cough is advocated. Thus, in toddlers, inhalation of a foreign body is common. Persistent bacterial bronchitis is a common and previously unrecognised cause of wet cough in children. Antibiotics (drug, dose and duration need to be determined) can be curative. A paediatric-specific algorithm should be used.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31515408_causative-agent_0001026#mention-T1",
+      "canon:span": {
+        "start": 491,
+        "end": 507
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31515408_causative-agent_0001026#mention-T2",
+      "canon:span": {
+        "start": 821,
+        "end": 829
+      },
+      "canon:surface": "morphine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009020",
+      "canon:sourceNotation": "D009020",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31515408_causative-agent_0001026#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31515408_causative-agent_0001026#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31515408_causative-agent_0001026#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31515408"
+      }
+    }
+  ]
+}

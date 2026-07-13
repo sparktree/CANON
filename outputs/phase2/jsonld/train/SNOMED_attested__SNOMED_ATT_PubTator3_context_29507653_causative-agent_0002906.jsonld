@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29507653_causative-agent_0002906",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29507653_causative-agent_0002906",
+  "canon:title": "The Potential and Action Mechanism of Polyphenols in the Treatment of Liver Diseases.",
+  "canon:abstract": "Liver disease, involving a wide range of liver pathologies from fatty liver, hepatitis, and fibrosis to cirrhosis and hepatocellular carcinoma, is a serious health problem worldwide. In recent years, many natural foods and herbs with abundant phytochemicals have been proposed as health supplementation for patients with hepatic disorders. As an important category of phytochemicals, natural polyphenols have attracted increasing attention as potential agents for the prevention and treatment of liver diseases. The striking capacities in remitting oxidative stress, lipid metabolism, insulin resistance, and inflammation put polyphenols in the spotlight for the therapies of liver diseases. It has been reported that many polyphenols from a wide range of foods and herbs exert therapeutic effects on liver injuries via complicated mechanisms. Therefore, it is necessary to have a systematical review to sort out current researches to help better understand the potentials of polyphenols in liver diseases. In this review, we aim to summarize and update the existing evidence of natural polyphenols in the treatment of various liver diseases by in vitro, in vivo, and clinical studies, while special attention is paid to the action mechanisms.",
+  "canon:text": "The Potential and Action Mechanism of Polyphenols in the Treatment of Liver Diseases. Liver disease, involving a wide range of liver pathologies from fatty liver, hepatitis, and fibrosis to cirrhosis and hepatocellular carcinoma, is a serious health problem worldwide. In recent years, many natural foods and herbs with abundant phytochemicals have been proposed as health supplementation for patients with hepatic disorders. As an important category of phytochemicals, natural polyphenols have attracted increasing attention as potential agents for the prevention and treatment of liver diseases. The striking capacities in remitting oxidative stress, lipid metabolism, insulin resistance, and inflammation put polyphenols in the spotlight for the therapies of liver diseases. It has been reported that many polyphenols from a wide range of foods and herbs exert therapeutic effects on liver injuries via complicated mechanisms. Therefore, it is necessary to have a systematical review to sort out current researches to help better understand the potentials of polyphenols in liver diseases. In this review, we aim to summarize and update the existing evidence of natural polyphenols in the treatment of various liver diseases by in vitro, in vivo, and clinical studies, while special attention is paid to the action mechanisms.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29507653_causative-agent_0002906#mention-T1",
+      "canon:span": {
+        "start": 163,
+        "end": 172
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29507653_causative-agent_0002906#mention-T2",
+      "canon:span": {
+        "start": 653,
+        "end": 658
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29507653_causative-agent_0002906#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29507653_causative-agent_0002906#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29507653_causative-agent_0002906#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29507653"
+      }
+    }
+  ]
+}

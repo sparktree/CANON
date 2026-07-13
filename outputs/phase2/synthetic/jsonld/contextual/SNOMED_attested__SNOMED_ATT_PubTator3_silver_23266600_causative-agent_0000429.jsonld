@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23266600_causative-agent_0000429",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_23266600_causative-agent_0000429",
+  "canon:title": "Metals, oxidative stress and neurodegeneration: a focus on iron, manganese and mercury.",
+  "canon:abstract": "Essential metals are crucial for the maintenance of cell homeostasis. Among the 23 elements that have known physiological functions in humans, 12 are metals, including iron (Fe) and manganese (Mn). Nevertheless, excessive exposure to these metals may lead to pathological conditions, including neurodegeneration. Similarly, exposure to metals that do not have known biological functions, such as mercury (Hg), also present great health concerns. This review focuses on the neurodegenerative mechanisms and effects of Fe, Mn and Hg. Oxidative stress (OS), particularly in mitochondria, is a common feature of Fe, Mn and Hg toxicity. However, the primary molecular targets triggering OS are distinct. Free cationic iron is a potent pro-oxidant and can initiate a set of reactions that form extremely reactive products, such as OH. Mn can oxidize dopamine (DA), generating reactive species and also affect mitochondrial function, leading to accumulation of metabolites and culminating with OS. Cationic Hg forms have strong affinity for nucleophiles, such as -SH and -SeH. Therefore, they target critical thiol- and selenol-molecules with antioxidant properties. Finally, we address the main sources of exposure to these metals, their transport mechanisms into the brain, and therapeutic modalities to mitigate their neurotoxic effects.",
+  "canon:text": "Metals, oxidative stress and neurodegeneration: a focus on iron, manganese and mercury. Essential metals are crucial for the maintenance of cell homeostasis. Among the 23 elements that have known physiological functions in humans, 12 are metals, including iron (Fe) and manganese (Mn). Nevertheless, excessive exposure to these metals may lead to pathological conditions, including neurodegeneration. Similarly, exposure to metals that do not have known biological functions, such as mercury (Hg), also present great health concerns. This review focuses on the neurodegenerative mechanisms and effects of Fe, Mn and Hg. Oxidative stress (OS), particularly in mitochondria, is a common feature of Fe, Mn and Hg toxicity. However, the primary molecular targets triggering OS are distinct. Free cationic iron is a potent pro-oxidant and can initiate a set of reactions that form extremely reactive products, such as OH. Mn can oxidize dopamine (DA), generating reactive species and also affect mitochondrial function, leading to accumulation of metabolites and culminating with OS. Cationic Hg forms have strong affinity for nucleophiles, such as -SH and -SeH. Therefore, they target critical thiol- and selenol-molecules with antioxidant properties. Finally, we address the main sources of exposure to these metals, their transport mechanisms into the brain, and therapeutic modalities to mitigate their neurotoxic effects.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23266600_causative-agent_0000429#mention-T1",
+      "canon:span": {
+        "start": 1402,
+        "end": 1412
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23266600_causative-agent_0000429#mention-T2",
+      "canon:span": {
+        "start": 932,
+        "end": 940
+      },
+      "canon:surface": "dopamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004298",
+      "canon:sourceNotation": "D004298",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23266600_causative-agent_0000429#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23266600_causative-agent_0000429#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23266600_causative-agent_0000429#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "23266600"
+      }
+    }
+  ]
+}

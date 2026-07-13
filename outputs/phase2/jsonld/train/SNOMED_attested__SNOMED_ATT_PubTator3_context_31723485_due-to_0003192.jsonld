@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31723485_due-to_0003192",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31723485_due-to_0003192",
+  "canon:title": "Relationship Between Immunosuppressive Therapy and the Development of Infectious Complications Among Patients with Anti-neutrophil Cytoplasmic Antibody-associated Vasculitis: A Single-center, Retrospective Observational Study.",
+  "canon:abstract": "Introduction Infectious complications are the leading cause of death in patients with anti-neutrophil cytoplasmic antibody-associated vasculitis (AAV). However, the relationship between initial immunosuppressive therapy and the development of infectious complications and the details of infectious complications among patients with AAV are uncertain. We thus aimed to determine the association between initial immunosuppressive therapy and infectious complications. Material and methods Forty-seven patients with newly diagnosed AAV were enrolled in this retrospective observational study (patients with eosinophilic granulomatous polyangiitis were excluded). We statistically determined the association between types of initial immunosuppressive therapy (methylprednisolone pulse and/or cyclophosphamide therapy) and the development of infectious complications. In addition, we investigated the causes and timing of the onset of infectious complications. Results Twenty-one (21; 44.7%) patients required antibiotic, antimycotic, or antiviral therapy because of the development of infectious complications. Multiple logistic regression analyses adjusted for age and sex revealed that methylprednisolone pulse and cyclophosphamide therapy were significantly associated with the development of infectious complications (odds ratio (OR) 4.85, 95% confidence interval (CI) 1.09-21.5, p = 0.038; OR 5.32, 95% CI 1.28-22.2, p = 0.022, respectively). Bacterial pneumonia and sepsis occurred in 10 (47.6%) and 6 (28.6%) patients, respectively. Almost half of these infectious complications, including fungal infection, developed within six months from the start of initial treatment. Conclusion Among patients with AAV, methylprednisolone pulse and cyclophosphamide therapy may increase the risk of developing infectious complications, such as pneumonia and sepsis, including fungal infection, particularly within six months from the initiation of treatment.",
+  "canon:text": "Relationship Between Immunosuppressive Therapy and the Development of Infectious Complications Among Patients with Anti-neutrophil Cytoplasmic Antibody-associated Vasculitis: A Single-center, Retrospective Observational Study. Introduction Infectious complications are the leading cause of death in patients with anti-neutrophil cytoplasmic antibody-associated vasculitis (AAV). However, the relationship between initial immunosuppressive therapy and the development of infectious complications and the details of infectious complications among patients with AAV are uncertain. We thus aimed to determine the association between initial immunosuppressive therapy and infectious complications. Material and methods Forty-seven patients with newly diagnosed AAV were enrolled in this retrospective observational study (patients with eosinophilic granulomatous polyangiitis were excluded). We statistically determined the association between types of initial immunosuppressive therapy (methylprednisolone pulse and/or cyclophosphamide therapy) and the development of infectious complications. In addition, we investigated the causes and timing of the onset of infectious complications. Results Twenty-one (21; 44.7%) patients required antibiotic, antimycotic, or antiviral therapy because of the development of infectious complications. Multiple logistic regression analyses adjusted for age and sex revealed that methylprednisolone pulse and cyclophosphamide therapy were significantly associated with the development of infectious complications (odds ratio (OR) 4.85, 95% confidence interval (CI) 1.09-21.5, p = 0.038; OR 5.32, 95% CI 1.28-22.2, p = 0.022, respectively). Bacterial pneumonia and sepsis occurred in 10 (47.6%) and 6 (28.6%) patients, respectively. Almost half of these infectious complications, including fungal infection, developed within six months from the start of initial treatment. Conclusion Among patients with AAV, methylprednisolone pulse and cyclophosphamide therapy may increase the risk of developing infectious complications, such as pneumonia and sepsis, including fungal infection, particularly within six months from the initiation of treatment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31723485_due-to_0003192#mention-T1",
+      "canon:span": {
+        "start": 1695,
+        "end": 1701
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31723485_due-to_0003192#mention-T2",
+      "canon:span": {
+        "start": 1681,
+        "end": 1690
+      },
+      "canon:surface": "pneumonia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011014",
+      "canon:sourceNotation": "D011014",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31723485_due-to_0003192#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31723485_due-to_0003192#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31723485_due-to_0003192#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31723485"
+      }
+    }
+  ]
+}

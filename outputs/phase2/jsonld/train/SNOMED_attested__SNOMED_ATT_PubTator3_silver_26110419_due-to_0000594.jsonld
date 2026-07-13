@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000594",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26110419_due-to_0000594",
+  "canon:title": "Metabolic Profiles in Ovine Carotid Arteries with Developmental Maturation and Long-Term Hypoxia.",
+  "canon:abstract": "BACKGROUND: Long-term hypoxia (LTH) is an important stressor related to health and disease during development. At different time points from fetus to adult, we are exposed to hypoxic stress because of placental insufficiency, high-altitude residence, smoking, chronic anemia, pulmonary, and heart disorders, as well as cancers. Intrauterine hypoxia can lead to fetal growth restriction and long-term sequelae such as cognitive impairments, hypertension, cardiovascular disorders, diabetes, and schizophrenia. Similarly, prolonged hypoxic exposure during adult life can lead to acute mountain sickness, chronic fatigue, chronic headache, cognitive impairment, acute cerebral and/or pulmonary edema, and death. AIM: LTH also can lead to alteration in metabolites such as fumarate, 2-oxoglutarate, malate, and lactate, which are linked to epigenetic regulation of gene expression. Importantly, during the intrauterine life, a fetus is under a relative hypoxic environment, as compared to newborn or adult. Thus, the changes in gene expression with development from fetus to newborn to adult may be as a consequence of underlying changes in the metabolic profile because of the hypoxic environment along with developmental maturation. To examine this possibility, we examined the metabolic profile in carotid arteries from near-term fetus, newborn, and adult sheep in both normoxic and long-term hypoxic acclimatized groups. RESULTS: Our results demonstrate that LTH differentially regulated glucose metabolism, mitochondrial metabolism, nicotinamide cofactor metabolism, oxidative stress and antioxidants, membrane lipid hydrolysis, and free fatty acid metabolism, each of which may play a role in genetic-epigenetic regulation.",
+  "canon:text": "Metabolic Profiles in Ovine Carotid Arteries with Developmental Maturation and Long-Term Hypoxia. BACKGROUND: Long-term hypoxia (LTH) is an important stressor related to health and disease during development. At different time points from fetus to adult, we are exposed to hypoxic stress because of placental insufficiency, high-altitude residence, smoking, chronic anemia, pulmonary, and heart disorders, as well as cancers. Intrauterine hypoxia can lead to fetal growth restriction and long-term sequelae such as cognitive impairments, hypertension, cardiovascular disorders, diabetes, and schizophrenia. Similarly, prolonged hypoxic exposure during adult life can lead to acute mountain sickness, chronic fatigue, chronic headache, cognitive impairment, acute cerebral and/or pulmonary edema, and death. AIM: LTH also can lead to alteration in metabolites such as fumarate, 2-oxoglutarate, malate, and lactate, which are linked to epigenetic regulation of gene expression. Importantly, during the intrauterine life, a fetus is under a relative hypoxic environment, as compared to newborn or adult. Thus, the changes in gene expression with development from fetus to newborn to adult may be as a consequence of underlying changes in the metabolic profile because of the hypoxic environment along with developmental maturation. To examine this possibility, we examined the metabolic profile in carotid arteries from near-term fetus, newborn, and adult sheep in both normoxic and long-term hypoxic acclimatized groups. RESULTS: Our results demonstrate that LTH differentially regulated glucose metabolism, mitochondrial metabolism, nicotinamide cofactor metabolism, oxidative stress and antioxidants, membrane lipid hydrolysis, and free fatty acid metabolism, each of which may play a role in genetic-epigenetic regulation.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000594#mention-T1",
+      "canon:span": {
+        "start": 374,
+        "end": 404
+      },
+      "canon:surface": "pulmonary, and heart disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011660",
+      "canon:sourceNotation": "D011660",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000594#mention-T2",
+      "canon:span": {
+        "start": 366,
+        "end": 372
+      },
+      "canon:surface": "anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000740",
+      "canon:sourceNotation": "D000740",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000594#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000594#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26110419_due-to_0000594#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26110419"
+      }
+    }
+  ]
+}

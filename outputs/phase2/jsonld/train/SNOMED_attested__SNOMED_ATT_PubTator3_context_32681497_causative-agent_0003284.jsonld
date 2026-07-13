@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32681497_causative-agent_0003284",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32681497_causative-agent_0003284",
+  "canon:title": "COVID-19 as part of the hyperferritinemic syndromes: the role of iron depletion therapy.",
+  "canon:abstract": "SARS-CoV-2 infection is characterized by a protean clinical picture that can range from asymptomatic patients to life-threatening conditions. Severe COVID-19 patients often display a severe pulmonary involvement and develop neutrophilia, lymphopenia, and strikingly elevated levels of IL-6. There is an over-exuberant cytokine release with hyperferritinemia leading to the idea that COVID-19 is part of the hyperferritinemic syndrome spectrum. Indeed, very high levels of ferritin can occur in other diseases including hemophagocytic lymphohistiocytosis, macrophage activation syndrome, adult-onset Still's disease, catastrophic antiphospholipid syndrome and septic shock. Numerous studies have demonstrated the immunomodulatory effects of ferritin and its association with mortality and sustained inflammatory process. High levels of free iron are harmful in tissues, especially through the redox damage that can lead to fibrosis. Iron chelation represents a pillar in the treatment of iron overload. In addition, it was proven to have an anti-viral and anti-fibrotic activity. Herein, we analyse the pathogenic role of ferritin and iron during SARS-CoV-2 infection and propose iron depletion therapy as a novel therapeutic approach in the COVID-19 pandemic.",
+  "canon:text": "COVID-19 as part of the hyperferritinemic syndromes: the role of iron depletion therapy. SARS-CoV-2 infection is characterized by a protean clinical picture that can range from asymptomatic patients to life-threatening conditions. Severe COVID-19 patients often display a severe pulmonary involvement and develop neutrophilia, lymphopenia, and strikingly elevated levels of IL-6. There is an over-exuberant cytokine release with hyperferritinemia leading to the idea that COVID-19 is part of the hyperferritinemic syndrome spectrum. Indeed, very high levels of ferritin can occur in other diseases including hemophagocytic lymphohistiocytosis, macrophage activation syndrome, adult-onset Still's disease, catastrophic antiphospholipid syndrome and septic shock. Numerous studies have demonstrated the immunomodulatory effects of ferritin and its association with mortality and sustained inflammatory process. High levels of free iron are harmful in tissues, especially through the redox damage that can lead to fibrosis. Iron chelation represents a pillar in the treatment of iron overload. In addition, it was proven to have an anti-viral and anti-fibrotic activity. Herein, we analyse the pathogenic role of ferritin and iron during SARS-CoV-2 infection and propose iron depletion therapy as a novel therapeutic approach in the COVID-19 pandemic.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32681497_causative-agent_0003284#mention-T1",
+      "canon:span": {
+        "start": 1076,
+        "end": 1089
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32681497_causative-agent_0003284#mention-T2",
+      "canon:span": {
+        "start": 65,
+        "end": 69
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32681497_causative-agent_0003284#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32681497_causative-agent_0003284#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32681497_causative-agent_0003284#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32681497"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26751438_causative-agent_0002626",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26751438_causative-agent_0002626",
+  "canon:title": "Natural Products for the Prevention and Treatment of Hangover and Alcohol Use Disorder.",
+  "canon:abstract": "Alcoholic beverages such as beer, wine and spirits are widely consumed around the world. However, alcohol and its metabolite acetaldehyde are toxic and harmful to human beings. Chronic alcohol use disorder or occasional binge drinking can cause a wide range of health problems, such as hangover, liver damage and cancer. Some natural products such as traditional herbs, fruits, and vegetables might be potential dietary supplements or medicinal products for the prevention and treatment of the problems caused by excessive alcohol consumption. The aim of this review is to provide an overview of effective natural products for the prevention and treatment of hangover and alcohol use disorder, and special emphasis is paid to the possible functional component(s) and related mechanism(s) of action. ",
+  "canon:text": "Natural Products for the Prevention and Treatment of Hangover and Alcohol Use Disorder. Alcoholic beverages such as beer, wine and spirits are widely consumed around the world. However, alcohol and its metabolite acetaldehyde are toxic and harmful to human beings. Chronic alcohol use disorder or occasional binge drinking can cause a wide range of health problems, such as hangover, liver damage and cancer. Some natural products such as traditional herbs, fruits, and vegetables might be potential dietary supplements or medicinal products for the prevention and treatment of the problems caused by excessive alcohol consumption. The aim of this review is to provide an overview of effective natural products for the prevention and treatment of hangover and alcohol use disorder, and special emphasis is paid to the possible functional component(s) and related mechanism(s) of action. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26751438_causative-agent_0002626#mention-T1",
+      "canon:span": {
+        "start": 384,
+        "end": 396
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26751438_causative-agent_0002626#mention-T2",
+      "canon:span": {
+        "start": 213,
+        "end": 225
+      },
+      "canon:surface": "acetaldehyde",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000079",
+      "canon:sourceNotation": "D000079",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26751438_causative-agent_0002626#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26751438_causative-agent_0002626#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26751438_causative-agent_0002626#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26751438"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21503694_due-to_0002288",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_21503694_due-to_0002288",
+  "canon:title": "Treatment of cutaneous lupus.",
+  "canon:abstract": "Cutaneous lupus erythematosus (CLE) is an autoimmune inflammatory skin disease seen in patients with or without systemic lupus erythematosus. The management of CLE includes treatment and prevention of lesions as well as routine assessment for systemic disease. Treatment options include topical and systemic therapies. Topical therapies include corticosteroids and calcineurin inhibitors. Systemic therapies generally fall under one of three categories: antimalarials, immunomodulators (eg, dapsone and thalidomide), and immunosuppressives (eg, methotrexate and mycophenolate). Evidence for the treatment of CLE has been limited by few prospective studies and the lack of a validated outcome measure (until recently). There is good evidence to support the use of topical steroids and calcineurin inhibitors, although most of these trials have not used placebo or vehicle controls. There have been no randomized, placebo-controlled trials evaluating systemic therapies in the treatment of CLE.",
+  "canon:text": "Treatment of cutaneous lupus. Cutaneous lupus erythematosus (CLE) is an autoimmune inflammatory skin disease seen in patients with or without systemic lupus erythematosus. The management of CLE includes treatment and prevention of lesions as well as routine assessment for systemic disease. Treatment options include topical and systemic therapies. Topical therapies include corticosteroids and calcineurin inhibitors. Systemic therapies generally fall under one of three categories: antimalarials, immunomodulators (eg, dapsone and thalidomide), and immunosuppressives (eg, methotrexate and mycophenolate). Evidence for the treatment of CLE has been limited by few prospective studies and the lack of a validated outcome measure (until recently). There is good evidence to support the use of topical steroids and calcineurin inhibitors, although most of these trials have not used placebo or vehicle controls. There have been no randomized, placebo-controlled trials evaluating systemic therapies in the treatment of CLE.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21503694_due-to_0002288#mention-T1",
+      "canon:span": {
+        "start": 13,
+        "end": 28
+      },
+      "canon:surface": "cutaneous lupus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008178",
+      "canon:sourceNotation": "D008178",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21503694_due-to_0002288#mention-T2",
+      "canon:span": {
+        "start": 142,
+        "end": 170
+      },
+      "canon:surface": "systemic lupus erythematosus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21503694_due-to_0002288#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21503694_due-to_0002288#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21503694_due-to_0002288#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "21503694"
+      }
+    }
+  ]
+}

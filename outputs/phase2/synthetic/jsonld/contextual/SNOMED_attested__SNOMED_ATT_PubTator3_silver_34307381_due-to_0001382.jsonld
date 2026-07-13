@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34307381_due-to_0001382",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34307381_due-to_0001382",
+  "canon:title": "Ferroptosis and Its Potential Role in Metabolic Diseases: A Curse or Revitalization?",
+  "canon:abstract": "Ferroptosis is classified as an iron-dependent form of regulated cell death (RCD) attributed to the accumulation of lipid hydroperoxides and redox imbalance. In recent years, accumulating researches have suggested that ferroptosis may play a vital role in the development of diverse metabolic diseases, for example, diabetes and its complications (e.g., diabetic nephropathy, diabetic cardiomyopathy, diabetic myocardial ischemia/reperfusion injury and atherosclerosis [AS]), metabolic bone disease and adrenal injury. However, the specific physiopathological mechanism and precise therapeutic effect is still not clear. In this review, we summarized recent advances about the development of ferroptosis, focused on its potential character as the therapeutic target in metabolic diseases, and put forward our insights on this topic, largely to offer some help to forecast further directions.",
+  "canon:text": "Ferroptosis and Its Potential Role in Metabolic Diseases: A Curse or Revitalization? Ferroptosis is classified as an iron-dependent form of regulated cell death (RCD) attributed to the accumulation of lipid hydroperoxides and redox imbalance. In recent years, accumulating researches have suggested that ferroptosis may play a vital role in the development of diverse metabolic diseases, for example, diabetes and its complications (e.g., diabetic nephropathy, diabetic cardiomyopathy, diabetic myocardial ischemia/reperfusion injury and atherosclerosis [AS]), metabolic bone disease and adrenal injury. However, the specific physiopathological mechanism and precise therapeutic effect is still not clear. In this review, we summarized recent advances about the development of ferroptosis, focused on its potential character as the therapeutic target in metabolic diseases, and put forward our insights on this topic, largely to offer some help to forecast further directions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34307381_due-to_0001382#mention-T1",
+      "canon:span": {
+        "start": 461,
+        "end": 484
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34307381_due-to_0001382#mention-T2",
+      "canon:span": {
+        "start": 571,
+        "end": 583
+      },
+      "canon:surface": "bone disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001847",
+      "canon:sourceNotation": "D001847",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34307381_due-to_0001382#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34307381_due-to_0001382#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34307381_due-to_0001382#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34307381"
+      }
+    }
+  ]
+}

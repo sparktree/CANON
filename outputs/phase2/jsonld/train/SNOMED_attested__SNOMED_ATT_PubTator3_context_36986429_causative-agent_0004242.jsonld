@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36986429_causative-agent_0004242",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36986429_causative-agent_0004242",
+  "canon:title": "Interpreting Iron Homeostasis in Congenital and Acquired Disorders.",
+  "canon:abstract": "Mammalian cells require iron to satisfy their metabolic needs and to accomplish specialized functions, such as hematopoiesis, mitochondrial biogenesis, energy metabolism, or oxygen transport. Iron homeostasis is balanced by the interplay of proteins responsible for iron import, storage, and export. A misbalance of iron homeostasis may cause either iron deficiencies or iron overload diseases. The clinical work-up of iron dysregulation is highly important, as severe symptoms and pathologies may arise. Treating iron overload or iron deficiency is important to avoid cellular damage and severe symptoms and improve patient outcomes. The impressive progress made in the past years in understanding mechanisms that maintain iron homeostasis has already changed clinical practice for treating iron-related diseases and is expected to improve patient management even further in the future.",
+  "canon:text": "Interpreting Iron Homeostasis in Congenital and Acquired Disorders. Mammalian cells require iron to satisfy their metabolic needs and to accomplish specialized functions, such as hematopoiesis, mitochondrial biogenesis, energy metabolism, or oxygen transport. Iron homeostasis is balanced by the interplay of proteins responsible for iron import, storage, and export. A misbalance of iron homeostasis may cause either iron deficiencies or iron overload diseases. The clinical work-up of iron dysregulation is highly important, as severe symptoms and pathologies may arise. Treating iron overload or iron deficiency is important to avoid cellular damage and severe symptoms and improve patient outcomes. The impressive progress made in the past years in understanding mechanisms that maintain iron homeostasis has already changed clinical practice for treating iron-related diseases and is expected to improve patient management even further in the future.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36986429_causative-agent_0004242#mention-T1",
+      "canon:span": {
+        "start": 439,
+        "end": 461
+      },
+      "canon:surface": "iron overload diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36986429_causative-agent_0004242#mention-T2",
+      "canon:span": {
+        "start": 13,
+        "end": 17
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36986429_causative-agent_0004242#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36986429_causative-agent_0004242#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36986429_causative-agent_0004242#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36986429"
+      }
+    }
+  ]
+}

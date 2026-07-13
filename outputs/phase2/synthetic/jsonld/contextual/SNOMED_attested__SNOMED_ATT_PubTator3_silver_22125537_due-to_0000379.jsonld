@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22125537_due-to_0000379",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_22125537_due-to_0000379",
+  "canon:title": "Diabetes and alpha lipoic Acid.",
+  "canon:abstract": "Diabetes mellitus is a multi-faceted metabolic disorder where there is increased oxidative stress that contributes to the pathogenesis of this debilitating disease. This has prompted several investigations into the use of antioxidants as a complementary therapeutic approach. Alpha lipoic acid, a naturally occurring dithiol compound which plays an essential role in mitochondrial bioenergetic reactions, has gained considerable attention as an antioxidant for use in managing diabetic complications. Lipoic acid quenches reactive oxygen species, chelates metal ions, and reduces the oxidized forms of other antioxidants such as vitamin C, vitamin E, and glutathione. It also boosts antioxidant defense system through Nrf-2-mediated antioxidant gene expression and by modulation of peroxisome proliferator activated receptors-regulated genes. ALA inhibits nuclear factor kappa B and activates AMPK in skeletal muscles, which in turn have a plethora of metabolic consequences. These diverse actions suggest that lipoic acid acts by multiple mechanisms, many of which have only been uncovered recently. In this review we briefly summarize the known biochemical properties of lipoic acid and then discussed the oxidative mechanisms implicated in diabetic complications and the mechanisms by which lipoic acid may ameliorate these reactions. The findings of some of the clinical trials in which lipoic acid administration has been tested in diabetic patients during the last 10 years are summarized. It appears that the clearest benefit of lipoic acid supplementation is in patients with diabetic neuropathy.",
+  "canon:text": "Diabetes and alpha lipoic Acid. Diabetes mellitus is a multi-faceted metabolic disorder where there is increased oxidative stress that contributes to the pathogenesis of this debilitating disease. This has prompted several investigations into the use of antioxidants as a complementary therapeutic approach. Alpha lipoic acid, a naturally occurring dithiol compound which plays an essential role in mitochondrial bioenergetic reactions, has gained considerable attention as an antioxidant for use in managing diabetic complications. Lipoic acid quenches reactive oxygen species, chelates metal ions, and reduces the oxidized forms of other antioxidants such as vitamin C, vitamin E, and glutathione. It also boosts antioxidant defense system through Nrf-2-mediated antioxidant gene expression and by modulation of peroxisome proliferator activated receptors-regulated genes. ALA inhibits nuclear factor kappa B and activates AMPK in skeletal muscles, which in turn have a plethora of metabolic consequences. These diverse actions suggest that lipoic acid acts by multiple mechanisms, many of which have only been uncovered recently. In this review we briefly summarize the known biochemical properties of lipoic acid and then discussed the oxidative mechanisms implicated in diabetic complications and the mechanisms by which lipoic acid may ameliorate these reactions. The findings of some of the clinical trials in which lipoic acid administration has been tested in diabetic patients during the last 10 years are summarized. It appears that the clearest benefit of lipoic acid supplementation is in patients with diabetic neuropathy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22125537_due-to_0000379#mention-T1",
+      "canon:span": {
+        "start": 509,
+        "end": 531
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22125537_due-to_0000379#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 8
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22125537_due-to_0000379#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22125537_due-to_0000379#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22125537_due-to_0000379#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "22125537"
+      }
+    }
+  ]
+}

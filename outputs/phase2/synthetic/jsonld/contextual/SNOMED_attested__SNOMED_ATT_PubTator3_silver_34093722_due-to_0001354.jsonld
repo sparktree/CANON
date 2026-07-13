@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34093722_due-to_0001354",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34093722_due-to_0001354",
+  "canon:title": "Therapeutic Potential of Polyphenols in the Management of Diabetic Neuropathy.",
+  "canon:abstract": "Diabetic neuropathy (DN) is a common and serious diabetes-associated complication that primarily takes place because of neuronal dysfunction in patients with diabetes. Use of current therapeutic agents in DN treatment is quite challenging because of their severe adverse effects. Therefore, there is an increased need of identifying new safe and effective therapeutic agents. DN complications are associated with poor glycemic control and metabolic imbalances, primarily oxidative stress (OS) and inflammation. Various mediators and signaling pathways such as glutamate pathway, activation of channels, trophic factors, inflammation, OS, advanced glycation end products, and polyol pathway have a significant contribution to the progression and pathogenesis of DN. It has been indicated that polyphenols have the potential to affect DN pathogenesis and could be used as potential alternative therapy. Several polyphenols including kolaviron, resveratrol, naringenin, quercetin, kaempferol, and curcumin have been administered in patients with DN. Furthermore, chlorogenic acid can provide protection against glutamate neurotoxicity via its hydrolysate, caffeoyl acid group, and caffeic acid through regulating the entry of calcium into neurons. Epigallocatechin-3-gallate treatment can protect motor neurons by regulating the glutamate level. It has been demonstrated that these polyphenols can be promising in combating DN-associated damaging pathways. In this article, we have summarized DN-associated metabolic pathways and clinical manifestations. Finally, we have also focused on the roles of polyphenols in the treatment of DN.",
+  "canon:text": "Therapeutic Potential of Polyphenols in the Management of Diabetic Neuropathy. Diabetic neuropathy (DN) is a common and serious diabetes-associated complication that primarily takes place because of neuronal dysfunction in patients with diabetes. Use of current therapeutic agents in DN treatment is quite challenging because of their severe adverse effects. Therefore, there is an increased need of identifying new safe and effective therapeutic agents. DN complications are associated with poor glycemic control and metabolic imbalances, primarily oxidative stress (OS) and inflammation. Various mediators and signaling pathways such as glutamate pathway, activation of channels, trophic factors, inflammation, OS, advanced glycation end products, and polyol pathway have a significant contribution to the progression and pathogenesis of DN. It has been indicated that polyphenols have the potential to affect DN pathogenesis and could be used as potential alternative therapy. Several polyphenols including kolaviron, resveratrol, naringenin, quercetin, kaempferol, and curcumin have been administered in patients with DN. Furthermore, chlorogenic acid can provide protection against glutamate neurotoxicity via its hydrolysate, caffeoyl acid group, and caffeic acid through regulating the entry of calcium into neurons. Epigallocatechin-3-gallate treatment can protect motor neurons by regulating the glutamate level. It has been demonstrated that these polyphenols can be promising in combating DN-associated damaging pathways. In this article, we have summarized DN-associated metabolic pathways and clinical manifestations. Finally, we have also focused on the roles of polyphenols in the treatment of DN.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34093722_due-to_0001354#mention-T1",
+      "canon:span": {
+        "start": 455,
+        "end": 471
+      },
+      "canon:surface": "DN complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34093722_due-to_0001354#mention-T2",
+      "canon:span": {
+        "start": 128,
+        "end": 136
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34093722_due-to_0001354#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34093722_due-to_0001354#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34093722_due-to_0001354#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34093722"
+      }
+    }
+  ]
+}

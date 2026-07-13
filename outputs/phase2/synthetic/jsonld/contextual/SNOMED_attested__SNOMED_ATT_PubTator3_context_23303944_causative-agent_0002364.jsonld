@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23303944_causative-agent_0002364",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23303944_causative-agent_0002364",
+  "canon:title": "Licofelone modulates neuroinflammation and attenuates mechanical hypersensitivity in the chronic phase of spinal cord injury.",
+  "canon:abstract": "Inflammation is a major factor shaping outcome during the early, acute phase of traumatic spinal cord injury (SCI). It is known that pro-inflammatory signaling within the injured spinal cord drives pathological alterations in neurosensory processing and shapes functional outcome early after injury. However, it is unclear whether inflammation persists into the chronic phase of injury or shapes sensory processing long after injury. To investigate these possibilities, we have performed biochemical and behavioral assessments 9 months after moderate thoracic spinal contusion injury in the rat. We have found that levels of the pro-inflammatory lipid mediators leukotriene B4 and prostaglandin E2 are elevated in the chronic spinal cord lesion site. Additionally, using metabolomic profiling, we have detected elevated levels of pro-oxidative and inflammatory metabolites, along with alterations in multiple biological pathways within the chronic lesion site. We found that 28 d treatment of chronically injured rats with the dual COX/5-LOX inhibitor licofelone elevated levels of endogenous anti-oxidant and anti-inflammatory metabolites within the lesion site. Furthermore, licofelone treatment reduced hypersensitivity of hindpaws to mechanical, but not thermal, stimulation, indicating that mechanical sensitivity is modulated by pro-inflammatory signaling in the chronic phase of injury. Together, these findings provide novel evidence of inflammation and oxidative stress within spinal cord tissue far into the chronic phase of SCI, and demonstrate a role for inflammatory modulation of mechanical sensitivity in the chronic phase of injury.",
+  "canon:text": "Licofelone modulates neuroinflammation and attenuates mechanical hypersensitivity in the chronic phase of spinal cord injury. Inflammation is a major factor shaping outcome during the early, acute phase of traumatic spinal cord injury (SCI). It is known that pro-inflammatory signaling within the injured spinal cord drives pathological alterations in neurosensory processing and shapes functional outcome early after injury. However, it is unclear whether inflammation persists into the chronic phase of injury or shapes sensory processing long after injury. To investigate these possibilities, we have performed biochemical and behavioral assessments 9 months after moderate thoracic spinal contusion injury in the rat. We have found that levels of the pro-inflammatory lipid mediators leukotriene B4 and prostaglandin E2 are elevated in the chronic spinal cord lesion site. Additionally, using metabolomic profiling, we have detected elevated levels of pro-oxidative and inflammatory metabolites, along with alterations in multiple biological pathways within the chronic lesion site. We found that 28 d treatment of chronically injured rats with the dual COX/5-LOX inhibitor licofelone elevated levels of endogenous anti-oxidant and anti-inflammatory metabolites within the lesion site. Furthermore, licofelone treatment reduced hypersensitivity of hindpaws to mechanical, but not thermal, stimulation, indicating that mechanical sensitivity is modulated by pro-inflammatory signaling in the chronic phase of injury. Together, these findings provide novel evidence of inflammation and oxidative stress within spinal cord tissue far into the chronic phase of SCI, and demonstrate a role for inflammatory modulation of mechanical sensitivity in the chronic phase of injury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23303944_causative-agent_0002364#mention-T1",
+      "canon:span": {
+        "start": 65,
+        "end": 81
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23303944_causative-agent_0002364#mention-T2",
+      "canon:span": {
+        "start": 807,
+        "end": 823
+      },
+      "canon:surface": "prostaglandin E2",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D015232",
+      "canon:sourceNotation": "D015232",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23303944_causative-agent_0002364#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23303944_causative-agent_0002364#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23303944_causative-agent_0002364#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23303944"
+      }
+    }
+  ]
+}

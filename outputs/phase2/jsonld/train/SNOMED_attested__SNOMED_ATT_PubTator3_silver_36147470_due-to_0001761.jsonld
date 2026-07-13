@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36147470_due-to_0001761",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36147470_due-to_0001761",
+  "canon:title": "Mitochondrial quality control in diabetic cardiomyopathy: from molecular mechanisms to therapeutic strategies.",
+  "canon:abstract": "In diabetic cardiomyopathy (DCM), a major diabetic complication, the myocardium is structurally and functionally altered without evidence of coronary artery disease, hypertension or valvular disease. Although numerous anti-diabetic drugs have been applied clinically, specific medicines to prevent DCM progression are unavailable, so the prognosis of DCM remains poor. Mitochondrial ATP production maintains the energetic requirements of cardiomyocytes, whereas mitochondrial dysfunction can induce or aggravate DCM by promoting oxidative stress, dysregulated calcium homeostasis, metabolic reprogramming, abnormal intracellular signaling and mitochondrial apoptosis in cardiomyocytes. In response to mitochondrial dysfunction, the mitochondrial quality control (MQC) system (including mitochondrial fission, fusion, and mitophagy) is activated to repair damaged mitochondria. Physiological mitochondrial fission fragments the network to isolate damaged mitochondria. Mitophagy then allows dysfunctional mitochondria to be engulfed by autophagosomes and degraded in lysosomes. However, abnormal MQC results in excessive mitochondrial fission, impaired mitochondrial fusion and delayed mitophagy, causing fragmented mitochondria to accumulate in cardiomyocytes. In this review, we summarize the molecular mechanisms of MQC and discuss how pathological MQC contributes to DCM development. We then present promising therapeutic approaches to improve MQC and prevent DCM progression.",
+  "canon:text": "Mitochondrial quality control in diabetic cardiomyopathy: from molecular mechanisms to therapeutic strategies. In diabetic cardiomyopathy (DCM), a major diabetic complication, the myocardium is structurally and functionally altered without evidence of coronary artery disease, hypertension or valvular disease. Although numerous anti-diabetic drugs have been applied clinically, specific medicines to prevent DCM progression are unavailable, so the prognosis of DCM remains poor. Mitochondrial ATP production maintains the energetic requirements of cardiomyocytes, whereas mitochondrial dysfunction can induce or aggravate DCM by promoting oxidative stress, dysregulated calcium homeostasis, metabolic reprogramming, abnormal intracellular signaling and mitochondrial apoptosis in cardiomyocytes. In response to mitochondrial dysfunction, the mitochondrial quality control (MQC) system (including mitochondrial fission, fusion, and mitophagy) is activated to repair damaged mitochondria. Physiological mitochondrial fission fragments the network to isolate damaged mitochondria. Mitophagy then allows dysfunctional mitochondria to be engulfed by autophagosomes and degraded in lysosomes. However, abnormal MQC results in excessive mitochondrial fission, impaired mitochondrial fusion and delayed mitophagy, causing fragmented mitochondria to accumulate in cardiomyocytes. In this review, we summarize the molecular mechanisms of MQC and discuss how pathological MQC contributes to DCM development. We then present promising therapeutic approaches to improve MQC and prevent DCM progression.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36147470_due-to_0001761#mention-T1",
+      "canon:span": {
+        "start": 33,
+        "end": 56
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36147470_due-to_0001761#mention-T2",
+      "canon:span": {
+        "start": 293,
+        "end": 309
+      },
+      "canon:surface": "valvular disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006349",
+      "canon:sourceNotation": "D006349",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36147470_due-to_0001761#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36147470_due-to_0001761#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36147470_due-to_0001761#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36147470"
+      }
+    }
+  ]
+}

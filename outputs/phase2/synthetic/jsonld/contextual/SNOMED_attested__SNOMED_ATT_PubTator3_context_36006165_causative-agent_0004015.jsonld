@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36006165_causative-agent_0004015",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36006165_causative-agent_0004015",
+  "canon:title": "Forensic Aspects of a Fatal Intoxication Involving Acetaminophen, Citalopram and Trazodone: A Case Report.",
+  "canon:abstract": "We report the case of a young man, a former heroin addict, found dead at home by the Police Forces in an advanced state of decomposition. Numerous blisters and unpacked tablets of medications were found all over the bed and on the floor of the room. Multiple injuries to the face, left arm and neck of the deceased were noted. The latter damages were attributed to post-mortem dog bites, since no indications of a possible defense against the animal were observed. The autopsy findings were unremarkable. Toxicological investigations performed on peripheral blood and urine by gas chromatography-mass spectrometry (GC-MS) technique showed the presence of acetaminophen, citalopram and trazodone. Combined drug intoxication was proposed as the cause of death since acetaminophen and trazodone concentrations were comparable with the ones found in fatal cases. Moreover, citalopram concentration in peripheral blood was above the toxic range and in accordance with levels found in fatalities due to poly-drug intoxication.",
+  "canon:text": "Forensic Aspects of a Fatal Intoxication Involving Acetaminophen, Citalopram and Trazodone: A Case Report. We report the case of a young man, a former heroin addict, found dead at home by the Police Forces in an advanced state of decomposition. Numerous blisters and unpacked tablets of medications were found all over the bed and on the floor of the room. Multiple injuries to the face, left arm and neck of the deceased were noted. The latter damages were attributed to post-mortem dog bites, since no indications of a possible defense against the animal were observed. The autopsy findings were unremarkable. Toxicological investigations performed on peripheral blood and urine by gas chromatography-mass spectrometry (GC-MS) technique showed the presence of acetaminophen, citalopram and trazodone. Combined drug intoxication was proposed as the cause of death since acetaminophen and trazodone concentrations were comparable with the ones found in fatal cases. Moreover, citalopram concentration in peripheral blood was above the toxic range and in accordance with levels found in fatalities due to poly-drug intoxication.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36006165_causative-agent_0004015#mention-T1",
+      "canon:span": {
+        "start": 151,
+        "end": 164
+      },
+      "canon:surface": "heroin addict",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006556",
+      "canon:sourceNotation": "D006556",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36006165_causative-agent_0004015#mention-T2",
+      "canon:span": {
+        "start": 81,
+        "end": 90
+      },
+      "canon:surface": "Trazodone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014196",
+      "canon:sourceNotation": "D014196",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36006165_causative-agent_0004015#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36006165_causative-agent_0004015#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36006165_causative-agent_0004015#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36006165"
+      }
+    }
+  ]
+}

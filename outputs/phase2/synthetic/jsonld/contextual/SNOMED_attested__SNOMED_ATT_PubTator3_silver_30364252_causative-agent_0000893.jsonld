@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30364252_causative-agent_0000893",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30364252_causative-agent_0000893",
+  "canon:title": "Drug Interactions With New Synthetic Opioids.",
+  "canon:abstract": "Fentanyl, fentanyl analogs, and other new synthetic opioids (NSO) have burst onto the illegal drug market as new psychoactive substances (NPS). They are often sold as heroin to unsuspecting users and produce euphoria through their agonist action on mu- opioid receptors. Their high consumption, often combined with other substances, has led to multiple intoxications during recent years. In some countries, such as the United States, the consumption of opioids, whether for medical or recreational purposes, has become epidemic and is considered a public health problem. Fentanyl analogs are more potent than fentanyl which in turn is 50 times more potent than morphine. Furthermore, some fentanyl analogs have longer duration of action and therefore interactions with other substances and medicines can be more serious. This review is focused on the potentially most frequent interactions of opioid NPS taking into account the drugs present in the reported cases of poly-intoxication, including other illegal drugs of abuse and medication. Substances involved are mainly antidepressants, antihistamines, antipsychotics, benzodiazepines, analgesics, anesthetics, psychostimulants, other opioids, alcohol, and illegal drugs of abuse. The interactions can be produced due to pharmacokinetic and pharmacodynamic mechanisms. Naloxone can be used as an antidote, although required doses might be higher than for traditional opioid intoxications. It is crucial that doctors who habitually prescribe opioids, which are often misused by patients and NPS users, be aware of designer opioids' potentially life-threatening drug-drug interactions in order to prevent new cases of intoxication.",
+  "canon:text": "Drug Interactions With New Synthetic Opioids. Fentanyl, fentanyl analogs, and other new synthetic opioids (NSO) have burst onto the illegal drug market as new psychoactive substances (NPS). They are often sold as heroin to unsuspecting users and produce euphoria through their agonist action on mu- opioid receptors. Their high consumption, often combined with other substances, has led to multiple intoxications during recent years. In some countries, such as the United States, the consumption of opioids, whether for medical or recreational purposes, has become epidemic and is considered a public health problem. Fentanyl analogs are more potent than fentanyl which in turn is 50 times more potent than morphine. Furthermore, some fentanyl analogs have longer duration of action and therefore interactions with other substances and medicines can be more serious. This review is focused on the potentially most frequent interactions of opioid NPS taking into account the drugs present in the reported cases of poly-intoxication, including other illegal drugs of abuse and medication. Substances involved are mainly antidepressants, antihistamines, antipsychotics, benzodiazepines, analgesics, anesthetics, psychostimulants, other opioids, alcohol, and illegal drugs of abuse. The interactions can be produced due to pharmacokinetic and pharmacodynamic mechanisms. Naloxone can be used as an antidote, although required doses might be higher than for traditional opioid intoxications. It is crucial that doctors who habitually prescribe opioids, which are often misused by patients and NPS users, be aware of designer opioids' potentially life-threatening drug-drug interactions in order to prevent new cases of intoxication.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30364252_causative-agent_0000893#mention-T1",
+      "canon:span": {
+        "start": 1465,
+        "end": 1471
+      },
+      "canon:surface": "opioid",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30364252_causative-agent_0000893#mention-T2",
+      "canon:span": {
+        "start": 46,
+        "end": 54
+      },
+      "canon:surface": "Fentanyl",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005283",
+      "canon:sourceNotation": "D005283",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30364252_causative-agent_0000893#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30364252_causative-agent_0000893#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30364252_causative-agent_0000893#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30364252"
+      }
+    }
+  ]
+}

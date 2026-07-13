@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32957510_causative-agent_0003325",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32957510_causative-agent_0003325",
+  "canon:title": "Therapeutic Application of Betalains: A Review.",
+  "canon:abstract": "Anthocyanins, betalains, riboflavin, carotenoids, chlorophylls and caramel are the basic natural food colorants used in modern food manufacture. Betalains, which are composed of red-violet betacyanin and yellow betaxanthins, are water-soluble pigments that color flowers and fruits. Betalains are pigments primarily produced by plants of the order Caryophyllales. Because of their anti-inflammatory, cognitive impairment, anticancer and anti-hepatitis properties, betalains are useful as pharmaceutical agents and dietary supplements. Betalains also exhibit antimicrobial and antimalarial effects, and as an example, betalain-rich Amaranthus spinosus displays prominent antimalarial activity. Studies also confirmed the antidiabetic effect of betalains, which reduced glycemia by 40% without causing weight loss or liver impairment. These findings show that betalain colorants may be a promising alternative to the synthetic dyes currently used as food additives.",
+  "canon:text": "Therapeutic Application of Betalains: A Review. Anthocyanins, betalains, riboflavin, carotenoids, chlorophylls and caramel are the basic natural food colorants used in modern food manufacture. Betalains, which are composed of red-violet betacyanin and yellow betaxanthins, are water-soluble pigments that color flowers and fruits. Betalains are pigments primarily produced by plants of the order Caryophyllales. Because of their anti-inflammatory, cognitive impairment, anticancer and anti-hepatitis properties, betalains are useful as pharmaceutical agents and dietary supplements. Betalains also exhibit antimicrobial and antimalarial effects, and as an example, betalain-rich Amaranthus spinosus displays prominent antimalarial activity. Studies also confirmed the antidiabetic effect of betalains, which reduced glycemia by 40% without causing weight loss or liver impairment. These findings show that betalain colorants may be a promising alternative to the synthetic dyes currently used as food additives.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32957510_causative-agent_0003325#mention-T1",
+      "canon:span": {
+        "start": 490,
+        "end": 499
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32957510_causative-agent_0003325#mention-T2",
+      "canon:span": {
+        "start": 277,
+        "end": 282
+      },
+      "canon:surface": "water",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014867",
+      "canon:sourceNotation": "D014867",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32957510_causative-agent_0003325#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32957510_causative-agent_0003325#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32957510_causative-agent_0003325#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32957510"
+      }
+    }
+  ]
+}

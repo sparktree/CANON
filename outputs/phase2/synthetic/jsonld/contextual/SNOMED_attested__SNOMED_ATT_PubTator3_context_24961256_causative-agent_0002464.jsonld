@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24961256_causative-agent_0002464",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24961256_causative-agent_0002464",
+  "canon:title": "Functional and structural brain changes associated with methamphetamine abuse.",
+  "canon:abstract": "Methamphetamine (MA) is a potent psychostimulant drug whose abuse has become a global epidemic in recent years. Firstly, this review article briefly discusses the epidemiology and clinical pharmacology of methamphetamine dependence. Secondly, the article reviews relevant animal literature modeling methamphetamine dependence and discusses possible mechanisms of methamphetamine-induced neurotoxicity. Thirdly, it provides a critical review of functional and structural neuroimaging studies in human MA abusers; including positron emission tomography (PET) and functional and structural magnetic resonance imaging (MRI). The effect of abstinence from methamphetamine, both short- and long-term within the context of these studies is also reviewed. ",
+  "canon:text": "Functional and structural brain changes associated with methamphetamine abuse. Methamphetamine (MA) is a potent psychostimulant drug whose abuse has become a global epidemic in recent years. Firstly, this review article briefly discusses the epidemiology and clinical pharmacology of methamphetamine dependence. Secondly, the article reviews relevant animal literature modeling methamphetamine dependence and discusses possible mechanisms of methamphetamine-induced neurotoxicity. Thirdly, it provides a critical review of functional and structural neuroimaging studies in human MA abusers; including positron emission tomography (PET) and functional and structural magnetic resonance imaging (MRI). The effect of abstinence from methamphetamine, both short- and long-term within the context of these studies is also reviewed. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24961256_causative-agent_0002464#mention-T1",
+      "canon:span": {
+        "start": 466,
+        "end": 479
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24961256_causative-agent_0002464#mention-T2",
+      "canon:span": {
+        "start": 79,
+        "end": 94
+      },
+      "canon:surface": "Methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24961256_causative-agent_0002464#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24961256_causative-agent_0002464#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24961256_causative-agent_0002464#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24961256"
+      }
+    }
+  ]
+}

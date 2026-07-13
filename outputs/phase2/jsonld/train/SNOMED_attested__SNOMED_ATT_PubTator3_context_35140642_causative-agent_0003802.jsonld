@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140642_causative-agent_0003802",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35140642_causative-agent_0003802",
+  "canon:title": "Reported Cases of Serotonin Syndrome in MDMA Users in FAERS Database.",
+  "canon:abstract": "3,4-Methylenedioxymethamphetamine (MDMA), is investigated as a treatment for post-traumatic stress disorder and other anxiety-related conditions in multiple placebo-controlled and open label studies. MDMA-assisted therapy is projected for approval by the United States Food and Drug Administration (FDA) and other regulatory agencies worldwide within the next few years. MDMA is a monoamine releaser and uptake inhibitor affecting serotonin, potentially increasing the risk of serotonin syndrome (SS). No instances of SS have occurred in clinical trials. The relatively small number of patients in controlled trials warranted a survey of FDA Adverse Event Reporting System data for the occurrence of SS in a larger database. We found 20 SS cases in people exposed to MDMA, all of which had also taken one or more substances with serotonergic properties in addition to MDMA, including amphetamines, stimulants, and opioids. There were no cases of SS associated with MDMA where MDMA was the sole reported compound taken.",
+  "canon:text": "Reported Cases of Serotonin Syndrome in MDMA Users in FAERS Database. 3,4-Methylenedioxymethamphetamine (MDMA), is investigated as a treatment for post-traumatic stress disorder and other anxiety-related conditions in multiple placebo-controlled and open label studies. MDMA-assisted therapy is projected for approval by the United States Food and Drug Administration (FDA) and other regulatory agencies worldwide within the next few years. MDMA is a monoamine releaser and uptake inhibitor affecting serotonin, potentially increasing the risk of serotonin syndrome (SS). No instances of SS have occurred in clinical trials. The relatively small number of patients in controlled trials warranted a survey of FDA Adverse Event Reporting System data for the occurrence of SS in a larger database. We found 20 SS cases in people exposed to MDMA, all of which had also taken one or more substances with serotonergic properties in addition to MDMA, including amphetamines, stimulants, and opioids. There were no cases of SS associated with MDMA where MDMA was the sole reported compound taken.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140642_causative-agent_0003802#mention-T1",
+      "canon:span": {
+        "start": 18,
+        "end": 36
+      },
+      "canon:surface": "Serotonin Syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140642_causative-agent_0003802#mention-T2",
+      "canon:span": {
+        "start": 40,
+        "end": 44
+      },
+      "canon:surface": "MDMA",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018817",
+      "canon:sourceNotation": "D018817",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140642_causative-agent_0003802#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140642_causative-agent_0003802#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35140642_causative-agent_0003802#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35140642"
+      }
+    }
+  ]
+}

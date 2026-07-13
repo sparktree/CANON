@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34525861_causative-agent_0001435",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34525861_causative-agent_0001435",
+  "canon:title": "Successful treatment of tuberculosis combined with drug-induced myopathy using corticosteroid therapy: a case report.",
+  "canon:abstract": "A 39-year-old woman was admitted to our hospital on 19 January 2019 because of a 10-day history of intolerance to oils in her food, fatigue, and yellowing of the skin and sclera. In December 2018, the patient had been diagnosed with tuberculous pleurisy at a local hospital and received quadruple anti-tuberculosis treatment. Ten days before presentation to our hospital, she had developed anorexia, fatigue, nausea, loss of appetite, cough, and shortness of breath. She visited a local hospital, where she was considered to have drug-induced hepatitis. She discontinued the anti-tuberculosis drugs and liver protection treatment. After 3 days, her symptoms had not substantially improved. She visited the infection department of our hospital for further diagnosis and treatment. After 6 days of treatment, the patient's symptoms were not significantly improved, her liver and muscle enzyme concentrations were further increased, and her limbs had become weaker and more difficult to move. We considered diagnoses of drug-induced hepatitis and drug-induced myopathy. The patient was treated with intravenous methylprednisolone at 40 mg once a day for 16 days and other symptomatic treatments. Her symptoms significantly improved and she was discharged.",
+  "canon:text": "Successful treatment of tuberculosis combined with drug-induced myopathy using corticosteroid therapy: a case report. A 39-year-old woman was admitted to our hospital on 19 January 2019 because of a 10-day history of intolerance to oils in her food, fatigue, and yellowing of the skin and sclera. In December 2018, the patient had been diagnosed with tuberculous pleurisy at a local hospital and received quadruple anti-tuberculosis treatment. Ten days before presentation to our hospital, she had developed anorexia, fatigue, nausea, loss of appetite, cough, and shortness of breath. She visited a local hospital, where she was considered to have drug-induced hepatitis. She discontinued the anti-tuberculosis drugs and liver protection treatment. After 3 days, her symptoms had not substantially improved. She visited the infection department of our hospital for further diagnosis and treatment. After 6 days of treatment, the patient's symptoms were not significantly improved, her liver and muscle enzyme concentrations were further increased, and her limbs had become weaker and more difficult to move. We considered diagnoses of drug-induced hepatitis and drug-induced myopathy. The patient was treated with intravenous methylprednisolone at 40 mg once a day for 16 days and other symptomatic treatments. Her symptoms significantly improved and she was discharged.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34525861_causative-agent_0001435#mention-T1",
+      "canon:span": {
+        "start": 648,
+        "end": 670
+      },
+      "canon:surface": "drug-induced hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34525861_causative-agent_0001435#mention-T2",
+      "canon:span": {
+        "start": 1226,
+        "end": 1244
+      },
+      "canon:surface": "methylprednisolone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008775",
+      "canon:sourceNotation": "D008775",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34525861_causative-agent_0001435#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34525861_causative-agent_0001435#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34525861_causative-agent_0001435#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34525861"
+      }
+    }
+  ]
+}

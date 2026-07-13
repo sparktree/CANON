@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33092125_causative-agent_0001195",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33092125_causative-agent_0001195",
+  "canon:title": "Antioxidant Supplementation in the Treatment of Neurotoxicity Induced by Platinum-Based Chemotherapeutics-A Review.",
+  "canon:abstract": "Cancer represents one of the most pernicious public health problems with a high mortality rate among patients worldwide. Chemotherapy is one of the major therapeutic approaches for the treatment of various malignancies. Platinum-based drugs (cisplatin, oxaliplatin, carboplatin, etc.) are highly effective chemotherapeutic drugs used for the treatment of several types of malignancies, but their application and dosage are limited by their toxic effects on various systems, including neurotoxicity. Simultaneously, researchers have tried to improve the survival rate and quality of life of cancer patients and decrease the toxicity of platinum-containing drugs by combining them with non-chemotherapy-based drugs, dietary supplements and/or antioxidants. Additionally, recent studies have shown that the root cause for the many side effects of platinum chemotherapeutics involves the production of reactive oxygen species (ROS) in naive cells. Therefore, suppression of ROS generation and their inactivation with antioxidants represents an appropriate approach for platinum drug-induced toxicities. The aim of this paper is to present an updated review of the protective effects of different antioxidant agents (vitamins, dietary antioxidants and supplements, medicaments, medicinal plants and their bioactive compounds) against the neurotoxicity induced by platinum-based chemotherapeutics. This review highlights the high potential of plant antioxidants as adjuvant strategies in chemotherapy with platinum drugs.",
+  "canon:text": "Antioxidant Supplementation in the Treatment of Neurotoxicity Induced by Platinum-Based Chemotherapeutics-A Review. Cancer represents one of the most pernicious public health problems with a high mortality rate among patients worldwide. Chemotherapy is one of the major therapeutic approaches for the treatment of various malignancies. Platinum-based drugs (cisplatin, oxaliplatin, carboplatin, etc.) are highly effective chemotherapeutic drugs used for the treatment of several types of malignancies, but their application and dosage are limited by their toxic effects on various systems, including neurotoxicity. Simultaneously, researchers have tried to improve the survival rate and quality of life of cancer patients and decrease the toxicity of platinum-containing drugs by combining them with non-chemotherapy-based drugs, dietary supplements and/or antioxidants. Additionally, recent studies have shown that the root cause for the many side effects of platinum chemotherapeutics involves the production of reactive oxygen species (ROS) in naive cells. Therefore, suppression of ROS generation and their inactivation with antioxidants represents an appropriate approach for platinum drug-induced toxicities. The aim of this paper is to present an updated review of the protective effects of different antioxidant agents (vitamins, dietary antioxidants and supplements, medicaments, medicinal plants and their bioactive compounds) against the neurotoxicity induced by platinum-based chemotherapeutics. This review highlights the high potential of plant antioxidants as adjuvant strategies in chemotherapy with platinum drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33092125_causative-agent_0001195#mention-T1",
+      "canon:span": {
+        "start": 48,
+        "end": 61
+      },
+      "canon:surface": "Neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33092125_causative-agent_0001195#mention-T2",
+      "canon:span": {
+        "start": 382,
+        "end": 393
+      },
+      "canon:surface": "carboplatin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D016190",
+      "canon:sourceNotation": "D016190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33092125_causative-agent_0001195#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33092125_causative-agent_0001195#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33092125_causative-agent_0001195#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33092125"
+      }
+    }
+  ]
+}

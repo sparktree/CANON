@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012948_causative-agent_0001073",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32012948_causative-agent_0001073",
+  "canon:title": "Are Kynurenines Accomplices or Principal Villains in Dementia? Maintenance of Kynurenine Metabolism.",
+  "canon:abstract": "Worldwide, 50 million people suffer from dementia, a group of symptoms affecting cognitive and social functions, progressing severely enough to interfere with daily life. Alzheimer's disease (AD) accounts for most of the dementia cases. Pathological and clinical findings have led to proposing several hypotheses of AD pathogenesis, finding a presence of positive feedback loops and additionally observing the disturbance of a branch of tryptophan metabolism, the kynurenine (KYN) pathway. Either causative or resultant of dementia, elevated levels of neurotoxic KYN metabolites are observed, potentially upregulating multiple feedback loops of AD pathogenesis. Memantine is an N-methyl-D-aspartate glutamatergic receptor (NMDAR) antagonist, which belongs to one of only two classes of medications approved for clinical use, but other NMDAR modulators have been explored so far in vain. An endogenous KYN pathway metabolite, kynurenic acid (KYNA), likewise inhibits the excitotoxic NMDAR. Besides its anti-excitotoxicity, KYNA is a multitarget compound that triggers anti-inflammatory and antioxidant activities. Modifying the KYNA level is a potential multitarget strategy to normalize the disturbed KYN pathway and thus to alleviate juxtaposing AD pathogeneses. In this review, the maintenance of KYN metabolism by modifying the level of KYNA is proposed and discussed in search for a novel lead compound against the progression of dementia.",
+  "canon:text": "Are Kynurenines Accomplices or Principal Villains in Dementia? Maintenance of Kynurenine Metabolism. Worldwide, 50 million people suffer from dementia, a group of symptoms affecting cognitive and social functions, progressing severely enough to interfere with daily life. Alzheimer's disease (AD) accounts for most of the dementia cases. Pathological and clinical findings have led to proposing several hypotheses of AD pathogenesis, finding a presence of positive feedback loops and additionally observing the disturbance of a branch of tryptophan metabolism, the kynurenine (KYN) pathway. Either causative or resultant of dementia, elevated levels of neurotoxic KYN metabolites are observed, potentially upregulating multiple feedback loops of AD pathogenesis. Memantine is an N-methyl-D-aspartate glutamatergic receptor (NMDAR) antagonist, which belongs to one of only two classes of medications approved for clinical use, but other NMDAR modulators have been explored so far in vain. An endogenous KYN pathway metabolite, kynurenic acid (KYNA), likewise inhibits the excitotoxic NMDAR. Besides its anti-excitotoxicity, KYNA is a multitarget compound that triggers anti-inflammatory and antioxidant activities. Modifying the KYNA level is a potential multitarget strategy to normalize the disturbed KYN pathway and thus to alleviate juxtaposing AD pathogeneses. In this review, the maintenance of KYN metabolism by modifying the level of KYNA is proposed and discussed in search for a novel lead compound against the progression of dementia.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012948_causative-agent_0001073#mention-T1",
+      "canon:span": {
+        "start": 653,
+        "end": 663
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012948_causative-agent_0001073#mention-T2",
+      "canon:span": {
+        "start": 763,
+        "end": 772
+      },
+      "canon:surface": "Memantine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008559",
+      "canon:sourceNotation": "D008559",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012948_causative-agent_0001073#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012948_causative-agent_0001073#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012948_causative-agent_0001073#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32012948"
+      }
+    }
+  ]
+}

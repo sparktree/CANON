@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28883724_causative-agent_0000768",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_28883724_causative-agent_0000768",
+  "canon:title": "Nanomedicinal products: a survey on specific toxicity and side effects.",
+  "canon:abstract": "Due to their specific properties and pharmacokinetics, nanomedicinal products (NMPs) may present different toxicity and side effects compared to non-nanoformulated, conventional medicines. To facilitate the safety assessment of NMPs, we aimed to gain insight into toxic effects specific for NMPs by systematically analyzing the available toxicity data on approved NMPs in the European Union. In addition, by comparing five sets of products with the same active pharmaceutical ingredient (API) in a conventional formulation versus a nanoformulation, we aimed to identify any side effects specific for the nano aspect of NMPs. The objective was to investigate whether specific toxicity could be related to certain structural types of NMPs and whether a nanoformulation of an API altered the nature of side effects of the product in humans compared to a conventional formulation. The survey of toxicity data did not reveal nanospecific toxicity that could be related to certain types of structures of NMPs, other than those reported previously in relation to accumulation of iron nanoparticles (NPs). However, given the limited data for some of the product groups or toxicological end points in the analysis, conclusions with regard to (a lack of) potential nanomedicine-specific effects need to be considered carefully. Results from the comparison of side effects of five sets of drugs (mainly liposomes and/or cytostatics) confirmed the induction of pseudo-allergic responses associated with specific NMPs in the literature, in addition to the side effects common to both nanoformulations and regular formulations, eg, with liposomal doxorubicin, and possibly liposomal daunorubicin. Based on the available data, immunotoxicological effects of certain NMPs cannot be excluded, and we conclude that this end point requires further attention.",
+  "canon:text": "Nanomedicinal products: a survey on specific toxicity and side effects. Due to their specific properties and pharmacokinetics, nanomedicinal products (NMPs) may present different toxicity and side effects compared to non-nanoformulated, conventional medicines. To facilitate the safety assessment of NMPs, we aimed to gain insight into toxic effects specific for NMPs by systematically analyzing the available toxicity data on approved NMPs in the European Union. In addition, by comparing five sets of products with the same active pharmaceutical ingredient (API) in a conventional formulation versus a nanoformulation, we aimed to identify any side effects specific for the nano aspect of NMPs. The objective was to investigate whether specific toxicity could be related to certain structural types of NMPs and whether a nanoformulation of an API altered the nature of side effects of the product in humans compared to a conventional formulation. The survey of toxicity data did not reveal nanospecific toxicity that could be related to certain types of structures of NMPs, other than those reported previously in relation to accumulation of iron nanoparticles (NPs). However, given the limited data for some of the product groups or toxicological end points in the analysis, conclusions with regard to (a lack of) potential nanomedicine-specific effects need to be considered carefully. Results from the comparison of side effects of five sets of drugs (mainly liposomes and/or cytostatics) confirmed the induction of pseudo-allergic responses associated with specific NMPs in the literature, in addition to the side effects common to both nanoformulations and regular formulations, eg, with liposomal doxorubicin, and possibly liposomal daunorubicin. Based on the available data, immunotoxicological effects of certain NMPs cannot be excluded, and we conclude that this end point requires further attention.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28883724_causative-agent_0000768#mention-T1",
+      "canon:span": {
+        "start": 1528,
+        "end": 1536
+      },
+      "canon:surface": "allergic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28883724_causative-agent_0000768#mention-T2",
+      "canon:span": {
+        "start": 1741,
+        "end": 1753
+      },
+      "canon:surface": "daunorubicin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003630",
+      "canon:sourceNotation": "D003630",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28883724_causative-agent_0000768#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28883724_causative-agent_0000768#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28883724_causative-agent_0000768#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "28883724"
+      }
+    }
+  ]
+}

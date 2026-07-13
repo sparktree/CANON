@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25058905_causative-agent_0000493",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25058905_causative-agent_0000493",
+  "canon:title": "Cisplatin in cancer therapy: molecular mechanisms of action.",
+  "canon:abstract": "Cisplatin, cisplatinum, or cis-diamminedichloroplatinum (II), is a well-known chemotherapeutic drug. It has been used for treatment of numerous human cancers including bladder, head and neck, lung, ovarian, and testicular cancers. It is effective against various types of cancers, including carcinomas, germ cell tumors, lymphomas, and sarcomas. Its mode of action has been linked to its ability to crosslink with the purine bases on the DNA; interfering with DNA repair mechanisms, causing DNA damage, and subsequently inducing apoptosis in cancer cells. However, because of drug resistance and numerous undesirable side effects such as severe kidney problems, allergic reactions, decrease immunity to infections, gastrointestinal disorders, hemorrhage, and hearing loss especially in younger patients, other platinum-containing anti-cancer drugs such as carboplatin, oxaliplatin and others, have also been used. Furthermore, combination therapies of cisplatin with other drugs have been highly considered to overcome drug-resistance and reduce toxicity. This comprehensive review highlights the physicochemical properties of cisplatin and related platinum-based drugs, and discusses its uses (either alone or in combination with other drugs) for the treatment of various human cancers. A special attention is paid to its molecular mechanisms of action, and its undesirable side effects. ",
+  "canon:text": "Cisplatin in cancer therapy: molecular mechanisms of action. Cisplatin, cisplatinum, or cis-diamminedichloroplatinum (II), is a well-known chemotherapeutic drug. It has been used for treatment of numerous human cancers including bladder, head and neck, lung, ovarian, and testicular cancers. It is effective against various types of cancers, including carcinomas, germ cell tumors, lymphomas, and sarcomas. Its mode of action has been linked to its ability to crosslink with the purine bases on the DNA; interfering with DNA repair mechanisms, causing DNA damage, and subsequently inducing apoptosis in cancer cells. However, because of drug resistance and numerous undesirable side effects such as severe kidney problems, allergic reactions, decrease immunity to infections, gastrointestinal disorders, hemorrhage, and hearing loss especially in younger patients, other platinum-containing anti-cancer drugs such as carboplatin, oxaliplatin and others, have also been used. Furthermore, combination therapies of cisplatin with other drugs have been highly considered to overcome drug-resistance and reduce toxicity. This comprehensive review highlights the physicochemical properties of cisplatin and related platinum-based drugs, and discusses its uses (either alone or in combination with other drugs) for the treatment of various human cancers. A special attention is paid to its molecular mechanisms of action, and its undesirable side effects. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25058905_causative-agent_0000493#mention-T1",
+      "canon:span": {
+        "start": 723,
+        "end": 741
+      },
+      "canon:surface": "allergic reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25058905_causative-agent_0000493#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 9
+      },
+      "canon:surface": "Cisplatin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002945",
+      "canon:sourceNotation": "D002945",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25058905_causative-agent_0000493#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25058905_causative-agent_0000493#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25058905_causative-agent_0000493#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25058905"
+      }
+    }
+  ]
+}

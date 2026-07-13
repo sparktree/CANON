@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36312510_due-to_0001797",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36312510_due-to_0001797",
+  "canon:title": "Treatment failure in a patient infected with Listeria sepsis combined with latent meningitis: A case report.",
+  "canon:abstract": "BACKGROUND: Listeria is a food-borne disease, which is rarely prevalent in the normal population; it mostly occurs in pregnant women, newborns, immunodeficiency patients, and the elderly. The main manifestations of this disease in patients include sepsis, meningitis, etc, and the mortality rate remains high, although the onset of meningitis is relatively insidious. CASE SUMMARY: A 75-year-old man presented with a fever for 1 wk and was admitted to the hospital for diagnosis and management of a lung infection. His condition improved after receiving anti-infective treatment for 2 wk. However, soon after he was discharged from the hospital, he developed fever again, and gradually developed various neurological symptoms, impaired consciousness, and stiff neck. Thereafter, through the cerebrospinal fluid metagenomic testing and blood culture, the patient was diagnosed with Listeria monocytogenes meningitis and sepsis. The patient died after being given active treatment, which included penicillin application and invasive respiratory support. CONCLUSION: This case highlights the ultimate importance of early identification and timely application of the various sensitive antibiotics, such as penicillin, vancomycin, meropenem, etc. Therefore, for high-risk populations with unknown causes of fever, multiple blood cultures, timely cerebrospinal fluid examination, and metagenomic detection technology can assist in confirming the diagnosis quickly, thereby guiding the proper application of antibiotics and improving the prognosis.",
+  "canon:text": "Treatment failure in a patient infected with Listeria sepsis combined with latent meningitis: A case report. BACKGROUND: Listeria is a food-borne disease, which is rarely prevalent in the normal population; it mostly occurs in pregnant women, newborns, immunodeficiency patients, and the elderly. The main manifestations of this disease in patients include sepsis, meningitis, etc, and the mortality rate remains high, although the onset of meningitis is relatively insidious. CASE SUMMARY: A 75-year-old man presented with a fever for 1 wk and was admitted to the hospital for diagnosis and management of a lung infection. His condition improved after receiving anti-infective treatment for 2 wk. However, soon after he was discharged from the hospital, he developed fever again, and gradually developed various neurological symptoms, impaired consciousness, and stiff neck. Thereafter, through the cerebrospinal fluid metagenomic testing and blood culture, the patient was diagnosed with Listeria monocytogenes meningitis and sepsis. The patient died after being given active treatment, which included penicillin application and invasive respiratory support. CONCLUSION: This case highlights the ultimate importance of early identification and timely application of the various sensitive antibiotics, such as penicillin, vancomycin, meropenem, etc. Therefore, for high-risk populations with unknown causes of fever, multiple blood cultures, timely cerebrospinal fluid examination, and metagenomic detection technology can assist in confirming the diagnosis quickly, thereby guiding the proper application of antibiotics and improving the prognosis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36312510_due-to_0001797#mention-T1",
+      "canon:span": {
+        "start": 54,
+        "end": 60
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36312510_due-to_0001797#mention-T2",
+      "canon:span": {
+        "start": 608,
+        "end": 622
+      },
+      "canon:surface": "lung infection",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012141",
+      "canon:sourceNotation": "D012141",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36312510_due-to_0001797#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36312510_due-to_0001797#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36312510_due-to_0001797#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36312510"
+      }
+    }
+  ]
+}

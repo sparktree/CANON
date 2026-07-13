@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33986855_due-to_0001332",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33986855_due-to_0001332",
+  "canon:title": "Diabetic neuropathy: A narrative review of risk factors, classification, screening and current pathogenic treatment options (Review).",
+  "canon:abstract": "Diabetic neuropathy (DN) is a frequent complication of diabetes mellitus (DM) with severe consequences as it progresses and influences all human body systems. This review discusses the risk factors for DN, the main characteristics of the clinical forms of DN, the screening methods and the current therapeutic options. Distal symmetric DN is the primary clinical form, and DM patients should be screened for this complication. The most important treatment of DN remains good glucose control, generally defined as HbA1c <=7%. Symptomatic treatment improves life quality in diabetic patients. Pharmacological agents such as alpha (alpha)-lipoic acid and benfotiamine have been validated in several studies since they act on specific pathways such as increased oxidative stress (alpha-lipoic acid exerts antioxidant effects) and the excessive production of advanced glycosylation products (benfotiamine may inhibit their production via the normalization of glucose). Timely diagnosis of DN is significant to avoid several complications, including lower limb amputations and cardiac arrhythmias.",
+  "canon:text": "Diabetic neuropathy: A narrative review of risk factors, classification, screening and current pathogenic treatment options (Review). Diabetic neuropathy (DN) is a frequent complication of diabetes mellitus (DM) with severe consequences as it progresses and influences all human body systems. This review discusses the risk factors for DN, the main characteristics of the clinical forms of DN, the screening methods and the current therapeutic options. Distal symmetric DN is the primary clinical form, and DM patients should be screened for this complication. The most important treatment of DN remains good glucose control, generally defined as HbA1c <=7%. Symptomatic treatment improves life quality in diabetic patients. Pharmacological agents such as alpha (alpha)-lipoic acid and benfotiamine have been validated in several studies since they act on specific pathways such as increased oxidative stress (alpha-lipoic acid exerts antioxidant effects) and the excessive production of advanced glycosylation products (benfotiamine may inhibit their production via the normalization of glucose). Timely diagnosis of DN is significant to avoid several complications, including lower limb amputations and cardiac arrhythmias.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33986855_due-to_0001332#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 19
+      },
+      "canon:surface": "Diabetic neuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33986855_due-to_0001332#mention-T2",
+      "canon:span": {
+        "start": 189,
+        "end": 206
+      },
+      "canon:surface": "diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33986855_due-to_0001332#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33986855_due-to_0001332#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33986855_due-to_0001332#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33986855"
+      }
+    }
+  ]
+}

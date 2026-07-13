@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24755475_causative-agent_0002452",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24755475_causative-agent_0002452",
+  "canon:title": "Probable fatal drug interaction between intravenous fenretinide, ceftriaxone, and acetaminophen: a case report from a New Approaches to Neuroblastoma (NANT) Phase I study.",
+  "canon:abstract": "BACKGROUND: Patients with relapsed/refractory stage 4 high-risk neuroblastoma were enrolled on a phase I study (NANT2004-03) of intravenous fenretinide emulsion. Pharmacokinetic samples were collected during and after the infusion, and the levels were measured using an HPLC system. A likely case of a fatal drug interaction between fenretinide, ceftriaxone, and acetaminophen is described, including the pharmacokinetics of fenretinide, laboratory data, and post-mortem autopsy in a pediatric neuroblastoma patient treated on this study. CASE PRESENTATION: On Day 4 of a scheduled 5-day-infusion of intravenous fenretinide, the patient developed a fever, acetaminophen was started, ceftriaxone initiated for possible bacteremia, and fenretinide level doubled from 56 to 110 muM. Over the next three days, although blood cultures remained negative, the patient's condition deteriorated rapidly. Acute liver failure was diagnosed on Day 7, and the patient expired on Day 20 of fulminant hepatic failure with associated renal, cardiac, and hemorrhagic/coagulation toxicities. Autopsy showed extensive hemorrhagic necrosis of the liver, marked bile duct proliferation, and abundant hemosiderin, consistent with cholestasis and drug toxicity. CONCLUSIONS: After extensive review of patient data, the clinical course, and the literature, we conclude that observed hepatic toxicity was likely due to a drug interaction between fenretinide and concomitant ceftriaxone and acetaminophen. None of the other 16 patients treated on this study experienced significant hepatic toxicity. Although the prevalence of cholestasis with ceftriaxone usage is relatively high, the potential drug interaction with these concomitant medications has not been previously reported. Concomitant use of fenretinide, ceftriaxone, and acetaminophen should be avoided.",
+  "canon:text": "Probable fatal drug interaction between intravenous fenretinide, ceftriaxone, and acetaminophen: a case report from a New Approaches to Neuroblastoma (NANT) Phase I study. BACKGROUND: Patients with relapsed/refractory stage 4 high-risk neuroblastoma were enrolled on a phase I study (NANT2004-03) of intravenous fenretinide emulsion. Pharmacokinetic samples were collected during and after the infusion, and the levels were measured using an HPLC system. A likely case of a fatal drug interaction between fenretinide, ceftriaxone, and acetaminophen is described, including the pharmacokinetics of fenretinide, laboratory data, and post-mortem autopsy in a pediatric neuroblastoma patient treated on this study. CASE PRESENTATION: On Day 4 of a scheduled 5-day-infusion of intravenous fenretinide, the patient developed a fever, acetaminophen was started, ceftriaxone initiated for possible bacteremia, and fenretinide level doubled from 56 to 110 muM. Over the next three days, although blood cultures remained negative, the patient's condition deteriorated rapidly. Acute liver failure was diagnosed on Day 7, and the patient expired on Day 20 of fulminant hepatic failure with associated renal, cardiac, and hemorrhagic/coagulation toxicities. Autopsy showed extensive hemorrhagic necrosis of the liver, marked bile duct proliferation, and abundant hemosiderin, consistent with cholestasis and drug toxicity. CONCLUSIONS: After extensive review of patient data, the clinical course, and the literature, we conclude that observed hepatic toxicity was likely due to a drug interaction between fenretinide and concomitant ceftriaxone and acetaminophen. None of the other 16 patients treated on this study experienced significant hepatic toxicity. Although the prevalence of cholestasis with ceftriaxone usage is relatively high, the potential drug interaction with these concomitant medications has not been previously reported. Concomitant use of fenretinide, ceftriaxone, and acetaminophen should be avoided.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24755475_causative-agent_0002452#mention-T1",
+      "canon:span": {
+        "start": 1531,
+        "end": 1547
+      },
+      "canon:surface": "hepatic toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24755475_causative-agent_0002452#mention-T2",
+      "canon:span": {
+        "start": 82,
+        "end": 95
+      },
+      "canon:surface": "acetaminophen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24755475_causative-agent_0002452#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24755475_causative-agent_0002452#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24755475_causative-agent_0002452#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24755475"
+      }
+    }
+  ]
+}

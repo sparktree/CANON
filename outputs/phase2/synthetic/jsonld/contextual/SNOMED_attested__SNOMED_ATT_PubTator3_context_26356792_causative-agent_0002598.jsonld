@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26356792_causative-agent_0002598",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26356792_causative-agent_0002598",
+  "canon:title": "Diagnosis and Management of Alcoholic Liver Disease.",
+  "canon:abstract": "Alcohol is a leading cause of liver disease and is associated with significant morbidity and mortality. Several factors, including the amount and duration of alcohol consumption, affect the development and progression of alcoholic liver disease (ALD). ALD represents a spectrum of liver pathology ranging from fatty change to fibrosis to cirrhosis. Early diagnosis of ALD is important to encourage alcohol abstinence, minimize the progression of liver fibrosis, and manage cirrhosis-related complications including hepatocellular carcinoma. A number of questionnaires and laboratory tests are available to screen for alcohol intake. Liver biopsy remains the gold-standard diagnostic tool for ALD, but noninvasive accurate alternatives, including a number of biochemical tests as well as liver stiffness measurement, are increasingly being utilized in the evaluation of patients with suspected ALD. The management of ALD depends largely on complete abstinence from alcohol. Supportive care should focus on treating alcohol withdrawal and providing enteral nutrition while managing the complications of liver failure. Alcoholic hepatitis (AH) is a devastating acute form of ALD that requires early recognition and specialized tertiary medical care. Assessment of AH severity using defined scoring systems is important to allocate resources and initiate appropriate therapy. Corticosteroids or pentoxifylline are commonly used in treating AH but provide a limited survival benefit. Liver transplantation represents the ultimate therapy for patients with alcoholic cirrhosis, with most transplant centers mandating a 6 month period of abstinence from alcohol before listing. Early liver transplantation is also emerging as a therapeutic measure in specifically selected patients with severe AH. A number of novel targeted therapies for ALD are currently being evaluated in clinical trials. ",
+  "canon:text": "Diagnosis and Management of Alcoholic Liver Disease. Alcohol is a leading cause of liver disease and is associated with significant morbidity and mortality. Several factors, including the amount and duration of alcohol consumption, affect the development and progression of alcoholic liver disease (ALD). ALD represents a spectrum of liver pathology ranging from fatty change to fibrosis to cirrhosis. Early diagnosis of ALD is important to encourage alcohol abstinence, minimize the progression of liver fibrosis, and manage cirrhosis-related complications including hepatocellular carcinoma. A number of questionnaires and laboratory tests are available to screen for alcohol intake. Liver biopsy remains the gold-standard diagnostic tool for ALD, but noninvasive accurate alternatives, including a number of biochemical tests as well as liver stiffness measurement, are increasingly being utilized in the evaluation of patients with suspected ALD. The management of ALD depends largely on complete abstinence from alcohol. Supportive care should focus on treating alcohol withdrawal and providing enteral nutrition while managing the complications of liver failure. Alcoholic hepatitis (AH) is a devastating acute form of ALD that requires early recognition and specialized tertiary medical care. Assessment of AH severity using defined scoring systems is important to allocate resources and initiate appropriate therapy. Corticosteroids or pentoxifylline are commonly used in treating AH but provide a limited survival benefit. Liver transplantation represents the ultimate therapy for patients with alcoholic cirrhosis, with most transplant centers mandating a 6 month period of abstinence from alcohol before listing. Early liver transplantation is also emerging as a therapeutic measure in specifically selected patients with severe AH. A number of novel targeted therapies for ALD are currently being evaluated in clinical trials. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26356792_causative-agent_0002598#mention-T1",
+      "canon:span": {
+        "start": 1604,
+        "end": 1623
+      },
+      "canon:surface": "alcoholic cirrhosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008104",
+      "canon:sourceNotation": "D008104",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26356792_causative-agent_0002598#mention-T2",
+      "canon:span": {
+        "start": 1444,
+        "end": 1458
+      },
+      "canon:surface": "pentoxifylline",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010431",
+      "canon:sourceNotation": "D010431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26356792_causative-agent_0002598#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26356792_causative-agent_0002598#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26356792_causative-agent_0002598#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26356792"
+      }
+    }
+  ]
+}

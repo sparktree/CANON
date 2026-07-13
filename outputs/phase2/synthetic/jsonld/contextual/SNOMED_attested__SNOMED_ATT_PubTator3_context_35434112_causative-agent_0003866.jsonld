@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35434112_causative-agent_0003866",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35434112_causative-agent_0003866",
+  "canon:title": "Animal models applied to acute-on-chronic liver failure: Are new models required to understand the human condition?",
+  "canon:abstract": "The liver is a multifaceted organ; its location and detoxifying function expose this organ to countless injuries. Acute-on-chronic failure liver (ACLF) is a severe syndrome that affects the liver due to acute decompensation in patients with chronic liver disease. An infection environment, ascites, increased liver enzymes and prothrombin time, encephalopathy and fast-evolving multiorgan failure, leading to death, usually accompany this. The pathophysiology remains poorly understand. In this context, animal models become a very useful tool in this regard, as understanding; the disease may be helpful in developing novel therapeutic methodologies for ACLF. However, although animal models display several similarities to the human condition, they do not represent all ACLF manifestations, resulting in significant challenges. An initial liver cirrhosis framework followed by the induction of an acute decompensation by administering lipopolysaccharide and D-GaIN, potentiating liver damage supports the methodologies applied to induce experimental ACLF. The entire methodology has been described mostly for rats. Nevertheless, a quick PubMed database search indicates about 30 studies concerning ACFL models and over 1000 regarding acute liver failure models. These findings demonstrate the clear need to establish easily reproducible ACFL models to elucidate questions about this quickly established and often fatal syndrome.",
+  "canon:text": "Animal models applied to acute-on-chronic liver failure: Are new models required to understand the human condition? The liver is a multifaceted organ; its location and detoxifying function expose this organ to countless injuries. Acute-on-chronic failure liver (ACLF) is a severe syndrome that affects the liver due to acute decompensation in patients with chronic liver disease. An infection environment, ascites, increased liver enzymes and prothrombin time, encephalopathy and fast-evolving multiorgan failure, leading to death, usually accompany this. The pathophysiology remains poorly understand. In this context, animal models become a very useful tool in this regard, as understanding; the disease may be helpful in developing novel therapeutic methodologies for ACLF. However, although animal models display several similarities to the human condition, they do not represent all ACLF manifestations, resulting in significant challenges. An initial liver cirrhosis framework followed by the induction of an acute decompensation by administering lipopolysaccharide and D-GaIN, potentiating liver damage supports the methodologies applied to induce experimental ACLF. The entire methodology has been described mostly for rats. Nevertheless, a quick PubMed database search indicates about 30 studies concerning ACFL models and over 1000 regarding acute liver failure models. These findings demonstrate the clear need to establish easily reproducible ACFL models to elucidate questions about this quickly established and often fatal syndrome.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35434112_causative-agent_0003866#mention-T1",
+      "canon:span": {
+        "start": 1097,
+        "end": 1109
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35434112_causative-agent_0003866#mention-T2",
+      "canon:span": {
+        "start": 1053,
+        "end": 1071
+      },
+      "canon:surface": "lipopolysaccharide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008070",
+      "canon:sourceNotation": "D008070",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35434112_causative-agent_0003866#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35434112_causative-agent_0003866#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35434112_causative-agent_0003866#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35434112"
+      }
+    }
+  ]
+}

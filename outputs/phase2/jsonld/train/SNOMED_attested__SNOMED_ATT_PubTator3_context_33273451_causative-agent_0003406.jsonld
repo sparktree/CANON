@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33273451_causative-agent_0003406",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33273451_causative-agent_0003406",
+  "canon:title": "Methionine metabolism in chronic liver diseases: an update on molecular mechanism and therapeutic implication.",
+  "canon:abstract": "As one of the bicyclic metabolic pathways of one-carbon metabolism, methionine metabolism is the pivot linking the folate cycle to the transsulfuration pathway. In addition to being a precursor for glutathione synthesis, and the principal methyl donor for nucleic acid, phospholipid, histone, biogenic amine, and protein methylation, methionine metabolites can participate in polyamine synthesis. Methionine metabolism disorder can aggravate the damage in the pathological state of a disease. In the occurrence and development of chronic liver diseases (CLDs), changes in various components involved in methionine metabolism can affect the pathological state through various mechanisms. A methionine-deficient diet is commonly used for building CLD models. The conversion of key enzymes of methionine metabolism methionine adenosyltransferase (MAT) 1 A and MAT2A/MAT2B is closely related to fibrosis and hepatocellular carcinoma. In vivo and in vitro experiments have shown that by intervening related enzymes or downstream metabolites to interfere with methionine metabolism, the liver injuries could be reduced. Recently, methionine supplementation has gradually attracted the attention of many clinical researchers. Most researchers agree that adequate methionine supplementation can help reduce liver damage. Retrospective analysis of recently conducted relevant studies is of profound significance. This paper reviews the latest achievements related to methionine metabolism and CLD, from molecular mechanisms to clinical research, and provides some insights into the future direction of basic and clinical research.",
+  "canon:text": "Methionine metabolism in chronic liver diseases: an update on molecular mechanism and therapeutic implication. As one of the bicyclic metabolic pathways of one-carbon metabolism, methionine metabolism is the pivot linking the folate cycle to the transsulfuration pathway. In addition to being a precursor for glutathione synthesis, and the principal methyl donor for nucleic acid, phospholipid, histone, biogenic amine, and protein methylation, methionine metabolites can participate in polyamine synthesis. Methionine metabolism disorder can aggravate the damage in the pathological state of a disease. In the occurrence and development of chronic liver diseases (CLDs), changes in various components involved in methionine metabolism can affect the pathological state through various mechanisms. A methionine-deficient diet is commonly used for building CLD models. The conversion of key enzymes of methionine metabolism methionine adenosyltransferase (MAT) 1 A and MAT2A/MAT2B is closely related to fibrosis and hepatocellular carcinoma. In vivo and in vitro experiments have shown that by intervening related enzymes or downstream metabolites to interfere with methionine metabolism, the liver injuries could be reduced. Recently, methionine supplementation has gradually attracted the attention of many clinical researchers. Most researchers agree that adequate methionine supplementation can help reduce liver damage. Retrospective analysis of recently conducted relevant studies is of profound significance. This paper reviews the latest achievements related to methionine metabolism and CLD, from molecular mechanisms to clinical research, and provides some insights into the future direction of basic and clinical research.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33273451_causative-agent_0003406#mention-T1",
+      "canon:span": {
+        "start": 1410,
+        "end": 1422
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33273451_causative-agent_0003406#mention-T2",
+      "canon:span": {
+        "start": 226,
+        "end": 232
+      },
+      "canon:surface": "folate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005492",
+      "canon:sourceNotation": "D005492",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33273451_causative-agent_0003406#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33273451_causative-agent_0003406#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33273451_causative-agent_0003406#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33273451"
+      }
+    }
+  ]
+}

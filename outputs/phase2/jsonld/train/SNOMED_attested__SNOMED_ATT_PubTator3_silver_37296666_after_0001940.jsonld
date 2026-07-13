@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37296666_after_0001940",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37296666_after_0001940",
+  "canon:title": "Hypoxic-Ischemic Brain Injury in ECMO: Pathophysiology, Neuromonitoring, and Therapeutic Opportunities.",
+  "canon:abstract": "Extracorporeal membrane oxygenation (ECMO), in conjunction with its life-saving benefits, carries a significant risk of acute brain injury (ABI). Hypoxic-ischemic brain injury (HIBI) is one of the most common types of ABI in ECMO patients. Various risk factors, such as history of hypertension, high day 1 lactate level, low pH, cannulation technique, large peri-cannulation PaCO2 drop ( PaCO2), and early low pulse pressure, have been associated with the development of HIBI in ECMO patients. The pathogenic mechanisms of HIBI in ECMO are complex and multifactorial, attributing to the underlying pathology requiring initiation of ECMO and the risk of HIBI associated with ECMO itself. HIBI is likely to occur in the peri-cannulation or peri-decannulation time secondary to underlying refractory cardiopulmonary failure before or after ECMO. Current therapeutics target pathological mechanisms, cerebral hypoxia and ischemia, by employing targeted temperature management in the case of extracorporeal cardiopulmonary resuscitation (eCPR), and optimizing cerebral O2 saturations and cerebral perfusion. This review describes the pathophysiology, neuromonitoring, and therapeutic techniques to improve neurological outcomes in ECMO patients in order to prevent and minimize the morbidity of HIBI. Further studies aimed at standardizing the most relevant neuromonitoring techniques, optimizing cerebral perfusion, and minimizing the severity of HIBI once it occurs will improve long-term neurological outcomes in ECMO patients.",
+  "canon:text": "Hypoxic-Ischemic Brain Injury in ECMO: Pathophysiology, Neuromonitoring, and Therapeutic Opportunities. Extracorporeal membrane oxygenation (ECMO), in conjunction with its life-saving benefits, carries a significant risk of acute brain injury (ABI). Hypoxic-ischemic brain injury (HIBI) is one of the most common types of ABI in ECMO patients. Various risk factors, such as history of hypertension, high day 1 lactate level, low pH, cannulation technique, large peri-cannulation PaCO2 drop ( PaCO2), and early low pulse pressure, have been associated with the development of HIBI in ECMO patients. The pathogenic mechanisms of HIBI in ECMO are complex and multifactorial, attributing to the underlying pathology requiring initiation of ECMO and the risk of HIBI associated with ECMO itself. HIBI is likely to occur in the peri-cannulation or peri-decannulation time secondary to underlying refractory cardiopulmonary failure before or after ECMO. Current therapeutics target pathological mechanisms, cerebral hypoxia and ischemia, by employing targeted temperature management in the case of extracorporeal cardiopulmonary resuscitation (eCPR), and optimizing cerebral O2 saturations and cerebral perfusion. This review describes the pathophysiology, neuromonitoring, and therapeutic techniques to improve neurological outcomes in ECMO patients in order to prevent and minimize the morbidity of HIBI. Further studies aimed at standardizing the most relevant neuromonitoring techniques, optimizing cerebral perfusion, and minimizing the severity of HIBI once it occurs will improve long-term neurological outcomes in ECMO patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37296666_after_0001940#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 29
+      },
+      "canon:surface": "Hypoxic-Ischemic Brain Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37296666_after_0001940#mention-T2",
+      "canon:span": {
+        "start": 230,
+        "end": 242
+      },
+      "canon:surface": "brain injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001930",
+      "canon:sourceNotation": "D001930",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37296666_after_0001940#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37296666_after_0001940#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37296666_after_0001940#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37296666"
+      }
+    }
+  ]
+}

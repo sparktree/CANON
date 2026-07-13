@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24259288_causative-agent_0000467",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24259288_causative-agent_0000467",
+  "canon:title": "A novel germline PIGA mutation in Ferro-Cerebro-Cutaneous syndrome: a neurodegenerative X-linked epileptic encephalopathy with systemic iron-overload.",
+  "canon:abstract": "Three related males presented with a newly recognized x-linked syndrome associated with neurodegeneration, cutaneous abnormalities, and systemic iron overload. Linkage studies demonstrated that they shared a haplotype on Xp21.3-Xp22.2 and exome sequencing was used to identify candidate variants. Of the segregating variants, only a PIGA mutation segregated with disease in the family. The c.328_330delCCT PIGA variant predicts, p.Leu110del (or c.1030_1032delCTT, p.Leu344del depending on the reference sequence). The unaffected great-grandfather shared his X allele with the proband but he did not have the PIGA mutation, indicating that the mutation arose de novo in his daughter. A single family with a germline PIGA mutation has been reported; affected males had a phenotype characterized by multiple congenital anomalies and severe neurologic impairment resulting in infantile lethality. In contrast, affected boys in the family described here were born without anomalies and were neurologically normal prior to onset of seizures after 6 months of age, with two surviving to the second decade. PIGA encodes an enzyme in the GPI anchor biosynthesis pathway. An affected individual in the family studied here was deficient in GPI anchor proteins on granulocytes but not erythrocytes. In conclusion, the PIGA mutation in this family likely causes a reduction in GPI anchor protein cell surface expression in various cell types, resulting in the observed pleiotropic phenotype involving central nervous system, skin, and iron metabolism.",
+  "canon:text": "A novel germline PIGA mutation in Ferro-Cerebro-Cutaneous syndrome: a neurodegenerative X-linked epileptic encephalopathy with systemic iron-overload. Three related males presented with a newly recognized x-linked syndrome associated with neurodegeneration, cutaneous abnormalities, and systemic iron overload. Linkage studies demonstrated that they shared a haplotype on Xp21.3-Xp22.2 and exome sequencing was used to identify candidate variants. Of the segregating variants, only a PIGA mutation segregated with disease in the family. The c.328_330delCCT PIGA variant predicts, p.Leu110del (or c.1030_1032delCTT, p.Leu344del depending on the reference sequence). The unaffected great-grandfather shared his X allele with the proband but he did not have the PIGA mutation, indicating that the mutation arose de novo in his daughter. A single family with a germline PIGA mutation has been reported; affected males had a phenotype characterized by multiple congenital anomalies and severe neurologic impairment resulting in infantile lethality. In contrast, affected boys in the family described here were born without anomalies and were neurologically normal prior to onset of seizures after 6 months of age, with two surviving to the second decade. PIGA encodes an enzyme in the GPI anchor biosynthesis pathway. An affected individual in the family studied here was deficient in GPI anchor proteins on granulocytes but not erythrocytes. In conclusion, the PIGA mutation in this family likely causes a reduction in GPI anchor protein cell surface expression in various cell types, resulting in the observed pleiotropic phenotype involving central nervous system, skin, and iron metabolism.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24259288_causative-agent_0000467#mention-T1",
+      "canon:span": {
+        "start": 136,
+        "end": 149
+      },
+      "canon:surface": "iron-overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24259288_causative-agent_0000467#mention-T2",
+      "canon:span": {
+        "start": 1673,
+        "end": 1677
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24259288_causative-agent_0000467#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24259288_causative-agent_0000467#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24259288_causative-agent_0000467#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24259288"
+      }
+    }
+  ]
+}
