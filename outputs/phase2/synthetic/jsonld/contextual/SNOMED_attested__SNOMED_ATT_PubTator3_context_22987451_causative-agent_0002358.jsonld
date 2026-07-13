@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358",
+  "canon:title": "Prediction of liver injury induced by chemicals in human with a multiparametric assay on isolated mouse liver mitochondria.",
+  "canon:abstract": "Drug-induced liver injury (DILI) in humans is difficult to predict using classical in vitro cytotoxicity screening and regulatory animal studies. This explains why numerous compounds are stopped during clinical trials or withdrawn from the market due to hepatotoxicity. Thus, it is important to improve early prediction of DILI in human. In this study, we hypothesized that this goal could be achieved by investigating drug-induced mitochondrial dysfunction as this toxic effect is a major mechanism of DILI. To this end, we developed a high-throughput screening platform using isolated mouse liver mitochondria. Our broad spectrum multiparametric assay was designed to detect the global mitochondrial membrane permeabilization (swelling), inner membrane permeabilization (transmembrane potential), outer membrane permeabilization (cytochrome c release), and alteration of mitochondrial respiration driven by succinate or malate/glutamate. A pool of 124 chemicals (mainly drugs) was selected, including 87 with documented DILI and 37 without reported clinical hepatotoxicity. Our screening assay revealed an excellent sensitivity for clinical outcome of DILI (94 or 92% depending on cutoff) and a high positive predictive value (89 or 82%). A highly significant relationship between drug-induced mitochondrial toxicity and DILI occurrence in patients was calculated (p < 0.001). Moreover, this multiparametric assay allowed identifying several compounds for which mitochondrial toxicity had never been described before and even helped to clarify mechanisms with some drugs already known to be mitochondriotoxic. Investigation of drug-induced loss of mitochondrial integrity and function with this multiparametric assay should be considered for integration into basic screening processes at early stage to select drug candidates with lower risk of DILI in human. This assay is also a valuable tool for assessing the mitochondrial toxicity profile and investigating the mechanism of action of new compounds and marketed compounds.",
+  "canon:text": "Prediction of liver injury induced by chemicals in human with a multiparametric assay on isolated mouse liver mitochondria. Drug-induced liver injury (DILI) in humans is difficult to predict using classical in vitro cytotoxicity screening and regulatory animal studies. This explains why numerous compounds are stopped during clinical trials or withdrawn from the market due to hepatotoxicity. Thus, it is important to improve early prediction of DILI in human. In this study, we hypothesized that this goal could be achieved by investigating drug-induced mitochondrial dysfunction as this toxic effect is a major mechanism of DILI. To this end, we developed a high-throughput screening platform using isolated mouse liver mitochondria. Our broad spectrum multiparametric assay was designed to detect the global mitochondrial membrane permeabilization (swelling), inner membrane permeabilization (transmembrane potential), outer membrane permeabilization (cytochrome c release), and alteration of mitochondrial respiration driven by succinate or malate/glutamate. A pool of 124 chemicals (mainly drugs) was selected, including 87 with documented DILI and 37 without reported clinical hepatotoxicity. Our screening assay revealed an excellent sensitivity for clinical outcome of DILI (94 or 92% depending on cutoff) and a high positive predictive value (89 or 82%). A highly significant relationship between drug-induced mitochondrial toxicity and DILI occurrence in patients was calculated (p < 0.001). Moreover, this multiparametric assay allowed identifying several compounds for which mitochondrial toxicity had never been described before and even helped to clarify mechanisms with some drugs already known to be mitochondriotoxic. Investigation of drug-induced loss of mitochondrial integrity and function with this multiparametric assay should be considered for integration into basic screening processes at early stage to select drug candidates with lower risk of DILI in human. This assay is also a valuable tool for assessing the mitochondrial toxicity profile and investigating the mechanism of action of new compounds and marketed compounds.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T1",
+      "canon:span": {
+        "start": 124,
+        "end": 149
+      },
+      "canon:surface": "Drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T2",
+      "canon:span": {
+        "start": 1053,
+        "end": 1062
+      },
+      "canon:surface": "glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018698",
+      "canon:sourceNotation": "D018698",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22987451_causative-agent_0002358#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "22987451"
+      }
+    }
+  ]
+}

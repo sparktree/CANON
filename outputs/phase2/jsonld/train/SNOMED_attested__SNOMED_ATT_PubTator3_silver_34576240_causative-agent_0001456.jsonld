@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576240_causative-agent_0001456",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34576240_causative-agent_0001456",
+  "canon:title": "Molecular Mechanism of Arsenic-Induced Neurotoxicity including Neuronal Dysfunctions.",
+  "canon:abstract": "Arsenic is a key environmental toxicant having significant impacts on human health. Millions of people in developing countries such as Bangladesh, Mexico, Taiwan, and India are affected by arsenic contamination through groundwater. Environmental contamination of arsenic leads to leads to various types of cancers, coronary and neurological ailments in human. There are several sources of arsenic exposure such as drinking water, diet, wood preservatives, smoking, air and cosmetics, while, drinking water is the most explored route. Inorganic arsenic exhibits higher levels of toxicity compared its organic forms. Exposure to inorganic arsenic is known to cause major neurological effects such as cytotoxicity, chromosomal aberration, damage to cellular DNA and genotoxicity. On the other hand, long-term exposure to arsenic may cause neurobehavioral effects in the juvenile stage, which may have detrimental effects in the later stages of life. Thus, it is important to understand the toxicology and underlying molecular mechanism of arsenic which will help to mitigate its detrimental effects. The present review focuses on the epidemiology, and the toxic mechanisms responsible for arsenic induced neurobehavioral diseases, including strategies for its management from water, community and household premises. The review also provides a critical analysis of epigenetic and transgenerational modifications, mitochondrial oxidative stress, molecular mechanisms of arsenic-induced oxidative stress, and neuronal dysfunction.",
+  "canon:text": "Molecular Mechanism of Arsenic-Induced Neurotoxicity including Neuronal Dysfunctions. Arsenic is a key environmental toxicant having significant impacts on human health. Millions of people in developing countries such as Bangladesh, Mexico, Taiwan, and India are affected by arsenic contamination through groundwater. Environmental contamination of arsenic leads to leads to various types of cancers, coronary and neurological ailments in human. There are several sources of arsenic exposure such as drinking water, diet, wood preservatives, smoking, air and cosmetics, while, drinking water is the most explored route. Inorganic arsenic exhibits higher levels of toxicity compared its organic forms. Exposure to inorganic arsenic is known to cause major neurological effects such as cytotoxicity, chromosomal aberration, damage to cellular DNA and genotoxicity. On the other hand, long-term exposure to arsenic may cause neurobehavioral effects in the juvenile stage, which may have detrimental effects in the later stages of life. Thus, it is important to understand the toxicology and underlying molecular mechanism of arsenic which will help to mitigate its detrimental effects. The present review focuses on the epidemiology, and the toxic mechanisms responsible for arsenic induced neurobehavioral diseases, including strategies for its management from water, community and household premises. The review also provides a critical analysis of epigenetic and transgenerational modifications, mitochondrial oxidative stress, molecular mechanisms of arsenic-induced oxidative stress, and neuronal dysfunction.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576240_causative-agent_0001456#mention-T1",
+      "canon:span": {
+        "start": 39,
+        "end": 52
+      },
+      "canon:surface": "Neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576240_causative-agent_0001456#mention-T2",
+      "canon:span": {
+        "start": 23,
+        "end": 30
+      },
+      "canon:surface": "Arsenic",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001151",
+      "canon:sourceNotation": "D001151",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576240_causative-agent_0001456#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576240_causative-agent_0001456#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34576240_causative-agent_0001456#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34576240"
+      }
+    }
+  ]
+}

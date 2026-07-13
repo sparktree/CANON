@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35052546_after_0003764",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35052546_after_0003764",
+  "canon:title": "Thiamine as a Possible Neuroprotective Strategy in Neonatal Hypoxic-Ischemic Encephalopathy.",
+  "canon:abstract": "On the basis that similar biochemical and histological sequences of events occur in the brain during thiamine deficiency and hypoxia/ischemia related brain damage, we have planned this review to discuss the possible therapeutic role of thiamine and its derivatives in the management of neonatal hypoxic-ischemic encephalopathy (HIE). Among the many benefits, thiamine per se as antioxidant, given intravenously (IV) at high doses, defined as dosage greater than 100 mg IV daily, should counteract the damaging effects of reactive oxygen and nitrogen species in the brain, including the reaction of peroxynitrite with the tyrosine residues of the major enzymes involved in intracellular glucose metabolism, which plays a key pathophysiological role in HIE in neonates. Accordingly, it is conceivable that, in neonatal HIE, the blockade of intracellular progressive oxidative stress and the rescue of mitochondrial function mediated by thiamine and its derivatives can lead to a definite neuroprotective effect. Because therapeutic hypothermia and thiamine may both act on the latent period of HIE damage, a synergistic effect of these therapeutic strategies is likely. Thiamine treatment may be especially important in mild HIE and in areas of the world where there is limited access to expensive hypothermia equipment.",
+  "canon:text": "Thiamine as a Possible Neuroprotective Strategy in Neonatal Hypoxic-Ischemic Encephalopathy. On the basis that similar biochemical and histological sequences of events occur in the brain during thiamine deficiency and hypoxia/ischemia related brain damage, we have planned this review to discuss the possible therapeutic role of thiamine and its derivatives in the management of neonatal hypoxic-ischemic encephalopathy (HIE). Among the many benefits, thiamine per se as antioxidant, given intravenously (IV) at high doses, defined as dosage greater than 100 mg IV daily, should counteract the damaging effects of reactive oxygen and nitrogen species in the brain, including the reaction of peroxynitrite with the tyrosine residues of the major enzymes involved in intracellular glucose metabolism, which plays a key pathophysiological role in HIE in neonates. Accordingly, it is conceivable that, in neonatal HIE, the blockade of intracellular progressive oxidative stress and the rescue of mitochondrial function mediated by thiamine and its derivatives can lead to a definite neuroprotective effect. Because therapeutic hypothermia and thiamine may both act on the latent period of HIE damage, a synergistic effect of these therapeutic strategies is likely. Thiamine treatment may be especially important in mild HIE and in areas of the world where there is limited access to expensive hypothermia equipment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35052546_after_0003764#mention-T1",
+      "canon:span": {
+        "start": 60,
+        "end": 91
+      },
+      "canon:surface": "Hypoxic-Ischemic Encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35052546_after_0003764#mention-T2",
+      "canon:span": {
+        "start": 194,
+        "end": 213
+      },
+      "canon:surface": "thiamine deficiency",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D013832",
+      "canon:sourceNotation": "D013832",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35052546_after_0003764#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35052546_after_0003764#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35052546_after_0003764#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35052546"
+      }
+    }
+  ]
+}

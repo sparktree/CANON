@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23550044_causative-agent_0000433",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_23550044_causative-agent_0000433",
+  "canon:title": "Clinical spectrum and therapeutic approach to hepatocellular injury in patients with hyperthyroidism.",
+  "canon:abstract": "Liver dysfunction in patients with hyperthyroidism includes abnormalities associated with the effects of thyroid hormone excess, those secondary to drug-induced liver injury, and changes resulting from concomitant liver disease. Our goal was to describe clinical, biochemical, and histopathological patterns in patients suffering from hyperthyroidism and concomitant liver dysfunction and to propose an algorithm of procedures to facilitate diagnosis and management of such cases. This study describes seven patients with liver biochemistry abnormalities detected after diagnosis of hyperthyroidism and one with undiagnosed decompensated hyperthyroidism and acute hepatitis. Two patients showed autoantibody reactivity which, together with liver histology, suggested the diagnosis of classic autoimmune hepatitis. Three patients experienced hepatotoxicity induced by propylthiouracil, the manifestations of which ranged from a benign course after drug withdrawal in one, a longstanding course in another suggesting drug-induced autoimmune hepatitis, and a more severe clinical condition with acute liver failure in a third patient, requiring liver transplantation. The three remaining patients showed no precipitating factors other than thyroid hyperactivity itself. They could be interpreted as having a thyroid storm with different clinical presentations. In conclusion, this series of patients illustrates the most frequent patterns of hepatocellular damage associated with hyperthyroidism and provides an algorithm for their diagnosis and treatment.",
+  "canon:text": "Clinical spectrum and therapeutic approach to hepatocellular injury in patients with hyperthyroidism. Liver dysfunction in patients with hyperthyroidism includes abnormalities associated with the effects of thyroid hormone excess, those secondary to drug-induced liver injury, and changes resulting from concomitant liver disease. Our goal was to describe clinical, biochemical, and histopathological patterns in patients suffering from hyperthyroidism and concomitant liver dysfunction and to propose an algorithm of procedures to facilitate diagnosis and management of such cases. This study describes seven patients with liver biochemistry abnormalities detected after diagnosis of hyperthyroidism and one with undiagnosed decompensated hyperthyroidism and acute hepatitis. Two patients showed autoantibody reactivity which, together with liver histology, suggested the diagnosis of classic autoimmune hepatitis. Three patients experienced hepatotoxicity induced by propylthiouracil, the manifestations of which ranged from a benign course after drug withdrawal in one, a longstanding course in another suggesting drug-induced autoimmune hepatitis, and a more severe clinical condition with acute liver failure in a third patient, requiring liver transplantation. The three remaining patients showed no precipitating factors other than thyroid hyperactivity itself. They could be interpreted as having a thyroid storm with different clinical presentations. In conclusion, this series of patients illustrates the most frequent patterns of hepatocellular damage associated with hyperthyroidism and provides an algorithm for their diagnosis and treatment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23550044_causative-agent_0000433#mention-T1",
+      "canon:span": {
+        "start": 46,
+        "end": 67
+      },
+      "canon:surface": "hepatocellular injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23550044_causative-agent_0000433#mention-T2",
+      "canon:span": {
+        "start": 969,
+        "end": 985
+      },
+      "canon:surface": "propylthiouracil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D011441",
+      "canon:sourceNotation": "D011441",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23550044_causative-agent_0000433#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23550044_causative-agent_0000433#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23550044_causative-agent_0000433#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "23550044"
+      }
+    }
+  ]
+}

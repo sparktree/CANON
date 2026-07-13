@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859365_causative-agent_0000570",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25859365_causative-agent_0000570",
+  "canon:title": "Clinical manifestation of macrolide antibiotic toxicity in CKD and dialysis patients.",
+  "canon:abstract": "Macrolide antibiotics, erythromycin, clarithromycin and azithromycin are commonly prescribed for upper respiratory infection, and their use has recently been further linked to immunomodulatory effects. With the widespread and expanded use of macrolides, special attention should be paid to their potential adverse effects. We reported two cases of end-stage renal disease (ESRD) patients who developed hallucinations such as vivid images of worms after taking clarithromycin. Similar to previous case reports of clarithromycin neurotoxicity, the visual hallucination resolved upon cessation of clarithromycin. Furthermore, we discussed the pharmacokinetic properties and other toxicities of macrolide antibiotics in patients with chronic kidney disease and ESRD. ",
+  "canon:text": "Clinical manifestation of macrolide antibiotic toxicity in CKD and dialysis patients. Macrolide antibiotics, erythromycin, clarithromycin and azithromycin are commonly prescribed for upper respiratory infection, and their use has recently been further linked to immunomodulatory effects. With the widespread and expanded use of macrolides, special attention should be paid to their potential adverse effects. We reported two cases of end-stage renal disease (ESRD) patients who developed hallucinations such as vivid images of worms after taking clarithromycin. Similar to previous case reports of clarithromycin neurotoxicity, the visual hallucination resolved upon cessation of clarithromycin. Furthermore, we discussed the pharmacokinetic properties and other toxicities of macrolide antibiotics in patients with chronic kidney disease and ESRD. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859365_causative-agent_0000570#mention-T1",
+      "canon:span": {
+        "start": 613,
+        "end": 626
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859365_causative-agent_0000570#mention-T2",
+      "canon:span": {
+        "start": 123,
+        "end": 137
+      },
+      "canon:surface": "clarithromycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D017291",
+      "canon:sourceNotation": "D017291",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859365_causative-agent_0000570#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859365_causative-agent_0000570#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859365_causative-agent_0000570#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25859365"
+      }
+    }
+  ]
+}

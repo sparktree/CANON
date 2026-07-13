@@ -1,0 +1,87 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3496378_causative-agent_0000219",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_3496378_causative-agent_0000219",
+  "canon:title": "Prolonged cholestasis after troleandomycin-induced acute hepatitis.",
+  "canon:abstract": "We report the case of a patient in whom troleandomycin-induced hepatitis was followed by prolonged anicteric cholestasis. Jaundice occurred after administration of troleandomycin for 7 days and was associated with hypereosinophilia. Jaundice disappeared within 3 months but was followed by prolonged anicteric cholestasis marked by pruritus and high levels of alkaline phosphatase and gammaglutamyltransferase activities. Finally, pruritus disappeared within 19 months, and liver tests returned to normal 27 months after the onset of hepatitis. This observation demonstrates that prolonged cholestasis can follow troleandomycin-induced acute hepatitis.",
+  "canon:text": "Prolonged cholestasis after troleandomycin-induced acute hepatitis. We report the case of a patient in whom troleandomycin-induced hepatitis was followed by prolonged anicteric cholestasis. Jaundice occurred after administration of troleandomycin for 7 days and was associated with hypereosinophilia. Jaundice disappeared within 3 months but was followed by prolonged anicteric cholestasis marked by pruritus and high levels of alkaline phosphatase and gammaglutamyltransferase activities. Finally, pruritus disappeared within 19 months, and liver tests returned to normal 27 months after the onset of hepatitis. This observation demonstrates that prolonged cholestasis can follow troleandomycin-induced acute hepatitis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3496378_causative-agent_0000219#mention-T1",
+      "canon:span": {
+        "start": 57,
+        "end": 66
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3496378_causative-agent_0000219#mention-T2",
+      "canon:span": {
+        "start": 28,
+        "end": 42
+      },
+      "canon:surface": "troleandomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D014217",
+      "canon:sourceNotation": "D014217",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/64130008",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3496378_causative-agent_0000219#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3496378_causative-agent_0000219#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3496378_causative-agent_0000219#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "3496378"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36691013_causative-agent_0004164",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36691013_causative-agent_0004164",
+  "canon:title": "DRESS/DiHS syndrome induced by Propylthiouracil: a case report.",
+  "canon:abstract": "BACKGROUND: Drug reaction with eosinophilia and systemic symptoms (DRESS), also known as Drug-induced hypersensitivity syndrome (DiHS), is a severe adverse drug reaction. Propylthiouracil, a member of thiouracils group, is widely used in medical treatment of hyperthyroidism. Propylthiouracil is associated with multiple adverse effects such as rash, agranulocytosis hepatitis and antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis, but rarely triggers DRESS/DiHS syndrome. Here, we describe a severe case of propylthiouracil-induced DRESS/DiHS syndrome. CASE PRESENTATION: A 38-year-old female was treated with methimazole for hyperthyroidism at first. 4 weeks later, the patient developed elevated liver transaminase so methimazole was stopped. After liver function improved in 2 weeks, medication was switched to propylthiouracil therapy. The patient subsequently developed nausea and rash followed by a high fever, acute toxic hepatitis and multiple organ dysfunction (liver, lung and heart), which lasted for 1 month after propylthiouracil was started. According to the diagnostic criteria, the patient was diagnosed of DRESS/DiHS syndrome which was induced by propylthiouracil. As a result, propylthiouracil was immediately withdrawn. And patient was then treated with adalimumab, systematic corticosteroids and plasmapheresis in sequence. Symptoms were finally resolved 4 weeks later. CONCLUSIONS: Propylthiouracil is a rare cause of the DRESS/DiHS syndrome, which typically consists of severe dermatitis and various degrees of internal organ involvement. We want to emphasize through this severe case that DRESS/DiHS syndrome should be promptly recognized to hasten recovery.",
+  "canon:text": "DRESS/DiHS syndrome induced by Propylthiouracil: a case report. BACKGROUND: Drug reaction with eosinophilia and systemic symptoms (DRESS), also known as Drug-induced hypersensitivity syndrome (DiHS), is a severe adverse drug reaction. Propylthiouracil, a member of thiouracils group, is widely used in medical treatment of hyperthyroidism. Propylthiouracil is associated with multiple adverse effects such as rash, agranulocytosis hepatitis and antineutrophil cytoplasmic antibody (ANCA)-associated vasculitis, but rarely triggers DRESS/DiHS syndrome. Here, we describe a severe case of propylthiouracil-induced DRESS/DiHS syndrome. CASE PRESENTATION: A 38-year-old female was treated with methimazole for hyperthyroidism at first. 4 weeks later, the patient developed elevated liver transaminase so methimazole was stopped. After liver function improved in 2 weeks, medication was switched to propylthiouracil therapy. The patient subsequently developed nausea and rash followed by a high fever, acute toxic hepatitis and multiple organ dysfunction (liver, lung and heart), which lasted for 1 month after propylthiouracil was started. According to the diagnostic criteria, the patient was diagnosed of DRESS/DiHS syndrome which was induced by propylthiouracil. As a result, propylthiouracil was immediately withdrawn. And patient was then treated with adalimumab, systematic corticosteroids and plasmapheresis in sequence. Symptoms were finally resolved 4 weeks later. CONCLUSIONS: Propylthiouracil is a rare cause of the DRESS/DiHS syndrome, which typically consists of severe dermatitis and various degrees of internal organ involvement. We want to emphasize through this severe case that DRESS/DiHS syndrome should be promptly recognized to hasten recovery.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36691013_causative-agent_0004164#mention-T1",
+      "canon:span": {
+        "start": 1003,
+        "end": 1018
+      },
+      "canon:surface": "toxic hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36691013_causative-agent_0004164#mention-T2",
+      "canon:span": {
+        "start": 31,
+        "end": 47
+      },
+      "canon:surface": "Propylthiouracil",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D011441",
+      "canon:sourceNotation": "D011441",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36691013_causative-agent_0004164#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36691013_causative-agent_0004164#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36691013_causative-agent_0004164#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36691013"
+      }
+    }
+  ]
+}

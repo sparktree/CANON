@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28970719_causative-agent_0000773",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_28970719_causative-agent_0000773",
+  "canon:title": "Autoimmune hepatitis: Standard treatment and systematic review of alternative treatments.",
+  "canon:abstract": "Autoimmune hepatitis is a rare chronic inflammatory liver disease, affecting all ages, characterised by elevated transaminase and immunoglobulin G levels, positive autoantibodies, interface hepatitis at liver histology and good response to immunosuppressive treatment. If untreated, it has a poor prognosis. The aim of this review is to summarize the evidence for standard treatment and to provide a systematic review on alternative treatments for adults and children. Standard treatment is based on steroids and azathioprine, and leads to disease remission in 80%-90% of patients. Alternative first line treatment has been attempted with budesonide or cyclosporine, but their superiority compared to standard treatment remains to be demonstrated. Second-line treatments are needed for patients not responding or intolerant to standard treatment. No randomized controlled trials have been performed for second-line options. Mycophenolate mofetil is the most widely used second-line drug, and has good efficacy particularly for patients intolerant to azathioprine, but has the major disadvantage of being teratogenic. Only few and heterogeneous data on cyclosporine, tacrolimus, everolimus and sirolimus are available. More recently, experience with the anti-tumour necrosis factor-alpha infliximab and the anti-CD20 rituximab has been published, with ambivalent results; these agents may have severe side-effects and their use should be restricted to specialized centres. Clinical trials with new therapeutic options are ongoing.",
+  "canon:text": "Autoimmune hepatitis: Standard treatment and systematic review of alternative treatments. Autoimmune hepatitis is a rare chronic inflammatory liver disease, affecting all ages, characterised by elevated transaminase and immunoglobulin G levels, positive autoantibodies, interface hepatitis at liver histology and good response to immunosuppressive treatment. If untreated, it has a poor prognosis. The aim of this review is to summarize the evidence for standard treatment and to provide a systematic review on alternative treatments for adults and children. Standard treatment is based on steroids and azathioprine, and leads to disease remission in 80%-90% of patients. Alternative first line treatment has been attempted with budesonide or cyclosporine, but their superiority compared to standard treatment remains to be demonstrated. Second-line treatments are needed for patients not responding or intolerant to standard treatment. No randomized controlled trials have been performed for second-line options. Mycophenolate mofetil is the most widely used second-line drug, and has good efficacy particularly for patients intolerant to azathioprine, but has the major disadvantage of being teratogenic. Only few and heterogeneous data on cyclosporine, tacrolimus, everolimus and sirolimus are available. More recently, experience with the anti-tumour necrosis factor-alpha infliximab and the anti-CD20 rituximab has been published, with ambivalent results; these agents may have severe side-effects and their use should be restricted to specialized centres. Clinical trials with new therapeutic options are ongoing.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28970719_causative-agent_0000773#mention-T1",
+      "canon:span": {
+        "start": 280,
+        "end": 289
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28970719_causative-agent_0000773#mention-T2",
+      "canon:span": {
+        "start": 590,
+        "end": 598
+      },
+      "canon:surface": "steroids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28970719_causative-agent_0000773#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28970719_causative-agent_0000773#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28970719_causative-agent_0000773#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "28970719"
+      }
+    }
+  ]
+}

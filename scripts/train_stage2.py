@@ -34,10 +34,14 @@ try:
     import config
     from canon_dataset import (
         CanonDocDataset,
+        SEMANTIC_CLASSES,
         collate_docs,
         load_soft_lookup,
     )
     from heads import MultiTaskModel
+    from consistency_loss import ExpectedViolationLoss
+    import mrcm_validity
+    from relation_schema import TIER1_RELATIONS, TIER2_RELATIONS
     from train_stage1 import (
         evaluate,
         ner_micro_f1,
@@ -50,10 +54,14 @@ except ImportError:
     import config
     from canon_dataset import (
         CanonDocDataset,
+        SEMANTIC_CLASSES,
         collate_docs,
         load_soft_lookup,
     )
     from heads import MultiTaskModel
+    from consistency_loss import ExpectedViolationLoss
+    import mrcm_validity
+    from relation_schema import TIER1_RELATIONS, TIER2_RELATIONS
     from train_stage1 import (
         evaluate,
         ner_micro_f1,
@@ -153,7 +161,10 @@ def evaluate_all(model: MultiTaskModel, loader: DataLoader, device: torch.device
             if "norm" in out["raw"]:
                 scores = out["raw"]["norm"].get("scores")
                 if scores is not None and scores.numel() > 0:
-                    argmax = scores.argmax(dim=-1).cpu().tolist()
+                    target_rows = out["raw"]["norm"].get("target_rows")
+                    if target_rows is None or target_rows.numel() == 0:
+                        continue
+                    argmax = scores.index_select(0, target_rows).argmax(dim=-1).cpu().tolist()
                     row = 0
                     for b in range(len(batch["norm_targets"])):
                         ent_idx_list = batch["norm_entity_idx"][b]
@@ -161,7 +172,7 @@ def evaluate_all(model: MultiTaskModel, loader: DataLoader, device: torch.device
                         for k, _ in enumerate(ent_idx_list):
                             if k >= len(target_list):
                                 continue
-                            if row >= scores.size(0):
+                            if row >= len(argmax):
                                 break
                             pred_cid = cid_lookup[argmax[row]] if argmax[row] < len(cid_lookup) else None
                             tp = target_list[k]
@@ -180,13 +191,12 @@ def evaluate_all(model: MultiTaskModel, loader: DataLoader, device: torch.device
                             row += 1
 
             if "rel" in out["raw"]:
-                for b, logits in enumerate(out["raw"]["rel"]["per_doc_logits"]):
-                    if logits.numel() == 0:
-                        continue
-                    pred = logits.argmax(dim=-1).cpu().tolist()
-                    gold = batch["pair_labels"][b].cpu().tolist()
-                    preds_rel.extend(pred)
-                    golds_rel.extend(gold)
+                rel_out = out["raw"]["rel"]
+                logits_chunks = [x for x in rel_out["per_doc_bag_logits"] if x.numel()]
+                targets = rel_out.get("bag_targets")
+                if logits_chunks and targets is not None:
+                    preds_rel.extend(torch.cat(logits_chunks).argmax(dim=-1).cpu().tolist())
+                    golds_rel.extend(targets.argmax(dim=-1).cpu().tolist())
 
     if preds_ner:
         p, r, f = ner_micro_f1(preds_ner, golds_ner)
@@ -202,20 +212,24 @@ def evaluate_all(model: MultiTaskModel, loader: DataLoader, device: torch.device
 
 
 def load_stage1_state(model: MultiTaskModel, stage1_dir: Path, logger: logging.Logger) -> None:
-    """Optionally warm-start each head from its Stage-1 checkpoint.
+    """Warm-start every head from its required Stage-1 checkpoint.
 
-    The state file is `head_state.pt` written by train_stage1; missing keys
-    are tolerated (Stage 2 falls back to random init for those heads).
+    The state file is `head_state.pt` written by train_stage1. Missing or
+    unreadable checkpoints are fatal so a nominal joint run cannot silently
+    become a randomly initialized ablation.
     """
+    missing = []
     for head_name in ("ner", "norm", "rel"):
         ck = stage1_dir / head_name / "best" / "head_state.pt"
         if not ck.exists():
             logger.info(f"stage1 ckpt missing for head={head_name}; skipping warm start")
+            missing.append(str(ck))
             continue
         try:
             sd = torch.load(ck, map_location="cpu", weights_only=True)
         except Exception as exc:  # noqa: BLE001
             logger.info(f"failed to load {ck}: {exc}")
+            missing.append(str(ck))
             continue
         own = {n: p for n, p in model.named_parameters() if not n.startswith("encoder.")}
         loaded = 0
@@ -224,6 +238,8 @@ def load_stage1_state(model: MultiTaskModel, stage1_dir: Path, logger: logging.L
                 own[k].data.copy_(v)
                 loaded += 1
         logger.info(f"warm-started {loaded} params from {ck}")
+    if missing:
+        raise FileNotFoundError(f"Stage-1 checkpoints are required: {missing}")
 
 
 def main() -> None:
@@ -242,6 +258,16 @@ def main() -> None:
     parser.add_argument("--patience", type=int, default=DEFAULT_PATIENCE)
     parser.add_argument("--stage1-dir", default=str(config.STAGE1_DIR))
     parser.add_argument("--output-dir", default=str(config.STAGE2_DIR))
+    parser.add_argument("--soft-consistency", action="store_true",
+                        help="Enable configuration (c)'s differentiable expected-violation loss.")
+    parser.add_argument("--encoder-dir", default=str(config.SAPBERT_ENCODER_DIR))
+    parser.add_argument("--concept-index-dir", default=str(config.CONCEPT_INDEX_DIR))
+    parser.add_argument("--exclude-corpus", action="append", default=[],
+                        help="Omit train documents whose corpus contains this string; repeatable.")
+    parser.add_argument("--hard-labels", action="store_true",
+                        help="Use declared concept/relation labels rather than soft distributions.")
+    parser.add_argument("--no-confidence-weighting", action="store_true",
+                        help="Set NER, normalization, and relation example weights to one.")
     args = parser.parse_args()
 
     output_dir = Path(args.output_dir)
@@ -256,18 +282,26 @@ def main() -> None:
     logger.info(f"epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tokenizer = AutoTokenizer.from_pretrained(str(config.SAPBERT_ENCODER_DIR))
+    encoder_dir = Path(args.encoder_dir)
+    concept_index_dir = Path(args.concept_index_dir)
+    concept_ids_path = concept_index_dir / "concept_ids.json"
+    concept_emb_path = concept_index_dir / "concept_emb.safetensors"
+    tokenizer = AutoTokenizer.from_pretrained(str(encoder_dir))
     pad_id = tokenizer.pad_token_id or 0
     soft = load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
 
     train_ds = CanonDocDataset(
         config.PHASE2_SPLITS_DIR / "train.jsonl",
         tokenizer, soft, max_length=args.max_length,
-        max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=42)
+        max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=42,
+        exclude_corpora=args.exclude_corpus, hard_targets=args.hard_labels,
+        confidence_weighting=not args.no_confidence_weighting)
     dev_ds = CanonDocDataset(
         config.PHASE2_SPLITS_DIR / "dev.jsonl",
         tokenizer, soft, max_length=args.max_length,
-        max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=43)
+        max_docs=max_docs, neg_ratio=args.neg_ratio, max_pairs=args.max_pairs, seed=43,
+        hard_targets=args.hard_labels,
+        confidence_weighting=not args.no_confidence_weighting)
 
     def coll(b):
         return collate_docs(b, pad_token_id=pad_id)
@@ -275,15 +309,29 @@ def main() -> None:
     train_loader = DataLoader(train_ds, batch_size=batch_size, collate_fn=coll)
     dev_loader = DataLoader(dev_ds, batch_size=batch_size, collate_fn=coll)
 
-    with open(config.CONCEPT_INDEX_IDS) as fh:
-        num_concepts = len(json.load(fh))
-    model = MultiTaskModel(str(config.SAPBERT_ENCODER_DIR), num_concepts=num_concepts)
-    model.norm_head.load_concept_index(config.CONCEPT_INDEX_IDS, config.CONCEPT_INDEX_EMB)
+    with concept_ids_path.open() as fh:
+        concept_ids = json.load(fh)
+    num_concepts = len(concept_ids)
+    model = MultiTaskModel(str(encoder_dir), num_concepts=num_concepts)
+    model.norm_head.load_concept_index(concept_ids_path, concept_emb_path)
     load_stage1_state(model, Path(args.stage1_dir), logger)
     model.to(device)
     model.freeze_encoder(False)
 
-    joint_loss = JointLoss(["ner", "norm", "rel"]).to(device)
+    task_names = ["ner", "norm", "rel"] + (["consistency"] if args.soft_consistency else [])
+    joint_loss = JointLoss(task_names).to(device)
+    consistency_loss = None
+    if args.soft_consistency:
+        tables = mrcm_validity.load_tables(
+            config.MRCM_CONSTRAINTS_JSON,
+            config.SNOMED_ANCESTORS_PKL,
+            tier1_relations=TIER1_RELATIONS,
+            tier2_relations=TIER2_RELATIONS,
+            semantic_classes=SEMANTIC_CLASSES,
+            semantic_network_path=config.UMLS_SEMANTIC_NETWORK_FILES["srstre1"],
+            logger=logger,
+        )
+        consistency_loss = ExpectedViolationLoss(tables, concept_ids).to(device)
 
     encoder_params = list(model.encoder.parameters())
     head_params = [p for n, p in model.named_parameters() if not n.startswith("encoder.")]
@@ -324,6 +372,8 @@ def main() -> None:
         tau = tau_for_epoch(epoch, epochs, args.tau_start, args.tau_end)
         if model.has_norm:
             model.norm_head.tau = tau
+        if model.has_rel:
+            model.rel_head.tau = tau
         running = 0.0
         steps = 0
         t0 = time.time()
@@ -335,6 +385,8 @@ def main() -> None:
             with torch.autocast(device_type="cuda" if device.type == "cuda" else "cpu",
                                 dtype=torch.float16, enabled=device.type == "cuda"):
                 out = model(batch)
+                if consistency_loss is not None:
+                    out["losses"]["consistency"] = consistency_loss(out, batch)
                 if not out["losses"]:
                     continue
                 loss, comps = joint_loss(out["losses"])
@@ -385,6 +437,12 @@ def main() -> None:
         "best_aggregate": best_score,
         "smoke_test": bool(smoke),
         "device": str(device),
+        "soft_consistency": bool(args.soft_consistency),
+        "encoder_dir": str(encoder_dir),
+        "concept_index_dir": str(concept_index_dir),
+        "exclude_corpus": args.exclude_corpus,
+        "hard_labels": bool(args.hard_labels),
+        "confidence_weighting": not args.no_confidence_weighting,
     }
     with (output_dir / "training_summary.json").open("w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2)

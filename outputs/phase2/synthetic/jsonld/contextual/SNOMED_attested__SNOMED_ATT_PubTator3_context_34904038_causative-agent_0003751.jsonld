@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34904038_causative-agent_0003751",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34904038_causative-agent_0003751",
+  "canon:title": "Abnormal liver enzymes: A review for clinicians.",
+  "canon:abstract": "Liver biochemical tests are some of the most commonly ordered routine tests in the inpatient and outpatient setting, especially with the automatization of testing in this technological era. These tests include aminotransferases, alkaline phosphatase, gamma-glutamyl transferase, bilirubin, albumin, prothrombin time and international normalized ratio (INR). Abnormal liver biochemical tests can be categorized based on the pattern and the magnitude of aminotransferases elevation. Generally, abnormalities in aminotransferases can be classified into a hepatocellular pattern or cholestatic pattern and can be further sub-classified based on the magnitude of aminotransferase elevation to mild [< 5 x upper limit of normal (ULN)], moderate (> 5-< 15 x ULN) and severe (> 15 x ULN). Hepatocellular pattern causes include but are not limited to; non-alcoholic fatty liver disease/non-alcoholic steatohepatitis, alcohol use, chronic viral hepatitis, liver cirrhosis (variable), autoimmune hepatitis, hemochromatosis, Wilson's disease, alpha-1 antitrypsin deficiency, celiac disease, medication-induced and ischemic hepatitis. Cholestatic pattern causes include but is not limited to; biliary pathology (obstruction, autoimmune), other conditions with hyperbilirubinemia (conjugated and unconjugated). It is crucial to interpret these commonly ordered tests accurately as appropriate further workup, treatment and referral can greatly benefit the patient due to prompt treatment which can improve the natural history of several of the diseases mentioned and possibly reduce the risk of progression to the liver cirrhosis.",
+  "canon:text": "Abnormal liver enzymes: A review for clinicians. Liver biochemical tests are some of the most commonly ordered routine tests in the inpatient and outpatient setting, especially with the automatization of testing in this technological era. These tests include aminotransferases, alkaline phosphatase, gamma-glutamyl transferase, bilirubin, albumin, prothrombin time and international normalized ratio (INR). Abnormal liver biochemical tests can be categorized based on the pattern and the magnitude of aminotransferases elevation. Generally, abnormalities in aminotransferases can be classified into a hepatocellular pattern or cholestatic pattern and can be further sub-classified based on the magnitude of aminotransferase elevation to mild [< 5 x upper limit of normal (ULN)], moderate (> 5-< 15 x ULN) and severe (> 15 x ULN). Hepatocellular pattern causes include but are not limited to; non-alcoholic fatty liver disease/non-alcoholic steatohepatitis, alcohol use, chronic viral hepatitis, liver cirrhosis (variable), autoimmune hepatitis, hemochromatosis, Wilson's disease, alpha-1 antitrypsin deficiency, celiac disease, medication-induced and ischemic hepatitis. Cholestatic pattern causes include but is not limited to; biliary pathology (obstruction, autoimmune), other conditions with hyperbilirubinemia (conjugated and unconjugated). It is crucial to interpret these commonly ordered tests accurately as appropriate further workup, treatment and referral can greatly benefit the patient due to prompt treatment which can improve the natural history of several of the diseases mentioned and possibly reduce the risk of progression to the liver cirrhosis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34904038_causative-agent_0003751#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 22
+      },
+      "canon:surface": "Abnormal liver enzymes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34904038_causative-agent_0003751#mention-T2",
+      "canon:span": {
+        "start": 328,
+        "end": 337
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34904038_causative-agent_0003751#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34904038_causative-agent_0003751#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34904038_causative-agent_0003751#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34904038"
+      }
+    }
+  ]
+}

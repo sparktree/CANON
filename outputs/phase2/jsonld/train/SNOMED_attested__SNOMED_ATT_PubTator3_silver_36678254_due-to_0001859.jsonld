@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36678254_due-to_0001859",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36678254_due-to_0001859",
+  "canon:title": "Pharmacological and Molecular Insight on the Cardioprotective Role of Apigenin.",
+  "canon:abstract": "Apigenin is a naturally occurring dietary flavonoid found abundantly in fruits and vegetables. It possesses a wide range of biological properties that exert antioxidant, anti-inflammatory, anticancer, and antibacterial effects. These effects have been reported to be beneficial in the treatment of atherosclerosis, stroke, hypertension, ischemia/reperfusion-induced myocardial injury, and diabetic cardiomyopathy, and provide protection against drug-induced cardiotoxicity. These potential therapeutic effects advocate the exploration of the cardioprotective actions of apigenin. This review focuses on apigenin, and the possible pharmacological mechanisms involved in the protection against cardiovascular diseases. We further discuss its therapeutic uses and highlight its potential applications in the treatment of various cardiovascular disorders. Apigenin displays encouraging results, which may have implications in the development of novel strategies for the treatment of cardiovascular diseases. With the commercial availability of apigenin as a dietary supplement, the outcomes of preclinical studies may provide the investigational basis for future translational strategies evaluating the potential of apigenin in the treatment of cardiovascular disorders. Further preclinical and clinical investigations are required to characterize the safety and efficacy of apigenin and establish it as a nutraceutical as well as a therapeutic agent to be used alone or as an adjuvant with current drugs.",
+  "canon:text": "Pharmacological and Molecular Insight on the Cardioprotective Role of Apigenin. Apigenin is a naturally occurring dietary flavonoid found abundantly in fruits and vegetables. It possesses a wide range of biological properties that exert antioxidant, anti-inflammatory, anticancer, and antibacterial effects. These effects have been reported to be beneficial in the treatment of atherosclerosis, stroke, hypertension, ischemia/reperfusion-induced myocardial injury, and diabetic cardiomyopathy, and provide protection against drug-induced cardiotoxicity. These potential therapeutic effects advocate the exploration of the cardioprotective actions of apigenin. This review focuses on apigenin, and the possible pharmacological mechanisms involved in the protection against cardiovascular diseases. We further discuss its therapeutic uses and highlight its potential applications in the treatment of various cardiovascular disorders. Apigenin displays encouraging results, which may have implications in the development of novel strategies for the treatment of cardiovascular diseases. With the commercial availability of apigenin as a dietary supplement, the outcomes of preclinical studies may provide the investigational basis for future translational strategies evaluating the potential of apigenin in the treatment of cardiovascular disorders. Further preclinical and clinical investigations are required to characterize the safety and efficacy of apigenin and establish it as a nutraceutical as well as a therapeutic agent to be used alone or as an adjuvant with current drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36678254_due-to_0001859#mention-T1",
+      "canon:span": {
+        "start": 469,
+        "end": 492
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36678254_due-to_0001859#mention-T2",
+      "canon:span": {
+        "start": 538,
+        "end": 552
+      },
+      "canon:surface": "cardiotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D066126",
+      "canon:sourceNotation": "D066126",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36678254_due-to_0001859#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36678254_due-to_0001859#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36678254_due-to_0001859#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36678254"
+      }
+    }
+  ]
+}

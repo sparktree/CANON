@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34768988_causative-agent_0003729",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34768988_causative-agent_0003729",
+  "canon:title": "Revealing the Molecular Mechanisms of Alzheimer's Disease Based on Network Analysis.",
+  "canon:abstract": "The complex pathology of Alzheimer's disease (AD) emphasises the need for comprehensive modelling of the disease, which may lead to the development of efficient treatment strategies. To address this challenge, we analysed transcriptome data of post-mortem human brain samples of healthy elders and individuals with late-onset AD from the Religious Orders Study and Rush Memory and Aging Project (ROSMAP) and Mayo Clinic (MayoRNAseq) studies in the AMP-AD consortium. In this context, we conducted several bioinformatics and systems medicine analyses including the construction of AD-specific co-expression networks and genome-scale metabolic modelling of the brain in AD patients to identify key genes, metabolites and pathways involved in the progression of AD. We identified AMIGO1 and GRPRASP2 as examples of commonly altered marker genes in AD patients. Moreover, we found alterations in energy metabolism, represented by reduced oxidative phosphorylation and ATPase activity, as well as the depletion of hexanoyl-CoA, pentanoyl-CoA, (2E)-hexenoyl-CoA and numerous other unsaturated fatty acids in the brain. We also observed that neuroprotective metabolites (e.g., vitamins, retinoids and unsaturated fatty acids) tend to be depleted in the AD brain, while neurotoxic metabolites (e.g., beta-alanine, bilirubin) were more abundant. In summary, we systematically revealed the key genes and pathways related to the progression of AD, gained insight into the crucial mechanisms of AD and identified some possible targets that could be used in the treatment of AD.",
+  "canon:text": "Revealing the Molecular Mechanisms of Alzheimer's Disease Based on Network Analysis. The complex pathology of Alzheimer's disease (AD) emphasises the need for comprehensive modelling of the disease, which may lead to the development of efficient treatment strategies. To address this challenge, we analysed transcriptome data of post-mortem human brain samples of healthy elders and individuals with late-onset AD from the Religious Orders Study and Rush Memory and Aging Project (ROSMAP) and Mayo Clinic (MayoRNAseq) studies in the AMP-AD consortium. In this context, we conducted several bioinformatics and systems medicine analyses including the construction of AD-specific co-expression networks and genome-scale metabolic modelling of the brain in AD patients to identify key genes, metabolites and pathways involved in the progression of AD. We identified AMIGO1 and GRPRASP2 as examples of commonly altered marker genes in AD patients. Moreover, we found alterations in energy metabolism, represented by reduced oxidative phosphorylation and ATPase activity, as well as the depletion of hexanoyl-CoA, pentanoyl-CoA, (2E)-hexenoyl-CoA and numerous other unsaturated fatty acids in the brain. We also observed that neuroprotective metabolites (e.g., vitamins, retinoids and unsaturated fatty acids) tend to be depleted in the AD brain, while neurotoxic metabolites (e.g., beta-alanine, bilirubin) were more abundant. In summary, we systematically revealed the key genes and pathways related to the progression of AD, gained insight into the crucial mechanisms of AD and identified some possible targets that could be used in the treatment of AD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34768988_causative-agent_0003729#mention-T1",
+      "canon:span": {
+        "start": 1347,
+        "end": 1357
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34768988_causative-agent_0003729#mention-T2",
+      "canon:span": {
+        "start": 1391,
+        "end": 1400
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34768988_causative-agent_0003729#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34768988_causative-agent_0003729#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34768988_causative-agent_0003729#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34768988"
+      }
+    }
+  ]
+}

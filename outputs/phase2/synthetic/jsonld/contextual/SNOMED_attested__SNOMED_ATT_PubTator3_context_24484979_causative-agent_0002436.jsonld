@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24484979_causative-agent_0002436",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24484979_causative-agent_0002436",
+  "canon:title": "The role of guanfacine as a therapeutic agent to address stress-related pathophysiology in cocaine-dependent individuals.",
+  "canon:abstract": "The pathophysiology of cocaine addiction is linked to changes within neural systems and brain regions that are critical mediators of stress system sensitivity and behavioral processes associated with the regulation of adaptive goal-directed behavior. This is characterized by the upregulation of core adrenergic and corticotropin-releasing factor mechanisms that subserve negative affect and anxiety and impinge upon intracellular pathways in the prefrontal cortex underlying cognitive regulation of stress and negative emotional state. Not only are these mechanisms essential to the severity of cocaine withdrawal symptoms, and hence the trajectory of clinical outcome, but also they may be particularly pertinent to the demography of cocaine dependence. The ability of guanfacine to target overlapping stress, reward, and anxiety pathophysiology suggests that it may be a useful agent for attenuating the stress- and cue-induced craving state not only in women but also in men. This is supported by recent research findings from our own laboratory. Additionally, the ability of guanfacine to improve regulatory mechanisms that are key to exerting cognitive and emotional control over drug-seeking behavior also suggests that guanfacine may be an effective medication for reducing craving and relapse vulnerability in many drugs of abuse. As cocaine-dependent individuals are typically polydrug abusers and women may be at a greater disadvantage for compulsive drug use than men, it is plausible that medications that target catecholaminergic frontostriatal inhibitory circuits and simultaneously reduce stress system arousal may provide added benefits for attenuating cocaine dependence. ",
+  "canon:text": "The role of guanfacine as a therapeutic agent to address stress-related pathophysiology in cocaine-dependent individuals. The pathophysiology of cocaine addiction is linked to changes within neural systems and brain regions that are critical mediators of stress system sensitivity and behavioral processes associated with the regulation of adaptive goal-directed behavior. This is characterized by the upregulation of core adrenergic and corticotropin-releasing factor mechanisms that subserve negative affect and anxiety and impinge upon intracellular pathways in the prefrontal cortex underlying cognitive regulation of stress and negative emotional state. Not only are these mechanisms essential to the severity of cocaine withdrawal symptoms, and hence the trajectory of clinical outcome, but also they may be particularly pertinent to the demography of cocaine dependence. The ability of guanfacine to target overlapping stress, reward, and anxiety pathophysiology suggests that it may be a useful agent for attenuating the stress- and cue-induced craving state not only in women but also in men. This is supported by recent research findings from our own laboratory. Additionally, the ability of guanfacine to improve regulatory mechanisms that are key to exerting cognitive and emotional control over drug-seeking behavior also suggests that guanfacine may be an effective medication for reducing craving and relapse vulnerability in many drugs of abuse. As cocaine-dependent individuals are typically polydrug abusers and women may be at a greater disadvantage for compulsive drug use than men, it is plausible that medications that target catecholaminergic frontostriatal inhibitory circuits and simultaneously reduce stress system arousal may provide added benefits for attenuating cocaine dependence. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24484979_causative-agent_0002436#mention-T1",
+      "canon:span": {
+        "start": 145,
+        "end": 162
+      },
+      "canon:surface": "cocaine addiction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24484979_causative-agent_0002436#mention-T2",
+      "canon:span": {
+        "start": 91,
+        "end": 98
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24484979_causative-agent_0002436#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24484979_causative-agent_0002436#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24484979_causative-agent_0002436#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24484979"
+      }
+    }
+  ]
+}

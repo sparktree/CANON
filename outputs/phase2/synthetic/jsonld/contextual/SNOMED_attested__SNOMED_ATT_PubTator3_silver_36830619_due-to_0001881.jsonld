@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36830619_due-to_0001881",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36830619_due-to_0001881",
+  "canon:title": "Action Mechanism of Metformin and Its Application in Hematological Malignancy Treatments: A Review.",
+  "canon:abstract": "Hematologic malignancies (HMs) mainly include acute and chronic leukemia, lymphoma, myeloma and other heterogeneous tumors that seriously threaten human life and health. The common effective treatments are radiotherapy, chemotherapy and hematopoietic stem cell transplantation (HSCT), which have limited options and are prone to tumor recurrence and (or) drug resistance. Metformin is the first-line drug for the treatment of type 2 diabetes (T2DM). Recently, studies identified the potential anti-cancer ability of metformin in both T2DM patients and patients that are non-diabetic. The latest epidemiological and preclinical studies suggested a potential benefit of metformin in the prevention and treatment of patients with HM. The mechanism may involve the activation of the adenosine monophosphate-activated protein kinase (AMPK) signaling pathway by metformin as well as other AMPK-independent pathways to exert anti-cancer properties. In addition, combining current conventional anti-cancer drugs with metformin may improve the efficacy and reduce adverse drug reactions. Therefore, metformin can also be used as an adjuvant therapeutic agent for HM. This paper highlights the anti-hyperglycemic effects and potential anti-cancer effects of metformin, and also compiles the in vitro and clinical trials of metformin as an anti-cancer and chemosensitizing agent for the treatment of HM. The need for future research on the use of metformin in the treatment of HM is indicated.",
+  "canon:text": "Action Mechanism of Metformin and Its Application in Hematological Malignancy Treatments: A Review. Hematologic malignancies (HMs) mainly include acute and chronic leukemia, lymphoma, myeloma and other heterogeneous tumors that seriously threaten human life and health. The common effective treatments are radiotherapy, chemotherapy and hematopoietic stem cell transplantation (HSCT), which have limited options and are prone to tumor recurrence and (or) drug resistance. Metformin is the first-line drug for the treatment of type 2 diabetes (T2DM). Recently, studies identified the potential anti-cancer ability of metformin in both T2DM patients and patients that are non-diabetic. The latest epidemiological and preclinical studies suggested a potential benefit of metformin in the prevention and treatment of patients with HM. The mechanism may involve the activation of the adenosine monophosphate-activated protein kinase (AMPK) signaling pathway by metformin as well as other AMPK-independent pathways to exert anti-cancer properties. In addition, combining current conventional anti-cancer drugs with metformin may improve the efficacy and reduce adverse drug reactions. Therefore, metformin can also be used as an adjuvant therapeutic agent for HM. This paper highlights the anti-hyperglycemic effects and potential anti-cancer effects of metformin, and also compiles the in vitro and clinical trials of metformin as an anti-cancer and chemosensitizing agent for the treatment of HM. The need for future research on the use of metformin in the treatment of HM is indicated.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36830619_due-to_0001881#mention-T1",
+      "canon:span": {
+        "start": 1289,
+        "end": 1302
+      },
+      "canon:surface": "hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36830619_due-to_0001881#mention-T2",
+      "canon:span": {
+        "start": 674,
+        "end": 682
+      },
+      "canon:surface": "diabetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36830619_due-to_0001881#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36830619_due-to_0001881#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36830619_due-to_0001881#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36830619"
+      }
+    }
+  ]
+}

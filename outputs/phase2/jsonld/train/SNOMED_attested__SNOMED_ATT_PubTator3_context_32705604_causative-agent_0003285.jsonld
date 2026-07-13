@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32705604_causative-agent_0003285",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32705604_causative-agent_0003285",
+  "canon:title": "Is Acetylsalicylic Acid a Safe and Potentially Useful Choice for Adult Patients with COVID-19 ?",
+  "canon:abstract": "Severe Acute Respiratory Syndrome-Coronavirus-2 is responsible for the current pandemic that has led to more than 10 million confirmed cases of Coronavirus Disease-19 (COVID-19) and over 500,000 deaths worldwide (4 July 2020). Virus-mediated injury to multiple organs, mainly the respiratory tract, activation of immune response with the release of pro-inflammatory cytokines, and overactivation of the coagulation cascade and platelet aggregation leading to micro- and macrovascular thrombosis are the main pathological features of COVID-19. Empirical multidrug therapeutic approaches to treat COVID-19 are currently used with extremely uncertain outcomes, and many others are being tested in clinical trials. Acetylsalicylic acid (ASA) has both anti-inflammatory and antithrombotic effects. In addition, a significant ASA-mediated antiviral activity against DNA and RNA viruses, including different human coronaviruses, has been documented. The use of ASA in patients with different types of infections has been associated with reduced thrombo-inflammation and lower rates of clinical complications and in-hospital mortality. However, safety issues related both to the risk of bleeding and to that of developing rare but serious liver and brain damage mostly among children (i.e., Reye's syndrome) should be considered. Hence, whether ASA might be a safe and reasonable therapeutic candidate to be tested in clinical trials involving adults with COVID-19 deserves further attention. In this review we provide a critical appraisal of current evidence on the anti-inflammatory, antithrombotic, and antiviral effects of ASA, from both a pre-clinical and a clinical perspective. In addition, the potential benefits and risks of use of ASA have been put in the context of the adult-restricted COVID-19 population.",
+  "canon:text": "Is Acetylsalicylic Acid a Safe and Potentially Useful Choice for Adult Patients with COVID-19 ? Severe Acute Respiratory Syndrome-Coronavirus-2 is responsible for the current pandemic that has led to more than 10 million confirmed cases of Coronavirus Disease-19 (COVID-19) and over 500,000 deaths worldwide (4 July 2020). Virus-mediated injury to multiple organs, mainly the respiratory tract, activation of immune response with the release of pro-inflammatory cytokines, and overactivation of the coagulation cascade and platelet aggregation leading to micro- and macrovascular thrombosis are the main pathological features of COVID-19. Empirical multidrug therapeutic approaches to treat COVID-19 are currently used with extremely uncertain outcomes, and many others are being tested in clinical trials. Acetylsalicylic acid (ASA) has both anti-inflammatory and antithrombotic effects. In addition, a significant ASA-mediated antiviral activity against DNA and RNA viruses, including different human coronaviruses, has been documented. The use of ASA in patients with different types of infections has been associated with reduced thrombo-inflammation and lower rates of clinical complications and in-hospital mortality. However, safety issues related both to the risk of bleeding and to that of developing rare but serious liver and brain damage mostly among children (i.e., Reye's syndrome) should be considered. Hence, whether ASA might be a safe and reasonable therapeutic candidate to be tested in clinical trials involving adults with COVID-19 deserves further attention. In this review we provide a critical appraisal of current evidence on the anti-inflammatory, antithrombotic, and antiviral effects of ASA, from both a pre-clinical and a clinical perspective. In addition, the potential benefits and risks of use of ASA have been put in the context of the adult-restricted COVID-19 population.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32705604_causative-agent_0003285#mention-T1",
+      "canon:span": {
+        "start": 1327,
+        "end": 1349
+      },
+      "canon:surface": "liver and brain damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32705604_causative-agent_0003285#mention-T2",
+      "canon:span": {
+        "start": 3,
+        "end": 23
+      },
+      "canon:surface": "Acetylsalicylic Acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001241",
+      "canon:sourceNotation": "D001241",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32705604_causative-agent_0003285#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32705604_causative-agent_0003285#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32705604_causative-agent_0003285#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32705604"
+      }
+    }
+  ]
+}

@@ -72,6 +72,7 @@ except ImportError:
 VERIFIED_CSV = REPO_ROOT / "outputs" / "phase1" / "mesh_to_snomed_verified.csv"
 OUTPUT_DIR   = REPO_ROOT / "outputs" / "phase2"
 LOOKUP_JSON  = OUTPUT_DIR / "soft_mapping_lookup.json"
+LOOKUP_JSONLD = OUTPUT_DIR / "soft_mapping_lookup.jsonld"
 SUMMARY_JSON = OUTPUT_DIR / "soft_mapping_summary.json"
 
 SAPBERT_MODEL      = "cambridgeltl/SapBERT-from-PubMedBERT-fulltext"
@@ -358,6 +359,21 @@ def apply_all(verbose: bool = True) -> Path:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     with LOOKUP_JSON.open("w", encoding="utf-8") as fh:
         json.dump(lookup, fh, indent=2, ensure_ascii=False)
+    jsonld_graph = []
+    for mesh_id, candidates in lookup.items():
+        jsonld_graph.append({
+            "@id": f"http://id.nlm.nih.gov/mesh/{mesh_id}",
+            "@type": "skos:Concept",
+            "canon:candidates": [{
+                "canon:mappingProperty": "skos:closeMatch",
+                "canon:normalizedConcept": f"http://snomed.info/id/{c['snomed_id']}",
+                "canon:probability": c["prob"],
+                "canon:hopDistance": c["hop_dist"],
+            } for c in candidates],
+        })
+    with LOOKUP_JSONLD.open("w", encoding="utf-8") as fh:
+        json.dump({"@context": "../../scripts/contexts/canon.jsonld", "@graph": jsonld_graph},
+                  fh, indent=2, ensure_ascii=False)
 
     # Summary
     cand_counts = [len(v) for v in lookup.values()]
@@ -393,7 +409,8 @@ def apply_all(verbose: bool = True) -> Path:
             "sim_ontological": round(sum(sim_onto_means)   / len(sim_onto_means),   4) if sim_onto_means   else 0.0,
             "sim_ic":          round(sum(sim_ic_means)     / len(sim_ic_means),     4) if sim_ic_means     else 0.0,
         },
-        "outputs": {"lookup": relative_to_repo(LOOKUP_JSON)},
+        "outputs": {"lookup": relative_to_repo(LOOKUP_JSON),
+                    "jsonld": relative_to_repo(LOOKUP_JSONLD)},
     }
     with SUMMARY_JSON.open("w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2, ensure_ascii=False)

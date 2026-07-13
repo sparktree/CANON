@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34543650_causative-agent_0003682",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34543650_causative-agent_0003682",
+  "canon:title": "Combined and sequential effects of alcohol and methamphetamine in animal models.",
+  "canon:abstract": "Comorbid drug use, often alcohol with other drugs, poses significant health and societal concerns. Methamphetamine is among the illicit drugs most often co-used with alcohol. The current review examines the animal literature for impacts of comorbid alcohol and methamphetamine exposure. We found evidence for additive or synergistic effects of combined or sequential exposure on behavior and physiology. Dopaminergic, serotonergic, and glutamatergic systems are all impacted by combined exposure to alcohol and methamphetamine and cyclooxygenase-2 activity plays an important role in their combined neurotoxic effects. Adverse consequences of comorbid exposure include altered brain development with prenatal exposure, impaired learning and memory, motor deficits, gastrotoxicity, hepatotoxicity, and augmented intake under some conditions. Given high susceptibility to drug experimentation in adolescence, studies of co-exposure during the adolescent period and of how adolescent exposure to one drug impacts later use or sensitivity to the other drug should be a priority. Further, to gain traction on prevention and treatment, additional research to identify motivational and neurobiological drivers and consequences of comorbid use is needed.",
+  "canon:text": "Combined and sequential effects of alcohol and methamphetamine in animal models. Comorbid drug use, often alcohol with other drugs, poses significant health and societal concerns. Methamphetamine is among the illicit drugs most often co-used with alcohol. The current review examines the animal literature for impacts of comorbid alcohol and methamphetamine exposure. We found evidence for additive or synergistic effects of combined or sequential exposure on behavior and physiology. Dopaminergic, serotonergic, and glutamatergic systems are all impacted by combined exposure to alcohol and methamphetamine and cyclooxygenase-2 activity plays an important role in their combined neurotoxic effects. Adverse consequences of comorbid exposure include altered brain development with prenatal exposure, impaired learning and memory, motor deficits, gastrotoxicity, hepatotoxicity, and augmented intake under some conditions. Given high susceptibility to drug experimentation in adolescence, studies of co-exposure during the adolescent period and of how adolescent exposure to one drug impacts later use or sensitivity to the other drug should be a priority. Further, to gain traction on prevention and treatment, additional research to identify motivational and neurobiological drivers and consequences of comorbid use is needed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34543650_causative-agent_0003682#mention-T1",
+      "canon:span": {
+        "start": 680,
+        "end": 690
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34543650_causative-agent_0003682#mention-T2",
+      "canon:span": {
+        "start": 47,
+        "end": 62
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34543650_causative-agent_0003682#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34543650_causative-agent_0003682#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34543650_causative-agent_0003682#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34543650"
+      }
+    }
+  ]
+}

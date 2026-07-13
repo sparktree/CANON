@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37577239_causative-agent_0004402",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37577239_causative-agent_0004402",
+  "canon:title": "Epidemiology and Management of Drug-induced Liver Injury: Importance of the Updated RUCAM.",
+  "canon:abstract": "Drug-induced liver injury (DILI) is a major cause of acute liver injury, liver failure, and liver transplantation worldwide. In recent years, immune checkpoint inhibitors have become widely used. This has led to an increase in DILI, for which pathophysiology and management methods differ significantly from the past. As the number of cases of acute liver injury and liver transplantation due to DILI is expected to increase, information about a DILI is becoming more valuable. DILI is classified into two types according to its etiology: intrinsic DILI, in which the drug or its metabolites cause liver damage that is dose-dependent and predictable; and idiosyncratic DILI, in which liver damage is also dose-independent but unpredictable. In addition, depending on the course of the disease, chronic DILI or drug-induced autoimmune hepatitis may be present. The number of DILI cases caused by antimicrobial agents is decreasing, whereas that caused by drugs for malignant tumors and health foods is increasing. The Roussel Uclaf Causality Assessment Method is widely used to assess causality in DILI. Liver injury is a type of immune-related adverse event. The pattern of hepatic injury in immune-related adverse events is mostly hepatocellular, but mixed type and bile stasis have also been reported. Sclerosing cholangitis caused by immune checkpoint inhibitors has also been reported as a unique type of injury. Treatment mainly comprises withdrawal of immune checkpoint inhibitors and steroid administration; however, mycophenolate mofetil may be considered if the disease is refractory to steroids.",
+  "canon:text": "Epidemiology and Management of Drug-induced Liver Injury: Importance of the Updated RUCAM. Drug-induced liver injury (DILI) is a major cause of acute liver injury, liver failure, and liver transplantation worldwide. In recent years, immune checkpoint inhibitors have become widely used. This has led to an increase in DILI, for which pathophysiology and management methods differ significantly from the past. As the number of cases of acute liver injury and liver transplantation due to DILI is expected to increase, information about a DILI is becoming more valuable. DILI is classified into two types according to its etiology: intrinsic DILI, in which the drug or its metabolites cause liver damage that is dose-dependent and predictable; and idiosyncratic DILI, in which liver damage is also dose-independent but unpredictable. In addition, depending on the course of the disease, chronic DILI or drug-induced autoimmune hepatitis may be present. The number of DILI cases caused by antimicrobial agents is decreasing, whereas that caused by drugs for malignant tumors and health foods is increasing. The Roussel Uclaf Causality Assessment Method is widely used to assess causality in DILI. Liver injury is a type of immune-related adverse event. The pattern of hepatic injury in immune-related adverse events is mostly hepatocellular, but mixed type and bile stasis have also been reported. Sclerosing cholangitis caused by immune checkpoint inhibitors has also been reported as a unique type of injury. Treatment mainly comprises withdrawal of immune checkpoint inhibitors and steroid administration; however, mycophenolate mofetil may be considered if the disease is refractory to steroids.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37577239_causative-agent_0004402#mention-T1",
+      "canon:span": {
+        "start": 31,
+        "end": 56
+      },
+      "canon:surface": "Drug-induced Liver Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37577239_causative-agent_0004402#mention-T2",
+      "canon:span": {
+        "start": 1582,
+        "end": 1589
+      },
+      "canon:surface": "steroid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37577239_causative-agent_0004402#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37577239_causative-agent_0004402#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37577239_causative-agent_0004402#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37577239"
+      }
+    }
+  ]
+}

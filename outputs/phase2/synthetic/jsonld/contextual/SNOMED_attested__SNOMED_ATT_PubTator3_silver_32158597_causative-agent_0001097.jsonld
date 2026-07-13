@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32158597_causative-agent_0001097",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32158597_causative-agent_0001097",
+  "canon:title": "Clinical Characteristics and Treatment of Immune-Related Adverse Events of Immune Checkpoint Inhibitors.",
+  "canon:abstract": "Immune checkpoint inhibitors (ICIs) have been changing the paradigm of cancer treatment. However, immune-related adverse effects (irAEs) have also increased with the exponential increase in the use of ICIs. ICIs can break up the immunologic homeostasis and reduce T-cell tolerance. Therefore, inhibition of immune checkpoint can lead to the activation of autoreactive T-cells, resulting in various irAEs similar to autoimmune diseases. Gastrointestinal toxicity, endocrine toxicity, and dermatologic toxicity are common side effects. Neurotoxicity, cardiotoxicity, and pulmonary toxicity are relatively rare but can be fatal. ICI-related gastrointestinal toxicity, dermatologic toxicity, and hypophysitis are more common with anti- CTLA-4 agents. ICI-related pulmonary toxicity, thyroid dysfunction, and myasthenia gravis are more common with PD-1/PD-L1 inhibitors. Treatment with systemic steroids is the principal strategy against irAEs. The use of immune-modulatory agents should be considered in case of no response to the steroid therapy. Treatment under the supervision of multidisciplinary specialists is also essential, because the symptoms and treatments of irAEs could involve many organs. Thus, this review focuses on the mechanism, clinical presentation, incidence, and treatment of various irAEs.",
+  "canon:text": "Clinical Characteristics and Treatment of Immune-Related Adverse Events of Immune Checkpoint Inhibitors. Immune checkpoint inhibitors (ICIs) have been changing the paradigm of cancer treatment. However, immune-related adverse effects (irAEs) have also increased with the exponential increase in the use of ICIs. ICIs can break up the immunologic homeostasis and reduce T-cell tolerance. Therefore, inhibition of immune checkpoint can lead to the activation of autoreactive T-cells, resulting in various irAEs similar to autoimmune diseases. Gastrointestinal toxicity, endocrine toxicity, and dermatologic toxicity are common side effects. Neurotoxicity, cardiotoxicity, and pulmonary toxicity are relatively rare but can be fatal. ICI-related gastrointestinal toxicity, dermatologic toxicity, and hypophysitis are more common with anti- CTLA-4 agents. ICI-related pulmonary toxicity, thyroid dysfunction, and myasthenia gravis are more common with PD-1/PD-L1 inhibitors. Treatment with systemic steroids is the principal strategy against irAEs. The use of immune-modulatory agents should be considered in case of no response to the steroid therapy. Treatment under the supervision of multidisciplinary specialists is also essential, because the symptoms and treatments of irAEs could involve many organs. Thus, this review focuses on the mechanism, clinical presentation, incidence, and treatment of various irAEs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32158597_causative-agent_0001097#mention-T1",
+      "canon:span": {
+        "start": 639,
+        "end": 652
+      },
+      "canon:surface": "Neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32158597_causative-agent_0001097#mention-T2",
+      "canon:span": {
+        "start": 995,
+        "end": 1003
+      },
+      "canon:surface": "steroids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32158597_causative-agent_0001097#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32158597_causative-agent_0001097#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32158597_causative-agent_0001097#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32158597"
+      }
+    }
+  ]
+}

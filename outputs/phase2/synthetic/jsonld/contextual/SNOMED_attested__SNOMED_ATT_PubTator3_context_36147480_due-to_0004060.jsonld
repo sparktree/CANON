@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36147480_due-to_0004060",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36147480_due-to_0004060",
+  "canon:title": "Mesenchymal stromal cell-derived extracellular vesicles afford neuroprotection by modulating PI3K/AKT pathway and calcium oscillations.",
+  "canon:abstract": "Mesenchymal stromal cells (MSC) are widely recognized as potential effectors in neuroprotective therapy. The protective properties of MSC were considered to be associated with the secretion of extracellular vesicles (MSC-EV). We explored the effects of MSC-EV in vivo on models of traumatic and hypoxia-ischemia (HI) brain injury. Neuroprotective mechanisms triggered by MSC-EV were also studied in vitro using a primary neuroglial culture. Intranasal administration of MSC-EV reduced the volume of traumatic brain damage, correlating with a recovery of sensorimotor functions. Neonatal HI-induced brain damage was mitigated by the MSC-EV administration. This therapy also promoted the recovery of sensorimotor functions, implying enhanced neuroplasticity, and MSC-EV-induced growth of neurites in vitro supports this. In the in vitro ischemic model, MSC-EV prevented cell calcium (Ca2+) overload and subsequent cell death. In mixed neuroglial culture, MSC-EV induced inositol trisphosphate (IP3) receptor-related Ca2+ oscillations in astrocytes were associated with resistance to calcium overload not only in astrocytes but also in co-cultured neurons, demonstrating intercellular positive crosstalk between neural cells. This implies that phosphatidylinositol 3-Kinase/AKT signaling is one of the main pathways in MSC-EV-mediated protection of neural cells exposed to ischemic challenge. Components of this pathway were identified among the most enriched categories in the MSC-EV proteome.",
+  "canon:text": "Mesenchymal stromal cell-derived extracellular vesicles afford neuroprotection by modulating PI3K/AKT pathway and calcium oscillations. Mesenchymal stromal cells (MSC) are widely recognized as potential effectors in neuroprotective therapy. The protective properties of MSC were considered to be associated with the secretion of extracellular vesicles (MSC-EV). We explored the effects of MSC-EV in vivo on models of traumatic and hypoxia-ischemia (HI) brain injury. Neuroprotective mechanisms triggered by MSC-EV were also studied in vitro using a primary neuroglial culture. Intranasal administration of MSC-EV reduced the volume of traumatic brain damage, correlating with a recovery of sensorimotor functions. Neonatal HI-induced brain damage was mitigated by the MSC-EV administration. This therapy also promoted the recovery of sensorimotor functions, implying enhanced neuroplasticity, and MSC-EV-induced growth of neurites in vitro supports this. In the in vitro ischemic model, MSC-EV prevented cell calcium (Ca2+) overload and subsequent cell death. In mixed neuroglial culture, MSC-EV induced inositol trisphosphate (IP3) receptor-related Ca2+ oscillations in astrocytes were associated with resistance to calcium overload not only in astrocytes but also in co-cultured neurons, demonstrating intercellular positive crosstalk between neural cells. This implies that phosphatidylinositol 3-Kinase/AKT signaling is one of the main pathways in MSC-EV-mediated protection of neural cells exposed to ischemic challenge. Components of this pathway were identified among the most enriched categories in the MSC-EV proteome.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36147480_due-to_0004060#mention-T1",
+      "canon:span": {
+        "start": 431,
+        "end": 447
+      },
+      "canon:surface": "hypoxia-ischemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36147480_due-to_0004060#mention-T2",
+      "canon:span": {
+        "start": 971,
+        "end": 979
+      },
+      "canon:surface": "ischemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002545",
+      "canon:sourceNotation": "D002545",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36147480_due-to_0004060#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36147480_due-to_0004060#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36147480_due-to_0004060#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36147480"
+      }
+    }
+  ]
+}

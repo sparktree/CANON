@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30023358_causative-agent_0000872",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30023358_causative-agent_0000872",
+  "canon:title": "Calcium Signaling in Liver Injury and Regeneration.",
+  "canon:abstract": "The liver fulfills central roles in metabolic control and detoxification and, as such, is continuously exposed to a plethora of insults. Importantly, the liver has a unique ability to regenerate and can completely recoup from most acute, non-iterative insults. However, multiple conditions, including viral hepatitis, non-alcoholic fatty liver disease (NAFLD), long-term alcohol abuse and chronic use of certain medications, can cause persistent injury in which the regenerative capacity eventually becomes dysfunctional, resulting in hepatic scaring and cirrhosis. Calcium is a versatile secondary messenger that regulates multiple hepatic functions, including lipid and carbohydrate metabolism, as well as bile secretion and choleresis. Accordingly, dysregulation of calcium signaling is a hallmark of both acute and chronic liver diseases. In addition, recent research implicates calcium transients as essential components of liver regeneration. In this review, we provide a comprehensive overview of the role of calcium signaling in liver health and disease and discuss the importance of calcium in the orchestration of the ensuing regenerative response. Furthermore, we highlight similarities and differences in spatiotemporal calcium regulation between liver insults of different etiologies. Finally, we discuss intracellular calcium control as an emerging therapeutic target for liver injury and summarize recent clinical findings of calcium modulation for the treatment of ischemic-reperfusion injury, cholestasis and NAFLD.",
+  "canon:text": "Calcium Signaling in Liver Injury and Regeneration. The liver fulfills central roles in metabolic control and detoxification and, as such, is continuously exposed to a plethora of insults. Importantly, the liver has a unique ability to regenerate and can completely recoup from most acute, non-iterative insults. However, multiple conditions, including viral hepatitis, non-alcoholic fatty liver disease (NAFLD), long-term alcohol abuse and chronic use of certain medications, can cause persistent injury in which the regenerative capacity eventually becomes dysfunctional, resulting in hepatic scaring and cirrhosis. Calcium is a versatile secondary messenger that regulates multiple hepatic functions, including lipid and carbohydrate metabolism, as well as bile secretion and choleresis. Accordingly, dysregulation of calcium signaling is a hallmark of both acute and chronic liver diseases. In addition, recent research implicates calcium transients as essential components of liver regeneration. In this review, we provide a comprehensive overview of the role of calcium signaling in liver health and disease and discuss the importance of calcium in the orchestration of the ensuing regenerative response. Furthermore, we highlight similarities and differences in spatiotemporal calcium regulation between liver insults of different etiologies. Finally, we discuss intracellular calcium control as an emerging therapeutic target for liver injury and summarize recent clinical findings of calcium modulation for the treatment of ischemic-reperfusion injury, cholestasis and NAFLD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30023358_causative-agent_0000872#mention-T1",
+      "canon:span": {
+        "start": 587,
+        "end": 602
+      },
+      "canon:surface": "hepatic scaring",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30023358_causative-agent_0000872#mention-T2",
+      "canon:span": {
+        "start": 714,
+        "end": 719
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30023358_causative-agent_0000872#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30023358_causative-agent_0000872#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30023358_causative-agent_0000872#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30023358"
+      }
+    }
+  ]
+}

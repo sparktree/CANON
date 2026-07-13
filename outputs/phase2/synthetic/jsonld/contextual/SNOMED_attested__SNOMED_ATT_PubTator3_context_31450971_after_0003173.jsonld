@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31450971_after_0003173",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31450971_after_0003173",
+  "canon:title": "Preservation Solutions for Kidney Transplantation: History, Advances and Mechanisms.",
+  "canon:abstract": "Solid organ transplantation was one of the greatest medical advances during the past few decades. Organ preservation solutions have been applied to diminish ischemic/hypoxic injury during cold storage and improve graft survival. In this article, we provide a general review of the history and advances of preservation solutions for kidney transplantation. Key components of commonly used solutions are listed, and effective supplementations for current available preservation solutions are discussed. At cellular and molecular levels, further insights were provided into the pathophysiological mechanisms of effective ingredients against ischemic/hypoxic renal injury during cold storage. We pay special attention to the cellular and molecular events during transplantation, including ATP depletion, acidosis, mitochondrial dysfunction, oxidative stress, inflammation, and other intracellular mechanisms.",
+  "canon:text": "Preservation Solutions for Kidney Transplantation: History, Advances and Mechanisms. Solid organ transplantation was one of the greatest medical advances during the past few decades. Organ preservation solutions have been applied to diminish ischemic/hypoxic injury during cold storage and improve graft survival. In this article, we provide a general review of the history and advances of preservation solutions for kidney transplantation. Key components of commonly used solutions are listed, and effective supplementations for current available preservation solutions are discussed. At cellular and molecular levels, further insights were provided into the pathophysiological mechanisms of effective ingredients against ischemic/hypoxic renal injury during cold storage. We pay special attention to the cellular and molecular events during transplantation, including ATP depletion, acidosis, mitochondrial dysfunction, oxidative stress, inflammation, and other intracellular mechanisms.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31450971_after_0003173#mention-T1",
+      "canon:span": {
+        "start": 723,
+        "end": 752
+      },
+      "canon:surface": "ischemic/hypoxic renal injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31450971_after_0003173#mention-T2",
+      "canon:span": {
+        "start": 251,
+        "end": 265
+      },
+      "canon:surface": "hypoxic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002534",
+      "canon:sourceNotation": "D002534",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31450971_after_0003173#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31450971_after_0003173#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31450971_after_0003173#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31450971"
+      }
+    }
+  ]
+}

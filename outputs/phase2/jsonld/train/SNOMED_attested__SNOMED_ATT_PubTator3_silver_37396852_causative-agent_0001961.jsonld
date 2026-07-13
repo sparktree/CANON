@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396852_causative-agent_0001961",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37396852_causative-agent_0001961",
+  "canon:title": "Evaluation of cadmium and mercury on cardiovascular and neurological systems: Effects on humans and fish.",
+  "canon:abstract": "Chemicals are at the top of public health concerns and metals have received much attention in terms of toxicological studies. Cadmium (Cd) and mercury (Hg) are among the most toxic heavy metals and are widely distributed in the environment. They are considered important factors involved in several organ disturbances. Heart and brain tissues are not among the first exposure sites to Cd and Hg but they are directly affected and may manifest intoxication reactions leading to death. Many cases of human intoxication with Cd and Hg showed that these metals have potential cardiotoxic and neurotoxic effects. Human exposure to heavy metals is through fish consumption which is considered as an excellent source of human nutrients. In the current review, we will summarize the most known cases of human intoxication with Cd and Hg, highlight their toxic effects on fish, and investigate the common signal pathways of both Cd and Hg to affect heart and brain tissues. Also, we will present the most common biomarkers used in the assessment of cardiotoxicity and neurotoxicity using Zebrafish model.",
+  "canon:text": "Evaluation of cadmium and mercury on cardiovascular and neurological systems: Effects on humans and fish. Chemicals are at the top of public health concerns and metals have received much attention in terms of toxicological studies. Cadmium (Cd) and mercury (Hg) are among the most toxic heavy metals and are widely distributed in the environment. They are considered important factors involved in several organ disturbances. Heart and brain tissues are not among the first exposure sites to Cd and Hg but they are directly affected and may manifest intoxication reactions leading to death. Many cases of human intoxication with Cd and Hg showed that these metals have potential cardiotoxic and neurotoxic effects. Human exposure to heavy metals is through fish consumption which is considered as an excellent source of human nutrients. In the current review, we will summarize the most known cases of human intoxication with Cd and Hg, highlight their toxic effects on fish, and investigate the common signal pathways of both Cd and Hg to affect heart and brain tissues. Also, we will present the most common biomarkers used in the assessment of cardiotoxicity and neurotoxicity using Zebrafish model.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396852_causative-agent_0001961#mention-T1",
+      "canon:span": {
+        "start": 694,
+        "end": 704
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396852_causative-agent_0001961#mention-T2",
+      "canon:span": {
+        "start": 26,
+        "end": 33
+      },
+      "canon:surface": "mercury",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008628",
+      "canon:sourceNotation": "D008628",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396852_causative-agent_0001961#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396852_causative-agent_0001961#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396852_causative-agent_0001961#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37396852"
+      }
+    }
+  ]
+}

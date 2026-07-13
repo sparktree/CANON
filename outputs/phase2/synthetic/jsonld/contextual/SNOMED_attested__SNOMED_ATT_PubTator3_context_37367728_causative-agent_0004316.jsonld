@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37367728_causative-agent_0004316",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37367728_causative-agent_0004316",
+  "canon:title": "Fluoroquinolone-Associated Movement Disorder: A Literature Review.",
+  "canon:abstract": "BACKGROUND: Fluoroquinolones (FQNs) are related to several central nervous system side effects. This review aims to evaluate the clinical-epidemiological profile, pathophysiological mechanisms, and management of FQNs-associated movement disorders (MDs). METHODS: Two reviewers identified and assessed relevant reports in six databases without language restriction between 1988 and 2022. RESULTS: A total of 45 reports containing 51 cases who developed MDs secondary to FQNs were reported. The MDs included 25 myoclonus, 13 dyskinesias, 7 dystonias, 2 cerebellar syndromes, 1 ataxia, 1 tic, and 2 undefined cases. The FQNs reported were ciprofloxacin, ofloxacin, gatifloxacin, moxifloxacin, levofloxacin, gemifloxacin, and pefloxacin. The mean and median age were 64.54 (SD: 15.45) and 67 years (range: 25-87 years). The predominant sex was male (54.16%). The mean and median time of MD onset were 6.02 (SD: 10.87) and 3 days (range: 1-68 days). The mean and median recovery time after MD treatment was 5.71 (SD: 9.01) and 3 days (range: 1-56 days). A complete recovery was achieved within one week of drug withdrawal in 80.95% of the patients. Overall, 95.83% of the individuals fully recovered after management. CONCLUSIONS: Future cases need to describe the long-term follow-up of the individuals. Additionally, FQN-induced myoclonus should include electrodiagnostic studies.",
+  "canon:text": "Fluoroquinolone-Associated Movement Disorder: A Literature Review. BACKGROUND: Fluoroquinolones (FQNs) are related to several central nervous system side effects. This review aims to evaluate the clinical-epidemiological profile, pathophysiological mechanisms, and management of FQNs-associated movement disorders (MDs). METHODS: Two reviewers identified and assessed relevant reports in six databases without language restriction between 1988 and 2022. RESULTS: A total of 45 reports containing 51 cases who developed MDs secondary to FQNs were reported. The MDs included 25 myoclonus, 13 dyskinesias, 7 dystonias, 2 cerebellar syndromes, 1 ataxia, 1 tic, and 2 undefined cases. The FQNs reported were ciprofloxacin, ofloxacin, gatifloxacin, moxifloxacin, levofloxacin, gemifloxacin, and pefloxacin. The mean and median age were 64.54 (SD: 15.45) and 67 years (range: 25-87 years). The predominant sex was male (54.16%). The mean and median time of MD onset were 6.02 (SD: 10.87) and 3 days (range: 1-68 days). The mean and median recovery time after MD treatment was 5.71 (SD: 9.01) and 3 days (range: 1-56 days). A complete recovery was achieved within one week of drug withdrawal in 80.95% of the patients. Overall, 95.83% of the individuals fully recovered after management. CONCLUSIONS: Future cases need to describe the long-term follow-up of the individuals. Additionally, FQN-induced myoclonus should include electrodiagnostic studies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37367728_causative-agent_0004316#mention-T1",
+      "canon:span": {
+        "start": 590,
+        "end": 601
+      },
+      "canon:surface": "dyskinesias",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37367728_causative-agent_0004316#mention-T2",
+      "canon:span": {
+        "start": 718,
+        "end": 727
+      },
+      "canon:surface": "ofloxacin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D015242",
+      "canon:sourceNotation": "D015242",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37367728_causative-agent_0004316#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37367728_causative-agent_0004316#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37367728_causative-agent_0004316#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37367728"
+      }
+    }
+  ]
+}

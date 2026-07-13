@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30776417_causative-agent_0003082",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30776417_causative-agent_0003082",
+  "canon:title": "HLA-A*32:01 is strongly associated with vancomycin-induced drug reaction with eosinophilia and systemic symptoms.",
+  "canon:abstract": "BACKGROUND: Vancomycin is a prevalent cause of the severe hypersensitivity syndrome drug reaction with eosinophilia and systemic symptoms (DRESS), which leads to significant morbidity and mortality and commonly occurs in the setting of combination antibiotic therapy, affecting future treatment choices. Variations in HLA class I in particular have been associated with serious T cell-mediated adverse drug reactions, which has led to preventive screening strategies for some drugs. OBJECTIVE: We sought to determine whether variation in the HLA region is associated with vancomycin-induced DRESS. METHODS: Probable vancomycin-induced DRESS cases were matched 1:2 with tolerant control subjects based on sex, race, and age by using BioVU, Vanderbilt's deidentified electronic health record database. Associations between DRESS and carriage of HLA class I and II alleles were assessed by means of conditional logistic regression. An extended sample set from BioVU was used to conduct a time-to-event analysis of those exposed to vancomycin with and without the identified HLA risk allele. RESULTS: Twenty-three subjects met the inclusion criteria for vancomycin-associated DRESS. Nineteen (82.6%) of 23 cases carried HLA-A*32:01 compared with 0 (0%) of 46 of the matched vancomycin-tolerant control subjects (P = 1 x 10-8) and 6.3% of the BioVU population (n = 54,249, P = 2 x 10-16). Time-to-event analysis of DRESS development during vancomycin treatment among the HLA-A*32:01-positive group indicated that 19.2% had DRESS and did so within 4 weeks. CONCLUSIONS: HLA-A*32:01 is strongly associated with vancomycin-induced DRESS in a population of predominantly European ancestry. HLA-A*32:01 testing could improve antibiotic safety, help implicate vancomycin as the causal drug, and preserve future treatment options with coadministered antibiotics.",
+  "canon:text": "HLA-A*32:01 is strongly associated with vancomycin-induced drug reaction with eosinophilia and systemic symptoms. BACKGROUND: Vancomycin is a prevalent cause of the severe hypersensitivity syndrome drug reaction with eosinophilia and systemic symptoms (DRESS), which leads to significant morbidity and mortality and commonly occurs in the setting of combination antibiotic therapy, affecting future treatment choices. Variations in HLA class I in particular have been associated with serious T cell-mediated adverse drug reactions, which has led to preventive screening strategies for some drugs. OBJECTIVE: We sought to determine whether variation in the HLA region is associated with vancomycin-induced DRESS. METHODS: Probable vancomycin-induced DRESS cases were matched 1:2 with tolerant control subjects based on sex, race, and age by using BioVU, Vanderbilt's deidentified electronic health record database. Associations between DRESS and carriage of HLA class I and II alleles were assessed by means of conditional logistic regression. An extended sample set from BioVU was used to conduct a time-to-event analysis of those exposed to vancomycin with and without the identified HLA risk allele. RESULTS: Twenty-three subjects met the inclusion criteria for vancomycin-associated DRESS. Nineteen (82.6%) of 23 cases carried HLA-A*32:01 compared with 0 (0%) of 46 of the matched vancomycin-tolerant control subjects (P = 1 x 10-8) and 6.3% of the BioVU population (n = 54,249, P = 2 x 10-16). Time-to-event analysis of DRESS development during vancomycin treatment among the HLA-A*32:01-positive group indicated that 19.2% had DRESS and did so within 4 weeks. CONCLUSIONS: HLA-A*32:01 is strongly associated with vancomycin-induced DRESS in a population of predominantly European ancestry. HLA-A*32:01 testing could improve antibiotic safety, help implicate vancomycin as the causal drug, and preserve future treatment options with coadministered antibiotics.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30776417_causative-agent_0003082#mention-T1",
+      "canon:span": {
+        "start": 59,
+        "end": 72
+      },
+      "canon:surface": "drug reaction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30776417_causative-agent_0003082#mention-T2",
+      "canon:span": {
+        "start": 40,
+        "end": 50
+      },
+      "canon:surface": "vancomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014640",
+      "canon:sourceNotation": "D014640",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30776417_causative-agent_0003082#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30776417_causative-agent_0003082#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30776417_causative-agent_0003082#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30776417"
+      }
+    }
+  ]
+}

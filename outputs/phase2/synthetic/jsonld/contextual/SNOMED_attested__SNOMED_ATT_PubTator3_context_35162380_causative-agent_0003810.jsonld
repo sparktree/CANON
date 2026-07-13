@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35162380_causative-agent_0003810",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35162380_causative-agent_0003810",
+  "canon:title": "Analysis of Clinical Parameters, Drug Consumption and Use of Health Resources in a Southern European Population with Alcohol Abuse Disorder during COVID-19 Pandemic.",
+  "canon:abstract": "The disruption in healthcare attention to people with alcohol dependence, along with psychological decompensation as a consequence of lockdown derived from the COVID-19 pandemic could have a negative impact on people who suffer from alcohol abuse disorder. Observational real world data pre-post study included 9966 men aged >16 years registered as having the diagnosis of alcohol abuse disorder in the electronic medical records (EMR) of the Aragon Regional Health Service (Spain). Clinical (Glutamate-oxaloacetate -GOT-, Glutamate pyruvate -GPT-, creatinine, glomerular filtration, systolic blood pressure -SBP-, diastolic blood pressure -DBP-, total cholesterol, LDL, HDL, triglycerides, and body mass index -BMI-), pharmacological (dose per inhabitant per day, DHD, of drugs used in addictive disorders, benzodiazepines and antidepressants) and health resource use variables (primary and specialized care) were considered. A Student's t-test for matched samples was performed to analyze the changes in clinical variables between alcohol abuse disorder patients with and without COVID-19. Only creatinine and LDL showed a significant but clinically irrelevant change six months after the end of the strict lockdown. The total number of DHDs for all drugs included in the study (except for benzodiazepines), decreased. In the same way, the use of health services by these patients also decreased. The impact of COVID-19 among this group of patients has been moderate. The reorganization of health and social services after the declaration of the state of alarm in our country made possible the maintenance of care for this vulnerable population.",
+  "canon:text": "Analysis of Clinical Parameters, Drug Consumption and Use of Health Resources in a Southern European Population with Alcohol Abuse Disorder during COVID-19 Pandemic. The disruption in healthcare attention to people with alcohol dependence, along with psychological decompensation as a consequence of lockdown derived from the COVID-19 pandemic could have a negative impact on people who suffer from alcohol abuse disorder. Observational real world data pre-post study included 9966 men aged >16 years registered as having the diagnosis of alcohol abuse disorder in the electronic medical records (EMR) of the Aragon Regional Health Service (Spain). Clinical (Glutamate-oxaloacetate -GOT-, Glutamate pyruvate -GPT-, creatinine, glomerular filtration, systolic blood pressure -SBP-, diastolic blood pressure -DBP-, total cholesterol, LDL, HDL, triglycerides, and body mass index -BMI-), pharmacological (dose per inhabitant per day, DHD, of drugs used in addictive disorders, benzodiazepines and antidepressants) and health resource use variables (primary and specialized care) were considered. A Student's t-test for matched samples was performed to analyze the changes in clinical variables between alcohol abuse disorder patients with and without COVID-19. Only creatinine and LDL showed a significant but clinically irrelevant change six months after the end of the strict lockdown. The total number of DHDs for all drugs included in the study (except for benzodiazepines), decreased. In the same way, the use of health services by these patients also decreased. The impact of COVID-19 among this group of patients has been moderate. The reorganization of health and social services after the declaration of the state of alarm in our country made possible the maintenance of care for this vulnerable population.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35162380_causative-agent_0003810#mention-T1",
+      "canon:span": {
+        "start": 117,
+        "end": 139
+      },
+      "canon:surface": "Alcohol Abuse Disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35162380_causative-agent_0003810#mention-T2",
+      "canon:span": {
+        "start": 974,
+        "end": 989
+      },
+      "canon:surface": "benzodiazepines",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001569",
+      "canon:sourceNotation": "D001569",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35162380_causative-agent_0003810#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35162380_causative-agent_0003810#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35162380_causative-agent_0003810#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35162380"
+      }
+    }
+  ]
+}

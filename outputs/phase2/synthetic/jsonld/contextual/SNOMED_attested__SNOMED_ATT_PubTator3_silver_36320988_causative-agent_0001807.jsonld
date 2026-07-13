@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36320988_causative-agent_0001807",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36320988_causative-agent_0001807",
+  "canon:title": "Parkinsonism-Hyperpyrexia Syndrome: A Case Series and Literature Review.",
+  "canon:abstract": "Parkinsonism-hyperpyrexia syndrome (PHS) is a rare, potentially fatal neurological emergency, that is seen in Parkinson's Disease (PD) patients and mimics neuroleptic malignant syndrome. The most common trigger for PHS is sudden withdrawal of anti-parkinsonian medications, specifically levodopa. However, it can also be due to Deep Brain Stimulation (DBS) device malfunction. In this work, we describe three cases of PHS; the first of which is related to DBS battery depletion, and the remaining two to dopaminergic withdrawal. Additionally, we will include the results of a literature review on PHS, its etiologies, presentation, and management.",
+  "canon:text": "Parkinsonism-Hyperpyrexia Syndrome: A Case Series and Literature Review. Parkinsonism-hyperpyrexia syndrome (PHS) is a rare, potentially fatal neurological emergency, that is seen in Parkinson's Disease (PD) patients and mimics neuroleptic malignant syndrome. The most common trigger for PHS is sudden withdrawal of anti-parkinsonian medications, specifically levodopa. However, it can also be due to Deep Brain Stimulation (DBS) device malfunction. In this work, we describe three cases of PHS; the first of which is related to DBS battery depletion, and the remaining two to dopaminergic withdrawal. Additionally, we will include the results of a literature review on PHS, its etiologies, presentation, and management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36320988_causative-agent_0001807#mention-T1",
+      "canon:span": {
+        "start": 228,
+        "end": 258
+      },
+      "canon:surface": "neuroleptic malignant syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009459",
+      "canon:sourceNotation": "D009459",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36320988_causative-agent_0001807#mention-T2",
+      "canon:span": {
+        "start": 360,
+        "end": 368
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36320988_causative-agent_0001807#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36320988_causative-agent_0001807#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36320988_causative-agent_0001807#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36320988"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_8953972_causative-agent_0000188",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_8953972_causative-agent_0000188",
+  "canon:title": "Fatal intracranial bleeding associated with prehospital use of epinephrine.",
+  "canon:abstract": "We present a case of paramedic misjudgment in the execution of a protocol for the treatment of allergic reaction in a case of pulmonary edema with wheezing. The sudden onset of respiratory distress, rash, and a history of a new medicine led the two paramedics on the scene to administer subcutaneous epinephrine. Subsequently, acute cardiac arrest and fatal subarachnoid hemorrhage occurred. Epinephrine has a proven role in cardiac arrest in prehospital care; however, use by paramedics in patients with suspected allergic reaction and severe hypertension should be viewed with caution.",
+  "canon:text": "Fatal intracranial bleeding associated with prehospital use of epinephrine. We present a case of paramedic misjudgment in the execution of a protocol for the treatment of allergic reaction in a case of pulmonary edema with wheezing. The sudden onset of respiratory distress, rash, and a history of a new medicine led the two paramedics on the scene to administer subcutaneous epinephrine. Subsequently, acute cardiac arrest and fatal subarachnoid hemorrhage occurred. Epinephrine has a proven role in cardiac arrest in prehospital care; however, use by paramedics in patients with suspected allergic reaction and severe hypertension should be viewed with caution.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_8953972_causative-agent_0000188#mention-T1",
+      "canon:span": {
+        "start": 171,
+        "end": 188
+      },
+      "canon:surface": "allergic reaction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/416098002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_8953972_causative-agent_0000188#mention-T2",
+      "canon:span": {
+        "start": 63,
+        "end": 74
+      },
+      "canon:surface": "epinephrine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004837",
+      "canon:sourceNotation": "D004837",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hormone",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387362001",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_8953972_causative-agent_0000188#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_8953972_causative-agent_0000188#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_8953972_causative-agent_0000188#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "8953972"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054383_causative-agent_0001573",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35054383_causative-agent_0001573",
+  "canon:title": "How Many Times Can One Go Back to the Drawing Board before the Accurate Diagnosis and Surgical Treatment of Glucagonoma?",
+  "canon:abstract": "Glucagonomas are neuroendocrine tumors (NETs) that arise from the alpha cells of the pancreatic islets. They are typically slow-growing tumors associated with abnormal glucagon secretion, resulting in one or more non-specific clinical features, such as necrolytic migratory erythema (NME), diabetes, diarrhea, deep vein thrombosis, weight loss, and depression. Here, we report the case of a 44-year-old male with a history of diabetes mellitus, presenting with a pruritic and painful disseminated cutaneous eruption of erythematous plaques, with scales and peripheral pustules, misdiagnosed as disseminated pustular psoriasis and treated for 2 years with oral retinoid and glucocorticoids. During this period, the patient complained of weight loss of 32 kg and diarrhea and developed deep vein thrombosis. These symptoms, together with an inadequate response to therapy of the skin lesions, led to the reassessment of the initial diagnosis. Laboratory tests confirmed elevated plasma glucagon levels (>1000 pg/mL) and computed tomography (CT) scans revealed a 35/44 mm tumor in the pancreatic tail. Due to considerable disease complications and the COVID-19 pandemic, the surgical removal of the tumor was delayed for nearly 2 years. During this time, somatostatin analogue therapy efficiently controlled the glucagonoma syndrome and likely prevented tumor progression. As in other functional pancreatic NETs, the early clinical recognition of hormonal hypersecretion syndrome and the multidisciplinary approach are the keys for best patient management.",
+  "canon:text": "How Many Times Can One Go Back to the Drawing Board before the Accurate Diagnosis and Surgical Treatment of Glucagonoma? Glucagonomas are neuroendocrine tumors (NETs) that arise from the alpha cells of the pancreatic islets. They are typically slow-growing tumors associated with abnormal glucagon secretion, resulting in one or more non-specific clinical features, such as necrolytic migratory erythema (NME), diabetes, diarrhea, deep vein thrombosis, weight loss, and depression. Here, we report the case of a 44-year-old male with a history of diabetes mellitus, presenting with a pruritic and painful disseminated cutaneous eruption of erythematous plaques, with scales and peripheral pustules, misdiagnosed as disseminated pustular psoriasis and treated for 2 years with oral retinoid and glucocorticoids. During this period, the patient complained of weight loss of 32 kg and diarrhea and developed deep vein thrombosis. These symptoms, together with an inadequate response to therapy of the skin lesions, led to the reassessment of the initial diagnosis. Laboratory tests confirmed elevated plasma glucagon levels (>1000 pg/mL) and computed tomography (CT) scans revealed a 35/44 mm tumor in the pancreatic tail. Due to considerable disease complications and the COVID-19 pandemic, the surgical removal of the tumor was delayed for nearly 2 years. During this time, somatostatin analogue therapy efficiently controlled the glucagonoma syndrome and likely prevented tumor progression. As in other functional pancreatic NETs, the early clinical recognition of hormonal hypersecretion syndrome and the multidisciplinary approach are the keys for best patient management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054383_causative-agent_0001573#mention-T1",
+      "canon:span": {
+        "start": 618,
+        "end": 636
+      },
+      "canon:surface": "cutaneous eruption",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003875",
+      "canon:sourceNotation": "D003875",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054383_causative-agent_0001573#mention-T2",
+      "canon:span": {
+        "start": 781,
+        "end": 789
+      },
+      "canon:surface": "retinoid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012176",
+      "canon:sourceNotation": "D012176",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054383_causative-agent_0001573#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054383_causative-agent_0001573#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35054383_causative-agent_0001573#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35054383"
+      }
+    }
+  ]
+}

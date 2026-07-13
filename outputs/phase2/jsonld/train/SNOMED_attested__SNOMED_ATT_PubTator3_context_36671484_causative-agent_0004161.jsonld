@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36671484_causative-agent_0004161",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36671484_causative-agent_0004161",
+  "canon:title": "Pathogenetic Mechanisms of Liver-Associated Injuries, Management, and Current Challenges in COVID-19 Patients.",
+  "canon:abstract": "The global outbreak of COVID-19 possesses serious challenges and adverse impacts for patients with progression of chronic liver disease and has become a major threat to public health. COVID-19 patients have a high risk of lung injury and multiorgan dysfunction that remains a major challenge to hepatology. COVID-19 patients and those with liver injury exhibit clinical manifestations, including elevation in ALT, AST, GGT, bilirubin, TNF-alpha, and IL-6 and reduction in the levels of CD4 and CD8. Liver injury in COVID-19 patients is induced through multiple factors, including a direct attack of SARS-CoV-2 on liver hepatocytes, hypoxia reperfusion dysfunction, cytokine release syndrome, drug-induced hepatotoxicity caused by lopinavir and ritonavir, immune-mediated inflammation, renin-angiotensin system, and coagulopathy. Cellular and molecular mechanisms underlying liver dysfunction are not fully understood in severe COVID-19 attacks. High mortality and the development of chronic liver diseases such as cirrhosis, alcoholic liver disease, autoimmune hepatitis, nonalcoholic fatty liver disease, and hepatocellular carcinoma are also associated with patients with liver damage. COVID-19 patients with preexisting or developing liver disease should be managed. They often need hospitalization and medication, especially in conjunction with liver transplants. In the present review, we highlight the attack of SARS-CoV-2 on liver hepatocytes by exploring the cellular and molecular events underlying the pathophysiological mechanisms in COVID-19 patients with liver injury. We also discuss the development of chronic liver diseases during the progression of SARS-CoV-2 replication. Lastly, we explore management principles in COVID-19 patients with liver injury and liver transplantation.",
+  "canon:text": "Pathogenetic Mechanisms of Liver-Associated Injuries, Management, and Current Challenges in COVID-19 Patients. The global outbreak of COVID-19 possesses serious challenges and adverse impacts for patients with progression of chronic liver disease and has become a major threat to public health. COVID-19 patients have a high risk of lung injury and multiorgan dysfunction that remains a major challenge to hepatology. COVID-19 patients and those with liver injury exhibit clinical manifestations, including elevation in ALT, AST, GGT, bilirubin, TNF-alpha, and IL-6 and reduction in the levels of CD4 and CD8. Liver injury in COVID-19 patients is induced through multiple factors, including a direct attack of SARS-CoV-2 on liver hepatocytes, hypoxia reperfusion dysfunction, cytokine release syndrome, drug-induced hepatotoxicity caused by lopinavir and ritonavir, immune-mediated inflammation, renin-angiotensin system, and coagulopathy. Cellular and molecular mechanisms underlying liver dysfunction are not fully understood in severe COVID-19 attacks. High mortality and the development of chronic liver diseases such as cirrhosis, alcoholic liver disease, autoimmune hepatitis, nonalcoholic fatty liver disease, and hepatocellular carcinoma are also associated with patients with liver damage. COVID-19 patients with preexisting or developing liver disease should be managed. They often need hospitalization and medication, especially in conjunction with liver transplants. In the present review, we highlight the attack of SARS-CoV-2 on liver hepatocytes by exploring the cellular and molecular events underlying the pathophysiological mechanisms in COVID-19 patients with liver injury. We also discuss the development of chronic liver diseases during the progression of SARS-CoV-2 replication. Lastly, we explore management principles in COVID-19 patients with liver injury and liver transplantation.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36671484_causative-agent_0004161#mention-T1",
+      "canon:span": {
+        "start": 1285,
+        "end": 1297
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36671484_causative-agent_0004161#mention-T2",
+      "canon:span": {
+        "start": 535,
+        "end": 544
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36671484_causative-agent_0004161#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36671484_causative-agent_0004161#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36671484_causative-agent_0004161#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36671484"
+      }
+    }
+  ]
+}

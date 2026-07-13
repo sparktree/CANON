@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27445804_due-to_0002724",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27445804_due-to_0002724",
+  "canon:title": "Pharmacological Targeting of the Hepcidin/Ferroportin Axis.",
+  "canon:abstract": "The iron regulatory hormone hepcidin limits iron fluxes to the bloodstream by promoting degradation of the iron exporter ferroportin in target cells. Hepcidin insufficiency causes hyperabsorption of dietary iron, hyperferremia and tissue iron overload, which are hallmarks of hereditary hemochromatosis. Similar responses are also observed in iron-loading anemias due to ineffective erythropoiesis (such as thalassemias, dyserythropoietic anemias and myelodysplastic syndromes) and in chronic liver diseases. On the other hand, excessive hepcidin expression inhibits dietary iron absorption and leads to hypoferremia and iron retention within tissue macrophages. This reduces iron availability for erythroblasts and contributes to the development of anemias with iron-restricted erythropoiesis (such as anemia of chronic disease and iron-refractory iron-deficiency anemia). Pharmacological targeting of the hepcidin/ferroportin axis may offer considerable therapeutic benefits by correcting iron traffic. This review summarizes the principles underlying the development of hepcidin-based therapies for the treatment of iron-related disorders, and discusses the emerging strategies for manipulating hepcidin pathways. ",
+  "canon:text": "Pharmacological Targeting of the Hepcidin/Ferroportin Axis. The iron regulatory hormone hepcidin limits iron fluxes to the bloodstream by promoting degradation of the iron exporter ferroportin in target cells. Hepcidin insufficiency causes hyperabsorption of dietary iron, hyperferremia and tissue iron overload, which are hallmarks of hereditary hemochromatosis. Similar responses are also observed in iron-loading anemias due to ineffective erythropoiesis (such as thalassemias, dyserythropoietic anemias and myelodysplastic syndromes) and in chronic liver diseases. On the other hand, excessive hepcidin expression inhibits dietary iron absorption and leads to hypoferremia and iron retention within tissue macrophages. This reduces iron availability for erythroblasts and contributes to the development of anemias with iron-restricted erythropoiesis (such as anemia of chronic disease and iron-refractory iron-deficiency anemia). Pharmacological targeting of the hepcidin/ferroportin axis may offer considerable therapeutic benefits by correcting iron traffic. This review summarizes the principles underlying the development of hepcidin-based therapies for the treatment of iron-related disorders, and discusses the emerging strategies for manipulating hepcidin pathways. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27445804_due-to_0002724#mention-T1",
+      "canon:span": {
+        "start": 909,
+        "end": 931
+      },
+      "canon:surface": "iron-deficiency anemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018798",
+      "canon:sourceNotation": "D018798",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27445804_due-to_0002724#mention-T2",
+      "canon:span": {
+        "start": 298,
+        "end": 311
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27445804_due-to_0002724#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27445804_due-to_0002724#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27445804_due-to_0002724#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27445804"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859366_causative-agent_0000578",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25859366_causative-agent_0000578",
+  "canon:title": "Cocaine and kidney injury: a kaleidoscope of pathology.",
+  "canon:abstract": "Cocaine is abused worldwide as a recreational drug. It is a potent activator of the sympathetic nervous system leading to intense vasoconstriction, endothelial dysfunction, oxidative stress, platelet activation and decrease in prostaglandins E2 and prostacyclin. Cocaine can lead to widespread systemic adverse effects such as stroke, myocardial infarction, arterial dissection, vascular thrombosis and rhabdomyolysis. In human and rat kidneys, cocaine has been associated with glomerular, tubular, vascular and interstitial injury. It is not uncommon to diagnose cocaine-related acute kidney injury (AKI), malignant hypertension and chronic kidney disease. Cocaine abuse can lead to AKI by rhabdomyolysis, vasculitis, infarction, thrombotic microangiopathy and malignant hypertension. It is reported that 50-60% of people who use both cocaine and heroin are at increased risk of HIV, hepatitis and additional risk factors that can cause kidney diseases. While acute interstitial nephritis (AIN) is a known cause of AKI, an association of AIN with cocaine is unusual and seldom reported. We describe a patient with diabetes mellitus, hypertension and chronic hepatitis C, who presented with AKI. Urine toxicology was positive for cocaine and a kidney biopsy was consistent with AIN. Illicit drugs such as cocaine or contaminants may have caused AIN in this case and should be considered in the differential diagnosis of causes of AKI in a patient with substance abuse. We review the many ways that cocaine adversely impacts on kidney function. ",
+  "canon:text": "Cocaine and kidney injury: a kaleidoscope of pathology. Cocaine is abused worldwide as a recreational drug. It is a potent activator of the sympathetic nervous system leading to intense vasoconstriction, endothelial dysfunction, oxidative stress, platelet activation and decrease in prostaglandins E2 and prostacyclin. Cocaine can lead to widespread systemic adverse effects such as stroke, myocardial infarction, arterial dissection, vascular thrombosis and rhabdomyolysis. In human and rat kidneys, cocaine has been associated with glomerular, tubular, vascular and interstitial injury. It is not uncommon to diagnose cocaine-related acute kidney injury (AKI), malignant hypertension and chronic kidney disease. Cocaine abuse can lead to AKI by rhabdomyolysis, vasculitis, infarction, thrombotic microangiopathy and malignant hypertension. It is reported that 50-60% of people who use both cocaine and heroin are at increased risk of HIV, hepatitis and additional risk factors that can cause kidney diseases. While acute interstitial nephritis (AIN) is a known cause of AKI, an association of AIN with cocaine is unusual and seldom reported. We describe a patient with diabetes mellitus, hypertension and chronic hepatitis C, who presented with AKI. Urine toxicology was positive for cocaine and a kidney biopsy was consistent with AIN. Illicit drugs such as cocaine or contaminants may have caused AIN in this case and should be considered in the differential diagnosis of causes of AKI in a patient with substance abuse. We review the many ways that cocaine adversely impacts on kidney function. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859366_causative-agent_0000578#mention-T1",
+      "canon:span": {
+        "start": 941,
+        "end": 950
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859366_causative-agent_0000578#mention-T2",
+      "canon:span": {
+        "start": 904,
+        "end": 910
+      },
+      "canon:surface": "heroin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003932",
+      "canon:sourceNotation": "D003932",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859366_causative-agent_0000578#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859366_causative-agent_0000578#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25859366_causative-agent_0000578#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25859366"
+      }
+    }
+  ]
+}

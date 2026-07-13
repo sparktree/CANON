@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20400112_causative-agent_0000327",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_20400112_causative-agent_0000327",
+  "canon:title": "Nitric oxide and redox regulation in the liver: part II. Redox biology in pathologic hepatocytes and implications for intervention.",
+  "canon:abstract": "Reactive oxygen species (ROS) and reactive nitrogen species (RNS) are created in normal hepatocytes and are critical for normal physiologic processes, including oxidative respiration, growth, regeneration, apoptosis, and microsomal defense. When the levels of oxidation products exceed the capacity of normal antioxidant systems, oxidative stress occurs. This type of stress, in the form of ROS and RNS, can be damaging to all liver cells, including hepatocytes, Kupffer cells, stellate cells, and endothelial cells, through induction of inflammation, ischemia, fibrosis, necrosis, apoptosis, or through malignant transformation by damaging lipids, proteins, and/or DNA. In Part I of this review, we will discuss basic redox biology in the liver, including a review of ROS, RNS, and antioxidants, with a focus on nitric oxide as a common source of RNS. We will then review the evidence for oxidative stress as a mechanism of liver injury in hepatitis (alcoholic, viral, nonalcoholic). In Part II of this review, we will review oxidative stress in common pathophysiologic conditions, including ischemia/reperfusion injury, fibrosis, hepatocellular carcinoma, iron overload, Wilson's disease, sepsis, and acetaminophen overdose. Finally, biomarkers, proteomic, and antioxidant therapies will be discussed as areas for future therapeutic interventions.",
+  "canon:text": "Nitric oxide and redox regulation in the liver: part II. Redox biology in pathologic hepatocytes and implications for intervention. Reactive oxygen species (ROS) and reactive nitrogen species (RNS) are created in normal hepatocytes and are critical for normal physiologic processes, including oxidative respiration, growth, regeneration, apoptosis, and microsomal defense. When the levels of oxidation products exceed the capacity of normal antioxidant systems, oxidative stress occurs. This type of stress, in the form of ROS and RNS, can be damaging to all liver cells, including hepatocytes, Kupffer cells, stellate cells, and endothelial cells, through induction of inflammation, ischemia, fibrosis, necrosis, apoptosis, or through malignant transformation by damaging lipids, proteins, and/or DNA. In Part I of this review, we will discuss basic redox biology in the liver, including a review of ROS, RNS, and antioxidants, with a focus on nitric oxide as a common source of RNS. We will then review the evidence for oxidative stress as a mechanism of liver injury in hepatitis (alcoholic, viral, nonalcoholic). In Part II of this review, we will review oxidative stress in common pathophysiologic conditions, including ischemia/reperfusion injury, fibrosis, hepatocellular carcinoma, iron overload, Wilson's disease, sepsis, and acetaminophen overdose. Finally, biomarkers, proteomic, and antioxidant therapies will be discussed as areas for future therapeutic interventions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20400112_causative-agent_0000327#mention-T1",
+      "canon:span": {
+        "start": 1073,
+        "end": 1082
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20400112_causative-agent_0000327#mention-T2",
+      "canon:span": {
+        "start": 773,
+        "end": 779
+      },
+      "canon:surface": "lipids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20400112_causative-agent_0000327#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20400112_causative-agent_0000327#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20400112_causative-agent_0000327#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "20400112"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34955821_causative-agent_0001544",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34955821_causative-agent_0001544",
+  "canon:title": "Development of a Network-Based Signal Detection Tool: The COVID-19 Adversome in the FDA Adverse Event Reporting System.",
+  "canon:abstract": "Introduction: The analysis of pharmacovigilance databases is crucial for the safety profiling of new and repurposed drugs, especially in the COVID-19 era. Traditional pharmacovigilance analyses-based on disproportionality approaches-cannot usually account for the complexity of spontaneous reports often with multiple concomitant drugs and events. We propose a network-based approach on co-reported events to help assessing disproportionalities and to effectively and timely identify disease-, comorbidity- and drug-related syndromes, especially in a rapidly changing low-resources environment such as that of COVID-19. Materials and Methods: Reports on medications administered for COVID-19 were extracted from the FDA Adverse Event Reporting System quarterly data (January-September 2020) and queried for disproportionalities (Reporting Odds Ratio corrected for multiple comparisons). A network (the Adversome) was estimated considering events as nodes and conditional co-reporting as links. Communities of significantly co-reported events were identified. All data and scripts employed are available in a public repository. Results: Among the 7,082 COVID-19 reports extracted, the seven most frequently suspected drugs (remdesivir, hydroxychloroquine, azithromycin, tocilizumab, lopinavir/ritonavir, sarilumab, and ethanol) have shown disproportionalities with 54 events. Of interest, myasthenia gravis with hydroxychloroquine, and cerebrovascular vein thrombosis with azithromycin. Automatic clustering identified 13 communities, including a methanol-related neurotoxicity associated with alcohol-based hand-sanitizers and a long QT/hepatotoxicity cluster associated with azithromycin, hydroxychloroquine and lopinavir-ritonavir interactions. Conclusion: Findings from the Adversome detect plausible new signals and iatrogenic syndromes. Our network approach complements traditional pharmacovigilance analyses, and may represent a more effective signal detection technique to guide clinical recommendations by regulators and specific follow-up confirmatory studies.",
+  "canon:text": "Development of a Network-Based Signal Detection Tool: The COVID-19 Adversome in the FDA Adverse Event Reporting System. Introduction: The analysis of pharmacovigilance databases is crucial for the safety profiling of new and repurposed drugs, especially in the COVID-19 era. Traditional pharmacovigilance analyses-based on disproportionality approaches-cannot usually account for the complexity of spontaneous reports often with multiple concomitant drugs and events. We propose a network-based approach on co-reported events to help assessing disproportionalities and to effectively and timely identify disease-, comorbidity- and drug-related syndromes, especially in a rapidly changing low-resources environment such as that of COVID-19. Materials and Methods: Reports on medications administered for COVID-19 were extracted from the FDA Adverse Event Reporting System quarterly data (January-September 2020) and queried for disproportionalities (Reporting Odds Ratio corrected for multiple comparisons). A network (the Adversome) was estimated considering events as nodes and conditional co-reporting as links. Communities of significantly co-reported events were identified. All data and scripts employed are available in a public repository. Results: Among the 7,082 COVID-19 reports extracted, the seven most frequently suspected drugs (remdesivir, hydroxychloroquine, azithromycin, tocilizumab, lopinavir/ritonavir, sarilumab, and ethanol) have shown disproportionalities with 54 events. Of interest, myasthenia gravis with hydroxychloroquine, and cerebrovascular vein thrombosis with azithromycin. Automatic clustering identified 13 communities, including a methanol-related neurotoxicity associated with alcohol-based hand-sanitizers and a long QT/hepatotoxicity cluster associated with azithromycin, hydroxychloroquine and lopinavir-ritonavir interactions. Conclusion: Findings from the Adversome detect plausible new signals and iatrogenic syndromes. Our network approach complements traditional pharmacovigilance analyses, and may represent a more effective signal detection technique to guide clinical recommendations by regulators and specific follow-up confirmatory studies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34955821_causative-agent_0001544#mention-T1",
+      "canon:span": {
+        "start": 1683,
+        "end": 1696
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34955821_causative-agent_0001544#mention-T2",
+      "canon:span": {
+        "start": 1375,
+        "end": 1387
+      },
+      "canon:surface": "azithromycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D017963",
+      "canon:sourceNotation": "D017963",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34955821_causative-agent_0001544#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34955821_causative-agent_0001544#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34955821_causative-agent_0001544#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34955821"
+      }
+    }
+  ]
+}

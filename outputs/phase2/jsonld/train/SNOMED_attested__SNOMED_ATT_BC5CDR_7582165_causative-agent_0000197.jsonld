@@ -1,0 +1,87 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7582165_causative-agent_0000197",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_7582165_causative-agent_0000197",
+  "canon:title": "Pseudo-allergic reactions to corticosteroids: diagnosis and alternatives.",
+  "canon:abstract": "Two patients treated with parenteral paramethasone (Triniol) and dexamethasone (Sedionbel) are described. A few minutes after administration of the drugs, they presented urticaria (patients 1 and 2) and conjunctivitis (patient 1). The purpose of our study was to determine the cause of the patients' reactions, the immunological mechanisms involved and whether these patients would be able to tolerate any kind of corticoid. Clinical examinations and skin, oral and parenteral challenges with different corticosteroids and ELISA tests were performed. In the two patients, skin and ELISA tests with paramethasone were negative, as was the prick test with each of its excipients. A single-blind parenteral challenge with Triniol was positive in both patients after the administration of 1 ml of the drug, and negative with its excipients. We also carried out oral and parenteral challenges with other corticosteroids and found intolerance to some of them. These results suggest that paramethasone caused pseudoallergic reactions in our patients. Corticosteroids different from paramethasone also produced hypersensitivity reactions in these patients; however, a few of them were tolerated. The basic mechanisms of those reactions are not yet fully understood. To our knowledge, this is the first report of a pseudo-allergy caused by paramethasone.",
+  "canon:text": "Pseudo-allergic reactions to corticosteroids: diagnosis and alternatives. Two patients treated with parenteral paramethasone (Triniol) and dexamethasone (Sedionbel) are described. A few minutes after administration of the drugs, they presented urticaria (patients 1 and 2) and conjunctivitis (patient 1). The purpose of our study was to determine the cause of the patients' reactions, the immunological mechanisms involved and whether these patients would be able to tolerate any kind of corticoid. Clinical examinations and skin, oral and parenteral challenges with different corticosteroids and ELISA tests were performed. In the two patients, skin and ELISA tests with paramethasone were negative, as was the prick test with each of its excipients. A single-blind parenteral challenge with Triniol was positive in both patients after the administration of 1 ml of the drug, and negative with its excipients. We also carried out oral and parenteral challenges with other corticosteroids and found intolerance to some of them. These results suggest that paramethasone caused pseudoallergic reactions in our patients. Corticosteroids different from paramethasone also produced hypersensitivity reactions in these patients; however, a few of them were tolerated. The basic mechanisms of those reactions are not yet fully understood. To our knowledge, this is the first report of a pseudo-allergy caused by paramethasone.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7582165_causative-agent_0000197#mention-T1",
+      "canon:span": {
+        "start": 7,
+        "end": 25
+      },
+      "canon:surface": "allergic reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Pathologic Function"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/416098002",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7582165_causative-agent_0000197#mention-T2",
+      "canon:span": {
+        "start": 111,
+        "end": 124
+      },
+      "canon:surface": "paramethasone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D010248",
+      "canon:sourceNotation": "D010248",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/116604005",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7582165_causative-agent_0000197#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7582165_causative-agent_0000197#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7582165_causative-agent_0000197#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "7582165"
+      }
+    }
+  ]
+}

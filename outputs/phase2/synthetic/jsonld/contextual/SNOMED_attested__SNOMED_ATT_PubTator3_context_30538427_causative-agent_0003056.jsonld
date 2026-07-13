@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056",
+  "canon:title": "Mechanism involved in insulin resistance via accumulation of beta-amyloid and neurofibrillary tangles: link between type 2 diabetes and Alzheimer's disease.",
+  "canon:abstract": "The pathophysiological link between type 2 diabetes mellitus (T2DM) and Alzheimer's disease (AD) has been suggested in several reports. Few findings suggest that T2DM has strong link in the development process of AD, and the complete mechanism is yet to be revealed. Formation of amyloid plaques (APs) and neurofibrillary tangles (NFTs) are two central hallmarks in the AD. APs are the dense composites of beta-amyloid protein (Abeta) which accumulates around the nerve cells. Moreover, NFTs are the twisted fibers containing hyperphosphorylated tau proteins present in certain residues of Abeta that build up inside the brain cells. Certain factors contribute to the aetiogenesis of AD by regulating insulin signaling pathway in the brain and accelerating the formation of neurotoxic Abeta and NFTs via various mechanisms, including GSK3beta, JNK, CamKII, CDK5, CK1, MARK4, PLK2, Syk, DYRK1A, PPP, and P70S6K. Progression to AD could be influenced by insulin signaling pathway that is affected due to T2DM. Interestingly, NFTs and APs lead to the impairment of several crucial cascades, such as synaptogenesis, neurotrophy, and apoptosis, which are regulated by insulin, cholesterol, and glucose metabolism. The investigation of the molecular cascades through insulin functions in brain contributes to probe and perceive progressions of diabetes to AD. This review elaborates the molecular insights that would help to further understand the potential mechanisms linking T2DM and AD.",
+  "canon:text": "Mechanism involved in insulin resistance via accumulation of beta-amyloid and neurofibrillary tangles: link between type 2 diabetes and Alzheimer's disease. The pathophysiological link between type 2 diabetes mellitus (T2DM) and Alzheimer's disease (AD) has been suggested in several reports. Few findings suggest that T2DM has strong link in the development process of AD, and the complete mechanism is yet to be revealed. Formation of amyloid plaques (APs) and neurofibrillary tangles (NFTs) are two central hallmarks in the AD. APs are the dense composites of beta-amyloid protein (Abeta) which accumulates around the nerve cells. Moreover, NFTs are the twisted fibers containing hyperphosphorylated tau proteins present in certain residues of Abeta that build up inside the brain cells. Certain factors contribute to the aetiogenesis of AD by regulating insulin signaling pathway in the brain and accelerating the formation of neurotoxic Abeta and NFTs via various mechanisms, including GSK3beta, JNK, CamKII, CDK5, CK1, MARK4, PLK2, Syk, DYRK1A, PPP, and P70S6K. Progression to AD could be influenced by insulin signaling pathway that is affected due to T2DM. Interestingly, NFTs and APs lead to the impairment of several crucial cascades, such as synaptogenesis, neurotrophy, and apoptosis, which are regulated by insulin, cholesterol, and glucose metabolism. The investigation of the molecular cascades through insulin functions in brain contributes to probe and perceive progressions of diabetes to AD. This review elaborates the molecular insights that would help to further understand the potential mechanisms linking T2DM and AD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T1",
+      "canon:span": {
+        "start": 931,
+        "end": 941
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T2",
+      "canon:span": {
+        "start": 1329,
+        "end": 1340
+      },
+      "canon:surface": "cholesterol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002784",
+      "canon:sourceNotation": "D002784",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30538427_causative-agent_0003056#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30538427"
+      }
+    }
+  ]
+}

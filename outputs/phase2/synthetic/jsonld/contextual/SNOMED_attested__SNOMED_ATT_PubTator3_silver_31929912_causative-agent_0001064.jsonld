@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001064",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001064",
+  "canon:title": "A Case of Linezolid Toxicity Presenting as a Sepsis Mimic.",
+  "canon:abstract": "Linezolid is an efficacious and well tolerated antimicrobial but can have serious adverse effects including myelo-suppression, serotonin syndrome, neuropathy, hypoglycemia, liver dysfunction, and lactic acidosis. The side effects are generally duration dependent; linezolid use is not recommended for more than 28 days. Case. A 59-year-old female presented with malaise, loss of appetite, and altered mentation. She had multiple medical comorbidities and required long-term anticoagulation with warfarin for venous thromboembolism. She had multiple medication allergies. Prior to admission, she was on linezolid for cellulitis of foot due to Methicillin-resistant Staphylococcus aureus (MRSA). On physical exam, she was drowsy and required endotracheal intubation for airway protection. Initial laboratory parameters showed lactic acidosis, thrombocytopenia, supra-therapeutic coagulation profile, low blood glucose, and transaminitis. Her altered mentation was due to hypoglycemia. The interaction with warfarin led to altered coagulation profile. She developed shock and vasopressors were initiated. Given her presentation, she was managed as severe sepsis. There were no active infectious foci attributing to decline of her clinical status. Linezolid was discontinued and she was managed with intravenous polymyxin B, aztreonam, and vancomycin. Her hemodynamic status improved within one day. She was extubated on Day 5 of her presentation. Her laboratory parameters showed gradual improvement over 12 days after discontinuation of linezolid. Retrospective evaluation revealed linezolid toxicity as possible cause of presentation. Linezolid toxicity can present as sepsis mimic and should be considered as a differential diagnosis while managing sepsis with other antimicrobial agents.",
+  "canon:text": "A Case of Linezolid Toxicity Presenting as a Sepsis Mimic. Linezolid is an efficacious and well tolerated antimicrobial but can have serious adverse effects including myelo-suppression, serotonin syndrome, neuropathy, hypoglycemia, liver dysfunction, and lactic acidosis. The side effects are generally duration dependent; linezolid use is not recommended for more than 28 days. Case. A 59-year-old female presented with malaise, loss of appetite, and altered mentation. She had multiple medical comorbidities and required long-term anticoagulation with warfarin for venous thromboembolism. She had multiple medication allergies. Prior to admission, she was on linezolid for cellulitis of foot due to Methicillin-resistant Staphylococcus aureus (MRSA). On physical exam, she was drowsy and required endotracheal intubation for airway protection. Initial laboratory parameters showed lactic acidosis, thrombocytopenia, supra-therapeutic coagulation profile, low blood glucose, and transaminitis. Her altered mentation was due to hypoglycemia. The interaction with warfarin led to altered coagulation profile. She developed shock and vasopressors were initiated. Given her presentation, she was managed as severe sepsis. There were no active infectious foci attributing to decline of her clinical status. Linezolid was discontinued and she was managed with intravenous polymyxin B, aztreonam, and vancomycin. Her hemodynamic status improved within one day. She was extubated on Day 5 of her presentation. Her laboratory parameters showed gradual improvement over 12 days after discontinuation of linezolid. Retrospective evaluation revealed linezolid toxicity as possible cause of presentation. Linezolid toxicity can present as sepsis mimic and should be considered as a differential diagnosis while managing sepsis with other antimicrobial agents.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001064#mention-T1",
+      "canon:span": {
+        "start": 186,
+        "end": 204
+      },
+      "canon:surface": "serotonin syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001064#mention-T2",
+      "canon:span": {
+        "start": 701,
+        "end": 712
+      },
+      "canon:surface": "Methicillin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008712",
+      "canon:sourceNotation": "D008712",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001064#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001064#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31929912_causative-agent_0001064#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31929912"
+      }
+    }
+  ]
+}

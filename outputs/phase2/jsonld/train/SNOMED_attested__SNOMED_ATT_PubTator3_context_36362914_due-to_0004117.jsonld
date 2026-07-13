@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36362914_due-to_0004117",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36362914_due-to_0004117",
+  "canon:title": "Myocardial Viability Testing in the Management of Ischemic Heart Failure.",
+  "canon:abstract": "Although major advances have occurred lately in medical therapy, ischemic heart failure remains an important cause of death and disability. Viable myocardium represents a cause of reversible ischemic left ventricular dysfunction. Coronary revascularization may improve left ventricular function and prognosis in patients with viable myocardium. Although patients with impaired left ventricular function and multi-vessel coronary artery disease benefit the most from revascularization, they are at high risk of complications related to revascularization procedure. An important element in selecting the patients for myocardial revascularization is the presence of the viable myocardium. Multiple imaging modalities can assess myocardial viability and predict functional improvement after revascularization, with dobutamine stress echocardiography, nuclear imaging tests and magnetic resonance imaging being the most frequently used. However, the role of myocardial viability testing in the management of patients with ischemic heart failure is still controversial due to the failure of randomized controlled trials of revascularization to reveal clear benefits of viability testing. This review summarizes the current knowledge regarding the concept of viable myocardium, depicts the role and tools for viability testing, discusses the research involving this topic and the controversies related to the utility of myocardial viability testing and provides a patient-centered approach for clinical practice.",
+  "canon:text": "Myocardial Viability Testing in the Management of Ischemic Heart Failure. Although major advances have occurred lately in medical therapy, ischemic heart failure remains an important cause of death and disability. Viable myocardium represents a cause of reversible ischemic left ventricular dysfunction. Coronary revascularization may improve left ventricular function and prognosis in patients with viable myocardium. Although patients with impaired left ventricular function and multi-vessel coronary artery disease benefit the most from revascularization, they are at high risk of complications related to revascularization procedure. An important element in selecting the patients for myocardial revascularization is the presence of the viable myocardium. Multiple imaging modalities can assess myocardial viability and predict functional improvement after revascularization, with dobutamine stress echocardiography, nuclear imaging tests and magnetic resonance imaging being the most frequently used. However, the role of myocardial viability testing in the management of patients with ischemic heart failure is still controversial due to the failure of randomized controlled trials of revascularization to reveal clear benefits of viability testing. This review summarizes the current knowledge regarding the concept of viable myocardium, depicts the role and tools for viability testing, discusses the research involving this topic and the controversies related to the utility of myocardial viability testing and provides a patient-centered approach for clinical practice.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36362914_due-to_0004117#mention-T1",
+      "canon:span": {
+        "start": 221,
+        "end": 231
+      },
+      "canon:surface": "myocardium",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017682",
+      "canon:sourceNotation": "D017682",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36362914_due-to_0004117#mention-T2",
+      "canon:span": {
+        "start": 50,
+        "end": 72
+      },
+      "canon:surface": "Ischemic Heart Failure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006333",
+      "canon:sourceNotation": "D006333",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36362914_due-to_0004117#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36362914_due-to_0004117#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36362914_due-to_0004117#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36362914"
+      }
+    }
+  ]
+}

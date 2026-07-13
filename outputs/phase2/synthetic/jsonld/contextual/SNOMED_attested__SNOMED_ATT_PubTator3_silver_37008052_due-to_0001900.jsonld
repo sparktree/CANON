@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37008052_due-to_0001900",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37008052_due-to_0001900",
+  "canon:title": "The Role of Bile Acids in Cardiovascular Diseases: from Mechanisms to Clinical Implications.",
+  "canon:abstract": "Bile acids (BAs), key regulators in the metabolic network, are not only involved in lipid digestion and absorption but also serve as potential therapeutic targets for metabolic disorders. Studies have shown that cardiac dysfunction is associated with abnormal BA metabolic pathways. As ligands for several nuclear receptors and membrane receptors, BAs systematically regulate the homeostasis of metabolism and participate in cardiovascular diseases (CVDs), such as myocardial infarction, diabetic cardiomyopathy, atherosclerosis, arrhythmia, and heart failure. However, the molecular mechanism by which BAs trigger CVDs remains controversial. Therefore, the regulation of BA signal transduction by modulating the synthesis and composition of BAs is an interesting and novel direction for potential therapies for CVDs. Here, we mainly summarized the metabolism of BAs and their role in cardiomyocytes and noncardiomyocytes in CVDs. Moreover, we comprehensively discussed the clinical prospects of BAs in CVDs and analyzed the clinical diagnostic and application value of BAs. The latest development prospects of BAs in the field of new drug development are also prospected. We aimed to elucidate the underlying mechanism of BAs treatment in CVDs, and the relationship between BAs and CVDs may provide new avenues for the prevention and treatment of these diseases.",
+  "canon:text": "The Role of Bile Acids in Cardiovascular Diseases: from Mechanisms to Clinical Implications. Bile acids (BAs), key regulators in the metabolic network, are not only involved in lipid digestion and absorption but also serve as potential therapeutic targets for metabolic disorders. Studies have shown that cardiac dysfunction is associated with abnormal BA metabolic pathways. As ligands for several nuclear receptors and membrane receptors, BAs systematically regulate the homeostasis of metabolism and participate in cardiovascular diseases (CVDs), such as myocardial infarction, diabetic cardiomyopathy, atherosclerosis, arrhythmia, and heart failure. However, the molecular mechanism by which BAs trigger CVDs remains controversial. Therefore, the regulation of BA signal transduction by modulating the synthesis and composition of BAs is an interesting and novel direction for potential therapies for CVDs. Here, we mainly summarized the metabolism of BAs and their role in cardiomyocytes and noncardiomyocytes in CVDs. Moreover, we comprehensively discussed the clinical prospects of BAs in CVDs and analyzed the clinical diagnostic and application value of BAs. The latest development prospects of BAs in the field of new drug development are also prospected. We aimed to elucidate the underlying mechanism of BAs treatment in CVDs, and the relationship between BAs and CVDs may provide new avenues for the prevention and treatment of these diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37008052_due-to_0001900#mention-T1",
+      "canon:span": {
+        "start": 581,
+        "end": 604
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37008052_due-to_0001900#mention-T2",
+      "canon:span": {
+        "start": 26,
+        "end": 49
+      },
+      "canon:surface": "Cardiovascular Diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002318",
+      "canon:sourceNotation": "D002318",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37008052_due-to_0001900#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37008052_due-to_0001900#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37008052_due-to_0001900#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37008052"
+      }
+    }
+  ]
+}

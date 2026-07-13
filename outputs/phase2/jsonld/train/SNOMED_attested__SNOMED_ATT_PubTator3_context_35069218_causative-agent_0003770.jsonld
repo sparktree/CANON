@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35069218_causative-agent_0003770",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35069218_causative-agent_0003770",
+  "canon:title": "Pharmacotherapies for Drug-Induced Liver Injury: A Current Literature Review.",
+  "canon:abstract": "Drug-induced liver injury (DILI) has become a serious public health problem. For the management of DILI, discontinuation of suspicious drug or medicine is the first step, but the treatments including drugs and supporting approaches are needed. Reference to clinical patterns and disease severity grades of DILI, the treatment drugs were considered to summarize into hepatoprotective drugs (N-acetylcysteine and Glutathione, Glycyrrhizin acid preparation, Polyene phosphatidylcholine, Bicyclol, Silymarin), anticholestatic drug (Ursodeoxycholic acid, S-adenosylmethionine, Cholestyramine), immunosuppressants (Glucocorticoids) and specific treatment agents (L-carnitine, Anticoagulants). The current article reviewed the accumulated literature with evidence-based medicine researches for DILI in clinical practice. Also the drawbacks of the clinical studies involved in the article, unmet needs and prospective development for DILI therapy were discussed.",
+  "canon:text": "Pharmacotherapies for Drug-Induced Liver Injury: A Current Literature Review. Drug-induced liver injury (DILI) has become a serious public health problem. For the management of DILI, discontinuation of suspicious drug or medicine is the first step, but the treatments including drugs and supporting approaches are needed. Reference to clinical patterns and disease severity grades of DILI, the treatment drugs were considered to summarize into hepatoprotective drugs (N-acetylcysteine and Glutathione, Glycyrrhizin acid preparation, Polyene phosphatidylcholine, Bicyclol, Silymarin), anticholestatic drug (Ursodeoxycholic acid, S-adenosylmethionine, Cholestyramine), immunosuppressants (Glucocorticoids) and specific treatment agents (L-carnitine, Anticoagulants). The current article reviewed the accumulated literature with evidence-based medicine researches for DILI in clinical practice. Also the drawbacks of the clinical studies involved in the article, unmet needs and prospective development for DILI therapy were discussed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35069218_causative-agent_0003770#mention-T1",
+      "canon:span": {
+        "start": 22,
+        "end": 47
+      },
+      "canon:surface": "Drug-Induced Liver Injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35069218_causative-agent_0003770#mention-T2",
+      "canon:span": {
+        "start": 468,
+        "end": 484
+      },
+      "canon:surface": "N-acetylcysteine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000111",
+      "canon:sourceNotation": "D000111",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35069218_causative-agent_0003770#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35069218_causative-agent_0003770#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35069218_causative-agent_0003770#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35069218"
+      }
+    }
+  ]
+}

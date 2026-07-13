@@ -1,0 +1,88 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_10807237_causative-agent_0000184",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_10807237_causative-agent_0000184",
+  "canon:title": "Intracranial aneurysms and cocaine abuse: analysis of prognostic indicators.",
+  "canon:abstract": "OBJECTIVE: The outcome of subarachnoid hemorrhage associated with cocaine abuse is reportedly poor. However, no study in the literature has reported the use of a statistical model to analyze the variables that influence outcome. METHODS: A review of admissions during a 6-year period revealed 14 patients with cocaine-related aneurysms. This group was compared with a control group of 135 patients with ruptured aneurysms and no history of cocaine abuse. Age at presentation, time of ictus after intoxication, Hunt and Hess grade of subarachnoid hemorrhage, size of the aneurysm, location of the aneurysm, and the Glasgow Outcome Scale score were assessed and compared. RESULTS: The patients in the study group were significantly younger than the patients in the control group (P < 0.002). In patients in the study group, all aneurysms were located in the anterior circulation. The majority of these aneurysms were smaller than those of the control group (8 +/- 6.08 mm versus 11 +/- 5.4 mm; P = 0.05). The differences in mortality and morbidity between the two groups were not significant. Hunt and Hess grade (P < 0.005) and age (P < 0.007) were significant predictors of outcome for the patients with cocaine-related aneurysms. CONCLUSION: Cocaine use predisposed aneurysmal rupture at a significantly earlier age and in much smaller aneurysms. Contrary to the published literature, this group did reasonably well with aggressive management.",
+  "canon:text": "Intracranial aneurysms and cocaine abuse: analysis of prognostic indicators. OBJECTIVE: The outcome of subarachnoid hemorrhage associated with cocaine abuse is reportedly poor. However, no study in the literature has reported the use of a statistical model to analyze the variables that influence outcome. METHODS: A review of admissions during a 6-year period revealed 14 patients with cocaine-related aneurysms. This group was compared with a control group of 135 patients with ruptured aneurysms and no history of cocaine abuse. Age at presentation, time of ictus after intoxication, Hunt and Hess grade of subarachnoid hemorrhage, size of the aneurysm, location of the aneurysm, and the Glasgow Outcome Scale score were assessed and compared. RESULTS: The patients in the study group were significantly younger than the patients in the control group (P < 0.002). In patients in the study group, all aneurysms were located in the anterior circulation. The majority of these aneurysms were smaller than those of the control group (8 +/- 6.08 mm versus 11 +/- 5.4 mm; P = 0.05). The differences in mortality and morbidity between the two groups were not significant. Hunt and Hess grade (P < 0.005) and age (P < 0.007) were significant predictors of outcome for the patients with cocaine-related aneurysms. CONCLUSION: Cocaine use predisposed aneurysmal rupture at a significantly earlier age and in much smaller aneurysms. Contrary to the published literature, this group did reasonably well with aggressive management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_10807237_causative-agent_0000184#mention-T1",
+      "canon:span": {
+        "start": 27,
+        "end": 40
+      },
+      "canon:surface": "cocaine abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Mental or Behavioral Dysfunction"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/31956009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_10807237_causative-agent_0000184#mention-T2",
+      "canon:span": {
+        "start": 387,
+        "end": 394
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Hazardous or Poisonous Substance",
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387085005",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_10807237_causative-agent_0000184#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_10807237_causative-agent_0000184#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_10807237_causative-agent_0000184#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "10807237"
+      }
+    }
+  ]
+}

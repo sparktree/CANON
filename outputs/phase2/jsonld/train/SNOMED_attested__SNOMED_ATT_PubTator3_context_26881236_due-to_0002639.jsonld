@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26881236_due-to_0002639",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26881236_due-to_0002639",
+  "canon:title": "Incretin-Based Therapy for Prevention of Diabetic Vascular Complications.",
+  "canon:abstract": "Diabetic vascular complications are the most common cause of mortality and morbidity worldwide, with numbers of affected individuals steadily increasing. Diabetic vascular complications can be divided into two categories: macrovascular andmicrovascular complications. Macrovascular complications include coronary artery diseaseand cerebrovascular disease, while microvascular complications include retinopathy and chronic kidney disease. These complications result from metabolic abnormalities, including hyperglycemia, elevated levels of free fatty acids, and insulin resistance. Multiple mechanisms have been proposed to mediate the adverse effects of these metabolic disorders on vascular tissues, including stimulation of protein kinase C signaling and activation of the polyol pathway by oxidative stress and inflammation. Additionally, the loss of tissue-specific insulin signaling induced by hyperglycemia and toxic metabolites can induce cellular dysfunction and both macro- and microvascular complications characteristic of diabetes. Despite these insights, few therapeutic methods are available for the management of diabetic complications. Recently, incretin-based therapeutic agents, such as glucagon-like peptide-1 and dipeptidyl peptidase-4 inhibitors, have been reported to elicit vasotropic actions, suggesting a potential for effecting an actual reduction in diabetic vascular complications. The present review will summarize the relationship between multiple adverse biological mechanisms in diabetes and putative incretin-based therapeutic interventions intended to prevent diabetic vascular complications. ",
+  "canon:text": "Incretin-Based Therapy for Prevention of Diabetic Vascular Complications. Diabetic vascular complications are the most common cause of mortality and morbidity worldwide, with numbers of affected individuals steadily increasing. Diabetic vascular complications can be divided into two categories: macrovascular andmicrovascular complications. Macrovascular complications include coronary artery diseaseand cerebrovascular disease, while microvascular complications include retinopathy and chronic kidney disease. These complications result from metabolic abnormalities, including hyperglycemia, elevated levels of free fatty acids, and insulin resistance. Multiple mechanisms have been proposed to mediate the adverse effects of these metabolic disorders on vascular tissues, including stimulation of protein kinase C signaling and activation of the polyol pathway by oxidative stress and inflammation. Additionally, the loss of tissue-specific insulin signaling induced by hyperglycemia and toxic metabolites can induce cellular dysfunction and both macro- and microvascular complications characteristic of diabetes. Despite these insights, few therapeutic methods are available for the management of diabetic complications. Recently, incretin-based therapeutic agents, such as glucagon-like peptide-1 and dipeptidyl peptidase-4 inhibitors, have been reported to elicit vasotropic actions, suggesting a potential for effecting an actual reduction in diabetic vascular complications. The present review will summarize the relationship between multiple adverse biological mechanisms in diabetes and putative incretin-based therapeutic interventions intended to prevent diabetic vascular complications. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26881236_due-to_0002639#mention-T1",
+      "canon:span": {
+        "start": 1201,
+        "end": 1223
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26881236_due-to_0002639#mention-T2",
+      "canon:span": {
+        "start": 1107,
+        "end": 1115
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26881236_due-to_0002639#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26881236_due-to_0002639#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26881236_due-to_0002639#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26881236"
+      }
+    }
+  ]
+}

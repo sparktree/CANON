@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33437689_due-to_0001236",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33437689_due-to_0001236",
+  "canon:title": "Pathophysiology of diabetes: An overview.",
+  "canon:abstract": "Diabetes mellitus is a chronic heterogeneous metabolic disorder with complex pathogenesis. It is characterized by elevated blood glucose levels or hyperglycemia, which results from abnormalities in either insulin secretion or insulin action or both. Hyperglycemia manifests in various forms with a varied presentation and results in carbohydrate, fat, and protein metabolic dysfunctions. Long-term hyperglycemia often leads to various microvascular and macrovascular diabetic complications, which are mainly responsible for diabetes-associated morbidity and mortality. Hyperglycemia serves as the primary biomarker for the diagnosis of diabetes as well. In this review, we would be focusing on the classification of diabetes and its pathophysiology including that of its various types.",
+  "canon:text": "Pathophysiology of diabetes: An overview. Diabetes mellitus is a chronic heterogeneous metabolic disorder with complex pathogenesis. It is characterized by elevated blood glucose levels or hyperglycemia, which results from abnormalities in either insulin secretion or insulin action or both. Hyperglycemia manifests in various forms with a varied presentation and results in carbohydrate, fat, and protein metabolic dysfunctions. Long-term hyperglycemia often leads to various microvascular and macrovascular diabetic complications, which are mainly responsible for diabetes-associated morbidity and mortality. Hyperglycemia serves as the primary biomarker for the diagnosis of diabetes as well. In this review, we would be focusing on the classification of diabetes and its pathophysiology including that of its various types.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33437689_due-to_0001236#mention-T1",
+      "canon:span": {
+        "start": 509,
+        "end": 531
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33437689_due-to_0001236#mention-T2",
+      "canon:span": {
+        "start": 19,
+        "end": 27
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33437689_due-to_0001236#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33437689_due-to_0001236#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33437689_due-to_0001236#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33437689"
+      }
+    }
+  ]
+}

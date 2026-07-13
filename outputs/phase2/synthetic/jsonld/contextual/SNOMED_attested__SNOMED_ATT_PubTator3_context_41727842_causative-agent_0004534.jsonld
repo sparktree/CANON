@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41727842_causative-agent_0004534",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_41727842_causative-agent_0004534",
+  "canon:title": "Alcohol and substance use in extreme environment temperatures exposures, neural mechanisms, coping mechanisms, substance use disorders, and increased hospital visits.",
+  "canon:abstract": "Extreme environmental temperature disasters exposure pose a health challenge worldwide, including the use of alcohol and other substances, thus causing a risk of substance use disorders, and increased hospital visits. A review explored alcohol and other substance use in extreme environment temperature exposures, their mechanisms to substance use disorders and hospital visits. Relevant information used in the review was obtained through a literature search of different databases and a Google search using Boolean search with different search terms. Extreme environmental temperatures, especially in heat waves, leading to chronic stress and the development of mental disorders that trigger the use and abuse of alcohol and other drugs, especially alcohol, opioids, cocaine, cannabis, ecstasy, tobacco smoking, as coping mechanisms against heat stress-induced mental illnesses. Abuse of these substances often leads to SUD, drug intoxication, dehydration, and other health challenges often associated with increased hospital visits during the extreme weather temperatures (hot and cold). This conundrum of extreme weather, mental illnesses, and alcohol and substance use, pose significant public health challenges to the individual, communities, and society, and the already dilapidated healthcare systems, especially in developing nations. However, further studies are needed to understand the extreme weather temperatures, stress, mental illnesses, alcohol and other substances, and SUD interaction that can aid in developing intervention programs. Extreme weather temperature exposure triggers alcohol and other substance use, often leading to substance use disorders, hospital visits (hospitalization), and death, posing health a challenge to healthcare facilities, especially in developing nations.",
+  "canon:text": "Alcohol and substance use in extreme environment temperatures exposures, neural mechanisms, coping mechanisms, substance use disorders, and increased hospital visits. Extreme environmental temperature disasters exposure pose a health challenge worldwide, including the use of alcohol and other substances, thus causing a risk of substance use disorders, and increased hospital visits. A review explored alcohol and other substance use in extreme environment temperature exposures, their mechanisms to substance use disorders and hospital visits. Relevant information used in the review was obtained through a literature search of different databases and a Google search using Boolean search with different search terms. Extreme environmental temperatures, especially in heat waves, leading to chronic stress and the development of mental disorders that trigger the use and abuse of alcohol and other drugs, especially alcohol, opioids, cocaine, cannabis, ecstasy, tobacco smoking, as coping mechanisms against heat stress-induced mental illnesses. Abuse of these substances often leads to SUD, drug intoxication, dehydration, and other health challenges often associated with increased hospital visits during the extreme weather temperatures (hot and cold). This conundrum of extreme weather, mental illnesses, and alcohol and substance use, pose significant public health challenges to the individual, communities, and society, and the already dilapidated healthcare systems, especially in developing nations. However, further studies are needed to understand the extreme weather temperatures, stress, mental illnesses, alcohol and other substances, and SUD interaction that can aid in developing intervention programs. Extreme weather temperature exposure triggers alcohol and other substance use, often leading to substance use disorders, hospital visits (hospitalization), and death, posing health a challenge to healthcare facilities, especially in developing nations.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41727842_causative-agent_0004534#mention-T1",
+      "canon:span": {
+        "start": 1094,
+        "end": 1111
+      },
+      "canon:surface": "drug intoxication",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000435",
+      "canon:sourceNotation": "D000435",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41727842_causative-agent_0004534#mention-T2",
+      "canon:span": {
+        "start": 936,
+        "end": 943
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41727842_causative-agent_0004534#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41727842_causative-agent_0004534#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41727842_causative-agent_0004534#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "41727842"
+      }
+    }
+  ]
+}

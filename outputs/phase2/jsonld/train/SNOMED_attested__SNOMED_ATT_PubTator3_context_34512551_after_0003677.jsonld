@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34512551_after_0003677",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34512551_after_0003677",
+  "canon:title": "Latent Adrenal Insufficiency: From Concept to Diagnosis.",
+  "canon:abstract": "Primary adrenal insufficiency (PAI) is a rare disease and potentially fatal if unrecognized. It is characterized by destruction of the adrenal cortex, most frequently of autoimmune origin, resulting in glucocorticoid, mineralocorticoid, and adrenal androgen deficiencies. Initial signs and symptoms can be nonspecific, contributing to late diagnosis. Loss of zona glomerulosa function may precede zona fasciculata and reticularis deficiencies. Patients present with hallmark manifestations including fatigue, weight loss, abdominal pain, melanoderma, hypotension, salt craving, hyponatremia, hyperkalemia, or acute adrenal crisis. Diagnosis is established by unequivocally low morning serum cortisol/aldosterone and elevated ACTH and renin concentrations. A standard dose (250 microg) Cosyntropin stimulation test may be needed to confirm adrenal insufficiency (AI) in partial deficiencies. Glucocorticoid and mineralocorticoid substitution is the hallmark of treatment, alongside patient education regarding dose adjustments in periods of stress and prevention of acute adrenal crisis. Recent studies identified partial residual adrenocortical function in patients with AI and rare cases have recuperated normal hormonal function. Modulating therapies using rituximab or ACTH injections are in early stages of investigation hoping it could maintain glucocorticoid residual function and delay complete destruction of adrenal cortex.",
+  "canon:text": "Latent Adrenal Insufficiency: From Concept to Diagnosis. Primary adrenal insufficiency (PAI) is a rare disease and potentially fatal if unrecognized. It is characterized by destruction of the adrenal cortex, most frequently of autoimmune origin, resulting in glucocorticoid, mineralocorticoid, and adrenal androgen deficiencies. Initial signs and symptoms can be nonspecific, contributing to late diagnosis. Loss of zona glomerulosa function may precede zona fasciculata and reticularis deficiencies. Patients present with hallmark manifestations including fatigue, weight loss, abdominal pain, melanoderma, hypotension, salt craving, hyponatremia, hyperkalemia, or acute adrenal crisis. Diagnosis is established by unequivocally low morning serum cortisol/aldosterone and elevated ACTH and renin concentrations. A standard dose (250 microg) Cosyntropin stimulation test may be needed to confirm adrenal insufficiency (AI) in partial deficiencies. Glucocorticoid and mineralocorticoid substitution is the hallmark of treatment, alongside patient education regarding dose adjustments in periods of stress and prevention of acute adrenal crisis. Recent studies identified partial residual adrenocortical function in patients with AI and rare cases have recuperated normal hormonal function. Modulating therapies using rituximab or ACTH injections are in early stages of investigation hoping it could maintain glucocorticoid residual function and delay complete destruction of adrenal cortex.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34512551_after_0003677#mention-T1",
+      "canon:span": {
+        "start": 454,
+        "end": 499
+      },
+      "canon:surface": "zona fasciculata and reticularis deficiencies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006562",
+      "canon:sourceNotation": "D006562",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34512551_after_0003677#mention-T2",
+      "canon:span": {
+        "start": 57,
+        "end": 86
+      },
+      "canon:surface": "Primary adrenal insufficiency",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000224",
+      "canon:sourceNotation": "D000224",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34512551_after_0003677#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34512551_after_0003677#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34512551_after_0003677#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34512551"
+      }
+    }
+  ]
+}

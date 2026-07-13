@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41772328_causative-agent_0002109",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_41772328_causative-agent_0002109",
+  "canon:title": "Targeting ferroptosis in cancer: from mechanistic insights to therapeutic approaches.",
+  "canon:abstract": "Ferroptosis is a promising programmed cell death modality for cancer therapy, driven by iron overload and the accumulation of phospholipid peroxides that culminate in lethal membrane damage. Over the past decade, emerging evidence supports the concept that ferroptosis can be harnessed as an effective strategy to suppress tumor growth, particularly in therapy-resistant cancer cells undergoing epithelial-mesenchymal transition and in cancer stem cells. Given that ferroptosis is mechanistically and morphologically different from other known programmed cell death forms, increasing critical findings have shed light on mechanisms by which ferroptosis is regulated, and context-dependent cancer phenotype which is clinical relevant to ferroptosis. In this review, we summarize the basic biology of ferroptosis, including iron regulation and lipid metabolism, as well as key molecular mechanisms such as the system Xc--GSH-GPX4, NADPH-FSP1-CoQ10 and GCH1-BH4 axis in fighting cancer. We also discuss crosstalk between ferroptosis and cuproptosis, disulfidptosis and autophagy, and outline how ferroptosis shapes the tumor immune microenvironment and responses to immunotherapy. More importantly, we highlight the clinical potential of ferroptosis induction via chemotherapy, radiotherapy, immunotherapy and nanomedicine-based delivery strategies, while summarizing common resistance mechanisms and safety considerations. Finally, we outline major challenges and pressing questions for clinical translation, including what are the molecular bases of ferroptosis, how can ferroptosis be leveraged for cancer therapy, how can ferroptosis be integrated with conventional therapies, and how to balance benefits and risks of ferroptosis-based therapy. Collectively, this review connects mechanistic insights with actionable intervention points for developing ferroptosis-based cancer therapies.",
+  "canon:text": "Targeting ferroptosis in cancer: from mechanistic insights to therapeutic approaches. Ferroptosis is a promising programmed cell death modality for cancer therapy, driven by iron overload and the accumulation of phospholipid peroxides that culminate in lethal membrane damage. Over the past decade, emerging evidence supports the concept that ferroptosis can be harnessed as an effective strategy to suppress tumor growth, particularly in therapy-resistant cancer cells undergoing epithelial-mesenchymal transition and in cancer stem cells. Given that ferroptosis is mechanistically and morphologically different from other known programmed cell death forms, increasing critical findings have shed light on mechanisms by which ferroptosis is regulated, and context-dependent cancer phenotype which is clinical relevant to ferroptosis. In this review, we summarize the basic biology of ferroptosis, including iron regulation and lipid metabolism, as well as key molecular mechanisms such as the system Xc--GSH-GPX4, NADPH-FSP1-CoQ10 and GCH1-BH4 axis in fighting cancer. We also discuss crosstalk between ferroptosis and cuproptosis, disulfidptosis and autophagy, and outline how ferroptosis shapes the tumor immune microenvironment and responses to immunotherapy. More importantly, we highlight the clinical potential of ferroptosis induction via chemotherapy, radiotherapy, immunotherapy and nanomedicine-based delivery strategies, while summarizing common resistance mechanisms and safety considerations. Finally, we outline major challenges and pressing questions for clinical translation, including what are the molecular bases of ferroptosis, how can ferroptosis be leveraged for cancer therapy, how can ferroptosis be integrated with conventional therapies, and how to balance benefits and risks of ferroptosis-based therapy. Collectively, this review connects mechanistic insights with actionable intervention points for developing ferroptosis-based cancer therapies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41772328_causative-agent_0002109#mention-T1",
+      "canon:span": {
+        "start": 174,
+        "end": 187
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41772328_causative-agent_0002109#mention-T2",
+      "canon:span": {
+        "start": 908,
+        "end": 912
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41772328_causative-agent_0002109#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41772328_causative-agent_0002109#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41772328_causative-agent_0002109#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "41772328"
+      }
+    }
+  ]
+}

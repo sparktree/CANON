@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37299408_due-to_0004296",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37299408_due-to_0004296",
+  "canon:title": "Nutritional Aspects of Iron in Health and Disease.",
+  "canon:abstract": "Dietary iron assimilation is critical for health and essential to prevent iron-deficient states and related comorbidities, such as anemia. The bioavailability of iron is generally low, while its absorption and metabolism are tightly controlled to satisfy metabolic needs and prevent toxicity of excessive iron accumulation. Iron entry into the bloodstream is limited by hepcidin, the iron regulatory hormone. Hepcidin deficiency due to loss-of-function mutations in upstream gene regulators causes hereditary hemochromatosis, an endocrine disorder of iron overload characterized by chronic hyperabsorption of dietary iron, with deleterious clinical complications if untreated. The impact of high dietary iron intake and elevated body iron stores in the general population is not well understood. Herein, we summarize epidemiological data suggesting that a high intake of heme iron, which is abundant in meat products, poses a risk factor for metabolic syndrome pathologies, cardiovascular diseases, and some cancers. We discuss the clinical relevance and potential limitations of data from cohort studies, as well as the need to establish causality and elucidate molecular mechanisms.",
+  "canon:text": "Nutritional Aspects of Iron in Health and Disease. Dietary iron assimilation is critical for health and essential to prevent iron-deficient states and related comorbidities, such as anemia. The bioavailability of iron is generally low, while its absorption and metabolism are tightly controlled to satisfy metabolic needs and prevent toxicity of excessive iron accumulation. Iron entry into the bloodstream is limited by hepcidin, the iron regulatory hormone. Hepcidin deficiency due to loss-of-function mutations in upstream gene regulators causes hereditary hemochromatosis, an endocrine disorder of iron overload characterized by chronic hyperabsorption of dietary iron, with deleterious clinical complications if untreated. The impact of high dietary iron intake and elevated body iron stores in the general population is not well understood. Herein, we summarize epidemiological data suggesting that a high intake of heme iron, which is abundant in meat products, poses a risk factor for metabolic syndrome pathologies, cardiovascular diseases, and some cancers. We discuss the clinical relevance and potential limitations of data from cohort studies, as well as the need to establish causality and elucidate molecular mechanisms.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37299408_due-to_0004296#mention-T1",
+      "canon:span": {
+        "start": 641,
+        "end": 672
+      },
+      "canon:surface": "hyperabsorption of dietary iron",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018798",
+      "canon:sourceNotation": "D018798",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37299408_due-to_0004296#mention-T2",
+      "canon:span": {
+        "start": 549,
+        "end": 575
+      },
+      "canon:surface": "hereditary hemochromatosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006432",
+      "canon:sourceNotation": "D006432",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37299408_due-to_0004296#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37299408_due-to_0004296#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37299408_due-to_0004296#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37299408"
+      }
+    }
+  ]
+}

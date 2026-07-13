@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34298760_causative-agent_0001379",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34298760_causative-agent_0001379",
+  "canon:title": "Biochemical Mechanisms Associating Alcohol Use Disorders with Cancers.",
+  "canon:abstract": "The World Health Organization identifies alcohol as a cause of several neoplasias of the oropharynx cavity, esophagus, gastrointestinal tract, larynx, liver, or female breast. We review ethanol's nonoxidative and oxidative metabolism and one-carbon metabolism that encompasses both redox and transfer reactions that influence crucial cell proliferation machinery. Ethanol favors the uncontrolled production and action of free radicals, which interfere with the maintenance of essential cellular functions. We focus on the generation of protein, DNA, and lipid adducts that interfere with the cellular processes related to growth and differentiation. Ethanol's effects on stem cells, which are responsible for building and repairing tissues, are reviewed. Cancer stem cells (CSCs) of different origins suffer disturbances related to the expression of cell surface markers, enzymes, and transcription factors after ethanol exposure with the consequent dysregulation of mechanisms related to cancer metastasis or resistance to treatments. Our analysis aims to underline and discuss potential targets that show more sensitivity to ethanol's action and identify specific metabolic routes and metabolic realms that may be corrected to recover metabolic homeostasis after pharmacological intervention. Specifically, research should pay attention to re-establishing metabolic fluxes by fine-tuning the functioning of specific pathways related to one-carbon metabolism and antioxidant processes.",
+  "canon:text": "Biochemical Mechanisms Associating Alcohol Use Disorders with Cancers. The World Health Organization identifies alcohol as a cause of several neoplasias of the oropharynx cavity, esophagus, gastrointestinal tract, larynx, liver, or female breast. We review ethanol's nonoxidative and oxidative metabolism and one-carbon metabolism that encompasses both redox and transfer reactions that influence crucial cell proliferation machinery. Ethanol favors the uncontrolled production and action of free radicals, which interfere with the maintenance of essential cellular functions. We focus on the generation of protein, DNA, and lipid adducts that interfere with the cellular processes related to growth and differentiation. Ethanol's effects on stem cells, which are responsible for building and repairing tissues, are reviewed. Cancer stem cells (CSCs) of different origins suffer disturbances related to the expression of cell surface markers, enzymes, and transcription factors after ethanol exposure with the consequent dysregulation of mechanisms related to cancer metastasis or resistance to treatments. Our analysis aims to underline and discuss potential targets that show more sensitivity to ethanol's action and identify specific metabolic routes and metabolic realms that may be corrected to recover metabolic homeostasis after pharmacological intervention. Specifically, research should pay attention to re-establishing metabolic fluxes by fine-tuning the functioning of specific pathways related to one-carbon metabolism and antioxidant processes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34298760_causative-agent_0001379#mention-T1",
+      "canon:span": {
+        "start": 35,
+        "end": 56
+      },
+      "canon:surface": "Alcohol Use Disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34298760_causative-agent_0001379#mention-T2",
+      "canon:span": {
+        "start": 257,
+        "end": 264
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34298760_causative-agent_0001379#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34298760_causative-agent_0001379#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34298760_causative-agent_0001379#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34298760"
+      }
+    }
+  ]
+}

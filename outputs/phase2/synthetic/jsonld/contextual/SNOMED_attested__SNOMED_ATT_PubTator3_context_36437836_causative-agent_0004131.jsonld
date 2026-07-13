@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36437836_causative-agent_0004131",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36437836_causative-agent_0004131",
+  "canon:title": "\"A Review of Parquetina nigrescens (Afzel.) Bullock, A Plant for Traditional Medicine: Phytochemical and Pharmacological Properties\".",
+  "canon:abstract": "The development of herbal medicines as a remedy for several illnesses has been recognized and accepted worldwide by health experts. Parquetina nigrescens is a perennial evergreen woody climber from the Apocynaceae family, widely used in Africa for the treatment of many diseases. The current study is intended to review and put together information available on this ethno-medicinal plant, which will improve scientific knowledge about the plant and also identify research areas that need to be investigated further. The information related to the plant was obtained using scientific databases such as Google scholar, WebMD, Wiley, Science direct, Cochrane database, student thesis, PubMed, and Scopus to obtain relevant literature regarding the botanical descriptions and distribution of the plant, traditional uses, phytochemicals, active compounds isolated from the plant, and pharmacological properties of P. nigrescens. Several traditional uses for different parts of the plant (leaves, stem bark, roots, leaf sap, flowers, and latex) have been presented. A review of the phytochemical composition of different plant parts revealed the presence of reducing sugars, flavonoids, tannins, alkaloids, cardiac glycosides, steroids, coumarin, anthraquinones, terpenoids, and saponins. Many studies also highlighted pharmacological activities related to P. nigrescens, including antianemic and haematological activity, antidiabetic, anti-inflammatory, antipyretic, analgesic, antiasthmatic, antimicrobial, insecticidal, neurotoxic, cytotoxic, antityphoid, antipolycystic ovarian syndrome activity, antilipidemic, and memory-enhancing activity. It is recommended that further in-vivo and clinical studies be conducted on the plant for the development of novel drugs.",
+  "canon:text": "\"A Review of Parquetina nigrescens (Afzel.) Bullock, A Plant for Traditional Medicine: Phytochemical and Pharmacological Properties\". The development of herbal medicines as a remedy for several illnesses has been recognized and accepted worldwide by health experts. Parquetina nigrescens is a perennial evergreen woody climber from the Apocynaceae family, widely used in Africa for the treatment of many diseases. The current study is intended to review and put together information available on this ethno-medicinal plant, which will improve scientific knowledge about the plant and also identify research areas that need to be investigated further. The information related to the plant was obtained using scientific databases such as Google scholar, WebMD, Wiley, Science direct, Cochrane database, student thesis, PubMed, and Scopus to obtain relevant literature regarding the botanical descriptions and distribution of the plant, traditional uses, phytochemicals, active compounds isolated from the plant, and pharmacological properties of P. nigrescens. Several traditional uses for different parts of the plant (leaves, stem bark, roots, leaf sap, flowers, and latex) have been presented. A review of the phytochemical composition of different plant parts revealed the presence of reducing sugars, flavonoids, tannins, alkaloids, cardiac glycosides, steroids, coumarin, anthraquinones, terpenoids, and saponins. Many studies also highlighted pharmacological activities related to P. nigrescens, including antianemic and haematological activity, antidiabetic, anti-inflammatory, antipyretic, analgesic, antiasthmatic, antimicrobial, insecticidal, neurotoxic, cytotoxic, antityphoid, antipolycystic ovarian syndrome activity, antilipidemic, and memory-enhancing activity. It is recommended that further in-vivo and clinical studies be conducted on the plant for the development of novel drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36437836_causative-agent_0004131#mention-T1",
+      "canon:span": {
+        "start": 1652,
+        "end": 1662
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36437836_causative-agent_0004131#mention-T2",
+      "canon:span": {
+        "start": 1304,
+        "end": 1314
+      },
+      "canon:surface": "flavonoids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005419",
+      "canon:sourceNotation": "D005419",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36437836_causative-agent_0004131#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36437836_causative-agent_0004131#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36437836_causative-agent_0004131#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36437836"
+      }
+    }
+  ]
+}

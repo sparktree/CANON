@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684386_causative-agent_0001479",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34684386_causative-agent_0001479",
+  "canon:title": "N-3 Polyunsaturated Fatty Acids and Their Lipid Mediators as A Potential Immune-Nutritional Intervention: A Molecular and Clinical View in Hepatic Disease and Other Non-Communicable Illnesses.",
+  "canon:abstract": "In recent years, the beneficial effect of n-3 polyunsaturated fatty acids (n-3 PUFAs) intake on human health has been widely accepted in the field of immunonutrition. Today, we find a diversity of supplements based on n-3 PUFAs and/or minerals, vitamins and other substances. The main objective of this review is to discuss the importance of n-3 PUFAs and their derivatives on immunity and inflammatory status related to liver disease and other non-communicable illnesses. Based on the burden of liver diseases in 2019, more than two million people die from liver pathologies per year worldwide, because it is the organ most exposed to agents such as viruses, toxins and medications. Consequently, research conducted on n-3 PUFAs for liver disease has been gaining prominence with encouraging results, given that these fatty acids have anti-inflammatory and cytoprotective effects. In addition, it has been described that n-3 PUFAs are converted into a novel species of lipid intermediaries, specialized pro-resolving mediators (SPMs). At specific levels, SPMs improve the termination of inflammation as well as the repairing and regeneration of tissues, but they are deregulated in liver disease. Since evidence is still insufficient to carry out pharmacological trials to benefit the resolution of acute inflammation in non-communicable diseases, there remains a call for continuing preclinical and clinical research to better understand SPM actions and outcomes.",
+  "canon:text": "N-3 Polyunsaturated Fatty Acids and Their Lipid Mediators as A Potential Immune-Nutritional Intervention: A Molecular and Clinical View in Hepatic Disease and Other Non-Communicable Illnesses. In recent years, the beneficial effect of n-3 polyunsaturated fatty acids (n-3 PUFAs) intake on human health has been widely accepted in the field of immunonutrition. Today, we find a diversity of supplements based on n-3 PUFAs and/or minerals, vitamins and other substances. The main objective of this review is to discuss the importance of n-3 PUFAs and their derivatives on immunity and inflammatory status related to liver disease and other non-communicable illnesses. Based on the burden of liver diseases in 2019, more than two million people die from liver pathologies per year worldwide, because it is the organ most exposed to agents such as viruses, toxins and medications. Consequently, research conducted on n-3 PUFAs for liver disease has been gaining prominence with encouraging results, given that these fatty acids have anti-inflammatory and cytoprotective effects. In addition, it has been described that n-3 PUFAs are converted into a novel species of lipid intermediaries, specialized pro-resolving mediators (SPMs). At specific levels, SPMs improve the termination of inflammation as well as the repairing and regeneration of tissues, but they are deregulated in liver disease. Since evidence is still insufficient to carry out pharmacological trials to benefit the resolution of acute inflammation in non-communicable diseases, there remains a call for continuing preclinical and clinical research to better understand SPM actions and outcomes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684386_causative-agent_0001479#mention-T1",
+      "canon:span": {
+        "start": 139,
+        "end": 154
+      },
+      "canon:surface": "Hepatic Disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684386_causative-agent_0001479#mention-T2",
+      "canon:span": {
+        "start": 42,
+        "end": 47
+      },
+      "canon:surface": "Lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684386_causative-agent_0001479#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684386_causative-agent_0001479#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684386_causative-agent_0001479#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34684386"
+      }
+    }
+  ]
+}

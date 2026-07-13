@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30959950_causative-agent_0000953",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30959950_causative-agent_0000953",
+  "canon:title": "Serum iron, Magnesium, Copper, and Manganese Levels in Alcoholism: A Systematic Review.",
+  "canon:abstract": "The aim of this paper was to review recent literature (from 2000 onwards) and summarize the newest findings on fluctuations in the concentration of some essential macro- and microelements in those patients with a history of chronic alcohol abuse. The focus was mainly on four elements which the authors found of particular interest: Iron, magnesium, copper, and manganese. After independently reviewing over 50 articles, the results were consistent with regard to iron and magnesium. On the other hand, data were limited, and in some cases contradictory, as far as copper and manganese were concerned. Iron overload and magnesium deficiency are two common results of an excessive and prolonged consumption of alcohol. An increase in the levels of iron can be seen both in the serum and within the cells, hepatocytes in particular. This is due to a number of factors: Increased ferritin levels, lower hepcidin levels, as well as some fluctuations in the concentration of the TfR receptor for transferrin, among others. Hypomagnesemia is universally observed among those suffering from alcoholism. Again, the causes for this are numerous and include malnutrition, drug abuse, respiratory alkalosis, and gastrointestinal problems, apart from the direct influence of excessive alcohol intake. Unfortunately, studies regarding the levels of both copper and manganese in the case of (alcoholic) liver disease are scarce and often contradictory. Still, the authors have attempted to summarize and give a thorough insight into the literature available, bearing in mind the difficulties involved in the studies. Frequent comorbidities and mutual relationships between the elements in question are just some of the complications in the study of this topic.",
+  "canon:text": "Serum iron, Magnesium, Copper, and Manganese Levels in Alcoholism: A Systematic Review. The aim of this paper was to review recent literature (from 2000 onwards) and summarize the newest findings on fluctuations in the concentration of some essential macro- and microelements in those patients with a history of chronic alcohol abuse. The focus was mainly on four elements which the authors found of particular interest: Iron, magnesium, copper, and manganese. After independently reviewing over 50 articles, the results were consistent with regard to iron and magnesium. On the other hand, data were limited, and in some cases contradictory, as far as copper and manganese were concerned. Iron overload and magnesium deficiency are two common results of an excessive and prolonged consumption of alcohol. An increase in the levels of iron can be seen both in the serum and within the cells, hepatocytes in particular. This is due to a number of factors: Increased ferritin levels, lower hepcidin levels, as well as some fluctuations in the concentration of the TfR receptor for transferrin, among others. Hypomagnesemia is universally observed among those suffering from alcoholism. Again, the causes for this are numerous and include malnutrition, drug abuse, respiratory alkalosis, and gastrointestinal problems, apart from the direct influence of excessive alcohol intake. Unfortunately, studies regarding the levels of both copper and manganese in the case of (alcoholic) liver disease are scarce and often contradictory. Still, the authors have attempted to summarize and give a thorough insight into the literature available, bearing in mind the difficulties involved in the studies. Frequent comorbidities and mutual relationships between the elements in question are just some of the complications in the study of this topic.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30959950_causative-agent_0000953#mention-T1",
+      "canon:span": {
+        "start": 690,
+        "end": 703
+      },
+      "canon:surface": "Iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30959950_causative-agent_0000953#mention-T2",
+      "canon:span": {
+        "start": 6,
+        "end": 10
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30959950_causative-agent_0000953#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30959950_causative-agent_0000953#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30959950_causative-agent_0000953#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30959950"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34580437_causative-agent_0001457",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34580437_causative-agent_0001457",
+  "canon:title": "Autoimmmune hepatitis.",
+  "canon:abstract": "Autoimmune hepatitis (AIH) is a T-cell mediated, inflammatory liver disease affecting all ages and characterized by female preponderance, elevated serum transaminase and immunoglobulin G levels, positive circulating autoantibodies, and presence of interface hepatitis at liver histology. AIH type 1, affecting both adults and children, is defined by positive anti-nuclear and/or anti-smooth muscle antibodies, while type 2 AIH, affecting mostly children, is defined by positive anti-liver-kidney microsomal type 1 and/or anti-liver cytosol type 1 antibody. While the autoantigens of type 2 AIH are well defined, being the cytochrome P4502D6 (CYP2D6) and the formiminotransferase cyclodeaminase (FTCD), in type 1 AIH they remain to be identified. AIH-1 predisposition is conferred by possession of the MHC class II HLA DRB1*03 at all ages, while DRB1*04 predisposes to late onset disease; AIH-2 is associated with possession of DRB1*07 and DRB1*03. The majority of patients responds well to standard immunosuppressive treatment, based on steroid and azathioprine; second- and third-line drugs should be considered in case of intolerance or insufficient response. This review offers a comprehensive overview of pathophysiological and clinical aspects of AIH.",
+  "canon:text": "Autoimmmune hepatitis. Autoimmune hepatitis (AIH) is a T-cell mediated, inflammatory liver disease affecting all ages and characterized by female preponderance, elevated serum transaminase and immunoglobulin G levels, positive circulating autoantibodies, and presence of interface hepatitis at liver histology. AIH type 1, affecting both adults and children, is defined by positive anti-nuclear and/or anti-smooth muscle antibodies, while type 2 AIH, affecting mostly children, is defined by positive anti-liver-kidney microsomal type 1 and/or anti-liver cytosol type 1 antibody. While the autoantigens of type 2 AIH are well defined, being the cytochrome P4502D6 (CYP2D6) and the formiminotransferase cyclodeaminase (FTCD), in type 1 AIH they remain to be identified. AIH-1 predisposition is conferred by possession of the MHC class II HLA DRB1*03 at all ages, while DRB1*04 predisposes to late onset disease; AIH-2 is associated with possession of DRB1*07 and DRB1*03. The majority of patients responds well to standard immunosuppressive treatment, based on steroid and azathioprine; second- and third-line drugs should be considered in case of intolerance or insufficient response. This review offers a comprehensive overview of pathophysiological and clinical aspects of AIH.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34580437_causative-agent_0001457#mention-T1",
+      "canon:span": {
+        "start": 12,
+        "end": 21
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34580437_causative-agent_0001457#mention-T2",
+      "canon:span": {
+        "start": 1060,
+        "end": 1067
+      },
+      "canon:surface": "steroid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34580437_causative-agent_0001457#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34580437_causative-agent_0001457#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34580437_causative-agent_0001457#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34580437"
+      }
+    }
+  ]
+}

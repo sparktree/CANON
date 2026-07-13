@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610453_causative-agent_0002611",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26610453_causative-agent_0002611",
+  "canon:title": "Phytochelators Intended for Clinical Use in Iron Overload, Other Diseases of Iron Imbalance and Free Radical Pathology.",
+  "canon:abstract": "Iron chelating drugs are primarily and widely used in the treatment of transfusional iron overload in thalassaemia and similar conditions. Recent in vivo and clinical studies have also shown that chelators, and in particular deferiprone, can be used effectively in many conditions involving free radical damage and pathology including neurodegenerative, renal, hepatic, cardiac conditions and cancer. Many classes of phytochelators (Greek: phyto (phiupsilontauomicron)-plant, chele (chietalambdaeta)-claw of the crab) with differing chelating properties, including plant polyphenols resembling chelating drugs, can be developed for clinical use. The phytochelators mimosine and tropolone have been identified to be orally active and effective in animal models for the treatment of iron overload and maltol for the treatment of iron deficiency anaemia. Many critical parameters are required for the development of phytochelators for clinical use including the characterization of the therapeutic targets, ADMET, identification of the therapeutic index and risk/benefit assessment by comparison to existing therapies. Phytochelators can be developed and used as main, alternative or adjuvant therapies including combination therapies with synthetic chelators for synergistic and or complimentary therapeutic effects. The development of phytochelators is a challenging area for the introduction of new pharmaceuticals which can be used in many diseases and also in ageing. The commercial and other considerations for such development have great advantages in comparison to synthetic drugs and could also benefit millions of patients in developing countries. ",
+  "canon:text": "Phytochelators Intended for Clinical Use in Iron Overload, Other Diseases of Iron Imbalance and Free Radical Pathology. Iron chelating drugs are primarily and widely used in the treatment of transfusional iron overload in thalassaemia and similar conditions. Recent in vivo and clinical studies have also shown that chelators, and in particular deferiprone, can be used effectively in many conditions involving free radical damage and pathology including neurodegenerative, renal, hepatic, cardiac conditions and cancer. Many classes of phytochelators (Greek: phyto (phiupsilontauomicron)-plant, chele (chietalambdaeta)-claw of the crab) with differing chelating properties, including plant polyphenols resembling chelating drugs, can be developed for clinical use. The phytochelators mimosine and tropolone have been identified to be orally active and effective in animal models for the treatment of iron overload and maltol for the treatment of iron deficiency anaemia. Many critical parameters are required for the development of phytochelators for clinical use including the characterization of the therapeutic targets, ADMET, identification of the therapeutic index and risk/benefit assessment by comparison to existing therapies. Phytochelators can be developed and used as main, alternative or adjuvant therapies including combination therapies with synthetic chelators for synergistic and or complimentary therapeutic effects. The development of phytochelators is a challenging area for the introduction of new pharmaceuticals which can be used in many diseases and also in ageing. The commercial and other considerations for such development have great advantages in comparison to synthetic drugs and could also benefit millions of patients in developing countries. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610453_causative-agent_0002611#mention-T1",
+      "canon:span": {
+        "start": 44,
+        "end": 57
+      },
+      "canon:surface": "Iron Overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610453_causative-agent_0002611#mention-T2",
+      "canon:span": {
+        "start": 77,
+        "end": 81
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610453_causative-agent_0002611#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610453_causative-agent_0002611#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610453_causative-agent_0002611#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26610453"
+      }
+    }
+  ]
+}

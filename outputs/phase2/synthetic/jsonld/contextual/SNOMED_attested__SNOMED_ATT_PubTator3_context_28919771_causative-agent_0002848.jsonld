@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28919771_causative-agent_0002848",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28919771_causative-agent_0002848",
+  "canon:title": "The challenge of perioperative pain management in opioid-tolerant patients.",
+  "canon:abstract": "The increasing number of opioid users among chronic pain patients, and opioid abusers among the general population, makes perioperative pain management challenging for health care professionals. Anesthesiologists, surgeons, and nurses should be familiar with some pharmacological phenomena which are typical of opioid users and abusers, such as tolerance, physical dependence, hyperalgesia, and addiction. Inadequate pain management is very common in these patients, due to common prejudices and fears. The target of preoperative evaluation is to identify comorbidities and risk factors and recognize signs and symptoms of opioid abuse and opioid withdrawal. Clinicians are encouraged to plan perioperative pain medications and to refer these patients to psychiatrists and addiction specialists for their evaluation. The aim of this review was to give practical suggestions for perioperative management of surgical opioid-tolerant patients, together with schemes of opioid conversion for chronic pain patients assuming oral or transdermal opioids, and patients under maintenance programs with methadone, buprenorphine, or naltrexone.",
+  "canon:text": "The challenge of perioperative pain management in opioid-tolerant patients. The increasing number of opioid users among chronic pain patients, and opioid abusers among the general population, makes perioperative pain management challenging for health care professionals. Anesthesiologists, surgeons, and nurses should be familiar with some pharmacological phenomena which are typical of opioid users and abusers, such as tolerance, physical dependence, hyperalgesia, and addiction. Inadequate pain management is very common in these patients, due to common prejudices and fears. The target of preoperative evaluation is to identify comorbidities and risk factors and recognize signs and symptoms of opioid abuse and opioid withdrawal. Clinicians are encouraged to plan perioperative pain medications and to refer these patients to psychiatrists and addiction specialists for their evaluation. The aim of this review was to give practical suggestions for perioperative management of surgical opioid-tolerant patients, together with schemes of opioid conversion for chronic pain patients assuming oral or transdermal opioids, and patients under maintenance programs with methadone, buprenorphine, or naltrexone.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28919771_causative-agent_0002848#mention-T1",
+      "canon:span": {
+        "start": 699,
+        "end": 711
+      },
+      "canon:surface": "opioid abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009293",
+      "canon:sourceNotation": "D009293",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28919771_causative-agent_0002848#mention-T2",
+      "canon:span": {
+        "start": 1169,
+        "end": 1178
+      },
+      "canon:surface": "methadone",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008691",
+      "canon:sourceNotation": "D008691",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28919771_causative-agent_0002848#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28919771_causative-agent_0002848#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28919771_causative-agent_0002848#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28919771"
+      }
+    }
+  ]
+}

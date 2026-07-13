@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37564215_due-to_0004397",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37564215_due-to_0004397",
+  "canon:title": "Broadening horizons: the multifaceted functions of ferroptosis in kidney diseases.",
+  "canon:abstract": "Ferroptosis is an iron-dependent programmed cell death pattern that is characterized by iron overload, reactive oxygen species (ROS) accumulation and lipid peroxidation. Growing viewpoints support that the imbalance of iron homeostasis and the disturbance of lipid metabolism contribute to tissue or organ injury in various kidney diseases by triggering ferroptosis. At present, the key regulators and complicated network mechanisms associated with ferroptosis have been deeply studied; however, its role in the initiation and progression of kidney diseases has not been fully revealed. Herein, we aim to discuss the features, key regulators and complicated network mechanisms associated with ferroptosis, explore the emerging roles of organelles in ferroptosis, gather its pharmacological progress, and systematically summarize the most recent discoveries about the crosstalk between ferroptosis and kidney diseases, including renal cell carcinoma (RCC), acute kidney injury (AKI), diabetic kidney disease (DKD), autosomal dominant polycystic kidney disease (ADPKD), renal fibrosis, lupus nephritis (LN) and IgA nephropathy. We further conclude the potential therapeutic strategies by targeting ferroptosis for the prevention and treatment of kidney diseases and hope that this work will provide insight for the further study of ferroptosis in the pathogenesis of kidney-related diseases.",
+  "canon:text": "Broadening horizons: the multifaceted functions of ferroptosis in kidney diseases. Ferroptosis is an iron-dependent programmed cell death pattern that is characterized by iron overload, reactive oxygen species (ROS) accumulation and lipid peroxidation. Growing viewpoints support that the imbalance of iron homeostasis and the disturbance of lipid metabolism contribute to tissue or organ injury in various kidney diseases by triggering ferroptosis. At present, the key regulators and complicated network mechanisms associated with ferroptosis have been deeply studied; however, its role in the initiation and progression of kidney diseases has not been fully revealed. Herein, we aim to discuss the features, key regulators and complicated network mechanisms associated with ferroptosis, explore the emerging roles of organelles in ferroptosis, gather its pharmacological progress, and systematically summarize the most recent discoveries about the crosstalk between ferroptosis and kidney diseases, including renal cell carcinoma (RCC), acute kidney injury (AKI), diabetic kidney disease (DKD), autosomal dominant polycystic kidney disease (ADPKD), renal fibrosis, lupus nephritis (LN) and IgA nephropathy. We further conclude the potential therapeutic strategies by targeting ferroptosis for the prevention and treatment of kidney diseases and hope that this work will provide insight for the further study of ferroptosis in the pathogenesis of kidney-related diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37564215_due-to_0004397#mention-T1",
+      "canon:span": {
+        "start": 1167,
+        "end": 1182
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37564215_due-to_0004397#mention-T2",
+      "canon:span": {
+        "start": 383,
+        "end": 395
+      },
+      "canon:surface": "organ injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009102",
+      "canon:sourceNotation": "D009102",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37564215_due-to_0004397#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37564215_due-to_0004397#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37564215_due-to_0004397#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37564215"
+      }
+    }
+  ]
+}

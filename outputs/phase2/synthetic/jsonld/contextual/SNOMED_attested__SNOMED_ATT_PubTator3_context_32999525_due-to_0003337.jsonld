@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32999525_due-to_0003337",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32999525_due-to_0003337",
+  "canon:title": "Diabetic neuropathy and neuropathic pain: a (con)fusion of pathogenic mechanisms?",
+  "canon:abstract": "Neuropathy is a common complication of long-term diabetes that impairs quality of life by producing pain, sensory loss and limb amputation. The presence of neuropathy in both insulin-deficient (type 1) and insulin resistant (type 2) diabetes along with the slowing of progression of neuropathy by improved glycemic control in type 1 diabetes has caused the majority of preclinical and clinical investigations to focus on hyperglycemia as the initiating pathogenic lesion. Studies in animal models of diabetes have identified multiple plausible mechanisms of glucotoxicity to the nervous system including post-translational modification of proteins by glucose and increased glucose metabolism by aldose reductase, glycolysis and other catabolic pathways. However, it is becoming increasingly apparent that factors not necessarily downstream of hyperglycemia can also contribute to the incidence, progression and severity of neuropathy and neuropathic pain. For example, peripheral nerve contains insulin receptors that transduce the neurotrophic and neurosupportive properties of insulin, independent of systemic glucose regulation, while the detection of neuropathy and neuropathic pain in patients with metabolic syndrome and failure of improved glycemic control to protect against neuropathy in cohorts of type 2 diabetic patients has placed a focus on the pathogenic role of dyslipidemia. This review provides an overview of current understanding of potential initiating lesions for diabetic neuropathy and the multiple downstream mechanisms identified in cell and animal models of diabetes that may contribute to the pathogenesis of diabetic neuropathy and neuropathic pain.",
+  "canon:text": "Diabetic neuropathy and neuropathic pain: a (con)fusion of pathogenic mechanisms? Neuropathy is a common complication of long-term diabetes that impairs quality of life by producing pain, sensory loss and limb amputation. The presence of neuropathy in both insulin-deficient (type 1) and insulin resistant (type 2) diabetes along with the slowing of progression of neuropathy by improved glycemic control in type 1 diabetes has caused the majority of preclinical and clinical investigations to focus on hyperglycemia as the initiating pathogenic lesion. Studies in animal models of diabetes have identified multiple plausible mechanisms of glucotoxicity to the nervous system including post-translational modification of proteins by glucose and increased glucose metabolism by aldose reductase, glycolysis and other catabolic pathways. However, it is becoming increasingly apparent that factors not necessarily downstream of hyperglycemia can also contribute to the incidence, progression and severity of neuropathy and neuropathic pain. For example, peripheral nerve contains insulin receptors that transduce the neurotrophic and neurosupportive properties of insulin, independent of systemic glucose regulation, while the detection of neuropathy and neuropathic pain in patients with metabolic syndrome and failure of improved glycemic control to protect against neuropathy in cohorts of type 2 diabetic patients has placed a focus on the pathogenic role of dyslipidemia. This review provides an overview of current understanding of potential initiating lesions for diabetic neuropathy and the multiple downstream mechanisms identified in cell and animal models of diabetes that may contribute to the pathogenesis of diabetic neuropathy and neuropathic pain.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32999525_due-to_0003337#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 19
+      },
+      "canon:surface": "Diabetic neuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32999525_due-to_0003337#mention-T2",
+      "canon:span": {
+        "start": 408,
+        "end": 423
+      },
+      "canon:surface": "type 1 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003922",
+      "canon:sourceNotation": "D003922",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32999525_due-to_0003337#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32999525_due-to_0003337#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32999525_due-to_0003337#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32999525"
+      }
+    }
+  ]
+}

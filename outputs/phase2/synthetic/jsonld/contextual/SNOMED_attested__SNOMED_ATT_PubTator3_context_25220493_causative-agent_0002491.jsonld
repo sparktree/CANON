@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25220493_causative-agent_0002491",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25220493_causative-agent_0002491",
+  "canon:title": "Quantitative NTCP pharmacophore and lack of association between DILI and NTCP Inhibition.",
+  "canon:abstract": "The human sodium taurocholate cotransporting polypeptide (NTCP) is a hepatic bile acid transporter. Inhibition of NTCP uptake may potentially also prevent hepatitis B virus (HBV) infection. The first objective was to develop a quantitative pharmacophore for NTCP inhibition. Recent studies showed that hepatotoxic drugs could inhibit bile acid uptake into hepatocytes, without inhibiting canalicular efflux, and cause bile acid elevation in plasma. Hence, a second objective was to examine whether NTCP inhibition is associated with drug induced liver injury (DILI). Twenty-seven drugs from our previous study were used as the training set to develop a quantitative pharmacophore. From secondary screening from a drug database, six retrieved drugs and three drugs not retrieved by the model were tested for NTCP inhibition. Tertiary screening involved drugs known to cause DILI and not cause DILI. Overall, ninety-four drugs were assessed for hepatotoxicity and were assessed relative to NTCP inhibition. The quantitative pharmacophore possessed one hydrogen bond acceptor, one hydrogen bond donor, a hydrophobic feature, and excluded volumes. From 94 drugs, NTCP inhibitors and non-inhibitors were approximately equally distributed across the drugs of most DILI concern, less DILI concern, and no DILI concern, indicating no relationship between NTCP inhibition and DILI risk. Hence, an approach to treat HBV via NTCP inhibition is not expected to be associated with DILI. ",
+  "canon:text": "Quantitative NTCP pharmacophore and lack of association between DILI and NTCP Inhibition. The human sodium taurocholate cotransporting polypeptide (NTCP) is a hepatic bile acid transporter. Inhibition of NTCP uptake may potentially also prevent hepatitis B virus (HBV) infection. The first objective was to develop a quantitative pharmacophore for NTCP inhibition. Recent studies showed that hepatotoxic drugs could inhibit bile acid uptake into hepatocytes, without inhibiting canalicular efflux, and cause bile acid elevation in plasma. Hence, a second objective was to examine whether NTCP inhibition is associated with drug induced liver injury (DILI). Twenty-seven drugs from our previous study were used as the training set to develop a quantitative pharmacophore. From secondary screening from a drug database, six retrieved drugs and three drugs not retrieved by the model were tested for NTCP inhibition. Tertiary screening involved drugs known to cause DILI and not cause DILI. Overall, ninety-four drugs were assessed for hepatotoxicity and were assessed relative to NTCP inhibition. The quantitative pharmacophore possessed one hydrogen bond acceptor, one hydrogen bond donor, a hydrophobic feature, and excluded volumes. From 94 drugs, NTCP inhibitors and non-inhibitors were approximately equally distributed across the drugs of most DILI concern, less DILI concern, and no DILI concern, indicating no relationship between NTCP inhibition and DILI risk. Hence, an approach to treat HBV via NTCP inhibition is not expected to be associated with DILI. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25220493_causative-agent_0002491#mention-T1",
+      "canon:span": {
+        "start": 64,
+        "end": 68
+      },
+      "canon:surface": "DILI",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25220493_causative-agent_0002491#mention-T2",
+      "canon:span": {
+        "start": 424,
+        "end": 433
+      },
+      "canon:surface": "bile acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001647",
+      "canon:sourceNotation": "D001647",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25220493_causative-agent_0002491#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25220493_causative-agent_0002491#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25220493_causative-agent_0002491#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25220493"
+      }
+    }
+  ]
+}

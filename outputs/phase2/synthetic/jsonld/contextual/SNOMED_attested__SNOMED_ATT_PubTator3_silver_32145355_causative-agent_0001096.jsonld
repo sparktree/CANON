@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32145355_causative-agent_0001096",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32145355_causative-agent_0001096",
+  "canon:title": "Neurotoxicity of e-cigarettes.",
+  "canon:abstract": "It appears that electronic cigarettes (EC) are a less harmful alternative to conventional cigarette (CC) smoking, as they generate substantially lower levels of harmful carcinogens and other toxic compounds. Thus, switching from CC to EC may be beneficial for smokers. However, recent accounts of EC- or vaping-associated lung injury (EVALI) has raised concerns regarding their adverse health effects. Additionally, the increasing popularity of EC among vulnerable populations, such as adolescents and pregnant women, calls for further EC safety evaluation. In this state-of-the-art review, we provide an update on recent findings regarding the neurological effects induced by EC exposure. Moreover, we discuss possible neurotoxic effects of nicotine and numerous other chemicals which are inherent both to e-liquids and EC aerosols. We conclude that in recognizing pertinent issues associated with EC usage, both government and scientific researchers must address this public health issue with utmost urgency.",
+  "canon:text": "Neurotoxicity of e-cigarettes. It appears that electronic cigarettes (EC) are a less harmful alternative to conventional cigarette (CC) smoking, as they generate substantially lower levels of harmful carcinogens and other toxic compounds. Thus, switching from CC to EC may be beneficial for smokers. However, recent accounts of EC- or vaping-associated lung injury (EVALI) has raised concerns regarding their adverse health effects. Additionally, the increasing popularity of EC among vulnerable populations, such as adolescents and pregnant women, calls for further EC safety evaluation. In this state-of-the-art review, we provide an update on recent findings regarding the neurological effects induced by EC exposure. Moreover, we discuss possible neurotoxic effects of nicotine and numerous other chemicals which are inherent both to e-liquids and EC aerosols. We conclude that in recognizing pertinent issues associated with EC usage, both government and scientific researchers must address this public health issue with utmost urgency.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32145355_causative-agent_0001096#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 13
+      },
+      "canon:surface": "Neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32145355_causative-agent_0001096#mention-T2",
+      "canon:span": {
+        "start": 773,
+        "end": 781
+      },
+      "canon:surface": "nicotine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009538",
+      "canon:sourceNotation": "D009538",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32145355_causative-agent_0001096#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32145355_causative-agent_0001096#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32145355_causative-agent_0001096#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32145355"
+      }
+    }
+  ]
+}

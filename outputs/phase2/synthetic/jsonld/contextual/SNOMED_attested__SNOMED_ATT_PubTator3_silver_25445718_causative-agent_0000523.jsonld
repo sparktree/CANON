@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25445718_causative-agent_0000523",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25445718_causative-agent_0000523",
+  "canon:title": "The double-edged sword: Neurotoxicity of chemotherapy.",
+  "canon:abstract": "The number of available therapies for hematologic malignancies continues to grow at a rapid pace. Unfortunately, many of these treatments carry both central and peripheral nervous system toxicities, potentially limiting a patient's ability to tolerate a full course of treatment. Neurotoxicity with chemotherapy is common and second only to myelosuppression as a reason to limit dosing. This review addresses the neurotoxicity of newly available therapeutic agents including brentuximab vedotin and blinatumomab as well as classic ones such as methotrexate, vinca alkaloids and platinums. Although peripheral neuropathy is common with many drugs, other complications such as seizures and encephalopathy may require more immediate attention. Rapid recognition of adverse neurologic effects may lead to earlier treatment and appropriate adjustment of dosing regimens. In addition, knowledge of common toxicities may help differentiate chemotherapy-related symptoms from actual progression of cancer into the CNS.",
+  "canon:text": "The double-edged sword: Neurotoxicity of chemotherapy. The number of available therapies for hematologic malignancies continues to grow at a rapid pace. Unfortunately, many of these treatments carry both central and peripheral nervous system toxicities, potentially limiting a patient's ability to tolerate a full course of treatment. Neurotoxicity with chemotherapy is common and second only to myelosuppression as a reason to limit dosing. This review addresses the neurotoxicity of newly available therapeutic agents including brentuximab vedotin and blinatumomab as well as classic ones such as methotrexate, vinca alkaloids and platinums. Although peripheral neuropathy is common with many drugs, other complications such as seizures and encephalopathy may require more immediate attention. Rapid recognition of adverse neurologic effects may lead to earlier treatment and appropriate adjustment of dosing regimens. In addition, knowledge of common toxicities may help differentiate chemotherapy-related symptoms from actual progression of cancer into the CNS.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25445718_causative-agent_0000523#mention-T1",
+      "canon:span": {
+        "start": 24,
+        "end": 37
+      },
+      "canon:surface": "Neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25445718_causative-agent_0000523#mention-T2",
+      "canon:span": {
+        "start": 599,
+        "end": 611
+      },
+      "canon:surface": "methotrexate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008727",
+      "canon:sourceNotation": "D008727",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25445718_causative-agent_0000523#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25445718_causative-agent_0000523#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25445718_causative-agent_0000523#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25445718"
+      }
+    }
+  ]
+}

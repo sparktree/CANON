@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31783120_causative-agent_0001046",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31783120_causative-agent_0001046",
+  "canon:title": "The effect of alpha-synuclein and Tau in methamphetamine induced neurotoxicity in vivo and in vitro.",
+  "canon:abstract": "The upregulated alpha-synuclein (alpha-syn) and Tau co-occur in methamphetamine (METH) abusers' brains. Here, we designed experiments mainly to investigate whether alpha-syn and Tau interact in METH exposure. We detected the expression of alpha-syn, total Tau, and phosphorylation of Tau at Serine 396 (pSer396 Tau) under in vitro and in vivo conditions after METH exposure to determine the co-occurrence of alpha-syn and Tau. We also explored the effect of alpha-syn or Tau on one another by silencing and knocking-out one of them in METH treatment. We found that METH increased the alpha-syn, total Tau, and pSer396 Tau protein level in SH-SY5Y cells, primary cultured neurons, and in mice brains. In additional, reducing alpha-syn level can relieve and even normalize the pSer396 Tau and total Tau overexpression after treatment of METH. Furthermore, knocking out Tau can effectively inhibit METH induced overexpression of alpha-syn in mice brains. Finally, knocking out alpha-syn or Tau can effectively reduce METH-induced neurotoxicity in mice brains. This research could provide potential therapeutic approaches targeting the vicious circle between alpha-syn and Tau in METH abusers and patients with neurodegenerative disorders.",
+  "canon:text": "The effect of alpha-synuclein and Tau in methamphetamine induced neurotoxicity in vivo and in vitro. The upregulated alpha-synuclein (alpha-syn) and Tau co-occur in methamphetamine (METH) abusers' brains. Here, we designed experiments mainly to investigate whether alpha-syn and Tau interact in METH exposure. We detected the expression of alpha-syn, total Tau, and phosphorylation of Tau at Serine 396 (pSer396 Tau) under in vitro and in vivo conditions after METH exposure to determine the co-occurrence of alpha-syn and Tau. We also explored the effect of alpha-syn or Tau on one another by silencing and knocking-out one of them in METH treatment. We found that METH increased the alpha-syn, total Tau, and pSer396 Tau protein level in SH-SY5Y cells, primary cultured neurons, and in mice brains. In additional, reducing alpha-syn level can relieve and even normalize the pSer396 Tau and total Tau overexpression after treatment of METH. Furthermore, knocking out Tau can effectively inhibit METH induced overexpression of alpha-syn in mice brains. Finally, knocking out alpha-syn or Tau can effectively reduce METH-induced neurotoxicity in mice brains. This research could provide potential therapeutic approaches targeting the vicious circle between alpha-syn and Tau in METH abusers and patients with neurodegenerative disorders.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31783120_causative-agent_0001046#mention-T1",
+      "canon:span": {
+        "start": 65,
+        "end": 78
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31783120_causative-agent_0001046#mention-T2",
+      "canon:span": {
+        "start": 41,
+        "end": 56
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31783120_causative-agent_0001046#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31783120_causative-agent_0001046#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31783120_causative-agent_0001046#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31783120"
+      }
+    }
+  ]
+}

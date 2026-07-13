@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41564793_causative-agent_0004531",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_41564793_causative-agent_0004531",
+  "canon:title": "Acetyl-CoA acyltransferase 2 palmitoylation drives liver fibrosis by inducing hepatic stellate cell ferroptosis.",
+  "canon:abstract": "Hepatic fibrosis is a major driver of mortality in metabolic dysfunction-associated steatotic liver disease (MASLD)-previously known as non-alcoholic fatty liver disease (NAFLD). While hepatic stellate cell (HSC) activation and myofibroblast accumulation are central to fibrogenesis, the regulatory mechanisms remain incompletely understood. Acetyl-CoA acyltransferase 2 (ACAA2), a pivotal enzyme in fatty acid oxidation, has been implicated in lipid metabolism but has not been investigated as a therapeutic target in MASLD. Here, we show that ACAA2 upregulation in HSCs exacerbates hepatic fibrosis by promoting ferroptosis-associated transcriptional programs, whereas ACAA2 inhibition attenuates both ferroptosis and fibrogenesis in preclinical models. Mechanistically, ACAA2 palmitoylation governs its subcellular localization and function, and blocking this modification suppresses HSC activation via AMPK pathway stimulation, thereby mitigating fibrosis. Our study establishes ACAA2 palmitoylation as a druggable node for antifibrotic therapy, offering novel insights into metabolic regulation of hepatic fibrosis.",
+  "canon:text": "Acetyl-CoA acyltransferase 2 palmitoylation drives liver fibrosis by inducing hepatic stellate cell ferroptosis. Hepatic fibrosis is a major driver of mortality in metabolic dysfunction-associated steatotic liver disease (MASLD)-previously known as non-alcoholic fatty liver disease (NAFLD). While hepatic stellate cell (HSC) activation and myofibroblast accumulation are central to fibrogenesis, the regulatory mechanisms remain incompletely understood. Acetyl-CoA acyltransferase 2 (ACAA2), a pivotal enzyme in fatty acid oxidation, has been implicated in lipid metabolism but has not been investigated as a therapeutic target in MASLD. Here, we show that ACAA2 upregulation in HSCs exacerbates hepatic fibrosis by promoting ferroptosis-associated transcriptional programs, whereas ACAA2 inhibition attenuates both ferroptosis and fibrogenesis in preclinical models. Mechanistically, ACAA2 palmitoylation governs its subcellular localization and function, and blocking this modification suppresses HSC activation via AMPK pathway stimulation, thereby mitigating fibrosis. Our study establishes ACAA2 palmitoylation as a druggable node for antifibrotic therapy, offering novel insights into metabolic regulation of hepatic fibrosis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41564793_causative-agent_0004531#mention-T1",
+      "canon:span": {
+        "start": 78,
+        "end": 85
+      },
+      "canon:surface": "hepatic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41564793_causative-agent_0004531#mention-T2",
+      "canon:span": {
+        "start": 558,
+        "end": 563
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41564793_causative-agent_0004531#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41564793_causative-agent_0004531#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41564793_causative-agent_0004531#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "41564793"
+      }
+    }
+  ]
+}

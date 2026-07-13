@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37201021_causative-agent_0001930",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37201021_causative-agent_0001930",
+  "canon:title": "A systematic review on sex differences in adverse drug reactions related to psychotropic, cardiovascular, and analgesic medications.",
+  "canon:abstract": "Background and objective: Adverse drug reactions (ADRs) are the main safety concerns of clinically used medications. Accumulating evidence has shown that ADRs can affect men and women differently, which suggests sex as a biological predictor in the risk of ADRs. This review aims to summarize the current state of knowledge on sex differences in ADRs with the focus on the commonly used psychotropic, cardiovascular, and analgesic medications, and to aid clinical decision making and future mechanistic investigations on this topic. Methods: PubMed search was performed with combinations of the following terms: over 1,800 drugs of interests, sex difference (and its related terms), and side effects (and its related terms), which yielded over 400 unique articles. Articles related to psychotropic, cardiovascular, and analgesic medications were included in the subsequent full-text review. Characteristics and the main findings (male-biased, female-biased, or not sex biased ADRs) of each included article were collected, and the results were summarized by drug class and/or individual drug. Results: Twenty-six articles studying sex differences in ADRs of six psychotropic medications, ten cardiovascular medications, and one analgesic medication were included in this review. The main findings of these articles suggested that more than half of the ADRs being evaluated showed sex difference pattern in occurrence rate. For instance, lithium was found to cause more thyroid dysfunction in women, and amisulpride induced prolactin increase was more pronounced in women than in men. Some serious ADRs were also found to exert sex difference pattern, such as clozapine induced neutropenia was more prevalent in women whereas simvastatin/atorvastatin-related abnormal liver functions were more pronounced in men.",
+  "canon:text": "A systematic review on sex differences in adverse drug reactions related to psychotropic, cardiovascular, and analgesic medications. Background and objective: Adverse drug reactions (ADRs) are the main safety concerns of clinically used medications. Accumulating evidence has shown that ADRs can affect men and women differently, which suggests sex as a biological predictor in the risk of ADRs. This review aims to summarize the current state of knowledge on sex differences in ADRs with the focus on the commonly used psychotropic, cardiovascular, and analgesic medications, and to aid clinical decision making and future mechanistic investigations on this topic. Methods: PubMed search was performed with combinations of the following terms: over 1,800 drugs of interests, sex difference (and its related terms), and side effects (and its related terms), which yielded over 400 unique articles. Articles related to psychotropic, cardiovascular, and analgesic medications were included in the subsequent full-text review. Characteristics and the main findings (male-biased, female-biased, or not sex biased ADRs) of each included article were collected, and the results were summarized by drug class and/or individual drug. Results: Twenty-six articles studying sex differences in ADRs of six psychotropic medications, ten cardiovascular medications, and one analgesic medication were included in this review. The main findings of these articles suggested that more than half of the ADRs being evaluated showed sex difference pattern in occurrence rate. For instance, lithium was found to cause more thyroid dysfunction in women, and amisulpride induced prolactin increase was more pronounced in women than in men. Some serious ADRs were also found to exert sex difference pattern, such as clozapine induced neutropenia was more prevalent in women whereas simvastatin/atorvastatin-related abnormal liver functions were more pronounced in men.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37201021_causative-agent_0001930#mention-T1",
+      "canon:span": {
+        "start": 1891,
+        "end": 1915
+      },
+      "canon:surface": "abnormal liver functions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37201021_causative-agent_0001930#mention-T2",
+      "canon:span": {
+        "start": 1858,
+        "end": 1869
+      },
+      "canon:surface": "simvastatin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D019821",
+      "canon:sourceNotation": "D019821",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37201021_causative-agent_0001930#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37201021_causative-agent_0001930#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37201021_causative-agent_0001930#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37201021"
+      }
+    }
+  ]
+}

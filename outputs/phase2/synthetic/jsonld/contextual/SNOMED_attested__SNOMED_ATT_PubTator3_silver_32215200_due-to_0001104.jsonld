@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32215200_due-to_0001104",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32215200_due-to_0001104",
+  "canon:title": "Atrial arrhythmias in chronic lung disease-associated pulmonary hypertension.",
+  "canon:abstract": "Atrial arrhythmias are common during episodes of acute respiratory failure in patients with chronic lung disease-associated pulmonary hypertension. Expert opinion suggests that management of atrial arrhythmias in patients with pulmonary hypertension should aim to restore sinus rhythm. This is clinically challenging in pulmonary hypertension patients with coexisting chronic lung disease, as there is controversy on the use of rhythm control agents; generally, in regard to either their pulmonary toxicity profile or the lack of evidence supporting their use. Rate control methods are largely focused on the use of beta blockers and calcium channel blockers. Concerns regarding their use involve their negative inotropic properties in cor pulmonale, the risk of bronchospasm associated with beta blockers, and the potential for ventilation/perfusion mismatching associated with calcium channel blockers. While digoxin has been associated with promising outcomes during acute right ventricular failure, there is limited evidence to suggest its routine use. Electrical cardioversion is associated with a high failure rate and it frequently requires multiple attempts. Radiofrequency catheter ablation is a more definitive approach, but concerns surrounding mechanical ventilation and sedation limit its applicability in decompensated pulmonary hypertension. Individual approaches are needed to address atrial arrhythmia management during acute episodes of respiratory failure.",
+  "canon:text": "Atrial arrhythmias in chronic lung disease-associated pulmonary hypertension. Atrial arrhythmias are common during episodes of acute respiratory failure in patients with chronic lung disease-associated pulmonary hypertension. Expert opinion suggests that management of atrial arrhythmias in patients with pulmonary hypertension should aim to restore sinus rhythm. This is clinically challenging in pulmonary hypertension patients with coexisting chronic lung disease, as there is controversy on the use of rhythm control agents; generally, in regard to either their pulmonary toxicity profile or the lack of evidence supporting their use. Rate control methods are largely focused on the use of beta blockers and calcium channel blockers. Concerns regarding their use involve their negative inotropic properties in cor pulmonale, the risk of bronchospasm associated with beta blockers, and the potential for ventilation/perfusion mismatching associated with calcium channel blockers. While digoxin has been associated with promising outcomes during acute right ventricular failure, there is limited evidence to suggest its routine use. Electrical cardioversion is associated with a high failure rate and it frequently requires multiple attempts. Radiofrequency catheter ablation is a more definitive approach, but concerns surrounding mechanical ventilation and sedation limit its applicability in decompensated pulmonary hypertension. Individual approaches are needed to address atrial arrhythmia management during acute episodes of respiratory failure.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32215200_due-to_0001104#mention-T1",
+      "canon:span": {
+        "start": 814,
+        "end": 827
+      },
+      "canon:surface": "cor pulmonale",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011660",
+      "canon:sourceNotation": "D011660",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32215200_due-to_0001104#mention-T2",
+      "canon:span": {
+        "start": 133,
+        "end": 152
+      },
+      "canon:surface": "respiratory failure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012131",
+      "canon:sourceNotation": "D012131",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32215200_due-to_0001104#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32215200_due-to_0001104#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32215200_due-to_0001104#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32215200"
+      }
+    }
+  ]
+}

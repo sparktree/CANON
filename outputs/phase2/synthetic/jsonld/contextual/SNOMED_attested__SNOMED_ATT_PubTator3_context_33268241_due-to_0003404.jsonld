@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33268241_due-to_0003404",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33268241_due-to_0003404",
+  "canon:title": "Role of ceramides in the pathogenesis of diabetes mellitus and its complications.",
+  "canon:abstract": "Diabetes mellitus (DM) is a systemic metabolic disease that affects 463 million adults worldwide and is a leading cause of cardiovascular disease, blindness, nephropathy, peripheral neuropathy, and lower-limb amputation. Lipids have long been recognized as contributors to the pathogenesis and pathophysiology of DM and its complications, but recent discoveries have highlighted ceramides, a class of bioactive sphingolipids with cell signaling and second messenger capabilities, as particularly important contributors to insulin resistance and the underlying mechanisms of DM complications. Besides their association with insulin resistance and pathophysiology of type 2 diabetes, evidence is emerging that certain species of ceramides are mediators of cellular mechanisms involved in the initiation and progression of microvascular and macrovascular complications of DM. Advances in our understanding of these associations provide unique opportunities for exploring ceramide species as potential novel therapeutic targets and biomarkers. This review discusses the links between ceramides and the pathogenesis of DM and diabetic complications and identifies opportunities for novel discoveries and applications.",
+  "canon:text": "Role of ceramides in the pathogenesis of diabetes mellitus and its complications. Diabetes mellitus (DM) is a systemic metabolic disease that affects 463 million adults worldwide and is a leading cause of cardiovascular disease, blindness, nephropathy, peripheral neuropathy, and lower-limb amputation. Lipids have long been recognized as contributors to the pathogenesis and pathophysiology of DM and its complications, but recent discoveries have highlighted ceramides, a class of bioactive sphingolipids with cell signaling and second messenger capabilities, as particularly important contributors to insulin resistance and the underlying mechanisms of DM complications. Besides their association with insulin resistance and pathophysiology of type 2 diabetes, evidence is emerging that certain species of ceramides are mediators of cellular mechanisms involved in the initiation and progression of microvascular and macrovascular complications of DM. Advances in our understanding of these associations provide unique opportunities for exploring ceramide species as potential novel therapeutic targets and biomarkers. This review discusses the links between ceramides and the pathogenesis of DM and diabetic complications and identifies opportunities for novel discoveries and applications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33268241_due-to_0003404#mention-T1",
+      "canon:span": {
+        "start": 1203,
+        "end": 1225
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33268241_due-to_0003404#mention-T2",
+      "canon:span": {
+        "start": 747,
+        "end": 762
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33268241_due-to_0003404#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33268241_due-to_0003404#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33268241_due-to_0003404#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33268241"
+      }
+    }
+  ]
+}

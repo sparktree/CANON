@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24485820_causative-agent_0002438",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24485820_causative-agent_0002438",
+  "canon:title": "Significant hepatic involvement in patients with ornithine transcarbamylase deficiency.",
+  "canon:abstract": "OBJECTIVE: To determine the frequency of significant liver injury and acute liver failure (ALF) in patients with ornithine transcarbamylase deficiency (OTCD), the most common urea cycle defect. STUDY DESIGN: In this historical cohort study, charts of 71 patients with OTCD at 2 centers were reviewed to assess the prevalence of ALF (international normalized ratio [INR] >=2.0), liver dysfunction (INR 1.5-1.99), and hepatocellular injury (aspartate aminotransferase/alanine aminotransferase >=250 IU/L). RESULTS: More than one-half (57%) of the 49 patients with symptomatic OTCD had liver involvement; 29% met the criteria for ALF, 20% had liver dysfunction, and 8% had isolated hepatocellular injury. The prevalence of ALF was highest in the patients with more severe OTCD, including those with markedly elevated ammonia levels (>1000 mumol/L). Some patients with severe liver involvement (INR >=2.0 and aspartate aminotransferase/alanine aminotransferase >1000 IU/L) had only moderate hyperammonemia (ammonia 100-400 mumol/L). ALF was the initial presenting symptom of OTCD in at least 3 of 49 symptomatic patients with OTCD. CONCLUSION: Episodes of hepatocellular injury, liver dysfunction, and ALF were identified in a high proportion of children with symptomatic OTCD. The more severely affected patients had a higher likelihood of ALF. The diagnosis of a urea cycle defect should be considered in patients with unexplained ALF, liver dysfunction, or hepatocellular injury.",
+  "canon:text": "Significant hepatic involvement in patients with ornithine transcarbamylase deficiency. OBJECTIVE: To determine the frequency of significant liver injury and acute liver failure (ALF) in patients with ornithine transcarbamylase deficiency (OTCD), the most common urea cycle defect. STUDY DESIGN: In this historical cohort study, charts of 71 patients with OTCD at 2 centers were reviewed to assess the prevalence of ALF (international normalized ratio [INR] >=2.0), liver dysfunction (INR 1.5-1.99), and hepatocellular injury (aspartate aminotransferase/alanine aminotransferase >=250 IU/L). RESULTS: More than one-half (57%) of the 49 patients with symptomatic OTCD had liver involvement; 29% met the criteria for ALF, 20% had liver dysfunction, and 8% had isolated hepatocellular injury. The prevalence of ALF was highest in the patients with more severe OTCD, including those with markedly elevated ammonia levels (>1000 mumol/L). Some patients with severe liver involvement (INR >=2.0 and aspartate aminotransferase/alanine aminotransferase >1000 IU/L) had only moderate hyperammonemia (ammonia 100-400 mumol/L). ALF was the initial presenting symptom of OTCD in at least 3 of 49 symptomatic patients with OTCD. CONCLUSION: Episodes of hepatocellular injury, liver dysfunction, and ALF were identified in a high proportion of children with symptomatic OTCD. The more severely affected patients had a higher likelihood of ALF. The diagnosis of a urea cycle defect should be considered in patients with unexplained ALF, liver dysfunction, or hepatocellular injury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24485820_causative-agent_0002438#mention-T1",
+      "canon:span": {
+        "start": 504,
+        "end": 525
+      },
+      "canon:surface": "hepatocellular injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24485820_causative-agent_0002438#mention-T2",
+      "canon:span": {
+        "start": 902,
+        "end": 909
+      },
+      "canon:surface": "ammonia",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000641",
+      "canon:sourceNotation": "D000641",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24485820_causative-agent_0002438#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24485820_causative-agent_0002438#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24485820_causative-agent_0002438#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24485820"
+      }
+    }
+  ]
+}

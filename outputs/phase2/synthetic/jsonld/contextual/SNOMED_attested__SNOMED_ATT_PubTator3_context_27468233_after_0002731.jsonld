@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27468233_after_0002731",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27468233_after_0002731",
+  "canon:title": "A new look at an old drug: neuroprotective effects and therapeutic potentials of lithium salts.",
+  "canon:abstract": "Increasing evidence highlights bipolar disorder as being associated with impaired neurogenesis, cellular plasticity, and resiliency, as well as with cell atrophy or loss in specific brain regions. This has led most recent research to focus on the possible neuroprotective effects of medications, and particularly interesting findings have emerged for lithium. A growing body of evidence from preclinical in vitro and in vivo studies has in fact documented its neuroprotective effects from different insults acting on cellular signaling pathways, both preventing apoptosis and increasing neurotrophins and cell-survival molecules. Furthermore, positive effects of lithium on neurogenesis, brain remodeling, angiogenesis, mesenchymal stem cells functioning, and inflammation have been revealed, with a key role played through the inhibition of the glycogen synthase kinase-3, a serine/threonine kinase implicated in the pathogenesis of many neuropsychiatric disorders. These recent evidences suggest the potential utility of lithium in the treatment of neurodegenerative diseases, neurodevelopmental disorders, and hypoxic-ischemic/traumatic brain injury, with positive results at even lower lithium doses than those traditionally considered to be antimanic. The aim of this review is to briefly summarize the potential benefits of lithium salts on neuroprotection and neuroregeneration, emphasizing preclinical and clinical evidence suggesting new therapeutic potentials of this drug beyond its mood stabilizing properties. ",
+  "canon:text": "A new look at an old drug: neuroprotective effects and therapeutic potentials of lithium salts. Increasing evidence highlights bipolar disorder as being associated with impaired neurogenesis, cellular plasticity, and resiliency, as well as with cell atrophy or loss in specific brain regions. This has led most recent research to focus on the possible neuroprotective effects of medications, and particularly interesting findings have emerged for lithium. A growing body of evidence from preclinical in vitro and in vivo studies has in fact documented its neuroprotective effects from different insults acting on cellular signaling pathways, both preventing apoptosis and increasing neurotrophins and cell-survival molecules. Furthermore, positive effects of lithium on neurogenesis, brain remodeling, angiogenesis, mesenchymal stem cells functioning, and inflammation have been revealed, with a key role played through the inhibition of the glycogen synthase kinase-3, a serine/threonine kinase implicated in the pathogenesis of many neuropsychiatric disorders. These recent evidences suggest the potential utility of lithium in the treatment of neurodegenerative diseases, neurodevelopmental disorders, and hypoxic-ischemic/traumatic brain injury, with positive results at even lower lithium doses than those traditionally considered to be antimanic. The aim of this review is to briefly summarize the potential benefits of lithium salts on neuroprotection and neuroregeneration, emphasizing preclinical and clinical evidence suggesting new therapeutic potentials of this drug beyond its mood stabilizing properties. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27468233_after_0002731#mention-T1",
+      "canon:span": {
+        "start": 1209,
+        "end": 1226
+      },
+      "canon:surface": "hypoxic-ischemic/",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27468233_after_0002731#mention-T2",
+      "canon:span": {
+        "start": 1147,
+        "end": 1173
+      },
+      "canon:surface": "neurodegenerative diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019636",
+      "canon:sourceNotation": "D019636",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27468233_after_0002731#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27468233_after_0002731#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27468233_after_0002731#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27468233"
+      }
+    }
+  ]
+}

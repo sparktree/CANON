@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003446",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003446",
+  "canon:title": "Risperidone Exacerbates Glucose Intolerance, Nonalcoholic Fatty Liver Disease, and Renal Impairment in Obese Mice.",
+  "canon:abstract": "Risperidone, a second-generation antipsychotic drug used for schizophrenia treatment with less-severe side effects, has recently been applied in major depressive disorder treatment. The mechanism underlying risperidone-associated metabolic disturbances and liver and renal adverse effects warrants further exploration. This research explores how risperidone influences weight, glucose homeostasis, fatty liver scores, liver damage, and renal impairment in high-fat diet (HFD)-administered C57BL6/J mice. Compared with HFD control mice, risperidone-treated obese mice exhibited increases in body, liver, kidney, and retroperitoneal and epididymal fat pad weights, daily food efficiency, serum triglyceride, blood urea nitrogen, creatinine, hepatic triglyceride, and aspartate aminotransferase, and alanine aminotransferase levels, and hepatic fatty acid regulation marker expression. They also exhibited increased insulin resistance and glucose intolerance but decreased serum insulin levels, Akt phosphorylation, and glucose transporter 4 expression. Moreover, their fatty liver score and liver damage demonstrated considerable increases, corresponding to increases in sterol regulatory element-binding protein 1 mRNA, fatty acid-binding protein 4 mRNA, and patatin-like phospholipid domain containing protein 3 expression. Finally, these mice demonstrated renal impairment, associated with decreases in glutathione peroxidase, superoxide dismutase, and catalase levels. In conclusion, long-term administration of risperidone may exacerbate diabetes syndrome, nonalcoholic fatty liver disease, and kidney injury.",
+  "canon:text": "Risperidone Exacerbates Glucose Intolerance, Nonalcoholic Fatty Liver Disease, and Renal Impairment in Obese Mice. Risperidone, a second-generation antipsychotic drug used for schizophrenia treatment with less-severe side effects, has recently been applied in major depressive disorder treatment. The mechanism underlying risperidone-associated metabolic disturbances and liver and renal adverse effects warrants further exploration. This research explores how risperidone influences weight, glucose homeostasis, fatty liver scores, liver damage, and renal impairment in high-fat diet (HFD)-administered C57BL6/J mice. Compared with HFD control mice, risperidone-treated obese mice exhibited increases in body, liver, kidney, and retroperitoneal and epididymal fat pad weights, daily food efficiency, serum triglyceride, blood urea nitrogen, creatinine, hepatic triglyceride, and aspartate aminotransferase, and alanine aminotransferase levels, and hepatic fatty acid regulation marker expression. They also exhibited increased insulin resistance and glucose intolerance but decreased serum insulin levels, Akt phosphorylation, and glucose transporter 4 expression. Moreover, their fatty liver score and liver damage demonstrated considerable increases, corresponding to increases in sterol regulatory element-binding protein 1 mRNA, fatty acid-binding protein 4 mRNA, and patatin-like phospholipid domain containing protein 3 expression. Finally, these mice demonstrated renal impairment, associated with decreases in glutathione peroxidase, superoxide dismutase, and catalase levels. In conclusion, long-term administration of risperidone may exacerbate diabetes syndrome, nonalcoholic fatty liver disease, and kidney injury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003446#mention-T1",
+      "canon:span": {
+        "start": 533,
+        "end": 545
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003446#mention-T2",
+      "canon:span": {
+        "start": 957,
+        "end": 967
+      },
+      "canon:surface": "fatty acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005227",
+      "canon:sourceNotation": "D005227",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003446#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003446#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33401717_causative-agent_0003446#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33401717"
+      }
+    }
+  ]
+}

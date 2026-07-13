@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36556289_causative-agent_0001838",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36556289_causative-agent_0001838",
+  "canon:title": "Recognition and Management of Serotonin Toxidrome in the Emergency Department-Case Based Review.",
+  "canon:abstract": "Serotonin syndrome (SS) is a clinical toxidrome with high variability in clinical practice. It develops due to increased serotonin levels in the central nervous system. With an underestimated frequency, SS can develop following an overdose, a therapeutic dose increase, or drug to drug interaction of at least one serotonergic agent. It can present with autonomic signs, neuromuscular changes and an altered mental status. However, history and clinical examination are key features to formulate the diagnosis. Treatment options consist of supportive measures, discontinuation of the offending agent and certain therapeutic agents previously reported to improve outcomes. Physicians have limited experience with SS, partially due to the lack of its identification in clinical practice. Therefore, we have integrated, in a narrative review, the case of a young male with SS following an atypical antipsychotic overdose superimposed on chronic treatment with agents previously known to produce SS.",
+  "canon:text": "Recognition and Management of Serotonin Toxidrome in the Emergency Department-Case Based Review. Serotonin syndrome (SS) is a clinical toxidrome with high variability in clinical practice. It develops due to increased serotonin levels in the central nervous system. With an underestimated frequency, SS can develop following an overdose, a therapeutic dose increase, or drug to drug interaction of at least one serotonergic agent. It can present with autonomic signs, neuromuscular changes and an altered mental status. However, history and clinical examination are key features to formulate the diagnosis. Treatment options consist of supportive measures, discontinuation of the offending agent and certain therapeutic agents previously reported to improve outcomes. Physicians have limited experience with SS, partially due to the lack of its identification in clinical practice. Therefore, we have integrated, in a narrative review, the case of a young male with SS following an atypical antipsychotic overdose superimposed on chronic treatment with agents previously known to produce SS.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36556289_causative-agent_0001838#mention-T1",
+      "canon:span": {
+        "start": 97,
+        "end": 115
+      },
+      "canon:surface": "Serotonin syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36556289_causative-agent_0001838#mention-T2",
+      "canon:span": {
+        "start": 218,
+        "end": 227
+      },
+      "canon:surface": "serotonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012701",
+      "canon:sourceNotation": "D012701",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36556289_causative-agent_0001838#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36556289_causative-agent_0001838#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36556289_causative-agent_0001838#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36556289"
+      }
+    }
+  ]
+}

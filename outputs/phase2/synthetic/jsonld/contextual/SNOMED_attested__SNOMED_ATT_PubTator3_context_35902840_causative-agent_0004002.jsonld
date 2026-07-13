@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35902840_causative-agent_0004002",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35902840_causative-agent_0004002",
+  "canon:title": "Diagnostic difficulties in the diagnosis of high acute-phase proteins levels in a teenage drug addicted female patient.",
+  "canon:abstract": "BACKGROUND: Youth drug addiction is a significant social and health problem. Symptoms of the disease include a number of neurological, gastrointestinal and cardiovascular disorders. Possible hormonal disorders and dysregulation of the immune system could also occur. CASE PRESENTATION: We describe a case of a teenage patient with multiple diseases such as esophagitis, allergic disease, and numerous behavioral disorders leading to: self-injury of the body, suicide attempts by drugs overdosing, and experimentation with various psychoactive substances (morphine, amphetamine, methamphetamine, codeine). She was also diagnosed with bipolar disorder. A few hours before the admission to the ward, the patient had an intravenous injection of drugs. Toxicological tests confirmed the presence of amphetamine, ecstasy and opioids in the blood and urine. Laboratory tests revealed extremely increased inflammatory parameters, leucopenia, increased levels of IgG, IgA and IgE (total) immunoglobulins, low concentration of vitamin D. Bacteriological examinations were negative. General condition of the patient got better very quickly, antibiotic therapy was abandoned on the 4th day. It was concluded that the cause of the elevated concentration of acute-phase proteins was most likely caused by intoxication with psychoactive drugs. CONCLUSIONS: The discussed case shows the difficulties of differential diagnosis in a teenage patient struggling with many diseases, who has been abusing drugs for several years. Increased inflammatory parameters in the form of an raised PCT, CRP, NLR, PLR values may be caused by many factors. In adolescents who frequently experiment with psychoactive substances, such cause of these disturbances should also be taken into account.",
+  "canon:text": "Diagnostic difficulties in the diagnosis of high acute-phase proteins levels in a teenage drug addicted female patient. BACKGROUND: Youth drug addiction is a significant social and health problem. Symptoms of the disease include a number of neurological, gastrointestinal and cardiovascular disorders. Possible hormonal disorders and dysregulation of the immune system could also occur. CASE PRESENTATION: We describe a case of a teenage patient with multiple diseases such as esophagitis, allergic disease, and numerous behavioral disorders leading to: self-injury of the body, suicide attempts by drugs overdosing, and experimentation with various psychoactive substances (morphine, amphetamine, methamphetamine, codeine). She was also diagnosed with bipolar disorder. A few hours before the admission to the ward, the patient had an intravenous injection of drugs. Toxicological tests confirmed the presence of amphetamine, ecstasy and opioids in the blood and urine. Laboratory tests revealed extremely increased inflammatory parameters, leucopenia, increased levels of IgG, IgA and IgE (total) immunoglobulins, low concentration of vitamin D. Bacteriological examinations were negative. General condition of the patient got better very quickly, antibiotic therapy was abandoned on the 4th day. It was concluded that the cause of the elevated concentration of acute-phase proteins was most likely caused by intoxication with psychoactive drugs. CONCLUSIONS: The discussed case shows the difficulties of differential diagnosis in a teenage patient struggling with many diseases, who has been abusing drugs for several years. Increased inflammatory parameters in the form of an raised PCT, CRP, NLR, PLR values may be caused by many factors. In adolescents who frequently experiment with psychoactive substances, such cause of these disturbances should also be taken into account.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35902840_causative-agent_0004002#mention-T1",
+      "canon:span": {
+        "start": 490,
+        "end": 506
+      },
+      "canon:surface": "allergic disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35902840_causative-agent_0004002#mention-T2",
+      "canon:span": {
+        "start": 1137,
+        "end": 1147
+      },
+      "canon:surface": "vitamin D.",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014807",
+      "canon:sourceNotation": "D014807",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35902840_causative-agent_0004002#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35902840_causative-agent_0004002#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35902840_causative-agent_0004002#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35902840"
+      }
+    }
+  ]
+}

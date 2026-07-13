@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34120768_causative-agent_0003577",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34120768_causative-agent_0003577",
+  "canon:title": "Autophagy in liver diseases: A review.",
+  "canon:abstract": "The liver is a highly dynamic metabolic organ that plays critical roles in plasma protein synthesis, gluconeogenesis and glycogen storage, cholesterol metabolism and bile acid synthesis as well as drug/xenobiotic metabolism and detoxification. Research from the past decades indicate that autophagy, the cellular catabolic process mediated by lysosomes, plays an important role in maintaining cellular and metabolic homeostasis in the liver. Hepatic autophagy fluctuates with hormonal cues and the availability of nutrients that respond to fed and fasting states as well as circadian activities. Dysfunction of autophagy in liver parenchymal and non-parenchymal cells can lead to various liver diseases including non-alcoholic fatty liver diseases, alcohol associated liver disease, drug-induced liver injury, cholestasis, viral hepatitis and hepatocellular carcinoma. Therefore, targeting autophagy may be a potential strategy for treating these various liver diseases. In this review, we will discuss the current progress on the understanding of autophagy in liver physiology. We will also discuss several forms of selective autophagy in the liver and the molecular signaling pathways in regulating autophagy of different cell types and their implications in various liver diseases.",
+  "canon:text": "Autophagy in liver diseases: A review. The liver is a highly dynamic metabolic organ that plays critical roles in plasma protein synthesis, gluconeogenesis and glycogen storage, cholesterol metabolism and bile acid synthesis as well as drug/xenobiotic metabolism and detoxification. Research from the past decades indicate that autophagy, the cellular catabolic process mediated by lysosomes, plays an important role in maintaining cellular and metabolic homeostasis in the liver. Hepatic autophagy fluctuates with hormonal cues and the availability of nutrients that respond to fed and fasting states as well as circadian activities. Dysfunction of autophagy in liver parenchymal and non-parenchymal cells can lead to various liver diseases including non-alcoholic fatty liver diseases, alcohol associated liver disease, drug-induced liver injury, cholestasis, viral hepatitis and hepatocellular carcinoma. Therefore, targeting autophagy may be a potential strategy for treating these various liver diseases. In this review, we will discuss the current progress on the understanding of autophagy in liver physiology. We will also discuss several forms of selective autophagy in the liver and the molecular signaling pathways in regulating autophagy of different cell types and their implications in various liver diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34120768_causative-agent_0003577#mention-T1",
+      "canon:span": {
+        "start": 822,
+        "end": 847
+      },
+      "canon:surface": "drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34120768_causative-agent_0003577#mention-T2",
+      "canon:span": {
+        "start": 160,
+        "end": 168
+      },
+      "canon:surface": "glycogen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006003",
+      "canon:sourceNotation": "D006003",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34120768_causative-agent_0003577#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34120768_causative-agent_0003577#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34120768_causative-agent_0003577#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34120768"
+      }
+    }
+  ]
+}

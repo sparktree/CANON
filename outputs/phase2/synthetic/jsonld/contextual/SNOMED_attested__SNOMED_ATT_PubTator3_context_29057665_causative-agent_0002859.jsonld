@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29057665_causative-agent_0002859",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29057665_causative-agent_0002859",
+  "canon:title": "Medications for substance use disorders (SUD): emerging approaches.",
+  "canon:abstract": "INTRODUCTION: Substance use disorders are a group of chronic relapsing disorders of the brain, which have massive public health and societal impact. In some disorders (e.g., heroin/prescription opioid addictions) approved medications have a major long-term benefit. For other substances (e.g., cocaine, amphetamines and cannabis) there are no approved medications, and for alcohol there are approved treatments, which are not in wide usage. Approved treatments for tobacco use disorders are available, and novel medications are also under study. Areas covered: Medication-based approaches which are in advanced preclinical stages, or which have reached proof-of concept clinical laboratory studies, as well as clinical trials. Expert opinion: Current challenges involve optimizing translation between preclinical and clinical development, and between clinical laboratory studies to therapeutic clinical trials. Comorbidities including depression or anxiety are challenges for study design and analysis. Improved pharmacogenomics, biomarker and phenotyping approaches are areas of interest. Pharmacological mechanisms currently under investigation include modulation of glutamatergic, GABA, vasopressin and kappa-receptor function, as well as inhibition of monoamine re-uptake. Other factors that affect potential market size for emerging medications include stigma, availability of treatment settings, adoption by clinicians, and the prevalence of persons with SUD who are not actively treatment-seeking.",
+  "canon:text": "Medications for substance use disorders (SUD): emerging approaches. INTRODUCTION: Substance use disorders are a group of chronic relapsing disorders of the brain, which have massive public health and societal impact. In some disorders (e.g., heroin/prescription opioid addictions) approved medications have a major long-term benefit. For other substances (e.g., cocaine, amphetamines and cannabis) there are no approved medications, and for alcohol there are approved treatments, which are not in wide usage. Approved treatments for tobacco use disorders are available, and novel medications are also under study. Areas covered: Medication-based approaches which are in advanced preclinical stages, or which have reached proof-of concept clinical laboratory studies, as well as clinical trials. Expert opinion: Current challenges involve optimizing translation between preclinical and clinical development, and between clinical laboratory studies to therapeutic clinical trials. Comorbidities including depression or anxiety are challenges for study design and analysis. Improved pharmacogenomics, biomarker and phenotyping approaches are areas of interest. Pharmacological mechanisms currently under investigation include modulation of glutamatergic, GABA, vasopressin and kappa-receptor function, as well as inhibition of monoamine re-uptake. Other factors that affect potential market size for emerging medications include stigma, availability of treatment settings, adoption by clinicians, and the prevalence of persons with SUD who are not actively treatment-seeking.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29057665_causative-agent_0002859#mention-T1",
+      "canon:span": {
+        "start": 242,
+        "end": 248
+      },
+      "canon:surface": "heroin",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006556",
+      "canon:sourceNotation": "D006556",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29057665_causative-agent_0002859#mention-T2",
+      "canon:span": {
+        "start": 362,
+        "end": 369
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29057665_causative-agent_0002859#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29057665_causative-agent_0002859#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29057665_causative-agent_0002859#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29057665"
+      }
+    }
+  ]
+}

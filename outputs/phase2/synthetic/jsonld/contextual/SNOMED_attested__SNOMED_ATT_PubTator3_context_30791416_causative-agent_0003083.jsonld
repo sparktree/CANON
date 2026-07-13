@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30791416_causative-agent_0003083",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30791416_causative-agent_0003083",
+  "canon:title": "Autophagy Activator Drugs: A New Opportunity in Neuroprotection from Misfolded Protein Toxicity.",
+  "canon:abstract": "The aim of this review is to critically analyze promises and limitations of pharmacological inducers of autophagy against protein misfolding-associated neurodegeneration. Effective therapies against neurodegenerative disorders can be developed by regulating the \"self-defense\" equipment of neurons, such as autophagy. Through the degradation and recycling of the intracellular content, autophagy promotes neuron survival in conditions of trophic factor deprivation, oxidative stress, mitochondrial and lysosomal damage, or accumulation of misfolded proteins. Autophagy involves the activation of self-digestive pathways, which is different for dynamics (macro, micro and chaperone-mediated autophagy), or degraded material (mitophagy, lysophagy, aggrephagy). All neurodegenerative disorders share common pathogenic mechanisms, including the impairment of autophagic flux, which causes the inability to remove the neurotoxic oligomers of misfolded proteins. Pharmacological activation of autophagy is typically achieved by blocking the kinase activity of mammalian target of rapamycin (mTOR) enzymatic complex 1 (mTORC1), removing its autophagy suppressor activity observed under physiological conditions; acting in this way, rapamycin provided the first proof of principle that pharmacological autophagy enhancement can induce neuroprotection through the facilitation of oligomers' clearance. The demand for effective disease-modifying strategies against neurodegenerative disorders is currently stimulating the development of a wide number of novel molecules, as well as the re-evaluation of old drugs for their pro-autophagic potential.",
+  "canon:text": "Autophagy Activator Drugs: A New Opportunity in Neuroprotection from Misfolded Protein Toxicity. The aim of this review is to critically analyze promises and limitations of pharmacological inducers of autophagy against protein misfolding-associated neurodegeneration. Effective therapies against neurodegenerative disorders can be developed by regulating the \"self-defense\" equipment of neurons, such as autophagy. Through the degradation and recycling of the intracellular content, autophagy promotes neuron survival in conditions of trophic factor deprivation, oxidative stress, mitochondrial and lysosomal damage, or accumulation of misfolded proteins. Autophagy involves the activation of self-digestive pathways, which is different for dynamics (macro, micro and chaperone-mediated autophagy), or degraded material (mitophagy, lysophagy, aggrephagy). All neurodegenerative disorders share common pathogenic mechanisms, including the impairment of autophagic flux, which causes the inability to remove the neurotoxic oligomers of misfolded proteins. Pharmacological activation of autophagy is typically achieved by blocking the kinase activity of mammalian target of rapamycin (mTOR) enzymatic complex 1 (mTORC1), removing its autophagy suppressor activity observed under physiological conditions; acting in this way, rapamycin provided the first proof of principle that pharmacological autophagy enhancement can induce neuroprotection through the facilitation of oligomers' clearance. The demand for effective disease-modifying strategies against neurodegenerative disorders is currently stimulating the development of a wide number of novel molecules, as well as the re-evaluation of old drugs for their pro-autophagic potential.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30791416_causative-agent_0003083#mention-T1",
+      "canon:span": {
+        "start": 1010,
+        "end": 1020
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30791416_causative-agent_0003083#mention-T2",
+      "canon:span": {
+        "start": 1322,
+        "end": 1331
+      },
+      "canon:surface": "rapamycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D020123",
+      "canon:sourceNotation": "D020123",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30791416_causative-agent_0003083#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30791416_causative-agent_0003083#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30791416_causative-agent_0003083#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30791416"
+      }
+    }
+  ]
+}

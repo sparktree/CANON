@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35418856_causative-agent_0001637",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35418856_causative-agent_0001637",
+  "canon:title": "Mechanisms of Chemotherapy-Induced Neurotoxicity.",
+  "canon:abstract": "Since the first clinical trials conducted after World War II, chemotherapeutic drugs have been extensively used in the clinic as the main cancer treatment either alone or as an adjuvant therapy before and after surgery. Although the use of chemotherapeutic drugs improved the survival of cancer patients, these drugs are notorious for causing many severe side effects that significantly reduce the efficacy of anti-cancer treatment and patients' quality of life. Many widely used chemotherapy drugs including platinum-based agents, taxanes, vinca alkaloids, proteasome inhibitors, and thalidomide analogs may cause direct and indirect neurotoxicity. In this review we discuss the main effects of chemotherapy on the peripheral and central nervous systems, including neuropathic pain, chemobrain, enteric neuropathy, as well as nausea and emesis. Understanding mechanisms involved in chemotherapy-induced neurotoxicity is crucial for the development of drugs that can protect the nervous system, reduce symptoms experienced by millions of patients, and improve the outcome of the treatment and patients' quality of life.",
+  "canon:text": "Mechanisms of Chemotherapy-Induced Neurotoxicity. Since the first clinical trials conducted after World War II, chemotherapeutic drugs have been extensively used in the clinic as the main cancer treatment either alone or as an adjuvant therapy before and after surgery. Although the use of chemotherapeutic drugs improved the survival of cancer patients, these drugs are notorious for causing many severe side effects that significantly reduce the efficacy of anti-cancer treatment and patients' quality of life. Many widely used chemotherapy drugs including platinum-based agents, taxanes, vinca alkaloids, proteasome inhibitors, and thalidomide analogs may cause direct and indirect neurotoxicity. In this review we discuss the main effects of chemotherapy on the peripheral and central nervous systems, including neuropathic pain, chemobrain, enteric neuropathy, as well as nausea and emesis. Understanding mechanisms involved in chemotherapy-induced neurotoxicity is crucial for the development of drugs that can protect the nervous system, reduce symptoms experienced by millions of patients, and improve the outcome of the treatment and patients' quality of life.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35418856_causative-agent_0001637#mention-T1",
+      "canon:span": {
+        "start": 35,
+        "end": 48
+      },
+      "canon:surface": "Neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35418856_causative-agent_0001637#mention-T2",
+      "canon:span": {
+        "start": 559,
+        "end": 567
+      },
+      "canon:surface": "platinum",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D010984",
+      "canon:sourceNotation": "D010984",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35418856_causative-agent_0001637#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35418856_causative-agent_0001637#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35418856_causative-agent_0001637#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35418856"
+      }
+    }
+  ]
+}

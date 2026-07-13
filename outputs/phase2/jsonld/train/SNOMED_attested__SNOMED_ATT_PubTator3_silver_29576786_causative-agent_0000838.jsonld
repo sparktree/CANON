@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29576786_causative-agent_0000838",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29576786_causative-agent_0000838",
+  "canon:title": "Malignant Hyperthermia: Report of Two Cases with a Neglected Complication in Cardiac Surgery.",
+  "canon:abstract": "Malignant hyperthermia (MH) can develop after contact with volatile anesthetics (halothane, enflurane, isoflurane, sevoflurane, and desflurane) as well as succinylcholine and cause hypermetabolism during anesthesia, which is associated with high mortality when untreated. Early diagnosis and treatment could be life-saving. During cardiac surgery, hypothermia and cardiopulmonary bypass make the diagnosis of MH extremely challenging compared with other settings such as general surgery. We herein report 2 cases of MH, graded as \"very likely\" or \"almost certain\" based on the MH clinical grading scale. A 14-month-old infant and a 53-year-old male underwent surgery for severe pulmonary valve stenosis and mitral valve replacement, respectively. Both of them were extubated on the operation day, but they deteriorated with the development of high-grade fever, hypotension, renal failure, and acidosis. The first case had muscle spasms. Unfortunately, the delayed symptoms of MH in the early postoperative course were not diagnosed in these 2 cases, which caused permanent neurologic damage in the first case and death in the second one. However, the infant was discharged from the hospital after 2 months.",
+  "canon:text": "Malignant Hyperthermia: Report of Two Cases with a Neglected Complication in Cardiac Surgery. Malignant hyperthermia (MH) can develop after contact with volatile anesthetics (halothane, enflurane, isoflurane, sevoflurane, and desflurane) as well as succinylcholine and cause hypermetabolism during anesthesia, which is associated with high mortality when untreated. Early diagnosis and treatment could be life-saving. During cardiac surgery, hypothermia and cardiopulmonary bypass make the diagnosis of MH extremely challenging compared with other settings such as general surgery. We herein report 2 cases of MH, graded as \"very likely\" or \"almost certain\" based on the MH clinical grading scale. A 14-month-old infant and a 53-year-old male underwent surgery for severe pulmonary valve stenosis and mitral valve replacement, respectively. Both of them were extubated on the operation day, but they deteriorated with the development of high-grade fever, hypotension, renal failure, and acidosis. The first case had muscle spasms. Unfortunately, the delayed symptoms of MH in the early postoperative course were not diagnosed in these 2 cases, which caused permanent neurologic damage in the first case and death in the second one. However, the infant was discharged from the hospital after 2 months.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29576786_causative-agent_0000838#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 22
+      },
+      "canon:surface": "Malignant Hyperthermia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008305",
+      "canon:sourceNotation": "D008305",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29576786_causative-agent_0000838#mention-T2",
+      "canon:span": {
+        "start": 197,
+        "end": 207
+      },
+      "canon:surface": "isoflurane",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007530",
+      "canon:sourceNotation": "D007530",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29576786_causative-agent_0000838#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29576786_causative-agent_0000838#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29576786_causative-agent_0000838#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29576786"
+      }
+    }
+  ]
+}

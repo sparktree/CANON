@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31178720_causative-agent_0003129",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31178720_causative-agent_0003129",
+  "canon:title": "Role of Natural Phenolics in Hepatoprotection: A Mechanistic Review and Analysis of Regulatory Network of Associated Genes.",
+  "canon:abstract": "The liver is not only involved in metabolism and detoxification, but also participate in innate immune function and thus exposed to frequent target Thus, they are the frequent target of physical injury. Interestingly, liver has the unique ability to regenerate and completely recoup from most acute, non-iterative situation. However, multiple conditions, including viral hepatitis, non-alcoholic fatty liver disease, long term alcohol abuse and chronic use of medications can cause persistent injury in which regenerative capacity eventually becomes dysfunctional resulting in hepatic scaring and cirrhosis. Despite the recent therapeutic advances and significant development of modern medicine, hepatic diseases remain a health problem worldwide. Thus, the search for the new therapeutic agents to treat liver disease is still in demand. Many synthetic drugs have been demonstrated to be strong radical scavengers, but they are also carcinogenic and cause liver damage. Present day various hepatic problems are encountered with number of synthetic and plant based drugs. Nexavar (sorafenib) is a chemotherapeutic medication used to treat advanced renal cell carcinoma associated with several side effects. There are a few effective varieties of herbal preparation like Liv-52, silymarin and Stronger neomin phages (SNMC) against hepatic complications. Plants are the huge repository of bioactive secondary metabolites viz; phenol, flavonoid, alkaloid etc. In this review we will try to present exclusive study on phenolics with its mode of action mitigating liver associated complications. And also its future prospects as new drug lead.",
+  "canon:text": "Role of Natural Phenolics in Hepatoprotection: A Mechanistic Review and Analysis of Regulatory Network of Associated Genes. The liver is not only involved in metabolism and detoxification, but also participate in innate immune function and thus exposed to frequent target Thus, they are the frequent target of physical injury. Interestingly, liver has the unique ability to regenerate and completely recoup from most acute, non-iterative situation. However, multiple conditions, including viral hepatitis, non-alcoholic fatty liver disease, long term alcohol abuse and chronic use of medications can cause persistent injury in which regenerative capacity eventually becomes dysfunctional resulting in hepatic scaring and cirrhosis. Despite the recent therapeutic advances and significant development of modern medicine, hepatic diseases remain a health problem worldwide. Thus, the search for the new therapeutic agents to treat liver disease is still in demand. Many synthetic drugs have been demonstrated to be strong radical scavengers, but they are also carcinogenic and cause liver damage. Present day various hepatic problems are encountered with number of synthetic and plant based drugs. Nexavar (sorafenib) is a chemotherapeutic medication used to treat advanced renal cell carcinoma associated with several side effects. There are a few effective varieties of herbal preparation like Liv-52, silymarin and Stronger neomin phages (SNMC) against hepatic complications. Plants are the huge repository of bioactive secondary metabolites viz; phenol, flavonoid, alkaloid etc. In this review we will try to present exclusive study on phenolics with its mode of action mitigating liver associated complications. And also its future prospects as new drug lead.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31178720_causative-agent_0003129#mention-T1",
+      "canon:span": {
+        "start": 820,
+        "end": 836
+      },
+      "canon:surface": "hepatic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31178720_causative-agent_0003129#mention-T2",
+      "canon:span": {
+        "start": 1548,
+        "end": 1554
+      },
+      "canon:surface": "phenol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D019800",
+      "canon:sourceNotation": "D019800",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31178720_causative-agent_0003129#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31178720_causative-agent_0003129#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31178720_causative-agent_0003129#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31178720"
+      }
+    }
+  ]
+}

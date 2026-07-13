@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32630731_causative-agent_0003281",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32630731_causative-agent_0003281",
+  "canon:title": "Hydrogen Sulfide Alleviates Anxiety, Motor, and Cognitive Dysfunctions in Rats with Maternal Hyperhomocysteinemia via Mitigation of Oxidative Stress.",
+  "canon:abstract": "Hydrogen sulfide (H2S) is endogenously produced from sulfur containing amino acids, including homocysteine and exerts neuroprotective effects. An increase of homocysteine during pregnancy impairs fetal growth and development of the offspring due to severe oxidative stress. We analyzed the effects of the H2S donor-sodium hydrosulfide (NaHS) administered to female rats with hyperhomocysteinemia (hHcy) on behavioral impairments and levels of oxidative stress of their offspring. Rats born from females fed with control or high methionine diet, with or without H2S donor injections were investigated. Rats with maternal hHcy exhibit increased levels of total locomotor activity and anxiety, decreased muscle endurance and motor coordination, abnormalities of fine motor control, as well as reduced spatial memory and learning. Oxidative stress in brain tissues measured by activity of glutathione peroxidases and the level of malondialdehyde was higher in rats with maternal hHcy. Concentrations of H2S and the activity and expression of the H2S generating enzyme-cystathionine-beta synthase-were lower compared to the control group. Administration of the H2S donor to females with hHcy during pregnancy prevented behavioral alterations and oxidative stress of their offspring. The acquisition of behavioral together with biochemical studies will add to our knowledge about homocysteine neurotoxicity and proposes H2S as a potential agent for therapy of hHcy associated disorders.",
+  "canon:text": "Hydrogen Sulfide Alleviates Anxiety, Motor, and Cognitive Dysfunctions in Rats with Maternal Hyperhomocysteinemia via Mitigation of Oxidative Stress. Hydrogen sulfide (H2S) is endogenously produced from sulfur containing amino acids, including homocysteine and exerts neuroprotective effects. An increase of homocysteine during pregnancy impairs fetal growth and development of the offspring due to severe oxidative stress. We analyzed the effects of the H2S donor-sodium hydrosulfide (NaHS) administered to female rats with hyperhomocysteinemia (hHcy) on behavioral impairments and levels of oxidative stress of their offspring. Rats born from females fed with control or high methionine diet, with or without H2S donor injections were investigated. Rats with maternal hHcy exhibit increased levels of total locomotor activity and anxiety, decreased muscle endurance and motor coordination, abnormalities of fine motor control, as well as reduced spatial memory and learning. Oxidative stress in brain tissues measured by activity of glutathione peroxidases and the level of malondialdehyde was higher in rats with maternal hHcy. Concentrations of H2S and the activity and expression of the H2S generating enzyme-cystathionine-beta synthase-were lower compared to the control group. Administration of the H2S donor to females with hHcy during pregnancy prevented behavioral alterations and oxidative stress of their offspring. The acquisition of behavioral together with biochemical studies will add to our knowledge about homocysteine neurotoxicity and proposes H2S as a potential agent for therapy of hHcy associated disorders.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32630731_causative-agent_0003281#mention-T1",
+      "canon:span": {
+        "start": 1537,
+        "end": 1550
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32630731_causative-agent_0003281#mention-T2",
+      "canon:span": {
+        "start": 678,
+        "end": 688
+      },
+      "canon:surface": "methionine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008715",
+      "canon:sourceNotation": "D008715",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32630731_causative-agent_0003281#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32630731_causative-agent_0003281#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32630731_causative-agent_0003281#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32630731"
+      }
+    }
+  ]
+}

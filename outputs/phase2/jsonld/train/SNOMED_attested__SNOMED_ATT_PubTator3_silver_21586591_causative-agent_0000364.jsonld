@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364",
+  "canon:title": "Hepatic safety of antibiotics used in primary care.",
+  "canon:abstract": "Antibiotics used by general practitioners frequently appear in adverse-event reports of drug-induced hepatotoxicity. Most cases are idiosyncratic (the adverse reaction cannot be predicted from the drug's pharmacological profile or from pre-clinical toxicology tests) and occur via an immunological reaction or in response to the presence of hepatotoxic metabolites. With the exception of trovafloxacin and telithromycin (now severely restricted), hepatotoxicity crude incidence remains globally low but variable. Thus, amoxicillin/clavulanate and co-trimoxazole, as well as flucloxacillin, cause hepatotoxic reactions at rates that make them visible in general practice (cases are often isolated, may have a delayed onset, sometimes appear only after cessation of therapy and can produce an array of hepatic lesions that mirror hepatobiliary disease, making causality often difficult to establish). Conversely, hepatotoxic reactions related to macrolides, tetracyclines and fluoroquinolones (in that order, from high to low) are much rarer, and are identifiable only through large-scale studies or worldwide pharmacovigilance reporting. For antibiotics specifically used for tuberculosis, adverse effects range from asymptomatic increases in liver enzymes to acute hepatitis and fulminant hepatic failure. Yet, it is difficult to single out individual drugs, as treatment always entails associations. Patients at risk are mainly those with previous experience of hepatotoxic reaction to antibiotics, the aged or those with impaired hepatic function in the absence of close monitoring, making it important to carefully balance potential risks with expected benefits in primary care. Pharmacogenetic testing using the new genome-wide association studies approach holds promise for better understanding the mechanism(s) underlying hepatotoxicity.",
+  "canon:text": "Hepatic safety of antibiotics used in primary care. Antibiotics used by general practitioners frequently appear in adverse-event reports of drug-induced hepatotoxicity. Most cases are idiosyncratic (the adverse reaction cannot be predicted from the drug's pharmacological profile or from pre-clinical toxicology tests) and occur via an immunological reaction or in response to the presence of hepatotoxic metabolites. With the exception of trovafloxacin and telithromycin (now severely restricted), hepatotoxicity crude incidence remains globally low but variable. Thus, amoxicillin/clavulanate and co-trimoxazole, as well as flucloxacillin, cause hepatotoxic reactions at rates that make them visible in general practice (cases are often isolated, may have a delayed onset, sometimes appear only after cessation of therapy and can produce an array of hepatic lesions that mirror hepatobiliary disease, making causality often difficult to establish). Conversely, hepatotoxic reactions related to macrolides, tetracyclines and fluoroquinolones (in that order, from high to low) are much rarer, and are identifiable only through large-scale studies or worldwide pharmacovigilance reporting. For antibiotics specifically used for tuberculosis, adverse effects range from asymptomatic increases in liver enzymes to acute hepatitis and fulminant hepatic failure. Yet, it is difficult to single out individual drugs, as treatment always entails associations. Patients at risk are mainly those with previous experience of hepatotoxic reaction to antibiotics, the aged or those with impaired hepatic function in the absence of close monitoring, making it important to carefully balance potential risks with expected benefits in primary care. Pharmacogenetic testing using the new genome-wide association studies approach holds promise for better understanding the mechanism(s) underlying hepatotoxicity.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T1",
+      "canon:span": {
+        "start": 852,
+        "end": 867
+      },
+      "canon:surface": "hepatic lesions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T2",
+      "canon:span": {
+        "start": 996,
+        "end": 1006
+      },
+      "canon:surface": "macrolides",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018942",
+      "canon:sourceNotation": "D018942",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21586591_causative-agent_0000364#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21586591"
+      }
+    }
+  ]
+}

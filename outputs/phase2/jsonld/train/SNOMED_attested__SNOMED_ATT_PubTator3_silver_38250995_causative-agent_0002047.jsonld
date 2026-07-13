@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38250995_causative-agent_0002047",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_38250995_causative-agent_0002047",
+  "canon:title": "Interaction between Per- and Polyfluorinated Substances (PFAS) and Acetaminophen in Disease Exacerbation-Focusing on Autism and the Gut-Liver-Brain Axis.",
+  "canon:abstract": "This review presents a new perspective on the exacerbation of autism spectrum disorder (ASD) by per- and polyfluoroalkyl substances (PFAS) through the gut-liver-brain axis. We have summarized evidence reported on the involvement of the gut microbiome and liver inflammation that led to the onset and exacerbation of ASD symptoms. As PFAS are toxicants that particularly target liver, this review has comprehensively explored the possible interaction between PFAS and acetaminophen, another liver toxicant, as the chemicals of interest for future toxicology research. Our hypothesis is that, at acute dosages, acetaminophen has the ability to aggravate the impaired conditions of the PFAS-exposed liver, which would further exacerbate neurological symptoms such as lack of social communication and interest, and repetitive behaviors using mechanisms related to the gut-liver-brain axis. This review discusses their potential interactions in terms of the gut-liver-brain axis and signaling pathways that may contribute to neurological diseases.",
+  "canon:text": "Interaction between Per- and Polyfluorinated Substances (PFAS) and Acetaminophen in Disease Exacerbation-Focusing on Autism and the Gut-Liver-Brain Axis. This review presents a new perspective on the exacerbation of autism spectrum disorder (ASD) by per- and polyfluoroalkyl substances (PFAS) through the gut-liver-brain axis. We have summarized evidence reported on the involvement of the gut microbiome and liver inflammation that led to the onset and exacerbation of ASD symptoms. As PFAS are toxicants that particularly target liver, this review has comprehensively explored the possible interaction between PFAS and acetaminophen, another liver toxicant, as the chemicals of interest for future toxicology research. Our hypothesis is that, at acute dosages, acetaminophen has the ability to aggravate the impaired conditions of the PFAS-exposed liver, which would further exacerbate neurological symptoms such as lack of social communication and interest, and repetitive behaviors using mechanisms related to the gut-liver-brain axis. This review discusses their potential interactions in terms of the gut-liver-brain axis and signaling pathways that may contribute to neurological diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38250995_causative-agent_0002047#mention-T1",
+      "canon:span": {
+        "start": 644,
+        "end": 658
+      },
+      "canon:surface": "liver toxicant",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38250995_causative-agent_0002047#mention-T2",
+      "canon:span": {
+        "start": 67,
+        "end": 80
+      },
+      "canon:surface": "Acetaminophen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38250995_causative-agent_0002047#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38250995_causative-agent_0002047#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38250995_causative-agent_0002047#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "38250995"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35052872_causative-agent_0001572",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35052872_causative-agent_0001572",
+  "canon:title": "Detailed Molecular Mechanisms Involved in Drug-Induced Non-Alcoholic Fatty Liver Disease and Non-Alcoholic Steatohepatitis: An Update.",
+  "canon:abstract": "Non-alcoholic fatty liver disease (NAFLD) and non-alcoholic steatohepatitis (NASH) are some of the biggest public health challenges due to their spread and increasing incidence around the world. NAFLD is characterized by intrahepatic lipid deposition, accompanied by dyslipidemia, hypertension, and insulin resistance, leading to more serious complications. Among the various causes, drug administration for the treatment of numerous kinds of diseases, such as antiarrhythmic and antihypertensive drugs, promotes the onset and progression of steatosis, causing drug-induced hepatic steatosis (DIHS). Here, we reviewed in detail the major classes of drugs that cause DIHS and the specific molecular mechanisms involved in these processes. Eight classes of drugs, among the most used for the treatment of common pathologies, were considered. The most diffused mechanism whereby drugs can induce NAFLD/NASH is interfering with mitochondrial activity, inhibiting fatty acid oxidation, but other pathways involved in lipid homeostasis are also affected. PubMed research was performed to obtain significant papers published up to November 2021. The key words included the class of drugs, or the specific compound, combined with steatosis, nonalcoholic steatohepatitis, fibrosis, fatty liver and hepatic lipid deposition. Additional information was found in the citations listed in other papers, when they were not displayed in the original search.",
+  "canon:text": "Detailed Molecular Mechanisms Involved in Drug-Induced Non-Alcoholic Fatty Liver Disease and Non-Alcoholic Steatohepatitis: An Update. Non-alcoholic fatty liver disease (NAFLD) and non-alcoholic steatohepatitis (NASH) are some of the biggest public health challenges due to their spread and increasing incidence around the world. NAFLD is characterized by intrahepatic lipid deposition, accompanied by dyslipidemia, hypertension, and insulin resistance, leading to more serious complications. Among the various causes, drug administration for the treatment of numerous kinds of diseases, such as antiarrhythmic and antihypertensive drugs, promotes the onset and progression of steatosis, causing drug-induced hepatic steatosis (DIHS). Here, we reviewed in detail the major classes of drugs that cause DIHS and the specific molecular mechanisms involved in these processes. Eight classes of drugs, among the most used for the treatment of common pathologies, were considered. The most diffused mechanism whereby drugs can induce NAFLD/NASH is interfering with mitochondrial activity, inhibiting fatty acid oxidation, but other pathways involved in lipid homeostasis are also affected. PubMed research was performed to obtain significant papers published up to November 2021. The key words included the class of drugs, or the specific compound, combined with steatosis, nonalcoholic steatohepatitis, fibrosis, fatty liver and hepatic lipid deposition. Additional information was found in the citations listed in other papers, when they were not displayed in the original search.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35052872_causative-agent_0001572#mention-T1",
+      "canon:span": {
+        "start": 696,
+        "end": 726
+      },
+      "canon:surface": "drug-induced hepatic steatosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35052872_causative-agent_0001572#mention-T2",
+      "canon:span": {
+        "start": 1147,
+        "end": 1152
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35052872_causative-agent_0001572#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35052872_causative-agent_0001572#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35052872_causative-agent_0001572#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35052872"
+      }
+    }
+  ]
+}

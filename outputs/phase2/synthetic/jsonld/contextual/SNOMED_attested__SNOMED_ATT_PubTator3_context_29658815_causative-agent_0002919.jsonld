@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002919",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002919",
+  "canon:title": "Oxidative stress, NOx/l-arginine ratio and glutathione/glutathione S-transferase ratio as predictors of 'sterile inflammation' in patients with alcoholic cirrhosis and hepatorenal syndrome type II.",
+  "canon:abstract": "Continuous intake of alcohol leads to liver cirrhosis because of imbalance of oxidative stress/antioxidative defense and chronic 'sterile inflammation'. Hepatorenal syndrome (HRS) is the most severe complication of liver cirrhosis. The aim of our study was to assess: (1) the oxidative stress/antioxidative defense markers such as malondialdehyde (MDA), oxidative glutathione (GSH) and glutathione S-transferase (GST), (2) inflammation [C-reactive protein (CRP)], and (3) nitrate/nitrite levels (NOx) and its substrate L-arginine level. The study enrolled three groups: a group with cirrhosis and HRS (48 patients), a group with cirrhosis without HRS (32 patients), and a control group (40 healthy blood donors). All the patients with cirrhosis and HRS had type II HRS. MDA concentration was significantly higher in the groups with cirrhosis with and without HRS. Significant positive correlation was documented between the MDA level and de Ritis coefficient (AST/ALT), a marker of liver damage severity; between MDA and inflammation (CRP); between MDA and NOx concentration in the groups with cirrhosis with and without HRS. The correlation between MDA and creatinine level was significant in the group with HRS. The levels of GSH and GST were significantly lower in the groups with cirrhosis with and without HRS. The results of the study revealed that an increase in MDA and NOx concentration, along with decreased values of antioxidative defense and L-arginine, may indicate that liver damage can have an influence on progression to renal failure.",
+  "canon:text": "Oxidative stress, NOx/l-arginine ratio and glutathione/glutathione S-transferase ratio as predictors of 'sterile inflammation' in patients with alcoholic cirrhosis and hepatorenal syndrome type II. Continuous intake of alcohol leads to liver cirrhosis because of imbalance of oxidative stress/antioxidative defense and chronic 'sterile inflammation'. Hepatorenal syndrome (HRS) is the most severe complication of liver cirrhosis. The aim of our study was to assess: (1) the oxidative stress/antioxidative defense markers such as malondialdehyde (MDA), oxidative glutathione (GSH) and glutathione S-transferase (GST), (2) inflammation [C-reactive protein (CRP)], and (3) nitrate/nitrite levels (NOx) and its substrate L-arginine level. The study enrolled three groups: a group with cirrhosis and HRS (48 patients), a group with cirrhosis without HRS (32 patients), and a control group (40 healthy blood donors). All the patients with cirrhosis and HRS had type II HRS. MDA concentration was significantly higher in the groups with cirrhosis with and without HRS. Significant positive correlation was documented between the MDA level and de Ritis coefficient (AST/ALT), a marker of liver damage severity; between MDA and inflammation (CRP); between MDA and NOx concentration in the groups with cirrhosis with and without HRS. The correlation between MDA and creatinine level was significant in the group with HRS. The levels of GSH and GST were significantly lower in the groups with cirrhosis with and without HRS. The results of the study revealed that an increase in MDA and NOx concentration, along with decreased values of antioxidative defense and L-arginine, may indicate that liver damage can have an influence on progression to renal failure.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002919#mention-T1",
+      "canon:span": {
+        "start": 1180,
+        "end": 1192
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002919#mention-T2",
+      "canon:span": {
+        "start": 678,
+        "end": 685
+      },
+      "canon:surface": "nitrite",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009573",
+      "canon:sourceNotation": "D009573",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002919#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002919#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29658815_causative-agent_0002919#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29658815"
+      }
+    }
+  ]
+}

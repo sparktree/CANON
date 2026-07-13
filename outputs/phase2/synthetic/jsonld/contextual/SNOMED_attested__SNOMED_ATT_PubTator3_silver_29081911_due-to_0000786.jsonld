@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29081911_due-to_0000786",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29081911_due-to_0000786",
+  "canon:title": "Leptotrichia species in human infections II.",
+  "canon:abstract": "Leptotrichia species are non-motile facultative anaerobic/anaerobic bacteria that are found mostly in the oral cavity and some other parts of the human body, in animals, and even in ocean sediments. Valid species include L. buccalis, L. goodfellowii, L. hofstadii, L. honkongensis, L. shahii, L. trevisanii, and L. wadei. Some species require serum or blood for growth. All species ferment carbohydrates and produce lactic acid that may be involved with tooth decay. Acting as opportunistic pathogens, they are involved in a variety of diseases, and have been isolated from immunocompromised but also immunocompetent individuals. Mucositis, oral lesions, wounds, and abscesses may predispose to Leptotrichia septicemia. Because identification of Leptotrichia species by phenotypic features occasionally lead to misidentification, genetic techniques such as 16S rRNA gene sequencing is recommended. Early diagnosis and treatment of leptotrichia infections is important for positive outcomes. Over the last years, Leptotrichia species have been associated with several changes in taxonomy and new associations with clinical diseases. Such changes are reported in this updated review.",
+  "canon:text": "Leptotrichia species in human infections II. Leptotrichia species are non-motile facultative anaerobic/anaerobic bacteria that are found mostly in the oral cavity and some other parts of the human body, in animals, and even in ocean sediments. Valid species include L. buccalis, L. goodfellowii, L. hofstadii, L. honkongensis, L. shahii, L. trevisanii, and L. wadei. Some species require serum or blood for growth. All species ferment carbohydrates and produce lactic acid that may be involved with tooth decay. Acting as opportunistic pathogens, they are involved in a variety of diseases, and have been isolated from immunocompromised but also immunocompetent individuals. Mucositis, oral lesions, wounds, and abscesses may predispose to Leptotrichia septicemia. Because identification of Leptotrichia species by phenotypic features occasionally lead to misidentification, genetic techniques such as 16S rRNA gene sequencing is recommended. Early diagnosis and treatment of leptotrichia infections is important for positive outcomes. Over the last years, Leptotrichia species have been associated with several changes in taxonomy and new associations with clinical diseases. Such changes are reported in this updated review.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29081911_due-to_0000786#mention-T1",
+      "canon:span": {
+        "start": 753,
+        "end": 763
+      },
+      "canon:surface": "septicemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29081911_due-to_0000786#mention-T2",
+      "canon:span": {
+        "start": 499,
+        "end": 510
+      },
+      "canon:surface": "tooth decay",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003731",
+      "canon:sourceNotation": "D003731",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29081911_due-to_0000786#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29081911_due-to_0000786#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29081911_due-to_0000786#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29081911"
+      }
+    }
+  ]
+}

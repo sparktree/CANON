@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36039261_causative-agent_0004033",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36039261_causative-agent_0004033",
+  "canon:title": "Drug-Induced Hyperthermia Review.",
+  "canon:abstract": "Humans maintain core body temperature via a complicated system of physiologic mechanisms that counteract heat/cold fluctuations from metabolism, exertion, and the environment. Overextension of these mechanisms or disruption of body temperature homeostasis leads to bodily dysfunction, culminating in a syndrome analogous to exertional heat stroke (EHS). The inability of this thermoregulatory process to maintain the body temperature is caused by either thermal stress or certain drugs. EHS is a syndrome characterized by hyperthermia and the activation of systemic inflammation. Several drug-induced hyperthermic syndromes may resemble EHS and share common mechanisms. The purpose of this article is to review the current literature and compare exertional heat stroke (EHS) to three of the most widely studied drug-induced hyperthermic syndromes: malignant hyperthermia (MH), neuroleptic malignant syndrome (NMS), and serotonin syndrome (SS). Drugs and drug classes that have been implicated in these conditions include amphetamines, diuretics, cocaine, antipsychotics, metoclopramide, selective serotonin reuptake inhibitors (SSRIs), tricyclic antidepressants (TCAs), and many more. Observations suggest that severe or fulminant cases of drug-induced hyperthermia may evolve into an inflammatory syndrome best described as heat stroke. Their underlying mechanisms, symptoms, and treatment approaches will be reviewed to assist in accurate diagnosis, which will impact the management of potentially life-threatening complications.",
+  "canon:text": "Drug-Induced Hyperthermia Review. Humans maintain core body temperature via a complicated system of physiologic mechanisms that counteract heat/cold fluctuations from metabolism, exertion, and the environment. Overextension of these mechanisms or disruption of body temperature homeostasis leads to bodily dysfunction, culminating in a syndrome analogous to exertional heat stroke (EHS). The inability of this thermoregulatory process to maintain the body temperature is caused by either thermal stress or certain drugs. EHS is a syndrome characterized by hyperthermia and the activation of systemic inflammation. Several drug-induced hyperthermic syndromes may resemble EHS and share common mechanisms. The purpose of this article is to review the current literature and compare exertional heat stroke (EHS) to three of the most widely studied drug-induced hyperthermic syndromes: malignant hyperthermia (MH), neuroleptic malignant syndrome (NMS), and serotonin syndrome (SS). Drugs and drug classes that have been implicated in these conditions include amphetamines, diuretics, cocaine, antipsychotics, metoclopramide, selective serotonin reuptake inhibitors (SSRIs), tricyclic antidepressants (TCAs), and many more. Observations suggest that severe or fulminant cases of drug-induced hyperthermia may evolve into an inflammatory syndrome best described as heat stroke. Their underlying mechanisms, symptoms, and treatment approaches will be reviewed to assist in accurate diagnosis, which will impact the management of potentially life-threatening complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36039261_causative-agent_0004033#mention-T1",
+      "canon:span": {
+        "start": 911,
+        "end": 941
+      },
+      "canon:surface": "neuroleptic malignant syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009459",
+      "canon:sourceNotation": "D009459",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36039261_causative-agent_0004033#mention-T2",
+      "canon:span": {
+        "start": 1080,
+        "end": 1087
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36039261_causative-agent_0004033#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36039261_causative-agent_0004033#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36039261_causative-agent_0004033#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36039261"
+      }
+    }
+  ]
+}

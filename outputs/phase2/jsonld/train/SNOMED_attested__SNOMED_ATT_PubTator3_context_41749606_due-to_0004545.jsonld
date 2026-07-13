@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41749606_due-to_0004545",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_41749606_due-to_0004545",
+  "canon:title": "Childhood-Onset Systemic Lupus Erythematosus Research over the Past Decade in Japan.",
+  "canon:abstract": "Background: Childhood-onset systemic lupus erythematosus (cSLE) is a rare, serious autoimmune disease characterized by multiorgan involvement and long-term morbidity. Although several studies have examined this condition in Japan, a comprehensive summary of recent findings remains lacking. Methods: PubMed was searched for Japanese publications on cSLE published between 2015 and 2025, including clinical studies, case reports, translational research, basic science studies, systematic reviews, clinical practice guidance, and transition care guidance. Results: Sixty publications met the inclusion criteria: 20 clinical studies, 30 case reports, 6 translational studies, 1 basic science study, 1 systematic review, 1 clinical practice guidance, and 1 transition care guidance. Most clinical studies were retrospective, although multicenter and registry-based designs have increased in recent years. Lupus nephritis remained the primary research focus, with accumulating evidence supporting mycophenolate mofetil, tacrolimus, and early belimumab as glucocorticoid (GC)-sparing approaches. Case reports illustrated the broad clinical spectrum of cSLE, with hematological and vascular complications being the most frequently reported. Translational studies highlighted the pathogenic role of type I interferon signaling and cytokine dysregulation, particularly in macrophage activation syndrome. Despite these advances, prospective studies and standardized assessment methods for pediatric-specific practice remain limited. Conclusions: Over the past decade, cSLE research in Japan has contributed to a deeper understanding of its clinical and immunological characteristics. However, treatment-related complications and long-term organ damage remain important challenges. Continued multicenter collaboration and domestic data accumulation may strengthen the evidence base, facilitate optimization of GC-sparing approaches, improve clinical management, and provide background information to support future discussions on clinical practice guidelines.",
+  "canon:text": "Childhood-Onset Systemic Lupus Erythematosus Research over the Past Decade in Japan. Background: Childhood-onset systemic lupus erythematosus (cSLE) is a rare, serious autoimmune disease characterized by multiorgan involvement and long-term morbidity. Although several studies have examined this condition in Japan, a comprehensive summary of recent findings remains lacking. Methods: PubMed was searched for Japanese publications on cSLE published between 2015 and 2025, including clinical studies, case reports, translational research, basic science studies, systematic reviews, clinical practice guidance, and transition care guidance. Results: Sixty publications met the inclusion criteria: 20 clinical studies, 30 case reports, 6 translational studies, 1 basic science study, 1 systematic review, 1 clinical practice guidance, and 1 transition care guidance. Most clinical studies were retrospective, although multicenter and registry-based designs have increased in recent years. Lupus nephritis remained the primary research focus, with accumulating evidence supporting mycophenolate mofetil, tacrolimus, and early belimumab as glucocorticoid (GC)-sparing approaches. Case reports illustrated the broad clinical spectrum of cSLE, with hematological and vascular complications being the most frequently reported. Translational studies highlighted the pathogenic role of type I interferon signaling and cytokine dysregulation, particularly in macrophage activation syndrome. Despite these advances, prospective studies and standardized assessment methods for pediatric-specific practice remain limited. Conclusions: Over the past decade, cSLE research in Japan has contributed to a deeper understanding of its clinical and immunological characteristics. However, treatment-related complications and long-term organ damage remain important challenges. Continued multicenter collaboration and domestic data accumulation may strengthen the evidence base, facilitate optimization of GC-sparing approaches, improve clinical management, and provide background information to support future discussions on clinical practice guidelines.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41749606_due-to_0004545#mention-T1",
+      "canon:span": {
+        "start": 986,
+        "end": 1001
+      },
+      "canon:surface": "Lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41749606_due-to_0004545#mention-T2",
+      "canon:span": {
+        "start": 168,
+        "end": 186
+      },
+      "canon:surface": "autoimmune disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001327",
+      "canon:sourceNotation": "D001327",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41749606_due-to_0004545#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41749606_due-to_0004545#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_41749606_due-to_0004545#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "41749606"
+      }
+    }
+  ]
+}

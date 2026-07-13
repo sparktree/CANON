@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012846_causative-agent_0001070",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32012846_causative-agent_0001070",
+  "canon:title": "Metabolomic and Lipidomic Biomarkers for Premalignant Liver Disease Diagnosis and Therapy.",
+  "canon:abstract": "In recent years, there has been a plethora of attempts to discover biomarkers that are more reliable than alpha-fetoprotein for the early prediction and prognosis of hepatocellular carcinoma (HCC). Efforts have involved such fields as genomics, transcriptomics, epigenetics, microRNA, exosomes, proteomics, glycoproteomics, and metabolomics. HCC arises against a background of inflammation, steatosis, and cirrhosis, due mainly to hepatic insults caused by alcohol abuse, hepatitis B and C virus infection, adiposity, and diabetes. Metabolomics offers an opportunity, without recourse to liver biopsy, to discover biomarkers for premalignant liver disease, thereby alerting the potential of impending HCC. We have reviewed metabolomic studies in alcoholic liver disease (ALD), cholestasis, fibrosis, cirrhosis, nonalcoholic fatty liver (NAFL), and nonalcoholic steatohepatitis (NASH). Specificity was our major criterion in proposing clinical evaluation of indole-3-lactic acid, phenyllactic acid, N-lauroylglycine, decatrienoate, N-acetyltaurine for ALD, urinary sulfated bile acids for cholestasis, cervonoyl ethanolamide for fibrosis, 16alpha-hydroxyestrone for cirrhosis, and the pattern of acyl carnitines for NAFL and NASH. These examples derive from a large body of published metabolomic observations in various liver diseases in adults, adolescents, and children, together with animal models. Many other options have been tabulated. Metabolomic biomarkers for premalignant liver disease may help reduce the incidence of HCC.",
+  "canon:text": "Metabolomic and Lipidomic Biomarkers for Premalignant Liver Disease Diagnosis and Therapy. In recent years, there has been a plethora of attempts to discover biomarkers that are more reliable than alpha-fetoprotein for the early prediction and prognosis of hepatocellular carcinoma (HCC). Efforts have involved such fields as genomics, transcriptomics, epigenetics, microRNA, exosomes, proteomics, glycoproteomics, and metabolomics. HCC arises against a background of inflammation, steatosis, and cirrhosis, due mainly to hepatic insults caused by alcohol abuse, hepatitis B and C virus infection, adiposity, and diabetes. Metabolomics offers an opportunity, without recourse to liver biopsy, to discover biomarkers for premalignant liver disease, thereby alerting the potential of impending HCC. We have reviewed metabolomic studies in alcoholic liver disease (ALD), cholestasis, fibrosis, cirrhosis, nonalcoholic fatty liver (NAFL), and nonalcoholic steatohepatitis (NASH). Specificity was our major criterion in proposing clinical evaluation of indole-3-lactic acid, phenyllactic acid, N-lauroylglycine, decatrienoate, N-acetyltaurine for ALD, urinary sulfated bile acids for cholestasis, cervonoyl ethanolamide for fibrosis, 16alpha-hydroxyestrone for cirrhosis, and the pattern of acyl carnitines for NAFL and NASH. These examples derive from a large body of published metabolomic observations in various liver diseases in adults, adolescents, and children, together with animal models. Many other options have been tabulated. Metabolomic biomarkers for premalignant liver disease may help reduce the incidence of HCC.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012846_causative-agent_0001070#mention-T1",
+      "canon:span": {
+        "start": 522,
+        "end": 537
+      },
+      "canon:surface": "hepatic insults",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012846_causative-agent_0001070#mention-T2",
+      "canon:span": {
+        "start": 1164,
+        "end": 1174
+      },
+      "canon:surface": "bile acids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001647",
+      "canon:sourceNotation": "D001647",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012846_causative-agent_0001070#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012846_causative-agent_0001070#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32012846_causative-agent_0001070#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32012846"
+      }
+    }
+  ]
+}

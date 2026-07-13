@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20222816_due-to_0002237",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20222816_due-to_0002237",
+  "canon:title": "Diabetic cardiomyopathy: signaling defects and therapeutic approaches.",
+  "canon:abstract": "Diabetes mellitus is the world's fastest growing disease with high morbidity and mortality rates, predominantly as a result of heart failure. A significant number of diabetic patients exhibit diabetic cardiomyopathy; that is, left ventricular dysfunction independent of coronary artery disease or hypertension. The pathogenesis of diabetic cardiomyopathy is complex, and is characterized by dysregulated lipid metabolism, insulin resistance, mitochondrial dysfunction and disturbances in adipokine secretion and signaling. These abnormalities lead to impaired calcium homeostasis, ultimately resulting in lusitropic and inotropic defects. This article discusses the impact of these hallmark factors in diabetic cardiomyopathy, and concludes with a survey of available and emerging therapeutic modalities.",
+  "canon:text": "Diabetic cardiomyopathy: signaling defects and therapeutic approaches. Diabetes mellitus is the world's fastest growing disease with high morbidity and mortality rates, predominantly as a result of heart failure. A significant number of diabetic patients exhibit diabetic cardiomyopathy; that is, left ventricular dysfunction independent of coronary artery disease or hypertension. The pathogenesis of diabetic cardiomyopathy is complex, and is characterized by dysregulated lipid metabolism, insulin resistance, mitochondrial dysfunction and disturbances in adipokine secretion and signaling. These abnormalities lead to impaired calcium homeostasis, ultimately resulting in lusitropic and inotropic defects. This article discusses the impact of these hallmark factors in diabetic cardiomyopathy, and concludes with a survey of available and emerging therapeutic modalities.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20222816_due-to_0002237#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 23
+      },
+      "canon:surface": "Diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20222816_due-to_0002237#mention-T2",
+      "canon:span": {
+        "start": 513,
+        "end": 538
+      },
+      "canon:surface": "mitochondrial dysfunction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D028361",
+      "canon:sourceNotation": "D028361",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20222816_due-to_0002237#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20222816_due-to_0002237#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20222816_due-to_0002237#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20222816"
+      }
+    }
+  ]
+}

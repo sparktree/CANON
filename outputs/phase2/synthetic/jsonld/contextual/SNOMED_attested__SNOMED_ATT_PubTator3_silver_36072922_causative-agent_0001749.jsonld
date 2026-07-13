@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36072922_causative-agent_0001749",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36072922_causative-agent_0001749",
+  "canon:title": "Case Report: Neuroleptic malignant syndrome in a HIV-positive patient.",
+  "canon:abstract": "We report a 29-year-old, HIV-positive woman being treated with antipsychotic medication for psychosis (Clopixol 200mg intramuscularly monthly, Risperidone 2mg orally daily Haloperidol 2.5mg twice a day), who presented with neuroleptic malignant syndrome. She was also receiving lorazepam and sodium valproate. The patient was referred to our department as she had developed involuntary upper limb movements and simple permanent focal seizure on the lower part of the left hemiface. Clinically the patient had altered consciousness, autonomic dysfunction, and rigidity. Her blood tests showed elevated creatine kinase (1467U/L) but no leucocytosis. We did a thorough workup for other causes of such a presentation. A comprehensive history was taken from the family to exclude other medications used. Her cerebrospinal fluid results were average. Blood tests did not show evidence of infection or other abnormalities. Computed tomography brain was normal. The patient died a few days after the beginning of the attack, which we have also observed  in other HIV-female patients. As far as we know, it is the first report about this comorbidity reported in the medical literature.",
+  "canon:text": "Case Report: Neuroleptic malignant syndrome in a HIV-positive patient. We report a 29-year-old, HIV-positive woman being treated with antipsychotic medication for psychosis (Clopixol 200mg intramuscularly monthly, Risperidone 2mg orally daily Haloperidol 2.5mg twice a day), who presented with neuroleptic malignant syndrome. She was also receiving lorazepam and sodium valproate. The patient was referred to our department as she had developed involuntary upper limb movements and simple permanent focal seizure on the lower part of the left hemiface. Clinically the patient had altered consciousness, autonomic dysfunction, and rigidity. Her blood tests showed elevated creatine kinase (1467U/L) but no leucocytosis. We did a thorough workup for other causes of such a presentation. A comprehensive history was taken from the family to exclude other medications used. Her cerebrospinal fluid results were average. Blood tests did not show evidence of infection or other abnormalities. Computed tomography brain was normal. The patient died a few days after the beginning of the attack, which we have also observed  in other HIV-female patients. As far as we know, it is the first report about this comorbidity reported in the medical literature.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36072922_causative-agent_0001749#mention-T1",
+      "canon:span": {
+        "start": 13,
+        "end": 43
+      },
+      "canon:surface": "Neuroleptic malignant syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009459",
+      "canon:sourceNotation": "D009459",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36072922_causative-agent_0001749#mention-T2",
+      "canon:span": {
+        "start": 174,
+        "end": 182
+      },
+      "canon:surface": "Clopixol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003006",
+      "canon:sourceNotation": "D003006",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36072922_causative-agent_0001749#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36072922_causative-agent_0001749#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36072922_causative-agent_0001749#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36072922"
+      }
+    }
+  ]
+}

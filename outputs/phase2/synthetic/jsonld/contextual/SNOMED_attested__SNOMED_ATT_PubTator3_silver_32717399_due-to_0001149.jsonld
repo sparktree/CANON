@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32717399_due-to_0001149",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32717399_due-to_0001149",
+  "canon:title": "Purinergic signaling in infectious diseases of the central nervous system.",
+  "canon:abstract": "The incidence of infectious diseases affecting the central nervous system (CNS) has been increasing over the last several years. Among the reasons for the expansion of these diseases and the appearance of new neuropathogens are globalization, global warming, and the increased proximity between humans and wild animals due to human activities such as deforestation. Neurotropism affecting normal brain function is shared by organisms such as viruses, bacteria, fungi, and parasites. Neuroinfections caused by these agents activate immune responses, inducing neuroinflammation, excitotoxicity, and neurodegeneration. Purinergic signaling is an evolutionarily conserved signaling pathway associated with these neuropathologies. During neuroinfections, host cells release ATP as an extracellular danger signal with pro-inflammatory activities. ATP is metabolized to its derivatives by ectonucleotidases such as CD39 and CD73; ATP and its metabolites modulate neuronal and immune mechanisms through P1 and P2 purinergic receptors that are involved in pathophysiological mechanisms of neuroinfections. In this review we discuss the beneficial or deleterious effects of various components of the purinergic signaling pathway in infectious diseases that affect the CNS, including human immunodeficiency virus (HIV-1) infection, herpes simplex virus type 1 (HSV-1) infection, bacterial meningitis, sepsis, cryptococcosis, toxoplasmosis, and malaria. We also provide a description of this signaling pathway in emerging viral infections with neurological implications such as Zika and SARS-CoV-2.",
+  "canon:text": "Purinergic signaling in infectious diseases of the central nervous system. The incidence of infectious diseases affecting the central nervous system (CNS) has been increasing over the last several years. Among the reasons for the expansion of these diseases and the appearance of new neuropathogens are globalization, global warming, and the increased proximity between humans and wild animals due to human activities such as deforestation. Neurotropism affecting normal brain function is shared by organisms such as viruses, bacteria, fungi, and parasites. Neuroinfections caused by these agents activate immune responses, inducing neuroinflammation, excitotoxicity, and neurodegeneration. Purinergic signaling is an evolutionarily conserved signaling pathway associated with these neuropathologies. During neuroinfections, host cells release ATP as an extracellular danger signal with pro-inflammatory activities. ATP is metabolized to its derivatives by ectonucleotidases such as CD39 and CD73; ATP and its metabolites modulate neuronal and immune mechanisms through P1 and P2 purinergic receptors that are involved in pathophysiological mechanisms of neuroinfections. In this review we discuss the beneficial or deleterious effects of various components of the purinergic signaling pathway in infectious diseases that affect the CNS, including human immunodeficiency virus (HIV-1) infection, herpes simplex virus type 1 (HSV-1) infection, bacterial meningitis, sepsis, cryptococcosis, toxoplasmosis, and malaria. We also provide a description of this signaling pathway in emerging viral infections with neurological implications such as Zika and SARS-CoV-2.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32717399_due-to_0001149#mention-T1",
+      "canon:span": {
+        "start": 1465,
+        "end": 1471
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32717399_due-to_0001149#mention-T2",
+      "canon:span": {
+        "start": 1489,
+        "end": 1502
+      },
+      "canon:surface": "toxoplasmosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D014123",
+      "canon:sourceNotation": "D014123",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32717399_due-to_0001149#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32717399_due-to_0001149#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32717399_due-to_0001149#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32717399"
+      }
+    }
+  ]
+}

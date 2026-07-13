@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32408480_due-to_0001124",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32408480_due-to_0001124",
+  "canon:title": "Regulation of Vascular Function and Inflammation via Cross Talk of Reactive Oxygen and Nitrogen Species from Mitochondria or NADPH Oxidase-Implications for Diabetes Progression.",
+  "canon:abstract": "Oxidative stress plays a key role for the development of cardiovascular, metabolic, and neurodegenerative disease. This concept has been proven by using the approach of genetic deletion of reactive oxygen and nitrogen species (RONS) producing, pro-oxidant enzymes as well as by the overexpression of RONS detoxifying, antioxidant enzymes leading to an amelioration of the severity of diseases. Vice versa, the development and progression of cardiovascular diseases is aggravated by overexpression of RONS producing enzymes as well as deletion of RONS detoxifying enzymes. We have previously identified cross talk mechanisms between different sources of RONS, which can amplify the oxidative stress-mediated damage. Here, the pathways and potential mechanisms leading to this cross talk are analyzed in detail and highlighted by selected examples from the current literature and own data including hypoxia, angiotensin II (AT-II)-induced hypertension, nitrate tolerance, aging, and others. The general concept of redox-based activation of RONS sources via \"kindling radicals\" and enzyme-specific \"redox switches\" as well as the interaction with redox-sensitive inflammatory pathways are discussed. Here, we present evidence for the existence of such cross talk mechanisms in the setting of diabetes and critically assess their contribution to the severity of diabetic complications.",
+  "canon:text": "Regulation of Vascular Function and Inflammation via Cross Talk of Reactive Oxygen and Nitrogen Species from Mitochondria or NADPH Oxidase-Implications for Diabetes Progression. Oxidative stress plays a key role for the development of cardiovascular, metabolic, and neurodegenerative disease. This concept has been proven by using the approach of genetic deletion of reactive oxygen and nitrogen species (RONS) producing, pro-oxidant enzymes as well as by the overexpression of RONS detoxifying, antioxidant enzymes leading to an amelioration of the severity of diseases. Vice versa, the development and progression of cardiovascular diseases is aggravated by overexpression of RONS producing enzymes as well as deletion of RONS detoxifying enzymes. We have previously identified cross talk mechanisms between different sources of RONS, which can amplify the oxidative stress-mediated damage. Here, the pathways and potential mechanisms leading to this cross talk are analyzed in detail and highlighted by selected examples from the current literature and own data including hypoxia, angiotensin II (AT-II)-induced hypertension, nitrate tolerance, aging, and others. The general concept of redox-based activation of RONS sources via \"kindling radicals\" and enzyme-specific \"redox switches\" as well as the interaction with redox-sensitive inflammatory pathways are discussed. Here, we present evidence for the existence of such cross talk mechanisms in the setting of diabetes and critically assess their contribution to the severity of diabetic complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32408480_due-to_0001124#mention-T1",
+      "canon:span": {
+        "start": 1536,
+        "end": 1558
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32408480_due-to_0001124#mention-T2",
+      "canon:span": {
+        "start": 156,
+        "end": 164
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32408480_due-to_0001124#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32408480_due-to_0001124#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32408480_due-to_0001124#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32408480"
+      }
+    }
+  ]
+}

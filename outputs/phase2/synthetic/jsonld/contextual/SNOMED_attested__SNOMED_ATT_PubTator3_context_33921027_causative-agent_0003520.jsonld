@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33921027_causative-agent_0003520",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33921027_causative-agent_0003520",
+  "canon:title": "Iron at the Interface of Hepatocellular Carcinoma.",
+  "canon:abstract": "Cancer incidence and mortality are rapidly growing, with liver cancer being the sixth most diagnosed cancer worldwide and the third leading cause of cancer death in 2020. A number of risk factors have been identified that trigger the progression to hepatocellular carcinoma. In this review, we focus on iron as a potential risk factor for liver carcinogenesis. Molecules involved in the regulation of iron metabolism are often upregulated in cancer cells, in order to provide a supply of this essential trace element for all stages of tumor development, survival, proliferation, and metastasis. Thus, cellular and systemic iron levels must be tightly regulated to prevent or delay liver cancer progression. Disorders associated with dysregulated iron metabolism are characterized with increased susceptibility to hepatocellular carcinoma. This review discusses the association of iron with metabolic disorders such as hereditary hemochromatosis, non-alcoholic fatty liver disease, obesity, and type 2 diabetes, in the background of hepatocellular carcinoma.",
+  "canon:text": "Iron at the Interface of Hepatocellular Carcinoma. Cancer incidence and mortality are rapidly growing, with liver cancer being the sixth most diagnosed cancer worldwide and the third leading cause of cancer death in 2020. A number of risk factors have been identified that trigger the progression to hepatocellular carcinoma. In this review, we focus on iron as a potential risk factor for liver carcinogenesis. Molecules involved in the regulation of iron metabolism are often upregulated in cancer cells, in order to provide a supply of this essential trace element for all stages of tumor development, survival, proliferation, and metastasis. Thus, cellular and systemic iron levels must be tightly regulated to prevent or delay liver cancer progression. Disorders associated with dysregulated iron metabolism are characterized with increased susceptibility to hepatocellular carcinoma. This review discusses the association of iron with metabolic disorders such as hereditary hemochromatosis, non-alcoholic fatty liver disease, obesity, and type 2 diabetes, in the background of hepatocellular carcinoma.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33921027_causative-agent_0003520#mention-T1",
+      "canon:span": {
+        "start": 969,
+        "end": 995
+      },
+      "canon:surface": "hereditary hemochromatosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006432",
+      "canon:sourceNotation": "D006432",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33921027_causative-agent_0003520#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 4
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33921027_causative-agent_0003520#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33921027_causative-agent_0003520#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33921027_causative-agent_0003520#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33921027"
+      }
+    }
+  ]
+}

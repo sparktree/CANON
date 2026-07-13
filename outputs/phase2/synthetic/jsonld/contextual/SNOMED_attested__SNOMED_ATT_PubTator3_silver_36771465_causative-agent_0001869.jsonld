@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36771465_causative-agent_0001869",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36771465_causative-agent_0001869",
+  "canon:title": "Selected Aspects of the Intricate Background of Immune-Related Cholangiopathies-A Critical Overview.",
+  "canon:abstract": "Primary biliary cholangitis (PBC), and primary sclerosing cholangitis (PSC) are rare immune-related cholangiopathies with still poorly explained pathogenesis. Although triggers of chronic inflammation with subsequent fibrosis that affect cholangiocytes leading to obliteration of bile ducts and conversion to liver cirrhosis are unclear, both disorders are regarded to be multifactorial. Different factors can contribute to the development of hepatocellular injury in the course of progressive cholestasis, including (1) body accumulation of bile acids and their toxicity, (2) decreased food intake and nutrient absorption, (3) gut microbiota transformation, and (4) reorganized host metabolism. Growing evidence suggests that intestinal microbiome composition not only can be altered by liver dysfunction, but in turn, it actively impacts hepatic conditions. In this review, we highlight the role of key factors such as the gut-liver axis, intestinal barrier integrity, bile acid synthesis and circulation, and microbiome composition, which seem to be strongly related to PBC and PSC outcome. Emerging treatments and future therapeutic strategies are also presented.",
+  "canon:text": "Selected Aspects of the Intricate Background of Immune-Related Cholangiopathies-A Critical Overview. Primary biliary cholangitis (PBC), and primary sclerosing cholangitis (PSC) are rare immune-related cholangiopathies with still poorly explained pathogenesis. Although triggers of chronic inflammation with subsequent fibrosis that affect cholangiocytes leading to obliteration of bile ducts and conversion to liver cirrhosis are unclear, both disorders are regarded to be multifactorial. Different factors can contribute to the development of hepatocellular injury in the course of progressive cholestasis, including (1) body accumulation of bile acids and their toxicity, (2) decreased food intake and nutrient absorption, (3) gut microbiota transformation, and (4) reorganized host metabolism. Growing evidence suggests that intestinal microbiome composition not only can be altered by liver dysfunction, but in turn, it actively impacts hepatic conditions. In this review, we highlight the role of key factors such as the gut-liver axis, intestinal barrier integrity, bile acid synthesis and circulation, and microbiome composition, which seem to be strongly related to PBC and PSC outcome. Emerging treatments and future therapeutic strategies are also presented.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36771465_causative-agent_0001869#mention-T1",
+      "canon:span": {
+        "start": 544,
+        "end": 565
+      },
+      "canon:surface": "hepatocellular injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36771465_causative-agent_0001869#mention-T2",
+      "canon:span": {
+        "start": 643,
+        "end": 653
+      },
+      "canon:surface": "bile acids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001647",
+      "canon:sourceNotation": "D001647",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36771465_causative-agent_0001869#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36771465_causative-agent_0001869#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36771465_causative-agent_0001869#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36771465"
+      }
+    }
+  ]
+}

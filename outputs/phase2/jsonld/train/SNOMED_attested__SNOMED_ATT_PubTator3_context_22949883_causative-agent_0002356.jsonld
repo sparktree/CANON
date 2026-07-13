@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22949883_causative-agent_0002356",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_22949883_causative-agent_0002356",
+  "canon:title": "Recent advances on the neuroprotective potential of antioxidants in experimental models of Parkinson's disease.",
+  "canon:abstract": "Parkinson's disease (PD), a neurodegenerative movement disorder of the central nervous system (CNS) is characterized by a progressive loss of dopaminergic neurons in the substantia nigra pars compacta region of the midbrain. Although the etiology of PD is not completely understood and is believed to be multifactorial, oxidative stress and mitochondrial dysfunction are widely considered major consequences, which provide important clues to the disease mechanisms. Studies have explored the role of free radicals and oxidative stress that contributes to the cascade of events leading to dopamine cell degeneration in PD. In general, in-built protective mechanisms consisting of enzymatic and non-enzymatic antioxidants in the CNS play decisive roles in preventing neuronal cell loss due to free radicals. But the ability to produce these antioxidants decreases with aging. Therefore, antioxidant therapy alone or in combination with current treatment methods may represent an attractive strategy for treating or preventing the neurodegeneration seen in PD. Here we summarize the recent discoveries of potential antioxidant compounds for modulating free radical mediated oxidative stress leading to neurotoxicity in PD.",
+  "canon:text": "Recent advances on the neuroprotective potential of antioxidants in experimental models of Parkinson's disease. Parkinson's disease (PD), a neurodegenerative movement disorder of the central nervous system (CNS) is characterized by a progressive loss of dopaminergic neurons in the substantia nigra pars compacta region of the midbrain. Although the etiology of PD is not completely understood and is believed to be multifactorial, oxidative stress and mitochondrial dysfunction are widely considered major consequences, which provide important clues to the disease mechanisms. Studies have explored the role of free radicals and oxidative stress that contributes to the cascade of events leading to dopamine cell degeneration in PD. In general, in-built protective mechanisms consisting of enzymatic and non-enzymatic antioxidants in the CNS play decisive roles in preventing neuronal cell loss due to free radicals. But the ability to produce these antioxidants decreases with aging. Therefore, antioxidant therapy alone or in combination with current treatment methods may represent an attractive strategy for treating or preventing the neurodegeneration seen in PD. Here we summarize the recent discoveries of potential antioxidant compounds for modulating free radical mediated oxidative stress leading to neurotoxicity in PD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22949883_causative-agent_0002356#mention-T1",
+      "canon:span": {
+        "start": 1311,
+        "end": 1324
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22949883_causative-agent_0002356#mention-T2",
+      "canon:span": {
+        "start": 700,
+        "end": 708
+      },
+      "canon:surface": "dopamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004298",
+      "canon:sourceNotation": "D004298",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22949883_causative-agent_0002356#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22949883_causative-agent_0002356#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22949883_causative-agent_0002356#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "22949883"
+      }
+    }
+  ]
+}

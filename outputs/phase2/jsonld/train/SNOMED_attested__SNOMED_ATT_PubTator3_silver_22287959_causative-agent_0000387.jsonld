@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22287959_causative-agent_0000387",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_22287959_causative-agent_0000387",
+  "canon:title": "Metal toxicity at the synapse: presynaptic, postsynaptic, and long-term effects.",
+  "canon:abstract": "Metal neurotoxicity is a global health concern. This paper summarizes the evidence for metal interactions with synaptic transmission and synaptic plasticity. Presynaptically metal ions modulate neurotransmitter release through their interaction with synaptic vesicles, ion channels, and the metabolism of neurotransmitters (NT). Many metals (e.g., Pb(2+), Cd(2+), and Hg(+)) also interact with intracellular signaling pathways. Postsynaptically, processes associated with the binding of NT to their receptors, activation of channels, and degradation of NT are altered by metals. Zn(2+), Pb(2+), Cu(2+), Cd(2+), Ni(2+), Co(2+), Li(3+), Hg(+), and methylmercury modulate NMDA, AMPA/kainate, and/or GABA receptors activity. Al(3+), Pb(2+), Cd(2+), and As(2)O(3) also impair synaptic plasticity by targeting molecules such as CaM, PKC, and NOS as well as the transcription machinery involved in the maintenance of synaptic plasticity. The multiple effects of metals might occur simultaneously and are based on the specific metal species, metal concentrations, and the types of neurons involved.",
+  "canon:text": "Metal toxicity at the synapse: presynaptic, postsynaptic, and long-term effects. Metal neurotoxicity is a global health concern. This paper summarizes the evidence for metal interactions with synaptic transmission and synaptic plasticity. Presynaptically metal ions modulate neurotransmitter release through their interaction with synaptic vesicles, ion channels, and the metabolism of neurotransmitters (NT). Many metals (e.g., Pb(2+), Cd(2+), and Hg(+)) also interact with intracellular signaling pathways. Postsynaptically, processes associated with the binding of NT to their receptors, activation of channels, and degradation of NT are altered by metals. Zn(2+), Pb(2+), Cu(2+), Cd(2+), Ni(2+), Co(2+), Li(3+), Hg(+), and methylmercury modulate NMDA, AMPA/kainate, and/or GABA receptors activity. Al(3+), Pb(2+), Cd(2+), and As(2)O(3) also impair synaptic plasticity by targeting molecules such as CaM, PKC, and NOS as well as the transcription machinery involved in the maintenance of synaptic plasticity. The multiple effects of metals might occur simultaneously and are based on the specific metal species, metal concentrations, and the types of neurons involved.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22287959_causative-agent_0000387#mention-T1",
+      "canon:span": {
+        "start": 87,
+        "end": 100
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22287959_causative-agent_0000387#mention-T2",
+      "canon:span": {
+        "start": 449,
+        "end": 454
+      },
+      "canon:surface": "Hg(+)",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008628",
+      "canon:sourceNotation": "D008628",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22287959_causative-agent_0000387#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22287959_causative-agent_0000387#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22287959_causative-agent_0000387#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "22287959"
+      }
+    }
+  ]
+}

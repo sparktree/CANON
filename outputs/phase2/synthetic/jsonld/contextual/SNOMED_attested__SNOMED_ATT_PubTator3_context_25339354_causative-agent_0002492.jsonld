@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492",
+  "canon:title": "Dynamic carbon 13 breath tests for the study of liver function and gastric emptying.",
+  "canon:abstract": "In gastroenterological practice, breath tests (BTs) are diagnostic tools used for indirect, non-invasive assessment of several pathophysiological metabolic processes, by monitoring the appearance in breath of a metabolite of a specific substrate. Labelled substrates originally employed radioactive carbon 14 ((14)C) and, more recently, the stable carbon 13 isotope ((13)C) has been introduced to label specific substrates. The ingested (13)C-substrate is metabolized, and exhaled (13)CO2 is measured by mass spectrometry or infrared spectroscopy. Some (13)C-BTs evaluate specific (microsomal, cytosolic, and mitochondrial) hepatic metabolic pathways and can be employed in liver diseases (i.e. simple liver steatosis, non-alcoholic steato-hepatitis, liver fibrosis, cirrhosis, hepatocellular carcinoma, drug and alcohol effects). Another field of clinical application for (13)C-BTs is the assessment of gastric emptying kinetics in response to liquids ((13)C-acetate) or solids ((13)C-octanoic acid in egg yolk or in a pre-packed muffin or the (13)C-Spirulina platensis given with a meal or a biscuit). Studies have shown that (13)C-BTs, used for gastric emptying studies, yield results that are comparable to scintigraphy and can be useful in detecting either delayed- (gastroparesis) or accelerated gastric emptying or changes of gastric kinetics due to pharmacological effects. Thus, (13)C-BTs represent an indirect, cost-effective and easy method of evaluating dynamic liver function and gastric kinetics in health and disease, and several other potential applications are being studied. ",
+  "canon:text": "Dynamic carbon 13 breath tests for the study of liver function and gastric emptying. In gastroenterological practice, breath tests (BTs) are diagnostic tools used for indirect, non-invasive assessment of several pathophysiological metabolic processes, by monitoring the appearance in breath of a metabolite of a specific substrate. Labelled substrates originally employed radioactive carbon 14 ((14)C) and, more recently, the stable carbon 13 isotope ((13)C) has been introduced to label specific substrates. The ingested (13)C-substrate is metabolized, and exhaled (13)CO2 is measured by mass spectrometry or infrared spectroscopy. Some (13)C-BTs evaluate specific (microsomal, cytosolic, and mitochondrial) hepatic metabolic pathways and can be employed in liver diseases (i.e. simple liver steatosis, non-alcoholic steato-hepatitis, liver fibrosis, cirrhosis, hepatocellular carcinoma, drug and alcohol effects). Another field of clinical application for (13)C-BTs is the assessment of gastric emptying kinetics in response to liquids ((13)C-acetate) or solids ((13)C-octanoic acid in egg yolk or in a pre-packed muffin or the (13)C-Spirulina platensis given with a meal or a biscuit). Studies have shown that (13)C-BTs, used for gastric emptying studies, yield results that are comparable to scintigraphy and can be useful in detecting either delayed- (gastroparesis) or accelerated gastric emptying or changes of gastric kinetics due to pharmacological effects. Thus, (13)C-BTs represent an indirect, cost-effective and easy method of evaluating dynamic liver function and gastric kinetics in health and disease, and several other potential applications are being studied. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T1",
+      "canon:span": {
+        "start": 804,
+        "end": 834
+      },
+      "canon:surface": "non-alcoholic steato-hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T2",
+      "canon:span": {
+        "start": 384,
+        "end": 390
+      },
+      "canon:surface": "carbon",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002244",
+      "canon:sourceNotation": "D002244",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25339354_causative-agent_0002492#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25339354"
+      }
+    }
+  ]
+}

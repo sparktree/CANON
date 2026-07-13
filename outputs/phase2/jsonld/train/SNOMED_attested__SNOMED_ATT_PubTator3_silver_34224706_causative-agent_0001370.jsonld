@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34224706_causative-agent_0001370",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34224706_causative-agent_0001370",
+  "canon:title": "Sex-specific neurotoxic effects of heavy metal pollutants: Epidemiological, experimental evidence and candidate mechanisms.",
+  "canon:abstract": "The heavy metals lead (Pb), mercury (Hg), and cadmium (Cd) are ubiquitous environmental pollutants and are known to exert severe adverse impacts on the nervous system even at low concentrations. In contrast, the heavy metal manganese (Mn) is first and foremost an essential nutrient, but it becomes neurotoxic at high levels. Neurotoxic metals also include the less prevalent metalloid arsenic (As) which is found in excessive concentrations in drinking water and food sources in many regions of the world. Males and females often differ in how they respond to environmental exposures and adverse effects on their nervous systems are no exception. Here, we review the different types of sex-specific neurotoxic effects, such as cognitive and motor impairments, that have been attributed to Pb, Hg, Mn, Cd, and As exposure throughout the life course in epidemiological as well as in experimental toxicological studies. We also discuss differential vulnerability to these metals such as distinctions in behaviors and occupations across the sexes. Finally, we explore the different mechanisms hypothesized to account for sex-based differential susceptibility including hormonal, genetic, metabolic, anatomical, neurochemical, and epigenetic perturbations. An understanding of the sex-specific effects of environmental heavy metal neurotoxicity can aid in the development of more efficient systematic approaches in risk assessment and better exposure mitigation strategies with regard to sex-linked susceptibilities and vulnerabilities.",
+  "canon:text": "Sex-specific neurotoxic effects of heavy metal pollutants: Epidemiological, experimental evidence and candidate mechanisms. The heavy metals lead (Pb), mercury (Hg), and cadmium (Cd) are ubiquitous environmental pollutants and are known to exert severe adverse impacts on the nervous system even at low concentrations. In contrast, the heavy metal manganese (Mn) is first and foremost an essential nutrient, but it becomes neurotoxic at high levels. Neurotoxic metals also include the less prevalent metalloid arsenic (As) which is found in excessive concentrations in drinking water and food sources in many regions of the world. Males and females often differ in how they respond to environmental exposures and adverse effects on their nervous systems are no exception. Here, we review the different types of sex-specific neurotoxic effects, such as cognitive and motor impairments, that have been attributed to Pb, Hg, Mn, Cd, and As exposure throughout the life course in epidemiological as well as in experimental toxicological studies. We also discuss differential vulnerability to these metals such as distinctions in behaviors and occupations across the sexes. Finally, we explore the different mechanisms hypothesized to account for sex-based differential susceptibility including hormonal, genetic, metabolic, anatomical, neurochemical, and epigenetic perturbations. An understanding of the sex-specific effects of environmental heavy metal neurotoxicity can aid in the development of more efficient systematic approaches in risk assessment and better exposure mitigation strategies with regard to sex-linked susceptibilities and vulnerabilities.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34224706_causative-agent_0001370#mention-T1",
+      "canon:span": {
+        "start": 13,
+        "end": 31
+      },
+      "canon:surface": "neurotoxic effects",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34224706_causative-agent_0001370#mention-T2",
+      "canon:span": {
+        "start": 510,
+        "end": 517
+      },
+      "canon:surface": "arsenic",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001151",
+      "canon:sourceNotation": "D001151",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34224706_causative-agent_0001370#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34224706_causative-agent_0001370#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34224706_causative-agent_0001370#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34224706"
+      }
+    }
+  ]
+}

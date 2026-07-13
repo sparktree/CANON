@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23691526_due-to_0002375",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23691526_due-to_0002375",
+  "canon:title": "The spontaneously diabetic torii rat: an animal model of nonobese type 2 diabetes with severe diabetic complications.",
+  "canon:abstract": "The Spontaneously Diabetic Torii (SDT) rat is an inbred strain of Sprague-Dawley rat and recently is established as a nonobese model of type 2 diabetes (T2D). Male SDT rats show high plasma glucose levels (over 700 mg/dL) by 20 weeks. Male SDT rats show pancreatic islet histopathology, including hemorrhage in pancreatic islets and inflammatory cell infiltration with fibroblasts. Prior to the onset of diabetes, glucose intolerance with hypoinsulinemia is also observed. As a result of chronic severe hyperglycemia, the SDT rats develop profound complications. In eyes, retinopathy, cataract, and neovascular glaucoma are observed. Proliferative retinopathy, especially, resulting from retinal neovascular vessels is a unique characteristic of this model. In kidney, mesangial proliferation and nodular lesion are observed. Both peripheral neuropathy such as decreased nerve conduction velocity and thermal hypoalgesia and autonomic neuropathy such as diabetic diarrhea and voiding dysfunction have been reported. Osteoporosis is another complication characterized in SDT rat. Decreased bone density and low-turnover bone lesions are observed. Taking advantage of these features, SDT rat has been used for evaluating antidiabetic drugs and drugs/gene therapy for diabetic complications. In conclusion, the SDT rat is potentially a useful T2D model for studies on pathogenesis and treatment of diabetic complications in humans.",
+  "canon:text": "The spontaneously diabetic torii rat: an animal model of nonobese type 2 diabetes with severe diabetic complications. The Spontaneously Diabetic Torii (SDT) rat is an inbred strain of Sprague-Dawley rat and recently is established as a nonobese model of type 2 diabetes (T2D). Male SDT rats show high plasma glucose levels (over 700 mg/dL) by 20 weeks. Male SDT rats show pancreatic islet histopathology, including hemorrhage in pancreatic islets and inflammatory cell infiltration with fibroblasts. Prior to the onset of diabetes, glucose intolerance with hypoinsulinemia is also observed. As a result of chronic severe hyperglycemia, the SDT rats develop profound complications. In eyes, retinopathy, cataract, and neovascular glaucoma are observed. Proliferative retinopathy, especially, resulting from retinal neovascular vessels is a unique characteristic of this model. In kidney, mesangial proliferation and nodular lesion are observed. Both peripheral neuropathy such as decreased nerve conduction velocity and thermal hypoalgesia and autonomic neuropathy such as diabetic diarrhea and voiding dysfunction have been reported. Osteoporosis is another complication characterized in SDT rat. Decreased bone density and low-turnover bone lesions are observed. Taking advantage of these features, SDT rat has been used for evaluating antidiabetic drugs and drugs/gene therapy for diabetic complications. In conclusion, the SDT rat is potentially a useful T2D model for studies on pathogenesis and treatment of diabetic complications in humans.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23691526_due-to_0002375#mention-T1",
+      "canon:span": {
+        "start": 94,
+        "end": 116
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23691526_due-to_0002375#mention-T2",
+      "canon:span": {
+        "start": 18,
+        "end": 32
+      },
+      "canon:surface": "diabetic torii",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23691526_due-to_0002375#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23691526_due-to_0002375#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23691526_due-to_0002375#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23691526"
+      }
+    }
+  ]
+}

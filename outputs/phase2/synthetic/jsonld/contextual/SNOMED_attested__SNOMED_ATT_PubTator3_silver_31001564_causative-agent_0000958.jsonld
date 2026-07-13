@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31001564_causative-agent_0000958",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31001564_causative-agent_0000958",
+  "canon:title": "Exploring the Drug Repurposing Versatility of Valproic Acid as a Multifunctional Regulator of Innate and Adaptive Immune Cells.",
+  "canon:abstract": "Valproic acid (VPA) is widely recognized for its use in the control of epilepsy and other neurological disorders in the past 50 years. Recent evidence has shown the potential of VPA in the control of certain cancers, owed in part to its role in modulating epigenetic changes through the inhibition of histone deacetylases, affecting the expression of genes involved in the cell cycle, differentiation, and apoptosis. The direct impact of VPA in cells of the immune system has only been explored recently. In this review, we discuss the effects of VPA in the suppression of some activation mechanisms in several immune cells that lead to an anti-inflammatory response. As expected, immune cells are not exempt from the effect of VPA, as it also affects the expression of genes of the cell cycle and apoptosis through epigenetic modifications. In addition to inhibiting histone deacetylases, VPA promotes RNA interference, activates histone methyltransferases, or represses the activation of transcription factors. However, during the infectious process, the effectiveness of VPA is subject to the biological nature of the pathogen and the associated immune response; this is because VPA can promote the control or the progression of the infection. Due to its various effects, VPA is a promising alternative for the control of autoimmune diseases and hypersensitivity and needs to be further explored.",
+  "canon:text": "Exploring the Drug Repurposing Versatility of Valproic Acid as a Multifunctional Regulator of Innate and Adaptive Immune Cells. Valproic acid (VPA) is widely recognized for its use in the control of epilepsy and other neurological disorders in the past 50 years. Recent evidence has shown the potential of VPA in the control of certain cancers, owed in part to its role in modulating epigenetic changes through the inhibition of histone deacetylases, affecting the expression of genes involved in the cell cycle, differentiation, and apoptosis. The direct impact of VPA in cells of the immune system has only been explored recently. In this review, we discuss the effects of VPA in the suppression of some activation mechanisms in several immune cells that lead to an anti-inflammatory response. As expected, immune cells are not exempt from the effect of VPA, as it also affects the expression of genes of the cell cycle and apoptosis through epigenetic modifications. In addition to inhibiting histone deacetylases, VPA promotes RNA interference, activates histone methyltransferases, or represses the activation of transcription factors. However, during the infectious process, the effectiveness of VPA is subject to the biological nature of the pathogen and the associated immune response; this is because VPA can promote the control or the progression of the infection. Due to its various effects, VPA is a promising alternative for the control of autoimmune diseases and hypersensitivity and needs to be further explored.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31001564_causative-agent_0000958#mention-T1",
+      "canon:span": {
+        "start": 1477,
+        "end": 1493
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31001564_causative-agent_0000958#mention-T2",
+      "canon:span": {
+        "start": 46,
+        "end": 59
+      },
+      "canon:surface": "Valproic Acid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014635",
+      "canon:sourceNotation": "D014635",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31001564_causative-agent_0000958#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31001564_causative-agent_0000958#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31001564_causative-agent_0000958#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31001564"
+      }
+    }
+  ]
+}

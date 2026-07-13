@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31214762_causative-agent_0000990",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31214762_causative-agent_0000990",
+  "canon:title": "Aspects of vincristine-induced neuropathy in hematologic malignancies: a systematic review.",
+  "canon:abstract": "PURPOSE: Vincristine is widely used as anticancer therapy for a variety of hematological malignancies. The treatment is limited by progressive vincristine-induced neuropathy, possibly including both peripheral sensory and motor nerves, autonomic nervous functions, and the central nervous system. This dose-limiting side-effect can diminish quality of life and, furthermore, cause discontinuation of vincristine treatment. The present review elucidates the current knowledge regarding vincristine-induced neuropathy in hematologic malignancies, focusing on neuropathy assessment, clinical and molecular predictive markers, drug-drug interference, prevention, and treatment. METHODS: This review is conducted by a systematic search strategy for the identification of relevant literature in the PubMed and Embase databases. RESULTS: No clinical parameters displayed convincing potential as predictors of vincristine-induced neuropathy; however, preexisting neuropathy was consistently reported to be associated with an increased risk of neurotoxicity. In contrast, molecular markers, including polymorphisms in genes involved in the pharmacodynamics and pharmacokinetics of vincristine, displayed great potential as predictive markers of neuropathy incidence and severity. Furthermore, antifungal drugs, such as itraconazole and voriconazole, decrease the metabolism of vincristine and consequently lead to severe neuropathy when co-administered with vincristine, underscoring why fluconazole should be the antifungal drug of choice. CONCLUSION: Reports from the 71 included studies clearly emphasize the lack of consistency in neuropathy assessment, grading systems, and reporting, making it difficult to interpret results between studies. Thus, truer clinical and molecular markers could emerge if the consistency of neuropathy detection and reporting increases by the use of conventional standardized neuropathy assessment tools and grading scales.",
+  "canon:text": "Aspects of vincristine-induced neuropathy in hematologic malignancies: a systematic review. PURPOSE: Vincristine is widely used as anticancer therapy for a variety of hematological malignancies. The treatment is limited by progressive vincristine-induced neuropathy, possibly including both peripheral sensory and motor nerves, autonomic nervous functions, and the central nervous system. This dose-limiting side-effect can diminish quality of life and, furthermore, cause discontinuation of vincristine treatment. The present review elucidates the current knowledge regarding vincristine-induced neuropathy in hematologic malignancies, focusing on neuropathy assessment, clinical and molecular predictive markers, drug-drug interference, prevention, and treatment. METHODS: This review is conducted by a systematic search strategy for the identification of relevant literature in the PubMed and Embase databases. RESULTS: No clinical parameters displayed convincing potential as predictors of vincristine-induced neuropathy; however, preexisting neuropathy was consistently reported to be associated with an increased risk of neurotoxicity. In contrast, molecular markers, including polymorphisms in genes involved in the pharmacodynamics and pharmacokinetics of vincristine, displayed great potential as predictive markers of neuropathy incidence and severity. Furthermore, antifungal drugs, such as itraconazole and voriconazole, decrease the metabolism of vincristine and consequently lead to severe neuropathy when co-administered with vincristine, underscoring why fluconazole should be the antifungal drug of choice. CONCLUSION: Reports from the 71 included studies clearly emphasize the lack of consistency in neuropathy assessment, grading systems, and reporting, making it difficult to interpret results between studies. Thus, truer clinical and molecular markers could emerge if the consistency of neuropathy detection and reporting increases by the use of conventional standardized neuropathy assessment tools and grading scales.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31214762_causative-agent_0000990#mention-T1",
+      "canon:span": {
+        "start": 1127,
+        "end": 1140
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31214762_causative-agent_0000990#mention-T2",
+      "canon:span": {
+        "start": 11,
+        "end": 22
+      },
+      "canon:surface": "vincristine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014750",
+      "canon:sourceNotation": "D014750",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31214762_causative-agent_0000990#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31214762_causative-agent_0000990#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31214762_causative-agent_0000990#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31214762"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26389893_after_0002600",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26389893_after_0002600",
+  "canon:title": "Neuroprotective Strategies after Neonatal Hypoxic Ischemic Encephalopathy.",
+  "canon:abstract": "Neonatal hypoxic ischemic encephalopathy (HIE) is a devastating disease that primarily causes neuronal and white matter injury and is among the leading cause of death among infants. Currently there are no well-established treatments; thus, it is important to understand the pathophysiology of the disease and elucidate complications that are creating a gap between basic science and clinical translation. In the development of neuroprotective strategies and translation of experimental results in HIE, there are many limitations and challenges to master based on an appropriate study design, drug delivery properties, dosage, and use in neonates. We will identify understudied targets after HIE, as well as neuroprotective molecules that bring hope to future treatments such as melatonin, topiramate, xenon, interferon-beta, stem cell transplantation. This review will also discuss some of the most recent trials being conducted in the clinical setting and evaluate what directions are needed in the future. ",
+  "canon:text": "Neuroprotective Strategies after Neonatal Hypoxic Ischemic Encephalopathy. Neonatal hypoxic ischemic encephalopathy (HIE) is a devastating disease that primarily causes neuronal and white matter injury and is among the leading cause of death among infants. Currently there are no well-established treatments; thus, it is important to understand the pathophysiology of the disease and elucidate complications that are creating a gap between basic science and clinical translation. In the development of neuroprotective strategies and translation of experimental results in HIE, there are many limitations and challenges to master based on an appropriate study design, drug delivery properties, dosage, and use in neonates. We will identify understudied targets after HIE, as well as neuroprotective molecules that bring hope to future treatments such as melatonin, topiramate, xenon, interferon-beta, stem cell transplantation. This review will also discuss some of the most recent trials being conducted in the clinical setting and evaluate what directions are needed in the future. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26389893_after_0002600#mention-T1",
+      "canon:span": {
+        "start": 33,
+        "end": 73
+      },
+      "canon:surface": "Neonatal Hypoxic Ischemic Encephalopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26389893_after_0002600#mention-T2",
+      "canon:span": {
+        "start": 169,
+        "end": 201
+      },
+      "canon:surface": "neuronal and white matter injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056784",
+      "canon:sourceNotation": "D056784",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26389893_after_0002600#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26389893_after_0002600#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26389893_after_0002600#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26389893"
+      }
+    }
+  ]
+}

@@ -88,7 +88,9 @@ def setup_logging(log_path: Path, name: str) -> logging.Logger:
 
 
 def build_dataset(jsonl_path: Path, tokenizer, soft, max_docs: Optional[int],
-                  max_length: int, max_pairs: int, neg_ratio: float, seed: int) -> CanonDocDataset:
+                  max_length: int, max_pairs: int, neg_ratio: float, seed: int,
+                  *, exclude_corpora=(), hard_targets: bool = False,
+                  confidence_weighting: bool = True) -> CanonDocDataset:
     return CanonDocDataset(
         jsonl_path,
         tokenizer,
@@ -98,6 +100,9 @@ def build_dataset(jsonl_path: Path, tokenizer, soft, max_docs: Optional[int],
         neg_ratio=neg_ratio,
         max_pairs=max_pairs,
         seed=seed,
+        exclude_corpora=exclude_corpora,
+        hard_targets=hard_targets,
+        confidence_weighting=confidence_weighting,
     )
 
 
@@ -210,7 +215,10 @@ def evaluate(model: MultiTaskModel, loader: DataLoader, device: torch.device,
             scores = out["raw"]["norm"].get("scores")
             if scores is None or scores.numel() == 0:
                 continue
-            argmax = scores.argmax(dim=-1).cpu().tolist()
+            target_rows = out["raw"]["norm"].get("target_rows")
+            if target_rows is None or target_rows.numel() == 0:
+                continue
+            argmax = scores.index_select(0, target_rows).argmax(dim=-1).cpu().tolist()
             cid_lookup = model.norm_head.concept_ids
             # Walk through targets in the batch dim order to align with rows
             row = 0
@@ -220,7 +228,7 @@ def evaluate(model: MultiTaskModel, loader: DataLoader, device: torch.device,
                 for k, _ent_i in enumerate(ent_idx_list):
                     if k >= len(target_list):
                         continue
-                    if row >= scores.size(0):
+                    if row >= len(argmax):
                         break
                     pred_cid = cid_lookup[argmax[row]] if argmax[row] < len(cid_lookup) else None
                     target_p = target_list[k]
@@ -249,13 +257,12 @@ def evaluate(model: MultiTaskModel, loader: DataLoader, device: torch.device,
                 if isinstance(v, torch.Tensor):
                     batch[k] = v.to(device)
             out = model(batch, active_heads=("rel",))
-            for b, logits in enumerate(out["raw"]["rel"]["per_doc_logits"]):
-                if logits.numel() == 0:
-                    continue
-                pred = logits.argmax(dim=-1).cpu().tolist()
-                gold = batch["pair_labels"][b].cpu().tolist()
-                preds.extend(pred)
-                golds.extend(gold)
+            rel_out = out["raw"]["rel"]
+            logits_chunks = [x for x in rel_out["per_doc_bag_logits"] if x.numel()]
+            targets = rel_out.get("bag_targets")
+            if logits_chunks and targets is not None:
+                preds.extend(torch.cat(logits_chunks).argmax(dim=-1).cpu().tolist())
+                golds.extend(targets.argmax(dim=-1).cpu().tolist())
         f = relation_macro_f1(preds, golds)
         return {"rel_macro_f1": f, "rel_pairs": float(len(preds))}
     raise ValueError(f"Unknown head: {head}")
@@ -281,16 +288,24 @@ def train_head(args: argparse.Namespace) -> None:
     logger.info(f"head={head} epochs={epochs} batch={batch_size} max_docs={max_docs} smoke={smoke}")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tokenizer = AutoTokenizer.from_pretrained(str(config.SAPBERT_ENCODER_DIR))
+    encoder_dir = Path(args.encoder_dir)
+    concept_index_dir = Path(args.concept_index_dir)
+    concept_ids_path = concept_index_dir / "concept_ids.json"
+    concept_emb_path = concept_index_dir / "concept_emb.safetensors"
+    tokenizer = AutoTokenizer.from_pretrained(str(encoder_dir))
     pad_id = tokenizer.pad_token_id or 0
     soft = load_soft_lookup(config.SOFT_MAPPING_LOOKUP)
 
     train_ds = build_dataset(
         config.PHASE2_SPLITS_DIR / "train.jsonl",
-        tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=42)
+        tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=42,
+        exclude_corpora=args.exclude_corpus, hard_targets=args.hard_labels,
+        confidence_weighting=not args.no_confidence_weighting)
     dev_ds = build_dataset(
         config.PHASE2_SPLITS_DIR / "dev.jsonl",
-        tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=43)
+        tokenizer, soft, max_docs, args.max_length, args.max_pairs, args.neg_ratio, seed=43,
+        hard_targets=args.hard_labels,
+        confidence_weighting=not args.no_confidence_weighting)
 
     train_loader = DataLoader(train_ds, batch_size=batch_size, collate_fn=collate_fn_factory(pad_id))
     dev_loader = DataLoader(dev_ds, batch_size=batch_size, collate_fn=collate_fn_factory(pad_id))
@@ -298,17 +313,17 @@ def train_head(args: argparse.Namespace) -> None:
     # Model setup -- only the active head is constructed, others omitted.
     head_flags = {"ner": False, "norm": False, "rel": False}
     head_flags[head] = True
-    with open(config.CONCEPT_INDEX_IDS) as fh:
+    with concept_ids_path.open() as fh:
         num_concepts = len(json.load(fh))
     model = MultiTaskModel(
-        str(config.SAPBERT_ENCODER_DIR),
+        str(encoder_dir),
         num_concepts=num_concepts,
         ner=head_flags["ner"],
         norm=head_flags["norm"],
         rel=head_flags["rel"],
     )
     if head == "norm":
-        model.norm_head.load_concept_index(config.CONCEPT_INDEX_IDS, config.CONCEPT_INDEX_EMB)
+        model.norm_head.load_concept_index(concept_ids_path, concept_emb_path)
     model.to(device)
 
     # Ancestors for ancestor-match metric (norm head only).
@@ -345,6 +360,11 @@ def train_head(args: argparse.Namespace) -> None:
     metric_log_path.write_text("")
 
     for epoch in range(1, epochs + 1):
+        tau = 1.0 if epochs <= 1 else 1.0 - 0.8 * ((epoch - 1) / (epochs - 1))
+        if head == "norm":
+            model.norm_head.tau = tau
+        elif head == "rel":
+            model.rel_head.tau = tau
         if epoch <= half_epochs:
             model.freeze_encoder(True)
             phase = "frozen"
@@ -409,6 +429,11 @@ def train_head(args: argparse.Namespace) -> None:
         "best_metric": best_metric,
         "smoke_test": bool(smoke),
         "device": str(device),
+        "encoder_dir": str(encoder_dir),
+        "concept_index_dir": str(concept_index_dir),
+        "exclude_corpus": args.exclude_corpus,
+        "hard_labels": bool(args.hard_labels),
+        "confidence_weighting": not args.no_confidence_weighting,
     }
     with (output_dir / "training_summary.json").open("w", encoding="utf-8") as fh:
         json.dump(summary, fh, indent=2)
@@ -428,6 +453,14 @@ def main() -> None:
     parser.add_argument("--max-pairs", type=int, default=DEFAULT_MAX_PAIRS)
     parser.add_argument("--neg-ratio", type=float, default=DEFAULT_NEG_RATIO)
     parser.add_argument("--output-dir", default=str(config.STAGE1_DIR))
+    parser.add_argument("--encoder-dir", default=str(config.SAPBERT_ENCODER_DIR))
+    parser.add_argument("--concept-index-dir", default=str(config.CONCEPT_INDEX_DIR))
+    parser.add_argument("--exclude-corpus", action="append", default=[],
+                        help="Omit train documents whose corpus contains this string; repeatable.")
+    parser.add_argument("--hard-labels", action="store_true",
+                        help="Use declared concept/relation labels rather than soft distributions.")
+    parser.add_argument("--no-confidence-weighting", action="store_true",
+                        help="Set NER, normalization, and relation example weights to one.")
     args = parser.parse_args()
     train_head(args)
 

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142718_causative-agent_0004055",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36142718_causative-agent_0004055",
+  "canon:title": "Impact of Environmental Risk Factors on Mitochondrial Dysfunction, Neuroinflammation, Protein Misfolding, and Oxidative Stress in the Etiopathogenesis of Parkinson's Disease.",
+  "canon:abstract": "As a prevalent progressive neurodegenerative disorder, Parkinson's disease (PD) is characterized by the neuropathological hallmark of the loss of nigrostriatal dopaminergic (DAergic) innervation and the appearance of Lewy bodies with aggregated alpha-synuclein. Although several familial forms of PD have been reported to be associated with several gene variants, most cases in nature are sporadic, triggered by a complex interplay of genetic and environmental risk factors. Numerous epidemiological studies during the past two decades have shown positive associations between PD and several environmental factors, including exposure to neurotoxic pesticides/herbicides and heavy metals as well as traumatic brain injury. Other environmental factors that have been implicated as potential risk factors for PD include industrial chemicals, wood pulp mills, farming, well-water consumption, and rural residence. In this review, we summarize the environmental toxicology of PD with the focus on the elaboration of chemical toxicity and the underlying pathogenic mechanisms associated with exposure to several neurotoxic chemicals, specifically 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP), rotenone, paraquat (PQ), dichloro-diphenyl-trichloroethane (DDT), dieldrin, manganese (Mn), and vanadium (V). Our overview of the current findings from cellular, animal, and human studies of PD provides information for possible intervention strategies aimed at halting the initiation and exacerbation of environmentally linked PD.",
+  "canon:text": "Impact of Environmental Risk Factors on Mitochondrial Dysfunction, Neuroinflammation, Protein Misfolding, and Oxidative Stress in the Etiopathogenesis of Parkinson's Disease. As a prevalent progressive neurodegenerative disorder, Parkinson's disease (PD) is characterized by the neuropathological hallmark of the loss of nigrostriatal dopaminergic (DAergic) innervation and the appearance of Lewy bodies with aggregated alpha-synuclein. Although several familial forms of PD have been reported to be associated with several gene variants, most cases in nature are sporadic, triggered by a complex interplay of genetic and environmental risk factors. Numerous epidemiological studies during the past two decades have shown positive associations between PD and several environmental factors, including exposure to neurotoxic pesticides/herbicides and heavy metals as well as traumatic brain injury. Other environmental factors that have been implicated as potential risk factors for PD include industrial chemicals, wood pulp mills, farming, well-water consumption, and rural residence. In this review, we summarize the environmental toxicology of PD with the focus on the elaboration of chemical toxicity and the underlying pathogenic mechanisms associated with exposure to several neurotoxic chemicals, specifically 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP), rotenone, paraquat (PQ), dichloro-diphenyl-trichloroethane (DDT), dieldrin, manganese (Mn), and vanadium (V). Our overview of the current findings from cellular, animal, and human studies of PD provides information for possible intervention strategies aimed at halting the initiation and exacerbation of environmentally linked PD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142718_causative-agent_0004055#mention-T1",
+      "canon:span": {
+        "start": 812,
+        "end": 833
+      },
+      "canon:surface": "neurotoxic pesticides",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142718_causative-agent_0004055#mention-T2",
+      "canon:span": {
+        "start": 1316,
+        "end": 1360
+      },
+      "canon:surface": "1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D015632",
+      "canon:sourceNotation": "D015632",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142718_causative-agent_0004055#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142718_causative-agent_0004055#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36142718_causative-agent_0004055#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36142718"
+      }
+    }
+  ]
+}

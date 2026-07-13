@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32265719_due-to_0003258",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32265719_due-to_0003258",
+  "canon:title": "A Review of the Pharmacological Action of Astragalus Polysaccharide.",
+  "canon:abstract": "Astragalus membranaceus (A. membranaceus) is a type of traditional Chinese medicine with a long history of clinical application. It is used in the improvement and treatment of various diseases as medicine and food to invigorate the spleen and replenish qi. The main components of A. membranaceus are Astragalus polysaccharide (APS), flavonoids compounds, saponins compounds, alkaloids, etc. APS is the most important natural active component in A. membranaceus, and possesses multiple pharmacological properties. At present, APS possess the huge potential to develop a drug improving or treating different diseases. In this review, we reveal the potential approaches of pre-treating and preparation on APS as much as possible and the study on content of APS and its chemical composition including different monosaccharides. More importantly, this paper summarize pharmacological actions on immune regulation, such as enhancing the immune organ index, promoting the proliferation of immune cells, stimulating the release of cytokines, and affecting the secretion of immunoglobulin and conduction of immune signals; anti-aging; anti-tumor by enhancing immunity, inducing apoptosis of tumor cells and inhibiting the proliferation and transfer of tumor cells; antiviral effects; regulation of blood glucose such as type I diabetes mellitus, type II diabetes mellitus and diabetic complications; lipid-lowering; anti-fibrosis; antimicrobial activities and anti-radiation. It provided theoretical basis for the further research such as its structure and mechanism of action, and clinical application of APS.",
+  "canon:text": "A Review of the Pharmacological Action of Astragalus Polysaccharide. Astragalus membranaceus (A. membranaceus) is a type of traditional Chinese medicine with a long history of clinical application. It is used in the improvement and treatment of various diseases as medicine and food to invigorate the spleen and replenish qi. The main components of A. membranaceus are Astragalus polysaccharide (APS), flavonoids compounds, saponins compounds, alkaloids, etc. APS is the most important natural active component in A. membranaceus, and possesses multiple pharmacological properties. At present, APS possess the huge potential to develop a drug improving or treating different diseases. In this review, we reveal the potential approaches of pre-treating and preparation on APS as much as possible and the study on content of APS and its chemical composition including different monosaccharides. More importantly, this paper summarize pharmacological actions on immune regulation, such as enhancing the immune organ index, promoting the proliferation of immune cells, stimulating the release of cytokines, and affecting the secretion of immunoglobulin and conduction of immune signals; anti-aging; anti-tumor by enhancing immunity, inducing apoptosis of tumor cells and inhibiting the proliferation and transfer of tumor cells; antiviral effects; regulation of blood glucose such as type I diabetes mellitus, type II diabetes mellitus and diabetic complications; lipid-lowering; anti-fibrosis; antimicrobial activities and anti-radiation. It provided theoretical basis for the further research such as its structure and mechanism of action, and clinical application of APS.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32265719_due-to_0003258#mention-T1",
+      "canon:span": {
+        "start": 1436,
+        "end": 1458
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32265719_due-to_0003258#mention-T2",
+      "canon:span": {
+        "start": 1406,
+        "end": 1431
+      },
+      "canon:surface": "type II diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32265719_due-to_0003258#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32265719_due-to_0003258#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32265719_due-to_0003258#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32265719"
+      }
+    }
+  ]
+}

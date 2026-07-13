@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24971362_causative-agent_0002465",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24971362_causative-agent_0002465",
+  "canon:title": "Evaluating the effects and safety of intravenous lipid emulsion on haloperidol-induced neurotoxicity in rabbit.",
+  "canon:abstract": "There are many reports on the effect of intravenous lipid emulsion (ILE) as an antidote in drugs related toxicities. We determined the effects of ILE on neurotoxicity of haloperidol (HA), a highly lipophilic antipsychotic, as a model of antipsychotics poisoning. We used six groups of five male rabbits. Two groups received distilled water intravenously followed by infusions of either 18 mL/kg of normal saline or ILE 20%, after 30 minutes. The third group received 18 mL/kg of normal saline after HA (2.6 mg/kg) administration. The three other groups received ILE 20% solution (6, 12, and 18 mL/kg) following HA injection. Catalepsy scores, temperature, pupil size, and mortality rate were measured at 0, 0.5, 1, 2, 3, 4, 8, and 24 hours after HA administration began. Blood and tissue samples were taken from all animals at 24 hours or at death time for biochemical, cell count, and pathological studies. ILE reversed cataleptic scores, miotic pupils, and hypothermia of HA intoxication much faster than normal saline (P < 0.001). Biochemical complications and mortality rate of the animals were significantly higher in the HA + 18 mL/Kg ILE group. ILE reversed sings of HA neurotoxicity; however, synergistic effect of high dose of ILE and HA increased complications and mortality.",
+  "canon:text": "Evaluating the effects and safety of intravenous lipid emulsion on haloperidol-induced neurotoxicity in rabbit. There are many reports on the effect of intravenous lipid emulsion (ILE) as an antidote in drugs related toxicities. We determined the effects of ILE on neurotoxicity of haloperidol (HA), a highly lipophilic antipsychotic, as a model of antipsychotics poisoning. We used six groups of five male rabbits. Two groups received distilled water intravenously followed by infusions of either 18 mL/kg of normal saline or ILE 20%, after 30 minutes. The third group received 18 mL/kg of normal saline after HA (2.6 mg/kg) administration. The three other groups received ILE 20% solution (6, 12, and 18 mL/kg) following HA injection. Catalepsy scores, temperature, pupil size, and mortality rate were measured at 0, 0.5, 1, 2, 3, 4, 8, and 24 hours after HA administration began. Blood and tissue samples were taken from all animals at 24 hours or at death time for biochemical, cell count, and pathological studies. ILE reversed cataleptic scores, miotic pupils, and hypothermia of HA intoxication much faster than normal saline (P < 0.001). Biochemical complications and mortality rate of the animals were significantly higher in the HA + 18 mL/Kg ILE group. ILE reversed sings of HA neurotoxicity; however, synergistic effect of high dose of ILE and HA increased complications and mortality.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24971362_causative-agent_0002465#mention-T1",
+      "canon:span": {
+        "start": 87,
+        "end": 100
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24971362_causative-agent_0002465#mention-T2",
+      "canon:span": {
+        "start": 67,
+        "end": 78
+      },
+      "canon:surface": "haloperidol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006220",
+      "canon:sourceNotation": "D006220",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24971362_causative-agent_0002465#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24971362_causative-agent_0002465#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24971362_causative-agent_0002465#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24971362"
+      }
+    }
+  ]
+}

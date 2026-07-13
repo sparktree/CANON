@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34309858_causative-agent_0003635",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34309858_causative-agent_0003635",
+  "canon:title": "Pediatric thiamine deficiency disorders in high-income countries between 2000 and 2020: a clinical reappraisal.",
+  "canon:abstract": "Often thought to be a nutritional issue limited to low- and middle-income countries (LMICs), pediatric thiamine deficiency (PTD) is perceived as being eradicated or anecdotal in high-income countries (HICs). In HICs, classic beriberi cases in breastfed infants by thiamine-deficient mothers living in disadvantaged socioeconomic conditions are thought to be rare. This study aims to assess PTD in HICs in the 21st century. Literature searches were conducted to identify case reports of PTD observed in HICs and published between 2000 and 2020. The analyzed variables were age, country, underlying conditions, clinical manifestations of PTD, and response to thiamine supplementation. One hundred and ten articles were identified, totaling 389 PTD cases that were classified into four age groups: neonates, infants, children, and adolescents. Eleven categories of PTD-predisposing factors were identified, including genetic causes, lifestyle (diabetes, obesity, and excessive consumption of sweetened beverages), eating disorders, cancer, gastrointestinal disorders/surgeries, critical illness, and artificial nutrition. TD-associated hyperlactatemia and Wernicke encephalopathy were the most frequent clinical manifestations. The circumstances surrounding PTD in HICs differ from classic PTD observed in LMICs and this study delineates its mutiple predisposing factors. Further studies are required to estimate its magnitude. Awareness is of utmost importance in clinical practice.",
+  "canon:text": "Pediatric thiamine deficiency disorders in high-income countries between 2000 and 2020: a clinical reappraisal. Often thought to be a nutritional issue limited to low- and middle-income countries (LMICs), pediatric thiamine deficiency (PTD) is perceived as being eradicated or anecdotal in high-income countries (HICs). In HICs, classic beriberi cases in breastfed infants by thiamine-deficient mothers living in disadvantaged socioeconomic conditions are thought to be rare. This study aims to assess PTD in HICs in the 21st century. Literature searches were conducted to identify case reports of PTD observed in HICs and published between 2000 and 2020. The analyzed variables were age, country, underlying conditions, clinical manifestations of PTD, and response to thiamine supplementation. One hundred and ten articles were identified, totaling 389 PTD cases that were classified into four age groups: neonates, infants, children, and adolescents. Eleven categories of PTD-predisposing factors were identified, including genetic causes, lifestyle (diabetes, obesity, and excessive consumption of sweetened beverages), eating disorders, cancer, gastrointestinal disorders/surgeries, critical illness, and artificial nutrition. TD-associated hyperlactatemia and Wernicke encephalopathy were the most frequent clinical manifestations. The circumstances surrounding PTD in HICs differ from classic PTD observed in LMICs and this study delineates its mutiple predisposing factors. Further studies are required to estimate its magnitude. Awareness is of utmost importance in clinical practice.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34309858_causative-agent_0003635#mention-T1",
+      "canon:span": {
+        "start": 1231,
+        "end": 1233
+      },
+      "canon:surface": "TD",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34309858_causative-agent_0003635#mention-T2",
+      "canon:span": {
+        "start": 769,
+        "end": 777
+      },
+      "canon:surface": "thiamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013831",
+      "canon:sourceNotation": "D013831",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34309858_causative-agent_0003635#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34309858_causative-agent_0003635#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34309858_causative-agent_0003635#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34309858"
+      }
+    }
+  ]
+}

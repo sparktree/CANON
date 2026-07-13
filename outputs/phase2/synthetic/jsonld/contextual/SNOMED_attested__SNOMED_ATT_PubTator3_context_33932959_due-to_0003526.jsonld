@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33932959_due-to_0003526",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33932959_due-to_0003526",
+  "canon:title": "The role of mitochondria in metabolic disease: a special emphasis on heart dysfunction.",
+  "canon:abstract": "Metabolic diseases (MetDs) embrace a series of pathologies characterized by abnormal body glucose usage. The known diseases included in this group are metabolic syndrome, prediabetes and diabetes mellitus types 1 and 2. All of them are chronic pathologies that present metabolic disturbances and are classified as multi-organ diseases. Cardiomyopathy has been extensively described in diabetic patients without overt macrovascular complications. The heart is severely damaged during the progression of the disease; in fact, diabetic cardiomyopathies are the main cause of death in MetDs. Insulin resistance, hyperglycaemia and increased free fatty acid metabolism promote cardiac damage through mitochondria. These organelles supply most of the energy that the heart needs to beat and to control essential cellular functions, including Ca2+ signalling modulation, reactive oxygen species production and apoptotic cell death regulation. Several aspects of common mitochondrial functions have been described as being altered in diabetic cardiomyopathies, including impaired energy metabolism, compromised mitochondrial dynamics, deficiencies in Ca2+ handling, increases in reactive oxygen species production, and a higher probability of mitochondrial permeability transition pore opening. Therefore, the mitochondrial role in MetD-mediated heart dysfunction has been studied extensively to identify potential therapeutic targets for improving cardiac performance. Herein we review the cardiac pathology in metabolic syndrome, prediabetes and diabetes mellitus, focusing on the role of mitochondrial dysfunctions.",
+  "canon:text": "The role of mitochondria in metabolic disease: a special emphasis on heart dysfunction. Metabolic diseases (MetDs) embrace a series of pathologies characterized by abnormal body glucose usage. The known diseases included in this group are metabolic syndrome, prediabetes and diabetes mellitus types 1 and 2. All of them are chronic pathologies that present metabolic disturbances and are classified as multi-organ diseases. Cardiomyopathy has been extensively described in diabetic patients without overt macrovascular complications. The heart is severely damaged during the progression of the disease; in fact, diabetic cardiomyopathies are the main cause of death in MetDs. Insulin resistance, hyperglycaemia and increased free fatty acid metabolism promote cardiac damage through mitochondria. These organelles supply most of the energy that the heart needs to beat and to control essential cellular functions, including Ca2+ signalling modulation, reactive oxygen species production and apoptotic cell death regulation. Several aspects of common mitochondrial functions have been described as being altered in diabetic cardiomyopathies, including impaired energy metabolism, compromised mitochondrial dynamics, deficiencies in Ca2+ handling, increases in reactive oxygen species production, and a higher probability of mitochondrial permeability transition pore opening. Therefore, the mitochondrial role in MetD-mediated heart dysfunction has been studied extensively to identify potential therapeutic targets for improving cardiac performance. Herein we review the cardiac pathology in metabolic syndrome, prediabetes and diabetes mellitus, focusing on the role of mitochondrial dysfunctions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33932959_due-to_0003526#mention-T1",
+      "canon:span": {
+        "start": 612,
+        "end": 637
+      },
+      "canon:surface": "diabetic cardiomyopathies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33932959_due-to_0003526#mention-T2",
+      "canon:span": {
+        "start": 676,
+        "end": 694
+      },
+      "canon:surface": "Insulin resistance",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007333",
+      "canon:sourceNotation": "D007333",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33932959_due-to_0003526#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33932959_due-to_0003526#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33932959_due-to_0003526#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33932959"
+      }
+    }
+  ]
+}

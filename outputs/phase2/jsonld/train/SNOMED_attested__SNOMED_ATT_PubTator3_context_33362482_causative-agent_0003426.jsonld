@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33362482_causative-agent_0003426",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33362482_causative-agent_0003426",
+  "canon:title": "The Inferior Colliculus in Alcoholism and Beyond.",
+  "canon:abstract": "Post-mortem neuropathological and in vivo neuroimaging methods have demonstrated the vulnerability of the inferior colliculus to the sequelae of thiamine deficiency as occurs in Wernicke-Korsakoff Syndrome (WKS). A rich literature in animal models ranging from mice to monkeys-including our neuroimaging studies in rats-has shown involvement of the inferior colliculi in the neural response to thiamine depletion, frequently accomplished with pyrithiamine, an inhibitor of thiamine metabolism. In uncomplicated alcoholism (i.e., absent diagnosable neurological concomitants), the literature citing involvement of the inferior colliculus is scarce, has nearly all been accomplished in preclinical models, and is predominately discussed in the context of ethanol withdrawal. Our recent work using novel, voxel-based analysis of structural Magnetic Resonance Imaging (MRI) has demonstrated significant, persistent shrinkage of the inferior colliculus using acute and chronic ethanol exposure paradigms in two strains of rats. We speculate that these consistent findings should be considered from the perspective of the inferior colliculi having a relatively high CNS metabolic rate. As such, they are especially vulnerable to hypoxic injury and may be provide a common anatomical link among a variety of disparate insults. An argument will be made that the inferior colliculi have functions, possibly related to auditory gating, necessary for awareness of the external environment. Multimodal imaging including diffusion methods to provide more accurate in vivo visualization and quantification of the inferior colliculi may clarify the roles of brain stem nuclei such as the inferior colliculi in alcoholism and other neuropathologies marked by altered metabolism.",
+  "canon:text": "The Inferior Colliculus in Alcoholism and Beyond. Post-mortem neuropathological and in vivo neuroimaging methods have demonstrated the vulnerability of the inferior colliculus to the sequelae of thiamine deficiency as occurs in Wernicke-Korsakoff Syndrome (WKS). A rich literature in animal models ranging from mice to monkeys-including our neuroimaging studies in rats-has shown involvement of the inferior colliculi in the neural response to thiamine depletion, frequently accomplished with pyrithiamine, an inhibitor of thiamine metabolism. In uncomplicated alcoholism (i.e., absent diagnosable neurological concomitants), the literature citing involvement of the inferior colliculus is scarce, has nearly all been accomplished in preclinical models, and is predominately discussed in the context of ethanol withdrawal. Our recent work using novel, voxel-based analysis of structural Magnetic Resonance Imaging (MRI) has demonstrated significant, persistent shrinkage of the inferior colliculus using acute and chronic ethanol exposure paradigms in two strains of rats. We speculate that these consistent findings should be considered from the perspective of the inferior colliculi having a relatively high CNS metabolic rate. As such, they are especially vulnerable to hypoxic injury and may be provide a common anatomical link among a variety of disparate insults. An argument will be made that the inferior colliculi have functions, possibly related to auditory gating, necessary for awareness of the external environment. Multimodal imaging including diffusion methods to provide more accurate in vivo visualization and quantification of the inferior colliculi may clarify the roles of brain stem nuclei such as the inferior colliculi in alcoholism and other neuropathologies marked by altered metabolism.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33362482_causative-agent_0003426#mention-T1",
+      "canon:span": {
+        "start": 228,
+        "end": 255
+      },
+      "canon:surface": "Wernicke-Korsakoff Syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020915",
+      "canon:sourceNotation": "D020915",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33362482_causative-agent_0003426#mention-T2",
+      "canon:span": {
+        "start": 803,
+        "end": 810
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33362482_causative-agent_0003426#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33362482_causative-agent_0003426#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33362482_causative-agent_0003426#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33362482"
+      }
+    }
+  ]
+}

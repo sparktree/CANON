@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34367496_causative-agent_0003650",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34367496_causative-agent_0003650",
+  "canon:title": "Liver injury associated with drug intake during pregnancy.",
+  "canon:abstract": "Drug use during pregnancy is not common. Drug-induced liver injury (DILI) is a potential complication that is rare but can adversely affect both the mother and the fetus. Although many drugs can directly cause hepatotoxicity, idiosyncratic liver injury is common in pregnancy. Underreporting of adverse drug reactions, lack of adequate literature regarding drug safety in pregnancy, and the inherent difficulty in diagnosing DILI during pregnancy make the management of this condition challenging. This review attempts to describe the existing literature regarding DILI in pregnancy, which is mainly in the form of case reports; several studies have looked at the safety of antithyroid drugs, antiretroviral drugs, and paracetamol, which have an indication for use in pregnancy; the relevant data from these studies with regard to DILI has been presented. In addition, the review describes the diagnosis of DILI, grading the disease severity, assessment of causality linking the drug to the adverse event, regulatory guidelines for evaluating the potential of drugs to cause liver injury, efforts to ensure better participation of women in clinical trials and studies in pregnant women population in particular, and the challenges involved in generating adequate research evidence. The establishment of DILI registries in various countries is an encouraging development; however, there is a need for promoting active, spontaneous reporting of adverse events during pregnancy to ensure rapid generation of evidence regarding the safety of a drug in pregnant women.",
+  "canon:text": "Liver injury associated with drug intake during pregnancy. Drug use during pregnancy is not common. Drug-induced liver injury (DILI) is a potential complication that is rare but can adversely affect both the mother and the fetus. Although many drugs can directly cause hepatotoxicity, idiosyncratic liver injury is common in pregnancy. Underreporting of adverse drug reactions, lack of adequate literature regarding drug safety in pregnancy, and the inherent difficulty in diagnosing DILI during pregnancy make the management of this condition challenging. This review attempts to describe the existing literature regarding DILI in pregnancy, which is mainly in the form of case reports; several studies have looked at the safety of antithyroid drugs, antiretroviral drugs, and paracetamol, which have an indication for use in pregnancy; the relevant data from these studies with regard to DILI has been presented. In addition, the review describes the diagnosis of DILI, grading the disease severity, assessment of causality linking the drug to the adverse event, regulatory guidelines for evaluating the potential of drugs to cause liver injury, efforts to ensure better participation of women in clinical trials and studies in pregnant women population in particular, and the challenges involved in generating adequate research evidence. The establishment of DILI registries in various countries is an encouraging development; however, there is a need for promoting active, spontaneous reporting of adverse events during pregnancy to ensure rapid generation of evidence regarding the safety of a drug in pregnant women.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34367496_causative-agent_0003650#mention-T1",
+      "canon:span": {
+        "start": 362,
+        "end": 376
+      },
+      "canon:surface": "drug reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34367496_causative-agent_0003650#mention-T2",
+      "canon:span": {
+        "start": 778,
+        "end": 789
+      },
+      "canon:surface": "paracetamol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34367496_causative-agent_0003650#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34367496_causative-agent_0003650#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34367496_causative-agent_0003650#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34367496"
+      }
+    }
+  ]
+}

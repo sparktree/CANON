@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33803588_due-to_0001305",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33803588_due-to_0001305",
+  "canon:title": "The Influence of Plant Extracts and Phytoconstituents on Antioxidant Enzymes Activity and Gene Expression in the Prevention and Treatment of Impaired Glucose Homeostasis and Diabetes Complications.",
+  "canon:abstract": "Diabetes is a complex metabolic disorder resulting either from insulin resistance or an impaired insulin secretion. Prolonged elevated blood glucose concentration, the key clinical sign of diabetes, initiates an enhancement of reactive oxygen species derived from glucose autoxidation and glycosylation of proteins. Consequently, chronic oxidative stress overwhelms cellular endogenous antioxidant defenses and leads to the acute and long-standing structural and functional changes of macromolecules resulting in impaired cellular functioning, cell death and organ dysfunction. The oxidative stress provoked chain of pathological events over time cause diabetic complications such as nephropathy, peripheral neuropathy, cardiomyopathy, retinopathy, hypertension, and liver disease. Under diabetic conditions, accompanying genome/epigenome and metabolite markers alterations may also affect glucose homeostasis, pancreatic beta-cells, muscle, liver, and adipose tissue. By providing deeper genetic/epigenetic insight of direct or indirect dietary effects, nutrigenomics offers a promising opportunity to improve the quality of life of diabetic patients. Natural plant extracts, or their naturally occurring compounds, were shown to be very proficient in the prevention and treatment of different pathologies associated with oxidative stress including diabetes and its complications. Considering that food intake is one of the crucial components in diabetes' prevalence, progression and complications, this review summarizes the effect of the major plant secondary metabolite and phytoconstituents on the antioxidant enzymes activity and gene expression under diabetic conditions.",
+  "canon:text": "The Influence of Plant Extracts and Phytoconstituents on Antioxidant Enzymes Activity and Gene Expression in the Prevention and Treatment of Impaired Glucose Homeostasis and Diabetes Complications. Diabetes is a complex metabolic disorder resulting either from insulin resistance or an impaired insulin secretion. Prolonged elevated blood glucose concentration, the key clinical sign of diabetes, initiates an enhancement of reactive oxygen species derived from glucose autoxidation and glycosylation of proteins. Consequently, chronic oxidative stress overwhelms cellular endogenous antioxidant defenses and leads to the acute and long-standing structural and functional changes of macromolecules resulting in impaired cellular functioning, cell death and organ dysfunction. The oxidative stress provoked chain of pathological events over time cause diabetic complications such as nephropathy, peripheral neuropathy, cardiomyopathy, retinopathy, hypertension, and liver disease. Under diabetic conditions, accompanying genome/epigenome and metabolite markers alterations may also affect glucose homeostasis, pancreatic beta-cells, muscle, liver, and adipose tissue. By providing deeper genetic/epigenetic insight of direct or indirect dietary effects, nutrigenomics offers a promising opportunity to improve the quality of life of diabetic patients. Natural plant extracts, or their naturally occurring compounds, were shown to be very proficient in the prevention and treatment of different pathologies associated with oxidative stress including diabetes and its complications. Considering that food intake is one of the crucial components in diabetes' prevalence, progression and complications, this review summarizes the effect of the major plant secondary metabolite and phytoconstituents on the antioxidant enzymes activity and gene expression under diabetic conditions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33803588_due-to_0001305#mention-T1",
+      "canon:span": {
+        "start": 174,
+        "end": 196
+      },
+      "canon:surface": "Diabetes Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33803588_due-to_0001305#mention-T2",
+      "canon:span": {
+        "start": 198,
+        "end": 206
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33803588_due-to_0001305#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33803588_due-to_0001305#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33803588_due-to_0001305#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33803588"
+      }
+    }
+  ]
+}

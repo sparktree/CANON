@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30275849_causative-agent_0000886",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30275849_causative-agent_0000886",
+  "canon:title": "Drug allergy.",
+  "canon:abstract": "Drug allergy encompasses a spectrum of immunologically-mediated hypersensitivity reactions with varying mechanisms and clinical presentations. This type of adverse drug reaction not only affects patient quality of life, but may also lead to delayed treatment, unnecessary investigations, and even mortality. Given the myriad of symptoms associated with the condition, diagnosis is often challenging. Therefore, referral to an allergist experienced in the identification, diagnosis and management of drug allergy is recommended if a drug-induced allergic reaction is suspected. Diagnosis relies on a careful history and physical examination and, in some instances, skin testing and graded challenges. Induction of drug tolerance procedures may also be required. The most effective strategy for the management of drug allergy is avoidance or discontinuation of the offending drug. When available, alternative medications with unrelated chemical structures should be substituted. Cross-reactivity among drugs should be taken into consideration when choosing alternative agents. Additional therapy for drug hypersensitivity reactions is largely supportive and may include topical corticosteroids, oral antihistamines and, in severe cases, systemic corticosteroids. In the event of anaphylaxis, the treatment of choice is injectable epinephrine. If a particular drug to which the patient is allergic is indicated and there is no suitable alternative, induction of drug tolerance procedures may be considered to induce temporary tolerance to the drug. This article provides a background on drug allergy and strategies for the diagnosis and management of some of the most common drug-induced allergic reactions, such as penicillin, sulfonamides, cephalosporins, radiocontrast media, local anesthetics, general anesthetics, acetylsalicylic acid and non-steroidal anti-inflammatory drugs, and therapeutic monoclonal antibodies.",
+  "canon:text": "Drug allergy. Drug allergy encompasses a spectrum of immunologically-mediated hypersensitivity reactions with varying mechanisms and clinical presentations. This type of adverse drug reaction not only affects patient quality of life, but may also lead to delayed treatment, unnecessary investigations, and even mortality. Given the myriad of symptoms associated with the condition, diagnosis is often challenging. Therefore, referral to an allergist experienced in the identification, diagnosis and management of drug allergy is recommended if a drug-induced allergic reaction is suspected. Diagnosis relies on a careful history and physical examination and, in some instances, skin testing and graded challenges. Induction of drug tolerance procedures may also be required. The most effective strategy for the management of drug allergy is avoidance or discontinuation of the offending drug. When available, alternative medications with unrelated chemical structures should be substituted. Cross-reactivity among drugs should be taken into consideration when choosing alternative agents. Additional therapy for drug hypersensitivity reactions is largely supportive and may include topical corticosteroids, oral antihistamines and, in severe cases, systemic corticosteroids. In the event of anaphylaxis, the treatment of choice is injectable epinephrine. If a particular drug to which the patient is allergic is indicated and there is no suitable alternative, induction of drug tolerance procedures may be considered to induce temporary tolerance to the drug. This article provides a background on drug allergy and strategies for the diagnosis and management of some of the most common drug-induced allergic reactions, such as penicillin, sulfonamides, cephalosporins, radiocontrast media, local anesthetics, general anesthetics, acetylsalicylic acid and non-steroidal anti-inflammatory drugs, and therapeutic monoclonal antibodies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30275849_causative-agent_0000886#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 12
+      },
+      "canon:surface": "Drug allergy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30275849_causative-agent_0000886#mention-T2",
+      "canon:span": {
+        "start": 1342,
+        "end": 1353
+      },
+      "canon:surface": "epinephrine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004837",
+      "canon:sourceNotation": "D004837",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30275849_causative-agent_0000886#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30275849_causative-agent_0000886#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30275849_causative-agent_0000886#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30275849"
+      }
+    }
+  ]
+}

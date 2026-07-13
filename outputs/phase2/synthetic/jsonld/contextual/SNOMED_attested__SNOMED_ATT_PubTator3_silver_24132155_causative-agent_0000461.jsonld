@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24132155_causative-agent_0000461",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24132155_causative-agent_0000461",
+  "canon:title": "Multiple hits, including oxidative stress, as pathogenesis and treatment target in non-alcoholic steatohepatitis (NASH).",
+  "canon:abstract": "Multiple parallel hits, including genetic differences, insulin resistance and intestinal microbiota, account for the progression of non-alcoholic steatohepatitis (NASH). Multiple hits induce adipokine secretion, endoplasmic reticulum (ER) and oxidative stress at the cellular level that subsequently induce hepatic steatosis, inflammation and fibrosis, among which oxidative stress is considered a key contributor to progression from simple fatty liver to NASH. Although several clinical trials have shown that anti-oxidative therapy can effectively control hepatitis activities in the short term, the long-term effect remains obscure. Several trials of long-term anti-oxidant protocols aimed at treating cerebrovascular diseases or cancer development have failed to produce a benefit. This might be explained by the non-selective anti-oxidative properties of these drugs. Molecular hydrogen is an effective antioxidant that reduces only cytotoxic reactive oxygen species (ROS) and several diseases associated with oxidative stress are sensitive to hydrogen. The progress of NASH to hepatocellular carcinoma can be controlled using hydrogen-rich water. Thus, targeting mitochondrial oxidative stress might be a good candidate for NASH treatment. Long term clinical intervention is needed to control this complex lifestyle-related disease. ",
+  "canon:text": "Multiple hits, including oxidative stress, as pathogenesis and treatment target in non-alcoholic steatohepatitis (NASH). Multiple parallel hits, including genetic differences, insulin resistance and intestinal microbiota, account for the progression of non-alcoholic steatohepatitis (NASH). Multiple hits induce adipokine secretion, endoplasmic reticulum (ER) and oxidative stress at the cellular level that subsequently induce hepatic steatosis, inflammation and fibrosis, among which oxidative stress is considered a key contributor to progression from simple fatty liver to NASH. Although several clinical trials have shown that anti-oxidative therapy can effectively control hepatitis activities in the short term, the long-term effect remains obscure. Several trials of long-term anti-oxidant protocols aimed at treating cerebrovascular diseases or cancer development have failed to produce a benefit. This might be explained by the non-selective anti-oxidative properties of these drugs. Molecular hydrogen is an effective antioxidant that reduces only cytotoxic reactive oxygen species (ROS) and several diseases associated with oxidative stress are sensitive to hydrogen. The progress of NASH to hepatocellular carcinoma can be controlled using hydrogen-rich water. Thus, targeting mitochondrial oxidative stress might be a good candidate for NASH treatment. Long term clinical intervention is needed to control this complex lifestyle-related disease. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24132155_causative-agent_0000461#mention-T1",
+      "canon:span": {
+        "start": 679,
+        "end": 688
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24132155_causative-agent_0000461#mention-T2",
+      "canon:span": {
+        "start": 1004,
+        "end": 1012
+      },
+      "canon:surface": "hydrogen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006859",
+      "canon:sourceNotation": "D006859",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24132155_causative-agent_0000461#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24132155_causative-agent_0000461#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24132155_causative-agent_0000461#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24132155"
+      }
+    }
+  ]
+}

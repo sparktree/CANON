@@ -124,6 +124,12 @@ def stamp_relation(rel: Relation, doc: Document, defaulted_counter: Counter) -> 
             tier=DEFAULT_TIER,
             target_probability=DEFAULT_PROBABILITY,
             novelty=rel.novelty,
+            confidence=rel.confidence,
+            target_candidates=[{
+                "target_relation": DEFAULT_TARGET,
+                "tier": DEFAULT_TIER,
+                "probability": DEFAULT_PROBABILITY,
+            }],
             extra={
                 **rel.extra,
                 "subject_class": subj_class,
@@ -146,6 +152,8 @@ def stamp_relation(rel: Relation, doc: Document, defaulted_counter: Counter) -> 
         tier=best.tier,
         target_probability=best.probability,
         novelty=rel.novelty,
+        confidence=rel.confidence,
+        target_candidates=_candidate_dicts(mappings),
         extra={
             **rel.extra,
             "subject_class": subj_class,

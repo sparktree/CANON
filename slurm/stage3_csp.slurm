@@ -1,12 +1,13 @@
 #!/bin/bash
-# CANON Phase 3.5 -- CSP solver inference pass over dev/test splits (CPU).
+# CANON Phase 3.5 -- CSP solver inference pass over dev/test splits.
 
 #SBATCH --job-name=canon-csp
-#SBATCH --partition=general
+#SBATCH --partition=gpu
 #SBATCH --account=r00877
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=4
+#SBATCH --gpus-per-node=1
 #SBATCH --mem=32G
 #SBATCH --time=02:00:00
 #SBATCH --output=/N/slate/alikh/canon/logs/csp.%j.out
@@ -32,7 +33,7 @@ cd "$CANON_REPO"
 mkdir -p "$CANON_ROOT/logs"
 echo "[csp] node=$(hostname) cpus=$(nproc)"
 
-python scripts/csp_solver.py --split dev --top-k-types 2 --top-k-concepts 10 --top-k-relations 3 --timeout-ms 5000
-python scripts/csp_solver.py --split test --top-k-types 2 --top-k-concepts 10 --top-k-relations 3 --timeout-ms 5000
+python scripts/csp_solver.py --split dev --model-dir "$CANON_OUTPUTS_ROOT/phase3/stage3/best" --top-k-types 2 --top-k-concepts 10 --top-k-relations 3 --timeout-ms 5000
+python scripts/csp_solver.py --split test --model-dir "$CANON_OUTPUTS_ROOT/phase3/stage3/best" --top-k-types 2 --top-k-concepts 10 --top-k-relations 3 --timeout-ms 5000
 
 echo "[csp] done -> $CANON_OUTPUTS_ROOT/phase3/csp_predictions/"

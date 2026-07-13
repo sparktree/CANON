@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29294244_causative-agent_0000813",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29294244_causative-agent_0000813",
+  "canon:title": "Multiple Immune-Inflammatory and Oxidative and Nitrosative Stress Pathways Explain the Frequent Presence of Depression in Multiple Sclerosis.",
+  "canon:abstract": "Patients with a diagnosis of multiple sclerosis (MS) or major depressive disorder (MDD) share a wide array of biological abnormalities which are increasingly considered to play a contributory role in the pathogenesis and pathophysiology of both illnesses. Shared abnormalities include peripheral inflammation, neuroinflammation, chronic oxidative and nitrosative stress, mitochondrial dysfunction, gut dysbiosis, increased intestinal barrier permeability with bacterial translocation into the systemic circulation, neuroendocrine abnormalities and microglial pathology. Patients with MS and MDD also display a wide range of neuroimaging abnormalities and patients with MS who display symptoms of depression present with different neuroimaging profiles compared with MS patients who are depression-free. The precise details of such pathology are markedly different however. The recruitment of activated encephalitogenic Th17 T cells and subsequent bidirectional interaction leading to classically activated microglia is now considered to lie at the core of MS-specific pathology. The presence of activated microglia is common to both illnesses although the pattern of such action throughout the brain appears to be different. Upregulation of miRNAs also appears to be involved in microglial neurotoxicity and indeed T cell pathology in MS but does not appear to play a major role in MDD. It is suggested that the antidepressant lofepramine, and in particular its active metabolite desipramine, may be beneficial not only for depressive symptomatology but also for the neurological symptoms of MS. One clinical trial has been carried out thus far with, in particular, promising MRI findings.",
+  "canon:text": "Multiple Immune-Inflammatory and Oxidative and Nitrosative Stress Pathways Explain the Frequent Presence of Depression in Multiple Sclerosis. Patients with a diagnosis of multiple sclerosis (MS) or major depressive disorder (MDD) share a wide array of biological abnormalities which are increasingly considered to play a contributory role in the pathogenesis and pathophysiology of both illnesses. Shared abnormalities include peripheral inflammation, neuroinflammation, chronic oxidative and nitrosative stress, mitochondrial dysfunction, gut dysbiosis, increased intestinal barrier permeability with bacterial translocation into the systemic circulation, neuroendocrine abnormalities and microglial pathology. Patients with MS and MDD also display a wide range of neuroimaging abnormalities and patients with MS who display symptoms of depression present with different neuroimaging profiles compared with MS patients who are depression-free. The precise details of such pathology are markedly different however. The recruitment of activated encephalitogenic Th17 T cells and subsequent bidirectional interaction leading to classically activated microglia is now considered to lie at the core of MS-specific pathology. The presence of activated microglia is common to both illnesses although the pattern of such action throughout the brain appears to be different. Upregulation of miRNAs also appears to be involved in microglial neurotoxicity and indeed T cell pathology in MS but does not appear to play a major role in MDD. It is suggested that the antidepressant lofepramine, and in particular its active metabolite desipramine, may be beneficial not only for depressive symptomatology but also for the neurological symptoms of MS. One clinical trial has been carried out thus far with, in particular, promising MRI findings.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29294244_causative-agent_0000813#mention-T1",
+      "canon:span": {
+        "start": 1432,
+        "end": 1445
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29294244_causative-agent_0000813#mention-T2",
+      "canon:span": {
+        "start": 1622,
+        "end": 1633
+      },
+      "canon:surface": "desipramine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003891",
+      "canon:sourceNotation": "D003891",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29294244_causative-agent_0000813#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29294244_causative-agent_0000813#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29294244_causative-agent_0000813#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29294244"
+      }
+    }
+  ]
+}

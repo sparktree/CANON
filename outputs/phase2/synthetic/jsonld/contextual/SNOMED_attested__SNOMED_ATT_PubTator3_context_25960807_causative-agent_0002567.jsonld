@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25960807_causative-agent_0002567",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25960807_causative-agent_0002567",
+  "canon:title": "(13)CO2 breath tests in non-invasive hepatological diagnosis.",
+  "canon:abstract": "In liver diagnostics, a simple, non-invasive test with high sensitivity and specificity is permanently being sought in order to assess the degree of liver damage. In addition to liver biopsy, algorithms using blood parameters or elastometry are used in clinical practice. However, these methods do not provide information about the true liver reserve, so the liver breath test seem to be a promising diagnostic tool. The basis of this test depends on the ability of particular hepatocyte enzyme systems to metabolise a tested substance labelled with a stable carbon isotope. The kinetics of (13)CO2 elimination with expiratory air then permits quantitative assessment of the functional liver reserve and the degree of organ damage. In this paper the most commonly used tests, grouped according to the main metabolic pathways, are described. The usefulness of liver breath tests in specific clinical situations, both as a diagnostic and prognostic tool, is presented. ",
+  "canon:text": "(13)CO2 breath tests in non-invasive hepatological diagnosis. In liver diagnostics, a simple, non-invasive test with high sensitivity and specificity is permanently being sought in order to assess the degree of liver damage. In addition to liver biopsy, algorithms using blood parameters or elastometry are used in clinical practice. However, these methods do not provide information about the true liver reserve, so the liver breath test seem to be a promising diagnostic tool. The basis of this test depends on the ability of particular hepatocyte enzyme systems to metabolise a tested substance labelled with a stable carbon isotope. The kinetics of (13)CO2 elimination with expiratory air then permits quantitative assessment of the functional liver reserve and the degree of organ damage. In this paper the most commonly used tests, grouped according to the main metabolic pathways, are described. The usefulness of liver breath tests in specific clinical situations, both as a diagnostic and prognostic tool, is presented. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25960807_causative-agent_0002567#mention-T1",
+      "canon:span": {
+        "start": 211,
+        "end": 223
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25960807_causative-agent_0002567#mention-T2",
+      "canon:span": {
+        "start": 621,
+        "end": 627
+      },
+      "canon:surface": "carbon",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002244",
+      "canon:sourceNotation": "D002244",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25960807_causative-agent_0002567#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25960807_causative-agent_0002567#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25960807_causative-agent_0002567#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25960807"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35178259_due-to_0003813",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35178259_due-to_0003813",
+  "canon:title": "Coexistence of Lupus Nephritis, Ulcerative Colitis, and Communicating Hydrocephalus: A Report of a 21-Year-Old Male.",
+  "canon:abstract": "Systemic lupus erythematosus (SLE) and ulcerative colitis (UC) are multisystem autoimmune disorders that rarely coexist. We report a case history of a 21-year-old male, presenting with bloody diarrhea and, later, diagnosed to have ulcerative colitis on colonic biopsy. There was clinically silent renal impairment leading to end-stage kidney disease requiring hemodialysis possibly secondary to ongoing lupus nephritis as suggested by positive lupus-specific antibodies' detection. Besides this, the diagnosis of lupus associated with early communicating hydrocephalus was made on CT brain findings which clinically responded well to the initiation of immunosuppressive therapy. It is imperative to keep in mind the remote possibility of ulcerative colitis in an SLE patient with gastrointestinal (GI) manifestations. Communicating hydrocephalus is a rare neurological manifestation of SLE leading to seizures and can respond well to the initiation of steroids and immunosuppressants. Therefore, a trial of immunosuppressant medications must be given even in a patient with end-stage renal disease (ESRD) to halter extra renal rare lupus manifestations.",
+  "canon:text": "Coexistence of Lupus Nephritis, Ulcerative Colitis, and Communicating Hydrocephalus: A Report of a 21-Year-Old Male. Systemic lupus erythematosus (SLE) and ulcerative colitis (UC) are multisystem autoimmune disorders that rarely coexist. We report a case history of a 21-year-old male, presenting with bloody diarrhea and, later, diagnosed to have ulcerative colitis on colonic biopsy. There was clinically silent renal impairment leading to end-stage kidney disease requiring hemodialysis possibly secondary to ongoing lupus nephritis as suggested by positive lupus-specific antibodies' detection. Besides this, the diagnosis of lupus associated with early communicating hydrocephalus was made on CT brain findings which clinically responded well to the initiation of immunosuppressive therapy. It is imperative to keep in mind the remote possibility of ulcerative colitis in an SLE patient with gastrointestinal (GI) manifestations. Communicating hydrocephalus is a rare neurological manifestation of SLE leading to seizures and can respond well to the initiation of steroids and immunosuppressants. Therefore, a trial of immunosuppressant medications must be given even in a patient with end-stage renal disease (ESRD) to halter extra renal rare lupus manifestations.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35178259_due-to_0003813#mention-T1",
+      "canon:span": {
+        "start": 15,
+        "end": 30
+      },
+      "canon:surface": "Lupus Nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35178259_due-to_0003813#mention-T2",
+      "canon:span": {
+        "start": 117,
+        "end": 145
+      },
+      "canon:surface": "Systemic lupus erythematosus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008180",
+      "canon:sourceNotation": "D008180",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35178259_due-to_0003813#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35178259_due-to_0003813#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35178259_due-to_0003813#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35178259"
+      }
+    }
+  ]
+}

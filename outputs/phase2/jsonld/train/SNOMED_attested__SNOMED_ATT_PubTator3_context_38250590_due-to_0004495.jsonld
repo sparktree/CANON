@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38250590_due-to_0004495",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_38250590_due-to_0004495",
+  "canon:title": "Systemic lupus erythematosus complicated with Fanconi syndrome: a case report and literature review.",
+  "canon:abstract": "Background: Systemic lupus erythematosus is an autoimmune disease with diverse clinical manifestations. The symptoms of SLE in children are more atypical than adults. Childhood SLE complicated with Fanconi syndrome is extremely rare and even more difficult to diagnose. Case presentation: This article reports a preschool boy with SLE who presented with renal tubular acidosis, accompanied by weakness in both lower limbs, delayed growth, and malnutrition. It was later found that the patient had the complication of Fanconi syndrome with renal tubular acidosis. Ultimately, renal biopsy confirmed lupus nephritis. The patient was treated with corticosteroid combined with mycophenolate mofetil, hydroxychloroquine, and belimumab. The symptoms of the child were relieved. Conclusion: Here we report an extremely rare case of childhood SLE complicated with Fanconi syndrome. There has been no similar clinical report. It is necessary to be alert to the possibility of atypical SLE in children to avoid missed diagnosis and misdiagnosis.",
+  "canon:text": "Systemic lupus erythematosus complicated with Fanconi syndrome: a case report and literature review. Background: Systemic lupus erythematosus is an autoimmune disease with diverse clinical manifestations. The symptoms of SLE in children are more atypical than adults. Childhood SLE complicated with Fanconi syndrome is extremely rare and even more difficult to diagnose. Case presentation: This article reports a preschool boy with SLE who presented with renal tubular acidosis, accompanied by weakness in both lower limbs, delayed growth, and malnutrition. It was later found that the patient had the complication of Fanconi syndrome with renal tubular acidosis. Ultimately, renal biopsy confirmed lupus nephritis. The patient was treated with corticosteroid combined with mycophenolate mofetil, hydroxychloroquine, and belimumab. The symptoms of the child were relieved. Conclusion: Here we report an extremely rare case of childhood SLE complicated with Fanconi syndrome. There has been no similar clinical report. It is necessary to be alert to the possibility of atypical SLE in children to avoid missed diagnosis and misdiagnosis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38250590_due-to_0004495#mention-T1",
+      "canon:span": {
+        "start": 699,
+        "end": 714
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38250590_due-to_0004495#mention-T2",
+      "canon:span": {
+        "start": 46,
+        "end": 62
+      },
+      "canon:surface": "Fanconi syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D005198",
+      "canon:sourceNotation": "D005198",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38250590_due-to_0004495#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38250590_due-to_0004495#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38250590_due-to_0004495#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "38250590"
+      }
+    }
+  ]
+}

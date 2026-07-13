@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32080423_due-to_0001089",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32080423_due-to_0001089",
+  "canon:title": "Mechanisms of diabetic cardiomyopathy and potential therapeutic strategies: preclinical and clinical evidence.",
+  "canon:abstract": "The pathogenesis and clinical features of diabetic cardiomyopathy have been well-studied in the past decade, but effective approaches to prevent and treat this disease are limited. Diabetic cardiomyopathy occurs as a result of the dysregulated glucose and lipid metabolism associated with diabetes mellitus, which leads to increased oxidative stress and the activation of multiple inflammatory pathways that mediate cellular and extracellular injury, pathological cardiac remodelling, and diastolic and systolic dysfunction. Preclinical studies in animal models of diabetes have identified multiple intracellular pathways involved in the pathogenesis of diabetic cardiomyopathy and potential cardioprotective strategies to prevent and treat the disease, including antifibrotic agents, anti-inflammatory agents and antioxidants. Some of these interventions have been tested in clinical trials and have shown favourable initial results. In this Review, we discuss the mechanisms underlying the development of diabetic cardiomyopathy and heart failure in type 1 and type 2 diabetes mellitus, and we summarize the evidence from preclinical and clinical studies that might provide guidance for the development of targeted strategies. We also highlight some of the novel pharmacological therapeutic strategies for the treatment and prevention of diabetic cardiomyopathy.",
+  "canon:text": "Mechanisms of diabetic cardiomyopathy and potential therapeutic strategies: preclinical and clinical evidence. The pathogenesis and clinical features of diabetic cardiomyopathy have been well-studied in the past decade, but effective approaches to prevent and treat this disease are limited. Diabetic cardiomyopathy occurs as a result of the dysregulated glucose and lipid metabolism associated with diabetes mellitus, which leads to increased oxidative stress and the activation of multiple inflammatory pathways that mediate cellular and extracellular injury, pathological cardiac remodelling, and diastolic and systolic dysfunction. Preclinical studies in animal models of diabetes have identified multiple intracellular pathways involved in the pathogenesis of diabetic cardiomyopathy and potential cardioprotective strategies to prevent and treat the disease, including antifibrotic agents, anti-inflammatory agents and antioxidants. Some of these interventions have been tested in clinical trials and have shown favourable initial results. In this Review, we discuss the mechanisms underlying the development of diabetic cardiomyopathy and heart failure in type 1 and type 2 diabetes mellitus, and we summarize the evidence from preclinical and clinical studies that might provide guidance for the development of targeted strategies. We also highlight some of the novel pharmacological therapeutic strategies for the treatment and prevention of diabetic cardiomyopathy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32080423_due-to_0001089#mention-T1",
+      "canon:span": {
+        "start": 14,
+        "end": 37
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32080423_due-to_0001089#mention-T2",
+      "canon:span": {
+        "start": 1146,
+        "end": 1159
+      },
+      "canon:surface": "heart failure",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006333",
+      "canon:sourceNotation": "D006333",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32080423_due-to_0001089#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32080423_due-to_0001089#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32080423_due-to_0001089#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32080423"
+      }
+    }
+  ]
+}

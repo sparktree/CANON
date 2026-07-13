@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35153638_causative-agent_0001592",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35153638_causative-agent_0001592",
+  "canon:title": "Phytochemical, Antioxidant, Toxicological, and Pharmaceutical Evaluation of Polyherbal Formulation: Irochel.",
+  "canon:abstract": "Background and Purpose: Irochel is a polyherbal formulation, comprises ethanolic extracts of Emblica officinalis, Cucurbita pepo L, Triticum aestivum, Fagonia cretica, Momordica charantia, and Tribulus terristris. It is prepared for the management of iron overload in transfusion-dependent thalassemia patients in which non-transfusion binds iron-produced reactive oxygen species ROS that causes severe damages to the organs leads to death. Research Study: In this study, phytochemical, antioxidant-DPPH assay, cytotoxicity, acute, and subacute toxicity in Wistar rats according to OECD guidelines 423 and 407, respectively, was carried out. The pharmaceutical analysis was conducted following standard protocols. Results: The results exhibited that each herb has a rich amount of phytochemical constituents. The DPPH assay showed IC50 values for Irochel and Gallic Acid 106.6 +- 4.28 [uM] and 21.8 +- 1.03 [uM], respectively. The LC50 124.327 mug/ml was obtained in cytotoxicity. In acute toxicity (14 days) and subacute toxicity (28 days) studies, the results revealed no treatment-related toxic manifestations, or mortality. Therefore, LD50 was found > 5000 mg/kg. However, there was some hematological and biochemical variations observed at 3 different doses of 2000, 300, and 50 mg/kg bw. Conclusion: Thus, Irochel has significant antioxidant activity and it is a safe drug for human use.",
+  "canon:text": "Phytochemical, Antioxidant, Toxicological, and Pharmaceutical Evaluation of Polyherbal Formulation: Irochel. Background and Purpose: Irochel is a polyherbal formulation, comprises ethanolic extracts of Emblica officinalis, Cucurbita pepo L, Triticum aestivum, Fagonia cretica, Momordica charantia, and Tribulus terristris. It is prepared for the management of iron overload in transfusion-dependent thalassemia patients in which non-transfusion binds iron-produced reactive oxygen species ROS that causes severe damages to the organs leads to death. Research Study: In this study, phytochemical, antioxidant-DPPH assay, cytotoxicity, acute, and subacute toxicity in Wistar rats according to OECD guidelines 423 and 407, respectively, was carried out. The pharmaceutical analysis was conducted following standard protocols. Results: The results exhibited that each herb has a rich amount of phytochemical constituents. The DPPH assay showed IC50 values for Irochel and Gallic Acid 106.6 +- 4.28 [uM] and 21.8 +- 1.03 [uM], respectively. The LC50 124.327 mug/ml was obtained in cytotoxicity. In acute toxicity (14 days) and subacute toxicity (28 days) studies, the results revealed no treatment-related toxic manifestations, or mortality. Therefore, LD50 was found > 5000 mg/kg. However, there was some hematological and biochemical variations observed at 3 different doses of 2000, 300, and 50 mg/kg bw. Conclusion: Thus, Irochel has significant antioxidant activity and it is a safe drug for human use.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35153638_causative-agent_0001592#mention-T1",
+      "canon:span": {
+        "start": 360,
+        "end": 373
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35153638_causative-agent_0001592#mention-T2",
+      "canon:span": {
+        "start": 451,
+        "end": 455
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35153638_causative-agent_0001592#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35153638_causative-agent_0001592#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35153638_causative-agent_0001592#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35153638"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610589_causative-agent_0002612",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_26610589_causative-agent_0002612",
+  "canon:title": "Role of microRNAs in Alcohol-Induced Multi-Organ Injury.",
+  "canon:abstract": "Alcohol consumption and its abuse is a major health problem resulting in significant healthcare cost in the United States. Chronic alcoholism results in damage to most of the vital organs in the human body. Among the alcohol-induced injuries, alcoholic liver disease is one of the most prevalent in the United States. Remarkably, ethanol alters expression of a wide variety of microRNAs that can regulate alcohol-induced complications or dysfunctions. In this review, we will discuss the role of microRNAs in alcoholic pancreatitis, alcohol-induced liver damage, intestinal epithelial barrier dysfunction, and brain damage including altered hippocampus structure and function, and neuronal loss, alcoholic cardiomyopathy, and muscle damage. Further, we have reviewed the role of altered microRNAs in the circulation, teratogenic effects of alcohol, and during maternal or paternal alcohol consumption. ",
+  "canon:text": "Role of microRNAs in Alcohol-Induced Multi-Organ Injury. Alcohol consumption and its abuse is a major health problem resulting in significant healthcare cost in the United States. Chronic alcoholism results in damage to most of the vital organs in the human body. Among the alcohol-induced injuries, alcoholic liver disease is one of the most prevalent in the United States. Remarkably, ethanol alters expression of a wide variety of microRNAs that can regulate alcohol-induced complications or dysfunctions. In this review, we will discuss the role of microRNAs in alcoholic pancreatitis, alcohol-induced liver damage, intestinal epithelial barrier dysfunction, and brain damage including altered hippocampus structure and function, and neuronal loss, alcoholic cardiomyopathy, and muscle damage. Further, we have reviewed the role of altered microRNAs in the circulation, teratogenic effects of alcohol, and during maternal or paternal alcohol consumption. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610589_causative-agent_0002612#mention-T1",
+      "canon:span": {
+        "start": 180,
+        "end": 198
+      },
+      "canon:surface": "Chronic alcoholism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610589_causative-agent_0002612#mention-T2",
+      "canon:span": {
+        "start": 387,
+        "end": 394
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610589_causative-agent_0002612#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610589_causative-agent_0002612#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_26610589_causative-agent_0002612#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "26610589"
+      }
+    }
+  ]
+}

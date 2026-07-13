@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21397004_causative-agent_0002286",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_21397004_causative-agent_0002286",
+  "canon:title": "HIV-1 infection and alcohol abuse: neurocognitive impairment, mechanisms of neurodegeneration and therapeutic interventions.",
+  "canon:abstract": "Clinical studies indicate that alcohol dependence has an additive effect on cognitive deficits associated with HIV-1 infection. Findings in humans and animal models suggest that alcohol, similar to HIV-1, induces inflammatory processes in the brain leading to neurodegeneration. The causes of HIV-1-associated neurotoxicity are comparable to those mediating alcohol-induced neuronal injury. This review aims to present the mechanisms of the combined effects of HIV-1 and alcohol abuse in the brain and to discuss neuroprotective therapies. Oxidative stress, overproduction of pro-inflammatory factors, impairment of blood-brain barrier and glutamate associated neurotoxicity appear to play important roles in alcohol driven neurodegeneration. Diminution of neuroinflammation constitutes a logical approach for prevention of HIV-1 and alcohol mediated neurodegeneration. Agonists of cannabinoid receptor 2 (CB2) possess potent anti-inflammatory and neuroprotective properties. We address multifaceted beneficial effects of CB2 activation in the setting of HIV-1 brain infection and alcohol abuse.",
+  "canon:text": "HIV-1 infection and alcohol abuse: neurocognitive impairment, mechanisms of neurodegeneration and therapeutic interventions. Clinical studies indicate that alcohol dependence has an additive effect on cognitive deficits associated with HIV-1 infection. Findings in humans and animal models suggest that alcohol, similar to HIV-1, induces inflammatory processes in the brain leading to neurodegeneration. The causes of HIV-1-associated neurotoxicity are comparable to those mediating alcohol-induced neuronal injury. This review aims to present the mechanisms of the combined effects of HIV-1 and alcohol abuse in the brain and to discuss neuroprotective therapies. Oxidative stress, overproduction of pro-inflammatory factors, impairment of blood-brain barrier and glutamate associated neurotoxicity appear to play important roles in alcohol driven neurodegeneration. Diminution of neuroinflammation constitutes a logical approach for prevention of HIV-1 and alcohol mediated neurodegeneration. Agonists of cannabinoid receptor 2 (CB2) possess potent anti-inflammatory and neuroprotective properties. We address multifaceted beneficial effects of CB2 activation in the setting of HIV-1 brain infection and alcohol abuse.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21397004_causative-agent_0002286#mention-T1",
+      "canon:span": {
+        "start": 435,
+        "end": 448
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21397004_causative-agent_0002286#mention-T2",
+      "canon:span": {
+        "start": 765,
+        "end": 774
+      },
+      "canon:surface": "glutamate",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D018698",
+      "canon:sourceNotation": "D018698",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21397004_causative-agent_0002286#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21397004_causative-agent_0002286#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_21397004_causative-agent_0002286#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "21397004"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27419272_causative-agent_0002720",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27419272_causative-agent_0002720",
+  "canon:title": "Biological markers for anxiety disorders, OCD and PTSD: A consensus statement. Part II: Neurochemistry, neurophysiology and neurocognition.",
+  "canon:abstract": "OBJECTIVE: Biomarkers are defined as anatomical, biochemical or physiological traits that are specific to certain disorders or syndromes. The objective of this paper is to summarise the current knowledge of biomarkers for anxiety disorders, obsessive-compulsive disorder (OCD) and posttraumatic stress disorder (PTSD). METHODS: Findings in biomarker research were reviewed by a task force of international experts in the field, consisting of members of the World Federation of Societies for Biological Psychiatry Task Force on Biological Markers and of the European College of Neuropsychopharmacology Anxiety Disorders Research Network. RESULTS: The present article (Part II) summarises findings on potential biomarkers in neurochemistry (neurotransmitters such as serotonin, norepinephrine, dopamine or GABA, neuropeptides such as cholecystokinin, neurokinins, atrial natriuretic peptide, or oxytocin, the HPA axis, neurotrophic factors such as NGF and BDNF, immunology and CO2 hypersensitivity), neurophysiology (EEG, heart rate variability) and neurocognition. The accompanying paper (Part I) focuses on neuroimaging and genetics. CONCLUSIONS: Although at present, none of the putative biomarkers is sufficient and specific as a diagnostic tool, an abundance of high quality research has accumulated that should improve our understanding of the neurobiological causes of anxiety disorders, OCD and PTSD.",
+  "canon:text": "Biological markers for anxiety disorders, OCD and PTSD: A consensus statement. Part II: Neurochemistry, neurophysiology and neurocognition. OBJECTIVE: Biomarkers are defined as anatomical, biochemical or physiological traits that are specific to certain disorders or syndromes. The objective of this paper is to summarise the current knowledge of biomarkers for anxiety disorders, obsessive-compulsive disorder (OCD) and posttraumatic stress disorder (PTSD). METHODS: Findings in biomarker research were reviewed by a task force of international experts in the field, consisting of members of the World Federation of Societies for Biological Psychiatry Task Force on Biological Markers and of the European College of Neuropsychopharmacology Anxiety Disorders Research Network. RESULTS: The present article (Part II) summarises findings on potential biomarkers in neurochemistry (neurotransmitters such as serotonin, norepinephrine, dopamine or GABA, neuropeptides such as cholecystokinin, neurokinins, atrial natriuretic peptide, or oxytocin, the HPA axis, neurotrophic factors such as NGF and BDNF, immunology and CO2 hypersensitivity), neurophysiology (EEG, heart rate variability) and neurocognition. The accompanying paper (Part I) focuses on neuroimaging and genetics. CONCLUSIONS: Although at present, none of the putative biomarkers is sufficient and specific as a diagnostic tool, an abundance of high quality research has accumulated that should improve our understanding of the neurobiological causes of anxiety disorders, OCD and PTSD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27419272_causative-agent_0002720#mention-T1",
+      "canon:span": {
+        "start": 1115,
+        "end": 1135
+      },
+      "canon:surface": "CO2 hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27419272_causative-agent_0002720#mention-T2",
+      "canon:span": {
+        "start": 916,
+        "end": 930
+      },
+      "canon:surface": "norepinephrine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009638",
+      "canon:sourceNotation": "D009638",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27419272_causative-agent_0002720#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27419272_causative-agent_0002720#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27419272_causative-agent_0002720#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27419272"
+      }
+    }
+  ]
+}

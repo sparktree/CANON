@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32850046_causative-agent_0003309",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32850046_causative-agent_0003309",
+  "canon:title": "Substance use disorders: diagnosis and management for hospitalists.",
+  "canon:abstract": "Substance use disorder is a significant health concern. Hospitalists manage patient with various forms of substance use disorder on a daily basis. In this review, we have tried to synthesize evidence together to give a brief, yet succinct, review of commonly encounters disorders; alcohol intoxication and withdrawal, opioid intoxication and withdrawal, cocaine intoxication and methamphetamine intoxication. We describe clinical features, diagnosis and management, which would serve as a great resource for hospitalist when managing these complicated patients.",
+  "canon:text": "Substance use disorders: diagnosis and management for hospitalists. Substance use disorder is a significant health concern. Hospitalists manage patient with various forms of substance use disorder on a daily basis. In this review, we have tried to synthesize evidence together to give a brief, yet succinct, review of commonly encounters disorders; alcohol intoxication and withdrawal, opioid intoxication and withdrawal, cocaine intoxication and methamphetamine intoxication. We describe clinical features, diagnosis and management, which would serve as a great resource for hospitalist when managing these complicated patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32850046_causative-agent_0003309#mention-T1",
+      "canon:span": {
+        "start": 422,
+        "end": 429
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32850046_causative-agent_0003309#mention-T2",
+      "canon:span": {
+        "start": 447,
+        "end": 462
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32850046_causative-agent_0003309#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32850046_causative-agent_0003309#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32850046_causative-agent_0003309#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32850046"
+      }
+    }
+  ]
+}

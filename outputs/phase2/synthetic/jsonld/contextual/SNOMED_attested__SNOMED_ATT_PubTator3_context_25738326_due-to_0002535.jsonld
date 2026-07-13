@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25738326_due-to_0002535",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25738326_due-to_0002535",
+  "canon:title": "How exercise may amend metabolic disturbances in diabetic cardiomyopathy.",
+  "canon:abstract": "SIGNIFICANCE: Over-nutrition and sedentary lifestyle has led to a worldwide increase in obesity, insulin resistance, and type 2 diabetes (T2D) associated with an increased risk of development of cardiovascular disorders. Diabetic cardiomyopathy, independent of hypertension or coronary disease, is induced by a range of systemic changes and may through multiple processes result in functional and structural cardiac derangements. The pathogenesis of this cardiomyopathy is complex and multifactorial, and it will eventually lead to reduced cardiac working capacity and increased susceptibility to ischemic injury. RECENT ADVANCES: Metabolic disturbances such as altered lipid handling and substrate utilization, decreased mechanical efficiency, mitochondrial dysfunction, disturbances in nonoxidative glucose pathways, and increased oxidative stress are hallmarks of diabetic cardiomyopathy. Interestingly, several of these disturbances are found to precede the development of cardiac dysfunction. CRITICAL ISSUES: Exercise training is effective in the prevention and treatment of obesity and T2D. In addition to its beneficial influence on diabetes/obesity-related systemic changes, it may also amend many of the metabolic disturbances characterizing the diabetic myocardium. These changes are due to both indirect effects, exercise-mediated systemic changes, and direct effects originating from the high contractile activity of the heart during physical training. FUTURE DIRECTIONS: Revealing the molecular mechanisms behind the beneficial effects of exercise training is of considerable scientific value to generate evidence-based therapy and in the development of new treatment strategies.",
+  "canon:text": "How exercise may amend metabolic disturbances in diabetic cardiomyopathy. SIGNIFICANCE: Over-nutrition and sedentary lifestyle has led to a worldwide increase in obesity, insulin resistance, and type 2 diabetes (T2D) associated with an increased risk of development of cardiovascular disorders. Diabetic cardiomyopathy, independent of hypertension or coronary disease, is induced by a range of systemic changes and may through multiple processes result in functional and structural cardiac derangements. The pathogenesis of this cardiomyopathy is complex and multifactorial, and it will eventually lead to reduced cardiac working capacity and increased susceptibility to ischemic injury. RECENT ADVANCES: Metabolic disturbances such as altered lipid handling and substrate utilization, decreased mechanical efficiency, mitochondrial dysfunction, disturbances in nonoxidative glucose pathways, and increased oxidative stress are hallmarks of diabetic cardiomyopathy. Interestingly, several of these disturbances are found to precede the development of cardiac dysfunction. CRITICAL ISSUES: Exercise training is effective in the prevention and treatment of obesity and T2D. In addition to its beneficial influence on diabetes/obesity-related systemic changes, it may also amend many of the metabolic disturbances characterizing the diabetic myocardium. These changes are due to both indirect effects, exercise-mediated systemic changes, and direct effects originating from the high contractile activity of the heart during physical training. FUTURE DIRECTIONS: Revealing the molecular mechanisms behind the beneficial effects of exercise training is of considerable scientific value to generate evidence-based therapy and in the development of new treatment strategies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25738326_due-to_0002535#mention-T1",
+      "canon:span": {
+        "start": 49,
+        "end": 72
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25738326_due-to_0002535#mention-T2",
+      "canon:span": {
+        "start": 819,
+        "end": 844
+      },
+      "canon:surface": "mitochondrial dysfunction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D028361",
+      "canon:sourceNotation": "D028361",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25738326_due-to_0002535#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25738326_due-to_0002535#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25738326_due-to_0002535#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25738326"
+      }
+    }
+  ]
+}

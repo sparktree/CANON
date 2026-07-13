@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24389305_causative-agent_0002431",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24389305_causative-agent_0002431",
+  "canon:title": "Pathogenesis of idiosyncratic drug-induced liver injury and clinical perspectives.",
+  "canon:abstract": "Idiosyncratic drug-induced liver injury (DILI) is a rare disease that develops independently of drug dose, route, or duration of administration. Furthermore, idiosyncratic DILI is not a single disease entity but rather a spectrum of rare diseases with varying clinical, histological, and laboratory features. The pathogenesis of DILI is not fully understood. Standardization of the DILI nomenclature and methods to assess causality, along with the information provided by the LiverTox Web site, will harmonize and accelerate research on DILI. Studies of new serum biomarkers such as glutamate dehydrogenase, high mobility group box protein 1, and microRNA-122 could provide information for use in diagnosis and prognosis and provide important insights into the mechanisms of the pathogenesis of DILI. Single nucleotide polymorphisms in the HLA region have been associated with idiosyncratic hepatotoxicity attributed to flucloxacillin, ximelagatran, lapatinib, and amoxicillin-clavulanate. However, genome-wide association studies of pooled cases have not associated any genetic factors with idiosyncratic DILI. Whole genome and whole exome sequencing analyses are under way to study cases of DILI attributed to a single medication. Serum proteomic, transcriptome, and metabolome as well as intestinal microbiome analyses will increase our understanding of the mechanisms of this disorder. Further improvements to in vitro and in vivo test systems should advance our understanding of the causes, risk factors, and mechanisms of idiosyncratic DILI.",
+  "canon:text": "Pathogenesis of idiosyncratic drug-induced liver injury and clinical perspectives. Idiosyncratic drug-induced liver injury (DILI) is a rare disease that develops independently of drug dose, route, or duration of administration. Furthermore, idiosyncratic DILI is not a single disease entity but rather a spectrum of rare diseases with varying clinical, histological, and laboratory features. The pathogenesis of DILI is not fully understood. Standardization of the DILI nomenclature and methods to assess causality, along with the information provided by the LiverTox Web site, will harmonize and accelerate research on DILI. Studies of new serum biomarkers such as glutamate dehydrogenase, high mobility group box protein 1, and microRNA-122 could provide information for use in diagnosis and prognosis and provide important insights into the mechanisms of the pathogenesis of DILI. Single nucleotide polymorphisms in the HLA region have been associated with idiosyncratic hepatotoxicity attributed to flucloxacillin, ximelagatran, lapatinib, and amoxicillin-clavulanate. However, genome-wide association studies of pooled cases have not associated any genetic factors with idiosyncratic DILI. Whole genome and whole exome sequencing analyses are under way to study cases of DILI attributed to a single medication. Serum proteomic, transcriptome, and metabolome as well as intestinal microbiome analyses will increase our understanding of the mechanisms of this disorder. Further improvements to in vitro and in vivo test systems should advance our understanding of the causes, risk factors, and mechanisms of idiosyncratic DILI.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24389305_causative-agent_0002431#mention-T1",
+      "canon:span": {
+        "start": 16,
+        "end": 55
+      },
+      "canon:surface": "idiosyncratic drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24389305_causative-agent_0002431#mention-T2",
+      "canon:span": {
+        "start": 1019,
+        "end": 1031
+      },
+      "canon:surface": "ximelagatran",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "C426686",
+      "canon:sourceNotation": "C426686",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24389305_causative-agent_0002431#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24389305_causative-agent_0002431#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24389305_causative-agent_0002431#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24389305"
+      }
+    }
+  ]
+}

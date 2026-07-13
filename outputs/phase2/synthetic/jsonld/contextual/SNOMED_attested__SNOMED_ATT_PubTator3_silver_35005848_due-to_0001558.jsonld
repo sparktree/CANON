@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35005848_due-to_0001558",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35005848_due-to_0001558",
+  "canon:title": "New insights into the role of melatonin in diabetic cardiomyopathy.",
+  "canon:abstract": "Diabetic cardiovascular complications and impaired cardiac function are considered to be the main causes of death in diabetic patients worldwide, especially patients with type 2 diabetes mellitus (T2DM). An increasing number of studies have shown that melatonin, as the main product secreted by the pineal gland, plays a vital role in the occurrence and development of diabetes. Melatonin improves myocardial cell metabolism, reduces vascular endothelial cell death, reverses microcirculation disorders, reduces myocardial fibrosis, reduces oxidative and endoplasmic reticulum stress, regulates cell autophagy and apoptosis, and improves mitochondrial function, all of which are the characteristics of diabetic cardiomyopathy (DCM). This review focuses on the role of melatonin in DCM. We also discuss new molecular findings that might facilitate a better understanding of the underlying mechanism. Finally, we propose potential new therapeutic strategies for patients with T2DM.",
+  "canon:text": "New insights into the role of melatonin in diabetic cardiomyopathy. Diabetic cardiovascular complications and impaired cardiac function are considered to be the main causes of death in diabetic patients worldwide, especially patients with type 2 diabetes mellitus (T2DM). An increasing number of studies have shown that melatonin, as the main product secreted by the pineal gland, plays a vital role in the occurrence and development of diabetes. Melatonin improves myocardial cell metabolism, reduces vascular endothelial cell death, reverses microcirculation disorders, reduces myocardial fibrosis, reduces oxidative and endoplasmic reticulum stress, regulates cell autophagy and apoptosis, and improves mitochondrial function, all of which are the characteristics of diabetic cardiomyopathy (DCM). This review focuses on the role of melatonin in DCM. We also discuss new molecular findings that might facilitate a better understanding of the underlying mechanism. Finally, we propose potential new therapeutic strategies for patients with T2DM.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35005848_due-to_0001558#mention-T1",
+      "canon:span": {
+        "start": 43,
+        "end": 66
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35005848_due-to_0001558#mention-T2",
+      "canon:span": {
+        "start": 68,
+        "end": 105
+      },
+      "canon:surface": "Diabetic cardiovascular complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002318",
+      "canon:sourceNotation": "D002318",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35005848_due-to_0001558#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35005848_due-to_0001558#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35005848_due-to_0001558#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35005848"
+      }
+    }
+  ]
+}

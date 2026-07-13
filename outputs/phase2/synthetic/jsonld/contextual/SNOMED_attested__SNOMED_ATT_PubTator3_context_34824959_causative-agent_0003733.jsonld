@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34824959_causative-agent_0003733",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34824959_causative-agent_0003733",
+  "canon:title": "Pharmacotherapy treatment of stimulant use disorder.",
+  "canon:abstract": "Stimulant use disorder (SUD) is a public health problem in the United States that is associated with increased morbidity and mortality. Psychosocial interventions, such as cognitive behavioral therapy and contingency management, are the main treatment modality for SUDs and no pharmacotherapy is currently FDA approved for this indication. Although some medications show promising data for the treatment of SUD, the evidence remains inconsistent, and the clinical application is limited due to the heterogenicity of the population and the lack of studies in patients with various comorbidities. Selection of pharmacotherapy treatment for methamphetamine intoxication, persistent methamphetamine-associated psychosis with methamphetamine use disorder, and cocaine use disorder in patients with co-occurring OUD are discussed in 3 patient cases.",
+  "canon:text": "Pharmacotherapy treatment of stimulant use disorder. Stimulant use disorder (SUD) is a public health problem in the United States that is associated with increased morbidity and mortality. Psychosocial interventions, such as cognitive behavioral therapy and contingency management, are the main treatment modality for SUDs and no pharmacotherapy is currently FDA approved for this indication. Although some medications show promising data for the treatment of SUD, the evidence remains inconsistent, and the clinical application is limited due to the heterogenicity of the population and the lack of studies in patients with various comorbidities. Selection of pharmacotherapy treatment for methamphetamine intoxication, persistent methamphetamine-associated psychosis with methamphetamine use disorder, and cocaine use disorder in patients with co-occurring OUD are discussed in 3 patient cases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34824959_causative-agent_0003733#mention-T1",
+      "canon:span": {
+        "start": 29,
+        "end": 51
+      },
+      "canon:surface": "stimulant use disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34824959_causative-agent_0003733#mention-T2",
+      "canon:span": {
+        "start": 691,
+        "end": 706
+      },
+      "canon:surface": "methamphetamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008694",
+      "canon:sourceNotation": "D008694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34824959_causative-agent_0003733#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34824959_causative-agent_0003733#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34824959_causative-agent_0003733#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34824959"
+      }
+    }
+  ]
+}

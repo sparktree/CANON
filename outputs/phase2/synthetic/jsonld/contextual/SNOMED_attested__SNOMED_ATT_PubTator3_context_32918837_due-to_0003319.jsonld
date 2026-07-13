@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32918837_due-to_0003319",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32918837_due-to_0003319",
+  "canon:title": "Current concepts in the management of diabetic polyneuropathy.",
+  "canon:abstract": "Diabetic sensorimotor polyneuropathy (DSPN) is encountered in approximately one-third of people with diabetes. This, in turn, might markedly impoverish their quality of life, mainly owing to neuropathic pain and foot ulcerations. Painful DSPN might be as frequent as 25% in diabetes patients. Symptoms as a result of DSPN typically comprise pain, paresthesia and numbness in the distal lower limbs. Asymptomatic DSPN might reach 50% among patients with this condition. Unfortunately, DSPN is still not adequately diagnosed and treated. Its management has three priorities: (i) lifestyle improvement, near-normoglycemia and multifactorial cardiovascular risk intervention; (ii) pathogenesis-oriented pharmacotherapy; and (iii) symptomatic alleviation of pain. Intensive diabetes therapy showed evidence for favorable effects on the incidence and deterioration of DSPN in type 1 diabetes, but not type 2 diabetes. Among pathogenesis-oriented treatments, alpha-lipoic acid, actovegin, benfotiamine and epalrestat are currently authorized to treat DSPN in several countries. Symptomatic therapy uses analgesics, notably antidepressants, opioids and anticonvulsants, reducing pain by >=50% in approximately 50% of individuals, but might be limited, particularly by central nervous system-related adverse events. Local treatment with the capsaicin 8% patch might offer an alternative. In addition to pain relief, therapy should improve sleep, mobility and quality of life. In conclusion, multimodal treatment of DSPN should consider the individual risk profile, pathogenetic treatment and pain management using pharmacotherapy (combinations, if required), as well as non-pharmacological options.",
+  "canon:text": "Current concepts in the management of diabetic polyneuropathy. Diabetic sensorimotor polyneuropathy (DSPN) is encountered in approximately one-third of people with diabetes. This, in turn, might markedly impoverish their quality of life, mainly owing to neuropathic pain and foot ulcerations. Painful DSPN might be as frequent as 25% in diabetes patients. Symptoms as a result of DSPN typically comprise pain, paresthesia and numbness in the distal lower limbs. Asymptomatic DSPN might reach 50% among patients with this condition. Unfortunately, DSPN is still not adequately diagnosed and treated. Its management has three priorities: (i) lifestyle improvement, near-normoglycemia and multifactorial cardiovascular risk intervention; (ii) pathogenesis-oriented pharmacotherapy; and (iii) symptomatic alleviation of pain. Intensive diabetes therapy showed evidence for favorable effects on the incidence and deterioration of DSPN in type 1 diabetes, but not type 2 diabetes. Among pathogenesis-oriented treatments, alpha-lipoic acid, actovegin, benfotiamine and epalrestat are currently authorized to treat DSPN in several countries. Symptomatic therapy uses analgesics, notably antidepressants, opioids and anticonvulsants, reducing pain by >=50% in approximately 50% of individuals, but might be limited, particularly by central nervous system-related adverse events. Local treatment with the capsaicin 8% patch might offer an alternative. In addition to pain relief, therapy should improve sleep, mobility and quality of life. In conclusion, multimodal treatment of DSPN should consider the individual risk profile, pathogenetic treatment and pain management using pharmacotherapy (combinations, if required), as well as non-pharmacological options.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32918837_due-to_0003319#mention-T1",
+      "canon:span": {
+        "start": 38,
+        "end": 61
+      },
+      "canon:surface": "diabetic polyneuropathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003929",
+      "canon:sourceNotation": "D003929",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32918837_due-to_0003319#mention-T2",
+      "canon:span": {
+        "start": 958,
+        "end": 973
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32918837_due-to_0003319#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32918837_due-to_0003319#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32918837_due-to_0003319#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32918837"
+      }
+    }
+  ]
+}

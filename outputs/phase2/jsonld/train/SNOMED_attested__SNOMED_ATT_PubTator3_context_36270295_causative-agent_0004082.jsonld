@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082",
+  "canon:title": "Recent Advances in Understanding of Pathogenesis of Alcohol-Associated Liver Disease.",
+  "canon:abstract": "Alcohol-associated liver disease (ALD) is one of the major diseases arising from chronic alcohol consumption and is one of the most common causes of liver-related morbidity and mortality. ALD includes asymptomatic liver steatosis, fibrosis, cirrhosis, and alcohol-associated hepatitis and its complications. The progression of ALD involves complex cell-cell and organ-organ interactions. We focus on the impact of alcohol on dysregulation of homeostatic mechanisms and regulation of injury and repair in the liver. In particular, we discuss recent advances in understanding the disruption of balance between programmed cell death and prosurvival pathways, such as autophagy and membrane trafficking, in the pathogenesis of ALD. We also summarize current understanding of innate immune responses, liver sinusoidal endothelial cell dysfunction and hepatic stellate cell activation, and gut-liver and adipose-liver cross talk in response to ethanol. In addition,we describe the current potential therapeutic targets and clinical trials aimed at alleviating hepatocyte injury, reducing inflammatory responses, and targeting gut microbiota, for the treatment of ALD.",
+  "canon:text": "Recent Advances in Understanding of Pathogenesis of Alcohol-Associated Liver Disease. Alcohol-associated liver disease (ALD) is one of the major diseases arising from chronic alcohol consumption and is one of the most common causes of liver-related morbidity and mortality. ALD includes asymptomatic liver steatosis, fibrosis, cirrhosis, and alcohol-associated hepatitis and its complications. The progression of ALD involves complex cell-cell and organ-organ interactions. We focus on the impact of alcohol on dysregulation of homeostatic mechanisms and regulation of injury and repair in the liver. In particular, we discuss recent advances in understanding the disruption of balance between programmed cell death and prosurvival pathways, such as autophagy and membrane trafficking, in the pathogenesis of ALD. We also summarize current understanding of innate immune responses, liver sinusoidal endothelial cell dysfunction and hepatic stellate cell activation, and gut-liver and adipose-liver cross talk in response to ethanol. In addition,we describe the current potential therapeutic targets and clinical trials aimed at alleviating hepatocyte injury, reducing inflammatory responses, and targeting gut microbiota, for the treatment of ALD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T1",
+      "canon:span": {
+        "start": 342,
+        "end": 370
+      },
+      "canon:surface": "alcohol-associated hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T2",
+      "canon:span": {
+        "start": 1024,
+        "end": 1031
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36270295_causative-agent_0004082#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36270295"
+      }
+    }
+  ]
+}

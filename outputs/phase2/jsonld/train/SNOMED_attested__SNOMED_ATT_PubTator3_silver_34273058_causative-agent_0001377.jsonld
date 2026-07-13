@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34273058_causative-agent_0001377",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34273058_causative-agent_0001377",
+  "canon:title": "Current Perspectives on Severe Drug Eruption.",
+  "canon:abstract": "Adverse drug reactions involving the skin are commonly known as drug eruptions. Severe drug eruption may cause severe cutaneous adverse drug reactions (SCARs), which are considered to be fatal and life-threatening, including Stevens-Johnson syndrome (SJS), toxic epidermal necrolysis (TEN), acute generalized exanthematous pustulosis (AGEP), and drug reaction with eosinophilia and systemic symptoms (DRESS). Although cases are relatively rare, approximately 2% of hospitalized patients are affected by SCARs. There is an incidence of 2 to 7 cases/million per year of SJS/TEN and 1/1000 to 1/10,000 exposures to offending agents result in DRESS. However, the mortality rate of severe drug eruptions can reach up to 50%. SCARs represent a real medical emergency, and early identification and proper management are critical to survival. The common pathogenesis of severe drug eruptions includes genetic linkage with HLA- and non-HLA-genes, drug-specific T cell-mediated cytotoxicity, T cell receptor restriction, and cytotoxicity mechanisms. A multidisciplinary approach is required for acute management. Immediate withdrawal of potentially causative drugs and specific supportive treatment is of great importance. Immunoglobulins, systemic corticosteroids, and cyclosporine A are the most frequently used treatments for SCARs; additionally, new biologics and plasma exchange are reasonable strategies to reduce mortality. Although there are many treatment methods for severe drug eruption, controversies remain regarding the timing and dosage of drug eruption. Types, dosages, and indications of new biological agents, such as tumor necrosis factor antagonists, mepolizumab, and omalizumab, are still under exploration. This review summarizes the clinical characteristics, risk factors, pathogenesis, and treatment strategies of severe drug eruption to guide clinical management.",
+  "canon:text": "Current Perspectives on Severe Drug Eruption. Adverse drug reactions involving the skin are commonly known as drug eruptions. Severe drug eruption may cause severe cutaneous adverse drug reactions (SCARs), which are considered to be fatal and life-threatening, including Stevens-Johnson syndrome (SJS), toxic epidermal necrolysis (TEN), acute generalized exanthematous pustulosis (AGEP), and drug reaction with eosinophilia and systemic symptoms (DRESS). Although cases are relatively rare, approximately 2% of hospitalized patients are affected by SCARs. There is an incidence of 2 to 7 cases/million per year of SJS/TEN and 1/1000 to 1/10,000 exposures to offending agents result in DRESS. However, the mortality rate of severe drug eruptions can reach up to 50%. SCARs represent a real medical emergency, and early identification and proper management are critical to survival. The common pathogenesis of severe drug eruptions includes genetic linkage with HLA- and non-HLA-genes, drug-specific T cell-mediated cytotoxicity, T cell receptor restriction, and cytotoxicity mechanisms. A multidisciplinary approach is required for acute management. Immediate withdrawal of potentially causative drugs and specific supportive treatment is of great importance. Immunoglobulins, systemic corticosteroids, and cyclosporine A are the most frequently used treatments for SCARs; additionally, new biologics and plasma exchange are reasonable strategies to reduce mortality. Although there are many treatment methods for severe drug eruption, controversies remain regarding the timing and dosage of drug eruption. Types, dosages, and indications of new biological agents, such as tumor necrosis factor antagonists, mepolizumab, and omalizumab, are still under exploration. This review summarizes the clinical characteristics, risk factors, pathogenesis, and treatment strategies of severe drug eruption to guide clinical management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34273058_causative-agent_0001377#mention-T1",
+      "canon:span": {
+        "start": 54,
+        "end": 68
+      },
+      "canon:surface": "drug reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34273058_causative-agent_0001377#mention-T2",
+      "canon:span": {
+        "start": 1306,
+        "end": 1320
+      },
+      "canon:surface": "cyclosporine A",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D016572",
+      "canon:sourceNotation": "D016572",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34273058_causative-agent_0001377#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34273058_causative-agent_0001377#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34273058_causative-agent_0001377#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34273058"
+      }
+    }
+  ]
+}

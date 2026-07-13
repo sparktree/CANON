@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23754976_causative-agent_0002378",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23754976_causative-agent_0002378",
+  "canon:title": "Alcohol and NMDA receptor: current research and future direction.",
+  "canon:abstract": "The brain is one of the major targets of alcohol actions. Most of the excitatory synaptic transmission in the central nervous system is mediated by N-methyl-D-aspartate (NMDA) receptors. However, one of the most devastating effects of alcohol leads to brain shrinkage, loss of nerve cells at specific regions through a mechanism involving excitotoxicity, oxidative stress. Earlier studies have indicated that chronic exposure to ethanol both in vivo and in vitro, increases NR1 and NR2B gene expression and their polypeptide levels. The effect of alcohol and molecular changes on the regulatory process, which modulates NMDAR functions including factors altering transcription, translation, post-translational modifications, and protein expression, as well as those influencing their interactions with different regulatory proteins (downstream effectors) are incessantly increasing at the cellular level. Further, I discuss the various genetically altered mice approaches that have been used to study NMDA receptor subunits and their functional implication. In a recent countable review, epigenetic dimension (i.e., histone modification-induced chromatin remodeling and DNA methylation, in the process of alcohol related neuroadaptation) is one of the key molecular mechanisms in alcohol mediated NMDAR alteration. Here, I provide a recount on what has already been achieved, current trends and how the future research/studies of the NMDA receptor might lead to even greater engagement with many possible new insights into the neurobiology and treatment of alcoholism.",
+  "canon:text": "Alcohol and NMDA receptor: current research and future direction. The brain is one of the major targets of alcohol actions. Most of the excitatory synaptic transmission in the central nervous system is mediated by N-methyl-D-aspartate (NMDA) receptors. However, one of the most devastating effects of alcohol leads to brain shrinkage, loss of nerve cells at specific regions through a mechanism involving excitotoxicity, oxidative stress. Earlier studies have indicated that chronic exposure to ethanol both in vivo and in vitro, increases NR1 and NR2B gene expression and their polypeptide levels. The effect of alcohol and molecular changes on the regulatory process, which modulates NMDAR functions including factors altering transcription, translation, post-translational modifications, and protein expression, as well as those influencing their interactions with different regulatory proteins (downstream effectors) are incessantly increasing at the cellular level. Further, I discuss the various genetically altered mice approaches that have been used to study NMDA receptor subunits and their functional implication. In a recent countable review, epigenetic dimension (i.e., histone modification-induced chromatin remodeling and DNA methylation, in the process of alcohol related neuroadaptation) is one of the key molecular mechanisms in alcohol mediated NMDAR alteration. Here, I provide a recount on what has already been achieved, current trends and how the future research/studies of the NMDA receptor might lead to even greater engagement with many possible new insights into the neurobiology and treatment of alcoholism.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23754976_causative-agent_0002378#mention-T1",
+      "canon:span": {
+        "start": 1623,
+        "end": 1633
+      },
+      "canon:surface": "alcoholism",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23754976_causative-agent_0002378#mention-T2",
+      "canon:span": {
+        "start": 495,
+        "end": 502
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23754976_causative-agent_0002378#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23754976_causative-agent_0002378#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23754976_causative-agent_0002378#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23754976"
+      }
+    }
+  ]
+}

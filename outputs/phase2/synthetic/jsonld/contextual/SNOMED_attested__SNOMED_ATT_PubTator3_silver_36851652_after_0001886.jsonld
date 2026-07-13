@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36851652_after_0001886",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36851652_after_0001886",
+  "canon:title": "Herpes Simplex Virus and Varicella Zoster Virus Infections in Cancer Patients.",
+  "canon:abstract": "Herpes simplex virus (HSV) and varicella zoster virus (VZV) are alpha herpesviruses that establish life-long latent infection in neuronal ganglia after primary infection. Periodic reactivation of these viruses results in recurrent infections that can have significant impact on patients' quality of life. HSV commonly causes oral and genital mucocutaneous infections whereas VZV is responsible for varicella/chickenpox and herpes zoster/shingles, but cancer patients are at particularly higher risk of complications including disseminated and visceral infections due to impaired cell-mediated immunity. While diagnosis of more common HSV and/or VZV infections is frequently clinically based, immunocompromised hosts may have atypical skin presentation or visceral involvement. Thus, diagnostic confirmation using virus-specific tests such as polymerase chain reaction or immunohistochemical staining is crucial in some cases. Oral acyclovir, valacyclovir and famciclovir are usually used for mild to moderate infections and intravenous acyclovir is the drug of choice for severe or disseminated infections. Foscarnet can be used when acyclovir-resistance is confirmed or suspected. Pharmaceutical prophylaxis against HSV and/or VZV should be considered in high-risk cancers patients. Currently, there is no commercially available vaccine against HSV, but VZV vaccines are available to prevent varicella and zoster.",
+  "canon:text": "Herpes Simplex Virus and Varicella Zoster Virus Infections in Cancer Patients. Herpes simplex virus (HSV) and varicella zoster virus (VZV) are alpha herpesviruses that establish life-long latent infection in neuronal ganglia after primary infection. Periodic reactivation of these viruses results in recurrent infections that can have significant impact on patients' quality of life. HSV commonly causes oral and genital mucocutaneous infections whereas VZV is responsible for varicella/chickenpox and herpes zoster/shingles, but cancer patients are at particularly higher risk of complications including disseminated and visceral infections due to impaired cell-mediated immunity. While diagnosis of more common HSV and/or VZV infections is frequently clinically based, immunocompromised hosts may have atypical skin presentation or visceral involvement. Thus, diagnostic confirmation using virus-specific tests such as polymerase chain reaction or immunohistochemical staining is crucial in some cases. Oral acyclovir, valacyclovir and famciclovir are usually used for mild to moderate infections and intravenous acyclovir is the drug of choice for severe or disseminated infections. Foscarnet can be used when acyclovir-resistance is confirmed or suspected. Pharmaceutical prophylaxis against HSV and/or VZV should be considered in high-risk cancers patients. Currently, there is no commercially available vaccine against HSV, but VZV vaccines are available to prevent varicella and zoster.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36851652_after_0001886#mention-T1",
+      "canon:span": {
+        "start": 502,
+        "end": 515
+      },
+      "canon:surface": "herpes zoster",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006562",
+      "canon:sourceNotation": "D006562",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36851652_after_0001886#mention-T2",
+      "canon:span": {
+        "start": 813,
+        "end": 830
+      },
+      "canon:surface": "skin presentation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012871",
+      "canon:sourceNotation": "D012871",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36851652_after_0001886#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36851652_after_0001886#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36851652_after_0001886#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36851652"
+      }
+    }
+  ]
+}

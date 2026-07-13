@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35153810_causative-agent_0003806",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35153810_causative-agent_0003806",
+  "canon:title": "Ethanol- and Cigarette Smoke-Related Alternations in Oral Redox Homeostasis.",
+  "canon:abstract": "Alcohol abuse as well as smoking cigarettes has been proven to negatively affect the oral environment. The aim of this work was to provide a systematic review of the literature on the influence of ethanol and cigarette smoking on oral redox homeostasis. A search was performed for scientific articles indexed in the PubMed, Medline and Web of Science databases. We identified 32,300 articles, of which 54 were used for the final review, including the results from 2000 to 2021. Among the publications used to write this article, n = 14 were related to the influence of alcohol consumption (clinical studies n = 6, experimental studies n = 8) and n = 40 were related to the influence of smoking (clinical studies n = 33, experimental studies n = 7) on oral redox homeostasis. The reviewed literature indicates that alcohol abusers and smokers are more likely to suffer from salivary gland dysfunction, as well as develop precancerous lesions due to DNA damage. Compared to alcohol abstainers and non-smokers, alcohol drinkers and smokers are also characterized by a deterioration in periodontal health measured by various indicators of periodontal status. In summary, alcohol abuse and smoking are associated with disrupted oral redox homeostasis, which may lead not only to tooth loss, but also contribute to various adverse effects related to mental health, digestive processes and chronic inflammation throughout the human body.",
+  "canon:text": "Ethanol- and Cigarette Smoke-Related Alternations in Oral Redox Homeostasis. Alcohol abuse as well as smoking cigarettes has been proven to negatively affect the oral environment. The aim of this work was to provide a systematic review of the literature on the influence of ethanol and cigarette smoking on oral redox homeostasis. A search was performed for scientific articles indexed in the PubMed, Medline and Web of Science databases. We identified 32,300 articles, of which 54 were used for the final review, including the results from 2000 to 2021. Among the publications used to write this article, n = 14 were related to the influence of alcohol consumption (clinical studies n = 6, experimental studies n = 8) and n = 40 were related to the influence of smoking (clinical studies n = 33, experimental studies n = 7) on oral redox homeostasis. The reviewed literature indicates that alcohol abusers and smokers are more likely to suffer from salivary gland dysfunction, as well as develop precancerous lesions due to DNA damage. Compared to alcohol abstainers and non-smokers, alcohol drinkers and smokers are also characterized by a deterioration in periodontal health measured by various indicators of periodontal status. In summary, alcohol abuse and smoking are associated with disrupted oral redox homeostasis, which may lead not only to tooth loss, but also contribute to various adverse effects related to mental health, digestive processes and chronic inflammation throughout the human body.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35153810_causative-agent_0003806#mention-T1",
+      "canon:span": {
+        "start": 77,
+        "end": 90
+      },
+      "canon:surface": "Alcohol abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35153810_causative-agent_0003806#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 7
+      },
+      "canon:surface": "Ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35153810_causative-agent_0003806#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35153810_causative-agent_0003806#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35153810_causative-agent_0003806#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35153810"
+      }
+    }
+  ]
+}

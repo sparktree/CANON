@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35126717_after_0003784",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35126717_after_0003784",
+  "canon:title": "Ophthalmic herpes zoster with severe complications in an immunocompromised patient: A case report and review of the literature.",
+  "canon:abstract": "The increasing incidence for herpes zoster, including its ophthalmic form, is based on physiological (senescence) and acquired immunosuppression, particularly under oncologic treatment. The immunocompromised status of the patient favors the appearance of severe complications. The patient, aged 54, with chronic lymphocytic leukemia, presented 1 week from the onset with an erythematous, vesicular-bullous rash on the right trigeminal nerve's ophthalmic dermatome, marked edema, intense pain and large submandibular ganglion masses. There were cutaneous (necrotic ulcerations superinfected with methicillin-resistant Staphylococcus aureus), ocular (keratoconjunctivitis, total ophthalmoplegia, lagophthalmia, anterior hemorrhagic uveitis with hyphema and right eye blindness) and neurological (postherpetic neuralgia) complications. Systemic therapy was performed with acyclovir, antibiotics, supportive, rebalancing and symptomatics. With regards to treatment for skin ulcers, disinfection and necrectomy were performed, and epithelialization agents were subsequently administrated. At the ocular level, the ophthalmologist carefully monitored the patient and administered antivirals, antibiotics, epithelialization agents and autologous serum. The evolution of the case recorded severe, disabling complications, with extensive eyelid necrosis and definitive blindness. In this case, the severity of the ophthalmic herpes zoster (OHZ) was favored by the synergistic action of four factors: Acquired immunosuppression (chronic lymphocytic leukemia), delayed consultation, superinfectious lesions and patient non-compliance regarding the chronic lymphocytic leukemia treatment.",
+  "canon:text": "Ophthalmic herpes zoster with severe complications in an immunocompromised patient: A case report and review of the literature. The increasing incidence for herpes zoster, including its ophthalmic form, is based on physiological (senescence) and acquired immunosuppression, particularly under oncologic treatment. The immunocompromised status of the patient favors the appearance of severe complications. The patient, aged 54, with chronic lymphocytic leukemia, presented 1 week from the onset with an erythematous, vesicular-bullous rash on the right trigeminal nerve's ophthalmic dermatome, marked edema, intense pain and large submandibular ganglion masses. There were cutaneous (necrotic ulcerations superinfected with methicillin-resistant Staphylococcus aureus), ocular (keratoconjunctivitis, total ophthalmoplegia, lagophthalmia, anterior hemorrhagic uveitis with hyphema and right eye blindness) and neurological (postherpetic neuralgia) complications. Systemic therapy was performed with acyclovir, antibiotics, supportive, rebalancing and symptomatics. With regards to treatment for skin ulcers, disinfection and necrectomy were performed, and epithelialization agents were subsequently administrated. At the ocular level, the ophthalmologist carefully monitored the patient and administered antivirals, antibiotics, epithelialization agents and autologous serum. The evolution of the case recorded severe, disabling complications, with extensive eyelid necrosis and definitive blindness. In this case, the severity of the ophthalmic herpes zoster (OHZ) was favored by the synergistic action of four factors: Acquired immunosuppression (chronic lymphocytic leukemia), delayed consultation, superinfectious lesions and patient non-compliance regarding the chronic lymphocytic leukemia treatment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35126717_after_0003784#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 24
+      },
+      "canon:surface": "Ophthalmic herpes zoster",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006562",
+      "canon:sourceNotation": "D006562",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35126717_after_0003784#mention-T2",
+      "canon:span": {
+        "start": 889,
+        "end": 902
+      },
+      "canon:surface": "eye blindness",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001766",
+      "canon:sourceNotation": "D001766",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35126717_after_0003784#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35126717_after_0003784#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35126717_after_0003784#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35126717"
+      }
+    }
+  ]
+}

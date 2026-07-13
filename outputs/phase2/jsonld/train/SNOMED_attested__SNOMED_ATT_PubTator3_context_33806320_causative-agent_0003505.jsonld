@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33806320_causative-agent_0003505",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33806320_causative-agent_0003505",
+  "canon:title": "Psychoactive Drugs-From Chemical Structure to Oxidative Stress Related to Dopaminergic Neurotransmission. A Review.",
+  "canon:abstract": "Nowadays, more and more young people want to experience illegal, psychoactive substances, without knowing the risks of exposure. Besides affecting social life, psychoactive substances also have an important effect on consumer health. We summarized and analyzed the published literature data with reference to the mechanism of free radical generation and the link between chemical structure and oxidative stress related to dopaminergic neurotransmission. This review presents data on the physicochemical properties, on the ability to cross the blood brain barrier, the chemical structure activity relationship (SAR), and possible mechanisms by which neuronal injuries occur due to oxidative stress as a result of drug abuse such as \"bath salts\", amphetamines, or cocaine. The mechanisms of action of ingested compounds or their metabolites involve intermediate steps in which free radicals are generated. The brain is strongly affected by the consumption of such substances, facilitating the induction of neurodegenerative diseases. It can be concluded that neurotoxicity is associated with drug abuse. Dependence and oxidative stress are linked to inhibition of neurogenesis and the onset of neuronal death. Understanding the pathological mechanisms following oxidative attack can be a starting point in the development of new therapeutic targets.",
+  "canon:text": "Psychoactive Drugs-From Chemical Structure to Oxidative Stress Related to Dopaminergic Neurotransmission. A Review. Nowadays, more and more young people want to experience illegal, psychoactive substances, without knowing the risks of exposure. Besides affecting social life, psychoactive substances also have an important effect on consumer health. We summarized and analyzed the published literature data with reference to the mechanism of free radical generation and the link between chemical structure and oxidative stress related to dopaminergic neurotransmission. This review presents data on the physicochemical properties, on the ability to cross the blood brain barrier, the chemical structure activity relationship (SAR), and possible mechanisms by which neuronal injuries occur due to oxidative stress as a result of drug abuse such as \"bath salts\", amphetamines, or cocaine. The mechanisms of action of ingested compounds or their metabolites involve intermediate steps in which free radicals are generated. The brain is strongly affected by the consumption of such substances, facilitating the induction of neurodegenerative diseases. It can be concluded that neurotoxicity is associated with drug abuse. Dependence and oxidative stress are linked to inhibition of neurogenesis and the onset of neuronal death. Understanding the pathological mechanisms following oxidative attack can be a starting point in the development of new therapeutic targets.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33806320_causative-agent_0003505#mention-T1",
+      "canon:span": {
+        "start": 1173,
+        "end": 1186
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33806320_causative-agent_0003505#mention-T2",
+      "canon:span": {
+        "start": 878,
+        "end": 885
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33806320_causative-agent_0003505#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33806320_causative-agent_0003505#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33806320_causative-agent_0003505#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33806320"
+      }
+    }
+  ]
+}

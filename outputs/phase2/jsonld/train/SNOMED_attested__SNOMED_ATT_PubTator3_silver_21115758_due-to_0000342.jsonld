@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21115758_due-to_0000342",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21115758_due-to_0000342",
+  "canon:title": "Exercise and type 2 diabetes: the American College of Sports Medicine and the American Diabetes Association: joint position statement.",
+  "canon:abstract": "Although physical activity (PA) is a key element in the prevention and management of type 2 diabetes, many with this chronic disease do not become or remain regularly active. High-quality studies establishing the importance of exercise and fitness in diabetes were lacking until recently, but it is now well established that participation in regular PA improves blood glucose control and can prevent or delay type 2 diabetes, along with positively affecting lipids, blood pressure, cardiovascular events, mortality, and quality of life. Structured interventions combining PA and modest weight loss have been shown to lower type 2 diabetes risk by up to 58% in high-risk populations. Most benefits of PA on diabetes management are realized through acute and chronic improvements in insulin action, accomplished with both aerobic and resistance training. The benefits of physical training are discussed, along with recommendations for varying activities, PA-associated blood glucose management, diabetes prevention, gestational diabetes mellitus, and safe and effective practices for PA with diabetes-related complications.",
+  "canon:text": "Exercise and type 2 diabetes: the American College of Sports Medicine and the American Diabetes Association: joint position statement. Although physical activity (PA) is a key element in the prevention and management of type 2 diabetes, many with this chronic disease do not become or remain regularly active. High-quality studies establishing the importance of exercise and fitness in diabetes were lacking until recently, but it is now well established that participation in regular PA improves blood glucose control and can prevent or delay type 2 diabetes, along with positively affecting lipids, blood pressure, cardiovascular events, mortality, and quality of life. Structured interventions combining PA and modest weight loss have been shown to lower type 2 diabetes risk by up to 58% in high-risk populations. Most benefits of PA on diabetes management are realized through acute and chronic improvements in insulin action, accomplished with both aerobic and resistance training. The benefits of physical training are discussed, along with recommendations for varying activities, PA-associated blood glucose management, diabetes prevention, gestational diabetes mellitus, and safe and effective practices for PA with diabetes-related complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21115758_due-to_0000342#mention-T1",
+      "canon:span": {
+        "start": 1225,
+        "end": 1241
+      },
+      "canon:surface": "diabetes-related",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21115758_due-to_0000342#mention-T2",
+      "canon:span": {
+        "start": 13,
+        "end": 28
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21115758_due-to_0000342#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21115758_due-to_0000342#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21115758_due-to_0000342#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21115758"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29566757_due-to_0002911",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29566757_due-to_0002911",
+  "canon:title": "Molecular mechanism of diabetic cardiomyopathy and modulation of microRNA function by synthetic oligonucleotides.",
+  "canon:abstract": "Diabetic cardiomyopathy (DCM) is a chronic complication in individuals with diabetes and is characterized by ventricular dilation and hypertrophy, diastolic dysfunction, decreased or preserved systolic function and reduced ejection fraction eventually resulting in heart failure. Despite being well characterized, the fundamental mechanisms leading to DCM are still elusive. Recent studies identified the involvement of small non-coding small RNA molecules such as microRNAs (miRs) playing a key role in the etiology of DCM. Therefore, miRs associated with DCM represents a new class of targets for the development of mechanistic therapeutics, which may yield marked benefits compared to other therapeutic approaches. Indeed, few miRs currently under active clinical investigation, with many expressing cautious optimism that miRs based therapies will succeed in the coming years. The major caution in using miRs based therapy is the need to improve the stability and specificity following systemic injection, which can be achieved through chemical and structural modification. In this review, we first discuss the established role of miRs in DCM and the advances in miRs based therapeutic strategies for the prevention/treatment of DCM. We next discuss the currently employed chemical modification of miR oligonucleotides and their utility in therapies specifically focusing on the DCM. Finally, we summarize the commonly used delivery system and approaches for assessment of miRNA modulation and potential off-target effects.",
+  "canon:text": "Molecular mechanism of diabetic cardiomyopathy and modulation of microRNA function by synthetic oligonucleotides. Diabetic cardiomyopathy (DCM) is a chronic complication in individuals with diabetes and is characterized by ventricular dilation and hypertrophy, diastolic dysfunction, decreased or preserved systolic function and reduced ejection fraction eventually resulting in heart failure. Despite being well characterized, the fundamental mechanisms leading to DCM are still elusive. Recent studies identified the involvement of small non-coding small RNA molecules such as microRNAs (miRs) playing a key role in the etiology of DCM. Therefore, miRs associated with DCM represents a new class of targets for the development of mechanistic therapeutics, which may yield marked benefits compared to other therapeutic approaches. Indeed, few miRs currently under active clinical investigation, with many expressing cautious optimism that miRs based therapies will succeed in the coming years. The major caution in using miRs based therapy is the need to improve the stability and specificity following systemic injection, which can be achieved through chemical and structural modification. In this review, we first discuss the established role of miRs in DCM and the advances in miRs based therapeutic strategies for the prevention/treatment of DCM. We next discuss the currently employed chemical modification of miR oligonucleotides and their utility in therapies specifically focusing on the DCM. Finally, we summarize the commonly used delivery system and approaches for assessment of miRNA modulation and potential off-target effects.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29566757_due-to_0002911#mention-T1",
+      "canon:span": {
+        "start": 23,
+        "end": 46
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29566757_due-to_0002911#mention-T2",
+      "canon:span": {
+        "start": 223,
+        "end": 259
+      },
+      "canon:surface": "ventricular dilation and hypertrophy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D024741",
+      "canon:sourceNotation": "D024741",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29566757_due-to_0002911#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29566757_due-to_0002911#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29566757_due-to_0002911#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29566757"
+      }
+    }
+  ]
+}

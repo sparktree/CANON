@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35013125_causative-agent_0003762",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35013125_causative-agent_0003762",
+  "canon:title": "Mechanistic/mammalian target of rapamycin and side effects of antipsychotics: insights into mechanisms and implications for therapy.",
+  "canon:abstract": "Antipsychotic pharmacotherapy has been widely recommended as the standard of care for the treatment of acute schizophrenia and psychotic symptoms of other psychiatric disorders. However, there are growing concerns regarding antipsychotic-induced side effects, including weight gain, metabolic syndrome (MetS), and extrapyramidal motor disorders, which not only decrease patient compliance, but also predispose to diabetes and cardiovascular diseases. To date, most studies and reviews on the mechanisms of antipsychotic-induced metabolic side effects have focused on central nervous system mediation of appetite and food intake. However, disturbance in glucose and lipid metabolism, and hepatic steatosis induced by antipsychotic drugs might precede weight gain and MetS. Recent studies have demonstrated that the mechanistic/mammalian target of rapamycin (mTOR) pathway plays a critical regulatory role in the pathophysiology of antipsychotic drug-induced disorders of hepatic glucose and lipid metabolism. Furthermore, antipsychotic drugs promote striatal mTOR pathway activation that contributes to extrapyramidal motor side effects. Although recent findings have advanced the understanding of the role of the mTOR pathway in antipsychotic-induced side effects, few reviews have been conducted on this emerging topic. In this review, we synthesize key findings by focusing on the roles of the hepatic and striatal mTOR pathways in the pathogenesis of metabolic and extrapyramidal side effects, respectively. We further discuss the potential therapeutic benefits of normalizing excessive mTOR pathway activation with mTOR specific inhibitors. A deeper understanding of pathogenesis may inform future intervention strategies using the pharmacological or genetic inhibitors of mTOR to prevent and manage antipsychotic-induced side effects.",
+  "canon:text": "Mechanistic/mammalian target of rapamycin and side effects of antipsychotics: insights into mechanisms and implications for therapy. Antipsychotic pharmacotherapy has been widely recommended as the standard of care for the treatment of acute schizophrenia and psychotic symptoms of other psychiatric disorders. However, there are growing concerns regarding antipsychotic-induced side effects, including weight gain, metabolic syndrome (MetS), and extrapyramidal motor disorders, which not only decrease patient compliance, but also predispose to diabetes and cardiovascular diseases. To date, most studies and reviews on the mechanisms of antipsychotic-induced metabolic side effects have focused on central nervous system mediation of appetite and food intake. However, disturbance in glucose and lipid metabolism, and hepatic steatosis induced by antipsychotic drugs might precede weight gain and MetS. Recent studies have demonstrated that the mechanistic/mammalian target of rapamycin (mTOR) pathway plays a critical regulatory role in the pathophysiology of antipsychotic drug-induced disorders of hepatic glucose and lipid metabolism. Furthermore, antipsychotic drugs promote striatal mTOR pathway activation that contributes to extrapyramidal motor side effects. Although recent findings have advanced the understanding of the role of the mTOR pathway in antipsychotic-induced side effects, few reviews have been conducted on this emerging topic. In this review, we synthesize key findings by focusing on the roles of the hepatic and striatal mTOR pathways in the pathogenesis of metabolic and extrapyramidal side effects, respectively. We further discuss the potential therapeutic benefits of normalizing excessive mTOR pathway activation with mTOR specific inhibitors. A deeper understanding of pathogenesis may inform future intervention strategies using the pharmacological or genetic inhibitors of mTOR to prevent and manage antipsychotic-induced side effects.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35013125_causative-agent_0003762#mention-T1",
+      "canon:span": {
+        "start": 1100,
+        "end": 1110
+      },
+      "canon:surface": "of hepatic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35013125_causative-agent_0003762#mention-T2",
+      "canon:span": {
+        "start": 798,
+        "end": 803
+      },
+      "canon:surface": "lipid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008055",
+      "canon:sourceNotation": "D008055",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35013125_causative-agent_0003762#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35013125_causative-agent_0003762#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35013125_causative-agent_0003762#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35013125"
+      }
+    }
+  ]
+}

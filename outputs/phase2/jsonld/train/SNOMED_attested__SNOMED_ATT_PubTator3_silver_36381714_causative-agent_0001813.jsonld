@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36381714_causative-agent_0001813",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36381714_causative-agent_0001813",
+  "canon:title": "Neuroleptic Malignant Syndrome From Oxcarbazepine and Topiramate Withdrawal: An Unusual Case.",
+  "canon:abstract": "Neuroleptic malignant syndrome (NMS) is a rare, but fatal adverse reaction that is most commonly seen with typical antipsychotic medications. However, NMS can also be triggered by other dopamine-modulating agents that physicians are unlikely aware of, leading to being underdiagnosed or precluding early recognition of the syndrome. We describe a case involving a 20-year-old male who presented to the emergency department with altered mental status and failure to thrive. On admission, he subsequently developed an insidious onset of muscle rigidity and autonomic instability, and laboratory work-up was significant for leukocytosis, transaminitis, and elevations in creatinine phosphokinase, lactate, and C-reactive protein. After a battery of negative diagnostic tests, his clinical features fulfilled the NMS criteria by a diagnosis of exclusion, even in the absence of any antipsychotic regimen or dopaminergic medications. Management with dantrolene, amantadine, and aggressive fluid therapy provided a gradual return of the patient's baseline mentation along with normalization in laboratory assessments. In this novel case of NMS, we suspect oxcarbazepine and topiramate withdrawal as possible attributing factors for the patient's presentation. This article emphasizes the need for hypervigilance in future cases with high suspicion of NMS, in addition to raising a broader clinical awareness of other potential etiologies of NMS that are not restricted to only antipsychotic medications. We further discuss a review of the pathophysiology, various etiologies, clinical features, diagnostic criteria, treatment plans, and complications of NMS.",
+  "canon:text": "Neuroleptic Malignant Syndrome From Oxcarbazepine and Topiramate Withdrawal: An Unusual Case. Neuroleptic malignant syndrome (NMS) is a rare, but fatal adverse reaction that is most commonly seen with typical antipsychotic medications. However, NMS can also be triggered by other dopamine-modulating agents that physicians are unlikely aware of, leading to being underdiagnosed or precluding early recognition of the syndrome. We describe a case involving a 20-year-old male who presented to the emergency department with altered mental status and failure to thrive. On admission, he subsequently developed an insidious onset of muscle rigidity and autonomic instability, and laboratory work-up was significant for leukocytosis, transaminitis, and elevations in creatinine phosphokinase, lactate, and C-reactive protein. After a battery of negative diagnostic tests, his clinical features fulfilled the NMS criteria by a diagnosis of exclusion, even in the absence of any antipsychotic regimen or dopaminergic medications. Management with dantrolene, amantadine, and aggressive fluid therapy provided a gradual return of the patient's baseline mentation along with normalization in laboratory assessments. In this novel case of NMS, we suspect oxcarbazepine and topiramate withdrawal as possible attributing factors for the patient's presentation. This article emphasizes the need for hypervigilance in future cases with high suspicion of NMS, in addition to raising a broader clinical awareness of other potential etiologies of NMS that are not restricted to only antipsychotic medications. We further discuss a review of the pathophysiology, various etiologies, clinical features, diagnostic criteria, treatment plans, and complications of NMS.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36381714_causative-agent_0001813#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 30
+      },
+      "canon:surface": "Neuroleptic Malignant Syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009459",
+      "canon:sourceNotation": "D009459",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36381714_causative-agent_0001813#mention-T2",
+      "canon:span": {
+        "start": 1051,
+        "end": 1061
+      },
+      "canon:surface": "amantadine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000547",
+      "canon:sourceNotation": "D000547",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36381714_causative-agent_0001813#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36381714_causative-agent_0001813#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36381714_causative-agent_0001813#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36381714"
+      }
+    }
+  ]
+}

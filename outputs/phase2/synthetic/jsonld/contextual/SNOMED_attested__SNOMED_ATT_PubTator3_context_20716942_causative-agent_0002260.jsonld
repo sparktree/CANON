@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20716942_causative-agent_0002260",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20716942_causative-agent_0002260",
+  "canon:title": "Acetaldehyde adducts in alcoholic liver disease.",
+  "canon:abstract": "Chronic alcohol abuse causes liver disease that progresses from simple steatosis through stages of steatohepatitis, fibrosis, cirrhosis, and eventually hepatic failure. In addition, chronic alcoholic liver disease (ALD), with or without cirrhosis, increases risk for hepatocellular carcinoma (HCC). Acetaldehyde, a major toxic metabolite, is one of the principal culprits mediating fibrogenic and mutagenic effects of alcohol in the liver. Mechanistically, acetaldehyde promotes adduct formation, leading to functional impairments of key proteins, including enzymes, as well as DNA damage, which promotes mutagenesis. Why certain individuals who heavily abuse alcohol, develop HCC (7.2-15%) versus cirrhosis (15-20%) is not known, but genetics and co-existing viral infection are considered pathogenic factors. Moreover, adverse effects of acetaldehyde on the cardiovascular system and hematologic systems leading to ischemia, heart failure, and coagulation disorders, can exacerbate hepatic injury and increase risk for liver failure. Herein, we review the role of acetaldehyde adducts in the pathogenesis of chronic ALD and HCC.",
+  "canon:text": "Acetaldehyde adducts in alcoholic liver disease. Chronic alcohol abuse causes liver disease that progresses from simple steatosis through stages of steatohepatitis, fibrosis, cirrhosis, and eventually hepatic failure. In addition, chronic alcoholic liver disease (ALD), with or without cirrhosis, increases risk for hepatocellular carcinoma (HCC). Acetaldehyde, a major toxic metabolite, is one of the principal culprits mediating fibrogenic and mutagenic effects of alcohol in the liver. Mechanistically, acetaldehyde promotes adduct formation, leading to functional impairments of key proteins, including enzymes, as well as DNA damage, which promotes mutagenesis. Why certain individuals who heavily abuse alcohol, develop HCC (7.2-15%) versus cirrhosis (15-20%) is not known, but genetics and co-existing viral infection are considered pathogenic factors. Moreover, adverse effects of acetaldehyde on the cardiovascular system and hematologic systems leading to ischemia, heart failure, and coagulation disorders, can exacerbate hepatic injury and increase risk for liver failure. Herein, we review the role of acetaldehyde adducts in the pathogenesis of chronic ALD and HCC.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20716942_causative-agent_0002260#mention-T1",
+      "canon:span": {
+        "start": 1033,
+        "end": 1047
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20716942_causative-agent_0002260#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 12
+      },
+      "canon:surface": "Acetaldehyde",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000079",
+      "canon:sourceNotation": "D000079",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20716942_causative-agent_0002260#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20716942_causative-agent_0002260#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20716942_causative-agent_0002260#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20716942"
+      }
+    }
+  ]
+}

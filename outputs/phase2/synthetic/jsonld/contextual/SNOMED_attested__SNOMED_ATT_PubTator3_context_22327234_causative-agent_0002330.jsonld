@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22327234_causative-agent_0002330",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_22327234_causative-agent_0002330",
+  "canon:title": "Pharmacotherapeutics directed at deficiencies associated with cocaine dependence: focus on dopamine, norepinephrine and glutamate.",
+  "canon:abstract": "Much effort has been devoted to research focused on pharmacotherapies for cocaine dependence yet there are no FDA-approved medications for this brain disease. Preclinical models have been essential to defining the central and peripheral effects produced by cocaine. Recent evidence suggests that cocaine exerts its reinforcing effects by acting on multiple neurotransmitter systems within mesocorticolimibic circuitry. Imaging studies in cocaine-dependent individuals have identified deficiencies in dopaminergic signaling primarily localized to corticolimbic areas. In addition to dysregulated striatal dopamine, norepinephrine and glutamate are also altered in cocaine dependence. In this review, we present these brain abnormalities as therapeutic targets for the treatment of cocaine dependence. We then survey promising medications that exert their therapeutic effects by presumably ameliorating these brain deficiencies. Correcting neurochemical deficits in cocaine-dependent individuals improves memory and impulse control, and reduces drug craving that may decrease cocaine use. We hypothesize that using medications aimed at reversing known neurochemical imbalances is likely to be more productive than current approaches. This view is also consistent with treatment paradigms used in neuropsychiatry and general medicine.",
+  "canon:text": "Pharmacotherapeutics directed at deficiencies associated with cocaine dependence: focus on dopamine, norepinephrine and glutamate. Much effort has been devoted to research focused on pharmacotherapies for cocaine dependence yet there are no FDA-approved medications for this brain disease. Preclinical models have been essential to defining the central and peripheral effects produced by cocaine. Recent evidence suggests that cocaine exerts its reinforcing effects by acting on multiple neurotransmitter systems within mesocorticolimibic circuitry. Imaging studies in cocaine-dependent individuals have identified deficiencies in dopaminergic signaling primarily localized to corticolimbic areas. In addition to dysregulated striatal dopamine, norepinephrine and glutamate are also altered in cocaine dependence. In this review, we present these brain abnormalities as therapeutic targets for the treatment of cocaine dependence. We then survey promising medications that exert their therapeutic effects by presumably ameliorating these brain deficiencies. Correcting neurochemical deficits in cocaine-dependent individuals improves memory and impulse control, and reduces drug craving that may decrease cocaine use. We hypothesize that using medications aimed at reversing known neurochemical imbalances is likely to be more productive than current approaches. This view is also consistent with treatment paradigms used in neuropsychiatry and general medicine.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22327234_causative-agent_0002330#mention-T1",
+      "canon:span": {
+        "start": 62,
+        "end": 80
+      },
+      "canon:surface": "cocaine dependence",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22327234_causative-agent_0002330#mention-T2",
+      "canon:span": {
+        "start": 388,
+        "end": 395
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22327234_causative-agent_0002330#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22327234_causative-agent_0002330#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22327234_causative-agent_0002330#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "22327234"
+      }
+    }
+  ]
+}

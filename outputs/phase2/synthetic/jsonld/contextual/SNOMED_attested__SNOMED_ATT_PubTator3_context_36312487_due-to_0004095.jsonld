@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36312487_due-to_0004095",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36312487_due-to_0004095",
+  "canon:title": "Cutaneous allergic reaction to subcutaneous vitamin K1: A case report and review of literature.",
+  "canon:abstract": "BACKGROUND: Vitamin K1 (phytomenadione) is a fat-soluble naturally occurring vitamin that is widely used to treat certain coagulation disorders. Adverse cutaneous reactions to vitamin K1 can occur; however, owing to its low incidence and considerable variability in presentation and morphology, its diagnosis can be easily overlooked. Managing these reactions may be challenging for patients and clinicians. Therefore, reviewing the adverse cutaneous reactions to vitamin K1 is important. CASE SUMMARY: Here we report the case of a 50-year-old woman with no pre-existing hepatic disease who developed a cutaneous allergic reaction to subcutaneous vitamin K1 that presented as localized eczematous plaques at the vitamin K1 injection site. The eruption developed within 5 d of the injection and persisted for 32 mo despite treatment with topical and intralesional steroids. Eczema was diagnosed based on the results of the pathological examination, immunohistochemical staining, and a skin biopsy. The patient was advised to take herbal medicines orally twice daily. After treatment and follow-up, the patient's eczematous urticarial plaques improved and her condition stabilized. CONCLUSION: Here we present the first case of a cutaneous allergic reaction to subcutaneous vitamin K1 that was successfully treated with Chinese medicine.",
+  "canon:text": "Cutaneous allergic reaction to subcutaneous vitamin K1: A case report and review of literature. BACKGROUND: Vitamin K1 (phytomenadione) is a fat-soluble naturally occurring vitamin that is widely used to treat certain coagulation disorders. Adverse cutaneous reactions to vitamin K1 can occur; however, owing to its low incidence and considerable variability in presentation and morphology, its diagnosis can be easily overlooked. Managing these reactions may be challenging for patients and clinicians. Therefore, reviewing the adverse cutaneous reactions to vitamin K1 is important. CASE SUMMARY: Here we report the case of a 50-year-old woman with no pre-existing hepatic disease who developed a cutaneous allergic reaction to subcutaneous vitamin K1 that presented as localized eczematous plaques at the vitamin K1 injection site. The eruption developed within 5 d of the injection and persisted for 32 mo despite treatment with topical and intralesional steroids. Eczema was diagnosed based on the results of the pathological examination, immunohistochemical staining, and a skin biopsy. The patient was advised to take herbal medicines orally twice daily. After treatment and follow-up, the patient's eczematous urticarial plaques improved and her condition stabilized. CONCLUSION: Here we present the first case of a cutaneous allergic reaction to subcutaneous vitamin K1 that was successfully treated with Chinese medicine.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36312487_due-to_0004095#mention-T1",
+      "canon:span": {
+        "start": 249,
+        "end": 258
+      },
+      "canon:surface": "cutaneous",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018366",
+      "canon:sourceNotation": "D018366",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36312487_due-to_0004095#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 27
+      },
+      "canon:surface": "Cutaneous allergic reaction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006967",
+      "canon:sourceNotation": "D006967",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36312487_due-to_0004095#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36312487_due-to_0004095#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36312487_due-to_0004095#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36312487"
+      }
+    }
+  ]
+}

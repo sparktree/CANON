@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36229843_causative-agent_0004078",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36229843_causative-agent_0004078",
+  "canon:title": "The association between adult-onset Still's disease and collapsing glomerulopathy: a case report.",
+  "canon:abstract": "BACKGROUND: Collapsing glomerulopathy, characterized by marked hypertrophy and hyperplasia of the podocytes with eventual collapse of the glomerular tuft, is an important cause of end-stage renal disease. Among the many causes of collapsing glomerulopathy, autoimmune diseases, such as systemic lupus erythematosus, have been implicated. There are also rare reports of adult-onset Still's disease, an autoinflammatory condition characterized by fever, rash, and inflammatory arthritis being associated with collapsing glomerulopathy. CASE PRESENTATION: Herein, we present a review of three published cases, and present a new case of a 15-year-old African American female patient with collapsing glomerulopathy who was diagnosed with adult-onset Still's disease 12 years later when she presented with fevers, arthralgias, sore throat, lymphadenopathy, hepatocellular injury, and elevated serum ferritin. Her collapsing glomerulopathy was initially well controlled following induction therapy with cyclosporine and prednisone and maintenance therapy with losartan. However, after developing adult-onset Still's disease, she had multiple flare-ups despite various immunosuppressive therapies and developed worsening renal function, eventually progressing to end-stage renal disease. CONCLUSIONS: Our case-based review highlights a rare but important association between adult-onset Still's disease and collapsing glomerulopathy, and postulates a possible pathophysiological link.",
+  "canon:text": "The association between adult-onset Still's disease and collapsing glomerulopathy: a case report. BACKGROUND: Collapsing glomerulopathy, characterized by marked hypertrophy and hyperplasia of the podocytes with eventual collapse of the glomerular tuft, is an important cause of end-stage renal disease. Among the many causes of collapsing glomerulopathy, autoimmune diseases, such as systemic lupus erythematosus, have been implicated. There are also rare reports of adult-onset Still's disease, an autoinflammatory condition characterized by fever, rash, and inflammatory arthritis being associated with collapsing glomerulopathy. CASE PRESENTATION: Herein, we present a review of three published cases, and present a new case of a 15-year-old African American female patient with collapsing glomerulopathy who was diagnosed with adult-onset Still's disease 12 years later when she presented with fevers, arthralgias, sore throat, lymphadenopathy, hepatocellular injury, and elevated serum ferritin. Her collapsing glomerulopathy was initially well controlled following induction therapy with cyclosporine and prednisone and maintenance therapy with losartan. However, after developing adult-onset Still's disease, she had multiple flare-ups despite various immunosuppressive therapies and developed worsening renal function, eventually progressing to end-stage renal disease. CONCLUSIONS: Our case-based review highlights a rare but important association between adult-onset Still's disease and collapsing glomerulopathy, and postulates a possible pathophysiological link.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36229843_causative-agent_0004078#mention-T1",
+      "canon:span": {
+        "start": 949,
+        "end": 970
+      },
+      "canon:surface": "hepatocellular injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36229843_causative-agent_0004078#mention-T2",
+      "canon:span": {
+        "start": 1151,
+        "end": 1159
+      },
+      "canon:surface": "losartan",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D019808",
+      "canon:sourceNotation": "D019808",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36229843_causative-agent_0004078#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36229843_causative-agent_0004078#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36229843_causative-agent_0004078#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36229843"
+      }
+    }
+  ]
+}

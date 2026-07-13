@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33945068_due-to_0003537",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33945068_due-to_0003537",
+  "canon:title": "Acute pancreatitis secondary to cocaine use: a case-based systematic literature review.",
+  "canon:abstract": "Cocaine use continues to be an important global public health problem. As the use of cocaine remains pervasive so have a myriad of adverse events associated with this drug. These deleterious effects are well-studied, but gastrointestinal complications remain esoteric and the existing clinical evidence is scarce. Ischemia of the esophagus and small bowel, perforation, peptic ulceration, gastrointestinal bleeding, and ischemic colitis are among the reported complications. In specific, acute pancreatitis secondary to cocaine use is an exceedingly rare clinicopathologic entity. To date, only 7 cases of this condition have been reported in the English-language literature. We hereby delineate a rare case of a 29-year-old female who developed her first episode of cocaine-associated pancreatitis. The diagnosis was made based on a standard battery of investigations and meticulous exclusion of common etiologies of acute pancreatitis. To our knowledge, this case represents the first report of re-occurrence of acute pancreatitis upon subsequent crack cocaine insufflation, adding a higher level of evidence to a fallible association. We also present a systematic review of the existing literature on acute pancreatitis following cocaine use. An updated knowledge regarding this rare association is of paramount importance for early diagnosis and astute management.",
+  "canon:text": "Acute pancreatitis secondary to cocaine use: a case-based systematic literature review. Cocaine use continues to be an important global public health problem. As the use of cocaine remains pervasive so have a myriad of adverse events associated with this drug. These deleterious effects are well-studied, but gastrointestinal complications remain esoteric and the existing clinical evidence is scarce. Ischemia of the esophagus and small bowel, perforation, peptic ulceration, gastrointestinal bleeding, and ischemic colitis are among the reported complications. In specific, acute pancreatitis secondary to cocaine use is an exceedingly rare clinicopathologic entity. To date, only 7 cases of this condition have been reported in the English-language literature. We hereby delineate a rare case of a 29-year-old female who developed her first episode of cocaine-associated pancreatitis. The diagnosis was made based on a standard battery of investigations and meticulous exclusion of common etiologies of acute pancreatitis. To our knowledge, this case represents the first report of re-occurrence of acute pancreatitis upon subsequent crack cocaine insufflation, adding a higher level of evidence to a fallible association. We also present a systematic review of the existing literature on acute pancreatitis following cocaine use. An updated knowledge regarding this rare association is of paramount importance for early diagnosis and astute management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33945068_due-to_0003537#mention-T1",
+      "canon:span": {
+        "start": 508,
+        "end": 524
+      },
+      "canon:surface": "ischemic colitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017091",
+      "canon:sourceNotation": "D017091",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33945068_due-to_0003537#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 18
+      },
+      "canon:surface": "Acute pancreatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010195",
+      "canon:sourceNotation": "D010195",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33945068_due-to_0003537#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33945068_due-to_0003537#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33945068_due-to_0003537#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33945068"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37375783_due-to_0004332",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37375783_due-to_0004332",
+  "canon:title": "Multifaceted Roles of GLP-1 and Its Analogs: A Review on Molecular Mechanisms with a Cardiotherapeutic Perspective.",
+  "canon:abstract": "Diabetes is one of the chronic metabolic disorders which poses a multitude of life-debilitating challenges, including cardiac muscle impairment, which eventually results in heart failure. The incretin hormone glucagon-like peptide-1 (GLP-1) has gained distinct recognition in reinstating glucose homeostasis in diabetes, while it is now largely accepted that it has an array of biological effects in the body. Several lines of evidence have revealed that GLP-1 and its analogs possess cardioprotective effects by various mechanisms related to cardiac contractility, myocardial glucose uptake, cardiac oxidative stress and ischemia/reperfusion injury, and mitochondrial homeostasis. Upon binding to GLP-1 receptor (GLP-1R), GLP-1 and its analogs exert their effects via adenylyl cyclase-mediated cAMP elevation and subsequent activation of cAMP-dependent protein kinase(s) which stimulates the insulin release in conjunction with enhanced Ca2+ and ATP levels. Recent findings have suggested additional downstream molecular pathways stirred by long-term exposure of GLP-1 analogs, which pave the way for the development of potential therapeutic molecules with longer lasting beneficial effects against diabetic cardiomyopathies. This review provides a comprehensive overview of the recent advances in the understanding of the GLP-1R-dependent and -independent actions of GLP-1 and its analogs in the protection against cardiomyopathies.",
+  "canon:text": "Multifaceted Roles of GLP-1 and Its Analogs: A Review on Molecular Mechanisms with a Cardiotherapeutic Perspective. Diabetes is one of the chronic metabolic disorders which poses a multitude of life-debilitating challenges, including cardiac muscle impairment, which eventually results in heart failure. The incretin hormone glucagon-like peptide-1 (GLP-1) has gained distinct recognition in reinstating glucose homeostasis in diabetes, while it is now largely accepted that it has an array of biological effects in the body. Several lines of evidence have revealed that GLP-1 and its analogs possess cardioprotective effects by various mechanisms related to cardiac contractility, myocardial glucose uptake, cardiac oxidative stress and ischemia/reperfusion injury, and mitochondrial homeostasis. Upon binding to GLP-1 receptor (GLP-1R), GLP-1 and its analogs exert their effects via adenylyl cyclase-mediated cAMP elevation and subsequent activation of cAMP-dependent protein kinase(s) which stimulates the insulin release in conjunction with enhanced Ca2+ and ATP levels. Recent findings have suggested additional downstream molecular pathways stirred by long-term exposure of GLP-1 analogs, which pave the way for the development of potential therapeutic molecules with longer lasting beneficial effects against diabetic cardiomyopathies. This review provides a comprehensive overview of the recent advances in the understanding of the GLP-1R-dependent and -independent actions of GLP-1 and its analogs in the protection against cardiomyopathies.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37375783_due-to_0004332#mention-T1",
+      "canon:span": {
+        "start": 1316,
+        "end": 1341
+      },
+      "canon:surface": "diabetic cardiomyopathies",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37375783_due-to_0004332#mention-T2",
+      "canon:span": {
+        "start": 116,
+        "end": 124
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37375783_due-to_0004332#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37375783_due-to_0004332#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37375783_due-to_0004332#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37375783"
+      }
+    }
+  ]
+}

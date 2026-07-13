@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20617045_causative-agent_0000333",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_20617045_causative-agent_0000333",
+  "canon:title": "Ethanol and cognition: indirect effects, neurotoxicity and neuroprotection: a review.",
+  "canon:abstract": "Ethanol affects cognition in a number of ways. Indirect effects include intoxication, withdrawal, brain trauma, central nervous system infection, hypoglycemia, hepatic failure, and Marchiafava-Bignami disease. Nutritional deficiency can cause pellagra and Wernicke-Korsakoff disorder. Additionally, ethanol is a direct neurotoxin and in sufficient dosage can cause lasting dementia. However, ethanol also has neuroprotectant properties and in low-to-moderate dosage reduces the risk of dementia, including Alzheimer type. In fetuses ethanol is teratogenic, and whether there exists a safe dose during pregnancy is uncertain and controversial.",
+  "canon:text": "Ethanol and cognition: indirect effects, neurotoxicity and neuroprotection: a review. Ethanol affects cognition in a number of ways. Indirect effects include intoxication, withdrawal, brain trauma, central nervous system infection, hypoglycemia, hepatic failure, and Marchiafava-Bignami disease. Nutritional deficiency can cause pellagra and Wernicke-Korsakoff disorder. Additionally, ethanol is a direct neurotoxin and in sufficient dosage can cause lasting dementia. However, ethanol also has neuroprotectant properties and in low-to-moderate dosage reduces the risk of dementia, including Alzheimer type. In fetuses ethanol is teratogenic, and whether there exists a safe dose during pregnancy is uncertain and controversial.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20617045_causative-agent_0000333#mention-T1",
+      "canon:span": {
+        "start": 41,
+        "end": 54
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20617045_causative-agent_0000333#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 7
+      },
+      "canon:surface": "Ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20617045_causative-agent_0000333#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20617045_causative-agent_0000333#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_20617045_causative-agent_0000333#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "20617045"
+      }
+    }
+  ]
+}

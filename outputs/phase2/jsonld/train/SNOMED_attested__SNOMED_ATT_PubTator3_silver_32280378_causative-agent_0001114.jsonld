@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32280378_causative-agent_0001114",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32280378_causative-agent_0001114",
+  "canon:title": "Melatonin: new insights on its therapeutic properties in diabetic complications.",
+  "canon:abstract": "Diabetes and diabetic complications are considered as leading causes of both morbidity and mortality in the world. Unfortunately, routine medical treatments used for affected patients possess undesirable side effects, including kidney and liver damages as well as gastrointestinal adverse reactions. Therefore, exploring the novel therapeutic strategies for diabetic patients is a crucial issue. It has been recently shown that melatonin, as main product of the pineal gland, despite its various pharmacological features including anticancer, anti-aging, antioxidant and anti-inflammatory effects, exerts anti-diabetic properties through regulating various cellular mechanisms. The aim of the present review is to describe potential roles of melatonin in the treatment of diabetes and its complications.",
+  "canon:text": "Melatonin: new insights on its therapeutic properties in diabetic complications. Diabetes and diabetic complications are considered as leading causes of both morbidity and mortality in the world. Unfortunately, routine medical treatments used for affected patients possess undesirable side effects, including kidney and liver damages as well as gastrointestinal adverse reactions. Therefore, exploring the novel therapeutic strategies for diabetic patients is a crucial issue. It has been recently shown that melatonin, as main product of the pineal gland, despite its various pharmacological features including anticancer, anti-aging, antioxidant and anti-inflammatory effects, exerts anti-diabetic properties through regulating various cellular mechanisms. The aim of the present review is to describe potential roles of melatonin in the treatment of diabetes and its complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32280378_causative-agent_0001114#mention-T1",
+      "canon:span": {
+        "start": 309,
+        "end": 333
+      },
+      "canon:surface": "kidney and liver damages",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32280378_causative-agent_0001114#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 9
+      },
+      "canon:surface": "Melatonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008550",
+      "canon:sourceNotation": "D008550",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32280378_causative-agent_0001114#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32280378_causative-agent_0001114#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32280378_causative-agent_0001114#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32280378"
+      }
+    }
+  ]
+}

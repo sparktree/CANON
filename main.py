@@ -42,6 +42,7 @@ if str(SCRIPTS_DIR) not in sys.path:
 
 import assemble_splits  # noqa: E402
 import concept_map  # noqa: E402
+import contextualize_synthetic  # noqa: E402
 import config  # noqa: E402
 import corpus_convert  # noqa: E402
 import entity_scope  # noqa: E402
@@ -51,6 +52,7 @@ import mrcm  # noqa: E402
 import mrcm_validity  # noqa: E402
 import relation_map  # noqa: E402
 import relation_schema  # noqa: E402
+import retrieve_pubtator_context  # noqa: E402
 import scope_audit  # noqa: E402
 import silver_pubtator  # noqa: E402
 import skos_schema  # noqa: E402
@@ -122,7 +124,7 @@ def step_1_5() -> None:
     out = mrcm.main(verbose=True)
     print(f"[1.5] MRCM JSON written to {out}")
     sn_out = mrcm_validity.build_and_dump_sn_constraints(
-        config.UMLS_SEMANTIC_NETWORK_FILES["srstre2"],
+        config.UMLS_SEMANTIC_NETWORK_FILES["srstre1"],
         config.SN_TIER2_CONSTRAINTS_JSON,
     )
     print(f"[1.5] SN Tier-2 JSON written to {sn_out}")
@@ -227,9 +229,23 @@ def step_2_6() -> None:
     print(f"[2.6] elapsed {time.time() - t0:.1f}s")
 
 
+def step_2_6b() -> None:
+    _banner("Phase 2.6b -- Targeted PubTator3 real-context retrieval (Tier-1 grounding)")
+    t0 = time.time()
+    summary = retrieve_pubtator_context.apply_all(verbose=True)
+    if summary.get("status") == "completed":
+        print(f"[2.6b] {summary['documents_written']:,} retrieved-context documents written")
+    else:
+        print(f"[2.6b] status: {summary.get('status')} ({summary.get('reason', '')})")
+    print(f"[2.6b] elapsed {time.time() - t0:.1f}s")
+
+
 def step_2_7() -> None:
     _banner("Phase 2.7 -- Train/Dev/Test split assembly")
     t0 = time.time()
+    ctx = contextualize_synthetic.contextualize()
+    print(f"[2.7] real-context Tier-1 grounding: {ctx['counts_by_attribute']} "
+          f"(distinct pairs: {ctx['distinct_pairs_by_attribute']})")
     summary = assemble_splits.assemble(verbose=True)
     counts = summary["documents_written"]
     print(f"[2.7] train={counts['train']:,}  dev={counts['dev']:,}  test={counts['test']:,}")
@@ -350,6 +366,17 @@ def step_3_6() -> None:
     print(f"[3.6] elapsed {time.time() - t0:.1f}s")
 
 
+def step_4_2() -> None:
+    _banner("Phase 4.2-4.4 -- End-to-end task and coherence evaluation")
+    from phase4_evaluate import evaluate
+    predictions = config.CSP_PREDICTIONS_DIR / "test.jsonl"
+    if not predictions.exists():
+        raise FileNotFoundError(f"CSP test predictions are required: {predictions}")
+    out = config.OUTPUTS_ROOT / "phase4" / "full_csp.json"
+    evaluate(predictions, config.PHASE2_SPLITS_DIR / "test.jsonl", out, "csp")
+    print(f"[4.2] evaluation -> {out}")
+
+
 STEPS = {
     "1.1": step_1_1,
     "1.2": step_1_2,
@@ -365,6 +392,7 @@ STEPS = {
     "2.4": step_2_4,
     "2.5": step_2_5,
     "2.6": step_2_6,
+    "2.6b": step_2_6b,
     "2.7": step_2_7,
     "3.1": step_3_1,
     "3.2": step_3_2,
@@ -372,6 +400,7 @@ STEPS = {
     "3.4": step_3_4,
     "3.5": step_3_5,
     "3.6": step_3_6,
+    "4.2": step_4_2,
 }
 
 

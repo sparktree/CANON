@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38025543_causative-agent_0004469",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_38025543_causative-agent_0004469",
+  "canon:title": "The progress of autoimmune hepatitis research and future challenges.",
+  "canon:abstract": "Autoimmune hepatitis (AIH) is a chronic liver inflammatory disease with various immune system manifestations, showing a global trend of increased prevalence. AIH is diagnosed through histological abnormalities, clinical manifestations, and biochemical indicators. The biochemical markers involve interfacial hepatitis, transaminase abnormalities, positive autoantibodies, etc. Although AIH pathogenesis is unclear, gene mutations and immunological factors could be the leading factors. AIH usually presents as a chronic liver disease and sometimes as acute hepatitis, making it challenging to distinguish it from drug-related hepatitis due to similar clinical symptoms. Normalizing transaminases and serum IgG levels is essential in assessing the remission status of AIH treatment. Glucocorticoids and azathioprine are the first-line AIH treatment, with lifelong maintenance therapy in some patients. The quality of life and survival can be improved after appropriate treatment. However, certain limitations jeopardize the quality of treatment, including long treatment cycles, side effects, poor patient compliance, and inability to inhibit liver fibrosis and cirrhosis. Accurate AIH animal models will help us understand the pathophysiology of the disease while providing fresh perspectives for avoiding and treating AIH. This review will help us understand AIH better, from the cellular and molecular causes to the clinical features, and will provide insight into new therapy techniques with fewer side effects.",
+  "canon:text": "The progress of autoimmune hepatitis research and future challenges. Autoimmune hepatitis (AIH) is a chronic liver inflammatory disease with various immune system manifestations, showing a global trend of increased prevalence. AIH is diagnosed through histological abnormalities, clinical manifestations, and biochemical indicators. The biochemical markers involve interfacial hepatitis, transaminase abnormalities, positive autoantibodies, etc. Although AIH pathogenesis is unclear, gene mutations and immunological factors could be the leading factors. AIH usually presents as a chronic liver disease and sometimes as acute hepatitis, making it challenging to distinguish it from drug-related hepatitis due to similar clinical symptoms. Normalizing transaminases and serum IgG levels is essential in assessing the remission status of AIH treatment. Glucocorticoids and azathioprine are the first-line AIH treatment, with lifelong maintenance therapy in some patients. The quality of life and survival can be improved after appropriate treatment. However, certain limitations jeopardize the quality of treatment, including long treatment cycles, side effects, poor patient compliance, and inability to inhibit liver fibrosis and cirrhosis. Accurate AIH animal models will help us understand the pathophysiology of the disease while providing fresh perspectives for avoiding and treating AIH. This review will help us understand AIH better, from the cellular and molecular causes to the clinical features, and will provide insight into new therapy techniques with fewer side effects.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38025543_causative-agent_0004469#mention-T1",
+      "canon:span": {
+        "start": 377,
+        "end": 386
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38025543_causative-agent_0004469#mention-T2",
+      "canon:span": {
+        "start": 871,
+        "end": 883
+      },
+      "canon:surface": "azathioprine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001379",
+      "canon:sourceNotation": "D001379",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38025543_causative-agent_0004469#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38025543_causative-agent_0004469#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38025543_causative-agent_0004469#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "38025543"
+      }
+    }
+  ]
+}

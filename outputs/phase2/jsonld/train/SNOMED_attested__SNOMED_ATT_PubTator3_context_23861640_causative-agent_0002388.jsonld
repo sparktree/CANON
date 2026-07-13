@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23861640_causative-agent_0002388",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23861640_causative-agent_0002388",
+  "canon:title": "Sertindole in the management of schizophrenia.",
+  "canon:abstract": "Nowadays, new schizophrenia treatments are more ambitious than ever, aiming not only to improve psychotic symptoms, but also quality of life and social reinsertion. Our objective is to briefly but critically review the diagnosis of schizophrenia, the atypical antipsychotics sertindole's pharmacology, safety and status, and mainly evaluate the effects of sertindole compared with other second generation antipsychotics for people with schizophrenia and schizophrenia-like psychosis. In vitro studies showed that sertindole exerts a potent antagonism at serotonin 5-HT2A, 5-HT2C, dopamine D2, and alphal adrenergic receptors. Sertindole offers an alternative treatment option for refractory patients given its good EPS profile, favorable metabolic profile, and comparable efficacy to risperidone. Due to cardiovascular safety concerns, sertindole is available as a second-line choice for patients intolerant to other antipsychotic agents. Further clinical studies, mainly comparisons with other second-generation antipsychotic agents, are needed to define the role of sertindole in the treatment of schizophrenia. ",
+  "canon:text": "Sertindole in the management of schizophrenia. Nowadays, new schizophrenia treatments are more ambitious than ever, aiming not only to improve psychotic symptoms, but also quality of life and social reinsertion. Our objective is to briefly but critically review the diagnosis of schizophrenia, the atypical antipsychotics sertindole's pharmacology, safety and status, and mainly evaluate the effects of sertindole compared with other second generation antipsychotics for people with schizophrenia and schizophrenia-like psychosis. In vitro studies showed that sertindole exerts a potent antagonism at serotonin 5-HT2A, 5-HT2C, dopamine D2, and alphal adrenergic receptors. Sertindole offers an alternative treatment option for refractory patients given its good EPS profile, favorable metabolic profile, and comparable efficacy to risperidone. Due to cardiovascular safety concerns, sertindole is available as a second-line choice for patients intolerant to other antipsychotic agents. Further clinical studies, mainly comparisons with other second-generation antipsychotic agents, are needed to define the role of sertindole in the treatment of schizophrenia. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23861640_causative-agent_0002388#mention-T1",
+      "canon:span": {
+        "start": 501,
+        "end": 529
+      },
+      "canon:surface": "schizophrenia-like psychosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011605",
+      "canon:sourceNotation": "D011605",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23861640_causative-agent_0002388#mention-T2",
+      "canon:span": {
+        "start": 601,
+        "end": 610
+      },
+      "canon:surface": "serotonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012701",
+      "canon:sourceNotation": "D012701",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23861640_causative-agent_0002388#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23861640_causative-agent_0002388#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23861640_causative-agent_0002388#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23861640"
+      }
+    }
+  ]
+}

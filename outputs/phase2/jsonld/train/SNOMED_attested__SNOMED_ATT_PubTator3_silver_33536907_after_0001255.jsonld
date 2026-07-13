@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33536907_after_0001255",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33536907_after_0001255",
+  "canon:title": "Immunomodulatory Mechanism and Potential Therapies for Perinatal Hypoxic-Ischemic Brain Damage.",
+  "canon:abstract": "Hypoxia-ischemia (HI) is one of the most common causes of death and disability in neonates. Currently, the only available licensed treatment for perinatal HI is hypothermia. However, it alone is not sufficient to prevent the brain injuries and/or neurological dysfunction related to HI. Perinatal HI can activate the immune system and trigger the peripheral and central responses which involve the immune cell activation, increase in production of immune mediators and release of reactive oxygen species. There is mounting evidence indicating that regulation of immune response can effectively rescue the outcomes of brain injury in experimental perinatal HI models such as Rice-Vannucci model of newborn hypoxic-ischemic brain damage (HIBD), local transient cerebral ischemia and reperfusion model, perinatal asphyxia model, and intrauterine hypoxia model. This review summarizes the many studies about immunomodulatory mechanisms and therapies for HI. It highlights the important actions of some widely documented therapeutic agents for effective intervening of HI related brain damage, namely, HIBD, such as EPO, FTY720, Minocycline, Gastrodin, Breviscapine, Milkvetch etc. In this connection, it has been reported that the ameboid microglial cells featured prominently in the perinatal brain represent the key immune cells involved in HIBD. To this end, drugs, chemical agents and herbal compounds which have the properties to suppress microglia activation have recently been extensively explored and identified as potential therapeutic agents or strategies for amelioration of neonatal HIBD.",
+  "canon:text": "Immunomodulatory Mechanism and Potential Therapies for Perinatal Hypoxic-Ischemic Brain Damage. Hypoxia-ischemia (HI) is one of the most common causes of death and disability in neonates. Currently, the only available licensed treatment for perinatal HI is hypothermia. However, it alone is not sufficient to prevent the brain injuries and/or neurological dysfunction related to HI. Perinatal HI can activate the immune system and trigger the peripheral and central responses which involve the immune cell activation, increase in production of immune mediators and release of reactive oxygen species. There is mounting evidence indicating that regulation of immune response can effectively rescue the outcomes of brain injury in experimental perinatal HI models such as Rice-Vannucci model of newborn hypoxic-ischemic brain damage (HIBD), local transient cerebral ischemia and reperfusion model, perinatal asphyxia model, and intrauterine hypoxia model. This review summarizes the many studies about immunomodulatory mechanisms and therapies for HI. It highlights the important actions of some widely documented therapeutic agents for effective intervening of HI related brain damage, namely, HIBD, such as EPO, FTY720, Minocycline, Gastrodin, Breviscapine, Milkvetch etc. In this connection, it has been reported that the ameboid microglial cells featured prominently in the perinatal brain represent the key immune cells involved in HIBD. To this end, drugs, chemical agents and herbal compounds which have the properties to suppress microglia activation have recently been extensively explored and identified as potential therapeutic agents or strategies for amelioration of neonatal HIBD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33536907_after_0001255#mention-T1",
+      "canon:span": {
+        "start": 96,
+        "end": 112
+      },
+      "canon:surface": "Hypoxia-ischemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33536907_after_0001255#mention-T2",
+      "canon:span": {
+        "start": 855,
+        "end": 872
+      },
+      "canon:surface": "cerebral ischemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002545",
+      "canon:sourceNotation": "D002545",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33536907_after_0001255#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33536907_after_0001255#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33536907_after_0001255#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33536907"
+      }
+    }
+  ]
+}

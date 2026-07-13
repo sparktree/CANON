@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32082483_due-to_0001091",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32082483_due-to_0001091",
+  "canon:title": "Role of Caveolin-1 in Diabetes and Its Complications.",
+  "canon:abstract": "It is estimated that in 2017 there were 451 million people with diabetes worldwide. These figures are expected to increase to 693 million by 2045; thus, innovative preventative programs and treatments are a necessity to fight this escalating pandemic disorder. Caveolin-1 (CAV1), an integral membrane protein, is the principal component of caveolae in membranes and is involved in multiple cellular functions such as endocytosis, cholesterol homeostasis, signal transduction, and mechanoprotection. Previous studies demonstrated that CAV1 is critical for insulin receptor-mediated signaling, insulin secretion, and potentially the development of insulin resistance. Here, we summarize the recent progress on the role of CAV1 in diabetes and diabetic complications.",
+  "canon:text": "Role of Caveolin-1 in Diabetes and Its Complications. It is estimated that in 2017 there were 451 million people with diabetes worldwide. These figures are expected to increase to 693 million by 2045; thus, innovative preventative programs and treatments are a necessity to fight this escalating pandemic disorder. Caveolin-1 (CAV1), an integral membrane protein, is the principal component of caveolae in membranes and is involved in multiple cellular functions such as endocytosis, cholesterol homeostasis, signal transduction, and mechanoprotection. Previous studies demonstrated that CAV1 is critical for insulin receptor-mediated signaling, insulin secretion, and potentially the development of insulin resistance. Here, we summarize the recent progress on the role of CAV1 in diabetes and diabetic complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32082483_due-to_0001091#mention-T1",
+      "canon:span": {
+        "start": 22,
+        "end": 52
+      },
+      "canon:surface": "Diabetes and Its Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32082483_due-to_0001091#mention-T2",
+      "canon:span": {
+        "start": 118,
+        "end": 126
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32082483_due-to_0001091#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32082483_due-to_0001091#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32082483_due-to_0001091#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32082483"
+      }
+    }
+  ]
+}

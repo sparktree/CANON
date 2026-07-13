@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38004320_causative-agent_0004466",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_38004320_causative-agent_0004466",
+  "canon:title": "The Therapeutic Potential of Amphetamine-like Psychostimulants.",
+  "canon:abstract": "This review delves into the therapeutic applications of amphetamine-type stimulants such as lisdexamphetamine dimesylate, mixed amphetamine salts, 3,4-methylenedioxymethamphetamine (MDMA), dextroamphetamine, and phentermine. These compounds have been investigated for their potential in treating a range of psychiatric disorders, including attention deficit hyperactivity disorder (ADHD), drug dependence, post-traumatic stress disorder (PTSD), and obesity. Lisdexamphetamine dimesylate has shown promise in effectively treating ADHD symptoms in both children and adults. Additionally, it has been explored as a potential treatment for drug dependency and withdrawal, demonstrating encouraging results. Mixed amphetamine salts have also exhibited efficacy in reducing ADHD symptoms in adults. Future research should explore their potential use in treating bipolar disorder and cocaine dependence, considering the associated risks and benefits. MDMA-assisted psychotherapy has emerged as an innovative approach to treating PTSD, leading to sustained reductions in symptoms and even promoting post-traumatic growth. Furthermore, it has shown promise in managing anxiety related to life-threatening illnesses. Dextroamphetamine and phentermine have demonstrated efficacy in treating cocaine and opioid dependence, ADHD, and obesity. However, careful consideration and monitoring by medical professionals are essential due to the potential risks and benefits associated with them. In conclusion, amphetamine-type stimulants present a promising avenue for therapeutic interventions in various psychiatric conditions. Nevertheless, further research is necessary to comprehensively understand their mechanisms of action, dosage requirements, and long-term effects in different patient populations.",
+  "canon:text": "The Therapeutic Potential of Amphetamine-like Psychostimulants. This review delves into the therapeutic applications of amphetamine-type stimulants such as lisdexamphetamine dimesylate, mixed amphetamine salts, 3,4-methylenedioxymethamphetamine (MDMA), dextroamphetamine, and phentermine. These compounds have been investigated for their potential in treating a range of psychiatric disorders, including attention deficit hyperactivity disorder (ADHD), drug dependence, post-traumatic stress disorder (PTSD), and obesity. Lisdexamphetamine dimesylate has shown promise in effectively treating ADHD symptoms in both children and adults. Additionally, it has been explored as a potential treatment for drug dependency and withdrawal, demonstrating encouraging results. Mixed amphetamine salts have also exhibited efficacy in reducing ADHD symptoms in adults. Future research should explore their potential use in treating bipolar disorder and cocaine dependence, considering the associated risks and benefits. MDMA-assisted psychotherapy has emerged as an innovative approach to treating PTSD, leading to sustained reductions in symptoms and even promoting post-traumatic growth. Furthermore, it has shown promise in managing anxiety related to life-threatening illnesses. Dextroamphetamine and phentermine have demonstrated efficacy in treating cocaine and opioid dependence, ADHD, and obesity. However, careful consideration and monitoring by medical professionals are essential due to the potential risks and benefits associated with them. In conclusion, amphetamine-type stimulants present a promising avenue for therapeutic interventions in various psychiatric conditions. Nevertheless, further research is necessary to comprehensively understand their mechanisms of action, dosage requirements, and long-term effects in different patient populations.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38004320_causative-agent_0004466#mention-T1",
+      "canon:span": {
+        "start": 941,
+        "end": 959
+      },
+      "canon:surface": "cocaine dependence",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38004320_causative-agent_0004466#mention-T2",
+      "canon:span": {
+        "start": 1344,
+        "end": 1351
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38004320_causative-agent_0004466#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38004320_causative-agent_0004466#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38004320_causative-agent_0004466#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "38004320"
+      }
+    }
+  ]
+}

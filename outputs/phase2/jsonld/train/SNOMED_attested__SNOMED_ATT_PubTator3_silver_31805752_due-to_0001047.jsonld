@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31805752_due-to_0001047",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31805752_due-to_0001047",
+  "canon:title": "Effects of Propolis Extract and Propolis-Derived Compounds on Obesity and Diabetes: Knowledge from Cellular and Animal Models.",
+  "canon:abstract": "Propolis is a natural product resulting from the mixing of bee secretions with botanical exudates. Since propolis is rich in flavonoids and cinnamic acid derivatives, the application of propolis extracts has been tried in therapies against cancer, inflammation, and metabolic diseases. As metabolic diseases develop relatively slowly in patients, the therapeutic effects of propolis in humans should be evaluated over long periods of time. Moreover, several factors such as medical history, genetic inheritance, and living environment should be taken into consideration in human studies. Animal models, especially mice and rats, have some advantages, as genetic and microbiological variables can be controlled. On the other hand, cellular models allow the investigation of detailed molecular events evoked by propolis and derivative compounds. Taking advantage of animal and cellular models, accumulating evidence suggests that propolis extracts have therapeutic effects on obesity by controlling adipogenesis, adipokine secretion, food intake, and energy expenditure. Studies in animal and cellular models have also indicated that propolis modulates oxidative stress, the accumulation of advanced glycation end products (AGEs), and adipose tissue inflammation, all of which contribute to insulin resistance or defects in insulin secretion. Consequently, propolis treatment may mitigate diabetic complications such as nephropathy, retinopathy, foot ulcers, and non-alcoholic fatty liver disease. This review describes the beneficial effects of propolis on metabolic disorders.",
+  "canon:text": "Effects of Propolis Extract and Propolis-Derived Compounds on Obesity and Diabetes: Knowledge from Cellular and Animal Models. Propolis is a natural product resulting from the mixing of bee secretions with botanical exudates. Since propolis is rich in flavonoids and cinnamic acid derivatives, the application of propolis extracts has been tried in therapies against cancer, inflammation, and metabolic diseases. As metabolic diseases develop relatively slowly in patients, the therapeutic effects of propolis in humans should be evaluated over long periods of time. Moreover, several factors such as medical history, genetic inheritance, and living environment should be taken into consideration in human studies. Animal models, especially mice and rats, have some advantages, as genetic and microbiological variables can be controlled. On the other hand, cellular models allow the investigation of detailed molecular events evoked by propolis and derivative compounds. Taking advantage of animal and cellular models, accumulating evidence suggests that propolis extracts have therapeutic effects on obesity by controlling adipogenesis, adipokine secretion, food intake, and energy expenditure. Studies in animal and cellular models have also indicated that propolis modulates oxidative stress, the accumulation of advanced glycation end products (AGEs), and adipose tissue inflammation, all of which contribute to insulin resistance or defects in insulin secretion. Consequently, propolis treatment may mitigate diabetic complications such as nephropathy, retinopathy, foot ulcers, and non-alcoholic fatty liver disease. This review describes the beneficial effects of propolis on metabolic disorders.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31805752_due-to_0001047#mention-T1",
+      "canon:span": {
+        "start": 1514,
+        "end": 1536
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31805752_due-to_0001047#mention-T2",
+      "canon:span": {
+        "start": 74,
+        "end": 82
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31805752_due-to_0001047#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31805752_due-to_0001047#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31805752_due-to_0001047#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31805752"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36296488_after_0004093",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36296488_after_0004093",
+  "canon:title": "Molybdenum Cofactor Deficiency in Humans.",
+  "canon:abstract": "Molybdenum cofactor (Moco) deficiency (MoCD) is characterized by neonatal-onset myoclonic epileptic encephalopathy and dystonia with cerebral MRI changes similar to hypoxic-ischemic lesions. The molecular cause of the disease is the loss of sulfite oxidase (SOX) activity, one of four Moco-dependent enzymes in men. Accumulating toxic sulfite causes a secondary increase of metabolites such as S-sulfocysteine and thiosulfate as well as a decrease in cysteine and its oxidized form, cystine. Moco is synthesized by a three-step biosynthetic pathway that involves the gene products of MOCS1, MOCS2, MOCS3, and GPHN. Depending on which synthetic step is impaired, MoCD is classified as type A, B, or C. This distinction is relevant for patient management because the metabolic block in MoCD type A can be circumvented by administering cyclic pyranopterin monophosphate (cPMP). Substitution therapy with cPMP is highly effective in reducing sulfite toxicity and restoring biochemical homeostasis, while the clinical outcome critically depends on the degree of brain injury prior to the start of treatment. In the absence of a specific treatment for MoCD type B/C and SOX deficiency, we summarize recent progress in our understanding of the underlying metabolic changes in cysteine homeostasis and propose novel therapeutic interventions to circumvent those pathological changes.",
+  "canon:text": "Molybdenum Cofactor Deficiency in Humans. Molybdenum cofactor (Moco) deficiency (MoCD) is characterized by neonatal-onset myoclonic epileptic encephalopathy and dystonia with cerebral MRI changes similar to hypoxic-ischemic lesions. The molecular cause of the disease is the loss of sulfite oxidase (SOX) activity, one of four Moco-dependent enzymes in men. Accumulating toxic sulfite causes a secondary increase of metabolites such as S-sulfocysteine and thiosulfate as well as a decrease in cysteine and its oxidized form, cystine. Moco is synthesized by a three-step biosynthetic pathway that involves the gene products of MOCS1, MOCS2, MOCS3, and GPHN. Depending on which synthetic step is impaired, MoCD is classified as type A, B, or C. This distinction is relevant for patient management because the metabolic block in MoCD type A can be circumvented by administering cyclic pyranopterin monophosphate (cPMP). Substitution therapy with cPMP is highly effective in reducing sulfite toxicity and restoring biochemical homeostasis, while the clinical outcome critically depends on the degree of brain injury prior to the start of treatment. In the absence of a specific treatment for MoCD type B/C and SOX deficiency, we summarize recent progress in our understanding of the underlying metabolic changes in cysteine homeostasis and propose novel therapeutic interventions to circumvent those pathological changes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36296488_after_0004093#mention-T1",
+      "canon:span": {
+        "start": 207,
+        "end": 231
+      },
+      "canon:surface": "hypoxic-ischemic lesions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36296488_after_0004093#mention-T2",
+      "canon:span": {
+        "start": 1188,
+        "end": 1201
+      },
+      "canon:surface": "MoCD type B/C",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019694",
+      "canon:sourceNotation": "D019694",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36296488_after_0004093#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36296488_after_0004093#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36296488_after_0004093#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36296488"
+      }
+    }
+  ]
+}

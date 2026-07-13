@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33399844_after_0003437",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33399844_after_0003437",
+  "canon:title": "Management of Crohn Disease: A Review.",
+  "canon:abstract": "IMPORTANCE: Crohn disease, a chronic gastrointestinal inflammatory disease, is increasing in incidence and prevalence in many parts of the world. Uncontrolled inflammation leads to long-term complications, including fibrotic strictures, enteric fistulae, and intestinal neoplasia. Therefore, early and effective control of inflammation is of critical importance. OBSERVATIONS: The optimal management approach for Crohn disease incorporates patient risk stratification, patient preference, and clinical factors in therapeutic decision-making. First-line therapy generally consists of steroids for rapid palliation of symptoms during initiation of anti-tumor necrosis factor alpha therapy. Other treatments may include monoclonal antibodies to IL-12/23 or integrin alpha4beta7, immunomodulators, combination therapies, or surgery. Effective control of inflammation reduces the risk of penetrating complications (such as intra-abdominal abscesses and fistulae), although more than half of patients will develop complications that require surgery. Adverse reactions to therapy include antibody formation and infusion reactions, infections, and cancers associated with immune modulators and biologics and toxicity to the bone marrow and the liver. Both Crohn disease and corticosteroid use are associated with osteoporosis. Vaccinations to prevent infections, such as influenza, pneumonia, and herpes zoster, are important components of health maintenance for patients with Crohn disease, although live vaccines are contraindicated for patients receiving immune suppression therapy. CONCLUSIONS AND RELEVANCE: The treatment of patients with Crohn disease depends on disease severity, patient risk stratification, patient preference, and clinical factors, including age of onset and penetrating complications, and includes treatment with steroids, monoclonal antibody therapies, immunomodulators, and surgery. Physicians should be familiar with the advantages and disadvantages of each therapy to best counsel their patients.",
+  "canon:text": "Management of Crohn Disease: A Review. IMPORTANCE: Crohn disease, a chronic gastrointestinal inflammatory disease, is increasing in incidence and prevalence in many parts of the world. Uncontrolled inflammation leads to long-term complications, including fibrotic strictures, enteric fistulae, and intestinal neoplasia. Therefore, early and effective control of inflammation is of critical importance. OBSERVATIONS: The optimal management approach for Crohn disease incorporates patient risk stratification, patient preference, and clinical factors in therapeutic decision-making. First-line therapy generally consists of steroids for rapid palliation of symptoms during initiation of anti-tumor necrosis factor alpha therapy. Other treatments may include monoclonal antibodies to IL-12/23 or integrin alpha4beta7, immunomodulators, combination therapies, or surgery. Effective control of inflammation reduces the risk of penetrating complications (such as intra-abdominal abscesses and fistulae), although more than half of patients will develop complications that require surgery. Adverse reactions to therapy include antibody formation and infusion reactions, infections, and cancers associated with immune modulators and biologics and toxicity to the bone marrow and the liver. Both Crohn disease and corticosteroid use are associated with osteoporosis. Vaccinations to prevent infections, such as influenza, pneumonia, and herpes zoster, are important components of health maintenance for patients with Crohn disease, although live vaccines are contraindicated for patients receiving immune suppression therapy. CONCLUSIONS AND RELEVANCE: The treatment of patients with Crohn disease depends on disease severity, patient risk stratification, patient preference, and clinical factors, including age of onset and penetrating complications, and includes treatment with steroids, monoclonal antibody therapies, immunomodulators, and surgery. Physicians should be familiar with the advantages and disadvantages of each therapy to best counsel their patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33399844_after_0003437#mention-T1",
+      "canon:span": {
+        "start": 1428,
+        "end": 1441
+      },
+      "canon:surface": "herpes zoster",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006562",
+      "canon:sourceNotation": "D006562",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33399844_after_0003437#mention-T2",
+      "canon:span": {
+        "start": 1239,
+        "end": 1280
+      },
+      "canon:surface": "toxicity to the bone marrow and the liver",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001855",
+      "canon:sourceNotation": "D001855",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33399844_after_0003437#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33399844_after_0003437#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33399844_after_0003437#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33399844"
+      }
+    }
+  ]
+}

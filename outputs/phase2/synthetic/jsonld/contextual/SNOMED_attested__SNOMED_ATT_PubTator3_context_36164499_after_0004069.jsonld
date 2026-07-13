@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36164499_after_0004069",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36164499_after_0004069",
+  "canon:title": "Disorders of Movement due to Acquired and Traumatic Brain Injury.",
+  "canon:abstract": "Purpose of Review: Both traumatic and acquired brain injury can result in diffuse multifocal injury affecting both the pyramidal and extrapyramidal tracts. Thus, these patients may exhibit signs of both upper motor neuron syndrome and movement disorder simultaneously which can further complicate diagnosis and management. We will be discussing movement disorders following acquired and traumatic brain injury. Recent Findings: Multiple functions including speech, swallowing, posture, mobility, and activities of daily living can all be affected. Medical treatment and rehabilitation-based therapy can be especially challenging due to accompanying cognitive deficits and severity of the disorder which can involve multiple limbs in addition to muscles of the face and axial skeleton. Tremor and dystonia are the most reported movement disorders following traumatic brain injury. Dystonia and myoclonus are well documented following hypoxic ischemic brain injuries. Electrophysiological studies such as dynamic surface poly-electromyography can assist with identifying phenomenology, especially differentiating between jerk-like phenomenon and help guide further work up and management. Management with medications remains challenging due to potential adverse effects. Surgical interventions including stereotactic surgery, deep brain stimulation, and intrathecal baclofen pumps have been reported, but most of the evidence supporting them has been limited to primarily case reports except for post-traumatic tremor. Summary: Brain injury can lead to motor disorders, movement disorders, visual (processing) deficits, and vestibular deficits which often coexist with cognitive deficits making it challenging to treat and rehabilitate these patients. Unfortunately, the evidence regarding the medical management and rehabilitation of brain injury patients with movement disorders is sparse and leaves much to be desired.",
+  "canon:text": "Disorders of Movement due to Acquired and Traumatic Brain Injury. Purpose of Review: Both traumatic and acquired brain injury can result in diffuse multifocal injury affecting both the pyramidal and extrapyramidal tracts. Thus, these patients may exhibit signs of both upper motor neuron syndrome and movement disorder simultaneously which can further complicate diagnosis and management. We will be discussing movement disorders following acquired and traumatic brain injury. Recent Findings: Multiple functions including speech, swallowing, posture, mobility, and activities of daily living can all be affected. Medical treatment and rehabilitation-based therapy can be especially challenging due to accompanying cognitive deficits and severity of the disorder which can involve multiple limbs in addition to muscles of the face and axial skeleton. Tremor and dystonia are the most reported movement disorders following traumatic brain injury. Dystonia and myoclonus are well documented following hypoxic ischemic brain injuries. Electrophysiological studies such as dynamic surface poly-electromyography can assist with identifying phenomenology, especially differentiating between jerk-like phenomenon and help guide further work up and management. Management with medications remains challenging due to potential adverse effects. Surgical interventions including stereotactic surgery, deep brain stimulation, and intrathecal baclofen pumps have been reported, but most of the evidence supporting them has been limited to primarily case reports except for post-traumatic tremor. Summary: Brain injury can lead to motor disorders, movement disorders, visual (processing) deficits, and vestibular deficits which often coexist with cognitive deficits making it challenging to treat and rehabilitate these patients. Unfortunately, the evidence regarding the medical management and rehabilitation of brain injury patients with movement disorders is sparse and leaves much to be desired.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36164499_after_0004069#mention-T1",
+      "canon:span": {
+        "start": 999,
+        "end": 1030
+      },
+      "canon:surface": "hypoxic ischemic brain injuries",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36164499_after_0004069#mention-T2",
+      "canon:span": {
+        "start": 1592,
+        "end": 1604
+      },
+      "canon:surface": "Brain injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001930",
+      "canon:sourceNotation": "D001930",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36164499_after_0004069#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36164499_after_0004069#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36164499_after_0004069#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36164499"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36078055_causative-agent_0004046",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36078055_causative-agent_0004046",
+  "canon:title": "Bilirubin-Induced Neurological Damage: Current and Emerging iPSC-Derived Brain Organoid Models.",
+  "canon:abstract": "Bilirubin-induced neurological damage (BIND) has been a subject of studies for decades, yet the molecular mechanisms at the core of this damage remain largely unknown. Throughout the years, many in vivo chronic bilirubin encephalopathy models, such as the Gunn rat and transgenic mice, have further elucidated the molecular basis of bilirubin neurotoxicity as well as the correlations between high levels of unconjugated bilirubin (UCB) and brain damage. Regardless of being invaluable, these models cannot accurately recapitulate the human brain and liver system; therefore, establishing a physiologically recapitulating in vitro model has become a prerequisite to unveil the breadth of complexities that accompany the detrimental effects of UCB on the liver and developing human brain. Stem-cell-derived 3D brain organoid models offer a promising platform as they bear more resemblance to the human brain system compared to existing models. This review provides an explicit picture of the current state of the art, advancements, and challenges faced by the various models as well as the possibilities of using stem-cell-derived 3D organoids as an efficient tool to be included in research, drug screening, and therapeutic strategies for future clinical applications.",
+  "canon:text": "Bilirubin-Induced Neurological Damage: Current and Emerging iPSC-Derived Brain Organoid Models. Bilirubin-induced neurological damage (BIND) has been a subject of studies for decades, yet the molecular mechanisms at the core of this damage remain largely unknown. Throughout the years, many in vivo chronic bilirubin encephalopathy models, such as the Gunn rat and transgenic mice, have further elucidated the molecular basis of bilirubin neurotoxicity as well as the correlations between high levels of unconjugated bilirubin (UCB) and brain damage. Regardless of being invaluable, these models cannot accurately recapitulate the human brain and liver system; therefore, establishing a physiologically recapitulating in vitro model has become a prerequisite to unveil the breadth of complexities that accompany the detrimental effects of UCB on the liver and developing human brain. Stem-cell-derived 3D brain organoid models offer a promising platform as they bear more resemblance to the human brain system compared to existing models. This review provides an explicit picture of the current state of the art, advancements, and challenges faced by the various models as well as the possibilities of using stem-cell-derived 3D organoids as an efficient tool to be included in research, drug screening, and therapeutic strategies for future clinical applications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36078055_causative-agent_0004046#mention-T1",
+      "canon:span": {
+        "start": 439,
+        "end": 452
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36078055_causative-agent_0004046#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 9
+      },
+      "canon:surface": "Bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36078055_causative-agent_0004046#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36078055_causative-agent_0004046#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36078055_causative-agent_0004046#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36078055"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38068803_causative-agent_0004470",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_38068803_causative-agent_0004470",
+  "canon:title": "The IRONy in Athletic Performance.",
+  "canon:abstract": "Iron is an essential micronutrient for athletes, intricately linked to their performance, by regulating cellular respiration and metabolism. Impaired iron levels in the body can significantly hinder athletic performance. The increased demand for iron due to exercise, coupled with potential dietary iron insufficiencies, particularly among endurance athletes, amplifies the risk of iron deficiency. Moreover, prolonged exercise can impact iron absorption, utilization, storage, and overall iron concentrations in an athlete. On the contrary, iron overload may initially lead to enhanced performance; however, chronic excess iron intake or underlying genetic conditions can lead to detrimental health consequences and may negatively impact athletic performance. Excess iron induces oxidative damage, not only compromising muscle function and recovery, but also affecting various tissues and organs in the body. This narrative review delineates the complex relationship between exercise and iron metabolism, and its profound effects on athletic performance. The article also provides guidance on managing iron intake through dietary adjustments, oral iron supplementation for performance enhancement in cases of deficiency, and strategies for addressing iron overload in athletes. Current research is focused on augmenting iron absorption by standardizing the route of administration while minimizing side effects. Additionally, there is ongoing work to identify inhibitors and activators that affect iron absorption, aiming to optimize the body's iron levels from dietary sources, supplements, and chelators. In summary, by refining the athletic diet, considering the timing and dosage of iron supplements for deficiency, and implementing chelation therapies for iron overload, we can effectively enhance athletic performance and overall well-being.",
+  "canon:text": "The IRONy in Athletic Performance. Iron is an essential micronutrient for athletes, intricately linked to their performance, by regulating cellular respiration and metabolism. Impaired iron levels in the body can significantly hinder athletic performance. The increased demand for iron due to exercise, coupled with potential dietary iron insufficiencies, particularly among endurance athletes, amplifies the risk of iron deficiency. Moreover, prolonged exercise can impact iron absorption, utilization, storage, and overall iron concentrations in an athlete. On the contrary, iron overload may initially lead to enhanced performance; however, chronic excess iron intake or underlying genetic conditions can lead to detrimental health consequences and may negatively impact athletic performance. Excess iron induces oxidative damage, not only compromising muscle function and recovery, but also affecting various tissues and organs in the body. This narrative review delineates the complex relationship between exercise and iron metabolism, and its profound effects on athletic performance. The article also provides guidance on managing iron intake through dietary adjustments, oral iron supplementation for performance enhancement in cases of deficiency, and strategies for addressing iron overload in athletes. Current research is focused on augmenting iron absorption by standardizing the route of administration while minimizing side effects. Additionally, there is ongoing work to identify inhibitors and activators that affect iron absorption, aiming to optimize the body's iron levels from dietary sources, supplements, and chelators. In summary, by refining the athletic diet, considering the timing and dosage of iron supplements for deficiency, and implementing chelation therapies for iron overload, we can effectively enhance athletic performance and overall well-being.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38068803_causative-agent_0004470#mention-T1",
+      "canon:span": {
+        "start": 577,
+        "end": 590
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38068803_causative-agent_0004470#mention-T2",
+      "canon:span": {
+        "start": 35,
+        "end": 39
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38068803_causative-agent_0004470#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38068803_causative-agent_0004470#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_38068803_causative-agent_0004470#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "38068803"
+      }
+    }
+  ]
+}

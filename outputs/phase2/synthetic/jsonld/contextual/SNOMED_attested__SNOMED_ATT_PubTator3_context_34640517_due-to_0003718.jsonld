@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34640517_due-to_0003718",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34640517_due-to_0003718",
+  "canon:title": "Association of Novel Advanced Glycation End-Product (AGE10) with Complications of Diabetes as Measured by Enzyme-Linked Immunosorbent Assay.",
+  "canon:abstract": "Advanced glycation end-products (AGEs) contribute to vascular complications and organ damage in diabetes. The unique AGE epitope (AGE10) has recently been identified in human serum using synthetic melibiose-derived AGE (MAGE). We aimed at developing ELISA for AGE10 quantification, determining whether AGE10 is present in diabetic patients (n = 82), and evaluating its association with diabetic complications. In a competitive ELISA developed, the reaction of synthetic MAGE with anti-MAGE was inhibited by physiological AGE10 present in serum. In this assay, new murine IgE anti-MAGE monoclonal antibodies, which do not recognize conventional AGEs, a synthetic MAGE used to coat the plate, and LMW-MAGE (low molecular mass MAGE) necessary to plot a standard curve were used. AGE10 was significantly higher in patients with microangiopathy, in whom it depended on treatment, being lower in patients treated with aspirin. AGE10 levels were positively correlated with estimated glomerular filtration rate (eGFR) and negatively with creatinine. As a marker of stage >=3 chronic kidney disease or microangiopathy, AGE10 displayed moderate overall accuracy (respectively, 69% and 71%) and good sensitivity (82.6% and 83.3%) but poor specificity (58.1% and 57.8%). In conclusion, newly developed immunoassay allows for AGE10 quantification. AGE10 elevation is associated with microangiopathy while its decrease accompanies stage >=3 chronic kidney disease.",
+  "canon:text": "Association of Novel Advanced Glycation End-Product (AGE10) with Complications of Diabetes as Measured by Enzyme-Linked Immunosorbent Assay. Advanced glycation end-products (AGEs) contribute to vascular complications and organ damage in diabetes. The unique AGE epitope (AGE10) has recently been identified in human serum using synthetic melibiose-derived AGE (MAGE). We aimed at developing ELISA for AGE10 quantification, determining whether AGE10 is present in diabetic patients (n = 82), and evaluating its association with diabetic complications. In a competitive ELISA developed, the reaction of synthetic MAGE with anti-MAGE was inhibited by physiological AGE10 present in serum. In this assay, new murine IgE anti-MAGE monoclonal antibodies, which do not recognize conventional AGEs, a synthetic MAGE used to coat the plate, and LMW-MAGE (low molecular mass MAGE) necessary to plot a standard curve were used. AGE10 was significantly higher in patients with microangiopathy, in whom it depended on treatment, being lower in patients treated with aspirin. AGE10 levels were positively correlated with estimated glomerular filtration rate (eGFR) and negatively with creatinine. As a marker of stage >=3 chronic kidney disease or microangiopathy, AGE10 displayed moderate overall accuracy (respectively, 69% and 71%) and good sensitivity (82.6% and 83.3%) but poor specificity (58.1% and 57.8%). In conclusion, newly developed immunoassay allows for AGE10 quantification. AGE10 elevation is associated with microangiopathy while its decrease accompanies stage >=3 chronic kidney disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34640517_due-to_0003718#mention-T1",
+      "canon:span": {
+        "start": 527,
+        "end": 549
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34640517_due-to_0003718#mention-T2",
+      "canon:span": {
+        "start": 82,
+        "end": 90
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34640517_due-to_0003718#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34640517_due-to_0003718#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34640517_due-to_0003718#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34640517"
+      }
+    }
+  ]
+}

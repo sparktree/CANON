@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098",
+  "canon:title": "Exploratory toxicology studies of 2,3-substituted imidazo[1,2-a]pyridines with antiparasitic and anti-inflammatory properties.",
+  "canon:abstract": "Background: Trichomoniasis and amoebiasis are neglected diseases and still remain as a global health burden not only for developing countries, from where are endemic, but also for the developed world. Previously, we tested the antiparasitic activity of a number of imidazo[1,2-a]pyridine derivatives (IMPYs) on metronidazole-resistant strains of Entamoeba Hystolitica (HM1:IMSS), and Trichomonas Vaginalis (GT3). Their anti-inflammatory activity was also evaluated. Objective: The present work is a part of a project whose aim is to find new alternatives to standard treatments for these maladies, and to address the current concern of emerging resistant parasite strains. Here we report a non-clinical study focused on exploratory toxicology assays of seven IMPYs that showed the best antiparasitic and/or anti-inflammatory properties. Methods: Acute, and subacute toxicity tests were carried out. After 14-day oral treatment, liver and kidney functionality assays in combination with chemometric methods were implemented to detect hepatic and/or kidney damage. Results: Some compounds produced off-target effects. Vehicle effects were also detected. However, no signs of hepatic or renal toxicity were observed for any IMPY. Conclusion: These compounds can continue non-clinical evaluations, and if possible, clinical trials as new candidates to treat trichomoniasis and amoebiasis, and inflammatory diseases. Further studies are also needed to fully elucidate a proposed dual effect that may exert these molecules against trichomoniasis and amoebiasis, which may also signify a novel mechanism of action to treat these infections.",
+  "canon:text": "Exploratory toxicology studies of 2,3-substituted imidazo[1,2-a]pyridines with antiparasitic and anti-inflammatory properties. Background: Trichomoniasis and amoebiasis are neglected diseases and still remain as a global health burden not only for developing countries, from where are endemic, but also for the developed world. Previously, we tested the antiparasitic activity of a number of imidazo[1,2-a]pyridine derivatives (IMPYs) on metronidazole-resistant strains of Entamoeba Hystolitica (HM1:IMSS), and Trichomonas Vaginalis (GT3). Their anti-inflammatory activity was also evaluated. Objective: The present work is a part of a project whose aim is to find new alternatives to standard treatments for these maladies, and to address the current concern of emerging resistant parasite strains. Here we report a non-clinical study focused on exploratory toxicology assays of seven IMPYs that showed the best antiparasitic and/or anti-inflammatory properties. Methods: Acute, and subacute toxicity tests were carried out. After 14-day oral treatment, liver and kidney functionality assays in combination with chemometric methods were implemented to detect hepatic and/or kidney damage. Results: Some compounds produced off-target effects. Vehicle effects were also detected. However, no signs of hepatic or renal toxicity were observed for any IMPY. Conclusion: These compounds can continue non-clinical evaluations, and if possible, clinical trials as new candidates to treat trichomoniasis and amoebiasis, and inflammatory diseases. Further studies are also needed to fully elucidate a proposed dual effect that may exert these molecules against trichomoniasis and amoebiasis, which may also signify a novel mechanism of action to treat these infections.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T1",
+      "canon:span": {
+        "start": 1300,
+        "end": 1325
+      },
+      "canon:surface": "hepatic or renal toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T2",
+      "canon:span": {
+        "start": 438,
+        "end": 451
+      },
+      "canon:surface": "metronidazole",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008795",
+      "canon:sourceNotation": "D008795",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36337253_causative-agent_0004098#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36337253"
+      }
+    }
+  ]
+}

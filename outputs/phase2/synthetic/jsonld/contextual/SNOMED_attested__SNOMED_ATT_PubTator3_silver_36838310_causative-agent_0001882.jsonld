@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36838310_causative-agent_0001882",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36838310_causative-agent_0001882",
+  "canon:title": "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS): Focus on the Pathophysiological and Diagnostic Role of Viruses.",
+  "canon:abstract": "Drug reaction with eosinophilia and systemic symptoms (DRESS) is a heterogeneous, multiorgan and potentially life-threatening drug-hypersensitivity reaction (DHR) that occurs several days or weeks after drug initiation or discontinuation. DHRs constitute an emerging issue for public health, due to population aging, growing multi-organ morbidity, and subsequent enhanced drug prescriptions. DRESS has more consistently been associated with anticonvulsants, allopurinol and antibiotics, such as sulphonamides and vancomycin, although new drugs are increasingly reported as culprit agents. Reactivation of latent infectious agents such as viruses (especially Herpesviridae) plays a key role in prompting and sustaining aberrant T-cell and eosinophil responses to drugs and pathogens, ultimately causing organ damage. However, the boundaries of the impact of viral agents in the pathophysiology of DRESS are still ill-defined. Along with growing awareness of the multifaceted aspects of immune perturbation caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) during the ongoing SARS-CoV-2-related disease (COVID-19) pandemic, novel interest has been sparked towards DRESS and the potential interactions among antiviral and anti-drug inflammatory responses. In this review, we summarised the most recent evidence on pathophysiological mechanisms, diagnostic approaches, and clinical management of DRESS with the aim of increasing awareness on this syndrome and possibly suggesting clues for future research in this field.",
+  "canon:text": "Drug Reaction with Eosinophilia and Systemic Symptoms (DRESS): Focus on the Pathophysiological and Diagnostic Role of Viruses. Drug reaction with eosinophilia and systemic symptoms (DRESS) is a heterogeneous, multiorgan and potentially life-threatening drug-hypersensitivity reaction (DHR) that occurs several days or weeks after drug initiation or discontinuation. DHRs constitute an emerging issue for public health, due to population aging, growing multi-organ morbidity, and subsequent enhanced drug prescriptions. DRESS has more consistently been associated with anticonvulsants, allopurinol and antibiotics, such as sulphonamides and vancomycin, although new drugs are increasingly reported as culprit agents. Reactivation of latent infectious agents such as viruses (especially Herpesviridae) plays a key role in prompting and sustaining aberrant T-cell and eosinophil responses to drugs and pathogens, ultimately causing organ damage. However, the boundaries of the impact of viral agents in the pathophysiology of DRESS are still ill-defined. Along with growing awareness of the multifaceted aspects of immune perturbation caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) during the ongoing SARS-CoV-2-related disease (COVID-19) pandemic, novel interest has been sparked towards DRESS and the potential interactions among antiviral and anti-drug inflammatory responses. In this review, we summarised the most recent evidence on pathophysiological mechanisms, diagnostic approaches, and clinical management of DRESS with the aim of increasing awareness on this syndrome and possibly suggesting clues for future research in this field.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36838310_causative-agent_0001882#mention-T1",
+      "canon:span": {
+        "start": 253,
+        "end": 283
+      },
+      "canon:surface": "drug-hypersensitivity reaction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36838310_causative-agent_0001882#mention-T2",
+      "canon:span": {
+        "start": 585,
+        "end": 596
+      },
+      "canon:surface": "allopurinol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000493",
+      "canon:sourceNotation": "D000493",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36838310_causative-agent_0001882#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36838310_causative-agent_0001882#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36838310_causative-agent_0001882#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36838310"
+      }
+    }
+  ]
+}

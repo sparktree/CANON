@@ -1,0 +1,86 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_4071154_due-to_0000079",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_4071154_due-to_0000079",
+  "canon:title": "Indomethacin-induced renal insufficiency: recurrence on rechallenge.",
+  "canon:abstract": "We have reported a case of acute oliguric renal failure with hyperkalemia in a patient with cirrhosis, ascites, and cor pulmonale after indomethacin therapy. Prompt restoration of renal function followed drug withdrawal, while re-exposure to a single dose of indomethacin caused recurrence of acute reversible oliguria. Our case supports the hypothesis that endogenous renal prostaglandins play a role in the maintenance of renal blood flow when circulating plasma volume is diminished. Since nonsteroidal anti-inflammatory agents interfere with this compensatory mechanism and may cause acute renal failure, they should be used with caution in such patients.",
+  "canon:text": "Indomethacin-induced renal insufficiency: recurrence on rechallenge. We have reported a case of acute oliguric renal failure with hyperkalemia in a patient with cirrhosis, ascites, and cor pulmonale after indomethacin therapy. Prompt restoration of renal function followed drug withdrawal, while re-exposure to a single dose of indomethacin caused recurrence of acute reversible oliguria. Our case supports the hypothesis that endogenous renal prostaglandins play a role in the maintenance of renal blood flow when circulating plasma volume is diminished. Since nonsteroidal anti-inflammatory agents interfere with this compensatory mechanism and may cause acute renal failure, they should be used with caution in such patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_4071154_due-to_0000079#mention-T1",
+      "canon:span": {
+        "start": 185,
+        "end": 198
+      },
+      "canon:surface": "cor pulmonale",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D011660",
+      "canon:sourceNotation": "D011660",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/83291003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_4071154_due-to_0000079#mention-T2",
+      "canon:span": {
+        "start": 172,
+        "end": 179
+      },
+      "canon:surface": "ascites",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001201",
+      "canon:sourceNotation": "D001201",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Sign or Symptom"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/389026000",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_4071154_due-to_0000079#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_4071154_due-to_0000079#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_4071154_due-to_0000079#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "4071154"
+      }
+    }
+  ]
+}

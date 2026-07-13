@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23231745_due-to_0002360",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23231745_due-to_0002360",
+  "canon:title": "Endotoxin- and ATP-neutralizing activity of alkaline phosphatase as a strategy to limit neuroinflammation.",
+  "canon:abstract": "BACKGROUND: Alkaline phosphatase (AP) is a ubiquitously expressed enzyme which can neutralize endotoxin as well as adenosine triphosphate (ATP), an endogenous danger signal released during brain injury. In this study we assessed a potential therapeutic role for AP in inhibiting neuroinflammation using three complementary approaches. METHODS: Mice were immunized to induce experimental autoimmune encephalomyelitis (EAE) and treated with AP for seven days during different phases of disease. In addition, serological assays to determine AP activity, endotoxin levels and endotoxin-reactive antibodies were performed in a cohort of multiple sclerosis (MS) patients and controls. Finally, the expression of AP and related enzymes CD39 and CD73 was investigated in brain tissue from MS patients and control subjects. RESULTS: AP administration during the priming phase, but not during later stages, of EAE significantly reduced neurological signs. This was accompanied by reduced proliferation of splenocytes to the immunogen, myelin oligodendrocyte glycoprotein peptide. In MS patients, AP activity and isoenzyme distribution were similar to controls. Although endotoxin-reactive IgM was reduced in primary-progressive MS patients, plasma endotoxin levels were not different between groups. Finally, unlike AP and CD73, CD39 was highly upregulated on microglia in white matter lesions of patients with MS. CONCLUSIONS: Our findings demonstrate that: 1) pre-symptomatic AP treatment reduces neurological signs of EAE; 2) MS patients do not have altered circulating levels of AP or endotoxin; and 3) the expression of the AP-like enzyme CD39 is increased on microglia in white matter lesions of MS patients.",
+  "canon:text": "Endotoxin- and ATP-neutralizing activity of alkaline phosphatase as a strategy to limit neuroinflammation. BACKGROUND: Alkaline phosphatase (AP) is a ubiquitously expressed enzyme which can neutralize endotoxin as well as adenosine triphosphate (ATP), an endogenous danger signal released during brain injury. In this study we assessed a potential therapeutic role for AP in inhibiting neuroinflammation using three complementary approaches. METHODS: Mice were immunized to induce experimental autoimmune encephalomyelitis (EAE) and treated with AP for seven days during different phases of disease. In addition, serological assays to determine AP activity, endotoxin levels and endotoxin-reactive antibodies were performed in a cohort of multiple sclerosis (MS) patients and controls. Finally, the expression of AP and related enzymes CD39 and CD73 was investigated in brain tissue from MS patients and control subjects. RESULTS: AP administration during the priming phase, but not during later stages, of EAE significantly reduced neurological signs. This was accompanied by reduced proliferation of splenocytes to the immunogen, myelin oligodendrocyte glycoprotein peptide. In MS patients, AP activity and isoenzyme distribution were similar to controls. Although endotoxin-reactive IgM was reduced in primary-progressive MS patients, plasma endotoxin levels were not different between groups. Finally, unlike AP and CD73, CD39 was highly upregulated on microglia in white matter lesions of patients with MS. CONCLUSIONS: Our findings demonstrate that: 1) pre-symptomatic AP treatment reduces neurological signs of EAE; 2) MS patients do not have altered circulating levels of AP or endotoxin; and 3) the expression of the AP-like enzyme CD39 is increased on microglia in white matter lesions of MS patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23231745_due-to_0002360#mention-T1",
+      "canon:span": {
+        "start": 481,
+        "end": 522
+      },
+      "canon:surface": "experimental autoimmune encephalomyelitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004681",
+      "canon:sourceNotation": "D004681",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23231745_due-to_0002360#mention-T2",
+      "canon:span": {
+        "start": 296,
+        "end": 308
+      },
+      "canon:surface": "brain injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001930",
+      "canon:sourceNotation": "D001930",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23231745_due-to_0002360#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23231745_due-to_0002360#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23231745_due-to_0002360#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23231745"
+      }
+    }
+  ]
+}

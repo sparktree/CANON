@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30759034_causative-agent_0000929",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30759034_causative-agent_0000929",
+  "canon:title": "Iron and manganese-related CNS toxicity: mechanisms, diagnosis and treatment.",
+  "canon:abstract": "INTRODUCTION: Iron (Fe) and manganese (Mn) are essential nutrients for humans. They act as cofactors for a variety of enzymes. In the central nervous system (CNS), these two metals are involved in diverse neurological activities. Dyshomeostasis may interfere with the critical enzymatic activities, hence altering the neurophysiological status and resulting in neurological diseases. Areas covered: In this review, the authors cover the molecular mechanisms of Fe/Mn-induced toxicity and neurological diseases, as well as the diagnosis and potential treatment. Given that both Fe and Mn are abundant in the earth crust, nutritional deficiency is rare. In this review the authors focus on the neurological disorders associated with Mn and Fe overload. Expert commentary: Oxidative stress and mitochondrial dysfunction are the primary molecular mechanism that mediates Fe/Mn-induced neurotoxicity. Although increased Fe or Mn concentrations have been found in brain of patients, it remains controversial whether the elevated metal amounts are the primary cause or secondary consequence of neurological diseases. Currently, treatments are far from satisfactory, although chelation therapy can significantly decrease brain Fe and Mn levels. Studies to determine the primary cause and establish the molecular mechanism of toxicity may help to adapt more comprehensive and satisfactory treatments in the future.",
+  "canon:text": "Iron and manganese-related CNS toxicity: mechanisms, diagnosis and treatment. INTRODUCTION: Iron (Fe) and manganese (Mn) are essential nutrients for humans. They act as cofactors for a variety of enzymes. In the central nervous system (CNS), these two metals are involved in diverse neurological activities. Dyshomeostasis may interfere with the critical enzymatic activities, hence altering the neurophysiological status and resulting in neurological diseases. Areas covered: In this review, the authors cover the molecular mechanisms of Fe/Mn-induced toxicity and neurological diseases, as well as the diagnosis and potential treatment. Given that both Fe and Mn are abundant in the earth crust, nutritional deficiency is rare. In this review the authors focus on the neurological disorders associated with Mn and Fe overload. Expert commentary: Oxidative stress and mitochondrial dysfunction are the primary molecular mechanism that mediates Fe/Mn-induced neurotoxicity. Although increased Fe or Mn concentrations have been found in brain of patients, it remains controversial whether the elevated metal amounts are the primary cause or secondary consequence of neurological diseases. Currently, treatments are far from satisfactory, although chelation therapy can significantly decrease brain Fe and Mn levels. Studies to determine the primary cause and establish the molecular mechanism of toxicity may help to adapt more comprehensive and satisfactory treatments in the future.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30759034_causative-agent_0000929#mention-T1",
+      "canon:span": {
+        "start": 959,
+        "end": 972
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30759034_causative-agent_0000929#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 4
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30759034_causative-agent_0000929#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30759034_causative-agent_0000929#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30759034_causative-agent_0000929#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30759034"
+      }
+    }
+  ]
+}

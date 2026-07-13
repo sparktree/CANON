@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35883865_causative-agent_0001729",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35883865_causative-agent_0001729",
+  "canon:title": "Alcohol-Induced Oxidative Stress and the Role of Antioxidants in Alcohol Use Disorder: A Systematic Review.",
+  "canon:abstract": "Alcohol use disorder (AUD) is a highly prevalent, comorbid, and disabling disorder. The underlying mechanism of ethanol neurotoxicity and the involvement of oxidative stress is still not fully elucidated. However, ethanol metabolism has been associated with increased oxidative stress through alcohol dehydrogenase, the microsomal ethanol oxidation system, and catalase metabolic pathways. We searched the PubMed and genome-wide association studies (GWAS) catalog databases to review the literature systematically and summarized the findings focusing on AUD and alcohol abstinence in relation to oxidative stress. In addition, we reviewed the ClinicalTrials.gov resource of the US National Library of Medicine to identify all ongoing and completed clinical trials that include therapeutic interventions based on antioxidants. The retrieved clinical and preclinical studies show that oxidative stress impacts AUD through genetics, alcohol metabolism, inflammation, and neurodegeneration.",
+  "canon:text": "Alcohol-Induced Oxidative Stress and the Role of Antioxidants in Alcohol Use Disorder: A Systematic Review. Alcohol use disorder (AUD) is a highly prevalent, comorbid, and disabling disorder. The underlying mechanism of ethanol neurotoxicity and the involvement of oxidative stress is still not fully elucidated. However, ethanol metabolism has been associated with increased oxidative stress through alcohol dehydrogenase, the microsomal ethanol oxidation system, and catalase metabolic pathways. We searched the PubMed and genome-wide association studies (GWAS) catalog databases to review the literature systematically and summarized the findings focusing on AUD and alcohol abstinence in relation to oxidative stress. In addition, we reviewed the ClinicalTrials.gov resource of the US National Library of Medicine to identify all ongoing and completed clinical trials that include therapeutic interventions based on antioxidants. The retrieved clinical and preclinical studies show that oxidative stress impacts AUD through genetics, alcohol metabolism, inflammation, and neurodegeneration.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35883865_causative-agent_0001729#mention-T1",
+      "canon:span": {
+        "start": 228,
+        "end": 241
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35883865_causative-agent_0001729#mention-T2",
+      "canon:span": {
+        "start": 220,
+        "end": 227
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35883865_causative-agent_0001729#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35883865_causative-agent_0001729#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35883865_causative-agent_0001729#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35883865"
+      }
+    }
+  ]
+}

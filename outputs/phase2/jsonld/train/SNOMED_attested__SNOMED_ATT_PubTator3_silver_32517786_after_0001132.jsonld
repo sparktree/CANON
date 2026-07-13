@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32517786_after_0001132",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32517786_after_0001132",
+  "canon:title": "Revisiting hydroxychloroquine and chloroquine for patients with chronic immunity-mediated inflammatory rheumatic diseases.",
+  "canon:abstract": "Hydroxychloroquine and chloroquine, also known as antimalarial drugs, are widely used in the treatment of rheumatic diseases and have recently become the focus of attention because of the ongoing COVID-19 pandemic. Rheumatologists have been using antimalarials to manage patients with chronic immune-mediated inflammatory rheumatic diseases for decades. It is an appropriate time to review their immunomodulatory and anti-inflammatory mechanisms impact on disease activity and survival of systemic lupus erythematosus patient, including antiplatelet effect, metabolic and lipid benefits. We also discuss possible adverse effects, adding a practical and comprehensive approach to monitoring rheumatic patients during treatment with these drugs.",
+  "canon:text": "Revisiting hydroxychloroquine and chloroquine for patients with chronic immunity-mediated inflammatory rheumatic diseases. Hydroxychloroquine and chloroquine, also known as antimalarial drugs, are widely used in the treatment of rheumatic diseases and have recently become the focus of attention because of the ongoing COVID-19 pandemic. Rheumatologists have been using antimalarials to manage patients with chronic immune-mediated inflammatory rheumatic diseases for decades. It is an appropriate time to review their immunomodulatory and anti-inflammatory mechanisms impact on disease activity and survival of systemic lupus erythematosus patient, including antiplatelet effect, metabolic and lipid benefits. We also discuss possible adverse effects, adding a practical and comprehensive approach to monitoring rheumatic patients during treatment with these drugs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32517786_after_0001132#mention-T1",
+      "canon:span": {
+        "start": 90,
+        "end": 121
+      },
+      "canon:surface": "inflammatory rheumatic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012213",
+      "canon:sourceNotation": "D012213",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32517786_after_0001132#mention-T2",
+      "canon:span": {
+        "start": 229,
+        "end": 247
+      },
+      "canon:surface": "rheumatic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012216",
+      "canon:sourceNotation": "D012216",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32517786_after_0001132#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32517786_after_0001132#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32517786_after_0001132#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32517786"
+      }
+    }
+  ]
+}

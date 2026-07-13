@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28862678_due-to_0002831",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28862678_due-to_0002831",
+  "canon:title": "Rosemary Extract as a Potential Anti-Hyperglycemic Agent: Current Evidence and Future Perspectives.",
+  "canon:abstract": "Type 2 diabetes mellitus (T2DM), a disease on the rise and with huge economic burden to health care systems around the globe, results from defects in insulin action (termed insulin resistance) combined with impaired insulin secretion. Current methods of prevention and treatments for insulin resistance and T2DM are lacking in number and efficacy and, therefore, there is a need for new preventative measures and targeted therapies. In recent years, chemicals found in plants/herbs have attracted attention for their use as functional foods or nutraceuticals for preventing and treating insulin resistance and T2DM. Rosemary is an evergreen shrub indigenous to the Mediterranean region and South America, which contains various polyphenols. Rosemary extract and its polyphenolic constituents have been reported to have antioxidant, anti-inflammatory, anticancer, and anti-hyperglycemic properties. The current review summarizes the existing in vitro and in vivo studies examining the anti-diabetic effects of rosemary extract and its polyphenolic components and highlights the known mechanism of action.",
+  "canon:text": "Rosemary Extract as a Potential Anti-Hyperglycemic Agent: Current Evidence and Future Perspectives. Type 2 diabetes mellitus (T2DM), a disease on the rise and with huge economic burden to health care systems around the globe, results from defects in insulin action (termed insulin resistance) combined with impaired insulin secretion. Current methods of prevention and treatments for insulin resistance and T2DM are lacking in number and efficacy and, therefore, there is a need for new preventative measures and targeted therapies. In recent years, chemicals found in plants/herbs have attracted attention for their use as functional foods or nutraceuticals for preventing and treating insulin resistance and T2DM. Rosemary is an evergreen shrub indigenous to the Mediterranean region and South America, which contains various polyphenols. Rosemary extract and its polyphenolic constituents have been reported to have antioxidant, anti-inflammatory, anticancer, and anti-hyperglycemic properties. The current review summarizes the existing in vitro and in vivo studies examining the anti-diabetic effects of rosemary extract and its polyphenolic components and highlights the known mechanism of action.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28862678_due-to_0002831#mention-T1",
+      "canon:span": {
+        "start": 37,
+        "end": 50
+      },
+      "canon:surface": "Hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28862678_due-to_0002831#mention-T2",
+      "canon:span": {
+        "start": 100,
+        "end": 124
+      },
+      "canon:surface": "Type 2 diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28862678_due-to_0002831#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28862678_due-to_0002831#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28862678_due-to_0002831#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28862678"
+      }
+    }
+  ]
+}

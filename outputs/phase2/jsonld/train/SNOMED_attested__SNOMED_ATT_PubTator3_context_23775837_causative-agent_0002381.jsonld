@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23775837_causative-agent_0002381",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_23775837_causative-agent_0002381",
+  "canon:title": "Detection of anti-isoniazid and anti-cytochrome P450 antibodies in patients with isoniazid-induced liver failure.",
+  "canon:abstract": "UNLABELLED: Isoniazid (INH)-induced hepatotoxicity remains one of the most common causes of drug-induced idiosyncratic liver injury and liver failure. This form of liver injury is not believed to be immune-mediated because it is not usually associated with fever or rash, does not recur more rapidly on rechallenge, and previous studies have failed to identify anti-INH antibodies (Abs). In this study, we found Abs present in sera of 15 of 19 cases of INH-induced liver failure. Anti-INH Abs were present in 8 sera; 11 had anti-cytochrome P450 (CYP)2E1 Abs, 14 had Abs against CYP2E1 modified by INH, 14 had anti-CYP3A4 antibodies, and 10 had anti-CYP2C9 Abs. INH was found to form covalent adducts with CYP2E1, CYP3A4, and CYP2C9. None of these Abs were detected in sera from INH-treated controls without significant liver injury. The presence of a range of antidrug and autoAbs has been observed in other drug-induced liver injury that is presumed to be immune mediated. CONCLUSION: These data provide strong evidence that INH induces an immune response that causes INH-induced liver injury.",
+  "canon:text": "Detection of anti-isoniazid and anti-cytochrome P450 antibodies in patients with isoniazid-induced liver failure. UNLABELLED: Isoniazid (INH)-induced hepatotoxicity remains one of the most common causes of drug-induced idiosyncratic liver injury and liver failure. This form of liver injury is not believed to be immune-mediated because it is not usually associated with fever or rash, does not recur more rapidly on rechallenge, and previous studies have failed to identify anti-INH antibodies (Abs). In this study, we found Abs present in sera of 15 of 19 cases of INH-induced liver failure. Anti-INH Abs were present in 8 sera; 11 had anti-cytochrome P450 (CYP)2E1 Abs, 14 had Abs against CYP2E1 modified by INH, 14 had anti-CYP3A4 antibodies, and 10 had anti-CYP2C9 Abs. INH was found to form covalent adducts with CYP2E1, CYP3A4, and CYP2C9. None of these Abs were detected in sera from INH-treated controls without significant liver injury. The presence of a range of antidrug and autoAbs has been observed in other drug-induced liver injury that is presumed to be immune mediated. CONCLUSION: These data provide strong evidence that INH induces an immune response that causes INH-induced liver injury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23775837_causative-agent_0002381#mention-T1",
+      "canon:span": {
+        "start": 1022,
+        "end": 1047
+      },
+      "canon:surface": "drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23775837_causative-agent_0002381#mention-T2",
+      "canon:span": {
+        "start": 18,
+        "end": 27
+      },
+      "canon:surface": "isoniazid",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007538",
+      "canon:sourceNotation": "D007538",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23775837_causative-agent_0002381#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23775837_causative-agent_0002381#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_23775837_causative-agent_0002381#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "23775837"
+      }
+    }
+  ]
+}

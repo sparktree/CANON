@@ -33,6 +33,6 @@ cd "$CANON_REPO"
 mkdir -p "$CANON_ROOT/logs"
 echo "[s2joint] node=$(hostname) gpu=$(nvidia-smi --query-gpu=name --format=csv,noheader || true)"
 
-python scripts/train_stage2.py --epochs 15 --batch-size 8
+python scripts/train_stage2.py --epochs 15 --batch-size 8 --soft-consistency
 
 echo "[s2joint] done -> $CANON_OUTPUTS_ROOT/phase3/stage2/"

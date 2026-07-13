@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396849_causative-agent_0001960",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37396849_causative-agent_0001960",
+  "canon:title": "Disease-associated metabolic pathways affected by heavy metals and metalloid.",
+  "canon:abstract": "Increased exposure to environmental heavy metals and metalloids and their associated toxicities has become a major threat to human health. Hence, the association of these metals and metalloids with chronic, age-related metabolic disorders has gained much interest. The underlying molecular mechanisms that mediate these effects are often complex and incompletely understood. In this review, we summarize the currently known disease-associated metabolic and signaling pathways that are altered following different heavy metals and metalloids exposure, alongside a brief summary of the mechanisms of their impacts. The main focus of this study is to explore how these affected pathways are associated with chronic multifactorial diseases including diabetes, cardiovascular diseases, cancer, neurodegeneration, inflammation, and allergic responses upon exposure to arsenic (As), cadmium (Cd), chromium (Cr), iron (Fe), mercury (Hg), nickel (Ni), and vanadium (V). Although there is considerable overlap among the different heavy metals and metalloids-affected cellular pathways, these affect distinct metabolic pathways as well. The common pathways may be explored further to find common targets for treatment of the associated pathologic conditions.",
+  "canon:text": "Disease-associated metabolic pathways affected by heavy metals and metalloid. Increased exposure to environmental heavy metals and metalloids and their associated toxicities has become a major threat to human health. Hence, the association of these metals and metalloids with chronic, age-related metabolic disorders has gained much interest. The underlying molecular mechanisms that mediate these effects are often complex and incompletely understood. In this review, we summarize the currently known disease-associated metabolic and signaling pathways that are altered following different heavy metals and metalloids exposure, alongside a brief summary of the mechanisms of their impacts. The main focus of this study is to explore how these affected pathways are associated with chronic multifactorial diseases including diabetes, cardiovascular diseases, cancer, neurodegeneration, inflammation, and allergic responses upon exposure to arsenic (As), cadmium (Cd), chromium (Cr), iron (Fe), mercury (Hg), nickel (Ni), and vanadium (V). Although there is considerable overlap among the different heavy metals and metalloids-affected cellular pathways, these affect distinct metabolic pathways as well. The common pathways may be explored further to find common targets for treatment of the associated pathologic conditions.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396849_causative-agent_0001960#mention-T1",
+      "canon:span": {
+        "start": 904,
+        "end": 912
+      },
+      "canon:surface": "allergic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396849_causative-agent_0001960#mention-T2",
+      "canon:span": {
+        "start": 983,
+        "end": 987
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396849_causative-agent_0001960#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396849_causative-agent_0001960#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37396849_causative-agent_0001960#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37396849"
+      }
+    }
+  ]
+}

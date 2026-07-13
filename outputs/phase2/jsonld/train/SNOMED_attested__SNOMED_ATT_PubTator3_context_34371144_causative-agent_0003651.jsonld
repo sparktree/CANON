@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34371144_causative-agent_0003651",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34371144_causative-agent_0003651",
+  "canon:title": "CalDAG-GEFI mediates striatal cholinergic modulation of dendritic excitability, synaptic plasticity and psychomotor behaviors.",
+  "canon:abstract": "CalDAG-GEFI (CDGI) is a protein highly enriched in the striatum, particularly in the principal spiny projection neurons (SPNs). CDGI is strongly down-regulated in two hyperkinetic conditions related to striatal dysfunction: Huntington's disease and levodopa-induced dyskinesia in Parkinson's disease. We demonstrate that genetic deletion of CDGI in mice disrupts dendritic, but not somatic, M1 muscarinic receptors (M1Rs) signaling in indirect pathway SPNs. Loss of CDGI reduced temporal integration of excitatory postsynaptic potentials at dendritic glutamatergic synapses and impaired the induction of activity-dependent long-term potentiation. CDGI deletion selectively increased psychostimulant-induced repetitive behaviors, disrupted sequence learning, and eliminated M1R blockade of cocaine self-administration. These findings place CDGI as a major, but previously unrecognized, mediator of cholinergic signaling in the striatum. The effects of CDGI deletion on the self-administration of drugs of abuse and its marked alterations in hyperkinetic extrapyramidal disorders highlight CDGI's therapeutic potential.",
+  "canon:text": "CalDAG-GEFI mediates striatal cholinergic modulation of dendritic excitability, synaptic plasticity and psychomotor behaviors. CalDAG-GEFI (CDGI) is a protein highly enriched in the striatum, particularly in the principal spiny projection neurons (SPNs). CDGI is strongly down-regulated in two hyperkinetic conditions related to striatal dysfunction: Huntington's disease and levodopa-induced dyskinesia in Parkinson's disease. We demonstrate that genetic deletion of CDGI in mice disrupts dendritic, but not somatic, M1 muscarinic receptors (M1Rs) signaling in indirect pathway SPNs. Loss of CDGI reduced temporal integration of excitatory postsynaptic potentials at dendritic glutamatergic synapses and impaired the induction of activity-dependent long-term potentiation. CDGI deletion selectively increased psychostimulant-induced repetitive behaviors, disrupted sequence learning, and eliminated M1R blockade of cocaine self-administration. These findings place CDGI as a major, but previously unrecognized, mediator of cholinergic signaling in the striatum. The effects of CDGI deletion on the self-administration of drugs of abuse and its marked alterations in hyperkinetic extrapyramidal disorders highlight CDGI's therapeutic potential.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34371144_causative-agent_0003651#mention-T1",
+      "canon:span": {
+        "start": 393,
+        "end": 403
+      },
+      "canon:surface": "dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34371144_causative-agent_0003651#mention-T2",
+      "canon:span": {
+        "start": 376,
+        "end": 384
+      },
+      "canon:surface": "levodopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34371144_causative-agent_0003651#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34371144_causative-agent_0003651#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34371144_causative-agent_0003651#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34371144"
+      }
+    }
+  ]
+}

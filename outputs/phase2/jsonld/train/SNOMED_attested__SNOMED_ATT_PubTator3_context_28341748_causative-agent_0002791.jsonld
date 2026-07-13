@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28341748_causative-agent_0002791",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28341748_causative-agent_0002791",
+  "canon:title": "Drug-induced liver injury: recent advances in diagnosis and risk assessment.",
+  "canon:abstract": "Idiosyncratic drug-induced liver injury (IDILI) is a rare but potentially severe adverse drug reaction that should be considered in patients who develop laboratory criteria for liver injury secondary to the administration of a potentially hepatotoxic drug. Although currently used liver parameters are sensitive in detecting DILI, they are neither specific nor able to predict the patient's subsequent clinical course. Genetic risk assessment is useful mainly due to its high negative predictive value, with several human leucocyte antigen alleles being associated with DILI. New emerging biomarkers which could be useful in assessing DILI include total keratin18 (K18) and caspase-cleaved keratin18 (ccK18), macrophage colony-stimulating factor receptor 1, high mobility group box 1 and microRNA-122. From the numerous in vitro test systems that are available, monocyte-derived hepatocytes generated from patients with DILI show promise in identifying the DILI-causing agent from among a panel of coprescribed drugs. Several computer-based algorithms are available that rely on cumulative scores of known risk factors such as the administered dose or potential liabilities such as mitochondrial toxicity, inhibition of the bile salt export pump or the formation of reactive metabolites. A novel DILI cluster score is being developed which predicts DILI from multiple complimentary cluster and classification models using absorption-distribution-metabolism-elimination-related as well as physicochemical properties, diverse substructural descriptors and known structural liabilities. The provision of more advanced scientific and regulatory guidance for liver safety assessment will depend on validating the new diagnostic markers in the ongoing DILI registries, biobanks and public-private partnerships.",
+  "canon:text": "Drug-induced liver injury: recent advances in diagnosis and risk assessment. Idiosyncratic drug-induced liver injury (IDILI) is a rare but potentially severe adverse drug reaction that should be considered in patients who develop laboratory criteria for liver injury secondary to the administration of a potentially hepatotoxic drug. Although currently used liver parameters are sensitive in detecting DILI, they are neither specific nor able to predict the patient's subsequent clinical course. Genetic risk assessment is useful mainly due to its high negative predictive value, with several human leucocyte antigen alleles being associated with DILI. New emerging biomarkers which could be useful in assessing DILI include total keratin18 (K18) and caspase-cleaved keratin18 (ccK18), macrophage colony-stimulating factor receptor 1, high mobility group box 1 and microRNA-122. From the numerous in vitro test systems that are available, monocyte-derived hepatocytes generated from patients with DILI show promise in identifying the DILI-causing agent from among a panel of coprescribed drugs. Several computer-based algorithms are available that rely on cumulative scores of known risk factors such as the administered dose or potential liabilities such as mitochondrial toxicity, inhibition of the bile salt export pump or the formation of reactive metabolites. A novel DILI cluster score is being developed which predicts DILI from multiple complimentary cluster and classification models using absorption-distribution-metabolism-elimination-related as well as physicochemical properties, diverse substructural descriptors and known structural liabilities. The provision of more advanced scientific and regulatory guidance for liver safety assessment will depend on validating the new diagnostic markers in the ongoing DILI registries, biobanks and public-private partnerships.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28341748_causative-agent_0002791#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 25
+      },
+      "canon:surface": "Drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28341748_causative-agent_0002791#mention-T2",
+      "canon:span": {
+        "start": 1301,
+        "end": 1310
+      },
+      "canon:surface": "bile salt",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001647",
+      "canon:sourceNotation": "D001647",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28341748_causative-agent_0002791#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28341748_causative-agent_0002791#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28341748_causative-agent_0002791#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28341748"
+      }
+    }
+  ]
+}

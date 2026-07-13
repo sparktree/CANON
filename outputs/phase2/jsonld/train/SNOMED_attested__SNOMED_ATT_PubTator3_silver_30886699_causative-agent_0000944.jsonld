@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30886699_causative-agent_0000944",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30886699_causative-agent_0000944",
+  "canon:title": "Management of severe arterial hypertension associated with serotonin syndrome: a case report analysis based on systematic review techniques.",
+  "canon:abstract": "Serotonin syndrome is thought to arise from serotonin excess. In many cases, symptoms are mild and self-limiting. But serotonin syndrome can become life threatening, when neuromuscular hyperexcitability spins out of control. Uncontainable neuromuscular hyperexcitability may lead to cardiovascular complications, linked to extreme changes in blood pressure. Currently, there is little guidance on how to control blood pressure in hyperserotonergic states. We report a case with treatment-resistant arterial hypertension, followed by a clinical review (using systematic review principles and techniques) of the available evidence from case reports published between 2004 and 2016 to identify measures to control arterial hypertension associated with serotonin syndrome. We conclude that classic antihypertensives may not be effective for the treatment of severe hypertension associated with serotonin syndrome. Benzodiazepines may lower blood pressure. Patients with severe hypertension not responding to benzodiazepines may benefit from cyproheptadine, propofol or both. In severe cases, higher cyproheptadine doses than currently recommended may be necessary.",
+  "canon:text": "Management of severe arterial hypertension associated with serotonin syndrome: a case report analysis based on systematic review techniques. Serotonin syndrome is thought to arise from serotonin excess. In many cases, symptoms are mild and self-limiting. But serotonin syndrome can become life threatening, when neuromuscular hyperexcitability spins out of control. Uncontainable neuromuscular hyperexcitability may lead to cardiovascular complications, linked to extreme changes in blood pressure. Currently, there is little guidance on how to control blood pressure in hyperserotonergic states. We report a case with treatment-resistant arterial hypertension, followed by a clinical review (using systematic review principles and techniques) of the available evidence from case reports published between 2004 and 2016 to identify measures to control arterial hypertension associated with serotonin syndrome. We conclude that classic antihypertensives may not be effective for the treatment of severe hypertension associated with serotonin syndrome. Benzodiazepines may lower blood pressure. Patients with severe hypertension not responding to benzodiazepines may benefit from cyproheptadine, propofol or both. In severe cases, higher cyproheptadine doses than currently recommended may be necessary.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30886699_causative-agent_0000944#mention-T1",
+      "canon:span": {
+        "start": 59,
+        "end": 77
+      },
+      "canon:surface": "serotonin syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30886699_causative-agent_0000944#mention-T2",
+      "canon:span": {
+        "start": 185,
+        "end": 194
+      },
+      "canon:surface": "serotonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012701",
+      "canon:sourceNotation": "D012701",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30886699_causative-agent_0000944#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30886699_causative-agent_0000944#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30886699_causative-agent_0000944#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30886699"
+      }
+    }
+  ]
+}

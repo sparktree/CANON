@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35788564_due-to_0001707",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35788564_due-to_0001707",
+  "canon:title": "The molecular and metabolic landscape of iron and ferroptosis in cardiovascular disease.",
+  "canon:abstract": "The maintenance of iron homeostasis is essential for proper cardiac function. A growing body of evidence suggests that iron imbalance is the common denominator in many subtypes of cardiovascular disease. In the past 10 years, ferroptosis, an iron-dependent form of regulated cell death, has become increasingly recognized as an important process that mediates the pathogenesis and progression of numerous cardiovascular diseases, including atherosclerosis, drug-induced heart failure, myocardial ischaemia-reperfusion injury, sepsis-induced cardiomyopathy, arrhythmia and diabetic cardiomyopathy. Therefore, a thorough understanding of the mechanisms involved in the regulation of iron metabolism and ferroptosis in cardiomyocytes might lead to improvements in disease management. In this Review, we summarize the relationship between the metabolic and molecular pathways of iron signalling and ferroptosis in the context of cardiovascular disease. We also discuss the potential targets of ferroptosis in the treatment of cardiovascular disease and describe the current limitations and future directions of these novel treatment targets.",
+  "canon:text": "The molecular and metabolic landscape of iron and ferroptosis in cardiovascular disease. The maintenance of iron homeostasis is essential for proper cardiac function. A growing body of evidence suggests that iron imbalance is the common denominator in many subtypes of cardiovascular disease. In the past 10 years, ferroptosis, an iron-dependent form of regulated cell death, has become increasingly recognized as an important process that mediates the pathogenesis and progression of numerous cardiovascular diseases, including atherosclerosis, drug-induced heart failure, myocardial ischaemia-reperfusion injury, sepsis-induced cardiomyopathy, arrhythmia and diabetic cardiomyopathy. Therefore, a thorough understanding of the mechanisms involved in the regulation of iron metabolism and ferroptosis in cardiomyocytes might lead to improvements in disease management. In this Review, we summarize the relationship between the metabolic and molecular pathways of iron signalling and ferroptosis in the context of cardiovascular disease. We also discuss the potential targets of ferroptosis in the treatment of cardiovascular disease and describe the current limitations and future directions of these novel treatment targets.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35788564_due-to_0001707#mention-T1",
+      "canon:span": {
+        "start": 661,
+        "end": 684
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35788564_due-to_0001707#mention-T2",
+      "canon:span": {
+        "start": 646,
+        "end": 656
+      },
+      "canon:surface": "arrhythmia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001145",
+      "canon:sourceNotation": "D001145",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35788564_due-to_0001707#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35788564_due-to_0001707#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35788564_due-to_0001707#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35788564"
+      }
+    }
+  ]
+}

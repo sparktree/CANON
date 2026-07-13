@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24683506_causative-agent_0000482",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_24683506_causative-agent_0000482",
+  "canon:title": "N-acetylcysteine (NAC) in neurological disorders: mechanisms of action and therapeutic opportunities.",
+  "canon:abstract": "BACKGROUND: There is an expanding field of research investigating the benefits of medicines with multiple mechanisms of action across neurological disorders. N-acetylcysteine (NAC), widely known as an antidote to acetaminophen overdose, is now emerging as treatment of vascular and nonvascular neurological disorders. NAC as a precursor to the antioxidant glutathione modulates glutamatergic, neurotrophic, and inflammatory pathways. AIM AND DISCUSSION: Most NAC studies up to date have been carried out in animal models of various neurological disorders with only a few studies completed in humans. In psychiatry, NAC has been tested in over 20 clinical trials as an adjunctive treatment; however, this topic is beyond the scope of this review. Herein, we discuss NAC molecular, intracellular, and systemic effects, focusing on its potential applications in neurodegenerative diseases including spinocerebellar ataxia, Parkinson's disease, tardive dyskinesia, myoclonus epilepsy of the Unverricht-Lundbor type as well as multiple sclerosis, amyotrophic lateral sclerosis, and Alzheimer's disease. CONCLUSION: Finally, we review the potential applications of NAC to facilitate recovery after traumatic brain injury, cerebral ischemia, and in treatment of cerebrovascular vasospasm after subarachnoid hemorrhage.",
+  "canon:text": "N-acetylcysteine (NAC) in neurological disorders: mechanisms of action and therapeutic opportunities. BACKGROUND: There is an expanding field of research investigating the benefits of medicines with multiple mechanisms of action across neurological disorders. N-acetylcysteine (NAC), widely known as an antidote to acetaminophen overdose, is now emerging as treatment of vascular and nonvascular neurological disorders. NAC as a precursor to the antioxidant glutathione modulates glutamatergic, neurotrophic, and inflammatory pathways. AIM AND DISCUSSION: Most NAC studies up to date have been carried out in animal models of various neurological disorders with only a few studies completed in humans. In psychiatry, NAC has been tested in over 20 clinical trials as an adjunctive treatment; however, this topic is beyond the scope of this review. Herein, we discuss NAC molecular, intracellular, and systemic effects, focusing on its potential applications in neurodegenerative diseases including spinocerebellar ataxia, Parkinson's disease, tardive dyskinesia, myoclonus epilepsy of the Unverricht-Lundbor type as well as multiple sclerosis, amyotrophic lateral sclerosis, and Alzheimer's disease. CONCLUSION: Finally, we review the potential applications of NAC to facilitate recovery after traumatic brain injury, cerebral ischemia, and in treatment of cerebrovascular vasospasm after subarachnoid hemorrhage.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24683506_causative-agent_0000482#mention-T1",
+      "canon:span": {
+        "start": 1043,
+        "end": 1061
+      },
+      "canon:surface": "tardive dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24683506_causative-agent_0000482#mention-T2",
+      "canon:span": {
+        "start": 315,
+        "end": 328
+      },
+      "canon:surface": "acetaminophen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000082",
+      "canon:sourceNotation": "D000082",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24683506_causative-agent_0000482#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24683506_causative-agent_0000482#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_24683506_causative-agent_0000482#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "24683506"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34987932_causative-agent_0001557",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34987932_causative-agent_0001557",
+  "canon:title": "Serotonin Toxicity Precipitated by Tramadol in the Setting of Polypharmacy: A Case of Serotonin Syndrome.",
+  "canon:abstract": "Serotonin syndrome (SS), a potentially life-threatening condition, typically occurs due to polypharmacy and interaction with multiple serotonergic agents. The case presented here is based on a serotonin syndrome (SS) diagnosis, precipitated by newly prescribed tramadol in conjunction with previously prescribed serotonergic medications. A 79-year-old woman receiving combined citalopram and trazodone for major depressive disorder alongside oxycodone for chronic pain developed generalized weakness, tremors, altered mentation, episodic auditory and visual hallucinations, fever, tachypnea, tachycardia, and diaphoresis a few days after tramadol was prescribed for pain. On clinical examination to medication reconciliation, and ruling out other causes of altered mental status, it became evident that the addition of tramadol had resulted in acute serotonin toxicity. SS is important to recognize because many healthcare providers encounter it during their careers. This diagnosis is essential to include in the differential diagnosis, especially when a medication not often associated with serotonin, like opiates, is the culprit.",
+  "canon:text": "Serotonin Toxicity Precipitated by Tramadol in the Setting of Polypharmacy: A Case of Serotonin Syndrome. Serotonin syndrome (SS), a potentially life-threatening condition, typically occurs due to polypharmacy and interaction with multiple serotonergic agents. The case presented here is based on a serotonin syndrome (SS) diagnosis, precipitated by newly prescribed tramadol in conjunction with previously prescribed serotonergic medications. A 79-year-old woman receiving combined citalopram and trazodone for major depressive disorder alongside oxycodone for chronic pain developed generalized weakness, tremors, altered mentation, episodic auditory and visual hallucinations, fever, tachypnea, tachycardia, and diaphoresis a few days after tramadol was prescribed for pain. On clinical examination to medication reconciliation, and ruling out other causes of altered mental status, it became evident that the addition of tramadol had resulted in acute serotonin toxicity. SS is important to recognize because many healthcare providers encounter it during their careers. This diagnosis is essential to include in the differential diagnosis, especially when a medication not often associated with serotonin, like opiates, is the culprit.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34987932_causative-agent_0001557#mention-T1",
+      "canon:span": {
+        "start": 86,
+        "end": 104
+      },
+      "canon:surface": "Serotonin Syndrome",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020230",
+      "canon:sourceNotation": "D020230",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34987932_causative-agent_0001557#mention-T2",
+      "canon:span": {
+        "start": 1199,
+        "end": 1208
+      },
+      "canon:surface": "serotonin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012701",
+      "canon:sourceNotation": "D012701",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34987932_causative-agent_0001557#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34987932_causative-agent_0001557#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34987932_causative-agent_0001557#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34987932"
+      }
+    }
+  ]
+}

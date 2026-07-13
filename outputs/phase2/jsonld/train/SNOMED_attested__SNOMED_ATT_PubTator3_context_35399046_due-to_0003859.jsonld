@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399046_due-to_0003859",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35399046_due-to_0003859",
+  "canon:title": "Severe malnutrition as a cause of transient carbohydrate metabolism disorders which evolved into hyperosmolar hyperglycaemic state.",
+  "canon:abstract": "The hyperosmolar hyperglycaemic state (HHS) is a very severe condition characterised by hyperosmolality, hyperglycaemia and dehydration without significant ketosis. The article presents the case of a 14.5-year-old cachectic patient with diagnosed HHS. Appropriate treatment per the ISPAD Guidelines was implemented. After metabolic stabilisation was achieved, the patient was transferred for further treatment to the Pediatric Gastroenterology Department due to her life-threatening cachexia. Normal glucose levels were observed during hospitalisation and the patient required no further insulin supplementation. Unfortunately, two months after discharge from hospital, the patient suffered sudden death at home. The patient did not live until full diabetological diagnostics could be performed. The transient hyperglycaemia may have been caused by a very early stage of type 1 diabetes (pre-diabetes), malnutrition-related diabetes mellitus (MRDM) or stress-induced hyperglycaemia (SIH). The case demonstrates that HHS can develop not only secondary to diabetes, but also be a severe complication of transient carbohydrate metabolism disorders in the course of cachexia.",
+  "canon:text": "Severe malnutrition as a cause of transient carbohydrate metabolism disorders which evolved into hyperosmolar hyperglycaemic state. The hyperosmolar hyperglycaemic state (HHS) is a very severe condition characterised by hyperosmolality, hyperglycaemia and dehydration without significant ketosis. The article presents the case of a 14.5-year-old cachectic patient with diagnosed HHS. Appropriate treatment per the ISPAD Guidelines was implemented. After metabolic stabilisation was achieved, the patient was transferred for further treatment to the Pediatric Gastroenterology Department due to her life-threatening cachexia. Normal glucose levels were observed during hospitalisation and the patient required no further insulin supplementation. Unfortunately, two months after discharge from hospital, the patient suffered sudden death at home. The patient did not live until full diabetological diagnostics could be performed. The transient hyperglycaemia may have been caused by a very early stage of type 1 diabetes (pre-diabetes), malnutrition-related diabetes mellitus (MRDM) or stress-induced hyperglycaemia (SIH). The case demonstrates that HHS can develop not only secondary to diabetes, but also be a severe complication of transient carbohydrate metabolism disorders in the course of cachexia.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399046_due-to_0003859#mention-T1",
+      "canon:span": {
+        "start": 97,
+        "end": 130
+      },
+      "canon:surface": "hyperosmolar hyperglycaemic state",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399046_due-to_0003859#mention-T2",
+      "canon:span": {
+        "start": 1020,
+        "end": 1032
+      },
+      "canon:surface": "pre-diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399046_due-to_0003859#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399046_due-to_0003859#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35399046_due-to_0003859#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35399046"
+      }
+    }
+  ]
+}

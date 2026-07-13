@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35677693_causative-agent_0003915",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35677693_causative-agent_0003915",
+  "canon:title": "Roles of Ferroptosis in Cardiovascular Diseases.",
+  "canon:abstract": "Ferroptosis is an iron-dependent regulated cell death characterized by lipid peroxidation and iron overload, which is different from other types of programmed cell death, including apoptosis, necroptosis, autophagy, and pyroptosis. Over the past years, emerging studies have shown a close relation between ferroptosis and various cardiovascular diseases such as atherosclerosis, acute myocardial infarction, ischemia/reperfusion injury, cardiomyopathy, and heart failure. Herein, we will review the contributions of ferroptosis to multiple cardiovascular diseases and the related targets. Further, we discuss the potential ferroptosis-targeting strategies for treating different cardiovascular diseases.",
+  "canon:text": "Roles of Ferroptosis in Cardiovascular Diseases. Ferroptosis is an iron-dependent regulated cell death characterized by lipid peroxidation and iron overload, which is different from other types of programmed cell death, including apoptosis, necroptosis, autophagy, and pyroptosis. Over the past years, emerging studies have shown a close relation between ferroptosis and various cardiovascular diseases such as atherosclerosis, acute myocardial infarction, ischemia/reperfusion injury, cardiomyopathy, and heart failure. Herein, we will review the contributions of ferroptosis to multiple cardiovascular diseases and the related targets. Further, we discuss the potential ferroptosis-targeting strategies for treating different cardiovascular diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35677693_causative-agent_0003915#mention-T1",
+      "canon:span": {
+        "start": 143,
+        "end": 156
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35677693_causative-agent_0003915#mention-T2",
+      "canon:span": {
+        "start": 67,
+        "end": 71
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35677693_causative-agent_0003915#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35677693_causative-agent_0003915#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35677693_causative-agent_0003915#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35677693"
+      }
+    }
+  ]
+}

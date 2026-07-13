@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37298586_causative-agent_0004293",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37298586_causative-agent_0004293",
+  "canon:title": "Iron and Ferroptosis More than a Suspect: Beyond the Most Common Mechanisms of Neurodegeneration for New Therapeutic Approaches to Cognitive Decline and Dementia.",
+  "canon:abstract": "Neurodegeneration is a multifactorial process that involves multiple mechanisms. Examples of neurodegenerative diseases are Parkinson's disease, multiple sclerosis, Alzheimer's disease, prion diseases such as Creutzfeldt-Jakob's disease, and amyotrophic lateral sclerosis. These are progressive and irreversible pathologies, characterized by neuron vulnerability, loss of structure or function of neurons, and even neuron demise in the brain, leading to clinical, functional, and cognitive dysfunction and movement disorders. However, iron overload can cause neurodegeneration. Dysregulation of iron metabolism associated with cellular damage and oxidative stress is reported as a common event in several neurodegenerative diseases. Uncontrolled oxidation of membrane fatty acids triggers a programmed cell death involving iron, ROS, and ferroptosis, promoting cell death. In Alzheimer's disease, the iron content in the brain is significantly increased in vulnerable regions, resulting in a lack of antioxidant defenses and mitochondrial alterations. Iron interacts with glucose metabolism reciprocally. Overall, iron metabolism and accumulation and ferroptosis play a significant role, particularly in the context of diabetes-induced cognitive decline. Iron chelators improve cognitive performance, meaning that brain iron metabolism control reduces neuronal ferroptosis, promising a novel therapeutic approach to cognitive impairment.",
+  "canon:text": "Iron and Ferroptosis More than a Suspect: Beyond the Most Common Mechanisms of Neurodegeneration for New Therapeutic Approaches to Cognitive Decline and Dementia. Neurodegeneration is a multifactorial process that involves multiple mechanisms. Examples of neurodegenerative diseases are Parkinson's disease, multiple sclerosis, Alzheimer's disease, prion diseases such as Creutzfeldt-Jakob's disease, and amyotrophic lateral sclerosis. These are progressive and irreversible pathologies, characterized by neuron vulnerability, loss of structure or function of neurons, and even neuron demise in the brain, leading to clinical, functional, and cognitive dysfunction and movement disorders. However, iron overload can cause neurodegeneration. Dysregulation of iron metabolism associated with cellular damage and oxidative stress is reported as a common event in several neurodegenerative diseases. Uncontrolled oxidation of membrane fatty acids triggers a programmed cell death involving iron, ROS, and ferroptosis, promoting cell death. In Alzheimer's disease, the iron content in the brain is significantly increased in vulnerable regions, resulting in a lack of antioxidant defenses and mitochondrial alterations. Iron interacts with glucose metabolism reciprocally. Overall, iron metabolism and accumulation and ferroptosis play a significant role, particularly in the context of diabetes-induced cognitive decline. Iron chelators improve cognitive performance, meaning that brain iron metabolism control reduces neuronal ferroptosis, promising a novel therapeutic approach to cognitive impairment.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37298586_causative-agent_0004293#mention-T1",
+      "canon:span": {
+        "start": 698,
+        "end": 711
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37298586_causative-agent_0004293#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 4
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37298586_causative-agent_0004293#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37298586_causative-agent_0004293#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37298586_causative-agent_0004293#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37298586"
+      }
+    }
+  ]
+}

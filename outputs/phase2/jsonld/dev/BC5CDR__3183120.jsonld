@@ -1,0 +1,160 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/BC5CDR/3183120",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "BC5CDR",
+  "canon:split": "dev",
+  "canon:pmid": "3183120",
+  "canon:title": "Reversible cerebral lesions associated with tiazofurin usage: MR demonstration.",
+  "canon:abstract": "Tiazofurin is an experimental chemotherapeutic agent currently undergoing clinical evaluation. We report our results with magnetic resonance (MR) in demonstrating reversible cerebral abnormalities concurrent with the use of this drug. The abnormalities on MR were correlated with findings on CT as well as with cerebral angiography. The utility of MR in the evaluation of patients receiving this new agent is illustrated.",
+  "canon:text": "Reversible cerebral lesions associated with tiazofurin usage: MR demonstration. Tiazofurin is an experimental chemotherapeutic agent currently undergoing clinical evaluation. We report our results with magnetic resonance (MR) in demonstrating reversible cerebral abnormalities concurrent with the use of this drug. The abnormalities on MR were correlated with findings on CT as well as with cerebral angiography. The utility of MR in the evaluation of patients receiving this new agent is illustrated.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/3183120#mention-T1",
+      "canon:span": {
+        "start": 11,
+        "end": 27
+      },
+      "canon:surface": "cerebral lesions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001927",
+      "canon:sourceNotation": "D001927",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome",
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/81308009",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/3183120#mention-T2",
+      "canon:span": {
+        "start": 44,
+        "end": 54
+      },
+      "canon:surface": "tiazofurin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C033706",
+      "canon:sourceNotation": "C033706",
+      "canon:confidence": 0.65,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:broadMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/3183120#mention-T3",
+      "canon:span": {
+        "start": 80,
+        "end": 90
+      },
+      "canon:surface": "Tiazofurin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/C033706",
+      "canon:sourceNotation": "C033706",
+      "canon:confidence": 0.65,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Nucleic Acid, Nucleoside, or Nucleotide",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387188005",
+      "canon:mappingProperty": "skos:broadMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/3183120#mention-T4",
+      "canon:span": {
+        "start": 254,
+        "end": 276
+      },
+      "canon:surface": "cerebral abnormalities",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D001927",
+      "canon:sourceNotation": "D001927",
+      "canon:confidence": 0.9,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome",
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/81308009",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/BC5CDR/3183120#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/BC5CDR/3183120#mention-T2"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/BC5CDR/3183120#mention-T1"
+      },
+      "canon:sourceRelation": "CID",
+      "canon:relation": "https://canon.iu.edu/ns#causes",
+      "canon:tier": 2,
+      "canon:probability": 0.65,
+      "canon:confidence": 1.0,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causes",
+          "canon:tier": 2,
+          "canon:probability": 0.65
+        },
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 0.25
+        },
+        {
+          "canon:relation": "https://canon.iu.edu/ns#associated-with",
+          "canon:tier": 2,
+          "canon:probability": 0.1
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "subject_class": "chemical",
+        "object_class": "disease",
+        "target_candidates": [
+          {
+            "target_relation": "causes",
+            "tier": 2,
+            "probability": 0.65
+          },
+          {
+            "target_relation": "causative-agent",
+            "tier": 1,
+            "probability": 0.25
+          },
+          {
+            "target_relation": "associated-with",
+            "tier": 2,
+            "probability": 0.1
+          }
+        ]
+      }
+    }
+  ]
+}

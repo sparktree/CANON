@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37569277_due-to_0001985",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37569277_due-to_0001985",
+  "canon:title": "Effect of Systemic Inflammation in the CNS: A Silent History of Neuronal Damage.",
+  "canon:abstract": "Central nervous system (CNS) infections including meningitis and encephalitis, resulting from the blood-borne spread of specific microorganisms, provoke nervous tissue damage due to the inflammatory process. Moreover, different pathologies such as sepsis can generate systemic inflammation. Bacterial lipopolysaccharide (LPS) induces the release of inflammatory mediators and damage molecules, which are then released into the bloodstream and can interact with structures such as the CNS, thus modifying the blood-brain barrier's (BBB s) and blood-cerebrospinal fluid barrier s (BCSFB s) function and inducing aseptic neuroinflammation. During neuroinflammation, the participation of glial cells (astrocytes, microglia, and oligodendrocytes) plays an important role. They release cytokines, chemokines, reactive oxygen species, nitrogen species, peptides, and even excitatory amino acids that lead to neuronal damage. The neurons undergo morphological and functional changes that could initiate functional alterations to neurodegenerative processes. The present work aims to explain these processes and the pathophysiological interactions involved in CNS damage in the absence of microbes or inflammatory cells.",
+  "canon:text": "Effect of Systemic Inflammation in the CNS: A Silent History of Neuronal Damage. Central nervous system (CNS) infections including meningitis and encephalitis, resulting from the blood-borne spread of specific microorganisms, provoke nervous tissue damage due to the inflammatory process. Moreover, different pathologies such as sepsis can generate systemic inflammation. Bacterial lipopolysaccharide (LPS) induces the release of inflammatory mediators and damage molecules, which are then released into the bloodstream and can interact with structures such as the CNS, thus modifying the blood-brain barrier's (BBB s) and blood-cerebrospinal fluid barrier s (BCSFB s) function and inducing aseptic neuroinflammation. During neuroinflammation, the participation of glial cells (astrocytes, microglia, and oligodendrocytes) plays an important role. They release cytokines, chemokines, reactive oxygen species, nitrogen species, peptides, and even excitatory amino acids that lead to neuronal damage. The neurons undergo morphological and functional changes that could initiate functional alterations to neurodegenerative processes. The present work aims to explain these processes and the pathophysiological interactions involved in CNS damage in the absence of microbes or inflammatory cells.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37569277_due-to_0001985#mention-T1",
+      "canon:span": {
+        "start": 329,
+        "end": 335
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37569277_due-to_0001985#mention-T2",
+      "canon:span": {
+        "start": 81,
+        "end": 120
+      },
+      "canon:surface": "Central nervous system (CNS) infections",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002494",
+      "canon:sourceNotation": "D002494",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37569277_due-to_0001985#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37569277_due-to_0001985#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37569277_due-to_0001985#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37569277"
+      }
+    }
+  ]
+}

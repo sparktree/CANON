@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32984336_causative-agent_0003335",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32984336_causative-agent_0003335",
+  "canon:title": "Iron and Cadmium Entry Into Renal Mitochondria: Physiological and Toxicological Implications.",
+  "canon:abstract": "Regulation of body fluid homeostasis is a major renal function, occurring largely through epithelial solute transport in various nephron segments driven by Na+/K+-ATPase activity. Energy demands are greatest in the proximal tubule and thick ascending limb where mitochondrial ATP production occurs through oxidative phosphorylation. Mitochondria contain 20-80% of the cell's iron, copper, and manganese that are imported for their redox properties, primarily for electron transport. Redox reactions, however, also lead to reactive, toxic compounds, hence careful control of redox-active metal import into mitochondria is necessary. Current dogma claims the outer mitochondrial membrane (OMM) is freely permeable to metal ions, while the inner mitochondrial membrane (IMM) is selectively permeable. Yet we recently showed iron and manganese import at the OMM involves divalent metal transporter 1 (DMT1), an H+-coupled metal ion transporter. Thus, iron import is not only regulated by IMM mitoferrins, but also depends on the OMM to intermembrane space H+ gradient. We discuss how these mitochondrial transport processes contribute to renal injury in systemic (e.g., hemochromatosis) and local (e.g., hemoglobinuria) iron overload. Furthermore, the environmental toxicant cadmium selectively damages kidney mitochondria by \"ionic mimicry\" utilizing iron and calcium transporters, such as OMM DMT1 or IMM calcium uniporter, and by disrupting the electron transport chain. Consequently, unraveling mitochondrial metal ion transport may help develop new strategies to prevent kidney injury induced by metals.",
+  "canon:text": "Iron and Cadmium Entry Into Renal Mitochondria: Physiological and Toxicological Implications. Regulation of body fluid homeostasis is a major renal function, occurring largely through epithelial solute transport in various nephron segments driven by Na+/K+-ATPase activity. Energy demands are greatest in the proximal tubule and thick ascending limb where mitochondrial ATP production occurs through oxidative phosphorylation. Mitochondria contain 20-80% of the cell's iron, copper, and manganese that are imported for their redox properties, primarily for electron transport. Redox reactions, however, also lead to reactive, toxic compounds, hence careful control of redox-active metal import into mitochondria is necessary. Current dogma claims the outer mitochondrial membrane (OMM) is freely permeable to metal ions, while the inner mitochondrial membrane (IMM) is selectively permeable. Yet we recently showed iron and manganese import at the OMM involves divalent metal transporter 1 (DMT1), an H+-coupled metal ion transporter. Thus, iron import is not only regulated by IMM mitoferrins, but also depends on the OMM to intermembrane space H+ gradient. We discuss how these mitochondrial transport processes contribute to renal injury in systemic (e.g., hemochromatosis) and local (e.g., hemoglobinuria) iron overload. Furthermore, the environmental toxicant cadmium selectively damages kidney mitochondria by \"ionic mimicry\" utilizing iron and calcium transporters, such as OMM DMT1 or IMM calcium uniporter, and by disrupting the electron transport chain. Consequently, unraveling mitochondrial metal ion transport may help develop new strategies to prevent kidney injury induced by metals.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32984336_causative-agent_0003335#mention-T1",
+      "canon:span": {
+        "start": 1310,
+        "end": 1323
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32984336_causative-agent_0003335#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 4
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32984336_causative-agent_0003335#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32984336_causative-agent_0003335#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32984336_causative-agent_0003335#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32984336"
+      }
+    }
+  ]
+}

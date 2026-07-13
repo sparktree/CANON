@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26024962_causative-agent_0000590",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26024962_causative-agent_0000590",
+  "canon:title": "Oxidative and nitrative stress in neurodegeneration.",
+  "canon:abstract": "Aerobes require oxygen for metabolism and normal free radical formation. As a result, maintaining the redox homeostasis is essential for brain cell survival due to their high metabolic energy requirement to sustain electrochemical gradients, neurotransmitter release, and membrane lipid stability. Further, brain antioxidant levels are limited compared to other organs and less able to compensate for reactive oxygen and nitrogen species (ROS/RNS) generation which contribute oxidative/nitrative stress (OS/NS). Antioxidant treatments such as vitamin E, minocycline, and resveratrol mediate neuroprotection by prolonging the incidence of or reversing OS and NS conditions. Redox imbalance occurs when the antioxidant capacity is overwhelmed, consequently leading to activation of alternate pathways that remain quiescent under normal conditions. If OS/NS fails to lead to adaptation, tissue damage and injury ensue, resulting in cell death and/or disease. The progression of OS/NS-mediated neurodegeneration along with contributions from microglial activation, dopamine metabolism, and diabetes comprise a detailed interconnected pathway. This review proposes a significant role for OS/NS and more specifically, lipid peroxidation (LPO) and other lipid modifications, by triggering microglial activation to elicit a neuroinflammatory state potentiated by diabetes or abnormal dopamine metabolism. Subsequently, sustained stress in the neuroinflammatory state overwhelms cellular defenses and prompts neurotoxicity resulting in the onset or amplification of brain damage. ",
+  "canon:text": "Oxidative and nitrative stress in neurodegeneration. Aerobes require oxygen for metabolism and normal free radical formation. As a result, maintaining the redox homeostasis is essential for brain cell survival due to their high metabolic energy requirement to sustain electrochemical gradients, neurotransmitter release, and membrane lipid stability. Further, brain antioxidant levels are limited compared to other organs and less able to compensate for reactive oxygen and nitrogen species (ROS/RNS) generation which contribute oxidative/nitrative stress (OS/NS). Antioxidant treatments such as vitamin E, minocycline, and resveratrol mediate neuroprotection by prolonging the incidence of or reversing OS and NS conditions. Redox imbalance occurs when the antioxidant capacity is overwhelmed, consequently leading to activation of alternate pathways that remain quiescent under normal conditions. If OS/NS fails to lead to adaptation, tissue damage and injury ensue, resulting in cell death and/or disease. The progression of OS/NS-mediated neurodegeneration along with contributions from microglial activation, dopamine metabolism, and diabetes comprise a detailed interconnected pathway. This review proposes a significant role for OS/NS and more specifically, lipid peroxidation (LPO) and other lipid modifications, by triggering microglial activation to elicit a neuroinflammatory state potentiated by diabetes or abnormal dopamine metabolism. Subsequently, sustained stress in the neuroinflammatory state overwhelms cellular defenses and prompts neurotoxicity resulting in the onset or amplification of brain damage. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26024962_causative-agent_0000590#mention-T1",
+      "canon:span": {
+        "start": 1553,
+        "end": 1566
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26024962_causative-agent_0000590#mention-T2",
+      "canon:span": {
+        "start": 1114,
+        "end": 1122
+      },
+      "canon:surface": "dopamine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004298",
+      "canon:sourceNotation": "D004298",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26024962_causative-agent_0000590#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26024962_causative-agent_0000590#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26024962_causative-agent_0000590#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26024962"
+      }
+    }
+  ]
+}

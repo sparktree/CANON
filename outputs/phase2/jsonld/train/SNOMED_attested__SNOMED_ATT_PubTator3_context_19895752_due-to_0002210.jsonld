@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19895752_due-to_0002210",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_19895752_due-to_0002210",
+  "canon:title": "Myocardial remodeling in low-renin hypertension: molecular pathways to cellular injury in relative aldosteronism.",
+  "canon:abstract": "The pathologic hypertrophy of hypertensive heart disease is related to the quality, not the quantity, of myocardium; the presence of fibrosis is inevitably linked to structural and functional insufficiencies with increased cardiovascular risk. Elevations in plasma aldosterone that are inappropriate relative to dietary sodium, or relative aldosteronism, are accompanied by suppressed plasma renin activity, elevation in arterial pressure, and dyshomeostasis of divalent cations. The accompanying hypocalcemia, hypomagnesemia, and hypozincemia of aldosteronism contribute to the appearance of secondary hyperparathyroidism. Parathyroid hormone-mediated intracellular calcium overloading of cardiac myocytes and mitochondria leads to the induction of oxidative stress and molecular pathways associated with cardiomyocyte necrosis and scarring of myocardium, whereas the dyshomeostasis of zinc compromises antioxidant defenses. This dys-homeostasis of calcium and zinc, intrinsically coupling prooxidant calcium and antioxidant zinc, raises the prospect for therapeutic strategies designed to mitigate intracellular calcium overloading while enhancing zinc-mediated antioxidant defenses, thus preventing adverse myocardial remodeling with fibrosis, associated diastolic dysfunction, and cardiac arrhythmias.",
+  "canon:text": "Myocardial remodeling in low-renin hypertension: molecular pathways to cellular injury in relative aldosteronism. The pathologic hypertrophy of hypertensive heart disease is related to the quality, not the quantity, of myocardium; the presence of fibrosis is inevitably linked to structural and functional insufficiencies with increased cardiovascular risk. Elevations in plasma aldosterone that are inappropriate relative to dietary sodium, or relative aldosteronism, are accompanied by suppressed plasma renin activity, elevation in arterial pressure, and dyshomeostasis of divalent cations. The accompanying hypocalcemia, hypomagnesemia, and hypozincemia of aldosteronism contribute to the appearance of secondary hyperparathyroidism. Parathyroid hormone-mediated intracellular calcium overloading of cardiac myocytes and mitochondria leads to the induction of oxidative stress and molecular pathways associated with cardiomyocyte necrosis and scarring of myocardium, whereas the dyshomeostasis of zinc compromises antioxidant defenses. This dys-homeostasis of calcium and zinc, intrinsically coupling prooxidant calcium and antioxidant zinc, raises the prospect for therapeutic strategies designed to mitigate intracellular calcium overloading while enhancing zinc-mediated antioxidant defenses, thus preventing adverse myocardial remodeling with fibrosis, associated diastolic dysfunction, and cardiac arrhythmias.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19895752_due-to_0002210#mention-T1",
+      "canon:span": {
+        "start": 219,
+        "end": 229
+      },
+      "canon:surface": "myocardium",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017682",
+      "canon:sourceNotation": "D017682",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19895752_due-to_0002210#mention-T2",
+      "canon:span": {
+        "start": 35,
+        "end": 47
+      },
+      "canon:surface": "hypertension",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006973",
+      "canon:sourceNotation": "D006973",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19895752_due-to_0002210#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19895752_due-to_0002210#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19895752_due-to_0002210#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "19895752"
+      }
+    }
+  ]
+}

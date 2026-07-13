@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24949473_causative-agent_0002462",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_24949473_causative-agent_0002462",
+  "canon:title": "Phytochemical, therapeutic, and ethnopharmacological overview for a traditionally important herb: Boerhavia diffusa Linn.",
+  "canon:abstract": "UNLABELLED: Boerhavia diffusa (BD) is a plant of rasayana category as per ayurvedic claims. It is reported to possess antiaging, disease prevention, and life strengthening activities which hold enormous influence in disease burden and affordability/availability of healthcare in the world. Objective. This paper has been compiled to comment on the studies reported for BD to highlight its chemical and therapeutic potential along with its ethnopharmacological considerations. METHODS: In the present paper, a detailed account of chemical constituents and pharmacological activities has been presented. All the findings were correlated with modern pharmacological activities to appraise the value of BD. RESULTS: Chemical analysis of BD gives a wide variety of chemical constituents, namely, rotenoids, flavonoids, xanthones, purine nucleoside, lignans, and steroids. Various ethnopharmacological reports emphasize its role in disorders of reproductive system, gastrointestinal system, respiratory system, urinary system, hepatic system/jaundice, cardiovascular system, and cancer. CONCLUSIONS: The studies on the therapeutic activities of BD range from studies on crude extracts to isolated compounds; however some of the studies require sophistication and validated results. BD is a plant of enormous importance in the purview of its chemical and therapeutic properties.",
+  "canon:text": "Phytochemical, therapeutic, and ethnopharmacological overview for a traditionally important herb: Boerhavia diffusa Linn. UNLABELLED: Boerhavia diffusa (BD) is a plant of rasayana category as per ayurvedic claims. It is reported to possess antiaging, disease prevention, and life strengthening activities which hold enormous influence in disease burden and affordability/availability of healthcare in the world. Objective. This paper has been compiled to comment on the studies reported for BD to highlight its chemical and therapeutic potential along with its ethnopharmacological considerations. METHODS: In the present paper, a detailed account of chemical constituents and pharmacological activities has been presented. All the findings were correlated with modern pharmacological activities to appraise the value of BD. RESULTS: Chemical analysis of BD gives a wide variety of chemical constituents, namely, rotenoids, flavonoids, xanthones, purine nucleoside, lignans, and steroids. Various ethnopharmacological reports emphasize its role in disorders of reproductive system, gastrointestinal system, respiratory system, urinary system, hepatic system/jaundice, cardiovascular system, and cancer. CONCLUSIONS: The studies on the therapeutic activities of BD range from studies on crude extracts to isolated compounds; however some of the studies require sophistication and validated results. BD is a plant of enormous importance in the purview of its chemical and therapeutic properties.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24949473_causative-agent_0002462#mention-T1",
+      "canon:span": {
+        "start": 1143,
+        "end": 1157
+      },
+      "canon:surface": "hepatic system",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24949473_causative-agent_0002462#mention-T2",
+      "canon:span": {
+        "start": 924,
+        "end": 934
+      },
+      "canon:surface": "flavonoids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005419",
+      "canon:sourceNotation": "D005419",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24949473_causative-agent_0002462#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24949473_causative-agent_0002462#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_24949473_causative-agent_0002462#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "24949473"
+      }
+    }
+  ]
+}

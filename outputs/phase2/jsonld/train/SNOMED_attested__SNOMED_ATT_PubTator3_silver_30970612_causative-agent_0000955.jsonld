@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30970612_causative-agent_0000955",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30970612_causative-agent_0000955",
+  "canon:title": "Receptor Ligands as Helping Hands to L-DOPA in the Treatment of Parkinson's Disease.",
+  "canon:abstract": "Levodopa (LD) is the most effective drug in the treatment of Parkinson's disease (PD). However, although it represents the \"gold standard\" of PD therapy, LD can cause side effects, including gastrointestinal and cardiovascular symptoms as well as transient elevated liver enzyme levels. Moreover, LD therapy leads to LD-induced dyskinesia (LID), a disabling motor complication that represents a major challenge for the clinical neurologist. Due to the many limitations associated with LD therapeutic use, other dopaminergic and non-dopaminergic drugs are being developed to optimize the treatment response. This review focuses on recent investigations about non-dopaminergic central nervous system (CNS) receptor ligands that have been identified to have therapeutic potential for the treatment of motor and non-motor symptoms of PD. In a different way, such agents may contribute to extending LD response and/or ameliorate LD-induced side effects.",
+  "canon:text": "Receptor Ligands as Helping Hands to L-DOPA in the Treatment of Parkinson's Disease. Levodopa (LD) is the most effective drug in the treatment of Parkinson's disease (PD). However, although it represents the \"gold standard\" of PD therapy, LD can cause side effects, including gastrointestinal and cardiovascular symptoms as well as transient elevated liver enzyme levels. Moreover, LD therapy leads to LD-induced dyskinesia (LID), a disabling motor complication that represents a major challenge for the clinical neurologist. Due to the many limitations associated with LD therapeutic use, other dopaminergic and non-dopaminergic drugs are being developed to optimize the treatment response. This review focuses on recent investigations about non-dopaminergic central nervous system (CNS) receptor ligands that have been identified to have therapeutic potential for the treatment of motor and non-motor symptoms of PD. In a different way, such agents may contribute to extending LD response and/or ameliorate LD-induced side effects.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30970612_causative-agent_0000955#mention-T1",
+      "canon:span": {
+        "start": 413,
+        "end": 423
+      },
+      "canon:surface": "dyskinesia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30970612_causative-agent_0000955#mention-T2",
+      "canon:span": {
+        "start": 596,
+        "end": 608
+      },
+      "canon:surface": "dopaminergic",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004298",
+      "canon:sourceNotation": "D004298",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30970612_causative-agent_0000955#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30970612_causative-agent_0000955#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30970612_causative-agent_0000955#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30970612"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38275993_due-to_0002052",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_38275993_due-to_0002052",
+  "canon:title": "A Mechanistic Review on How Berberine Use Combats Diabetes and Related Complications: Molecular, Cellular, and Metabolic Effects.",
+  "canon:abstract": "Berberine (BBR) is an isoquinoline alkaloid that can be extracted from herbs such as Coptis, Phellodendron, and Berberis. BBR has been widely used as a folk medicine to treat various disorders. It is a multi-target drug with multiple mechanisms. Studies have shown that it has antioxidant and anti-inflammatory properties and can also adjust intestinal microbial flora. This review focused on the promising antidiabetic effects of BBR in several cellular, animal, and clinical studies. Based on previous research, BBR significantly reduced levels of fasting blood glucose, hemoglobin A1C, inflammatory cytokines, and oxidative stress markers. Furthermore, BBR stimulated insulin secretion and improved insulin resistance through different pathways, including up-regulation of protein expression of proliferator-activated receptor (PPAR)-gamma, glucose transporter (GLUT) 4, PI3K/AKT, and AMP-activated protein kinase (AMPK) activation. Interestingly, it was demonstrated that BBR has protective effects against diabetes complications, such as diabetic-induced hepatic damage, cardiovascular disorders, nephropathy, and neuropathy. Furthermore, multiple clinical trial studies have emphasized the ameliorative effects of BBR in type 2 diabetic patients.",
+  "canon:text": "A Mechanistic Review on How Berberine Use Combats Diabetes and Related Complications: Molecular, Cellular, and Metabolic Effects. Berberine (BBR) is an isoquinoline alkaloid that can be extracted from herbs such as Coptis, Phellodendron, and Berberis. BBR has been widely used as a folk medicine to treat various disorders. It is a multi-target drug with multiple mechanisms. Studies have shown that it has antioxidant and anti-inflammatory properties and can also adjust intestinal microbial flora. This review focused on the promising antidiabetic effects of BBR in several cellular, animal, and clinical studies. Based on previous research, BBR significantly reduced levels of fasting blood glucose, hemoglobin A1C, inflammatory cytokines, and oxidative stress markers. Furthermore, BBR stimulated insulin secretion and improved insulin resistance through different pathways, including up-regulation of protein expression of proliferator-activated receptor (PPAR)-gamma, glucose transporter (GLUT) 4, PI3K/AKT, and AMP-activated protein kinase (AMPK) activation. Interestingly, it was demonstrated that BBR has protective effects against diabetes complications, such as diabetic-induced hepatic damage, cardiovascular disorders, nephropathy, and neuropathy. Furthermore, multiple clinical trial studies have emphasized the ameliorative effects of BBR in type 2 diabetic patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38275993_due-to_0002052#mention-T1",
+      "canon:span": {
+        "start": 50,
+        "end": 84
+      },
+      "canon:surface": "Diabetes and Related Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38275993_due-to_0002052#mention-T2",
+      "canon:span": {
+        "start": 1357,
+        "end": 1372
+      },
+      "canon:surface": "type 2 diabetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38275993_due-to_0002052#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38275993_due-to_0002052#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38275993_due-to_0002052#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "38275993"
+      }
+    }
+  ]
+}

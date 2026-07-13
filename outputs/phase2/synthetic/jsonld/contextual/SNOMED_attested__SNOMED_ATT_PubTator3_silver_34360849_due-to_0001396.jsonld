@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34360849_due-to_0001396",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34360849_due-to_0001396",
+  "canon:title": "Immunoendocrine Dysregulation during Gestational Diabetes Mellitus: The Central Role of the Placenta.",
+  "canon:abstract": "Gestational Diabetes Mellitus (GDM) is a transitory metabolic condition caused by dysregulation triggered by intolerance to carbohydrates, dysfunction of beta-pancreatic and endothelial cells, and insulin resistance during pregnancy. However, this disease includes not only changes related to metabolic distress but also placental immunoendocrine adaptations, resulting in harmful effects to the mother and fetus. In this review, we focus on the placenta as an immuno-endocrine organ that can recognize and respond to the hyperglycemic environment. It synthesizes diverse chemicals that play a role in inflammation, innate defense, endocrine response, oxidative stress, and angiogenesis, all associated with different perinatal outcomes.",
+  "canon:text": "Immunoendocrine Dysregulation during Gestational Diabetes Mellitus: The Central Role of the Placenta. Gestational Diabetes Mellitus (GDM) is a transitory metabolic condition caused by dysregulation triggered by intolerance to carbohydrates, dysfunction of beta-pancreatic and endothelial cells, and insulin resistance during pregnancy. However, this disease includes not only changes related to metabolic distress but also placental immunoendocrine adaptations, resulting in harmful effects to the mother and fetus. In this review, we focus on the placenta as an immuno-endocrine organ that can recognize and respond to the hyperglycemic environment. It synthesizes diverse chemicals that play a role in inflammation, innate defense, endocrine response, oxidative stress, and angiogenesis, all associated with different perinatal outcomes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34360849_due-to_0001396#mention-T1",
+      "canon:span": {
+        "start": 624,
+        "end": 637
+      },
+      "canon:surface": "hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34360849_due-to_0001396#mention-T2",
+      "canon:span": {
+        "start": 37,
+        "end": 66
+      },
+      "canon:surface": "Gestational Diabetes Mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D016640",
+      "canon:sourceNotation": "D016640",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34360849_due-to_0001396#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34360849_due-to_0001396#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34360849_due-to_0001396#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34360849"
+      }
+    }
+  ]
+}

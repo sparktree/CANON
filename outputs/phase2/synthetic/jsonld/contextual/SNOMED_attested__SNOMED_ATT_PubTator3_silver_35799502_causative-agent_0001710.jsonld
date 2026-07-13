@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35799502_causative-agent_0001710",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35799502_causative-agent_0001710",
+  "canon:title": "Neuroaxonal and cellular damage/protection by prostanoid receptor ligands, fatty acid derivatives and associated enzyme inhibitors.",
+  "canon:abstract": "Cellular and mitochondrial membrane phospholipids provide the substrate for synthesis and release of prostaglandins in response to certain chemical, mechanical, noxious and other stimuli. Prostaglandin D2, prostaglandin E2, prostaglandin F2alpha, prostaglandin I2 and thromboxane-A2 interact with five major receptors (and their sub-types) to elicit specific downstream cellular and tissue actions. In general, prostaglandins have been associated with pain, inflammation, and edema when they are present at high local concentrations and involved on a chronic basis. However, in acute settings, certain endogenous and exogenous prostaglandins have beneficial effects ranging from mediating muscle contraction/relaxation, providing cellular protection, regulating sleep, and enhancing blood flow, to lowering intraocular pressure to prevent the development of glaucoma, a blinding disease. Several classes of prostaglandins are implicated (or are considered beneficial) in certain central nervous system dysfunctions (e.g., Alzheimer's, Parkinson's, and Huntington's diseases; amyotrophic lateral sclerosis and multiple sclerosis; stroke, traumatic brain injuries and pain) and in ocular disorders (e.g., ocular hypertension and glaucoma; allergy and inflammation; edematous retinal disorders). This review endeavors to address the physiological/pathological roles of prostaglandins in the central nervous system and ocular function in health and disease, and provides insights towards the therapeutic utility of some prostaglandin agonists and antagonists, polyunsaturated fatty acids, and cyclooxygenase inhibitors.",
+  "canon:text": "Neuroaxonal and cellular damage/protection by prostanoid receptor ligands, fatty acid derivatives and associated enzyme inhibitors. Cellular and mitochondrial membrane phospholipids provide the substrate for synthesis and release of prostaglandins in response to certain chemical, mechanical, noxious and other stimuli. Prostaglandin D2, prostaglandin E2, prostaglandin F2alpha, prostaglandin I2 and thromboxane-A2 interact with five major receptors (and their sub-types) to elicit specific downstream cellular and tissue actions. In general, prostaglandins have been associated with pain, inflammation, and edema when they are present at high local concentrations and involved on a chronic basis. However, in acute settings, certain endogenous and exogenous prostaglandins have beneficial effects ranging from mediating muscle contraction/relaxation, providing cellular protection, regulating sleep, and enhancing blood flow, to lowering intraocular pressure to prevent the development of glaucoma, a blinding disease. Several classes of prostaglandins are implicated (or are considered beneficial) in certain central nervous system dysfunctions (e.g., Alzheimer's, Parkinson's, and Huntington's diseases; amyotrophic lateral sclerosis and multiple sclerosis; stroke, traumatic brain injuries and pain) and in ocular disorders (e.g., ocular hypertension and glaucoma; allergy and inflammation; edematous retinal disorders). This review endeavors to address the physiological/pathological roles of prostaglandins in the central nervous system and ocular function in health and disease, and provides insights towards the therapeutic utility of some prostaglandin agonists and antagonists, polyunsaturated fatty acids, and cyclooxygenase inhibitors.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35799502_causative-agent_0001710#mention-T1",
+      "canon:span": {
+        "start": 1369,
+        "end": 1376
+      },
+      "canon:surface": "allergy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35799502_causative-agent_0001710#mention-T2",
+      "canon:span": {
+        "start": 338,
+        "end": 354
+      },
+      "canon:surface": "prostaglandin E2",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D015232",
+      "canon:sourceNotation": "D015232",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35799502_causative-agent_0001710#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35799502_causative-agent_0001710#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35799502_causative-agent_0001710#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35799502"
+      }
+    }
+  ]
+}

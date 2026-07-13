@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27156439_causative-agent_0002674",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27156439_causative-agent_0002674",
+  "canon:title": "Clinical Potential of Neurosteroids for CNS Disorders.",
+  "canon:abstract": "Neurosteroids are key endogenous molecules in the brain that affect many neural functions. We describe here recent advances in US National Institutes of Health (NIH)-sponsored and other clinical studies of neurosteroids for CNS disorders. The neuronal GABA-A receptor chloride channel is one of the prime molecular targets of neurosteroids. Allopregnanolone-like neurosteroids are potent allosteric agonists as well as direct activators of both synaptic and extrasynaptic GABA-A receptors. Hence, neurosteroids can maximally enhance synaptic phasic and extrasynaptic tonic inhibition. The resulting chloride current conductance generates a form of shunting inhibition that controls network excitability, seizures, and behavior. Such mechanisms of neurosteroids are providing innovative therapies for epilepsy, status epilepticus (SE), traumatic brain injury (TBI), fragile X syndrome (FXS), and chemical neurotoxicity. The neurosteroid field has entered a new era, and many compounds have reached advanced clinical trials. Synthetic analogs have several advantages over natural neurosteroids for clinical use because of their superior bioavailability and safety trends.",
+  "canon:text": "Clinical Potential of Neurosteroids for CNS Disorders. Neurosteroids are key endogenous molecules in the brain that affect many neural functions. We describe here recent advances in US National Institutes of Health (NIH)-sponsored and other clinical studies of neurosteroids for CNS disorders. The neuronal GABA-A receptor chloride channel is one of the prime molecular targets of neurosteroids. Allopregnanolone-like neurosteroids are potent allosteric agonists as well as direct activators of both synaptic and extrasynaptic GABA-A receptors. Hence, neurosteroids can maximally enhance synaptic phasic and extrasynaptic tonic inhibition. The resulting chloride current conductance generates a form of shunting inhibition that controls network excitability, seizures, and behavior. Such mechanisms of neurosteroids are providing innovative therapies for epilepsy, status epilepticus (SE), traumatic brain injury (TBI), fragile X syndrome (FXS), and chemical neurotoxicity. The neurosteroid field has entered a new era, and many compounds have reached advanced clinical trials. Synthetic analogs have several advantages over natural neurosteroids for clinical use because of their superior bioavailability and safety trends.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27156439_causative-agent_0002674#mention-T1",
+      "canon:span": {
+        "start": 959,
+        "end": 972
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27156439_causative-agent_0002674#mention-T2",
+      "canon:span": {
+        "start": 323,
+        "end": 331
+      },
+      "canon:surface": "chloride",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002712",
+      "canon:sourceNotation": "D002712",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27156439_causative-agent_0002674#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27156439_causative-agent_0002674#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27156439_causative-agent_0002674#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27156439"
+      }
+    }
+  ]
+}

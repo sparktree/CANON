@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27199883_after_0002693",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_27199883_after_0002693",
+  "canon:title": "Rodent Hypoxia-Ischemia Models for Cerebral Palsy Research: A Systematic Review.",
+  "canon:abstract": "Cerebral palsy (CP) is a complex multifactorial disorder, affecting approximately 2.5-3/1000 live term births, and up to 22/1000 prematurely born babies. CP results from injury to the developing brain incurred before, during, or after birth. The most common form of this condition, spastic CP, is primarily associated with injury to the cerebral cortex and subcortical white matter as well as the deep gray matter. The major etiological factors of spastic CP are hypoxia/ischemia (HI), occurring during the last third of pregnancy and around birth age. In addition, inflammation has been found to be an important factor contributing to brain injury, especially in term infants. Other factors, including genetics, are gaining importance. The classic Rice-Vannucci HI model (in which 7-day-old rat pups undergo unilateral ligation of the common carotid artery followed by exposure to 8% oxygen hypoxic air) is a model of neonatal stroke that has greatly contributed to CP research. In this model, brain damage resembles that observed in severe CP cases. This model, and its numerous adaptations, allows one to finely tune the injury parameters to mimic, and therefore study, many of the pathophysiological processes and conditions observed in human patients. Investigators can recreate the HI and inflammation, which cause brain damage and subsequent motor and cognitive deficits. This model further enables the examination of potential approaches to achieve neural repair and regeneration. In the present review, we compare and discuss the advantages, limitations, and the translational value for CP research of HI models of perinatal brain injury. ",
+  "canon:text": "Rodent Hypoxia-Ischemia Models for Cerebral Palsy Research: A Systematic Review. Cerebral palsy (CP) is a complex multifactorial disorder, affecting approximately 2.5-3/1000 live term births, and up to 22/1000 prematurely born babies. CP results from injury to the developing brain incurred before, during, or after birth. The most common form of this condition, spastic CP, is primarily associated with injury to the cerebral cortex and subcortical white matter as well as the deep gray matter. The major etiological factors of spastic CP are hypoxia/ischemia (HI), occurring during the last third of pregnancy and around birth age. In addition, inflammation has been found to be an important factor contributing to brain injury, especially in term infants. Other factors, including genetics, are gaining importance. The classic Rice-Vannucci HI model (in which 7-day-old rat pups undergo unilateral ligation of the common carotid artery followed by exposure to 8% oxygen hypoxic air) is a model of neonatal stroke that has greatly contributed to CP research. In this model, brain damage resembles that observed in severe CP cases. This model, and its numerous adaptations, allows one to finely tune the injury parameters to mimic, and therefore study, many of the pathophysiological processes and conditions observed in human patients. Investigators can recreate the HI and inflammation, which cause brain damage and subsequent motor and cognitive deficits. This model further enables the examination of potential approaches to achieve neural repair and regeneration. In the present review, we compare and discuss the advantages, limitations, and the translational value for CP research of HI models of perinatal brain injury. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27199883_after_0002693#mention-T1",
+      "canon:span": {
+        "start": 544,
+        "end": 560
+      },
+      "canon:surface": "hypoxia/ischemia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020925",
+      "canon:sourceNotation": "D020925",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27199883_after_0002693#mention-T2",
+      "canon:span": {
+        "start": 35,
+        "end": 49
+      },
+      "canon:surface": "Cerebral Palsy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D002547",
+      "canon:sourceNotation": "D002547",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27199883_after_0002693#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27199883_after_0002693#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_27199883_after_0002693#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "27199883"
+      }
+    }
+  ]
+}

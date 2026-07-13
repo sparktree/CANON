@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19931307_causative-agent_0002215",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_19931307_causative-agent_0002215",
+  "canon:title": "Minding the calcium store: Ryanodine receptor activation as a convergent mechanism of PCB toxicity.",
+  "canon:abstract": "Chronic low-level polychlorinated biphenyl (PCB) exposures remain a significant public health concern since results from epidemiological studies indicate that PCB burden is associated with immune system dysfunction, cardiovascular disease, and impairment of the developing nervous system. Of these various adverse health effects, developmental neurotoxicity has emerged as a particularly vulnerable endpoint in PCB toxicity. Arguably the most pervasive biological effects of PCBs could be mediated by their ability to alter the spatial and temporal fidelity of Ca2+ signals through one or more receptor-mediated processes. This review will focus on our current knowledge of the structure and function of ryanodine receptors (RyRs) in muscle and nerve cells and how PCBs and related non-coplanar structures alter these functions. The molecular and cellular mechanisms by which non-coplanar PCBs and related structures alter local and global Ca2+ signaling properties and the possible short and long-term consequences of these perturbations on neurodevelopment and neurodegeneration are reviewed.",
+  "canon:text": "Minding the calcium store: Ryanodine receptor activation as a convergent mechanism of PCB toxicity. Chronic low-level polychlorinated biphenyl (PCB) exposures remain a significant public health concern since results from epidemiological studies indicate that PCB burden is associated with immune system dysfunction, cardiovascular disease, and impairment of the developing nervous system. Of these various adverse health effects, developmental neurotoxicity has emerged as a particularly vulnerable endpoint in PCB toxicity. Arguably the most pervasive biological effects of PCBs could be mediated by their ability to alter the spatial and temporal fidelity of Ca2+ signals through one or more receptor-mediated processes. This review will focus on our current knowledge of the structure and function of ryanodine receptors (RyRs) in muscle and nerve cells and how PCBs and related non-coplanar structures alter these functions. The molecular and cellular mechanisms by which non-coplanar PCBs and related structures alter local and global Ca2+ signaling properties and the possible short and long-term consequences of these perturbations on neurodevelopment and neurodegeneration are reviewed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19931307_causative-agent_0002215#mention-T1",
+      "canon:span": {
+        "start": 430,
+        "end": 457
+      },
+      "canon:surface": "developmental neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19931307_causative-agent_0002215#mention-T2",
+      "canon:span": {
+        "start": 12,
+        "end": 19
+      },
+      "canon:surface": "calcium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002118",
+      "canon:sourceNotation": "D002118",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19931307_causative-agent_0002215#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19931307_causative-agent_0002215#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19931307_causative-agent_0002215#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "19931307"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31832729_causative-agent_0003204",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31832729_causative-agent_0003204",
+  "canon:title": "Critical Review of Exposure and Effects: Implications for Setting Regulatory Health Criteria for Ingested Copper.",
+  "canon:abstract": "Decades of study indicate that copper oral exposures are typically not a human health concern. Ingesting high levels of soluble copper salts can cause acute gastrointestinal symptoms and, in uncommon cases, liver toxicity in susceptible individuals with repeated exposure. This focused toxicological review evaluated the current literature since the last comprehensive reviews (2007-2010). Our review identified limitations in the existing United States and international guidance for determining an oral reference dose (RfD) for essential metals like copper. Instead, an alternative method using categorical regression analysis to develop an optimal dose that considers deficiency, toxicity, and integrates information from human and animal studies was reviewed for interpreting an oral RfD for copper. We also considered subchronic or chronic toxicity from genetic susceptibility to copper dysregulation leading to rare occurrences of liver and other organ toxicity with elevated copper exposure. Based on this approach, an oral RfD of 0.04 mg Cu/kg/day would be protective of acute or chronic toxicity in adults and children. This RfD is also protective for possible genetic susceptibility to elevated copper exposure and allows for background dietary exposures. This dose is not intended to be protective of patients with rare genetic disorders for copper sensitivity within typical nutritional intake ranges, nor is it protective for those with excessive supplement intake. Less soluble mineral forms of copper in soil have reduced bioavailability as compared with more soluble copper in water and diet, which should be considered in using this RfD for risk assessments of copper.",
+  "canon:text": "Critical Review of Exposure and Effects: Implications for Setting Regulatory Health Criteria for Ingested Copper. Decades of study indicate that copper oral exposures are typically not a human health concern. Ingesting high levels of soluble copper salts can cause acute gastrointestinal symptoms and, in uncommon cases, liver toxicity in susceptible individuals with repeated exposure. This focused toxicological review evaluated the current literature since the last comprehensive reviews (2007-2010). Our review identified limitations in the existing United States and international guidance for determining an oral reference dose (RfD) for essential metals like copper. Instead, an alternative method using categorical regression analysis to develop an optimal dose that considers deficiency, toxicity, and integrates information from human and animal studies was reviewed for interpreting an oral RfD for copper. We also considered subchronic or chronic toxicity from genetic susceptibility to copper dysregulation leading to rare occurrences of liver and other organ toxicity with elevated copper exposure. Based on this approach, an oral RfD of 0.04 mg Cu/kg/day would be protective of acute or chronic toxicity in adults and children. This RfD is also protective for possible genetic susceptibility to elevated copper exposure and allows for background dietary exposures. This dose is not intended to be protective of patients with rare genetic disorders for copper sensitivity within typical nutritional intake ranges, nor is it protective for those with excessive supplement intake. Less soluble mineral forms of copper in soil have reduced bioavailability as compared with more soluble copper in water and diet, which should be considered in using this RfD for risk assessments of copper.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31832729_causative-agent_0003204#mention-T1",
+      "canon:span": {
+        "start": 321,
+        "end": 335
+      },
+      "canon:surface": "liver toxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31832729_causative-agent_0003204#mention-T2",
+      "canon:span": {
+        "start": 1707,
+        "end": 1712
+      },
+      "canon:surface": "water",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D014867",
+      "canon:sourceNotation": "D014867",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31832729_causative-agent_0003204#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31832729_causative-agent_0003204#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31832729_causative-agent_0003204#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31832729"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15535450_causative-agent_0002130",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_15535450_causative-agent_0002130",
+  "canon:title": "Relationships between nutrition, alcohol use, and liver disease.",
+  "canon:abstract": "Many alcoholics are malnourished, either because they ingest too little of essential nutrients (e.g., carbohydrates, proteins, and vitamins) or because alcohol and its metabolism prevent the body from properly absorbing, digesting, and using those nutrients. As a result, alcoholics frequently experience deficiencies in proteins and vitamins, particularly vitamin A, which may contribute to liver disease and other serious alcohol-related disorders. Furthermore, alcohol breakdown in the liver, both by the enzyme alcohol dehydrogenase and by an enzyme system called the microsomal ethanol-oxidizing system (MEOS), generates toxic products such as acetaldehyde and highly reactive, and potentially damaging, oxygen-containing molecules. These products can interfere with the normal metabolism of other nutrients, particularly lipids, and contribute to liver cell damage. Nutritional approaches can help prevent or ameliorate alcoholic liver disease. For example, a complete balanced diet can compensate for general malnutrition. Administration of antioxidants (e.g., precursors of the endogenous antioxidant glutathione) can help the body eliminate reactive oxygen molecules and other reactive molecules generated from abnormal lipid breakdown. New agents currently are being studied as promising nutritional supplements for alcoholics with liver disease.",
+  "canon:text": "Relationships between nutrition, alcohol use, and liver disease. Many alcoholics are malnourished, either because they ingest too little of essential nutrients (e.g., carbohydrates, proteins, and vitamins) or because alcohol and its metabolism prevent the body from properly absorbing, digesting, and using those nutrients. As a result, alcoholics frequently experience deficiencies in proteins and vitamins, particularly vitamin A, which may contribute to liver disease and other serious alcohol-related disorders. Furthermore, alcohol breakdown in the liver, both by the enzyme alcohol dehydrogenase and by an enzyme system called the microsomal ethanol-oxidizing system (MEOS), generates toxic products such as acetaldehyde and highly reactive, and potentially damaging, oxygen-containing molecules. These products can interfere with the normal metabolism of other nutrients, particularly lipids, and contribute to liver cell damage. Nutritional approaches can help prevent or ameliorate alcoholic liver disease. For example, a complete balanced diet can compensate for general malnutrition. Administration of antioxidants (e.g., precursors of the endogenous antioxidant glutathione) can help the body eliminate reactive oxygen molecules and other reactive molecules generated from abnormal lipid breakdown. New agents currently are being studied as promising nutritional supplements for alcoholics with liver disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15535450_causative-agent_0002130#mention-T1",
+      "canon:span": {
+        "start": 70,
+        "end": 80
+      },
+      "canon:surface": "alcoholics",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15535450_causative-agent_0002130#mention-T2",
+      "canon:span": {
+        "start": 648,
+        "end": 655
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15535450_causative-agent_0002130#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15535450_causative-agent_0002130#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_15535450_causative-agent_0002130#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "15535450"
+      }
+    }
+  ]
+}

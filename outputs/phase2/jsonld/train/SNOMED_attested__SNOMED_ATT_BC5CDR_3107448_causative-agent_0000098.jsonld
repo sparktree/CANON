@@ -1,0 +1,87 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3107448_causative-agent_0000098",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_3107448_causative-agent_0000098",
+  "canon:title": "Glyburide-induced hepatitis.",
+  "canon:abstract": "Drug-induced hepatotoxicity, although common, has been reported only infrequently with sulfonylureas. For glyburide, a second-generation sulfonylurea, only two brief reports of hepatotoxicity exist. Two patients with type II diabetes mellitus developed an acute hepatitis-like syndrome soon after initiation of glyburide therapy. There was no serologic evidence of viral infection, and a liver biopsy sample showed a histologic pattern consistent with drug-induced hepatitis. Both patients recovered quickly after stopping glyburide therapy and have remained well for a follow-up period of 1 year. Glyburide can produce an acute hepatitis-like illness in some persons.",
+  "canon:text": "Glyburide-induced hepatitis. Drug-induced hepatotoxicity, although common, has been reported only infrequently with sulfonylureas. For glyburide, a second-generation sulfonylurea, only two brief reports of hepatotoxicity exist. Two patients with type II diabetes mellitus developed an acute hepatitis-like syndrome soon after initiation of glyburide therapy. There was no serologic evidence of viral infection, and a liver biopsy sample showed a histologic pattern consistent with drug-induced hepatitis. Both patients recovered quickly after stopping glyburide therapy and have remained well for a follow-up period of 1 year. Glyburide can produce an acute hepatitis-like illness in some persons.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3107448_causative-agent_0000098#mention-T1",
+      "canon:span": {
+        "start": 18,
+        "end": 27
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3107448_causative-agent_0000098#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 9
+      },
+      "canon:surface": "Glyburide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D005905",
+      "canon:sourceNotation": "D005905",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/384978002",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3107448_causative-agent_0000098#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3107448_causative-agent_0000098#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_3107448_causative-agent_0000098#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "3107448"
+      }
+    }
+  ]
+}

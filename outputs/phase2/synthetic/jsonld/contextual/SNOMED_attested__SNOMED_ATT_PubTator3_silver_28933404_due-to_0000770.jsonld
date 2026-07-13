@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28933404_due-to_0000770",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_28933404_due-to_0000770",
+  "canon:title": "The Protective Effect of Antioxidants Consumption on Diabetes and Vascular Complications.",
+  "canon:abstract": "Obesity and diabetes is generally accompanied by a chronic state of oxidative stress, disequilibrium in the redox balance, implicated in the development and progression of complications such as micro- and macro-angiopathies. Disorders in the inner layer of blood vessels, the endothelium, play an early and critical role in the development of these complications. Blunted endothelium-dependent relaxation and/or contractions are quietly associated to oxidative stress. Thus, preserving endothelial function and oxidative stress seems to be an optimization strategy in the prevention of vascular complications associated with diabetes. Diet is a major lifestyle factor that can greatly influence the incidence and the progression of type 2 diabetes and cardiovascular complications. The notion that foods not only provide basic nutrition but can also prevent diseases and ensure good health and longevity is now attained greater prominence. Some dietary and lifestyle modifications associated to antioxidative supply could be an effective prophylactic means to fight against oxidative stress in diabesity and complications. A significant benefit of phytochemicals (polyphenols in wine, grape, teas), vitamins (ascorbate, tocopherol), minerals (selenium, magnesium), and fruits and vegetables in foods is thought to be capable of scavenging free radicals, lowering the incidence of chronic diseases. In this review, we discuss the role of oxidative stress in diabetes and complications, highlight the endothelial dysfunction, and examine the impact of antioxidant foods, plants, fruits, and vegetables, currently used medication with antioxidant properties, in relation to the development and progression of diabetes and cardiovascular complications.",
+  "canon:text": "The Protective Effect of Antioxidants Consumption on Diabetes and Vascular Complications. Obesity and diabetes is generally accompanied by a chronic state of oxidative stress, disequilibrium in the redox balance, implicated in the development and progression of complications such as micro- and macro-angiopathies. Disorders in the inner layer of blood vessels, the endothelium, play an early and critical role in the development of these complications. Blunted endothelium-dependent relaxation and/or contractions are quietly associated to oxidative stress. Thus, preserving endothelial function and oxidative stress seems to be an optimization strategy in the prevention of vascular complications associated with diabetes. Diet is a major lifestyle factor that can greatly influence the incidence and the progression of type 2 diabetes and cardiovascular complications. The notion that foods not only provide basic nutrition but can also prevent diseases and ensure good health and longevity is now attained greater prominence. Some dietary and lifestyle modifications associated to antioxidative supply could be an effective prophylactic means to fight against oxidative stress in diabesity and complications. A significant benefit of phytochemicals (polyphenols in wine, grape, teas), vitamins (ascorbate, tocopherol), minerals (selenium, magnesium), and fruits and vegetables in foods is thought to be capable of scavenging free radicals, lowering the incidence of chronic diseases. In this review, we discuss the role of oxidative stress in diabetes and complications, highlight the endothelial dysfunction, and examine the impact of antioxidant foods, plants, fruits, and vegetables, currently used medication with antioxidant properties, in relation to the development and progression of diabetes and cardiovascular complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28933404_due-to_0000770#mention-T1",
+      "canon:span": {
+        "start": 1547,
+        "end": 1573
+      },
+      "canon:surface": "diabetes and complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28933404_due-to_0000770#mention-T2",
+      "canon:span": {
+        "start": 53,
+        "end": 61
+      },
+      "canon:surface": "Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28933404_due-to_0000770#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28933404_due-to_0000770#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28933404_due-to_0000770#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "28933404"
+      }
+    }
+  ]
+}

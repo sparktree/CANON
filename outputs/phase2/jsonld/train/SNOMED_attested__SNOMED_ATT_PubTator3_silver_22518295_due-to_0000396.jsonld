@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22518295_due-to_0000396",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_22518295_due-to_0000396",
+  "canon:title": "Therapeutic potential of heme oxygenase-1/carbon monoxide in lung disease.",
+  "canon:abstract": "Heme oxygenase (HO), a catabolic enzyme, provides the rate-limiting step in the oxidative breakdown of heme, to generate carbon monoxide (CO), iron, and biliverdin-IXalpha. Induction of the inducible form, HO-1, in tissues is generally regarded as a protective mechanism. Over the last decade, considerable progress has been made in defining the therapeutic potential of HO-1 in a number of preclinical models of lung tissue injury and disease. Likewise, tissue-protective effects of CO, when applied at low concentration, have been observed in many of these models. Recent studies have expanded this concept to include chemical CO-releasing molecules (CORMs). Collectively, salutary effects of the HO-1/CO system have been demonstrated in lung inflammation/acute lung injury, lung and vascular transplantation, sepsis, and pulmonary hypertension models. The beneficial effects of HO-1/CO are conveyed in part through the inhibition or modulation of inflammatory, apoptotic, and proliferative processes. Recent advances, however, suggest that the regulation of autophagy and the preservation of mitochondrial homeostasis may serve as additional candidate mechanisms. Further preclinical and clinical trials are needed to ascertain the therapeutic potential of HO-1/CO in human clinical disease.",
+  "canon:text": "Therapeutic potential of heme oxygenase-1/carbon monoxide in lung disease. Heme oxygenase (HO), a catabolic enzyme, provides the rate-limiting step in the oxidative breakdown of heme, to generate carbon monoxide (CO), iron, and biliverdin-IXalpha. Induction of the inducible form, HO-1, in tissues is generally regarded as a protective mechanism. Over the last decade, considerable progress has been made in defining the therapeutic potential of HO-1 in a number of preclinical models of lung tissue injury and disease. Likewise, tissue-protective effects of CO, when applied at low concentration, have been observed in many of these models. Recent studies have expanded this concept to include chemical CO-releasing molecules (CORMs). Collectively, salutary effects of the HO-1/CO system have been demonstrated in lung inflammation/acute lung injury, lung and vascular transplantation, sepsis, and pulmonary hypertension models. The beneficial effects of HO-1/CO are conveyed in part through the inhibition or modulation of inflammatory, apoptotic, and proliferative processes. Recent advances, however, suggest that the regulation of autophagy and the preservation of mitochondrial homeostasis may serve as additional candidate mechanisms. Further preclinical and clinical trials are needed to ascertain the therapeutic potential of HO-1/CO in human clinical disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22518295_due-to_0000396#mention-T1",
+      "canon:span": {
+        "start": 887,
+        "end": 893
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22518295_due-to_0000396#mention-T2",
+      "canon:span": {
+        "start": 815,
+        "end": 832
+      },
+      "canon:surface": "lung inflammation",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011014",
+      "canon:sourceNotation": "D011014",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22518295_due-to_0000396#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22518295_due-to_0000396#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22518295_due-to_0000396#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "22518295"
+      }
+    }
+  ]
+}

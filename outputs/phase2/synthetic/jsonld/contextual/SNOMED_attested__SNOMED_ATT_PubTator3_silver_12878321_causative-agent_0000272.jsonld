@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_12878321_causative-agent_0000272",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_12878321_causative-agent_0000272",
+  "canon:title": "Inhibition of human m-epoxide hydrolase gene expression in a case of hypercholanemia.",
+  "canon:abstract": "Microsomal epoxide hydrolase (mEH) is a bifunctional protein that plays a central role in carcinogen metabolism and is also able to mediate the sodium-dependent uptake of bile acids into hepatocytes. Studies have identified a subject (S-1) with extremely elevated serum bile salt levels in the absence of observable hepatocellular injury, suggesting a defect in bile acid uptake. In this individual, mEH protein and mEH mRNA levels were reduced by approximately 95% and 85%, respectively, whereas the expression and amino acid sequence of another bile acid transport protein (NTCP) was unaffected. Sequence analysis of the mEH gene (EPHX1) revealed a point mutation at an upstream HNF-3 site (allele I) and in intron 1 (allele II), which resulted in a significant decrease in EPHX1 promoter activity in transient transfection assays. Gel shift assays using a radiolabeled oligonucleotide from each region resulted in specific transcription factor binding patterns, which were altered in the presence of the mutation. These studies demonstrate that the expression of mEH is greatly reduced in a patient with hypercholanemia, suggesting that mEH participates in sodium-dependent bile acid uptake in human liver where its absence may contribute to the etiology of this disease.",
+  "canon:text": "Inhibition of human m-epoxide hydrolase gene expression in a case of hypercholanemia. Microsomal epoxide hydrolase (mEH) is a bifunctional protein that plays a central role in carcinogen metabolism and is also able to mediate the sodium-dependent uptake of bile acids into hepatocytes. Studies have identified a subject (S-1) with extremely elevated serum bile salt levels in the absence of observable hepatocellular injury, suggesting a defect in bile acid uptake. In this individual, mEH protein and mEH mRNA levels were reduced by approximately 95% and 85%, respectively, whereas the expression and amino acid sequence of another bile acid transport protein (NTCP) was unaffected. Sequence analysis of the mEH gene (EPHX1) revealed a point mutation at an upstream HNF-3 site (allele I) and in intron 1 (allele II), which resulted in a significant decrease in EPHX1 promoter activity in transient transfection assays. Gel shift assays using a radiolabeled oligonucleotide from each region resulted in specific transcription factor binding patterns, which were altered in the presence of the mutation. These studies demonstrate that the expression of mEH is greatly reduced in a patient with hypercholanemia, suggesting that mEH participates in sodium-dependent bile acid uptake in human liver where its absence may contribute to the etiology of this disease.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_12878321_causative-agent_0000272#mention-T1",
+      "canon:span": {
+        "start": 402,
+        "end": 423
+      },
+      "canon:surface": "hepatocellular injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_12878321_causative-agent_0000272#mention-T2",
+      "canon:span": {
+        "start": 230,
+        "end": 236
+      },
+      "canon:surface": "sodium",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D012964",
+      "canon:sourceNotation": "D012964",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_12878321_causative-agent_0000272#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_12878321_causative-agent_0000272#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_12878321_causative-agent_0000272#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "12878321"
+      }
+    }
+  ]
+}

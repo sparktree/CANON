@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31443409_causative-agent_0001020",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_31443409_causative-agent_0001020",
+  "canon:title": "Short-Term Betanin Intake Reduces Oxidative Stress in Wistar Rats.",
+  "canon:abstract": "Oxidative stress is a common condition described in risk factors for cardiovascular disease. Betanin, a bioactive pigment from red beetroot demonstrates anti-inflammatory and antioxidant properties. The main aim of this study was to evaluate the short-term intake of betanin against oxidative stress in a rodent model, a common condition described in several risk factors for cardiovascular disease. Oxidative stress was induced in Wistar rats by a hyperlipidemic diet for 60 days, followed by betanin administration (20 mg kg-1) through oral gavage for 20 days. Plasma biochemical parameters and antioxidant enzyme activities were evaluated. Lipid peroxidation and histopathological changes were determined in the liver. The hyperlipidemic diet caused hyperglycemia, hyperinsulinemia, insulin resistance, and increases in alanine transaminase and aspartate transaminase levels. Oxidative stress status was confirmed by reduction of antioxidant enzyme activities, increased lipid peroxidation, and liver damage. Purified betanin regulated glucose levels, insulin, and insulin resistance. Hepatic damage was reversed as evidenced by the reduction in alanine transaminase and aspartate transaminase levels and confirmed by histological analyses. Betanin reduced hepatic malondialdehyde and increased superoxide dismutase, catalase, and glutathione peroxidase activities. Short-term betanin intake modulated biochemical parameters, reversed hepatic tissue damage, and attenuated oxidative stress in Wistar rats.",
+  "canon:text": "Short-Term Betanin Intake Reduces Oxidative Stress in Wistar Rats. Oxidative stress is a common condition described in risk factors for cardiovascular disease. Betanin, a bioactive pigment from red beetroot demonstrates anti-inflammatory and antioxidant properties. The main aim of this study was to evaluate the short-term intake of betanin against oxidative stress in a rodent model, a common condition described in several risk factors for cardiovascular disease. Oxidative stress was induced in Wistar rats by a hyperlipidemic diet for 60 days, followed by betanin administration (20 mg kg-1) through oral gavage for 20 days. Plasma biochemical parameters and antioxidant enzyme activities were evaluated. Lipid peroxidation and histopathological changes were determined in the liver. The hyperlipidemic diet caused hyperglycemia, hyperinsulinemia, insulin resistance, and increases in alanine transaminase and aspartate transaminase levels. Oxidative stress status was confirmed by reduction of antioxidant enzyme activities, increased lipid peroxidation, and liver damage. Purified betanin regulated glucose levels, insulin, and insulin resistance. Hepatic damage was reversed as evidenced by the reduction in alanine transaminase and aspartate transaminase levels and confirmed by histological analyses. Betanin reduced hepatic malondialdehyde and increased superoxide dismutase, catalase, and glutathione peroxidase activities. Short-term betanin intake modulated biochemical parameters, reversed hepatic tissue damage, and attenuated oxidative stress in Wistar rats.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31443409_causative-agent_0001020#mention-T1",
+      "canon:span": {
+        "start": 1065,
+        "end": 1077
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31443409_causative-agent_0001020#mention-T2",
+      "canon:span": {
+        "start": 1106,
+        "end": 1113
+      },
+      "canon:surface": "glucose",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D005947",
+      "canon:sourceNotation": "D005947",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31443409_causative-agent_0001020#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31443409_causative-agent_0001020#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_31443409_causative-agent_0001020#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "31443409"
+      }
+    }
+  ]
+}

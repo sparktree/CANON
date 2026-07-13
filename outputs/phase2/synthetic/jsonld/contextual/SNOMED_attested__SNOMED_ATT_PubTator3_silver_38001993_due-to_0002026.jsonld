@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38001993_due-to_0002026",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_38001993_due-to_0002026",
+  "canon:title": "Dopamine in the Regulation of Glucose Homeostasis, Pathogenesis of Type 2 Diabetes, and Chronic Conditions of Impaired Dopamine Activity/Metabolism: Implication for Pathophysiological and Therapeutic Purposes.",
+  "canon:abstract": "Dopamine regulates several functions, such as voluntary movements, spatial memory, motivation, sleep, arousal, feeding, immune function, maternal behaviors, and lactation. Less clear is the role of dopamine in the pathophysiology of type 2 diabetes mellitus (T2D) and chronic complications and conditions frequently associated with it. This review summarizes recent evidence on the role of dopamine in regulating insular metabolism and activity, the pathophysiology of traditional chronic complications associated with T2D, the pathophysiological interconnection between T2D and chronic neurological and psychiatric disorders characterized by impaired dopamine activity/metabolism, and therapeutic implications. Reinforcing dopamine signaling is therapeutic in T2D, especially in patients with dopamine-related disorders, such as Parkinson's and Huntington's diseases, addictions, and attention-deficit/hyperactivity disorder. On the other hand, although specific trials are probably needed, certain medications approved for T2D (e.g., metformin, pioglitazone, incretin-based therapy, and gliflozins) may have a therapeutic role in such dopamine-related disorders due to anti-inflammatory and anti-oxidative effects, improvement in insulin signaling, neuroinflammation, mitochondrial dysfunction, autophagy, and apoptosis, restoration of striatal dopamine synthesis, and modulation of dopamine signaling associated with reward and hedonic eating. Last, targeting dopamine metabolism could have the potential for diagnostic and therapeutic purposes in chronic diabetes-related complications, such as diabetic retinopathy.",
+  "canon:text": "Dopamine in the Regulation of Glucose Homeostasis, Pathogenesis of Type 2 Diabetes, and Chronic Conditions of Impaired Dopamine Activity/Metabolism: Implication for Pathophysiological and Therapeutic Purposes. Dopamine regulates several functions, such as voluntary movements, spatial memory, motivation, sleep, arousal, feeding, immune function, maternal behaviors, and lactation. Less clear is the role of dopamine in the pathophysiology of type 2 diabetes mellitus (T2D) and chronic complications and conditions frequently associated with it. This review summarizes recent evidence on the role of dopamine in regulating insular metabolism and activity, the pathophysiology of traditional chronic complications associated with T2D, the pathophysiological interconnection between T2D and chronic neurological and psychiatric disorders characterized by impaired dopamine activity/metabolism, and therapeutic implications. Reinforcing dopamine signaling is therapeutic in T2D, especially in patients with dopamine-related disorders, such as Parkinson's and Huntington's diseases, addictions, and attention-deficit/hyperactivity disorder. On the other hand, although specific trials are probably needed, certain medications approved for T2D (e.g., metformin, pioglitazone, incretin-based therapy, and gliflozins) may have a therapeutic role in such dopamine-related disorders due to anti-inflammatory and anti-oxidative effects, improvement in insulin signaling, neuroinflammation, mitochondrial dysfunction, autophagy, and apoptosis, restoration of striatal dopamine synthesis, and modulation of dopamine signaling associated with reward and hedonic eating. Last, targeting dopamine metabolism could have the potential for diagnostic and therapeutic purposes in chronic diabetes-related complications, such as diabetic retinopathy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38001993_due-to_0002026#mention-T1",
+      "canon:span": {
+        "start": 1761,
+        "end": 1799
+      },
+      "canon:surface": "chronic diabetes-related complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38001993_due-to_0002026#mention-T2",
+      "canon:span": {
+        "start": 67,
+        "end": 82
+      },
+      "canon:surface": "Type 2 Diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38001993_due-to_0002026#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38001993_due-to_0002026#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_38001993_due-to_0002026#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "38001993"
+      }
+    }
+  ]
+}

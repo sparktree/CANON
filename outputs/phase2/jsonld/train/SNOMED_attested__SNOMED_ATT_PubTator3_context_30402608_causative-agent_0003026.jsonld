@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003026",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003026",
+  "canon:title": "Epidemiology of cutaneous adverse drug reactions.",
+  "canon:abstract": "Epidemiologic investigation of cutaneous adverse drug reactions (cADRs) is important in order to evaluate their impact on dermatology and health care in general as well as their burden on affected patients. Few epidemiologic studies have been performed on frequent non-life-threatening cADR, including reactions of both delayed and immediate hypersensitivity, such as maculopapular exanthema (MPE), fixed drug eruption, and urticaria. Concerning rare but life-threatening severe cutaneous adverse reactions, e.g., toxic epidermal necrolysis (TEN), Stevens-Johnson syndrome (SJS), acute generalized exanthematous pustulosis (AGEP), and drug reaction with eosinophilia and systemic symptoms (DRESS), several epidemiologic studies have been performed to date, some of which are still ongoing. Such studies enable the calculation of reliable incidence rates and demographic data, and also allow researchers to perform risk estimation for drugs. The spectrum of drugs causing cADR differs substantially when separating the various clinical conditions. Whereas antibiotics are by far the most frequent inducers of milder cADRs, like MPE, they have a much lower risk of inducing SJS/TEN, for which \"high-risk\" drugs are anti-infective sulfonamides, allopurinol, certain anti-epileptic drugs, nevirapine, and non-steroidal anti-inflammatory drugs (NSAIDs) of the oxicam-type. In contrast, AGEP is predominantly caused by the antibiotics pristinamycin and aminopenicillins, followed by quinolones, (hydroxy-)chloroquine, and sulfonamides. DRESS can be induced by a number of drugs known to cause SJS/TEN, such as certain antiepileptics and allopurinol, but also other medications (e.g., minocyclin).",
+  "canon:text": "Epidemiology of cutaneous adverse drug reactions. Epidemiologic investigation of cutaneous adverse drug reactions (cADRs) is important in order to evaluate their impact on dermatology and health care in general as well as their burden on affected patients. Few epidemiologic studies have been performed on frequent non-life-threatening cADR, including reactions of both delayed and immediate hypersensitivity, such as maculopapular exanthema (MPE), fixed drug eruption, and urticaria. Concerning rare but life-threatening severe cutaneous adverse reactions, e.g., toxic epidermal necrolysis (TEN), Stevens-Johnson syndrome (SJS), acute generalized exanthematous pustulosis (AGEP), and drug reaction with eosinophilia and systemic symptoms (DRESS), several epidemiologic studies have been performed to date, some of which are still ongoing. Such studies enable the calculation of reliable incidence rates and demographic data, and also allow researchers to perform risk estimation for drugs. The spectrum of drugs causing cADR differs substantially when separating the various clinical conditions. Whereas antibiotics are by far the most frequent inducers of milder cADRs, like MPE, they have a much lower risk of inducing SJS/TEN, for which \"high-risk\" drugs are anti-infective sulfonamides, allopurinol, certain anti-epileptic drugs, nevirapine, and non-steroidal anti-inflammatory drugs (NSAIDs) of the oxicam-type. In contrast, AGEP is predominantly caused by the antibiotics pristinamycin and aminopenicillins, followed by quinolones, (hydroxy-)chloroquine, and sulfonamides. DRESS can be induced by a number of drugs known to cause SJS/TEN, such as certain antiepileptics and allopurinol, but also other medications (e.g., minocyclin).",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003026#mention-T1",
+      "canon:span": {
+        "start": 392,
+        "end": 408
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003026#mention-T2",
+      "canon:span": {
+        "start": 1539,
+        "end": 1560
+      },
+      "canon:surface": "(hydroxy-)chloroquine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006886",
+      "canon:sourceNotation": "D006886",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003026#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003026#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_30402608_causative-agent_0003026#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "30402608"
+      }
+    }
+  ]
+}

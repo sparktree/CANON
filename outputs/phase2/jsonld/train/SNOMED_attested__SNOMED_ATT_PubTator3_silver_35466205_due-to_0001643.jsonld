@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35466205_due-to_0001643",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_35466205_due-to_0001643",
+  "canon:title": "Drug-Induced Lupus Secondary to Ethosuximide in Association with Acute Tubulointerstitial Nephritis and Nephrotic Syndrome.",
+  "canon:abstract": "Background. Drug-induced lupus (DIL) is an autoimmune phenomenon where the patient develops lupus-like symptoms after exposure to a long-term medication. Case Summary. Here we describe a 10-year-old female with absence seizures who developed a lupus-like syndrome after being on ethosuximide for three months. She presented with nephrotic syndrome (NS) and acute kidney injury. Four weeks prior to presentation, she had been prescribed a seven-day course of oral amoxicillin for submental swelling after dental extraction. Investigations showed high titer of antinuclear antibody (ANA) and anti-double stranded DNA, elevated serum IgE level, and positive Coombs' test, along with positive anti-histone antibodies. Renal biopsy showed features of acute tubulointerstitial nephritis (TIN) and partial podocyte foot process effacement without evidence of lupus nephritis. The patient had an excellent response to the steroid therapy with remission within two weeks. The patient remained in remission for two months as evaluated during the most recent follow-up; the autoimmune antibodies and immunoglobulin E trended down. Ethosuximide has been reported to cause DIL, however its possible association with TIN has not been reported. Although amoxicillin could have caused the TIN and NS in this patient, a possible novel association of ethosuximide with this nephrotic-nephritic presentation (NNP) cannot be ruled out. Conclusions. A renal histology is important to determine the accurate etiology of NNP in patients with DIL. Further studies are necessary to determine any possible causal effect of ethosuximide with NNP.",
+  "canon:text": "Drug-Induced Lupus Secondary to Ethosuximide in Association with Acute Tubulointerstitial Nephritis and Nephrotic Syndrome. Background. Drug-induced lupus (DIL) is an autoimmune phenomenon where the patient develops lupus-like symptoms after exposure to a long-term medication. Case Summary. Here we describe a 10-year-old female with absence seizures who developed a lupus-like syndrome after being on ethosuximide for three months. She presented with nephrotic syndrome (NS) and acute kidney injury. Four weeks prior to presentation, she had been prescribed a seven-day course of oral amoxicillin for submental swelling after dental extraction. Investigations showed high titer of antinuclear antibody (ANA) and anti-double stranded DNA, elevated serum IgE level, and positive Coombs' test, along with positive anti-histone antibodies. Renal biopsy showed features of acute tubulointerstitial nephritis (TIN) and partial podocyte foot process effacement without evidence of lupus nephritis. The patient had an excellent response to the steroid therapy with remission within two weeks. The patient remained in remission for two months as evaluated during the most recent follow-up; the autoimmune antibodies and immunoglobulin E trended down. Ethosuximide has been reported to cause DIL, however its possible association with TIN has not been reported. Although amoxicillin could have caused the TIN and NS in this patient, a possible novel association of ethosuximide with this nephrotic-nephritic presentation (NNP) cannot be ruled out. Conclusions. A renal histology is important to determine the accurate etiology of NNP in patients with DIL. Further studies are necessary to determine any possible causal effect of ethosuximide with NNP.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35466205_due-to_0001643#mention-T1",
+      "canon:span": {
+        "start": 976,
+        "end": 991
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35466205_due-to_0001643#mention-T2",
+      "canon:span": {
+        "start": 65,
+        "end": 99
+      },
+      "canon:surface": "Acute Tubulointerstitial Nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "C564356",
+      "canon:sourceNotation": "C564356",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35466205_due-to_0001643#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35466205_due-to_0001643#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_35466205_due-to_0001643#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "35466205"
+      }
+    }
+  ]
+}

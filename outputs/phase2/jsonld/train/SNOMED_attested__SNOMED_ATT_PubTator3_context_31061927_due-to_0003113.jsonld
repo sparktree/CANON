@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31061927_due-to_0003113",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31061927_due-to_0003113",
+  "canon:title": "Deletion of Sulfonylurea Receptor 2 in the Adult Myocardium Enhances Cardiac Glucose Uptake and Is Cardioprotective.",
+  "canon:abstract": "The adult myocardium relies on oxidative metabolism. In ischemic myocardium, such as the embryonic heart, glycolysis contributes more prominently as a fuel source. The sulfonylurea receptor 2 (SUR2) was previously implicated in the normal myocardial transition from glycolytic to oxidative metabolism that occurs during adaptation to postnatal life. This receptor was now selectively deleted in adult mouse myocardium resulting in protection from ischemia reperfusion injury. SUR2-deleted cardiomyocytes had enhanced glucose uptake, and SUR2 forms a complex with the major glucose transporter. These data identify the SUR2 receptor as a target to shift cardiac metabolism to protect against myocardial injury.",
+  "canon:text": "Deletion of Sulfonylurea Receptor 2 in the Adult Myocardium Enhances Cardiac Glucose Uptake and Is Cardioprotective. The adult myocardium relies on oxidative metabolism. In ischemic myocardium, such as the embryonic heart, glycolysis contributes more prominently as a fuel source. The sulfonylurea receptor 2 (SUR2) was previously implicated in the normal myocardial transition from glycolytic to oxidative metabolism that occurs during adaptation to postnatal life. This receptor was now selectively deleted in adult mouse myocardium resulting in protection from ischemia reperfusion injury. SUR2-deleted cardiomyocytes had enhanced glucose uptake, and SUR2 forms a complex with the major glucose transporter. These data identify the SUR2 receptor as a target to shift cardiac metabolism to protect against myocardial injury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31061927_due-to_0003113#mention-T1",
+      "canon:span": {
+        "start": 173,
+        "end": 192
+      },
+      "canon:surface": "ischemic myocardium",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017682",
+      "canon:sourceNotation": "D017682",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31061927_due-to_0003113#mention-T2",
+      "canon:span": {
+        "start": 808,
+        "end": 825
+      },
+      "canon:surface": "myocardial injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D009202",
+      "canon:sourceNotation": "D009202",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31061927_due-to_0003113#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31061927_due-to_0003113#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31061927_due-to_0003113#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31061927"
+      }
+    }
+  ]
+}

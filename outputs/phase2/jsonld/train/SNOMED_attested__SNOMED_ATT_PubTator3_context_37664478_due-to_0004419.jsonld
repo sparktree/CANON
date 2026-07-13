@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37664478_due-to_0004419",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37664478_due-to_0004419",
+  "canon:title": "Advanced glycation end products: Key mediator and therapeutic target of cardiovascular complications in diabetes.",
+  "canon:abstract": "The incidence of type 2 diabetes mellitus is growing in epidemic proportions and has become one of the most critical public health concerns. Cardiovascular complications associated with diabetes are the leading cause of morbidity and mortality. The cardiovascular diseases that accompany diabetes include angina, myocardial infarction, stroke, peripheral artery disease, and congestive heart failure. Among the various risk factors generated secondary to hyperglycemic situations, advanced glycation end products (AGEs) are one of the important targets for future diagnosis and prevention of diabetes. In the last decade, AGEs have drawn a lot of attention due to their involvement in diabetic patho-physiology. AGEs can be derived exogenously and endogenously through various pathways. These are a non-homogeneous, chemically diverse group of compounds formed non-enzymatically by condensation between carbonyl groups of reducing sugars and free amino groups of protein, lipids, and nucleic acid. AGEs mediate their pathological effects at the cellular and extracellular levels by multiple pathways. At the cellular level, they activate signaling cascades via the receptor for AGEs and initiate a complex series of intracellular signaling resulting in reactive oxygen species generation, inflammation, cellular proliferation, and fibrosis that may possibly exacerbate the damaging effects on cardiac functions in diabetics. AGEs also cause covalent modifications and cross-linking of serum and extracellular matrix proteins; altering their structure, stability, and functions. Early diagnosis of diabetes may prevent its progression to complications and decrease its associated comorbidities. In the present review, we recapitulate the role of AGEs as a crucial mediator of hyperglycemia-mediated detrimental effects in diabetes-associated complications. Furthermore, this review presents an overview of future perspectives for new therapeutic interventions to ameliorate cardiovascular complications in diabetes.",
+  "canon:text": "Advanced glycation end products: Key mediator and therapeutic target of cardiovascular complications in diabetes. The incidence of type 2 diabetes mellitus is growing in epidemic proportions and has become one of the most critical public health concerns. Cardiovascular complications associated with diabetes are the leading cause of morbidity and mortality. The cardiovascular diseases that accompany diabetes include angina, myocardial infarction, stroke, peripheral artery disease, and congestive heart failure. Among the various risk factors generated secondary to hyperglycemic situations, advanced glycation end products (AGEs) are one of the important targets for future diagnosis and prevention of diabetes. In the last decade, AGEs have drawn a lot of attention due to their involvement in diabetic patho-physiology. AGEs can be derived exogenously and endogenously through various pathways. These are a non-homogeneous, chemically diverse group of compounds formed non-enzymatically by condensation between carbonyl groups of reducing sugars and free amino groups of protein, lipids, and nucleic acid. AGEs mediate their pathological effects at the cellular and extracellular levels by multiple pathways. At the cellular level, they activate signaling cascades via the receptor for AGEs and initiate a complex series of intracellular signaling resulting in reactive oxygen species generation, inflammation, cellular proliferation, and fibrosis that may possibly exacerbate the damaging effects on cardiac functions in diabetics. AGEs also cause covalent modifications and cross-linking of serum and extracellular matrix proteins; altering their structure, stability, and functions. Early diagnosis of diabetes may prevent its progression to complications and decrease its associated comorbidities. In the present review, we recapitulate the role of AGEs as a crucial mediator of hyperglycemia-mediated detrimental effects in diabetes-associated complications. Furthermore, this review presents an overview of future perspectives for new therapeutic interventions to ameliorate cardiovascular complications in diabetes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37664478_due-to_0004419#mention-T1",
+      "canon:span": {
+        "start": 569,
+        "end": 582
+      },
+      "canon:surface": "hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37664478_due-to_0004419#mention-T2",
+      "canon:span": {
+        "start": 131,
+        "end": 155
+      },
+      "canon:surface": "type 2 diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37664478_due-to_0004419#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37664478_due-to_0004419#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37664478_due-to_0004419#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37664478"
+      }
+    }
+  ]
+}

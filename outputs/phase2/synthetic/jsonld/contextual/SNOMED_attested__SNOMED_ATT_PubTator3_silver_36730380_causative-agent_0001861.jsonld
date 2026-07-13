@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36730380_causative-agent_0001861",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36730380_causative-agent_0001861",
+  "canon:title": "Iron Metabolism in Cardiovascular Disease: Physiology, Mechanisms, and Therapeutic Targets.",
+  "canon:abstract": "The cardiovascular system requires iron to maintain its high energy demands and metabolic activity. Iron plays a critical role in oxygen transport and storage, mitochondrial function, and enzyme activity. However, excess iron is also cardiotoxic due to its ability to catalyze the formation of reactive oxygen species and promote oxidative damage. While mammalian cells have several redundant iron import mechanisms, they are equipped with a single iron-exporting protein, which makes the cardiovascular system particularly sensitive to iron overload. As a result, iron levels are tightly regulated at many levels to maintain homeostasis. Iron dysregulation ranges from iron deficiency to iron overload and is seen in many types of cardiovascular disease, including heart failure, myocardial infarction, anthracycline-induced cardiotoxicity, and Friedreich's ataxia. Recently, the use of intravenous iron therapy has been advocated in patients with heart failure and certain criteria for iron deficiency. Here, we provide an overview of systemic and cellular iron homeostasis in the context of cardiovascular physiology, iron deficiency, and iron overload in cardiovascular disease, current therapeutic strategies, and future perspectives.",
+  "canon:text": "Iron Metabolism in Cardiovascular Disease: Physiology, Mechanisms, and Therapeutic Targets. The cardiovascular system requires iron to maintain its high energy demands and metabolic activity. Iron plays a critical role in oxygen transport and storage, mitochondrial function, and enzyme activity. However, excess iron is also cardiotoxic due to its ability to catalyze the formation of reactive oxygen species and promote oxidative damage. While mammalian cells have several redundant iron import mechanisms, they are equipped with a single iron-exporting protein, which makes the cardiovascular system particularly sensitive to iron overload. As a result, iron levels are tightly regulated at many levels to maintain homeostasis. Iron dysregulation ranges from iron deficiency to iron overload and is seen in many types of cardiovascular disease, including heart failure, myocardial infarction, anthracycline-induced cardiotoxicity, and Friedreich's ataxia. Recently, the use of intravenous iron therapy has been advocated in patients with heart failure and certain criteria for iron deficiency. Here, we provide an overview of systemic and cellular iron homeostasis in the context of cardiovascular physiology, iron deficiency, and iron overload in cardiovascular disease, current therapeutic strategies, and future perspectives.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36730380_causative-agent_0001861#mention-T1",
+      "canon:span": {
+        "start": 629,
+        "end": 642
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36730380_causative-agent_0001861#mention-T2",
+      "canon:span": {
+        "start": 0,
+        "end": 4
+      },
+      "canon:surface": "Iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36730380_causative-agent_0001861#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36730380_causative-agent_0001861#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36730380_causative-agent_0001861#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36730380"
+      }
+    }
+  ]
+}

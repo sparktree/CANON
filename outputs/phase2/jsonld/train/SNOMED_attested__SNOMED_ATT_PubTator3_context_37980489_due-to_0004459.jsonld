@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37980489_due-to_0004459",
+  "canon:title": "Bacteremia due to Serratia rubidaea in intensive care unit: a case series.",
+  "canon:abstract": "INTRODUCTION: Bacteremia caused by Serratia rubidaea is seldom mentioned in comparison with other Enterobacteriaceae species. It primarily affects immunocompromised patients undergoing invasive procedures. Furthermore, the incidence, clinical features, and microbiological profile of this pathogen in the intensive care unit are rarely described. CASE PRESENTATION: We present four North African case studies of bacteremia in four young female patients admitted to the intensive care unit for ketoacidosis with a history of diabetes mellitus. All four patients developed catheter-related infections complicated by deep vein thrombosis. The catheter site was femoral in all cases, and the main clinical manifestation was poorly tolerated fever. The pathogen was isolated in multiple peripheral blood cultures (> 4) for each patient, showing a similar profile in all cases: resistance to third-generation cephalosporins and sensitivity to aminoglycosides, piperacillin, fluoroquinolones, and folate-pathway inhibitors. Targeted treatment consisted of a combination of ciprofloxacin 400 mg twice per day and trimethoprim/sulfamethoxazole 400/80 mg thrice per day for all four cases. However, in one case, this regimen was switched to amikacin due to adverse effects. The outcomes were favorable in the majority of cases. The patients described in this study were 21, 66, 22, and 27-year-old North African women. CONCLUSION: Most of the reported cases shared common risk factors and clinical aspects. Notably, a case of thrombosis complicating a catheter infection caused by Serratia rubidaea has not been previously reported in the literature. Furthermore, this bloodstream infection typically affects deeply immunocompromised patients. However, our four cases, admitted to the intensive care unit for ketoacidosis, only had a history of diabetes mellitus.",
+  "canon:text": "Bacteremia due to Serratia rubidaea in intensive care unit: a case series. INTRODUCTION: Bacteremia caused by Serratia rubidaea is seldom mentioned in comparison with other Enterobacteriaceae species. It primarily affects immunocompromised patients undergoing invasive procedures. Furthermore, the incidence, clinical features, and microbiological profile of this pathogen in the intensive care unit are rarely described. CASE PRESENTATION: We present four North African case studies of bacteremia in four young female patients admitted to the intensive care unit for ketoacidosis with a history of diabetes mellitus. All four patients developed catheter-related infections complicated by deep vein thrombosis. The catheter site was femoral in all cases, and the main clinical manifestation was poorly tolerated fever. The pathogen was isolated in multiple peripheral blood cultures (> 4) for each patient, showing a similar profile in all cases: resistance to third-generation cephalosporins and sensitivity to aminoglycosides, piperacillin, fluoroquinolones, and folate-pathway inhibitors. Targeted treatment consisted of a combination of ciprofloxacin 400 mg twice per day and trimethoprim/sulfamethoxazole 400/80 mg thrice per day for all four cases. However, in one case, this regimen was switched to amikacin due to adverse effects. The outcomes were favorable in the majority of cases. The patients described in this study were 21, 66, 22, and 27-year-old North African women. CONCLUSION: Most of the reported cases shared common risk factors and clinical aspects. Notably, a case of thrombosis complicating a catheter infection caused by Serratia rubidaea has not been previously reported in the literature. Furthermore, this bloodstream infection typically affects deeply immunocompromised patients. However, our four cases, admitted to the intensive care unit for ketoacidosis, only had a history of diabetes mellitus.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T1",
+      "canon:span": {
+        "start": 1734,
+        "end": 1755
+      },
+      "canon:surface": "bloodstream infection",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T2",
+      "canon:span": {
+        "start": 646,
+        "end": 654
+      },
+      "canon:surface": "catheter",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D055499",
+      "canon:sourceNotation": "D055499",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37980489_due-to_0004459#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37980489"
+      }
+    }
+  ]
+}

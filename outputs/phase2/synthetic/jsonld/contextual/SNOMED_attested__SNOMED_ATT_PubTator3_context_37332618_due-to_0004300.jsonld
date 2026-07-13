@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37332618_due-to_0004300",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37332618_due-to_0004300",
+  "canon:title": "Regulatory Mechanism of M1/M2 Macrophage Polarization in the Development of Autoimmune Diseases.",
+  "canon:abstract": "Macrophages are innate immune cells in the organism and can be found in almost tissues and organs. They are highly plastic and heterogeneous cells and can participate in the immune response, thereby playing a crucial role in maintaining the immune homeostasis of the body. It is well known that undifferentiated macrophages can polarize into classically activated macrophages (M1 macrophages) and alternatively activated macrophages (M2 macrophages) under different microenvironmental conditions. The directions of macrophage polarization can be regulated by a series of factors, including interferon, lipopolysaccharide, interleukin, and noncoding RNAs. To elucidate the role of macrophages in various autoimmune diseases, we searched the literature on macrophages with the PubMed database. Search terms are as follows: macrophages, polarization, signaling pathways, noncoding RNA, inflammation, autoimmune diseases, systemic lupus erythematosus, rheumatoid arthritis, lupus nephritis, Sjogren's syndrome, Guillain-Barre syndrome, and multiple sclerosis. In the present study, we summarize the role of macrophage polarization in common autoimmune diseases. In addition, we also summarize the features and recent advances with a particular focus on the immunotherapeutic potential of macrophage polarization in autoimmune diseases and the potentially effective therapeutic targets.",
+  "canon:text": "Regulatory Mechanism of M1/M2 Macrophage Polarization in the Development of Autoimmune Diseases. Macrophages are innate immune cells in the organism and can be found in almost tissues and organs. They are highly plastic and heterogeneous cells and can participate in the immune response, thereby playing a crucial role in maintaining the immune homeostasis of the body. It is well known that undifferentiated macrophages can polarize into classically activated macrophages (M1 macrophages) and alternatively activated macrophages (M2 macrophages) under different microenvironmental conditions. The directions of macrophage polarization can be regulated by a series of factors, including interferon, lipopolysaccharide, interleukin, and noncoding RNAs. To elucidate the role of macrophages in various autoimmune diseases, we searched the literature on macrophages with the PubMed database. Search terms are as follows: macrophages, polarization, signaling pathways, noncoding RNA, inflammation, autoimmune diseases, systemic lupus erythematosus, rheumatoid arthritis, lupus nephritis, Sjogren's syndrome, Guillain-Barre syndrome, and multiple sclerosis. In the present study, we summarize the role of macrophage polarization in common autoimmune diseases. In addition, we also summarize the features and recent advances with a particular focus on the immunotherapeutic potential of macrophage polarization in autoimmune diseases and the potentially effective therapeutic targets.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37332618_due-to_0004300#mention-T1",
+      "canon:span": {
+        "start": 1067,
+        "end": 1082
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37332618_due-to_0004300#mention-T2",
+      "canon:span": {
+        "start": 76,
+        "end": 95
+      },
+      "canon:surface": "Autoimmune Diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001327",
+      "canon:sourceNotation": "D001327",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37332618_due-to_0004300#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37332618_due-to_0004300#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37332618_due-to_0004300#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37332618"
+      }
+    }
+  ]
+}

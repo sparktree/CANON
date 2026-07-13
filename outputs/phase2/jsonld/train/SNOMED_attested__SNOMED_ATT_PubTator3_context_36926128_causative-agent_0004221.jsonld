@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36926128_causative-agent_0004221",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36926128_causative-agent_0004221",
+  "canon:title": "Implications of metabolic dysfunction associated fatty liver disease in COVID-19.",
+  "canon:abstract": "Metabolic associated fatty liver disorder (MAFLD) characterizes the contributing etiologies (i.e., type 2 diabetes mellitus, metabolic syndrome, overweight) of individuals with fatty liver disease that affects 1/3rd of the world population. In 2020, the coronavirus disease 2019 (COVID-19) crisis was unprecedented, and people with different comorbidities became more susceptible to the infection caused by severe acute respiratory syndrome coronavirus 2. MAFLD patients are frequently obese with added metabolic menace like diabetes, hypertension, and dyslipidemia leading to greater jeopardy of COVID-19. MAFLD patients are 4 to 6-fold more prone towards infections. COVID-19 induces liver injury with elevated levels of aspartate aminotransferase and alanine aminotransferase and insignificantly elevated bilirubin. Hence, MAFLD in COVID-19 patients worsens the condition significantly. The evidence highlighting the interaction between MAFLD and altered liver functioning in COVID-19 suggested that COVID-19 patients with pre-existing MAFLD are at greater risk of morbidity or intensive care unit admission. Direct hepatic injury, enhanced levels of inflammatory cytokines, declined hepatic mitochondrial activity, and compromised immunity are considered as some underlying mechanisms. The main focus of this review is to discuss the implications of metabolic dysfunction associated with fatty liver disease in COVID-19 patients. The review systematically analyzes the effect of striking two worldwide pandemics (MAFLD and COVID-19) together in the present era.",
+  "canon:text": "Implications of metabolic dysfunction associated fatty liver disease in COVID-19. Metabolic associated fatty liver disorder (MAFLD) characterizes the contributing etiologies (i.e., type 2 diabetes mellitus, metabolic syndrome, overweight) of individuals with fatty liver disease that affects 1/3rd of the world population. In 2020, the coronavirus disease 2019 (COVID-19) crisis was unprecedented, and people with different comorbidities became more susceptible to the infection caused by severe acute respiratory syndrome coronavirus 2. MAFLD patients are frequently obese with added metabolic menace like diabetes, hypertension, and dyslipidemia leading to greater jeopardy of COVID-19. MAFLD patients are 4 to 6-fold more prone towards infections. COVID-19 induces liver injury with elevated levels of aspartate aminotransferase and alanine aminotransferase and insignificantly elevated bilirubin. Hence, MAFLD in COVID-19 patients worsens the condition significantly. The evidence highlighting the interaction between MAFLD and altered liver functioning in COVID-19 suggested that COVID-19 patients with pre-existing MAFLD are at greater risk of morbidity or intensive care unit admission. Direct hepatic injury, enhanced levels of inflammatory cytokines, declined hepatic mitochondrial activity, and compromised immunity are considered as some underlying mechanisms. The main focus of this review is to discuss the implications of metabolic dysfunction associated with fatty liver disease in COVID-19 patients. The review systematically analyzes the effect of striking two worldwide pandemics (MAFLD and COVID-19) together in the present era.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36926128_causative-agent_0004221#mention-T1",
+      "canon:span": {
+        "start": 1201,
+        "end": 1215
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36926128_causative-agent_0004221#mention-T2",
+      "canon:span": {
+        "start": 890,
+        "end": 899
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36926128_causative-agent_0004221#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36926128_causative-agent_0004221#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36926128_causative-agent_0004221#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36926128"
+      }
+    }
+  ]
+}

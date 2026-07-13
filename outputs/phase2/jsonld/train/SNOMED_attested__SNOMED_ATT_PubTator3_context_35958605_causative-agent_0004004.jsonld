@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35958605_causative-agent_0004004",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35958605_causative-agent_0004004",
+  "canon:title": "Ferroptosis in inflammatory arthritis: A promising future.",
+  "canon:abstract": "Ferroptosis is a kind of regulatory cell death (RCD) caused by iron accumulation and lipid peroxidation, which is characterized by mitochondrial morphological changes and has a complex regulatory network. Ferroptosis has been gradually emphasized in the pathogenesis of inflammatory arthritis. In this review, we summarized the relevant research on ferroptosis in various inflammatory arthritis including rheumatoid arthritis (RA), osteoarthritis, gout arthritis, and ankylosing spondylitis, and focused on the relationship between RA and ferroptosis. In patients with RA and animal models of RA, there was evidence of iron overload and lipid peroxidation, as well as mitochondrial dysfunction that may be associated with ferroptosis. Ferroptosis inducers have shown good application prospects in tumor therapy, and some anti-rheumatic drugs such as methotrexate and sulfasalazine have been shown to have ferroptosis modulating effects. These phenomena suggest that the role of ferroptosis in the pathogenesis of inflammatory arthritis will be worth further study. The development of therapeutic strategies targeting ferroptosis for patients with inflammatory arthritis may be a promising future.",
+  "canon:text": "Ferroptosis in inflammatory arthritis: A promising future. Ferroptosis is a kind of regulatory cell death (RCD) caused by iron accumulation and lipid peroxidation, which is characterized by mitochondrial morphological changes and has a complex regulatory network. Ferroptosis has been gradually emphasized in the pathogenesis of inflammatory arthritis. In this review, we summarized the relevant research on ferroptosis in various inflammatory arthritis including rheumatoid arthritis (RA), osteoarthritis, gout arthritis, and ankylosing spondylitis, and focused on the relationship between RA and ferroptosis. In patients with RA and animal models of RA, there was evidence of iron overload and lipid peroxidation, as well as mitochondrial dysfunction that may be associated with ferroptosis. Ferroptosis inducers have shown good application prospects in tumor therapy, and some anti-rheumatic drugs such as methotrexate and sulfasalazine have been shown to have ferroptosis modulating effects. These phenomena suggest that the role of ferroptosis in the pathogenesis of inflammatory arthritis will be worth further study. The development of therapeutic strategies targeting ferroptosis for patients with inflammatory arthritis may be a promising future.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35958605_causative-agent_0004004#mention-T1",
+      "canon:span": {
+        "start": 678,
+        "end": 691
+      },
+      "canon:surface": "iron overload",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35958605_causative-agent_0004004#mention-T2",
+      "canon:span": {
+        "start": 122,
+        "end": 126
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35958605_causative-agent_0004004#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35958605_causative-agent_0004004#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35958605_causative-agent_0004004#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35958605"
+      }
+    }
+  ]
+}

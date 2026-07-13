@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34095319_due-to_0003574",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34095319_due-to_0003574",
+  "canon:title": "The Immunomodulatory Effect of the Gut Microbiota in Kidney Disease.",
+  "canon:abstract": "The human gut microbiota is a complex cluster composed of 100 trillion microorganisms, which holds a symbiotic relationship with the host under normal circumstances. Intestinal flora can facilitate the treatment of human metabolic dysfunctions and interact with the intestinal tract, which could influence intestinal tolerance, immunity, and sensitivity to inflammation. In recent years, significant interests have evolved on the association of intestinal microbiota and kidney diseases within the academic circle. Abnormal changes in intestinal microbiota, known as dysbiosis, can affect the integrity of the intestinal barrier, resulting in the bacterial translocation, production, and accumulation of dysbiotic gut-derived metabolites, such as urea, indoxyl sulfate (IS), and p-cresyl sulfate (PCS). These processes lead to the abnormal activation of immune cells; overproduction of antibodies, immune complexes, and inflammatory factors; and inflammatory cell infiltration that can directly or indirectly cause damage to the renal parenchyma. The aim of this review is to summarize the role of intestinal flora in the development and progression of several renal diseases, such as lupus nephritis, chronic kidney disease, diabetic nephropathy, and renal ischemia-reperfusion injury. Further research on these mechanisms should provide insights into the therapeutic potential of regulating intestinal flora and intervening related molecular targets for the abovementioned nephropathy.",
+  "canon:text": "The Immunomodulatory Effect of the Gut Microbiota in Kidney Disease. The human gut microbiota is a complex cluster composed of 100 trillion microorganisms, which holds a symbiotic relationship with the host under normal circumstances. Intestinal flora can facilitate the treatment of human metabolic dysfunctions and interact with the intestinal tract, which could influence intestinal tolerance, immunity, and sensitivity to inflammation. In recent years, significant interests have evolved on the association of intestinal microbiota and kidney diseases within the academic circle. Abnormal changes in intestinal microbiota, known as dysbiosis, can affect the integrity of the intestinal barrier, resulting in the bacterial translocation, production, and accumulation of dysbiotic gut-derived metabolites, such as urea, indoxyl sulfate (IS), and p-cresyl sulfate (PCS). These processes lead to the abnormal activation of immune cells; overproduction of antibodies, immune complexes, and inflammatory factors; and inflammatory cell infiltration that can directly or indirectly cause damage to the renal parenchyma. The aim of this review is to summarize the role of intestinal flora in the development and progression of several renal diseases, such as lupus nephritis, chronic kidney disease, diabetic nephropathy, and renal ischemia-reperfusion injury. Further research on these mechanisms should provide insights into the therapeutic potential of regulating intestinal flora and intervening related molecular targets for the abovementioned nephropathy.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34095319_due-to_0003574#mention-T1",
+      "canon:span": {
+        "start": 1254,
+        "end": 1269
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34095319_due-to_0003574#mention-T2",
+      "canon:span": {
+        "start": 1098,
+        "end": 1114
+      },
+      "canon:surface": "renal parenchyma",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D010195",
+      "canon:sourceNotation": "D010195",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34095319_due-to_0003574#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34095319_due-to_0003574#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34095319_due-to_0003574#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34095319"
+      }
+    }
+  ]
+}

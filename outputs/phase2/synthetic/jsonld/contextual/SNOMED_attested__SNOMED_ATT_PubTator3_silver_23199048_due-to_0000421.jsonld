@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23199048_due-to_0000421",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_23199048_due-to_0000421",
+  "canon:title": "Diabetes mellitus: new challenges and innovative therapies.",
+  "canon:abstract": "Diabetes mellitus is a widespread disease prevalence and incidence of which increases worldwide. The introduction of insulin therapy represented a major breakthrough in type 1 diabetes; however, frequent hyper- and hypoglycemia seriously affects the quality of life of these patients. New therapeutic approaches, such as whole pancreas transplant or pancreatic islet transplant, stem cell, gene therapy and islets encapsulation are discussed in this review. Regarding type 2 diabetes, therapy has been based on drugs that stimulate insulin secretion (sulphonylureas and rapid-acting secretagogues), reduce hepatic glucose production (biguanides), delay digestion and absorption of intestinal carbohydrate (alpha-glucosidase inhibitors) or improve insulin action (thiazolidinediones). This review is also focused on the newer therapeutically approaches such as incretin-based therapies, bariatric surgery, stem cells and other emerging therapies that promise to further extend the options available. Gene-based therapies are among the most promising emerging alternatives to conventional treatments. Some of these therapies rely on genetic modification of non-differentiated cells to express pancreatic endocrine developmental factors, promoting differentiation of non-endocrine cells into beta-cells, enabling synthesis and secretion of insulin in a glucose-regulated manner. Alternative therapies based on gene silencing using vector systems to deliver interference RNA to cells (i.e. against VEGF in diabetic retinopathy) are also a promising therapeutic option for the treatment of several diabetic complications. In conclusion, treatment of diabetes faces now a new era that is characterized by a variety of innovative therapeutic approaches that will improve quality-life and allow personalized therapy-planning in the near future.",
+  "canon:text": "Diabetes mellitus: new challenges and innovative therapies. Diabetes mellitus is a widespread disease prevalence and incidence of which increases worldwide. The introduction of insulin therapy represented a major breakthrough in type 1 diabetes; however, frequent hyper- and hypoglycemia seriously affects the quality of life of these patients. New therapeutic approaches, such as whole pancreas transplant or pancreatic islet transplant, stem cell, gene therapy and islets encapsulation are discussed in this review. Regarding type 2 diabetes, therapy has been based on drugs that stimulate insulin secretion (sulphonylureas and rapid-acting secretagogues), reduce hepatic glucose production (biguanides), delay digestion and absorption of intestinal carbohydrate (alpha-glucosidase inhibitors) or improve insulin action (thiazolidinediones). This review is also focused on the newer therapeutically approaches such as incretin-based therapies, bariatric surgery, stem cells and other emerging therapies that promise to further extend the options available. Gene-based therapies are among the most promising emerging alternatives to conventional treatments. Some of these therapies rely on genetic modification of non-differentiated cells to express pancreatic endocrine developmental factors, promoting differentiation of non-endocrine cells into beta-cells, enabling synthesis and secretion of insulin in a glucose-regulated manner. Alternative therapies based on gene silencing using vector systems to deliver interference RNA to cells (i.e. against VEGF in diabetic retinopathy) are also a promising therapeutic option for the treatment of several diabetic complications. In conclusion, treatment of diabetes faces now a new era that is characterized by a variety of innovative therapeutic approaches that will improve quality-life and allow personalized therapy-planning in the near future.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23199048_due-to_0000421#mention-T1",
+      "canon:span": {
+        "start": 1653,
+        "end": 1675
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23199048_due-to_0000421#mention-T2",
+      "canon:span": {
+        "start": 528,
+        "end": 543
+      },
+      "canon:surface": "type 2 diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23199048_due-to_0000421#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23199048_due-to_0000421#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_23199048_due-to_0000421#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "23199048"
+      }
+    }
+  ]
+}

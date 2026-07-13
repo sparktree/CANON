@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33109742_causative-agent_0001198",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33109742_causative-agent_0001198",
+  "canon:title": "Anaesthesia and neuromuscular disorders: what a neurologist needs to know.",
+  "canon:abstract": "Neurologists are often asked for specific advice regarding patients with neuromuscular disease who require general anaesthesia. However, guidelines on specific neuromuscular disorders do not usually include specific guidelines or pragmatic advice regarding (regional and/or general) anaesthesia or procedural sedation. Furthermore, the medical literature on this subject is mostly limited to publications in anaesthesiology journals. We therefore summarise general recommendations and specific advice for anaesthesia in different neuromuscular disorders to provide a comprehensive and accessible overview of the knowledge on this topic essential for clinical neurologists. A preoperative multidisciplinary approach involving anaesthesiologists, cardiologists, chest physicians, surgeons and neurologists is crucial. Depolarising muscle relaxants (succinylcholine) should be avoided at all times. The dose of non-depolarising muscle relaxants must be reduced and their effect monitored. Patients with specific mutations in RYR1 (ryanodine receptor 1) and less frequently in CACNA1S (calcium channel, voltage-dependent, L type, alpha 1S subunit) and STAC3 (SH3 and cysteine rich domain 3) are at risk of developing a life-threatening malignant hyperthermia reaction.",
+  "canon:text": "Anaesthesia and neuromuscular disorders: what a neurologist needs to know. Neurologists are often asked for specific advice regarding patients with neuromuscular disease who require general anaesthesia. However, guidelines on specific neuromuscular disorders do not usually include specific guidelines or pragmatic advice regarding (regional and/or general) anaesthesia or procedural sedation. Furthermore, the medical literature on this subject is mostly limited to publications in anaesthesiology journals. We therefore summarise general recommendations and specific advice for anaesthesia in different neuromuscular disorders to provide a comprehensive and accessible overview of the knowledge on this topic essential for clinical neurologists. A preoperative multidisciplinary approach involving anaesthesiologists, cardiologists, chest physicians, surgeons and neurologists is crucial. Depolarising muscle relaxants (succinylcholine) should be avoided at all times. The dose of non-depolarising muscle relaxants must be reduced and their effect monitored. Patients with specific mutations in RYR1 (ryanodine receptor 1) and less frequently in CACNA1S (calcium channel, voltage-dependent, L type, alpha 1S subunit) and STAC3 (SH3 and cysteine rich domain 3) are at risk of developing a life-threatening malignant hyperthermia reaction.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33109742_causative-agent_0001198#mention-T1",
+      "canon:span": {
+        "start": 1307,
+        "end": 1329
+      },
+      "canon:surface": "malignant hyperthermia",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008305",
+      "canon:sourceNotation": "D008305",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33109742_causative-agent_0001198#mention-T2",
+      "canon:span": {
+        "start": 922,
+        "end": 937
+      },
+      "canon:surface": "succinylcholine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013390",
+      "canon:sourceNotation": "D013390",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33109742_causative-agent_0001198#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33109742_causative-agent_0001198#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33109742_causative-agent_0001198#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33109742"
+      }
+    }
+  ]
+}

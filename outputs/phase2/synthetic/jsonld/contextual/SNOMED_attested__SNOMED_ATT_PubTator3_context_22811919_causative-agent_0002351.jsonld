@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22811919_causative-agent_0002351",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_22811919_causative-agent_0002351",
+  "canon:title": "Improving survival in decompensated cirrhosis.",
+  "canon:abstract": "Mortality in cirrhosis is consequent of decompensation, only treatment being timely liver transplantation. Organ allocation is prioritized for the sickest patients based on Model for End Stage Liver Disease (MELD) score. In order to improve survival in patients with high MELD score it is imperative to preserve them in suitable condition till transplantation. Here we examine means to prolong life in high MELD score patients till a suitable liver is available. We specially emphasize protection of airways by avoidance of sedatives, avoidance of Bilevel Positive Airway Pressure, elective intubation in grade III or higher encephalopathy, maintaining a low threshold for intubation with lesser grades of encephalopathy when undergoing upper endoscopy or colonoscopy as pre transplant evaluation or transferring patient to a transplant center. Consider post-pyloric tube feeding in encephalopathy to maintain muscle mass and minimize risk of aspiration. In non intubated and well controlled encephalopathy, frequent physical mobility by active and passive exercises are recommended. When renal replacement therapy is needed, night-time Continuous Veno-Venous Hemodialysis may be useful in keeping the daytime free for mobility. Sparing and judicious use of steroids needs to be borne in mind in treatment of ARDS and acute hepatitis from alcohol or autoimmune process.",
+  "canon:text": "Improving survival in decompensated cirrhosis. Mortality in cirrhosis is consequent of decompensation, only treatment being timely liver transplantation. Organ allocation is prioritized for the sickest patients based on Model for End Stage Liver Disease (MELD) score. In order to improve survival in patients with high MELD score it is imperative to preserve them in suitable condition till transplantation. Here we examine means to prolong life in high MELD score patients till a suitable liver is available. We specially emphasize protection of airways by avoidance of sedatives, avoidance of Bilevel Positive Airway Pressure, elective intubation in grade III or higher encephalopathy, maintaining a low threshold for intubation with lesser grades of encephalopathy when undergoing upper endoscopy or colonoscopy as pre transplant evaluation or transferring patient to a transplant center. Consider post-pyloric tube feeding in encephalopathy to maintain muscle mass and minimize risk of aspiration. In non intubated and well controlled encephalopathy, frequent physical mobility by active and passive exercises are recommended. When renal replacement therapy is needed, night-time Continuous Veno-Venous Hemodialysis may be useful in keeping the daytime free for mobility. Sparing and judicious use of steroids needs to be borne in mind in treatment of ARDS and acute hepatitis from alcohol or autoimmune process.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22811919_causative-agent_0002351#mention-T1",
+      "canon:span": {
+        "start": 1371,
+        "end": 1380
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22811919_causative-agent_0002351#mention-T2",
+      "canon:span": {
+        "start": 1305,
+        "end": 1313
+      },
+      "canon:surface": "steroids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22811919_causative-agent_0002351#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22811919_causative-agent_0002351#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_22811919_causative-agent_0002351#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "22811919"
+      }
+    }
+  ]
+}

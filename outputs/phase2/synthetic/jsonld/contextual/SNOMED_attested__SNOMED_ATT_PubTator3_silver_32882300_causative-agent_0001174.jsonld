@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32882300_causative-agent_0001174",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32882300_causative-agent_0001174",
+  "canon:title": "Epigenetic influence of environmentally neurotoxic metals.",
+  "canon:abstract": "Continuous globalization and industrialization have ensured metals are an increasing aspect of daily life. Their usefulness in manufacturing has made them vital to national commerce, security and global economy. However, excess exposure to metals, particularly as a result of environmental contamination or occupational exposures, has been detrimental to overall health. Excess exposure to several metals is considered environmental risk in the aetiology of several neurological and neurodegenerative diseases. Metal-induced neurotoxicity has been a major health concern globally with intensive research to unravel the mechanisms associated with it. Recently, greater focus has been directed at epigenetics to better characterize the underlying mechanisms of metal-induced neurotoxicity. Epigenetic changes are those modifications on the DNA that can turn genes on or off without altering the DNA sequence. This review discusses how epigenetic changes such as DNA methylation, post translational histone modification and noncoding RNA-mediated gene silencing mediate the neurotoxic effects of several metals, focusing on manganese, arsenic, nickel, cadmium, lead, and mercury.",
+  "canon:text": "Epigenetic influence of environmentally neurotoxic metals. Continuous globalization and industrialization have ensured metals are an increasing aspect of daily life. Their usefulness in manufacturing has made them vital to national commerce, security and global economy. However, excess exposure to metals, particularly as a result of environmental contamination or occupational exposures, has been detrimental to overall health. Excess exposure to several metals is considered environmental risk in the aetiology of several neurological and neurodegenerative diseases. Metal-induced neurotoxicity has been a major health concern globally with intensive research to unravel the mechanisms associated with it. Recently, greater focus has been directed at epigenetics to better characterize the underlying mechanisms of metal-induced neurotoxicity. Epigenetic changes are those modifications on the DNA that can turn genes on or off without altering the DNA sequence. This review discusses how epigenetic changes such as DNA methylation, post translational histone modification and noncoding RNA-mediated gene silencing mediate the neurotoxic effects of several metals, focusing on manganese, arsenic, nickel, cadmium, lead, and mercury.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32882300_causative-agent_0001174#mention-T1",
+      "canon:span": {
+        "start": 40,
+        "end": 50
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32882300_causative-agent_0001174#mention-T2",
+      "canon:span": {
+        "start": 1191,
+        "end": 1198
+      },
+      "canon:surface": "arsenic",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001151",
+      "canon:sourceNotation": "D001151",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32882300_causative-agent_0001174#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32882300_causative-agent_0001174#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32882300_causative-agent_0001174#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32882300"
+      }
+    }
+  ]
+}

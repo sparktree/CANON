@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22349419_due-to_0000391",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_22349419_due-to_0000391",
+  "canon:title": "Recommendations for sepsis management in resource-limited settings.",
+  "canon:abstract": "PURPOSE: To provide clinicians practicing in resource-limited settings with a framework to improve the diagnosis and treatment of pediatric and adult patients with sepsis. METHODS: The medical literature on sepsis management was reviewed. Specific attention was paid to identify clinical evidence on sepsis management from resource-limited settings. RESULTS: Recommendations are grouped into acute and post-acute interventions. Acute interventions include liberal fluid resuscitation to achieve adequate tissue perfusion, normal heart rate and arterial blood pressure, use of epinephrine or dopamine for inadequate tissue perfusion despite fluid resuscitation, frequent measurement of arterial blood pressure in hemodynamically unstable patients, administration of hydrocortisone or prednisolone to patients requiring catecholamines, oxygen administration to achieve an oxygen saturation >90%, semi-recumbent and/or lateral position, non-invasive ventilation for increased work of breathing or hypoxemia despite oxygen therapy, timely administration of adequate antimicrobials, thorough clinical investigation for infectious source identification, fluid/tissue sampling and microbiological work-up, removal, drainage or debridement of the infectious source. Post-acute interventions include regular re-assessment of antimicrobial therapy, administration of antimicrobials for an adequate but not prolonged duration, avoidance of hypoglycemia, pharmacological or mechanical deep vein thrombosis prophylaxis, resumption of oral food intake after resuscitation and regaining of consciousness, careful use of opioids and sedatives, early mobilization, and active weaning of invasive support. Specific considerations for malaria, puerperal sepsis and HIV/AIDS patients with sepsis are included. CONCLUSION: Only scarce evidence exists for the management of pediatric and adult sepsis in resource-limited settings. The presented recommendations may help to improve sepsis management in middle- and low-income countries.",
+  "canon:text": "Recommendations for sepsis management in resource-limited settings. PURPOSE: To provide clinicians practicing in resource-limited settings with a framework to improve the diagnosis and treatment of pediatric and adult patients with sepsis. METHODS: The medical literature on sepsis management was reviewed. Specific attention was paid to identify clinical evidence on sepsis management from resource-limited settings. RESULTS: Recommendations are grouped into acute and post-acute interventions. Acute interventions include liberal fluid resuscitation to achieve adequate tissue perfusion, normal heart rate and arterial blood pressure, use of epinephrine or dopamine for inadequate tissue perfusion despite fluid resuscitation, frequent measurement of arterial blood pressure in hemodynamically unstable patients, administration of hydrocortisone or prednisolone to patients requiring catecholamines, oxygen administration to achieve an oxygen saturation >90%, semi-recumbent and/or lateral position, non-invasive ventilation for increased work of breathing or hypoxemia despite oxygen therapy, timely administration of adequate antimicrobials, thorough clinical investigation for infectious source identification, fluid/tissue sampling and microbiological work-up, removal, drainage or debridement of the infectious source. Post-acute interventions include regular re-assessment of antimicrobial therapy, administration of antimicrobials for an adequate but not prolonged duration, avoidance of hypoglycemia, pharmacological or mechanical deep vein thrombosis prophylaxis, resumption of oral food intake after resuscitation and regaining of consciousness, careful use of opioids and sedatives, early mobilization, and active weaning of invasive support. Specific considerations for malaria, puerperal sepsis and HIV/AIDS patients with sepsis are included. CONCLUSION: Only scarce evidence exists for the management of pediatric and adult sepsis in resource-limited settings. The presented recommendations may help to improve sepsis management in middle- and low-income countries.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22349419_due-to_0000391#mention-T1",
+      "canon:span": {
+        "start": 20,
+        "end": 26
+      },
+      "canon:surface": "sepsis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D018805",
+      "canon:sourceNotation": "D018805",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22349419_due-to_0000391#mention-T2",
+      "canon:span": {
+        "start": 1784,
+        "end": 1791
+      },
+      "canon:surface": "malaria",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008288",
+      "canon:sourceNotation": "D008288",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22349419_due-to_0000391#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22349419_due-to_0000391#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_22349419_due-to_0000391#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "22349419"
+      }
+    }
+  ]
+}

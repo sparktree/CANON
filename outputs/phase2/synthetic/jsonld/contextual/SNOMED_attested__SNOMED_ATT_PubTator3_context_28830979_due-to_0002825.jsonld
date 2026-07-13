@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28830979_due-to_0002825",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28830979_due-to_0002825",
+  "canon:title": "Alterations in fatty acid metabolism and sirtuin signaling characterize early type-2 diabetic hearts of fructose-fed rats.",
+  "canon:abstract": "Despite the fact that skeletal muscle insulin resistance is the hallmark of type-2 diabetes mellitus (T2DM), inflexibility in substrate energy metabolism has been observed in other tissues such as liver, adipose tissue, and heart. In the heart, structural and functional changes ultimately lead to diabetic cardiomyopathy. However, little is known about the early biochemical changes that cause cardiac metabolic dysregulation and dysfunction. We used a dietary model of fructose-induced T2DM (10% fructose in drinking water for 6 weeks) to study cardiac fatty acid metabolism in early T2DM and related signaling events in order to better understand mechanisms of disease. In early type-2 diabetic hearts, flux through the fatty acid oxidation pathway was increased as a result of increased cellular uptake (CD36), mitochondrial uptake (CPT1B), as well as increased beta-hydroxyacyl-CoA dehydrogenase and medium-chain acyl-CoA dehydrogenase activities, despite reduced mitochondrial mass. Long-chain acyl-CoA dehydrogenase activity was slightly decreased, resulting in the accumulation of long-chain acylcarnitine species. Cardiac function and overall mitochondrial respiration were unaffected. However, evidence of oxidative stress and subtle changes in cardiolipin content and composition were found in early type-2 diabetic mitochondria. Finally, we observed decreased activity of SIRT1, a pivotal regulator of fatty acid metabolism, despite increased protein levels. This indicates that the heart is no longer capable of further increasing its capacity for fatty acid oxidation. Along with increased oxidative stress, this may represent one of the earliest signs of dysfunction that will ultimately lead to inflammation and remodeling in the diabetic heart.",
+  "canon:text": "Alterations in fatty acid metabolism and sirtuin signaling characterize early type-2 diabetic hearts of fructose-fed rats. Despite the fact that skeletal muscle insulin resistance is the hallmark of type-2 diabetes mellitus (T2DM), inflexibility in substrate energy metabolism has been observed in other tissues such as liver, adipose tissue, and heart. In the heart, structural and functional changes ultimately lead to diabetic cardiomyopathy. However, little is known about the early biochemical changes that cause cardiac metabolic dysregulation and dysfunction. We used a dietary model of fructose-induced T2DM (10% fructose in drinking water for 6 weeks) to study cardiac fatty acid metabolism in early T2DM and related signaling events in order to better understand mechanisms of disease. In early type-2 diabetic hearts, flux through the fatty acid oxidation pathway was increased as a result of increased cellular uptake (CD36), mitochondrial uptake (CPT1B), as well as increased beta-hydroxyacyl-CoA dehydrogenase and medium-chain acyl-CoA dehydrogenase activities, despite reduced mitochondrial mass. Long-chain acyl-CoA dehydrogenase activity was slightly decreased, resulting in the accumulation of long-chain acylcarnitine species. Cardiac function and overall mitochondrial respiration were unaffected. However, evidence of oxidative stress and subtle changes in cardiolipin content and composition were found in early type-2 diabetic mitochondria. Finally, we observed decreased activity of SIRT1, a pivotal regulator of fatty acid metabolism, despite increased protein levels. This indicates that the heart is no longer capable of further increasing its capacity for fatty acid oxidation. Along with increased oxidative stress, this may represent one of the earliest signs of dysfunction that will ultimately lead to inflammation and remodeling in the diabetic heart.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28830979_due-to_0002825#mention-T1",
+      "canon:span": {
+        "start": 421,
+        "end": 444
+      },
+      "canon:surface": "diabetic cardiomyopathy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D058065",
+      "canon:sourceNotation": "D058065",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28830979_due-to_0002825#mention-T2",
+      "canon:span": {
+        "start": 78,
+        "end": 93
+      },
+      "canon:surface": "type-2 diabetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003924",
+      "canon:sourceNotation": "D003924",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28830979_due-to_0002825#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28830979_due-to_0002825#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28830979_due-to_0002825#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28830979"
+      }
+    }
+  ]
+}

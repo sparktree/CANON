@@ -1,0 +1,88 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_424937_causative-agent_0000207",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_424937_causative-agent_0000207",
+  "canon:title": "Patterns of hepatic injury induced by methyldopa.",
+  "canon:abstract": "Twelve patients with liver disease related to methyldopa were seen between 1967 and 1977. Illness occurred within 1--9 weeks of commencement of therapy in 9 patients, the remaining 3 patients having received the drug for 13 months, 15 months and 7 years before experiencing symptoms. Jaundice with tender hepatomegaly, usually preceded by symptoms of malaise, anorexia, nausea and vomiting, and associated with upper abdominal pain, was an invariable finding in all patients. Biochemical liver function tests indicated hepatocellular necrosis and correlated with histopathological evidence of hepatic injury, the spectrum of which ranged from fatty change and focal hepatocellular necrosis to massive hepatic necrosis. Most patients showed moderate to severe acute hepatitis or chronic active hepatitis with associated cholestasis. The drug was withdrawn on presentation to hospital in 11 patients, with rapid clinical improvement in 9. One patient died, having presented in hepatic failure, and another, who had been taking methyldopa for 7 years, showed slower clinical and biochemical resolution over a period of several months. The remaining patient in the series developed fulminant hepatitis when the drug was accidentally recommenced 1 year after a prior episode of methyldopa-induced hepatitis. In this latter patient, and in 2 others, the causal relationship between methyldopa and hepatic dysfunction was proved with the recurrence of hepatitis within 2 weeks of re-exposure to the drug.",
+  "canon:text": "Patterns of hepatic injury induced by methyldopa. Twelve patients with liver disease related to methyldopa were seen between 1967 and 1977. Illness occurred within 1--9 weeks of commencement of therapy in 9 patients, the remaining 3 patients having received the drug for 13 months, 15 months and 7 years before experiencing symptoms. Jaundice with tender hepatomegaly, usually preceded by symptoms of malaise, anorexia, nausea and vomiting, and associated with upper abdominal pain, was an invariable finding in all patients. Biochemical liver function tests indicated hepatocellular necrosis and correlated with histopathological evidence of hepatic injury, the spectrum of which ranged from fatty change and focal hepatocellular necrosis to massive hepatic necrosis. Most patients showed moderate to severe acute hepatitis or chronic active hepatitis with associated cholestasis. The drug was withdrawn on presentation to hospital in 11 patients, with rapid clinical improvement in 9. One patient died, having presented in hepatic failure, and another, who had been taking methyldopa for 7 years, showed slower clinical and biochemical resolution over a period of several months. The remaining patient in the series developed fulminant hepatitis when the drug was accidentally recommenced 1 year after a prior episode of methyldopa-induced hepatitis. In this latter patient, and in 2 others, the causal relationship between methyldopa and hepatic dysfunction was proved with the recurrence of hepatitis within 2 weeks of re-exposure to the drug.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_424937_causative-agent_0000207#mention-T1",
+      "canon:span": {
+        "start": 12,
+        "end": 26
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_424937_causative-agent_0000207#mention-T2",
+      "canon:span": {
+        "start": 38,
+        "end": 48
+      },
+      "canon:surface": "methyldopa",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D008750",
+      "canon:sourceNotation": "D008750",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Amino Acid, Peptide, or Protein",
+        "Biologically Active Substance",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/373542000",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_424937_causative-agent_0000207#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_424937_causative-agent_0000207#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_424937_causative-agent_0000207#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "424937"
+      }
+    }
+  ]
+}

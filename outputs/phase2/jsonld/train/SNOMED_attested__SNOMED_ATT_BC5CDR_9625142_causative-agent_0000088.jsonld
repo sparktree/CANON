@@ -1,0 +1,87 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9625142_causative-agent_0000088",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_9625142_causative-agent_0000088",
+  "canon:title": "Acute hepatitis, autoimmune hemolytic anemia, and erythroblastocytopenia induced by ceftriaxone.",
+  "canon:abstract": "An 80-yr-old man developed acute hepatitis shortly after ingesting oral ceftriaxone. Although the transaminases gradually returned to baseline after withholding the beta lactam antibiotic, there was a gradual increase in serum bilirubin and a decrease in hemoglobin concentration caused by an autoimmune hemolytic anemia and erythroblastocytopenia. These responded to systemic steroids and immunoglobulins. Despite the widespread use of these agents this triad of side effects has not previously been reported in connection with beta lactam antibiotics.",
+  "canon:text": "Acute hepatitis, autoimmune hemolytic anemia, and erythroblastocytopenia induced by ceftriaxone. An 80-yr-old man developed acute hepatitis shortly after ingesting oral ceftriaxone. Although the transaminases gradually returned to baseline after withholding the beta lactam antibiotic, there was a gradual increase in serum bilirubin and a decrease in hemoglobin concentration caused by an autoimmune hemolytic anemia and erythroblastocytopenia. These responded to systemic steroids and immunoglobulins. Despite the widespread use of these agents this triad of side effects has not previously been reported in connection with beta lactam antibiotics.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9625142_causative-agent_0000088#mention-T1",
+      "canon:span": {
+        "start": 6,
+        "end": 15
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Disease or Syndrome"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/197352008",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9625142_causative-agent_0000088#mention-T2",
+      "canon:span": {
+        "start": 474,
+        "end": 482
+      },
+      "canon:surface": "steroids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013256",
+      "canon:sourceNotation": "D013256",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Organic Chemical",
+        "Pharmacologic Substance"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/116566001",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9625142_causative-agent_0000088#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9625142_causative-agent_0000088#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_9625142_causative-agent_0000088#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "9625142"
+      }
+    }
+  ]
+}

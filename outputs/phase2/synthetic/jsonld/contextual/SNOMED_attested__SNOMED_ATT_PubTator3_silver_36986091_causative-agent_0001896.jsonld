@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36986091_causative-agent_0001896",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36986091_causative-agent_0001896",
+  "canon:title": "Nutritional Support for Alcoholic Liver Disease.",
+  "canon:abstract": "Malnutrition is a common finding in alcohol use disorders and is associated with the prognosis of patients with alcoholic liver disease (ALD). These patients also frequently show deficiencies in vitamins and trace elements, increasing the likelihood of anemia and altered cognitive status. The etiology of malnutrition in ALD patients is multifactorial and complex and includes inadequate dietary intake, abnormal absorption and digestion, increased skeletal and visceral protein catabolism, and abnormal interactions between ethanol and lipid metabolism. Most nutritional measures derive from general chronic liver disease recommendations. Recently, many patients with ALD have been diagnosed with metabolic syndrome, which requires individualized treatment via nutritional therapy to avoid overnutrition. As ALD progresses to cirrhosis, it is frequently complicated by protein-energy malnutrition and sarcopenia. Nutritional therapy is also important in the management of ascites and hepatic encephalopathy as liver failure progresses. The purpose of the review is to summarize important nutritional therapies for the treatment of ALD.",
+  "canon:text": "Nutritional Support for Alcoholic Liver Disease. Malnutrition is a common finding in alcohol use disorders and is associated with the prognosis of patients with alcoholic liver disease (ALD). These patients also frequently show deficiencies in vitamins and trace elements, increasing the likelihood of anemia and altered cognitive status. The etiology of malnutrition in ALD patients is multifactorial and complex and includes inadequate dietary intake, abnormal absorption and digestion, increased skeletal and visceral protein catabolism, and abnormal interactions between ethanol and lipid metabolism. Most nutritional measures derive from general chronic liver disease recommendations. Recently, many patients with ALD have been diagnosed with metabolic syndrome, which requires individualized treatment via nutritional therapy to avoid overnutrition. As ALD progresses to cirrhosis, it is frequently complicated by protein-energy malnutrition and sarcopenia. Nutritional therapy is also important in the management of ascites and hepatic encephalopathy as liver failure progresses. The purpose of the review is to summarize important nutritional therapies for the treatment of ALD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36986091_causative-agent_0001896#mention-T1",
+      "canon:span": {
+        "start": 85,
+        "end": 106
+      },
+      "canon:surface": "alcohol use disorders",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36986091_causative-agent_0001896#mention-T2",
+      "canon:span": {
+        "start": 575,
+        "end": 582
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36986091_causative-agent_0001896#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36986091_causative-agent_0001896#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36986091_causative-agent_0001896#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36986091"
+      }
+    }
+  ]
+}

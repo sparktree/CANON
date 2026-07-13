@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684204_causative-agent_0001478",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34684204_causative-agent_0001478",
+  "canon:title": "Extraintestinal Manifestation of Yersinia pseudotuberculosis Bacteremia as Acute Hepatitis: Case Report and Review of the Literature.",
+  "canon:abstract": "Yersinia pseudotuberculosis is a causative agent of foodborne zoonosis that usually causes self-limiting pseudoappendicitis. Y. pseudotuberculosis infection also causes systemic spread or extraintestinal manifestations in patients with predisposing conditions. Here, we present a case of acute hepatitis with Y. pseudotuberculosis bacteremia in a 30-year-old man. He was previously healthy without significant medical history other than obesity and current smoking. At the time of admission, he presented with high fever accompanied by chills, jaundice, abdominal pain, and watery diarrhea. Laboratory studies revealed leukocytosis and elevated liver function parameters. A stool culture showed no causative pathogens. Empiric antibiotic therapy with ceftriaxone and metronidazole was administered. Y. pseudotuberculosis was later isolated from the initial blood culture performed on the day of admission using MALDI-TOF mass spectrometry. Antibiotic treatment was continued based on the susceptibility testing results from MALDI-TOF MS and VITEk 2, as well as clinical and laboratory improvements. The patient was discharged on the tenth day of admission and remained healthy with no recurrence during the 12-month follow-up. Here, we review the literature on the systemic infection caused by Y. pseudotuberculosis, including extraintestinal manifestations. This case highlights that Y. pseudotuberculosis may be considered a differential causative organism in patients with acute colitis and hepatitis.",
+  "canon:text": "Extraintestinal Manifestation of Yersinia pseudotuberculosis Bacteremia as Acute Hepatitis: Case Report and Review of the Literature. Yersinia pseudotuberculosis is a causative agent of foodborne zoonosis that usually causes self-limiting pseudoappendicitis. Y. pseudotuberculosis infection also causes systemic spread or extraintestinal manifestations in patients with predisposing conditions. Here, we present a case of acute hepatitis with Y. pseudotuberculosis bacteremia in a 30-year-old man. He was previously healthy without significant medical history other than obesity and current smoking. At the time of admission, he presented with high fever accompanied by chills, jaundice, abdominal pain, and watery diarrhea. Laboratory studies revealed leukocytosis and elevated liver function parameters. A stool culture showed no causative pathogens. Empiric antibiotic therapy with ceftriaxone and metronidazole was administered. Y. pseudotuberculosis was later isolated from the initial blood culture performed on the day of admission using MALDI-TOF mass spectrometry. Antibiotic treatment was continued based on the susceptibility testing results from MALDI-TOF MS and VITEk 2, as well as clinical and laboratory improvements. The patient was discharged on the tenth day of admission and remained healthy with no recurrence during the 12-month follow-up. Here, we review the literature on the systemic infection caused by Y. pseudotuberculosis, including extraintestinal manifestations. This case highlights that Y. pseudotuberculosis may be considered a differential causative organism in patients with acute colitis and hepatitis.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684204_causative-agent_0001478#mention-T1",
+      "canon:span": {
+        "start": 81,
+        "end": 90
+      },
+      "canon:surface": "Hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684204_causative-agent_0001478#mention-T2",
+      "canon:span": {
+        "start": 901,
+        "end": 914
+      },
+      "canon:surface": "metronidazole",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D008795",
+      "canon:sourceNotation": "D008795",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684204_causative-agent_0001478#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684204_causative-agent_0001478#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34684204_causative-agent_0001478#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34684204"
+      }
+    }
+  ]
+}

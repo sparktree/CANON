@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20466987_due-to_0002252",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20466987_due-to_0002252",
+  "canon:title": "Aldose reductase and cardiovascular diseases, creating human-like diabetic complications in an experimental model.",
+  "canon:abstract": "Hyperglycemia and reduced insulin actions affect many biological processes. One theory is that aberrant metabolism of glucose via several pathways including the polyol pathway causes cellular toxicity. Aldose reductase (AR) is a multifunctional enzyme that reduces aldehydes. Under diabetic conditions AR converts glucose into sorbitol, which is then converted to fructose. This article reviews the biology and pathobiology of AR actions. AR expression varies considerably among species. In humans and rats, the higher level of AR expression is associated with toxicity. Flux via AR is increased by ischemia and its inhibition during ischemia reperfusion reduces injury. However, similar pharmacological effects are not observed in mice unless they express a human AR transgene. This is because mice have much lower levels of AR expression, probably insufficient to generate toxic byproducts. Human AR expression in LDL receptor knockout mice exacerbates vascular disease, but only under diabetic conditions. In contrast, a recent report suggests that genetic ablation of AR increased atherosclerosis and increased hydroxynonenal in arteries. It was hypothesized that AR knockout prevented reduction of toxic aldehydes. Like many in vivo effects found in genetically manipulated animals, interpretation requires the reproduction of human-like physiology. For AR, this will require tissue specific expression of AR in sites and at levels that approximate those in humans.",
+  "canon:text": "Aldose reductase and cardiovascular diseases, creating human-like diabetic complications in an experimental model. Hyperglycemia and reduced insulin actions affect many biological processes. One theory is that aberrant metabolism of glucose via several pathways including the polyol pathway causes cellular toxicity. Aldose reductase (AR) is a multifunctional enzyme that reduces aldehydes. Under diabetic conditions AR converts glucose into sorbitol, which is then converted to fructose. This article reviews the biology and pathobiology of AR actions. AR expression varies considerably among species. In humans and rats, the higher level of AR expression is associated with toxicity. Flux via AR is increased by ischemia and its inhibition during ischemia reperfusion reduces injury. However, similar pharmacological effects are not observed in mice unless they express a human AR transgene. This is because mice have much lower levels of AR expression, probably insufficient to generate toxic byproducts. Human AR expression in LDL receptor knockout mice exacerbates vascular disease, but only under diabetic conditions. In contrast, a recent report suggests that genetic ablation of AR increased atherosclerosis and increased hydroxynonenal in arteries. It was hypothesized that AR knockout prevented reduction of toxic aldehydes. Like many in vivo effects found in genetically manipulated animals, interpretation requires the reproduction of human-like physiology. For AR, this will require tissue specific expression of AR in sites and at levels that approximate those in humans.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20466987_due-to_0002252#mention-T1",
+      "canon:span": {
+        "start": 66,
+        "end": 88
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20466987_due-to_0002252#mention-T2",
+      "canon:span": {
+        "start": 397,
+        "end": 405
+      },
+      "canon:surface": "diabetic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20466987_due-to_0002252#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20466987_due-to_0002252#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20466987_due-to_0002252#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20466987"
+      }
+    }
+  ]
+}

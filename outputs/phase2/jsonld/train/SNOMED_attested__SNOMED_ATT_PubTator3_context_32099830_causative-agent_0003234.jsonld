@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32099830_causative-agent_0003234",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32099830_causative-agent_0003234",
+  "canon:title": "Drug hypersensitivity reactions in Asia: regional issues and challenges.",
+  "canon:abstract": "There are geographical, regional, and ethnic differences in the phenotypes and endotypes of patients with drug hypersensitivity reactions (DHRs) in different parts of the world. In Asia, aspects of drug hypersensitivity of regional importance include IgE-mediated allergies and T-cell-mediated reactions, including severe cutaneous adverse reactions (SCARs), to beta-lactam antibiotics, antituberculous drugs, nonsteroidal anti-inflammatory drugs (NSAIDs) and radiocontrast agents. Delabeling of low-risk penicillin allergy using direct oral provocation tests without skin tests have been found to be useful where the drug plausibility of the index reaction is low. Genetic risk associations of relevance to Asia include human leucocyte antigen (HLA)-B*1502 with carbamazepine SCAR, and HLA-B*5801 with allopurinol SCAR in some Asian ethnic groups. There remains a lack of safe and accurate diagnostic tests for antituberculous drug allergy, other than relatively high-risk desensitization regimes to first-line antituberculous therapy. NSAID hypersensitivity is common among both adults and children in Asia, with regional differences in phenotype especially among adults. Low dose aspirin desensitization is an important therapeutic modality in individuals with cross-reactive NSAID hypersensitivity and coronary artery disease following percutaneous coronary intervention. Skin testing allows patients with radiocontrast media hypersensitivity to confirm the suspected agent and test for alternatives, especially when contrasted scans are needed for future monitoring of disease relapse or progression, especially cancers.",
+  "canon:text": "Drug hypersensitivity reactions in Asia: regional issues and challenges. There are geographical, regional, and ethnic differences in the phenotypes and endotypes of patients with drug hypersensitivity reactions (DHRs) in different parts of the world. In Asia, aspects of drug hypersensitivity of regional importance include IgE-mediated allergies and T-cell-mediated reactions, including severe cutaneous adverse reactions (SCARs), to beta-lactam antibiotics, antituberculous drugs, nonsteroidal anti-inflammatory drugs (NSAIDs) and radiocontrast agents. Delabeling of low-risk penicillin allergy using direct oral provocation tests without skin tests have been found to be useful where the drug plausibility of the index reaction is low. Genetic risk associations of relevance to Asia include human leucocyte antigen (HLA)-B*1502 with carbamazepine SCAR, and HLA-B*5801 with allopurinol SCAR in some Asian ethnic groups. There remains a lack of safe and accurate diagnostic tests for antituberculous drug allergy, other than relatively high-risk desensitization regimes to first-line antituberculous therapy. NSAID hypersensitivity is common among both adults and children in Asia, with regional differences in phenotype especially among adults. Low dose aspirin desensitization is an important therapeutic modality in individuals with cross-reactive NSAID hypersensitivity and coronary artery disease following percutaneous coronary intervention. Skin testing allows patients with radiocontrast media hypersensitivity to confirm the suspected agent and test for alternatives, especially when contrasted scans are needed for future monitoring of disease relapse or progression, especially cancers.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32099830_causative-agent_0003234#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 31
+      },
+      "canon:surface": "Drug hypersensitivity reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32099830_causative-agent_0003234#mention-T2",
+      "canon:span": {
+        "start": 836,
+        "end": 849
+      },
+      "canon:surface": "carbamazepine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002220",
+      "canon:sourceNotation": "D002220",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32099830_causative-agent_0003234#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32099830_causative-agent_0003234#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32099830_causative-agent_0003234#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32099830"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31765298_causative-agent_0003195",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_31765298_causative-agent_0003195",
+  "canon:title": "Novel charged sodium and calcium channel inhibitor active against neurogenic inflammation.",
+  "canon:abstract": "Voltage-dependent sodium and calcium channels in pain-initiating nociceptor neurons are attractive targets for new analgesics. We made a permanently charged cationic derivative of an N-type calcium channel-inhibitor. Unlike cationic derivatives of local anesthetic sodium channel blockers like QX-314, this cationic compound inhibited N-type calcium channels more effectively with extracellular than intracellular application. Surprisingly, the compound is also a highly effective sodium channel inhibitor when applied extracellularly, producing more potent inhibition than lidocaine or bupivacaine. The charged inhibitor produced potent and long-lasting analgesia in mouse models of incisional wound and inflammatory pain, inhibited release of the neuropeptide calcitonin gene-related peptide (CGRP) from dorsal root ganglion neurons, and reduced inflammation in a mouse model of allergic asthma, which has a strong neurogenic component. The results show that some cationic molecules applied extracellularly can powerfully inhibit both sodium channels and calcium channels, thereby blocking both nociceptor excitability and pro-inflammatory peptide release.",
+  "canon:text": "Novel charged sodium and calcium channel inhibitor active against neurogenic inflammation. Voltage-dependent sodium and calcium channels in pain-initiating nociceptor neurons are attractive targets for new analgesics. We made a permanently charged cationic derivative of an N-type calcium channel-inhibitor. Unlike cationic derivatives of local anesthetic sodium channel blockers like QX-314, this cationic compound inhibited N-type calcium channels more effectively with extracellular than intracellular application. Surprisingly, the compound is also a highly effective sodium channel inhibitor when applied extracellularly, producing more potent inhibition than lidocaine or bupivacaine. The charged inhibitor produced potent and long-lasting analgesia in mouse models of incisional wound and inflammatory pain, inhibited release of the neuropeptide calcitonin gene-related peptide (CGRP) from dorsal root ganglion neurons, and reduced inflammation in a mouse model of allergic asthma, which has a strong neurogenic component. The results show that some cationic molecules applied extracellularly can powerfully inhibit both sodium channels and calcium channels, thereby blocking both nociceptor excitability and pro-inflammatory peptide release.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31765298_causative-agent_0003195#mention-T1",
+      "canon:span": {
+        "start": 972,
+        "end": 980
+      },
+      "canon:surface": "allergic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31765298_causative-agent_0003195#mention-T2",
+      "canon:span": {
+        "start": 678,
+        "end": 689
+      },
+      "canon:surface": "bupivacaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002045",
+      "canon:sourceNotation": "D002045",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31765298_causative-agent_0003195#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31765298_causative-agent_0003195#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_31765298_causative-agent_0003195#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "31765298"
+      }
+    }
+  ]
+}

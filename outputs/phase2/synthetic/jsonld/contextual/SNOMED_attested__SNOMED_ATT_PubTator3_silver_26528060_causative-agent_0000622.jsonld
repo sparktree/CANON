@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26528060_causative-agent_0000622",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_26528060_causative-agent_0000622",
+  "canon:title": "Safety issues of current analgesics: an update.",
+  "canon:abstract": "Pain represents a complex experience which can be approached by various medicines. Non-opioid and opioid analgesics are the most common drugs used to manage different types of pain. The increased attention nowadays to pain management entailed concomitantly more frequent adverse drug reactions (ADRs) related to analgesic use. Drug-drug interactions can be sometimes responsible for the adverse effects. However, a significant proportion of analgesic ADRs are preventable, which would avoid patient suffering. In order to draw the attention to analgesics risks and to minimize the negative consequences related to their use, the present review comprises a synthesis of the most important safety issues described in the scientific literature. It highlights the potential risks of the most frequently used analgesic medicines: non-opioid (paracetamol, metamizole, non-steroidal anti-inflammatory drugs) and opioid analgesics. Even if there is a wide experience in their use, they continue to capture attention with safety concerns and with potential risks recently revealed. Acknowledging potential safety problems represents the first step for health professionals in assuring a safe and efficient analgesic treatment with minimum risks to patients. Taking into consideration all medical and environmental factors and carefully monitoring the patients are also essential in preventing and early detecting analgesic ADRs. ",
+  "canon:text": "Safety issues of current analgesics: an update. Pain represents a complex experience which can be approached by various medicines. Non-opioid and opioid analgesics are the most common drugs used to manage different types of pain. The increased attention nowadays to pain management entailed concomitantly more frequent adverse drug reactions (ADRs) related to analgesic use. Drug-drug interactions can be sometimes responsible for the adverse effects. However, a significant proportion of analgesic ADRs are preventable, which would avoid patient suffering. In order to draw the attention to analgesics risks and to minimize the negative consequences related to their use, the present review comprises a synthesis of the most important safety issues described in the scientific literature. It highlights the potential risks of the most frequently used analgesic medicines: non-opioid (paracetamol, metamizole, non-steroidal anti-inflammatory drugs) and opioid analgesics. Even if there is a wide experience in their use, they continue to capture attention with safety concerns and with potential risks recently revealed. Acknowledging potential safety problems represents the first step for health professionals in assuring a safe and efficient analgesic treatment with minimum risks to patients. Taking into consideration all medical and environmental factors and carefully monitoring the patients are also essential in preventing and early detecting analgesic ADRs. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26528060_causative-agent_0000622#mention-T1",
+      "canon:span": {
+        "start": 327,
+        "end": 341
+      },
+      "canon:surface": "drug reactions",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26528060_causative-agent_0000622#mention-T2",
+      "canon:span": {
+        "start": 898,
+        "end": 908
+      },
+      "canon:surface": "metamizole",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004177",
+      "canon:sourceNotation": "D004177",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26528060_causative-agent_0000622#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26528060_causative-agent_0000622#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_26528060_causative-agent_0000622#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "26528060"
+      }
+    }
+  ]
+}

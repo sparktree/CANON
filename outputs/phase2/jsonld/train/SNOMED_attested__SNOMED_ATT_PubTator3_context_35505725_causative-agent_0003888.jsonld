@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35505725_causative-agent_0003888",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35505725_causative-agent_0003888",
+  "canon:title": "Bile Cast Nephropathy: A Comprehensive Review.",
+  "canon:abstract": "Bile cast nephropathy (BCN) or cholemic nephropathy (CN) is an acute renal dysfunction, including acute kidney injury (AKI) in the setting of liver injury. It is a common phenomenon in patients with liver disease and is associated with significant morbidity and mortality. CN is characterized by hemodynamic changes in the liver, kidney, systemic circulation, intratubular cast formation, and tubular epithelial cell injury. CN has been overlooked as a differential diagnosis in chronic liver disease patients due to more importance to hepatic injury. However, frequent and considerable reporting of case reports recently has further investigated this topic in the last two decades. This review determines the evidence behind the potential role of bile acids and bilirubin in acute renal dysfunction in liver injury, summarizing the implied pathophysiology risk factors, and incorporating the therapeutic mechanisms and outcomes.",
+  "canon:text": "Bile Cast Nephropathy: A Comprehensive Review. Bile cast nephropathy (BCN) or cholemic nephropathy (CN) is an acute renal dysfunction, including acute kidney injury (AKI) in the setting of liver injury. It is a common phenomenon in patients with liver disease and is associated with significant morbidity and mortality. CN is characterized by hemodynamic changes in the liver, kidney, systemic circulation, intratubular cast formation, and tubular epithelial cell injury. CN has been overlooked as a differential diagnosis in chronic liver disease patients due to more importance to hepatic injury. However, frequent and considerable reporting of case reports recently has further investigated this topic in the last two decades. This review determines the evidence behind the potential role of bile acids and bilirubin in acute renal dysfunction in liver injury, summarizing the implied pathophysiology risk factors, and incorporating the therapeutic mechanisms and outcomes.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35505725_causative-agent_0003888#mention-T1",
+      "canon:span": {
+        "start": 583,
+        "end": 597
+      },
+      "canon:surface": "hepatic injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35505725_causative-agent_0003888#mention-T2",
+      "canon:span": {
+        "start": 795,
+        "end": 805
+      },
+      "canon:surface": "bile acids",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001647",
+      "canon:sourceNotation": "D001647",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35505725_causative-agent_0003888#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35505725_causative-agent_0003888#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35505725_causative-agent_0003888#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35505725"
+      }
+    }
+  ]
+}

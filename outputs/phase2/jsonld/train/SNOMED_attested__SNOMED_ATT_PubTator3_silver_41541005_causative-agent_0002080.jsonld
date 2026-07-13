@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41541005_causative-agent_0002080",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_41541005_causative-agent_0002080",
+  "canon:title": "Tracing the threads: How toxic metals contribute to neurodegeneration.",
+  "canon:abstract": "Brain disorders affect more than one in three people globally, representing a leading cause of disability and morbidity. While the etiology of several of these disorders remains elusive, it is increasingly evident that both genetic and environmental factors contribute to their onset and progression. Given the persistent effects of environmental exposures on biological systems, this review highlights the role of heavy metals (particularly lead, mercury, vanadium, and chromium) in altering behaviour and contributing to the development of neurodegenerative and demyelinating diseases, such as Alzheimer's disease, Parkinson's disease, and multiple sclerosis. We discuss the sources of human and animal exposure to these metals, focusing on the underlying mechanisms by which they promote neurotoxicity, including oxidative stress, mitochondrial dysfunction, protein aggregation, and disruption of the blood-brain barrier. Additionally, we explore how exposure affects genetic and epigenetic interactions and provide epidemiological data linking metal toxicity to brain disorders. By exploring evidence from animal models and human epidemiological studies, with public health relevance, we extend our discussion beyond descriptive neurotoxicology to highlight exposure to these metals as a unifying upstream driver of various brain disorders. Finally, considering gaps in current knowledge, particularly regarding the impact of transgenerational exposures, we propose directions for future research. These insights not only enhance our understanding of metal-induced neurodegeneration but also underscore the need for targeted public health interventions and policies to reduce exposure, especially in vulnerable populations and communities.",
+  "canon:text": "Tracing the threads: How toxic metals contribute to neurodegeneration. Brain disorders affect more than one in three people globally, representing a leading cause of disability and morbidity. While the etiology of several of these disorders remains elusive, it is increasingly evident that both genetic and environmental factors contribute to their onset and progression. Given the persistent effects of environmental exposures on biological systems, this review highlights the role of heavy metals (particularly lead, mercury, vanadium, and chromium) in altering behaviour and contributing to the development of neurodegenerative and demyelinating diseases, such as Alzheimer's disease, Parkinson's disease, and multiple sclerosis. We discuss the sources of human and animal exposure to these metals, focusing on the underlying mechanisms by which they promote neurotoxicity, including oxidative stress, mitochondrial dysfunction, protein aggregation, and disruption of the blood-brain barrier. Additionally, we explore how exposure affects genetic and epigenetic interactions and provide epidemiological data linking metal toxicity to brain disorders. By exploring evidence from animal models and human epidemiological studies, with public health relevance, we extend our discussion beyond descriptive neurotoxicology to highlight exposure to these metals as a unifying upstream driver of various brain disorders. Finally, considering gaps in current knowledge, particularly regarding the impact of transgenerational exposures, we propose directions for future research. These insights not only enhance our understanding of metal-induced neurodegeneration but also underscore the need for targeted public health interventions and policies to reduce exposure, especially in vulnerable populations and communities.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41541005_causative-agent_0002080#mention-T1",
+      "canon:span": {
+        "start": 862,
+        "end": 875
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41541005_causative-agent_0002080#mention-T2",
+      "canon:span": {
+        "start": 513,
+        "end": 517
+      },
+      "canon:surface": "lead",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007854",
+      "canon:sourceNotation": "D007854",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41541005_causative-agent_0002080#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41541005_causative-agent_0002080#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_41541005_causative-agent_0002080#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "41541005"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37522121_due-to_0001971",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_37522121_due-to_0001971",
+  "canon:title": "Pheochromocytoma/paraganglioma-associated cardiomyopathy.",
+  "canon:abstract": "Pheochromocytoma/paraganglioma (PPGL) are neuroendocrine tumors that frequently produce and release catecholamines. Catecholamine excess can manifest in several cardiovascular syndromes, including cardiomyopathy. PPGL-induced cardiomyopathies occur in up to 11% of cases and are most often associated with an adrenal pheochromocytoma (90%) and rarely with a paraganglioma derived from the sympathetic ganglia (10%). PPGL-associated cardiomyopathies can be chronic or acute, with takotsubo cardiomyopathy being the most often reported. These two types of PPGL-induced cardiomyopathy seem to have different pathophysiological backgrounds. Acute catecholaminergic stress inundates myocardial beta-adrenoceptors and leads to left ventricle stunning and slight histological apoptosis. In chronic cardiomyopathy, prolonged catecholamine exposure leads to extended myocardial fibrosis, inflammation, and necrosis, and ultimately it causes dilated cardiomyopathy with a low ejection fraction. Sometimes, especially in cases associated with hypertension, hypertrophic cardiomyopathy can develop. The prognosis appears to be worse in chronic cases with a higher hospital mortality rate, higher cardiogenic shock rate at initial presentation, and lower left ventricular recovery rate after surgery. Therefore, establishing the correct diagnosis at an early stage of a PPGL is essential. This mini-review summarizes current data on pathophysiological pathways of cardiac damage caused by catecholamines, the clinical presentation of PPGL-induced cardiomyopathies, and discusses treatment options.",
+  "canon:text": "Pheochromocytoma/paraganglioma-associated cardiomyopathy. Pheochromocytoma/paraganglioma (PPGL) are neuroendocrine tumors that frequently produce and release catecholamines. Catecholamine excess can manifest in several cardiovascular syndromes, including cardiomyopathy. PPGL-induced cardiomyopathies occur in up to 11% of cases and are most often associated with an adrenal pheochromocytoma (90%) and rarely with a paraganglioma derived from the sympathetic ganglia (10%). PPGL-associated cardiomyopathies can be chronic or acute, with takotsubo cardiomyopathy being the most often reported. These two types of PPGL-induced cardiomyopathy seem to have different pathophysiological backgrounds. Acute catecholaminergic stress inundates myocardial beta-adrenoceptors and leads to left ventricle stunning and slight histological apoptosis. In chronic cardiomyopathy, prolonged catecholamine exposure leads to extended myocardial fibrosis, inflammation, and necrosis, and ultimately it causes dilated cardiomyopathy with a low ejection fraction. Sometimes, especially in cases associated with hypertension, hypertrophic cardiomyopathy can develop. The prognosis appears to be worse in chronic cases with a higher hospital mortality rate, higher cardiogenic shock rate at initial presentation, and lower left ventricular recovery rate after surgery. Therefore, establishing the correct diagnosis at an early stage of a PPGL is essential. This mini-review summarizes current data on pathophysiological pathways of cardiac damage caused by catecholamines, the clinical presentation of PPGL-induced cardiomyopathies, and discusses treatment options.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37522121_due-to_0001971#mention-T1",
+      "canon:span": {
+        "start": 794,
+        "end": 802
+      },
+      "canon:surface": "stunning",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017682",
+      "canon:sourceNotation": "D017682",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37522121_due-to_0001971#mention-T2",
+      "canon:span": {
+        "start": 1090,
+        "end": 1102
+      },
+      "canon:surface": "hypertension",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006973",
+      "canon:sourceNotation": "D006973",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37522121_due-to_0001971#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37522121_due-to_0001971#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_37522121_due-to_0001971#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "37522121"
+      }
+    }
+  ]
+}

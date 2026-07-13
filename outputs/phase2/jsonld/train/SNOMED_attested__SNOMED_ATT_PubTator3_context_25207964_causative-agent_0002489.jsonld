@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25207964_causative-agent_0002489",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_25207964_causative-agent_0002489",
+  "canon:title": "Desferrithiocin: a search for clinically effective iron chelators.",
+  "canon:abstract": "The successful search for orally active iron chelators to treat transfusional iron-overload diseases, e.g., thalassemia, is overviewed. The critical role of iron in nature as a redox engine is first described, as well as how primitive life forms and humans manage the metal. The problems that derive when iron homeostasis in humans is disrupted and the mechanism of the ensuing damage, uncontrolled Fenton chemistry, are discussed. The solution to the problem, chelator-mediated iron removal, is clear. Design options for the assembly of ligands that sequester and decorporate iron are reviewed, along with the shortcomings of the currently available therapeutics. The rationale for choosing desferrithiocin, a natural product iron chelator (a siderophore), as a platform for structure-activity relationship studies in the search for an orally active iron chelator is thoroughly developed. The study provides an excellent example of how to systematically reengineer a pharmacophore in order to overcome toxicological problems while maintaining iron clearing efficacy and has led to three ligands being evaluated in human clinical trials. ",
+  "canon:text": "Desferrithiocin: a search for clinically effective iron chelators. The successful search for orally active iron chelators to treat transfusional iron-overload diseases, e.g., thalassemia, is overviewed. The critical role of iron in nature as a redox engine is first described, as well as how primitive life forms and humans manage the metal. The problems that derive when iron homeostasis in humans is disrupted and the mechanism of the ensuing damage, uncontrolled Fenton chemistry, are discussed. The solution to the problem, chelator-mediated iron removal, is clear. Design options for the assembly of ligands that sequester and decorporate iron are reviewed, along with the shortcomings of the currently available therapeutics. The rationale for choosing desferrithiocin, a natural product iron chelator (a siderophore), as a platform for structure-activity relationship studies in the search for an orally active iron chelator is thoroughly developed. The study provides an excellent example of how to systematically reengineer a pharmacophore in order to overcome toxicological problems while maintaining iron clearing efficacy and has led to three ligands being evaluated in human clinical trials. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25207964_causative-agent_0002489#mention-T1",
+      "canon:span": {
+        "start": 145,
+        "end": 167
+      },
+      "canon:surface": "iron-overload diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019190",
+      "canon:sourceNotation": "D019190",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25207964_causative-agent_0002489#mention-T2",
+      "canon:span": {
+        "start": 51,
+        "end": 55
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25207964_causative-agent_0002489#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25207964_causative-agent_0002489#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_25207964_causative-agent_0002489#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "25207964"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34556047_causative-agent_0001439",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34556047_causative-agent_0001439",
+  "canon:title": "Enterococcus hirae bacteremia associated with acute pyelonephritis in a patient with alcoholic cirrhosis: a case report and literature review.",
+  "canon:abstract": "BACKGROUND: Infections caused by Enterococcus hirae are common in animals, with instances of transmission to humans being rare. Further, few cases have been reported in humans because of the difficulty in identifying the bacteria. Herein, we report a case of pyelonephritis caused by E. hirae bacteremia and conduct a literature review on E. hirae bacteremia. CASE PRESENTATION: A 57-year-old male patient with alcoholic cirrhosis and neurogenic bladder presented with fever and chills that had persisted for 3 days. Physical examination revealed tenderness of the right costovertebral angle. Matrix-assisted laser desorption ionization-time of flight mass spectrometry (MALDI-TOF MS) of the patient's blood and urine samples revealed the presence of E. hirae, and pyelonephritis was diagnosed. The patient was treated successfully with intravenous ampicillin followed by oral linezolid for a total of three weeks. CONCLUSION: The literature review we conducted revealed that E. hirae bacteremia is frequently reported in urinary tract infections, biliary tract infections, and infective endocarditis and is more likely to occur in patients with diabetes, liver cirrhosis, and chronic kidney disease. However, mortality is not common because of the high antimicrobial susceptibility of E. hirae. With the advancements in MALDI-TOF MS, the number of reports of E. hirae infections has also increased, and clinicians need to consider E. hirae as a possible causative pathogen of urinary tract infections in patients with known risk factors.",
+  "canon:text": "Enterococcus hirae bacteremia associated with acute pyelonephritis in a patient with alcoholic cirrhosis: a case report and literature review. BACKGROUND: Infections caused by Enterococcus hirae are common in animals, with instances of transmission to humans being rare. Further, few cases have been reported in humans because of the difficulty in identifying the bacteria. Herein, we report a case of pyelonephritis caused by E. hirae bacteremia and conduct a literature review on E. hirae bacteremia. CASE PRESENTATION: A 57-year-old male patient with alcoholic cirrhosis and neurogenic bladder presented with fever and chills that had persisted for 3 days. Physical examination revealed tenderness of the right costovertebral angle. Matrix-assisted laser desorption ionization-time of flight mass spectrometry (MALDI-TOF MS) of the patient's blood and urine samples revealed the presence of E. hirae, and pyelonephritis was diagnosed. The patient was treated successfully with intravenous ampicillin followed by oral linezolid for a total of three weeks. CONCLUSION: The literature review we conducted revealed that E. hirae bacteremia is frequently reported in urinary tract infections, biliary tract infections, and infective endocarditis and is more likely to occur in patients with diabetes, liver cirrhosis, and chronic kidney disease. However, mortality is not common because of the high antimicrobial susceptibility of E. hirae. With the advancements in MALDI-TOF MS, the number of reports of E. hirae infections has also increased, and clinicians need to consider E. hirae as a possible causative pathogen of urinary tract infections in patients with known risk factors.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34556047_causative-agent_0001439#mention-T1",
+      "canon:span": {
+        "start": 85,
+        "end": 104
+      },
+      "canon:surface": "alcoholic cirrhosis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008104",
+      "canon:sourceNotation": "D008104",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34556047_causative-agent_0001439#mention-T2",
+      "canon:span": {
+        "start": 992,
+        "end": 1002
+      },
+      "canon:surface": "ampicillin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000667",
+      "canon:sourceNotation": "D000667",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34556047_causative-agent_0001439#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34556047_causative-agent_0001439#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34556047_causative-agent_0001439#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34556047"
+      }
+    }
+  ]
+}

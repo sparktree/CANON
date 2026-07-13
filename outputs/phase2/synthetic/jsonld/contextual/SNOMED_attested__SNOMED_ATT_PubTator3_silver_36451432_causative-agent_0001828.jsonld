@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36451432_causative-agent_0001828",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36451432_causative-agent_0001828",
+  "canon:title": "5-Fluorouracil and actinomycin D lead to erythema multiforme drug eruption in chemotherapy of invasive mole: Case report and literature review.",
+  "canon:abstract": "RATIONALE: 5-Fluorouracil (5-FU) and actinomycin D (ActD) are often used in chemotherapy for various cancers. Side effects are more common in bone marrow suppression, liver function impairment, and gastrointestinal responses. Skin effects are rare and easy to be ignored by doctors and patients, which can lead to life-threatening consequence. PATIENT CONCERNS: We reported a 45-year-old woman patient developed skin erythema and fingernail belt in chemotherapy of 5-FU and ActD. DIAGNOSIS: Erythema multiforme drug eruption. INTERVENTIONS: Laboratory tests including blood and urine routine, liver and kidney function, electrolytes and coagulation function and close observation. OUTCOMES: The rash was gone and the nail change returned. LESSONS: Delays in diagnosis or treatment may lead to serious consequence. We should pay attention to the dosage of 5-FU and ActD, monitor adverse reactions strictly, to reduce occurrence of skin malignant events.",
+  "canon:text": "5-Fluorouracil and actinomycin D lead to erythema multiforme drug eruption in chemotherapy of invasive mole: Case report and literature review. RATIONALE: 5-Fluorouracil (5-FU) and actinomycin D (ActD) are often used in chemotherapy for various cancers. Side effects are more common in bone marrow suppression, liver function impairment, and gastrointestinal responses. Skin effects are rare and easy to be ignored by doctors and patients, which can lead to life-threatening consequence. PATIENT CONCERNS: We reported a 45-year-old woman patient developed skin erythema and fingernail belt in chemotherapy of 5-FU and ActD. DIAGNOSIS: Erythema multiforme drug eruption. INTERVENTIONS: Laboratory tests including blood and urine routine, liver and kidney function, electrolytes and coagulation function and close observation. OUTCOMES: The rash was gone and the nail change returned. LESSONS: Delays in diagnosis or treatment may lead to serious consequence. We should pay attention to the dosage of 5-FU and ActD, monitor adverse reactions strictly, to reduce occurrence of skin malignant events.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36451432_causative-agent_0001828#mention-T1",
+      "canon:span": {
+        "start": 41,
+        "end": 74
+      },
+      "canon:surface": "erythema multiforme drug eruption",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003875",
+      "canon:sourceNotation": "D003875",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36451432_causative-agent_0001828#mention-T2",
+      "canon:span": {
+        "start": 19,
+        "end": 32
+      },
+      "canon:surface": "actinomycin D",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003609",
+      "canon:sourceNotation": "D003609",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36451432_causative-agent_0001828#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36451432_causative-agent_0001828#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36451432_causative-agent_0001828#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36451432"
+      }
+    }
+  ]
+}

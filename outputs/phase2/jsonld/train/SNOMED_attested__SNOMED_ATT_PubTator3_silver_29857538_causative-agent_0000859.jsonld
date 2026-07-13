@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29857538_causative-agent_0000859",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_29857538_causative-agent_0000859",
+  "canon:title": "Use of Curcumin, a Natural Polyphenol for Targeting Molecular Pathways in Treating Age-Related Neurodegenerative Diseases.",
+  "canon:abstract": "Progressive accumulation of misfolded amyloid proteins in intracellular and extracellular spaces is one of the principal reasons for synaptic damage and impairment of neuronal communication in several neurodegenerative diseases. Effective treatments for these diseases are still lacking but remain the focus of much active investigation. Despite testing several synthesized compounds, small molecules, and drugs over the past few decades, very few of them can inhibit aggregation of amyloid proteins and lessen their neurotoxic effects. Recently, the natural polyphenol curcumin (Cur) has been shown to be a promising anti-amyloid, anti-inflammatory and neuroprotective agent for several neurodegenerative diseases. Because of its pleotropic actions on the central nervous system, including preferential binding to amyloid proteins, Cur is being touted as a promising treatment for age-related brain diseases. Here, we focus on molecular targeting of Cur to reduce amyloid burden, rescue neuronal damage, and restore normal cognitive and sensory motor functions in different animal models of neurodegenerative diseases. We specifically highlight Cur as a potential treatment for Alzheimer's, Parkinson's, Huntington's, and prion diseases. In addition, we discuss the major issues and limitations of using Cur for treating these diseases, along with ways of circumventing those shortcomings. Finally, we provide specific recommendations for optimal dosing with Cur for treating neurological diseases.",
+  "canon:text": "Use of Curcumin, a Natural Polyphenol for Targeting Molecular Pathways in Treating Age-Related Neurodegenerative Diseases. Progressive accumulation of misfolded amyloid proteins in intracellular and extracellular spaces is one of the principal reasons for synaptic damage and impairment of neuronal communication in several neurodegenerative diseases. Effective treatments for these diseases are still lacking but remain the focus of much active investigation. Despite testing several synthesized compounds, small molecules, and drugs over the past few decades, very few of them can inhibit aggregation of amyloid proteins and lessen their neurotoxic effects. Recently, the natural polyphenol curcumin (Cur) has been shown to be a promising anti-amyloid, anti-inflammatory and neuroprotective agent for several neurodegenerative diseases. Because of its pleotropic actions on the central nervous system, including preferential binding to amyloid proteins, Cur is being touted as a promising treatment for age-related brain diseases. Here, we focus on molecular targeting of Cur to reduce amyloid burden, rescue neuronal damage, and restore normal cognitive and sensory motor functions in different animal models of neurodegenerative diseases. We specifically highlight Cur as a potential treatment for Alzheimer's, Parkinson's, Huntington's, and prion diseases. In addition, we discuss the major issues and limitations of using Cur for treating these diseases, along with ways of circumventing those shortcomings. Finally, we provide specific recommendations for optimal dosing with Cur for treating neurological diseases.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29857538_causative-agent_0000859#mention-T1",
+      "canon:span": {
+        "start": 640,
+        "end": 650
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29857538_causative-agent_0000859#mention-T2",
+      "canon:span": {
+        "start": 7,
+        "end": 15
+      },
+      "canon:surface": "Curcumin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003474",
+      "canon:sourceNotation": "D003474",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29857538_causative-agent_0000859#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29857538_causative-agent_0000859#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_29857538_causative-agent_0000859#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "29857538"
+      }
+    }
+  ]
+}

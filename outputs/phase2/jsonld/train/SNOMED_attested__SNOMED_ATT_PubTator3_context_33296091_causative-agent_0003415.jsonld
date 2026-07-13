@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33296091_causative-agent_0003415",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_33296091_causative-agent_0003415",
+  "canon:title": "Neuroimaging and Cognitive Evidence for Combined HIV-Alcohol Effects on the Central Nervous System: A Review.",
+  "canon:abstract": "Alcohol use disorder (AUD) among people living with HIV (PLWH) is a significant public health concern. Despite the advent of effective antiretroviral therapy, up to 50% of PLWH still experience worsened neurocognition, which comorbid AUD exacerbates. We report converging lines of neuroimaging and neuropsychological evidence linking comorbid HIV/AUD to dysfunction in brain regions linked to executive function, learning and memory, processing speed, and motor control, and consequently to impairment in daily life. The brain shrinkage, functional network alterations, and brain metabolite disruption seen in individuals with HIV/AUD have been attributed to several interacting pathways: viral proteins and EtOH are directly neurotoxic and exacerbate each other's neurotoxic effects; EtOH reduces antiretroviral adherence and increases viral replication; AUD and HIV both increase gut microbial translocation, promoting systemic inflammation and HIV transport into the brain by immune cells; and HIV may compound alcohol's damaging effects on the liver, further increasing inflammation. We additionally review the neurocognitive effects of aging, Hepatitis C coinfection, obesity, and cardiovascular disease, tobacco use, and nutritional deficiencies, all of which have been shown to compound cognitive changes in HIV, AUD, and in their comorbidity. Finally, we examine emerging questions in HIV/AUD research, including genetic and cognitive protective factors, the role of binge drinking in HIV/AUD-linked cognitive decline, and whether neurocognitive and brain functions normalize after drinking cessation.",
+  "canon:text": "Neuroimaging and Cognitive Evidence for Combined HIV-Alcohol Effects on the Central Nervous System: A Review. Alcohol use disorder (AUD) among people living with HIV (PLWH) is a significant public health concern. Despite the advent of effective antiretroviral therapy, up to 50% of PLWH still experience worsened neurocognition, which comorbid AUD exacerbates. We report converging lines of neuroimaging and neuropsychological evidence linking comorbid HIV/AUD to dysfunction in brain regions linked to executive function, learning and memory, processing speed, and motor control, and consequently to impairment in daily life. The brain shrinkage, functional network alterations, and brain metabolite disruption seen in individuals with HIV/AUD have been attributed to several interacting pathways: viral proteins and EtOH are directly neurotoxic and exacerbate each other's neurotoxic effects; EtOH reduces antiretroviral adherence and increases viral replication; AUD and HIV both increase gut microbial translocation, promoting systemic inflammation and HIV transport into the brain by immune cells; and HIV may compound alcohol's damaging effects on the liver, further increasing inflammation. We additionally review the neurocognitive effects of aging, Hepatitis C coinfection, obesity, and cardiovascular disease, tobacco use, and nutritional deficiencies, all of which have been shown to compound cognitive changes in HIV, AUD, and in their comorbidity. Finally, we examine emerging questions in HIV/AUD research, including genetic and cognitive protective factors, the role of binge drinking in HIV/AUD-linked cognitive decline, and whether neurocognitive and brain functions normalize after drinking cessation.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33296091_causative-agent_0003415#mention-T1",
+      "canon:span": {
+        "start": 836,
+        "end": 846
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33296091_causative-agent_0003415#mention-T2",
+      "canon:span": {
+        "start": 818,
+        "end": 822
+      },
+      "canon:surface": "EtOH",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33296091_causative-agent_0003415#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33296091_causative-agent_0003415#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_33296091_causative-agent_0003415#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "33296091"
+      }
+    }
+  ]
+}

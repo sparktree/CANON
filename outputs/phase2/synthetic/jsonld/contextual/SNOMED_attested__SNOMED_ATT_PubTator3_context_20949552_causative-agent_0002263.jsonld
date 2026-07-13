@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20949552_causative-agent_0002263",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20949552_causative-agent_0002263",
+  "canon:title": "Drug-induced acute liver failure: results of a U.S. multicenter, prospective study.",
+  "canon:abstract": "UNLABELLED: Acute liver failure (ALF) due to drug-induced liver injury (DILI), though uncommon, is a concern for both clinicians and patients. The Acute Liver Failure Study Group has prospectively collected cases of all forms of acute liver failure since 1998. We describe here cases of idiosyncratic DILI ALF enrolled during a 10.5-year period. Data were collected prospectively, using detailed case report forms, from 1198 subjects enrolled at 23 sites in the United States, all of which had transplant services. A total of 133 (11.1%) ALF subjects were deemed by expert opinion to have DILI; 81.1% were considered highly likely, 15.0% probable, and 3.8% possible. Subjects were mostly women (70.7%) and there was overrepresentation of minorities for unclear reasons. Over 60 individual agents were implicated, the most common were antimicrobials (46%). Transplant-free (3-week) survival was poor (27.1%), but with highly successful transplantation in 42.1%, overall survival was 66.2%. Transplant-free survival in DILI ALF is determined by the degree of liver dysfunction, specifically baseline levels of bilirubin, prothrombin time/international normalized ratio, and Model for End-Stage Liver Disease scores. CONCLUSION: DILI is an uncommon cause of ALF that evolves slowly, affects a disproportionate number of women and minorities, and shows infrequent spontaneous recovery, but transplantation affords excellent survival.",
+  "canon:text": "Drug-induced acute liver failure: results of a U.S. multicenter, prospective study. UNLABELLED: Acute liver failure (ALF) due to drug-induced liver injury (DILI), though uncommon, is a concern for both clinicians and patients. The Acute Liver Failure Study Group has prospectively collected cases of all forms of acute liver failure since 1998. We describe here cases of idiosyncratic DILI ALF enrolled during a 10.5-year period. Data were collected prospectively, using detailed case report forms, from 1198 subjects enrolled at 23 sites in the United States, all of which had transplant services. A total of 133 (11.1%) ALF subjects were deemed by expert opinion to have DILI; 81.1% were considered highly likely, 15.0% probable, and 3.8% possible. Subjects were mostly women (70.7%) and there was overrepresentation of minorities for unclear reasons. Over 60 individual agents were implicated, the most common were antimicrobials (46%). Transplant-free (3-week) survival was poor (27.1%), but with highly successful transplantation in 42.1%, overall survival was 66.2%. Transplant-free survival in DILI ALF is determined by the degree of liver dysfunction, specifically baseline levels of bilirubin, prothrombin time/international normalized ratio, and Model for End-Stage Liver Disease scores. CONCLUSION: DILI is an uncommon cause of ALF that evolves slowly, affects a disproportionate number of women and minorities, and shows infrequent spontaneous recovery, but transplantation affords excellent survival.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20949552_causative-agent_0002263#mention-T1",
+      "canon:span": {
+        "start": 129,
+        "end": 154
+      },
+      "canon:surface": "drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20949552_causative-agent_0002263#mention-T2",
+      "canon:span": {
+        "start": 1192,
+        "end": 1201
+      },
+      "canon:surface": "bilirubin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001663",
+      "canon:sourceNotation": "D001663",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20949552_causative-agent_0002263#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20949552_causative-agent_0002263#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20949552_causative-agent_0002263#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20949552"
+      }
+    }
+  ]
+}

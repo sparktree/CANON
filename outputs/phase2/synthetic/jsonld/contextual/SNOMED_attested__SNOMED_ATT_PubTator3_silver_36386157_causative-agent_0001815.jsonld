@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36386157_causative-agent_0001815",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36386157_causative-agent_0001815",
+  "canon:title": "Clinical features, diagnosis and management of amoxicillin-induced Kounis syndrome.",
+  "canon:abstract": "Background: The available evidence suggests that amoxicillin is often associated with the occurrence of Kounis syndrome (KS). The purpose of this study is to explore the clinical characteristics of KS induced by amoxicillin. Methods: We searched for case reports of amoxicillin-induced KS through Chinese and English databases from 1972 to May 2022. Results: A total of 33 patients with KS were included, including 16 patients (48.5%) receiving amoxicillin treatment and 17 patients (51.5%) receiving amoxicillin-clavulanate. The median age was 58 years (range 13-82), 75.8% were from Europe and 81.8% were male. Nearly 70% of KS patients develop symptoms within 30 min after administration. Chest pain (63.6%) and allergic reaction (75.8%) were the most common clinical manifestations. Diagnostic evaluation revealed elevated troponin (72.7%), ST-segment elevation (81.2%) and coronary artery stenosis with thrombosis (53.6%). Thirty-two (97.0%) patients recovered completely after discontinuation of amoxicillin and treatments such as steroids and antihistamines. Conclusion: KS is a rare adverse reaction of amoxicillin. Amoxicillin-induced KS should be considered when chest pain accompanied by allergic symptoms, electrocardiogram changes and or elevated levels of myocardial injury markers. Therapeutic management of KS requires simultaneous treatment of cardiac and allergic symptoms. Epinephrine should be used with caution in patients with suspected KS.",
+  "canon:text": "Clinical features, diagnosis and management of amoxicillin-induced Kounis syndrome. Background: The available evidence suggests that amoxicillin is often associated with the occurrence of Kounis syndrome (KS). The purpose of this study is to explore the clinical characteristics of KS induced by amoxicillin. Methods: We searched for case reports of amoxicillin-induced KS through Chinese and English databases from 1972 to May 2022. Results: A total of 33 patients with KS were included, including 16 patients (48.5%) receiving amoxicillin treatment and 17 patients (51.5%) receiving amoxicillin-clavulanate. The median age was 58 years (range 13-82), 75.8% were from Europe and 81.8% were male. Nearly 70% of KS patients develop symptoms within 30 min after administration. Chest pain (63.6%) and allergic reaction (75.8%) were the most common clinical manifestations. Diagnostic evaluation revealed elevated troponin (72.7%), ST-segment elevation (81.2%) and coronary artery stenosis with thrombosis (53.6%). Thirty-two (97.0%) patients recovered completely after discontinuation of amoxicillin and treatments such as steroids and antihistamines. Conclusion: KS is a rare adverse reaction of amoxicillin. Amoxicillin-induced KS should be considered when chest pain accompanied by allergic symptoms, electrocardiogram changes and or elevated levels of myocardial injury markers. Therapeutic management of KS requires simultaneous treatment of cardiac and allergic symptoms. Epinephrine should be used with caution in patients with suspected KS.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36386157_causative-agent_0001815#mention-T1",
+      "canon:span": {
+        "start": 799,
+        "end": 816
+      },
+      "canon:surface": "allergic reaction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36386157_causative-agent_0001815#mention-T2",
+      "canon:span": {
+        "start": 1476,
+        "end": 1487
+      },
+      "canon:surface": "Epinephrine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D004837",
+      "canon:sourceNotation": "D004837",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36386157_causative-agent_0001815#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36386157_causative-agent_0001815#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36386157_causative-agent_0001815#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36386157"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35818760_causative-agent_0003977",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35818760_causative-agent_0003977",
+  "canon:title": "The role of well-known antioxidant vitamins in the prevention of cadmium-induced toxicity.",
+  "canon:abstract": "Long-term exposure to cadmium (Cd) leads to the development of a number of conditions associated with liver and kidney damage, reproductive and cardiovascular disorders, in addition to visual impairment, blindness and hearing loss, among others. Cadmium has been classified as a human carcinogen by the International Agency for Research on Cancer. The toxicity of Cd is related to its pro-oxidant properties and the associated increase in oxidative stress. Antioxidant ingredients may be helpful in preventing the adverse effects of Cd. The effect of well-known antioxidant vitamins (E, C, A and beta-carotene) in the prevention of Cd-induced toxicity is presented in this study. Numerous studies in animal models have shown that the effects of vitamins: E, C, A, and beta-carotene were effective in reducing Cd concentrations in organs and tissues and reduced Cd-induced changes in liver, kidney, and reproductive, circulatory, nervous, immune, and respiratory systems. In contrast, the limited number of human studies does not allow to accurately determine the role of these nutrients in reducing Cd-induced toxicity, indicating the need for further studies clarifying the role of antioxidant vitamins in reducing Cd-induced toxicity. However, it seems reasonable to promote the consumption of natural food products that are sources of antioxidant vitamins in groups of people with occupational and environmental exposure to Cd. Int J Occup Med Environ Health. 2022;35(4):367-92.",
+  "canon:text": "The role of well-known antioxidant vitamins in the prevention of cadmium-induced toxicity. Long-term exposure to cadmium (Cd) leads to the development of a number of conditions associated with liver and kidney damage, reproductive and cardiovascular disorders, in addition to visual impairment, blindness and hearing loss, among others. Cadmium has been classified as a human carcinogen by the International Agency for Research on Cancer. The toxicity of Cd is related to its pro-oxidant properties and the associated increase in oxidative stress. Antioxidant ingredients may be helpful in preventing the adverse effects of Cd. The effect of well-known antioxidant vitamins (E, C, A and beta-carotene) in the prevention of Cd-induced toxicity is presented in this study. Numerous studies in animal models have shown that the effects of vitamins: E, C, A, and beta-carotene were effective in reducing Cd concentrations in organs and tissues and reduced Cd-induced changes in liver, kidney, and reproductive, circulatory, nervous, immune, and respiratory systems. In contrast, the limited number of human studies does not allow to accurately determine the role of these nutrients in reducing Cd-induced toxicity, indicating the need for further studies clarifying the role of antioxidant vitamins in reducing Cd-induced toxicity. However, it seems reasonable to promote the consumption of natural food products that are sources of antioxidant vitamins in groups of people with occupational and environmental exposure to Cd. Int J Occup Med Environ Health. 2022;35(4):367-92.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35818760_causative-agent_0003977#mention-T1",
+      "canon:span": {
+        "start": 193,
+        "end": 216
+      },
+      "canon:surface": "liver and kidney damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35818760_causative-agent_0003977#mention-T2",
+      "canon:span": {
+        "start": 687,
+        "end": 700
+      },
+      "canon:surface": "beta-carotene",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D019207",
+      "canon:sourceNotation": "D019207",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35818760_causative-agent_0003977#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35818760_causative-agent_0003977#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35818760_causative-agent_0003977#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35818760"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21036182_causative-agent_0000341",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_21036182_causative-agent_0000341",
+  "canon:title": "Metabotropic glutamate receptors: from the workbench to the bedside.",
+  "canon:abstract": "Metabotropic glutamate (mGlu) receptors were discovered in the mid 1980s and originally described as glutamate receptors coupled to polyphosphoinositide hydrolysis. Almost 6500 articles have been published since then, and subtype-selective mGlu receptor ligands are now under clinical development for the treatment of a variety of disorders such as Fragile-X syndrome, schizophrenia, Parkinson's disease and L-DOPA-induced dyskinesias, generalized anxiety disorder, chronic pain, and gastroesophageal reflux disorder. Prof. Erminio Costa was linked to the early times of the mGlu receptor history, when a few research groups challenged the general belief that glutamate could only activate ionotropic receptors and all metabolic responses to glutamate were secondary to calcium entry. This review moves from those nostalgic times to the most recent advances in the physiology and pharmacology of mGlu receptors, and highlights the role of individual mGlu receptor subtypes in the pathophysiology of human disorders. This article is part of a Special Issue entitled 'Trends in neuropharmacology: in memory of Erminio Costa'.",
+  "canon:text": "Metabotropic glutamate receptors: from the workbench to the bedside. Metabotropic glutamate (mGlu) receptors were discovered in the mid 1980s and originally described as glutamate receptors coupled to polyphosphoinositide hydrolysis. Almost 6500 articles have been published since then, and subtype-selective mGlu receptor ligands are now under clinical development for the treatment of a variety of disorders such as Fragile-X syndrome, schizophrenia, Parkinson's disease and L-DOPA-induced dyskinesias, generalized anxiety disorder, chronic pain, and gastroesophageal reflux disorder. Prof. Erminio Costa was linked to the early times of the mGlu receptor history, when a few research groups challenged the general belief that glutamate could only activate ionotropic receptors and all metabolic responses to glutamate were secondary to calcium entry. This review moves from those nostalgic times to the most recent advances in the physiology and pharmacology of mGlu receptors, and highlights the role of individual mGlu receptor subtypes in the pathophysiology of human disorders. This article is part of a Special Issue entitled 'Trends in neuropharmacology: in memory of Erminio Costa'.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21036182_causative-agent_0000341#mention-T1",
+      "canon:span": {
+        "start": 492,
+        "end": 503
+      },
+      "canon:surface": "dyskinesias",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004409",
+      "canon:sourceNotation": "D004409",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21036182_causative-agent_0000341#mention-T2",
+      "canon:span": {
+        "start": 477,
+        "end": 483
+      },
+      "canon:surface": "L-DOPA",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007980",
+      "canon:sourceNotation": "D007980",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21036182_causative-agent_0000341#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21036182_causative-agent_0000341#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_21036182_causative-agent_0000341#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "21036182"
+      }
+    }
+  ]
+}

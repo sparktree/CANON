@@ -1,0 +1,87 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7444978_causative-agent_0000082",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_BC5CDR_7444978_causative-agent_0000082",
+  "canon:title": "Age-dependent sensitivity of the rat to neurotoxic effects of streptomycin.",
+  "canon:abstract": "Streptomycin sulfate (300 mg/kg s.c.) was injected for various periods into preweanling rats and for 3 weeks into weanling rats. Beginning at 8 days of age, body movement and hearing were examined for 6 and up to 17 weeks, respectively. Abnormal movements and deafness occurred only in rats treated during the preweaning period; within this period the greatest sensitivities for these abnormalities occurred from 2 to 11-17 and 5 to 11 days of age, respectively, indicating that the cochlea is more sensitive to streptomycin than the site (vestibular or central) responsible for the dyskinesias.",
+  "canon:text": "Age-dependent sensitivity of the rat to neurotoxic effects of streptomycin. Streptomycin sulfate (300 mg/kg s.c.) was injected for various periods into preweanling rats and for 3 weeks into weanling rats. Beginning at 8 days of age, body movement and hearing were examined for 6 and up to 17 weeks, respectively. Abnormal movements and deafness occurred only in rats treated during the preweaning period; within this period the greatest sensitivities for these abnormalities occurred from 2 to 11-17 and 5 to 11 days of age, respectively, indicating that the cochlea is more sensitive to streptomycin than the site (vestibular or central) responsible for the dyskinesias.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7444978_causative-agent_0000082#mention-T1",
+      "canon:span": {
+        "start": 40,
+        "end": 50
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Injury or Poisoning"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/19466003",
+      "canon:mappingProperty": "skos:closeMatch"
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7444978_causative-agent_0000082#mention-T2",
+      "canon:span": {
+        "start": 62,
+        "end": 74
+      },
+      "canon:surface": "streptomycin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "http://id.nlm.nih.gov/mesh/D013307",
+      "canon:sourceNotation": "D013307",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [
+        "Antibiotic",
+        "Organic Chemical"
+      ],
+      "canon:extra": {},
+      "canon:normalizedConcept": "http://snomed.info/id/387223008",
+      "canon:mappingProperty": "skos:closeMatch"
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7444978_causative-agent_0000082#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7444978_causative-agent_0000082#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_BC5CDR_7444978_causative-agent_0000082#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "BC5CDR",
+        "source_pmid": "7444978"
+      }
+    }
+  ]
+}

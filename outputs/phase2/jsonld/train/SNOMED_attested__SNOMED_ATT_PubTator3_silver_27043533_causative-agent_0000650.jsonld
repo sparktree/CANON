@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27043533_causative-agent_0000650",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_27043533_causative-agent_0000650",
+  "canon:title": "Hepatoprotective Effects of Chinese Medicinal Herbs: A Focus on Anti-Inflammatory and Anti-Oxidative Activities.",
+  "canon:abstract": "The liver is intimately connected to inflammation, which is the innate defense system of the body for removing harmful stimuli and participates in the hepatic wound-healing response. Sustained inflammation and the corresponding regenerative wound-healing response can induce the development of fibrosis, cirrhosis and eventually hepatocellular carcinoma. Oxidative stress is associated with the activation of inflammatory pathways, while chronic inflammation is found associated with some human cancers. Inflammation and cancer may be connected by the effect of the inflammation-fibrosis-cancer (IFC) axis. Chinese medicinal herbs display abilities in protecting the liver compared to conventional therapies, as many herbal medicines have been shown as effective anti-inflammatory and anti-oxidative agents. We review the relationship between oxidative stress and inflammation, the development of hepatic diseases, and the hepatoprotective effects of Chinese medicinal herbs via anti-inflammatory and anti-oxidative mechanisms. Moreover, several Chinese medicinal herbs and composite formulae, which have been commonly used for preventing and treating hepatic diseases, including Andrographis Herba, Glycyrrhizae Radix et Rhizoma, Ginseng Radix et Rhizoma, Lycii Fructus, Coptidis Rhizoma, curcumin, xiao-cha-hu-tang and shi-quan-da-bu-tang, were selected for reviewing their hepatoprotective effects with focus on their anti-oxidative and ant-inflammatory activities. This review aims to provide new insight into how Chinese medicinal herbs work in therapeutic strategies for liver diseases. ",
+  "canon:text": "Hepatoprotective Effects of Chinese Medicinal Herbs: A Focus on Anti-Inflammatory and Anti-Oxidative Activities. The liver is intimately connected to inflammation, which is the innate defense system of the body for removing harmful stimuli and participates in the hepatic wound-healing response. Sustained inflammation and the corresponding regenerative wound-healing response can induce the development of fibrosis, cirrhosis and eventually hepatocellular carcinoma. Oxidative stress is associated with the activation of inflammatory pathways, while chronic inflammation is found associated with some human cancers. Inflammation and cancer may be connected by the effect of the inflammation-fibrosis-cancer (IFC) axis. Chinese medicinal herbs display abilities in protecting the liver compared to conventional therapies, as many herbal medicines have been shown as effective anti-inflammatory and anti-oxidative agents. We review the relationship between oxidative stress and inflammation, the development of hepatic diseases, and the hepatoprotective effects of Chinese medicinal herbs via anti-inflammatory and anti-oxidative mechanisms. Moreover, several Chinese medicinal herbs and composite formulae, which have been commonly used for preventing and treating hepatic diseases, including Andrographis Herba, Glycyrrhizae Radix et Rhizoma, Ginseng Radix et Rhizoma, Lycii Fructus, Coptidis Rhizoma, curcumin, xiao-cha-hu-tang and shi-quan-da-bu-tang, were selected for reviewing their hepatoprotective effects with focus on their anti-oxidative and ant-inflammatory activities. This review aims to provide new insight into how Chinese medicinal herbs work in therapeutic strategies for liver diseases. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27043533_causative-agent_0000650#mention-T1",
+      "canon:span": {
+        "start": 1010,
+        "end": 1026
+      },
+      "canon:surface": "hepatic diseases",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27043533_causative-agent_0000650#mention-T2",
+      "canon:span": {
+        "start": 1403,
+        "end": 1411
+      },
+      "canon:surface": "curcumin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003474",
+      "canon:sourceNotation": "D003474",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27043533_causative-agent_0000650#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27043533_causative-agent_0000650#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27043533_causative-agent_0000650#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "27043533"
+      }
+    }
+  ]
+}

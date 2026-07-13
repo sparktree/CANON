@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362210_causative-agent_0001398",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34362210_causative-agent_0001398",
+  "canon:title": "Neurotransmitter Dysfunction in Irritable Bowel Syndrome: Emerging Approaches for Management.",
+  "canon:abstract": "Irritable bowel syndrome (IBS) is a functional gastrointestinal disorder whose aetiology is still unknown. Most hypotheses point out the gut-brain axis as a key factor for IBS. The axis is composed of different anatomic and functional structures intercommunicated through neurotransmitters. However, the implications of key neurotransmitters such as norepinephrine, serotonin, glutamate, GABA or acetylcholine in IBS are poorly studied. The aim of this review is to evaluate the current evidence about neurotransmitter dysfunction in IBS and explore the potential therapeutic approaches. IBS patients with altered colorectal motility show augmented norepinephrine and acetylcholine levels in plasma and an increased sensitivity of central serotonin receptors. A decrease of colonic mucosal serotonin transporter and a downregulation of alpha2 adrenoceptors are also correlated with visceral hypersensitivity and an increase of 5-hydroxyindole acetic acid levels, enhanced expression of high affinity choline transporter and lower levels of GABA. Given these neurotransmitter dysfunctions, novel pharmacological approaches such as 5-HT3 receptor antagonists and 5-HT4 receptor agonists are being explored for IBS management, for their antiemetic and prokinetic effects. GABA-analogous medications are being considered to reduce visceral pain. Moreover, agonists and antagonists of muscarinic receptors are under clinical trials. Targeting neurotransmitter dysfunction could provide promising new approaches for IBS management.",
+  "canon:text": "Neurotransmitter Dysfunction in Irritable Bowel Syndrome: Emerging Approaches for Management. Irritable bowel syndrome (IBS) is a functional gastrointestinal disorder whose aetiology is still unknown. Most hypotheses point out the gut-brain axis as a key factor for IBS. The axis is composed of different anatomic and functional structures intercommunicated through neurotransmitters. However, the implications of key neurotransmitters such as norepinephrine, serotonin, glutamate, GABA or acetylcholine in IBS are poorly studied. The aim of this review is to evaluate the current evidence about neurotransmitter dysfunction in IBS and explore the potential therapeutic approaches. IBS patients with altered colorectal motility show augmented norepinephrine and acetylcholine levels in plasma and an increased sensitivity of central serotonin receptors. A decrease of colonic mucosal serotonin transporter and a downregulation of alpha2 adrenoceptors are also correlated with visceral hypersensitivity and an increase of 5-hydroxyindole acetic acid levels, enhanced expression of high affinity choline transporter and lower levels of GABA. Given these neurotransmitter dysfunctions, novel pharmacological approaches such as 5-HT3 receptor antagonists and 5-HT4 receptor agonists are being explored for IBS management, for their antiemetic and prokinetic effects. GABA-analogous medications are being considered to reduce visceral pain. Moreover, agonists and antagonists of muscarinic receptors are under clinical trials. Targeting neurotransmitter dysfunction could provide promising new approaches for IBS management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362210_causative-agent_0001398#mention-T1",
+      "canon:span": {
+        "start": 976,
+        "end": 1001
+      },
+      "canon:surface": "visceral hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362210_causative-agent_0001398#mention-T2",
+      "canon:span": {
+        "start": 444,
+        "end": 458
+      },
+      "canon:surface": "norepinephrine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009638",
+      "canon:sourceNotation": "D009638",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362210_causative-agent_0001398#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362210_causative-agent_0001398#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34362210_causative-agent_0001398#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34362210"
+      }
+    }
+  ]
+}

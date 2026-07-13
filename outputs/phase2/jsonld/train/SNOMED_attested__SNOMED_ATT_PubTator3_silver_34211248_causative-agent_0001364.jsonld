@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34211248_causative-agent_0001364",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_34211248_causative-agent_0001364",
+  "canon:title": "Managing medicines in alcohol-associated liver disease: a practical review.",
+  "canon:abstract": "People with alcohol-associated liver disease often take medicines to manage complications of liver disease and comorbidities. However, patients may be at increased risk of drug-related harm Assessing the severity of liver disease is fundamental to management, as disease staging (steatosis, early fibrosis, cirrhosis) affects medication safety and guides treatment While clinically significant pharmacokinetic and pharmacodynamic changes predominantly occur in cirrhosis, people with early alcohol-associated liver disease may still experience adverse events with potentially inappropriate medicines such as proton pump inhibitors, opioids and benzodiazepines Regular medication review is essential to ensure ongoing appropriateness and safety Alcoholic hepatitis and cirrhosis require specialist gastroenterology or hepatology management. However, general practitioners will remain the cornerstone of day-to-day medication management.",
+  "canon:text": "Managing medicines in alcohol-associated liver disease: a practical review. People with alcohol-associated liver disease often take medicines to manage complications of liver disease and comorbidities. However, patients may be at increased risk of drug-related harm Assessing the severity of liver disease is fundamental to management, as disease staging (steatosis, early fibrosis, cirrhosis) affects medication safety and guides treatment While clinically significant pharmacokinetic and pharmacodynamic changes predominantly occur in cirrhosis, people with early alcohol-associated liver disease may still experience adverse events with potentially inappropriate medicines such as proton pump inhibitors, opioids and benzodiazepines Regular medication review is essential to ensure ongoing appropriateness and safety Alcoholic hepatitis and cirrhosis require specialist gastroenterology or hepatology management. However, general practitioners will remain the cornerstone of day-to-day medication management.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34211248_causative-agent_0001364#mention-T1",
+      "canon:span": {
+        "start": 566,
+        "end": 574
+      },
+      "canon:surface": "alcohol-",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34211248_causative-agent_0001364#mention-T2",
+      "canon:span": {
+        "start": 720,
+        "end": 735
+      },
+      "canon:surface": "benzodiazepines",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001569",
+      "canon:sourceNotation": "D001569",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34211248_causative-agent_0001364#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34211248_causative-agent_0001364#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_34211248_causative-agent_0001364#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "34211248"
+      }
+    }
+  ]
+}

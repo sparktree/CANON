@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28363516_causative-agent_0000735",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_28363516_causative-agent_0000735",
+  "canon:title": "Vascular disease in cocaine addiction.",
+  "canon:abstract": "Cocaine, a powerful vasoconstrictor, induces immune responses including cytokine elevations. Chronic cocaine use is associated with functional brain impairments potentially mediated by vascular pathology. Although the Crack-Cocaine epidemic has declined, its vascular consequences are increasingly becoming evident among individuals with cocaine use disorder of that period, now aging. Paradoxically, during the period when prevention efforts could make a difference, this population receives psychosocial treatment at best. We review major postmortem and in vitro studies documenting cocaine-induced vascular toxicity. PubMed and Academic Search Complete were used with relevant terms. Findings consist of the major mechanisms of cocaine-induced vasoconstriction, endothelial dysfunction, and accelerated atherosclerosis, emphasizing acute, chronic, and secondary effects of cocaine. The etiology underlying cocaine's acute and chronic vascular effects is multifactorial, spanning hypertension, impaired homeostasis and platelet function, thrombosis, thromboembolism, and alterations in blood flow. Early detection of vascular disease in cocaine addiction by multimodality imaging is discussed. Treatment may be similar to indications in patients with traditional risk-factors, with few exceptions such as enhanced supportive care and use of benzodiazepines and phentolamine for sedation, and avoiding beta-blockers. Given the vascular toxicity cocaine induces, further compounded by smoking and alcohol comorbidity, and interacting with aging of the crack generation, there is a public health imperative to identify pre-symptomatic markers of vascular impairments in cocaine addiction and employ preventive treatment to reduce silent disease progression.",
+  "canon:text": "Vascular disease in cocaine addiction. Cocaine, a powerful vasoconstrictor, induces immune responses including cytokine elevations. Chronic cocaine use is associated with functional brain impairments potentially mediated by vascular pathology. Although the Crack-Cocaine epidemic has declined, its vascular consequences are increasingly becoming evident among individuals with cocaine use disorder of that period, now aging. Paradoxically, during the period when prevention efforts could make a difference, this population receives psychosocial treatment at best. We review major postmortem and in vitro studies documenting cocaine-induced vascular toxicity. PubMed and Academic Search Complete were used with relevant terms. Findings consist of the major mechanisms of cocaine-induced vasoconstriction, endothelial dysfunction, and accelerated atherosclerosis, emphasizing acute, chronic, and secondary effects of cocaine. The etiology underlying cocaine's acute and chronic vascular effects is multifactorial, spanning hypertension, impaired homeostasis and platelet function, thrombosis, thromboembolism, and alterations in blood flow. Early detection of vascular disease in cocaine addiction by multimodality imaging is discussed. Treatment may be similar to indications in patients with traditional risk-factors, with few exceptions such as enhanced supportive care and use of benzodiazepines and phentolamine for sedation, and avoiding beta-blockers. Given the vascular toxicity cocaine induces, further compounded by smoking and alcohol comorbidity, and interacting with aging of the crack generation, there is a public health imperative to identify pre-symptomatic markers of vascular impairments in cocaine addiction and employ preventive treatment to reduce silent disease progression.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28363516_causative-agent_0000735#mention-T1",
+      "canon:span": {
+        "start": 20,
+        "end": 37
+      },
+      "canon:surface": "cocaine addiction",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28363516_causative-agent_0000735#mention-T2",
+      "canon:span": {
+        "start": 1382,
+        "end": 1397
+      },
+      "canon:surface": "benzodiazepines",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D001569",
+      "canon:sourceNotation": "D001569",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28363516_causative-agent_0000735#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28363516_causative-agent_0000735#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_28363516_causative-agent_0000735#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "28363516"
+      }
+    }
+  ]
+}

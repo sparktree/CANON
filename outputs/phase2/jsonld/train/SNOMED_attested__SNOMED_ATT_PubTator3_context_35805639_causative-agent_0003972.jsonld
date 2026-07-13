@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805639_causative-agent_0003972",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35805639_causative-agent_0003972",
+  "canon:title": "Cutaneous Adverse Drug Reactions (CADRs)-Statistical Analysis of the Causal Relationship between the Drug, Comorbidities, Cofactors, and the Cutaneous Reaction-A Single-Centered Study.",
+  "canon:abstract": "Cutaneous adverse drug reactions (CADRs) are among the most common types of drug hypersensitivity reactions. The purpose of this study was to evaluate the clinical spectrum of CADRs and to determine the causal relationship between drugs, comorbidities, cofactors or concomitant symptoms, and cutaneous reactions. A retrospective hospital-based study was carried out over a period of 10 years at the Department of Dermatology, Sexually Transmitted Diseases and Clinical Immunology at the University of Warmia and Mazury in Olsztyn to record various CADRs, comorbidities, cofactors, and the suspected drug in hospitalized patients. The data were subjected to statistical analysis. CADRs were diagnosed in a total of 140 patients, 32.14% of whom were men and 67.86% of whom were women. The mean age was 66.33 years. The most commonly suspected drugs were Allopurinol 12.86%, Amoxicillin with clavulanic acid 10%, Amoxicillin 9.29%, Paracetamol 6.43%, Metronidazole 5%, and Carbamazepine 5%. Attention should be paid to the possibility of using a substitute for a suspected drug if CADRs arise, or discontinuing a drug that is unjustifiably overused. The results of the present study should also prompt research into a potential treatment that could be implemented concurrently with a drug that has a high predisposition to cause CADRs.",
+  "canon:text": "Cutaneous Adverse Drug Reactions (CADRs)-Statistical Analysis of the Causal Relationship between the Drug, Comorbidities, Cofactors, and the Cutaneous Reaction-A Single-Centered Study. Cutaneous adverse drug reactions (CADRs) are among the most common types of drug hypersensitivity reactions. The purpose of this study was to evaluate the clinical spectrum of CADRs and to determine the causal relationship between drugs, comorbidities, cofactors or concomitant symptoms, and cutaneous reactions. A retrospective hospital-based study was carried out over a period of 10 years at the Department of Dermatology, Sexually Transmitted Diseases and Clinical Immunology at the University of Warmia and Mazury in Olsztyn to record various CADRs, comorbidities, cofactors, and the suspected drug in hospitalized patients. The data were subjected to statistical analysis. CADRs were diagnosed in a total of 140 patients, 32.14% of whom were men and 67.86% of whom were women. The mean age was 66.33 years. The most commonly suspected drugs were Allopurinol 12.86%, Amoxicillin with clavulanic acid 10%, Amoxicillin 9.29%, Paracetamol 6.43%, Metronidazole 5%, and Carbamazepine 5%. Attention should be paid to the possibility of using a substitute for a suspected drug if CADRs arise, or discontinuing a drug that is unjustifiably overused. The results of the present study should also prompt research into a potential treatment that could be implemented concurrently with a drug that has a high predisposition to cause CADRs.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805639_causative-agent_0003972#mention-T1",
+      "canon:span": {
+        "start": 261,
+        "end": 282
+      },
+      "canon:surface": "drug hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805639_causative-agent_0003972#mention-T2",
+      "canon:span": {
+        "start": 1095,
+        "end": 1106
+      },
+      "canon:surface": "Amoxicillin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000658",
+      "canon:sourceNotation": "D000658",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805639_causative-agent_0003972#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805639_causative-agent_0003972#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35805639_causative-agent_0003972#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35805639"
+      }
+    }
+  ]
+}

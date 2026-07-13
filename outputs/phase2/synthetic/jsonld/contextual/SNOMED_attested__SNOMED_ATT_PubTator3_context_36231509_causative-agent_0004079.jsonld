@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36231509_causative-agent_0004079",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36231509_causative-agent_0004079",
+  "canon:title": "Chlorpyrifos Occurrence and Toxicological Risk Assessment: A Review.",
+  "canon:abstract": "Chlorpyrifos (CPF) was the most frequently used pesticide in food production in the European Union (EU) until 2020. Unfortunately, this compound is still being applied in other parts of the world. National monitoring of pesticides conducted in various countries indicates the presence of CPF in soil, food, and water, which may have toxic effects on consumers, farmers, and animal health. In addition, CPF may influence changes in the population of fungi, bacteria, and actinomycete in soil and can inhibit nitrogen mineralization. The mechanisms of CPF activity are based on the inhibition of acetylcholinesterase (AChE) activity. This compound also exhibits reproductive toxicity, neurotoxicity, and genotoxicity. The problem seems to be the discrepancy between the actual observations and the final conclusions drawn for the substance's approval in reports presenting the toxic impact of CPF on human health. Therefore, this influence is still a current and important issue that requires continuous monitoring despite its withdrawal from the market in the EU. This review traces the scientific reports describing the effects of CPF resulting in changes occurring in both the environment and at the cellular and tissue level in humans and animals. It also provides an insight into the hazards and risks to human health in food consumer products in which CPF has been detected.",
+  "canon:text": "Chlorpyrifos Occurrence and Toxicological Risk Assessment: A Review. Chlorpyrifos (CPF) was the most frequently used pesticide in food production in the European Union (EU) until 2020. Unfortunately, this compound is still being applied in other parts of the world. National monitoring of pesticides conducted in various countries indicates the presence of CPF in soil, food, and water, which may have toxic effects on consumers, farmers, and animal health. In addition, CPF may influence changes in the population of fungi, bacteria, and actinomycete in soil and can inhibit nitrogen mineralization. The mechanisms of CPF activity are based on the inhibition of acetylcholinesterase (AChE) activity. This compound also exhibits reproductive toxicity, neurotoxicity, and genotoxicity. The problem seems to be the discrepancy between the actual observations and the final conclusions drawn for the substance's approval in reports presenting the toxic impact of CPF on human health. Therefore, this influence is still a current and important issue that requires continuous monitoring despite its withdrawal from the market in the EU. This review traces the scientific reports describing the effects of CPF resulting in changes occurring in both the environment and at the cellular and tissue level in humans and animals. It also provides an insight into the hazards and risks to human health in food consumer products in which CPF has been detected.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36231509_causative-agent_0004079#mention-T1",
+      "canon:span": {
+        "start": 752,
+        "end": 765
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36231509_causative-agent_0004079#mention-T2",
+      "canon:span": {
+        "start": 576,
+        "end": 584
+      },
+      "canon:surface": "nitrogen",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D009584",
+      "canon:sourceNotation": "D009584",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36231509_causative-agent_0004079#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36231509_causative-agent_0004079#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36231509_causative-agent_0004079#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36231509"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36555256_causative-agent_0001836",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36555256_causative-agent_0001836",
+  "canon:title": "Natural Taxanes: From Plant Composition to Human Pharmacology and Toxicity.",
+  "canon:abstract": "Biologically active taxanes, present in small- to medium-sized evergreen conifers of various Taxus species, are widely used for their antioxidant, antimicrobial and anti-inflammatory effects, but mostly for their antitumour effects used in the treatment of solid tumours of the breast, ovary, lung, bladder, prostate, oesophagus and melanoma. More of the substances found in Taxus plant extracts have medical potential. Therefore, at the beginning of this review, we describe the methods of isolation, identification and determination of taxanes in different plant parts. One of the most important taxanes is paclitaxel, for which we summarize the pharmacokinetic parameters of its different formulations. We also describe toxicological risks during clinical therapy such as hypersensitivity, neurotoxicity, gastrointestinal, cardiovascular, haematological, skin and renal toxicity and toxicity to the respiratory system. Since the effect of the drug-form PTX is enhanced by various Taxus spp. extracts, we summarize published clinical intoxications and all fatal poisonings for the Taxus baccata plant. This showed that, despite their significant use in anticancer treatment, attention should also be focused on the risk of fatal intoxication due to ingestion of extracts from these plants, which are commonly found in our surroundings.",
+  "canon:text": "Natural Taxanes: From Plant Composition to Human Pharmacology and Toxicity. Biologically active taxanes, present in small- to medium-sized evergreen conifers of various Taxus species, are widely used for their antioxidant, antimicrobial and anti-inflammatory effects, but mostly for their antitumour effects used in the treatment of solid tumours of the breast, ovary, lung, bladder, prostate, oesophagus and melanoma. More of the substances found in Taxus plant extracts have medical potential. Therefore, at the beginning of this review, we describe the methods of isolation, identification and determination of taxanes in different plant parts. One of the most important taxanes is paclitaxel, for which we summarize the pharmacokinetic parameters of its different formulations. We also describe toxicological risks during clinical therapy such as hypersensitivity, neurotoxicity, gastrointestinal, cardiovascular, haematological, skin and renal toxicity and toxicity to the respiratory system. Since the effect of the drug-form PTX is enhanced by various Taxus spp. extracts, we summarize published clinical intoxications and all fatal poisonings for the Taxus baccata plant. This showed that, despite their significant use in anticancer treatment, attention should also be focused on the risk of fatal intoxication due to ingestion of extracts from these plants, which are commonly found in our surroundings.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36555256_causative-agent_0001836#mention-T1",
+      "canon:span": {
+        "start": 851,
+        "end": 867
+      },
+      "canon:surface": "hypersensitivity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36555256_causative-agent_0001836#mention-T2",
+      "canon:span": {
+        "start": 685,
+        "end": 695
+      },
+      "canon:surface": "paclitaxel",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D017239",
+      "canon:sourceNotation": "D017239",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36555256_causative-agent_0001836#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36555256_causative-agent_0001836#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36555256_causative-agent_0001836#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36555256"
+      }
+    }
+  ]
+}

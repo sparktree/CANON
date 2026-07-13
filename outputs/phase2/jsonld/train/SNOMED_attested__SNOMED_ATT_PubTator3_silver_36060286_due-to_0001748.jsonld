@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36060286_due-to_0001748",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36060286_due-to_0001748",
+  "canon:title": "Lipid oxidation in pathophysiology of atherosclerosis: Current understanding and therapeutic strategies.",
+  "canon:abstract": "A marked increase in the global prevalence of ischemic heart disease demands focused research for novel and more effective therapeutic strategies. At present, atherosclerotic cardiovascular disease (ACVD) is the leading cause of the global incidence of heart attacks and a major contributor to many peripheral cardiac diseases. Decades of research have unearthed the complex and multidimensional pathophysiology of ACVD encompassing oxidative stress, redox imbalance, lipid peroxidation, pro-inflammatory signaling, hyperglycemic stress and diabetes mellitus, chronic low-grade inflammation and aging, immune dysregulation, vascular dysfunction, loss of hemostasis, thrombosis, and fluid shear stress. However, the scientific basis of therapeutic interventions using conventional understandings of the disease mechanisms has been subject to renewed scrutiny with novel findings in recent years. This critical review attempts to revise the pathophysiological mechanisms of atherosclerosis using a recent body of literature, with a focus on lipid metabolism and associated cellular and biochemical processes. The comprehensive study encompasses different molecular perspectives in the development and progression of coronary atherosclerosis. The review also summarizes currently prescribed small molecule therapeutics in inflammation and ACVD, and overviews prospective management measures under development including peptides and microRNA therapeutics. The study provides updated insights into the current knowledge of coronary atherosclerosis, and highlights the need for effective prevention, management and development of novel intervention approaches to overcome this chronic epidemic.",
+  "canon:text": "Lipid oxidation in pathophysiology of atherosclerosis: Current understanding and therapeutic strategies. A marked increase in the global prevalence of ischemic heart disease demands focused research for novel and more effective therapeutic strategies. At present, atherosclerotic cardiovascular disease (ACVD) is the leading cause of the global incidence of heart attacks and a major contributor to many peripheral cardiac diseases. Decades of research have unearthed the complex and multidimensional pathophysiology of ACVD encompassing oxidative stress, redox imbalance, lipid peroxidation, pro-inflammatory signaling, hyperglycemic stress and diabetes mellitus, chronic low-grade inflammation and aging, immune dysregulation, vascular dysfunction, loss of hemostasis, thrombosis, and fluid shear stress. However, the scientific basis of therapeutic interventions using conventional understandings of the disease mechanisms has been subject to renewed scrutiny with novel findings in recent years. This critical review attempts to revise the pathophysiological mechanisms of atherosclerosis using a recent body of literature, with a focus on lipid metabolism and associated cellular and biochemical processes. The comprehensive study encompasses different molecular perspectives in the development and progression of coronary atherosclerosis. The review also summarizes currently prescribed small molecule therapeutics in inflammation and ACVD, and overviews prospective management measures under development including peptides and microRNA therapeutics. The study provides updated insights into the current knowledge of coronary atherosclerosis, and highlights the need for effective prevention, management and development of novel intervention approaches to overcome this chronic epidemic.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36060286_due-to_0001748#mention-T1",
+      "canon:span": {
+        "start": 621,
+        "end": 634
+      },
+      "canon:surface": "hyperglycemic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006944",
+      "canon:sourceNotation": "D006944",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36060286_due-to_0001748#mention-T2",
+      "canon:span": {
+        "start": 646,
+        "end": 663
+      },
+      "canon:surface": "diabetes mellitus",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36060286_due-to_0001748#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36060286_due-to_0001748#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36060286_due-to_0001748#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36060286"
+      }
+    }
+  ]
+}

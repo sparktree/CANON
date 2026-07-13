@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36656308_due-to_0001846",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_36656308_due-to_0001846",
+  "canon:title": "Ferroptosis as a potential new therapeutic target for diabetes and its complications.",
+  "canon:abstract": "Diabetes is a complex metabolic disease. In recent years, diabetes and its chronic complications have become a health hotspot of global concern. It is very important to find promising therapeutic targets and directions. Ferroptosis is a new type of programmed cell death that is different from cell necrosis, apoptosis, and autophagy. Ferroptosis is mainly characterized by iron-dependent lipid peroxidation. With the reduction of the anti-oxidative capacity of cells, the accumulated reactive lipid oxygen species will cause oxidative cell death and lead to ferroptosis at lethal levels. Recent studies have shown that ferroptosis plays an important regulatory role in the initiation and development of diabetes, as well as various complications of diabetes. In this review, we will summarize new findings related to ferroptosis and diabetic complications and propose ferroptosis as a potential target for treating diabetic complications.",
+  "canon:text": "Ferroptosis as a potential new therapeutic target for diabetes and its complications. Diabetes is a complex metabolic disease. In recent years, diabetes and its chronic complications have become a health hotspot of global concern. It is very important to find promising therapeutic targets and directions. Ferroptosis is a new type of programmed cell death that is different from cell necrosis, apoptosis, and autophagy. Ferroptosis is mainly characterized by iron-dependent lipid peroxidation. With the reduction of the anti-oxidative capacity of cells, the accumulated reactive lipid oxygen species will cause oxidative cell death and lead to ferroptosis at lethal levels. Recent studies have shown that ferroptosis plays an important regulatory role in the initiation and development of diabetes, as well as various complications of diabetes. In this review, we will summarize new findings related to ferroptosis and diabetic complications and propose ferroptosis as a potential target for treating diabetic complications.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36656308_due-to_0001846#mention-T1",
+      "canon:span": {
+        "start": 920,
+        "end": 942
+      },
+      "canon:surface": "diabetic complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36656308_due-to_0001846#mention-T2",
+      "canon:span": {
+        "start": 54,
+        "end": 62
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36656308_due-to_0001846#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36656308_due-to_0001846#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_36656308_due-to_0001846#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "36656308"
+      }
+    }
+  ]
+}

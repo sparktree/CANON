@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19833324_causative-agent_0002209",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_19833324_causative-agent_0002209",
+  "canon:title": "The influence of GABRA2, childhood trauma, and their interaction on alcohol, heroin, and cocaine dependence.",
+  "canon:abstract": "BACKGROUND: The GABRA2 gene has been implicated in addiction. Early life stress has been shown to alter GABRA2 expression in adult rodents. We hypothesized that childhood trauma, GABRA2 variation, and their interaction would influence addiction vulnerability. METHODS: African-American men were recruited for this study: 577 patients with lifetime DSM-IV single and comorbid diagnoses of alcohol, cocaine, and heroin dependence, and 255 control subjects. The Childhood Trauma Questionnaire (CTQ) was administered. Ten GABRA2 haplotype-tagging single-nucleotide polymorphisms (SNPs) were genotyped. RESULTS: We found that exposure to childhood trauma predicted substance dependence (p < .0001). Polysubstance dependence was associated with the highest CTQ scores (p < .0001). The African Americans had four common haplotypes (frequency: .11-.30) within the distal haplotype block: two that correspond to the Caucasian and Asian yin-yang haplotypes, and two not found in other ethnic groups. One of the unique haplotypes predicted heroin addiction, whereas the other haplotype was more common in control subjects and seemed to confer resilience to addiction after exposure to severe childhood trauma. The yin-yang haplotypes had no effects. Moreover, the intron 2 SNP rs11503014, not located in any haplotype block and potentially implicated in exon splicing, was independently associated with addiction, specifically heroin addiction (p < .005). Childhood trauma interacted with rs11503014 variation to influence addiction vulnerability, particularly to cocaine (p < .005). CONCLUSIONS: Our results suggest that at least in African-American men, childhood trauma, GABRA2 variation, and their interaction play a role in risk-resilience for substance dependence.",
+  "canon:text": "The influence of GABRA2, childhood trauma, and their interaction on alcohol, heroin, and cocaine dependence. BACKGROUND: The GABRA2 gene has been implicated in addiction. Early life stress has been shown to alter GABRA2 expression in adult rodents. We hypothesized that childhood trauma, GABRA2 variation, and their interaction would influence addiction vulnerability. METHODS: African-American men were recruited for this study: 577 patients with lifetime DSM-IV single and comorbid diagnoses of alcohol, cocaine, and heroin dependence, and 255 control subjects. The Childhood Trauma Questionnaire (CTQ) was administered. Ten GABRA2 haplotype-tagging single-nucleotide polymorphisms (SNPs) were genotyped. RESULTS: We found that exposure to childhood trauma predicted substance dependence (p < .0001). Polysubstance dependence was associated with the highest CTQ scores (p < .0001). The African Americans had four common haplotypes (frequency: .11-.30) within the distal haplotype block: two that correspond to the Caucasian and Asian yin-yang haplotypes, and two not found in other ethnic groups. One of the unique haplotypes predicted heroin addiction, whereas the other haplotype was more common in control subjects and seemed to confer resilience to addiction after exposure to severe childhood trauma. The yin-yang haplotypes had no effects. Moreover, the intron 2 SNP rs11503014, not located in any haplotype block and potentially implicated in exon splicing, was independently associated with addiction, specifically heroin addiction (p < .005). Childhood trauma interacted with rs11503014 variation to influence addiction vulnerability, particularly to cocaine (p < .005). CONCLUSIONS: Our results suggest that at least in African-American men, childhood trauma, GABRA2 variation, and their interaction play a role in risk-resilience for substance dependence.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19833324_causative-agent_0002209#mention-T1",
+      "canon:span": {
+        "start": 89,
+        "end": 107
+      },
+      "canon:surface": "cocaine dependence",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19833324_causative-agent_0002209#mention-T2",
+      "canon:span": {
+        "start": 1662,
+        "end": 1669
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19833324_causative-agent_0002209#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19833324_causative-agent_0002209#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_19833324_causative-agent_0002209#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "19833324"
+      }
+    }
+  ]
+}

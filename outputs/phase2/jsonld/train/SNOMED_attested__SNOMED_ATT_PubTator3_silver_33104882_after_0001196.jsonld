@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33104882_after_0001196",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33104882_after_0001196",
+  "canon:title": "Micronutrients: Essential Treatment for Inflammatory Arthritis?",
+  "canon:abstract": "PURPOSE OF REVIEW: Synovial inflammation is characteristic of inflammatory chronic arthropathies and can cause progressive articular damage, chronic pain, and functional loss. Scientific research has increasingly focused on investigating anti-inflammatory micronutrients present in fruits, vegetables, spices, seeds, tea, and wine. This review aims to examine the anti-inflammatory effect of polyphenols (phytonutrients present in plants) and other micronutrients described in randomized clinical trials conducted in patients with chronic inflammatory arthropathies. RECENT FINDINGS: There is an increasing evidence that differences in micronutrient intake might play an essential role in pathogenesis, therapeutic response, and remission of synovitis. Randomized clinical trials with specific micronutrient- or nutrient-enriched food intake show improvement of symptoms and modulation of both pro- and anti-inflammatory mediators. We found convincing evidence of the anti-inflammatory effect of several micronutrients in arthritis symptoms and inflammation. Although in clinical practice nutritional recommendations to patients with chronic joint inflammation are not consistently prescribed, the addition of these nutrients to day-to-day eating habits could potentially change the natural history of inflammatory arthritis. Future research is needed for a consensus on the specific nutritional recommendations for patients with chronic synovial inflammation.",
+  "canon:text": "Micronutrients: Essential Treatment for Inflammatory Arthritis? PURPOSE OF REVIEW: Synovial inflammation is characteristic of inflammatory chronic arthropathies and can cause progressive articular damage, chronic pain, and functional loss. Scientific research has increasingly focused on investigating anti-inflammatory micronutrients present in fruits, vegetables, spices, seeds, tea, and wine. This review aims to examine the anti-inflammatory effect of polyphenols (phytonutrients present in plants) and other micronutrients described in randomized clinical trials conducted in patients with chronic inflammatory arthropathies. RECENT FINDINGS: There is an increasing evidence that differences in micronutrient intake might play an essential role in pathogenesis, therapeutic response, and remission of synovitis. Randomized clinical trials with specific micronutrient- or nutrient-enriched food intake show improvement of symptoms and modulation of both pro- and anti-inflammatory mediators. We found convincing evidence of the anti-inflammatory effect of several micronutrients in arthritis symptoms and inflammation. Although in clinical practice nutritional recommendations to patients with chronic joint inflammation are not consistently prescribed, the addition of these nutrients to day-to-day eating habits could potentially change the natural history of inflammatory arthritis. Future research is needed for a consensus on the specific nutritional recommendations for patients with chronic synovial inflammation.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33104882_after_0001196#mention-T1",
+      "canon:span": {
+        "start": 187,
+        "end": 203
+      },
+      "canon:surface": "articular damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012213",
+      "canon:sourceNotation": "D012213",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33104882_after_0001196#mention-T2",
+      "canon:span": {
+        "start": 40,
+        "end": 62
+      },
+      "canon:surface": "Inflammatory Arthritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D001168",
+      "canon:sourceNotation": "D001168",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33104882_after_0001196#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33104882_after_0001196#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33104882_after_0001196#mention-T2"
+      },
+      "canon:sourceRelation": "after",
+      "canon:relation": "https://canon.iu.edu/ns#after",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#after",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33104882"
+      }
+    }
+  ]
+}

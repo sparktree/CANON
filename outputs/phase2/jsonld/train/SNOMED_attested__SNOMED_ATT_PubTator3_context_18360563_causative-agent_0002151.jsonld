@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18360563_causative-agent_0002151",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_18360563_causative-agent_0002151",
+  "canon:title": "Gastrointestinal bleeding and massive liver damage in neuroleptic malignant syndrome.",
+  "canon:abstract": "BACKGROUND: Neuroleptic malignant syndrome (NMS) is a rare side effect of antipsychotic therapy characterized by fever, muscular rigidity, altered mental status, increased level of serum creatinine phosphokinase, and increased number of white blood cells. The mortality rate of patients with NMS remains elevated. METHODS: We examined the clinical records of patients diagnosed with severe NMS admitted to the Clinical Toxicology Unit, Florence University Hospital, between 1990 and 2004. RESULTS: Eight patients presented with this neurological disorder. All were treated with supportive therapy, which included dantrolene, levodopa/benserazide, benzodiazepines, metamizole and/or paracetamol, and antibiotics. Five survived and three died. Of the three deceased, two had large hemorrhages in the gastrointestinal tract, and one had massive liver damage and diffuse hemorrhages throughout the body. CONCLUSION: Our results suggest that gastrointestinal bleeding is a frequent cause of death in NMS patients. Bleeding may occur as a consequence of commonly accepted medical treatments (especially the use of cyclooxygenase inhibitors as antipyretic agents) and NMS-induced changes in blood coagulation status. To increase the survival rate of these patients, it is necessary to avoid using drugs that may facilitate gastrointestinal lesions and to utilize procedures known to decrease the risk of bleeding.",
+  "canon:text": "Gastrointestinal bleeding and massive liver damage in neuroleptic malignant syndrome. BACKGROUND: Neuroleptic malignant syndrome (NMS) is a rare side effect of antipsychotic therapy characterized by fever, muscular rigidity, altered mental status, increased level of serum creatinine phosphokinase, and increased number of white blood cells. The mortality rate of patients with NMS remains elevated. METHODS: We examined the clinical records of patients diagnosed with severe NMS admitted to the Clinical Toxicology Unit, Florence University Hospital, between 1990 and 2004. RESULTS: Eight patients presented with this neurological disorder. All were treated with supportive therapy, which included dantrolene, levodopa/benserazide, benzodiazepines, metamizole and/or paracetamol, and antibiotics. Five survived and three died. Of the three deceased, two had large hemorrhages in the gastrointestinal tract, and one had massive liver damage and diffuse hemorrhages throughout the body. CONCLUSION: Our results suggest that gastrointestinal bleeding is a frequent cause of death in NMS patients. Bleeding may occur as a consequence of commonly accepted medical treatments (especially the use of cyclooxygenase inhibitors as antipyretic agents) and NMS-induced changes in blood coagulation status. To increase the survival rate of these patients, it is necessary to avoid using drugs that may facilitate gastrointestinal lesions and to utilize procedures known to decrease the risk of bleeding.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18360563_causative-agent_0002151#mention-T1",
+      "canon:span": {
+        "start": 38,
+        "end": 50
+      },
+      "canon:surface": "liver damage",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18360563_causative-agent_0002151#mention-T2",
+      "canon:span": {
+        "start": 699,
+        "end": 709
+      },
+      "canon:surface": "dantrolene",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003620",
+      "canon:sourceNotation": "D003620",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18360563_causative-agent_0002151#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18360563_causative-agent_0002151#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_18360563_causative-agent_0002151#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "18360563"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32613381_causative-agent_0001138",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_32613381_causative-agent_0001138",
+  "canon:title": "Human hepatic in vitro models reveal distinct anti-NASH potencies of PPAR agonists.",
+  "canon:abstract": "Non-alcoholic steatohepatitis (NASH) is a highly prevalent, chronic liver disease characterized by hepatic lipid accumulation, inflammation, and concomitant fibrosis. Up to date, no anti-NASH drugs have been approved. In this study, we reproduced key NASH characteristics in vitro by exposing primary human hepatocytes (PHH), human skin stem cell-derived hepatic cells (hSKP-HPC), HepaRG and HepG2 cell lines, as well as LX-2 cells to multiple factors that play a role in the onset of NASH. The obtained in vitro disease models showed intracellular lipid accumulation, secretion of inflammatory chemokines, induced ATP content, apoptosis, and increased pro-fibrotic gene expression. These cell systems were then used to evaluate the anti-NASH properties of eight peroxisome proliferator-activated receptor (PPAR) agonists (bezafibrate, elafibranor, fenofibrate, lanifibranor, pemafibrate, pioglitazone, rosiglitazone, and saroglitazar). PPAR agonists differently attenuated lipid accumulation, inflammatory chemokine secretion, and pro-fibrotic gene expression.Based on the obtained readouts, a scoring system was developed to grade the anti-NASH potencies. The in vitro scoring system, based on a battery of the most performant models, namely PHH, hSKP-HPC, and LX-2 cultures, showed that elafibranor, followed by saroglitazar and pioglitazone, induced the strongest anti-NASH effects. These data corroborate available clinical data and show the relevance of these in vitro models for the preclinical investigation of anti-NASH compounds.",
+  "canon:text": "Human hepatic in vitro models reveal distinct anti-NASH potencies of PPAR agonists. Non-alcoholic steatohepatitis (NASH) is a highly prevalent, chronic liver disease characterized by hepatic lipid accumulation, inflammation, and concomitant fibrosis. Up to date, no anti-NASH drugs have been approved. In this study, we reproduced key NASH characteristics in vitro by exposing primary human hepatocytes (PHH), human skin stem cell-derived hepatic cells (hSKP-HPC), HepaRG and HepG2 cell lines, as well as LX-2 cells to multiple factors that play a role in the onset of NASH. The obtained in vitro disease models showed intracellular lipid accumulation, secretion of inflammatory chemokines, induced ATP content, apoptosis, and increased pro-fibrotic gene expression. These cell systems were then used to evaluate the anti-NASH properties of eight peroxisome proliferator-activated receptor (PPAR) agonists (bezafibrate, elafibranor, fenofibrate, lanifibranor, pemafibrate, pioglitazone, rosiglitazone, and saroglitazar). PPAR agonists differently attenuated lipid accumulation, inflammatory chemokine secretion, and pro-fibrotic gene expression.Based on the obtained readouts, a scoring system was developed to grade the anti-NASH potencies. The in vitro scoring system, based on a battery of the most performant models, namely PHH, hSKP-HPC, and LX-2 cultures, showed that elafibranor, followed by saroglitazar and pioglitazone, induced the strongest anti-NASH effects. These data corroborate available clinical data and show the relevance of these in vitro models for the preclinical investigation of anti-NASH compounds.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32613381_causative-agent_0001138#mention-T1",
+      "canon:span": {
+        "start": 6,
+        "end": 13
+      },
+      "canon:surface": "hepatic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32613381_causative-agent_0001138#mention-T2",
+      "canon:span": {
+        "start": 699,
+        "end": 702
+      },
+      "canon:surface": "ATP",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000255",
+      "canon:sourceNotation": "D000255",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32613381_causative-agent_0001138#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32613381_causative-agent_0001138#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_32613381_causative-agent_0001138#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "32613381"
+      }
+    }
+  ]
+}

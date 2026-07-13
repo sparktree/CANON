@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35056765_due-to_0003769",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35056765_due-to_0003769",
+  "canon:title": "A Systematic Review of Orthosiphon stamineus Benth. in the Treatment of Diabetes and Its Complications.",
+  "canon:abstract": "(1) Background: Orthosiphon stamineus Benth. is a traditional medicine used in the treatment of diabetes and chronic renal failure in southern China, Malaysia, and Thailand. Diabetes is a chronic metabolic disease and the number of diabetic patients in the world is increasing. This review aimed to systematically review the effects of O. stamineus in the treatment of diabetes and its complications and the pharmacodynamic material basis. (2) Methods: This systematic review was conducted following Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA), using the databases ScienceDirect, PubMed, and Web of Science. (3) Results: Thirty-one articles related to O. stamineus and diabetes were included. The mechanisms of O. stamineus in the treatment of diabetes and its complications mainly included inhibiting alpha-amylase and alpha-glucosidase activities, antioxidant and anti-inflammatory activities, regulating lipid metabolism, promoting insulin secretion, ameliorating insulin resistance, increasing glucose uptake, promoting glycolysis, inhibiting gluconeogenesis, promoting glucagon-likepeptide-1 (GLP-1) secretion and antiglycation activity. Phenolic acids, flavonoids and triterpenoids might be the main components for hypoglycemia effects in O. stamineus. (4) Conclusion: O. stamineus could be an antidiabetic agent to treat diabetes and its complications. However, it needs further study on a pharmacodynamic substance basis and the mechanisms of effective constituents.",
+  "canon:text": "A Systematic Review of Orthosiphon stamineus Benth. in the Treatment of Diabetes and Its Complications. (1) Background: Orthosiphon stamineus Benth. is a traditional medicine used in the treatment of diabetes and chronic renal failure in southern China, Malaysia, and Thailand. Diabetes is a chronic metabolic disease and the number of diabetic patients in the world is increasing. This review aimed to systematically review the effects of O. stamineus in the treatment of diabetes and its complications and the pharmacodynamic material basis. (2) Methods: This systematic review was conducted following Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA), using the databases ScienceDirect, PubMed, and Web of Science. (3) Results: Thirty-one articles related to O. stamineus and diabetes were included. The mechanisms of O. stamineus in the treatment of diabetes and its complications mainly included inhibiting alpha-amylase and alpha-glucosidase activities, antioxidant and anti-inflammatory activities, regulating lipid metabolism, promoting insulin secretion, ameliorating insulin resistance, increasing glucose uptake, promoting glycolysis, inhibiting gluconeogenesis, promoting glucagon-likepeptide-1 (GLP-1) secretion and antiglycation activity. Phenolic acids, flavonoids and triterpenoids might be the main components for hypoglycemia effects in O. stamineus. (4) Conclusion: O. stamineus could be an antidiabetic agent to treat diabetes and its complications. However, it needs further study on a pharmacodynamic substance basis and the mechanisms of effective constituents.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35056765_due-to_0003769#mention-T1",
+      "canon:span": {
+        "start": 72,
+        "end": 102
+      },
+      "canon:surface": "Diabetes and Its Complications",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D048909",
+      "canon:sourceNotation": "D048909",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35056765_due-to_0003769#mention-T2",
+      "canon:span": {
+        "start": 200,
+        "end": 208
+      },
+      "canon:surface": "diabetes",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D003920",
+      "canon:sourceNotation": "D003920",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35056765_due-to_0003769#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35056765_due-to_0003769#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35056765_due-to_0003769#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35056765"
+      }
+    }
+  ]
+}

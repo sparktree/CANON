@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30700023_causative-agent_0000923",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_30700023_causative-agent_0000923",
+  "canon:title": "Acute and Chronic Effects of Cocaine on Cardiovascular Health.",
+  "canon:abstract": "Cardiac complications resulting from cocaine use have been extensively studied because of the complicated pathophysiological mechanisms. This study aims to review the underlying cellular and molecular mechanisms of acute and chronic effects of cocaine on the cardiovascular system with a specific focus on human studies. Studies have consistently reported the acute effects of cocaine on the heart (e.g., electrocardiographic abnormalities, acute hypertension, arrhythmia, and acute myocardial infarction) through multifactorial mechanisms. However, variable results have been reported for the chronic effects of cocaine. Some studies found no association of cocaine use with coronary artery disease (CAD), while others reported its association with subclinical coronary atherosclerosis. These inconsistent findings might be due to the heterogeneity of study subjects with regard to cardiac risk. After cocaine use, populations at high risk for CAD experienced coronary atherosclerosis whereas those at low risk did not experience CAD, suggesting that the chronic effects of cocaine were more likely to be prominent among individuals with higher CAD risk. Studies also suggested that risky behaviors and cardiovascular risks may affect the association between cocaine use and mortality. Our study findings highlight the need for education regarding the deleterious effects of cocaine, and access to interventions for cocaine abusers.",
+  "canon:text": "Acute and Chronic Effects of Cocaine on Cardiovascular Health. Cardiac complications resulting from cocaine use have been extensively studied because of the complicated pathophysiological mechanisms. This study aims to review the underlying cellular and molecular mechanisms of acute and chronic effects of cocaine on the cardiovascular system with a specific focus on human studies. Studies have consistently reported the acute effects of cocaine on the heart (e.g., electrocardiographic abnormalities, acute hypertension, arrhythmia, and acute myocardial infarction) through multifactorial mechanisms. However, variable results have been reported for the chronic effects of cocaine. Some studies found no association of cocaine use with coronary artery disease (CAD), while others reported its association with subclinical coronary atherosclerosis. These inconsistent findings might be due to the heterogeneity of study subjects with regard to cardiac risk. After cocaine use, populations at high risk for CAD experienced coronary atherosclerosis whereas those at low risk did not experience CAD, suggesting that the chronic effects of cocaine were more likely to be prominent among individuals with higher CAD risk. Studies also suggested that risky behaviors and cardiovascular risks may affect the association between cocaine use and mortality. Our study findings highlight the need for education regarding the deleterious effects of cocaine, and access to interventions for cocaine abusers.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30700023_causative-agent_0000923#mention-T1",
+      "canon:span": {
+        "start": 1480,
+        "end": 1487
+      },
+      "canon:surface": "cocaine",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D019970",
+      "canon:sourceNotation": "D019970",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30700023_causative-agent_0000923#mention-T2",
+      "canon:span": {
+        "start": 29,
+        "end": 36
+      },
+      "canon:surface": "Cocaine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003042",
+      "canon:sourceNotation": "D003042",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30700023_causative-agent_0000923#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30700023_causative-agent_0000923#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_30700023_causative-agent_0000923#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "30700023"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37872733_due-to_0004446",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_37872733_due-to_0004446",
+  "canon:title": "Episodic Cocaine Use as a Cause of Venous Thromboembolism and Acute Liver Injury.",
+  "canon:abstract": "BACKGROUND Pulmonary embolism secondary to deep vein thrombosis (DVT) with cor pulmonale is commonly associated with risk factors including surgery, cancer, and prolonged immobility. Cocaine is known to cause vasoconstriction and has a prothrombotic effect. Prolonged and heavy use of cocaine can also cause inflammation and liver damage. However, data on its potential role in causing pulmonary embolism and direct hepatotoxicity in cases of episodic use are scarce. CASE REPORT A 34-year-old man with no significant medical history except for episodic cocaine use presented in respiratory distress. Workup revealed submassive pulmonary embolism with pulmonary infarctions complicated by pneumonia, hypoxemic respiratory failure, and anemia. He was treated with anticoagulation and intensive care. On day 5 of hospitalization, the patient had an acute hepatic injury. His alanine aminotransferase level peaked at over 2000 IU/L on day 7, until finally tapering. Liver failure was found to be secondary to cocaine use. Liver enzyme levels improved with supportive care. He was discharged with apixaban and continued liver enzyme monitoring. CONCLUSIONS When investigating the cause of venous thromboembolism and transaminitis, evaluating cocaine use via patient history or laboratory analysis of cocaine and its metabolites should be considered. Cocaine is known to cause vasoconstriction and has a prothrombotic effect, although data on its potential role in causing pulmonary embolism and direct hepatotoxicity in cases of episodic use are scarce. Further investigation, such as cohort studies, could help strengthen our understanding of the relationship between cocaine use, acute hepatic injury, and pulmonary embolism.",
+  "canon:text": "Episodic Cocaine Use as a Cause of Venous Thromboembolism and Acute Liver Injury. BACKGROUND Pulmonary embolism secondary to deep vein thrombosis (DVT) with cor pulmonale is commonly associated with risk factors including surgery, cancer, and prolonged immobility. Cocaine is known to cause vasoconstriction and has a prothrombotic effect. Prolonged and heavy use of cocaine can also cause inflammation and liver damage. However, data on its potential role in causing pulmonary embolism and direct hepatotoxicity in cases of episodic use are scarce. CASE REPORT A 34-year-old man with no significant medical history except for episodic cocaine use presented in respiratory distress. Workup revealed submassive pulmonary embolism with pulmonary infarctions complicated by pneumonia, hypoxemic respiratory failure, and anemia. He was treated with anticoagulation and intensive care. On day 5 of hospitalization, the patient had an acute hepatic injury. His alanine aminotransferase level peaked at over 2000 IU/L on day 7, until finally tapering. Liver failure was found to be secondary to cocaine use. Liver enzyme levels improved with supportive care. He was discharged with apixaban and continued liver enzyme monitoring. CONCLUSIONS When investigating the cause of venous thromboembolism and transaminitis, evaluating cocaine use via patient history or laboratory analysis of cocaine and its metabolites should be considered. Cocaine is known to cause vasoconstriction and has a prothrombotic effect, although data on its potential role in causing pulmonary embolism and direct hepatotoxicity in cases of episodic use are scarce. Further investigation, such as cohort studies, could help strengthen our understanding of the relationship between cocaine use, acute hepatic injury, and pulmonary embolism.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37872733_due-to_0004446#mention-T1",
+      "canon:span": {
+        "start": 157,
+        "end": 170
+      },
+      "canon:surface": "cor pulmonale",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D011660",
+      "canon:sourceNotation": "D011660",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37872733_due-to_0004446#mention-T2",
+      "canon:span": {
+        "start": 661,
+        "end": 681
+      },
+      "canon:surface": "respiratory distress",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D012128",
+      "canon:sourceNotation": "D012128",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37872733_due-to_0004446#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37872733_due-to_0004446#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_37872733_due-to_0004446#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "37872733"
+      }
+    }
+  ]
+}

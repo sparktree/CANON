@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225",
+  "canon:title": "Vesicular monoamine transporters: structure-function, pharmacology, and medicinal chemistry.",
+  "canon:abstract": "Vesicular monoamine transporters (VMAT) are responsible for the uptake of cytosolic monoamines into synaptic vesicles in monoaminergic neurons. Two closely related VMATs with distinct pharmacological properties and tissue distributions have been characterized. VMAT1 is preferentially expressed in neuroendocrine cells and VMAT2 is primarily expressed in the CNS. The neurotoxicity and addictive properties of various psychostimulants have been attributed, at least partly, to their interference with VMAT2 functions. The quantitative assessment of the VMAT2 density by PET scanning has been clinically useful for early diagnosis and monitoring of the progression of Parkinson's and Alzheimer's diseases and drug addiction. The classical VMAT2 inhibitor, tetrabenazine, has long been used for the treatment of chorea associated with Huntington's disease in the United Kingdom, Canada, and Australia, and recently approved in the United States. The VMAT2 imaging may also be useful for exploiting the onset of diabetes mellitus, as VMAT2 is also expressed in the beta-cells of the pancreas. VMAT1 gene SLC18A1 is a locus with strong evidence of linkage with schizophrenia and, thus, the polymorphic forms of the VMAT1 gene may confer susceptibility to schizophrenia. This review summarizes the current understanding of the structure-function relationships of VMAT2, and the role of VMAT2 on addiction and psychostimulant-induced neurotoxicity, and the therapeutic and diagnostic applications of specific VMAT2 ligands. The evidence for the linkage of VMAT1 gene with schizophrenia and bipolar disorder I is also discussed.",
+  "canon:text": "Vesicular monoamine transporters: structure-function, pharmacology, and medicinal chemistry. Vesicular monoamine transporters (VMAT) are responsible for the uptake of cytosolic monoamines into synaptic vesicles in monoaminergic neurons. Two closely related VMATs with distinct pharmacological properties and tissue distributions have been characterized. VMAT1 is preferentially expressed in neuroendocrine cells and VMAT2 is primarily expressed in the CNS. The neurotoxicity and addictive properties of various psychostimulants have been attributed, at least partly, to their interference with VMAT2 functions. The quantitative assessment of the VMAT2 density by PET scanning has been clinically useful for early diagnosis and monitoring of the progression of Parkinson's and Alzheimer's diseases and drug addiction. The classical VMAT2 inhibitor, tetrabenazine, has long been used for the treatment of chorea associated with Huntington's disease in the United Kingdom, Canada, and Australia, and recently approved in the United States. The VMAT2 imaging may also be useful for exploiting the onset of diabetes mellitus, as VMAT2 is also expressed in the beta-cells of the pancreas. VMAT1 gene SLC18A1 is a locus with strong evidence of linkage with schizophrenia and, thus, the polymorphic forms of the VMAT1 gene may confer susceptibility to schizophrenia. This review summarizes the current understanding of the structure-function relationships of VMAT2, and the role of VMAT2 on addiction and psychostimulant-induced neurotoxicity, and the therapeutic and diagnostic applications of specific VMAT2 ligands. The evidence for the linkage of VMAT1 gene with schizophrenia and bipolar disorder I is also discussed.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T1",
+      "canon:span": {
+        "start": 461,
+        "end": 474
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T2",
+      "canon:span": {
+        "start": 848,
+        "end": 861
+      },
+      "canon:surface": "tetrabenazine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D013747",
+      "canon:sourceNotation": "D013747",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_20135628_causative-agent_0002225#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "20135628"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34527496_causative-agent_0003680",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_34527496_causative-agent_0003680",
+  "canon:title": "You Only Find What You Are Looking for: Concurrent Alcoholic Liver Cirrhosis and Undiagnosed Wilson's Disease.",
+  "canon:abstract": "Wilson's disease (WD), a rare genetic disorder characterized by copper accumulation, leads to a spectrum of hepatic dysfunction including liver cirrhosis, fulminant liver failure, and chronic hepatitis. Its manifestations could involve musculoskeletal, hematologic, neuropsychiatric, or renal systems. We present the case of a 27-year-old female with a past medical history of alcohol use disorder who presented with acute confusion, worsening abdominal distension, bilateral lower limb edema, and jaundice.The initial presentation was concerning for acute alcoholic hepatitis and decompensated alcoholic cirrhosis attributed to ongoing heavy alcohol consumption. However, due to the patient's young age, the severity of presentation, and the pattern of liver enzyme elevation, further workup was conducted to rule out concurrent pathologies. Viral, autoimmune, and metabolic workups were unrevealing. Subsequently, low ceruloplasmin levels and elevated urinary copper levels led to a diagnosis of WD with concomitant alcoholic liver disease. The coexistence of WD and alcohol-associated liver disease (ALD) has not been well described in the literature. Laboratory testing including alkaline phosphatase (ALP), bilirubin, and serum aminotransferases provides the most rapid and accurate method for diagnosing ALD due to WD, given that the conventional screening tests such as ceruloplasmin are less sensitive and specific in identifying patients with acute liver disease secondary to WD.",
+  "canon:text": "You Only Find What You Are Looking for: Concurrent Alcoholic Liver Cirrhosis and Undiagnosed Wilson's Disease. Wilson's disease (WD), a rare genetic disorder characterized by copper accumulation, leads to a spectrum of hepatic dysfunction including liver cirrhosis, fulminant liver failure, and chronic hepatitis. Its manifestations could involve musculoskeletal, hematologic, neuropsychiatric, or renal systems. We present the case of a 27-year-old female with a past medical history of alcohol use disorder who presented with acute confusion, worsening abdominal distension, bilateral lower limb edema, and jaundice.The initial presentation was concerning for acute alcoholic hepatitis and decompensated alcoholic cirrhosis attributed to ongoing heavy alcohol consumption. However, due to the patient's young age, the severity of presentation, and the pattern of liver enzyme elevation, further workup was conducted to rule out concurrent pathologies. Viral, autoimmune, and metabolic workups were unrevealing. Subsequently, low ceruloplasmin levels and elevated urinary copper levels led to a diagnosis of WD with concomitant alcoholic liver disease. The coexistence of WD and alcohol-associated liver disease (ALD) has not been well described in the literature. Laboratory testing including alkaline phosphatase (ALP), bilirubin, and serum aminotransferases provides the most rapid and accurate method for diagnosing ALD due to WD, given that the conventional screening tests such as ceruloplasmin are less sensitive and specific in identifying patients with acute liver disease secondary to WD.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34527496_causative-agent_0003680#mention-T1",
+      "canon:span": {
+        "start": 668,
+        "end": 687
+      },
+      "canon:surface": "alcoholic hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D006519",
+      "canon:sourceNotation": "D006519",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34527496_causative-agent_0003680#mention-T2",
+      "canon:span": {
+        "start": 175,
+        "end": 181
+      },
+      "canon:surface": "copper",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003300",
+      "canon:sourceNotation": "D003300",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34527496_causative-agent_0003680#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34527496_causative-agent_0003680#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_34527496_causative-agent_0003680#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "34527496"
+      }
+    }
+  ]
+}

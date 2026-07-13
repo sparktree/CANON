@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33505148_causative-agent_0001241",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_33505148_causative-agent_0001241",
+  "canon:title": "Human hepatitis viruses-associated cutaneous and systemic vasculitis.",
+  "canon:abstract": "Human hepatitis viruses (HHVs) include hepatitis A virus, hepatitis B virus (HBV), hepatitis C virus (HCV), hepatitis delta virus, and hepatitis E virus and can cause liver inflammation in their common human host. Usually, HHV is rapidly cleared by the immune system, following acute HHV invasion. The morbidities associated with hepatitis A virus and hepatitis E virus infection occur shortly after their intrusion, in the acute stage. Nevertheless, the viral infectious process can persist for a long period of time, especially in HBV and HCV infection, leading to chronic hepatitis and further progressing to hepatic cirrhosis and liver cancer. HHV infection brings about complications in other organs, and both acute and chronic hepatitis have been associated with clinical presentations outside the liver. Vascular involvement with cutaneous and systemic vasculitis is a well-known extrahepatic presentation; moreover, there is growing evidence for a possible causal relationship between viral pathogens and vasculitis. Except for hepatitis delta virus, other HHVs have participated in the etiopathogenesis of cutaneous and systemic vasculitis via different mechanisms, including direct viral invasion of vascular endothelial cells, immune complex-mediated vessel wall damage, and autoimmune responses with stimulation of autoreactive B-cells and impaired regulatory T-cells. Cryoglobulinemic vasculitis and polyarteritis nodosa are recognized for their association with chronic HHV infection. Although therapeutic guidelines for HHV-associated vasculitis have not yet been established, antiviral therapy should be initiated in HBV and HCV-related systemic vasculitis in addition to the use of corticosteroids. Plasma exchange and/or combined cyclophosphamide and corticosteroid therapy can be considered in patients with severe life-threatening vasculitis manifestations.",
+  "canon:text": "Human hepatitis viruses-associated cutaneous and systemic vasculitis. Human hepatitis viruses (HHVs) include hepatitis A virus, hepatitis B virus (HBV), hepatitis C virus (HCV), hepatitis delta virus, and hepatitis E virus and can cause liver inflammation in their common human host. Usually, HHV is rapidly cleared by the immune system, following acute HHV invasion. The morbidities associated with hepatitis A virus and hepatitis E virus infection occur shortly after their intrusion, in the acute stage. Nevertheless, the viral infectious process can persist for a long period of time, especially in HBV and HCV infection, leading to chronic hepatitis and further progressing to hepatic cirrhosis and liver cancer. HHV infection brings about complications in other organs, and both acute and chronic hepatitis have been associated with clinical presentations outside the liver. Vascular involvement with cutaneous and systemic vasculitis is a well-known extrahepatic presentation; moreover, there is growing evidence for a possible causal relationship between viral pathogens and vasculitis. Except for hepatitis delta virus, other HHVs have participated in the etiopathogenesis of cutaneous and systemic vasculitis via different mechanisms, including direct viral invasion of vascular endothelial cells, immune complex-mediated vessel wall damage, and autoimmune responses with stimulation of autoreactive B-cells and impaired regulatory T-cells. Cryoglobulinemic vasculitis and polyarteritis nodosa are recognized for their association with chronic HHV infection. Although therapeutic guidelines for HHV-associated vasculitis have not yet been established, antiviral therapy should be initiated in HBV and HCV-related systemic vasculitis in addition to the use of corticosteroids. Plasma exchange and/or combined cyclophosphamide and corticosteroid therapy can be considered in patients with severe life-threatening vasculitis manifestations.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33505148_causative-agent_0001241#mention-T1",
+      "canon:span": {
+        "start": 645,
+        "end": 654
+      },
+      "canon:surface": "hepatitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33505148_causative-agent_0001241#mention-T2",
+      "canon:span": {
+        "start": 1818,
+        "end": 1834
+      },
+      "canon:surface": "cyclophosphamide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003520",
+      "canon:sourceNotation": "D003520",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33505148_causative-agent_0001241#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33505148_causative-agent_0001241#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_33505148_causative-agent_0001241#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "33505148"
+      }
+    }
+  ]
+}

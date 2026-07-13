@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36518661_causative-agent_0004143",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_36518661_causative-agent_0004143",
+  "canon:title": "Drug-induced liver injury in COVID-19 treatment: Incidence, mechanisms and clinical management.",
+  "canon:abstract": "The COVID-19 outbreak triggered a serious and potentially lethal pandemic, resulting in massive health and economic losses worldwide. The most common clinical manifestations of COVID-19 patients are pneumonia and acute respiratory distress syndrome, with a variety of complications. Multiple organ failure and damage, ultimately leading to patient death, are possible as a result of medication combinations, and this is exemplified by DILI. We hope to summarize DILI caused by the antiviral drugs favipiravir, remdesivir, lopinavir/ritonavir, and hydroxychloroquine in COVID-19 patients in this review. The incidence of liver injury in the treatment of COVID-19 patients was searched on PubMed to investigate DILI cases. The cumulative prevalence of acute liver injury was 23.7% (16.1%-33.1%). We discuss the frequency of these events, potential mechanisms, and new insights into surveillance strategies. Furthermore, we also describe medication recommendations aimed at preserving DILI caused by treatment in COVID-19 patients.",
+  "canon:text": "Drug-induced liver injury in COVID-19 treatment: Incidence, mechanisms and clinical management. The COVID-19 outbreak triggered a serious and potentially lethal pandemic, resulting in massive health and economic losses worldwide. The most common clinical manifestations of COVID-19 patients are pneumonia and acute respiratory distress syndrome, with a variety of complications. Multiple organ failure and damage, ultimately leading to patient death, are possible as a result of medication combinations, and this is exemplified by DILI. We hope to summarize DILI caused by the antiviral drugs favipiravir, remdesivir, lopinavir/ritonavir, and hydroxychloroquine in COVID-19 patients in this review. The incidence of liver injury in the treatment of COVID-19 patients was searched on PubMed to investigate DILI cases. The cumulative prevalence of acute liver injury was 23.7% (16.1%-33.1%). We discuss the frequency of these events, potential mechanisms, and new insights into surveillance strategies. Furthermore, we also describe medication recommendations aimed at preserving DILI caused by treatment in COVID-19 patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36518661_causative-agent_0004143#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 25
+      },
+      "canon:surface": "Drug-induced liver injury",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D056486",
+      "canon:sourceNotation": "D056486",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36518661_causative-agent_0004143#mention-T2",
+      "canon:span": {
+        "start": 643,
+        "end": 661
+      },
+      "canon:surface": "hydroxychloroquine",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D006886",
+      "canon:sourceNotation": "D006886",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36518661_causative-agent_0004143#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36518661_causative-agent_0004143#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_36518661_causative-agent_0004143#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "36518661"
+      }
+    }
+  ]
+}

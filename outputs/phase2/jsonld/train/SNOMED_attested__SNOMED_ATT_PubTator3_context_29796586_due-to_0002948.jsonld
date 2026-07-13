@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29796586_due-to_0002948",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_29796586_due-to_0002948",
+  "canon:title": "Pp65 antigenemia and cytomegalovirus diagnosis in patients with lupus nephritis: report of a series.",
+  "canon:abstract": "INTRODUCTION: In contrast to organ transplantation, few studies correlate the monitoring of pp65 antigenemia with a diagnosis of cytomegalovirus (CMV) in patients with systemic lupus erythematosus (SLE). OBJECTIVE: To highlight the importance of CMV outside transplantation, we monitored pp65 antigenemia in a series of SLE patients. METHODS: From March 2015 to March 2016, SLE patients presenting kidney involvement, fever, and an unclear infection at hospital admission were monitored through pp65 antigenemia. The pp65 antigenemia assay, revealed by immunofluorescence, was correlated with clinical and laboratory findings. RESULTS: We included 19 patients with a suspected unclear infection. A positivity for pp65 antigenemia was found in seven patients (36.8%). The mean age was 33.5 +- 11.2 years, 16 (84%) were females, and 16 (84%) were black. Lymphopenia, anemia, and higher scores of SLEDAI were significantly more common in pp65-positive patients. Five patients received antiviral therapy with ganciclovir. Although receiving specific CMV treatment, one patient died because of suspected CMV disease. CONCLUSIONS: Pp65 antigenemia might be relevant in SLE patients, and studies with a greater number of patients are needed in order to establish sensitivity and specificity of pp65 antigenemia in different clinical contexts of SLE patients.",
+  "canon:text": "Pp65 antigenemia and cytomegalovirus diagnosis in patients with lupus nephritis: report of a series. INTRODUCTION: In contrast to organ transplantation, few studies correlate the monitoring of pp65 antigenemia with a diagnosis of cytomegalovirus (CMV) in patients with systemic lupus erythematosus (SLE). OBJECTIVE: To highlight the importance of CMV outside transplantation, we monitored pp65 antigenemia in a series of SLE patients. METHODS: From March 2015 to March 2016, SLE patients presenting kidney involvement, fever, and an unclear infection at hospital admission were monitored through pp65 antigenemia. The pp65 antigenemia assay, revealed by immunofluorescence, was correlated with clinical and laboratory findings. RESULTS: We included 19 patients with a suspected unclear infection. A positivity for pp65 antigenemia was found in seven patients (36.8%). The mean age was 33.5 +- 11.2 years, 16 (84%) were females, and 16 (84%) were black. Lymphopenia, anemia, and higher scores of SLEDAI were significantly more common in pp65-positive patients. Five patients received antiviral therapy with ganciclovir. Although receiving specific CMV treatment, one patient died because of suspected CMV disease. CONCLUSIONS: Pp65 antigenemia might be relevant in SLE patients, and studies with a greater number of patients are needed in order to establish sensitivity and specificity of pp65 antigenemia in different clinical contexts of SLE patients.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29796586_due-to_0002948#mention-T1",
+      "canon:span": {
+        "start": 64,
+        "end": 79
+      },
+      "canon:surface": "lupus nephritis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D008181",
+      "canon:sourceNotation": "D008181",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29796586_due-to_0002948#mention-T2",
+      "canon:span": {
+        "start": 499,
+        "end": 517
+      },
+      "canon:surface": "kidney involvement",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D007674",
+      "canon:sourceNotation": "D007674",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29796586_due-to_0002948#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29796586_due-to_0002948#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_29796586_due-to_0002948#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "29796586"
+      }
+    }
+  ]
+}

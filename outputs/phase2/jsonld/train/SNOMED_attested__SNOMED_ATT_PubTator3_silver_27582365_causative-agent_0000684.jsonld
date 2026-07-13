@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27582365_causative-agent_0000684",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_27582365_causative-agent_0000684",
+  "canon:title": "Alcoholic cardiomyopathy : The result of dosage and individual predisposition.",
+  "canon:abstract": "The individual amount of alcohol consumed acutely or chronically decides on harm or benefit to a person's health. Available data suggest that one to two drinks in men and one drink in women will benefit the cardiovascular system over time, one drink being 17.6 ml 100 % alcohol. Moderate drinking can reduce the incidence and mortality of coronary artery disease, heart failure, diabetes, ischemic and hemorrhagic stroke. More than this amount can lead to alcoholic cardiomyopathy, which is defined as alcohol toxicity to the heart muscle itself by ethanol and its metabolites. Historical examples of interest are the Munich beer heart and the Tubingen wine heart. Associated with chronic alcohol abuse but having different etiologies are beriberi heart disease (vitamin B1 deficiency) and cardiac cirrhosis as hyperdynamic cardiomyopathies, arsenic poising in the Manchester beer epidemic, and cobalt intoxication in Quebec beer drinker's disease. Chronic heavy alcohol abuse will also increase blood pressure and cause a downregulation of the immune system that could lead to increased susceptibility to infections, which in turn could add to the development of heart failure. Myocardial tissue analysis resembles idiopathic cardiomyopathy or chronic myocarditis. In the diagnostic work-up of alcoholic cardiomyopathy, the confirmation of alcohol abuse by carbohydrate deficient transferrin (CDT) and increased liver enzymes, and the involvement of the heart by markers of heart failure (e.g., NT-proBNP) and of necrosis (e.g., troponins or CKMb) is mandatory. Treatment of alcoholic cardiomyopathy consists of alcohol abstinence and heart failure medication. ",
+  "canon:text": "Alcoholic cardiomyopathy : The result of dosage and individual predisposition. The individual amount of alcohol consumed acutely or chronically decides on harm or benefit to a person's health. Available data suggest that one to two drinks in men and one drink in women will benefit the cardiovascular system over time, one drink being 17.6 ml 100 % alcohol. Moderate drinking can reduce the incidence and mortality of coronary artery disease, heart failure, diabetes, ischemic and hemorrhagic stroke. More than this amount can lead to alcoholic cardiomyopathy, which is defined as alcohol toxicity to the heart muscle itself by ethanol and its metabolites. Historical examples of interest are the Munich beer heart and the Tubingen wine heart. Associated with chronic alcohol abuse but having different etiologies are beriberi heart disease (vitamin B1 deficiency) and cardiac cirrhosis as hyperdynamic cardiomyopathies, arsenic poising in the Manchester beer epidemic, and cobalt intoxication in Quebec beer drinker's disease. Chronic heavy alcohol abuse will also increase blood pressure and cause a downregulation of the immune system that could lead to increased susceptibility to infections, which in turn could add to the development of heart failure. Myocardial tissue analysis resembles idiopathic cardiomyopathy or chronic myocarditis. In the diagnostic work-up of alcoholic cardiomyopathy, the confirmation of alcohol abuse by carbohydrate deficient transferrin (CDT) and increased liver enzymes, and the involvement of the heart by markers of heart failure (e.g., NT-proBNP) and of necrosis (e.g., troponins or CKMb) is mandatory. Treatment of alcoholic cardiomyopathy consists of alcohol abstinence and heart failure medication. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27582365_causative-agent_0000684#mention-T1",
+      "canon:span": {
+        "start": 760,
+        "end": 781
+      },
+      "canon:surface": "chronic alcohol abuse",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27582365_causative-agent_0000684#mention-T2",
+      "canon:span": {
+        "start": 628,
+        "end": 635
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27582365_causative-agent_0000684#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27582365_causative-agent_0000684#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27582365_causative-agent_0000684#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "27582365"
+      }
+    }
+  ]
+}

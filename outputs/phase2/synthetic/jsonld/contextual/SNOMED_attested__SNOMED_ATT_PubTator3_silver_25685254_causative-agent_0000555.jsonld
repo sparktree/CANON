@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25685254_causative-agent_0000555",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_25685254_causative-agent_0000555",
+  "canon:title": "New antioxidant drugs for neonatal brain injury.",
+  "canon:abstract": "The brain injury concept covers a lot of heterogeneity in terms of aetiology involving multiple factors, genetic, hemodynamic, metabolic, nutritional, endocrinological, toxic, and infectious mechanisms, acting in antenatal or postnatal period. Increased vulnerability of the immature brain to oxidative stress is documented because of the limited capacity of antioxidant enzymes and the high free radicals (FRs) generation in rapidly growing tissue. FRs impair transmembrane enzyme Na(+)/K(+)-ATPase activity resulting in persistent membrane depolarization and excessive release of FR and excitatory aminoacid glutamate. Besides being neurotoxic, glutamate is also toxic to oligodendroglia, via FR effects. Neuronal cells die of oxidative stress. Excess of free iron and deficient iron/binding metabolising capacity are additional features favouring oxidative stress in newborn. Each step in the oxidative injury cascade has become a potential target for neuroprotective intervention. The administration of antioxidants for suspected or proven brain injury is still not accepted for clinical use due to uncertain beneficial effects when treatments are started after resuscitation of an asphyxiated newborn. The challenge for the future is the early identification of high-risk babies to target a safe and not toxic antioxidant therapy in combination with standard therapies to prevent brain injury and long-term neurodevelopmental impairment. ",
+  "canon:text": "New antioxidant drugs for neonatal brain injury. The brain injury concept covers a lot of heterogeneity in terms of aetiology involving multiple factors, genetic, hemodynamic, metabolic, nutritional, endocrinological, toxic, and infectious mechanisms, acting in antenatal or postnatal period. Increased vulnerability of the immature brain to oxidative stress is documented because of the limited capacity of antioxidant enzymes and the high free radicals (FRs) generation in rapidly growing tissue. FRs impair transmembrane enzyme Na(+)/K(+)-ATPase activity resulting in persistent membrane depolarization and excessive release of FR and excitatory aminoacid glutamate. Besides being neurotoxic, glutamate is also toxic to oligodendroglia, via FR effects. Neuronal cells die of oxidative stress. Excess of free iron and deficient iron/binding metabolising capacity are additional features favouring oxidative stress in newborn. Each step in the oxidative injury cascade has become a potential target for neuroprotective intervention. The administration of antioxidants for suspected or proven brain injury is still not accepted for clinical use due to uncertain beneficial effects when treatments are started after resuscitation of an asphyxiated newborn. The challenge for the future is the early identification of high-risk babies to target a safe and not toxic antioxidant therapy in combination with standard therapies to prevent brain injury and long-term neurodevelopmental impairment. ",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25685254_causative-agent_0000555#mention-T1",
+      "canon:span": {
+        "start": 684,
+        "end": 694
+      },
+      "canon:surface": "neurotoxic",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25685254_causative-agent_0000555#mention-T2",
+      "canon:span": {
+        "start": 811,
+        "end": 815
+      },
+      "canon:surface": "iron",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D007501",
+      "canon:sourceNotation": "D007501",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25685254_causative-agent_0000555#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25685254_causative-agent_0000555#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_25685254_causative-agent_0000555#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "25685254"
+      }
+    }
+  ]
+}

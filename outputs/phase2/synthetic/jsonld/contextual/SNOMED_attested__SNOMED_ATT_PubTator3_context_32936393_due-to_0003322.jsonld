@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32936393_due-to_0003322",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_32936393_due-to_0003322",
+  "canon:title": "Diagnostic methods and drug therapies in patients with ischemic colitis.",
+  "canon:abstract": "PURPOSE: Ischemic colitis (IC) is the most prevalent ischemic injury of thegastrointestinal tract. Clinical features of IC such as acute abdominal pain, hematochezia,and diarrhea are similar to those of acute mesenteric ischemia, inflammatorybowel disease, or infectious bowel disease, and their relative ambiguity candelay diagnosis and treatment. To comprehensively detail the current state ofdiagnostic methods and available drug therapies for detecting and treating IC,this review aims to provide a concise and practical summary of thecorresponding literature. METHODS: PubMed and Cochrane Library were searched toretrieve all published studies reporting the diagnostic methods and drugtherapies in patients with ischemic colitis. The search strategy of drugtherapy includes human and animal data. RESULTS: Colonoscopy combined with histopathologicalbiopsy is the standard of diagnosis for the IC. Most patients respond well tothe conservative treatment, and surgical consultation is needed when conservativetreatment is ineffective. Studies of potential drug therapy have beendeveloped, including phosphodiesterase type 5 inhibitors, pentoxifylline,rebamipide, prostaglandin E1, and polydeoxyribonucleotide. CONCLUSION: Accurate diagnoses and effective treatmentshave helped reduce the mortality rate and improve prognoses for patientsafflicted with IC, and corresponding drug therapies have been constantlyupdated as new research has emerged.",
+  "canon:text": "Diagnostic methods and drug therapies in patients with ischemic colitis. PURPOSE: Ischemic colitis (IC) is the most prevalent ischemic injury of thegastrointestinal tract. Clinical features of IC such as acute abdominal pain, hematochezia,and diarrhea are similar to those of acute mesenteric ischemia, inflammatorybowel disease, or infectious bowel disease, and their relative ambiguity candelay diagnosis and treatment. To comprehensively detail the current state ofdiagnostic methods and available drug therapies for detecting and treating IC,this review aims to provide a concise and practical summary of thecorresponding literature. METHODS: PubMed and Cochrane Library were searched toretrieve all published studies reporting the diagnostic methods and drugtherapies in patients with ischemic colitis. The search strategy of drugtherapy includes human and animal data. RESULTS: Colonoscopy combined with histopathologicalbiopsy is the standard of diagnosis for the IC. Most patients respond well tothe conservative treatment, and surgical consultation is needed when conservativetreatment is ineffective. Studies of potential drug therapy have beendeveloped, including phosphodiesterase type 5 inhibitors, pentoxifylline,rebamipide, prostaglandin E1, and polydeoxyribonucleotide. CONCLUSION: Accurate diagnoses and effective treatmentshave helped reduce the mortality rate and improve prognoses for patientsafflicted with IC, and corresponding drug therapies have been constantlyupdated as new research has emerged.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32936393_due-to_0003322#mention-T1",
+      "canon:span": {
+        "start": 55,
+        "end": 71
+      },
+      "canon:surface": "ischemic colitis",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D017091",
+      "canon:sourceNotation": "D017091",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32936393_due-to_0003322#mention-T2",
+      "canon:span": {
+        "start": 303,
+        "end": 328
+      },
+      "canon:surface": "inflammatorybowel disease",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004194",
+      "canon:sourceNotation": "D004194",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32936393_due-to_0003322#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32936393_due-to_0003322#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_32936393_due-to_0003322#mention-T2"
+      },
+      "canon:sourceRelation": "due-to",
+      "canon:relation": "https://canon.iu.edu/ns#due-to",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#due-to",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "32936393"
+      }
+    }
+  ]
+}

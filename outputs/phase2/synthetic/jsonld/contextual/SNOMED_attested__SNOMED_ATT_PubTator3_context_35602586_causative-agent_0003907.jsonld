@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907",
+  "canon:title": "Antioxidant Properties, Phytoactive Compounds and Potential Protective Action of Salvia officinalis Flowers Against Combined Gastro-Intestinal Ulcer and Diarrhea Experimentally Induced in Rat.",
+  "canon:abstract": "The present study was conducted to investigate the protective action of Salvia officinalis flowers aqueous extract (SOFAE) against combined gastro-intestinal (GI) disorders-induced by ethanol and castor oil administration in rats. Adult male Wistar rats were divided into seven groups of ten each and various doses of SOFAE (50, 100, and 200 mg kg-1, b.w., p.o.) and sulfasalazine (100 mg kg-1, b.w., p.o.) were daily administrated during 15 days. After, animals were intoxicated with a single oral administration of ethanol (4 g kg-1, b.w., p.o.) and castor oil (5 mL kg-1, b.w., p.o.). We found that SOFAE contains several phytoactive compounds with a strong ABTS scavenging ability. In vivo, we showed that SOFAE protected against EtOH/CO-induced macroscopic and histological alterations in GI tract accompanied by intestinal fluid accumulation and gastric juice decrease. SOFAE significantly counteracted lipoperoxydation increase and reversed the depletion of both enzymatic and non-enzymatic antioxidants. More importantly, SOFAE significantly reduced the levels of inflammatory markers (CRP and ALP) in plasma and mucosal GI tract. In conclusion, our data clearly indicate that the SOFAE exerted a potential protective effect against EtOH-induced peptic ulcer combined with CO-induced diarrhea in rats. These effects could be associated with its antioxidant and anti-inflammatory properties.",
+  "canon:text": "Antioxidant Properties, Phytoactive Compounds and Potential Protective Action of Salvia officinalis Flowers Against Combined Gastro-Intestinal Ulcer and Diarrhea Experimentally Induced in Rat. The present study was conducted to investigate the protective action of Salvia officinalis flowers aqueous extract (SOFAE) against combined gastro-intestinal (GI) disorders-induced by ethanol and castor oil administration in rats. Adult male Wistar rats were divided into seven groups of ten each and various doses of SOFAE (50, 100, and 200 mg kg-1, b.w., p.o.) and sulfasalazine (100 mg kg-1, b.w., p.o.) were daily administrated during 15 days. After, animals were intoxicated with a single oral administration of ethanol (4 g kg-1, b.w., p.o.) and castor oil (5 mL kg-1, b.w., p.o.). We found that SOFAE contains several phytoactive compounds with a strong ABTS scavenging ability. In vivo, we showed that SOFAE protected against EtOH/CO-induced macroscopic and histological alterations in GI tract accompanied by intestinal fluid accumulation and gastric juice decrease. SOFAE significantly counteracted lipoperoxydation increase and reversed the depletion of both enzymatic and non-enzymatic antioxidants. More importantly, SOFAE significantly reduced the levels of inflammatory markers (CRP and ALP) in plasma and mucosal GI tract. In conclusion, our data clearly indicate that the SOFAE exerted a potential protective effect against EtOH-induced peptic ulcer combined with CO-induced diarrhea in rats. These effects could be associated with its antioxidant and anti-inflammatory properties.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T1",
+      "canon:span": {
+        "start": 661,
+        "end": 672
+      },
+      "canon:surface": "intoxicated",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000435",
+      "canon:sourceNotation": "D000435",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T2",
+      "canon:span": {
+        "start": 377,
+        "end": 384
+      },
+      "canon:surface": "ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35602586_causative-agent_0003907#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35602586"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28129122_causative-agent_0002771",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_28129122_causative-agent_0002771",
+  "canon:title": "Phase 1 Results of ZUMA-1: A Multicenter Study of KTE-C19 Anti-CD19 CAR T Cell Therapy in Refractory Aggressive Lymphoma.",
+  "canon:abstract": "Outcomes for patients with refractory diffuse large B cell lymphoma (DLBCL) are poor. In the multicenter ZUMA-1 phase 1 study, we evaluated KTE-C19, an autologous CD3zeta/CD28-based chimeric antigen receptor (CAR) T cell therapy, in patients with refractory DLBCL. Patients received low-dose conditioning chemotherapy with concurrent cyclophosphamide (500 mg/m2) and fludarabine (30 mg/m2) for 3 days followed by KTE-C19 at a target dose of 2 x 106 CAR T cells/kg. The incidence of dose-limiting toxicity (DLT) was the primary endpoint. Seven patients were treated with KTE-C19 and one patient experienced a DLT of grade 4 cytokine release syndrome (CRS) and neurotoxicity. Grade >=3 CRS and neurotoxicity were observed in 14% (n = 1/7) and 57% (n = 4/7) of patients, respectively. All other KTE-C19-related grade >=3 events resolved within 1 month. The overall response rate was 71% (n = 5/7) and complete response (CR) rate was 57% (n = 4/7). Three patients have ongoing CR (all at 12+ months). CAR T cells demonstrated peak expansion within 2 weeks and continued to be detectable at 12+ months in patients with ongoing CR. This regimen of KTE-C19 was safe for further study in phase 2 and induced durable remissions in patients with refractory DLBCL.",
+  "canon:text": "Phase 1 Results of ZUMA-1: A Multicenter Study of KTE-C19 Anti-CD19 CAR T Cell Therapy in Refractory Aggressive Lymphoma. Outcomes for patients with refractory diffuse large B cell lymphoma (DLBCL) are poor. In the multicenter ZUMA-1 phase 1 study, we evaluated KTE-C19, an autologous CD3zeta/CD28-based chimeric antigen receptor (CAR) T cell therapy, in patients with refractory DLBCL. Patients received low-dose conditioning chemotherapy with concurrent cyclophosphamide (500 mg/m2) and fludarabine (30 mg/m2) for 3 days followed by KTE-C19 at a target dose of 2 x 106 CAR T cells/kg. The incidence of dose-limiting toxicity (DLT) was the primary endpoint. Seven patients were treated with KTE-C19 and one patient experienced a DLT of grade 4 cytokine release syndrome (CRS) and neurotoxicity. Grade >=3 CRS and neurotoxicity were observed in 14% (n = 1/7) and 57% (n = 4/7) of patients, respectively. All other KTE-C19-related grade >=3 events resolved within 1 month. The overall response rate was 71% (n = 5/7) and complete response (CR) rate was 57% (n = 4/7). Three patients have ongoing CR (all at 12+ months). CAR T cells demonstrated peak expansion within 2 weeks and continued to be detectable at 12+ months in patients with ongoing CR. This regimen of KTE-C19 was safe for further study in phase 2 and induced durable remissions in patients with refractory DLBCL.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28129122_causative-agent_0002771#mention-T1",
+      "canon:span": {
+        "start": 781,
+        "end": 794
+      },
+      "canon:surface": "neurotoxicity",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D020258",
+      "canon:sourceNotation": "D020258",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28129122_causative-agent_0002771#mention-T2",
+      "canon:span": {
+        "start": 456,
+        "end": 472
+      },
+      "canon:surface": "cyclophosphamide",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D003520",
+      "canon:sourceNotation": "D003520",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28129122_causative-agent_0002771#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28129122_causative-agent_0002771#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_28129122_causative-agent_0002771#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "28129122"
+      }
+    }
+  ]
+}

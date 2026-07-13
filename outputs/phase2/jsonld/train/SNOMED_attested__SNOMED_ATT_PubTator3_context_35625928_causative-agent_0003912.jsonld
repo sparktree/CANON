@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35625928_causative-agent_0003912",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_context_35625928_causative-agent_0003912",
+  "canon:title": "Alcohol Use Disorder: Neurobiology and Therapeutics.",
+  "canon:abstract": "Alcohol use disorder (AUD) encompasses the dysregulation of multiple brain circuits involved in executive function leading to excessive consumption of alcohol, despite negative health and social consequences and feelings of withdrawal when access to alcohol is prevented. Ethanol exerts its toxicity through changes to multiple neurotransmitter systems, including serotonin, dopamine, gamma-aminobutyric acid, glutamate, acetylcholine, and opioid systems. These neurotransmitter imbalances result in dysregulation of brain circuits responsible for reward, motivation, decision making, affect, and the stress response. Despite serious health and psychosocial consequences, this disorder still remains one of the leading causes of death globally. Treatment options include both psychological and pharmacological interventions, which are aimed at reducing alcohol consumption and/or promoting abstinence while also addressing dysfunctional behaviours and impaired functioning. However, stigma and social barriers to accessing care continue to impact many individuals. AUD treatment should focus not only on restoring the physiological and neurological impairment directly caused by alcohol toxicity but also on addressing psychosocial factors associated with AUD that often prevent access to treatment. This review summarizes the impact of alcohol toxicity on brain neurocircuitry in the context of AUD and discusses pharmacological and non-pharmacological therapies currently available to treat this addiction disorder.",
+  "canon:text": "Alcohol Use Disorder: Neurobiology and Therapeutics. Alcohol use disorder (AUD) encompasses the dysregulation of multiple brain circuits involved in executive function leading to excessive consumption of alcohol, despite negative health and social consequences and feelings of withdrawal when access to alcohol is prevented. Ethanol exerts its toxicity through changes to multiple neurotransmitter systems, including serotonin, dopamine, gamma-aminobutyric acid, glutamate, acetylcholine, and opioid systems. These neurotransmitter imbalances result in dysregulation of brain circuits responsible for reward, motivation, decision making, affect, and the stress response. Despite serious health and psychosocial consequences, this disorder still remains one of the leading causes of death globally. Treatment options include both psychological and pharmacological interventions, which are aimed at reducing alcohol consumption and/or promoting abstinence while also addressing dysfunctional behaviours and impaired functioning. However, stigma and social barriers to accessing care continue to impact many individuals. AUD treatment should focus not only on restoring the physiological and neurological impairment directly caused by alcohol toxicity but also on addressing psychosocial factors associated with AUD that often prevent access to treatment. This review summarizes the impact of alcohol toxicity on brain neurocircuitry in the context of AUD and discusses pharmacological and non-pharmacological therapies currently available to treat this addiction disorder.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35625928_causative-agent_0003912#mention-T1",
+      "canon:span": {
+        "start": 0,
+        "end": 20
+      },
+      "canon:surface": "Alcohol Use Disorder",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D000437",
+      "canon:sourceNotation": "D000437",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35625928_causative-agent_0003912#mention-T2",
+      "canon:span": {
+        "start": 325,
+        "end": 332
+      },
+      "canon:surface": "Ethanol",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D000431",
+      "canon:sourceNotation": "D000431",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "retrieved_context": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35625928_causative-agent_0003912#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35625928_causative-agent_0003912#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_context_35625928_causative-agent_0003912#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_context",
+        "source_pmid": "35625928"
+      }
+    }
+  ]
+}

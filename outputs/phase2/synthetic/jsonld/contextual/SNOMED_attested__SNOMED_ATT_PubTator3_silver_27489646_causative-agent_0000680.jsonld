@@ -1,0 +1,84 @@
+{
+  "@context": "../../../scripts/contexts/canon.jsonld",
+  "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27489646_causative-agent_0000680",
+  "canon:schemaVersion": "3.0.0",
+  "canon:sourceCorpus": "SNOMED_attested",
+  "canon:split": "train",
+  "canon:pmid": "SNOMED_ATT_PubTator3_silver_27489646_causative-agent_0000680",
+  "canon:title": "Fatal case of cephalexin-induced toxic epidermal necrolysis.",
+  "canon:abstract": "PURPOSE: To describe a case of toxic epidermal necrolysis likely caused by cephalexin with a review of the literature. CASE: An 80-year-old male with a known allergy to cephalosporins, residing at a long-term acute care hospital, received cephalexin for a urinary tract infection. And 1 day after starting therapy, the patient developed an extensive erythematous rash accompanied by skin sloughing; 4 days after receiving cephalexin, the patient was directly admitted to the burn intensive care unit and was diagnosed with toxic epidermal necrolysis involving 56% of the total body surface area. Progressive deterioration to multisystem organ failure ensued, and the patient died 5 days following his admission to the burn intensive care unit. At the time of death, ulcerations were noted over approximately 80% of his body. SUMMARY: The temporal association of the patient's ingestion of cephalexin for a urinary tract infection to his onset of toxic epidermal necrolysis suggests that this 80-year-old man developed toxic epidermal necrolysis following the administration of cephalexin for a urinary tract infection.",
+  "canon:text": "Fatal case of cephalexin-induced toxic epidermal necrolysis. PURPOSE: To describe a case of toxic epidermal necrolysis likely caused by cephalexin with a review of the literature. CASE: An 80-year-old male with a known allergy to cephalosporins, residing at a long-term acute care hospital, received cephalexin for a urinary tract infection. And 1 day after starting therapy, the patient developed an extensive erythematous rash accompanied by skin sloughing; 4 days after receiving cephalexin, the patient was directly admitted to the burn intensive care unit and was diagnosed with toxic epidermal necrolysis involving 56% of the total body surface area. Progressive deterioration to multisystem organ failure ensued, and the patient died 5 days following his admission to the burn intensive care unit. At the time of death, ulcerations were noted over approximately 80% of his body. SUMMARY: The temporal association of the patient's ingestion of cephalexin for a urinary tract infection to his onset of toxic epidermal necrolysis suggests that this 80-year-old man developed toxic epidermal necrolysis following the administration of cephalexin for a urinary tract infection.",
+  "canon:mentions": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27489646_causative-agent_0000680#mention-T1",
+      "canon:span": {
+        "start": 219,
+        "end": 226
+      },
+      "canon:surface": "allergy",
+      "canon:nerType": "http://snomed.info/id/404684003",
+      "canon:sourceEntityType": "Disease",
+      "canon:sourceSemanticClass": "disease",
+      "canon:sourceConcept": "D004342",
+      "canon:sourceNotation": "D004342",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    },
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27489646_causative-agent_0000680#mention-T2",
+      "canon:span": {
+        "start": 14,
+        "end": 24
+      },
+      "canon:surface": "cephalexin",
+      "canon:nerType": "http://snomed.info/id/105590001",
+      "canon:sourceEntityType": "Chemical",
+      "canon:sourceSemanticClass": "chemical",
+      "canon:sourceConcept": "D002506",
+      "canon:sourceNotation": "D002506",
+      "canon:confidence": 0.6,
+      "canon:snomedActive": true,
+      "canon:nonSnomed": false,
+      "canon:umlsSemanticTypes": [],
+      "canon:extra": {
+        "silver": true,
+        "source": "PubTator3"
+      }
+    }
+  ],
+  "canon:relations": [
+    {
+      "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27489646_causative-agent_0000680#relation-1",
+      "canon:subject": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27489646_causative-agent_0000680#mention-T1"
+      },
+      "canon:object": {
+        "@id": "https://w3id.org/canon/document/SNOMED_attested/SNOMED_ATT_PubTator3_silver_27489646_causative-agent_0000680#mention-T2"
+      },
+      "canon:sourceRelation": "causative-agent",
+      "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+      "canon:tier": 1,
+      "canon:probability": 1.0,
+      "canon:confidence": 0.6,
+      "canon:candidates": [
+        {
+          "canon:relation": "https://canon.iu.edu/ns#causative-agent",
+          "canon:tier": 1,
+          "canon:probability": 1.0
+        }
+      ],
+      "canon:novelty": null,
+      "canon:extra": {
+        "distant_supervision": "snomed-attested-real-context",
+        "source_corpus": "PubTator3_silver",
+        "source_pmid": "27489646"
+      }
+    }
+  ]
+}
